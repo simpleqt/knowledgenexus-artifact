@@ -1,0 +1,42 @@
+[
+ {
+  "system": "chab-all",
+  "set": "ner",
+  "slice": "L",
+  "n": 39,
+  "corpus_docs": 300,
+  "index_cost": {
+   "wall_s": 0,
+   "note": "channels=None; KNC_COOC_OFF=; oos 30"
+  },
+  "recall@5": 0.8462,
+  "recall@10": 0.9231,
+  "recall@20": 0.9744,
+  "cov@10": 0.6701,
+  "cov@20": 0.7645,
+  "mrr@10": 0.7695,
+  "ndcg@10": 1.4791,
+  "latency_p50_s": 1.541,
+  "latency_p95_s": 2.895
+ },
+ {
+  "system": "chab-noentity",
+  "set": "ner",
+  "slice": "L",
+  "n": 39,
+  "corpus_docs": 300,
+  "index_cost": {
+   "wall_s": 0,
+   "note": "channels=['lexical', 'dense', 'docvec', 'synq']; KNC_COOC_OFF=1; oos 0"
+  },
+  "recall@5": 0.8462,
+  "recall@10": 0.9231,
+  "recall@20": 0.9744,
+  "cov@10": 0.6701,
+  "cov@20": 0.7645,
+  "mrr@10": 0.7701,
+  "ndcg@10": 1.4793,
+  "latency_p50_s": 0.51,
+  "latency_p95_s": 0.553
+ }
+]

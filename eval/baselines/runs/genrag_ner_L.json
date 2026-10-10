@@ -1,0 +1,5193 @@
+{
+ "system": "genrag",
+ "slice": "L",
+ "set": "ner",
+ "corpus_docs": 300,
+ "index_cost": {
+  "wall_s": 536.1,
+  "engine": "LLM改写(qwen3.8-flash-next@CDUT)+BM25/Qwen3-8B RRF+LLM重排",
+  "llm_calls": 78,
+  "build_s_if_cold": 111.6
+ },
+ "per_query": [
+  {
+   "query": "探测器磁屏蔽设计文献有哪些",
+   "rewrite": "探测器 磁屏蔽 设计 文献",
+   "gold_doc_ids": [
+    "39e0d487cb244473b028443b1e247c46",
+    "6d38b0442cb942448e3c5b430f39880e",
+    "6eb2fc28a6b943f88505f10b07cc2f0d"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "6eb2fc28a6b943f88505f10b07cc2f0d",
+     "chunk_id": "1d565b5df58858d1f4d0dbd120d6671552895cce7f4a097d3d58b66c8565a778",
+     "score": 0.0325
+    },
+    {
+     "rank": 2,
+     "doc_id": "6eb2fc28a6b943f88505f10b07cc2f0d",
+     "chunk_id": "c81b5774c6ffea1d659e65593fb15d6bb1812cafe48cc8b11a990efb9a0f86d3",
+     "score": 0.0313
+    },
+    {
+     "rank": 3,
+     "doc_id": "6eb2fc28a6b943f88505f10b07cc2f0d",
+     "chunk_id": "e3792495e4c2b0686199153bc5eccd1f2cea85423e5e62026911677c781a8783",
+     "score": 0.0289
+    },
+    {
+     "rank": 4,
+     "doc_id": "6eb2fc28a6b943f88505f10b07cc2f0d",
+     "chunk_id": "b42845519e8cbe83b22f89cd4175d1dc989bdab1a5805bbd2f48d54b8108a6da",
+     "score": 0.0284
+    },
+    {
+     "rank": 5,
+     "doc_id": "568eae272680415d887c072b944b1df0",
+     "chunk_id": "95519a0693c70f828cdb07536fce9dae1cd2e5d6f21d63dcf704356890afe8fd",
+     "score": 0.0262
+    },
+    {
+     "rank": 6,
+     "doc_id": "568eae272680415d887c072b944b1df0",
+     "chunk_id": "6728e8a60629601ec1274ebcb8717cd43a52e496680c6331699534e446e4cfd9",
+     "score": 0.0259
+    },
+    {
+     "rank": 7,
+     "doc_id": "6eb2fc28a6b943f88505f10b07cc2f0d",
+     "chunk_id": "4f2a25f7684b285a32d90fbd29e0246b2d33c25fab7dcc0087c4c77538482c23",
+     "score": 0.0248
+    },
+    {
+     "rank": 8,
+     "doc_id": "48b9a62f6eb5478f94e5721db30c564d",
+     "chunk_id": "e2583e30b02d27f7bd5339ab8c1db38be003344ecac41cefe9faca74507d518b",
+     "score": 0.0248
+    },
+    {
+     "rank": 9,
+     "doc_id": "6eb2fc28a6b943f88505f10b07cc2f0d",
+     "chunk_id": "6c59df9c614a2c6006267fe15da90d005f35e3eece324e38ad6f72e032823336",
+     "score": 0.0239
+    },
+    {
+     "rank": 10,
+     "doc_id": "568eae272680415d887c072b944b1df0",
+     "chunk_id": "8876ff18b8db71c37201bafa157966b258f08d30ee9a478761faac4e1e470724",
+     "score": 0.022
+    },
+    {
+     "rank": 11,
+     "doc_id": "65e41a8c461c4020913b0ee20933e37a",
+     "chunk_id": "2a4b76de37fb495bc4fb3660bdb18639e7cad95249787b32fa00639fe28c5163",
+     "score": 0.022
+    },
+    {
+     "rank": 12,
+     "doc_id": "568eae272680415d887c072b944b1df0",
+     "chunk_id": "9852bbfecd57a4b4268379c1f0501926591a5a29e8b93efd250c67d6213fc93b",
+     "score": 0.0206
+    },
+    {
+     "rank": 13,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "cd909aa574256a8800ee7a8806994280a7e95fd4db4a590541e8c39a3fa2d0d6",
+     "score": 0.0202
+    },
+    {
+     "rank": 14,
+     "doc_id": "10c1605fb47f4fab82c481d6485e5ff4",
+     "chunk_id": "da590f5adc36619e71a7a0c3bd5caf7a2000b904d3f503082b63b1b06ad98f7f",
+     "score": 0.0192
+    },
+    {
+     "rank": 15,
+     "doc_id": "568eae272680415d887c072b944b1df0",
+     "chunk_id": "a23326854ee8e9e61502907201d2558130296e0ac31e535efbf971c58235c8ae",
+     "score": 0.0183
+    },
+    {
+     "rank": 16,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "acb515fabe7509a61e3f1c00ee9c854af699713b9114c0c70c82614c638665b6",
+     "score": 0.0174
+    },
+    {
+     "rank": 17,
+     "doc_id": "568eae272680415d887c072b944b1df0",
+     "chunk_id": "b29c6a6526f9819315634d154c1944f8e2982374b5c25211d225ec78a8f82190",
+     "score": 0.0172
+    },
+    {
+     "rank": 18,
+     "doc_id": "6eb2fc28a6b943f88505f10b07cc2f0d",
+     "chunk_id": "70c53a865d8dfec44a0d9fef10e2ede04b4afbec09c9615cd2758fe4f6a47f58",
+     "score": 0.0156
+    },
+    {
+     "rank": 19,
+     "doc_id": "6eb2fc28a6b943f88505f10b07cc2f0d",
+     "chunk_id": "ce6ac584c9499d9f70af978c019c1baffe37b24304203acff44929123dcc2c08",
+     "score": 0.0156
+    },
+    {
+     "rank": 20,
+     "doc_id": "6eb2fc28a6b943f88505f10b07cc2f0d",
+     "chunk_id": "8908fac97ecf0b4c5f4ada512f754b27bb65714359d7f1a34b0ddd2fd2a7991f",
+     "score": 0.0154
+    }
+   ],
+   "latency_s": 76.09
+  },
+  {
+   "query": "惯性约束聚变与聚变反应监测、混合堆设计文献",
+   "rewrite": "惯性约束聚变 聚变反应监测 混合堆设计 文献",
+   "gold_doc_ids": [
+    "005295c12c544da796a7e069d5c07afd",
+    "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+    "424540ac7bf840478ccae7fee7cd2f59",
+    "809c28f9ff70434da4d24ddbf4ef4b32"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "a945518229a9f85c1dff863c05000b72467e9ec20f87fe4180fa32ffc51e944e",
+     "score": 0.0325
+    },
+    {
+     "rank": 2,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "16a5a8bb96a73761bce9cf9230fd144cf69967902dda0ddf05082e91e124c23b",
+     "score": 0.0298
+    },
+    {
+     "rank": 3,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "d353697931348807496f2495e7a2bde93d67edfee950215429c85a7d4f1374ba",
+     "score": 0.0288
+    },
+    {
+     "rank": 4,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "6977f40cc248966adec5c8cb86b6afd6769cff2b4cfc36a8d4f5bf9838c92249",
+     "score": 0.0283
+    },
+    {
+     "rank": 5,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "4c547597794440e9dc1509accadb65b65ffb62b0452733a28c5df97108991e9f",
+     "score": 0.0279
+    },
+    {
+     "rank": 6,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "69f8e5fd1341c037bd1e5dbc96d921c476b6f29cf527ed64f51f3a698f9963ce",
+     "score": 0.0274
+    },
+    {
+     "rank": 7,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "f194c5817491a084baf9c8189ca42d43b14e362156f525b59cdd1b05f8d3a737",
+     "score": 0.0273
+    },
+    {
+     "rank": 8,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "c0ceb9834d68fddcdc3e93dcb60534f0c7cfd3261a1eed83adb2dd1802348dbd",
+     "score": 0.027
+    },
+    {
+     "rank": 9,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "183603b7207263a078f967a44bee07226be5ef483a0926ac20c025efe4f721cf",
+     "score": 0.0267
+    },
+    {
+     "rank": 10,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "1d1ea13fcc03b5ac3ab6dd5c142c63be8fafb46cf38b78e757ab1ef79a73f054",
+     "score": 0.0262
+    },
+    {
+     "rank": 11,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "3a84f3fabf85b61adcec769d8a1e328ab153ce71137339ade1e45e847cbef2d9",
+     "score": 0.0261
+    },
+    {
+     "rank": 12,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "c469794867fa6575129b76c16f5717265d2e1e0e2ef1e7e8c9c177acf18342c7",
+     "score": 0.026
+    },
+    {
+     "rank": 13,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "044d1aafa092c3f61c11c506fcd819161afeb79a68367854a776a9cfbebeb358",
+     "score": 0.026
+    },
+    {
+     "rank": 14,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "f3444c54cd4ebbd7b739a6dbd4feace17873642f02e291e0dcd7806f726ca560",
+     "score": 0.0254
+    },
+    {
+     "rank": 15,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "9e75bd2a75010f50873975d15826aec69f20628d5d47b1ab75afdf5d8c713d1b",
+     "score": 0.0249
+    },
+    {
+     "rank": 16,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "b43cd9adf48f9c9e24ecbbfddf6156d4e9e61f4547a4a2f533b8e3006efa956a",
+     "score": 0.0248
+    },
+    {
+     "rank": 17,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "e75061e339d4fe124ba8cd549e604e98eae55593dcee5cb1057aae333cc0cc2b",
+     "score": 0.0247
+    },
+    {
+     "rank": 18,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "77e0ea48c130e4d5379bd11345c6f355cd9f7d90e2078ed5ba8530c140409cb4",
+     "score": 0.0245
+    },
+    {
+     "rank": 19,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "0d9370b026c640e947edf4f1d94cbddf5349f023d773277cad6fdc6b818ae24a",
+     "score": 0.0243
+    },
+    {
+     "rank": 20,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "85e1b8c91df631c7051c0a1a5969a707c109b10a8f31f5e7fba01f094e3fd9c0",
+     "score": 0.0237
+    }
+   ],
+   "latency_s": 93.76
+  },
+  {
+   "query": "辐射测量中如何绘制校准曲线并优化探测器的响应特性",
+   "rewrite": "辐射测量 校准曲线 绘制 优化 探测器 响应特性",
+   "gold_doc_ids": [
+    "47453f82116744379261400f49790e2c",
+    "9419013574fe4580ab17b53f49cd3070"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "e092cee3a23df89cac5f6677ff0515472da7000e744e9a0521b41207bc3657e0",
+     "score": 0.0238
+    },
+    {
+     "rank": 2,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "fb8c6db94f5891f1dbc9110f83380fef3d4100d70fa84146c1f97874bdc6d1b1",
+     "score": 0.018
+    },
+    {
+     "rank": 3,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "7e93827efd39603b3ce71880918b05e7941d02e082a83144cb7412c5f02291d6",
+     "score": 0.0175
+    },
+    {
+     "rank": 4,
+     "doc_id": "5afec62371f746b8a6f44a1c118a9975",
+     "chunk_id": "50e79a6200e7b3976ab450222d814f9774f2ebb92f1c9bd2a02c357a2ec56f6a",
+     "score": 0.0167
+    },
+    {
+     "rank": 5,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "e2a54492f3141db1c38c5c46098f4bdf786392279d42e6509cb01bdf4ae9ba3a",
+     "score": 0.0164
+    },
+    {
+     "rank": 6,
+     "doc_id": "76ebf8dcd6de4c50bc85db5f2d1add5b",
+     "chunk_id": "a983222c9ea34cfdcc1f9ed1f375f4bd100f514942879376f1f937673a3a5957",
+     "score": 0.0164
+    },
+    {
+     "rank": 7,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "b9199e0438dc740c689bf09901b398308d572947f116755298f4137a1eda15bf",
+     "score": 0.0161
+    },
+    {
+     "rank": 8,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "cec517ab7bc2b6f6260d4143d1c9790f4d42e0447c03da8f8faebe2427939545",
+     "score": 0.0161
+    },
+    {
+     "rank": 9,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "5b61a5e091030a5877dba61a128d1b17983006f1d07a5f24097bb5bf1e2da85f",
+     "score": 0.016
+    },
+    {
+     "rank": 10,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "5edf918a96f6fb83ffe97d22b7003965b9138a0cb743d187c61cbe90b361ba31",
+     "score": 0.0159
+    },
+    {
+     "rank": 11,
+     "doc_id": "4602f9b7045647b89c5ab153ff74f5eb",
+     "chunk_id": "5f0d88de47a392746ff22eeac953fa957abc7b7f957c4b18dc00226a9cb45019",
+     "score": 0.0159
+    },
+    {
+     "rank": 12,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "40f4ab821927e22597473ad6c9520905e9241f20e5e4a44dee622a0fd92ef53c",
+     "score": 0.0156
+    },
+    {
+     "rank": 13,
+     "doc_id": "5afec62371f746b8a6f44a1c118a9975",
+     "chunk_id": "390328047d7e945712e27f5b8b0741abf702a387353b530944fcbf34390b4e4b",
+     "score": 0.0156
+    },
+    {
+     "rank": 14,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "5b9d9fd4fb3f73cc5888719f9966c6583670350d50fbd111be7a6ccc33044dc6",
+     "score": 0.0154
+    },
+    {
+     "rank": 15,
+     "doc_id": "dcf2ce862b2848dfa953033cfc437030",
+     "chunk_id": "8fb3587e56c02c790366d7f933013919215271d99c6872a837e3cd00db794cb8",
+     "score": 0.0154
+    },
+    {
+     "rank": 16,
+     "doc_id": "76ebf8dcd6de4c50bc85db5f2d1add5b",
+     "chunk_id": "2485b2043d5e58ec59305e33f83f5839b8112949c1d97a85f751a56fe048d562",
+     "score": 0.0152
+    },
+    {
+     "rank": 17,
+     "doc_id": "76ebf8dcd6de4c50bc85db5f2d1add5b",
+     "chunk_id": "a6430e508069a4090ebd41ce58ac94b938fd301246ccbbf5ebc565a422edcfba",
+     "score": 0.0152
+    },
+    {
+     "rank": 18,
+     "doc_id": "4602f9b7045647b89c5ab153ff74f5eb",
+     "chunk_id": "1e4aa35dc344713aec6141a307a422dc9a7b8cfac7f9e8e71fd73daaf9c5209f",
+     "score": 0.0152
+    },
+    {
+     "rank": 19,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "f0f631488c28930e65f863fed4a185c6c63acaeaf85018c433465eef8230b20a",
+     "score": 0.0149
+    },
+    {
+     "rank": 20,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "94ba09fad049cf64f41a7e88a2f75aa60431a14c199a8231542234736fce58ab",
+     "score": 0.0149
+    }
+   ],
+   "latency_s": 74.95
+  },
+  {
+   "query": "闪烁探测中正电子测量怎么配置准直器",
+   "rewrite": "闪烁探测 正电子测量 准直器 配置方法",
+   "gold_doc_ids": [
+    "10c1605fb47f4fab82c481d6485e5ff4",
+    "14791948f67e4038b1edf9387dcabdbf",
+    "64f835ed443d408481f4587a69c35b7b",
+    "6d38b0442cb942448e3c5b430f39880e",
+    "c630f6ecbc75455fa4dae9c79937fe1a",
+    "dcd0ef5b938443f98eb98407af1a5d8c"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "f414b4998003975089234031bb52d12a4f5d596a7797d48de1acd24a9c5c0ad6",
+     "score": 0.0299
+    },
+    {
+     "rank": 2,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "660e52ba350edc743ed9ef54c460fba4dd7bf464917ed6f0f08a4e10e62a84ef",
+     "score": 0.0289
+    },
+    {
+     "rank": 3,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "c6166542cbd880114bd47461ba3ce4ed1b3d41eb95ba01b543c79f6b3f6e059d",
+     "score": 0.0269
+    },
+    {
+     "rank": 4,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "1f7493bbf91e238d7a9d8083d5e2aa1e7de27609a53bb8721788c0d09169a5c4",
+     "score": 0.0238
+    },
+    {
+     "rank": 5,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "11801a2d5f5ce11793aba9cffe1d476cdc7aff8a07360a253abcb8d02c725c77",
+     "score": 0.0236
+    },
+    {
+     "rank": 6,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "592bfd2ab7a46f001a955496d0f1d57c3487cb999a697dd057854cd65bbbbab2",
+     "score": 0.0236
+    },
+    {
+     "rank": 7,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "981348006240a234b6a5572f642200137b0a7c513a56dcd3e6a293593f23d019",
+     "score": 0.0221
+    },
+    {
+     "rank": 8,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "bfd7aa7d8472caf417e3eba2d724ed1546d0b371e3eea3f110180506a8a1041c",
+     "score": 0.0221
+    },
+    {
+     "rank": 9,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "2bc1f679c866b1a0bba4d6323b98184a06a7c0d2840def155c453a513a3b9411",
+     "score": 0.0217
+    },
+    {
+     "rank": 10,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "85c59923ad7e27d42f589c68fcfa8a1da201ff1cf432aa5c33630ef8bfd72cb8",
+     "score": 0.0212
+    },
+    {
+     "rank": 11,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "50b9a69f59209329ff040c0ecd5a2d329c0f966d74cd0fc51a28b1eb434bca9d",
+     "score": 0.0211
+    },
+    {
+     "rank": 12,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "a6d0fdc93fdb9036337b5d79933647c4abdfa82cfdf7467a151d580d938a333a",
+     "score": 0.0208
+    },
+    {
+     "rank": 13,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "e54c6bfe2b20533720460075ad73778285bf1ee2a1b9c6176e162bcd5b491538",
+     "score": 0.0208
+    },
+    {
+     "rank": 14,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "af8915803b2818c60faed4aaba474755eab3ab1415d0d27eefffaf0c0a061dc8",
+     "score": 0.0204
+    },
+    {
+     "rank": 15,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "eb605a0ee069248082e05dbfb5d9b45b66b922b41c60c823edac0fca1a34d4c2",
+     "score": 0.0203
+    },
+    {
+     "rank": 16,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "e58eae2117b205626ca8d2e1fdfd323d40de73c27923f97584e6b3989e8be9a5",
+     "score": 0.0202
+    },
+    {
+     "rank": 17,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "7cc7168035ab536629572687600c56841bd78a0f4f19e1310ac92b524afd5264",
+     "score": 0.02
+    },
+    {
+     "rank": 18,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "f8ac3825b4112278d8daa0d61f72cd484a3468917906ddbfa0c34595d72c6ec0",
+     "score": 0.02
+    },
+    {
+     "rank": 19,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "577291604bf70358746e217f30387b4b05a375f3bea18891da5483415054dffd",
+     "score": 0.0197
+    },
+    {
+     "rank": 20,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "ab388ab920af7af286d86896f93aeb9385407a925683354cf294a9f4df9b58f1",
+     "score": 0.0196
+    }
+   ],
+   "latency_s": 74.95
+  },
+  {
+   "query": "正电子湮没寿命谱中偶然符合对活度测量结果影响大吗",
+   "rewrite": "正电子湮没寿命谱 偶然符合 活度测量结果 影响",
+   "gold_doc_ids": [
+    "abd25b05b1484bb0a9fd96d81f163059",
+    "c16b9ea334824962a0be7388be6ecf1b"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "76cd650228afba10e3089bb6a5dc47071a2669436071e57b502017e2a6497a91",
+     "score": 0.0309
+    },
+    {
+     "rank": 2,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "c5cc1fd638aa3a949ced6f5b97fed05303d5e430426743985bef8b54ef7eff0a",
+     "score": 0.0304
+    },
+    {
+     "rank": 3,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "9878884bfe8b878d8c1793865f2cdd17a346452c1a4538e45cbf577701df4403",
+     "score": 0.0299
+    },
+    {
+     "rank": 4,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "b5be65d7dd9e8834a3fd502e0d95d0d760d53bfa6a15a3309c5fb024dfddc1cb",
+     "score": 0.0289
+    },
+    {
+     "rank": 5,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "1f7493bbf91e238d7a9d8083d5e2aa1e7de27609a53bb8721788c0d09169a5c4",
+     "score": 0.0288
+    },
+    {
+     "rank": 6,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "008c185d9154e0e5a58a46e76541971bba6243eb5f485aacfede6783da3be566",
+     "score": 0.0287
+    },
+    {
+     "rank": 7,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "88a38ce15001a44e8d17b237985f7461cae4e2baa80b4a43d77a1a3f17c7ab14",
+     "score": 0.0284
+    },
+    {
+     "rank": 8,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "bb7db7f4964515d39e6a2c6a10aaf4d9bb78383d44855bc79a9b8658cf471fd9",
+     "score": 0.0272
+    },
+    {
+     "rank": 9,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "9b7ba38cb0912d3dfab5d5b3d0f8b9478a42c84f2b93fb6dded6379cebb657ea",
+     "score": 0.0271
+    },
+    {
+     "rank": 10,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "f952b69523381f1680aa6730addffa636ddc2f272fe01edcbce3491692d6d66a",
+     "score": 0.0269
+    },
+    {
+     "rank": 11,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "9d864fb824832a3af04deae1f0e25451217abdf2511df3e4ca32b6c8f9555742",
+     "score": 0.0269
+    },
+    {
+     "rank": 12,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "ec9afeb5a880dbec02f4b0358742e9a8a9f521a24b88011be7618b451ec6b474",
+     "score": 0.0268
+    },
+    {
+     "rank": 13,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "70e9a14789d40d13877bfd31c8b90be61c52d7f3ba326007d83da165f734e1ac",
+     "score": 0.0264
+    },
+    {
+     "rank": 14,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "a396eb56f14a988bb681366e8ee2c664de5f6e6783b450de9b116d7890bfd595",
+     "score": 0.0264
+    },
+    {
+     "rank": 15,
+     "doc_id": "c630f6ecbc75455fa4dae9c79937fe1a",
+     "chunk_id": "aba87501ff212ddd775f7935c54c74116a9bbfff77da35095836749238d623d4",
+     "score": 0.025
+    },
+    {
+     "rank": 16,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "dbabf736ea529a4648c32754414c8d5a8047ca08e62943620ea568e7d6ed3aa3",
+     "score": 0.0249
+    },
+    {
+     "rank": 17,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "ab388ab920af7af286d86896f93aeb9385407a925683354cf294a9f4df9b58f1",
+     "score": 0.0248
+    },
+    {
+     "rank": 18,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "45b0b5e9625bdd971be20c12664d443cec19e79ca529661a8a539e1b077875d9",
+     "score": 0.0248
+    },
+    {
+     "rank": 19,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "f825e1c590885d473774b0a3768803c35a7e645c7e587da16f3ffb9af400a553",
+     "score": 0.0246
+    },
+    {
+     "rank": 20,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "6a61eb2f7b33ae584bd3e47a0af2a22e28c9a25dacca12f3c48b7c5111e5f31f",
+     "score": 0.0245
+    }
+   ],
+   "latency_s": 82.78
+  },
+  {
+   "query": "辐射防护材料在X射线、中子与伽马辐射防护中的应用",
+   "rewrite": "辐射防护材料 X射线 X-ray 中子 伽马 gamma 辐射防护 应用",
+   "gold_doc_ids": [
+    "2bd04127007148f086ad2b7d2cd3dcce",
+    "2eb25eb829cb464795b07dcc9a576bb8",
+    "568eae272680415d887c072b944b1df0",
+    "5c566792b3d74dc8beb89a5dfdb8403d",
+    "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+    "d01137e831d44303bd1bb164f0b127de"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "5c566792b3d74dc8beb89a5dfdb8403d",
+     "chunk_id": "84be4cf5d75ce72349e6db852cc8818e4f921f6f150ece489b7e02be625b1e4a",
+     "score": 0.0313
+    },
+    {
+     "rank": 2,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "4556b3faf5a7f42d18a473bf86b62d93c462cc9c9a3e58cff07973b1e92c71dc",
+     "score": 0.0302
+    },
+    {
+     "rank": 3,
+     "doc_id": "2eb25eb829cb464795b07dcc9a576bb8",
+     "chunk_id": "37a679047309f86efe0184c75a02bfb14ee108c8e7262c8efc971b661002eb84",
+     "score": 0.0292
+    },
+    {
+     "rank": 4,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "fe6f5af54d2b8501567d3d9c650197725c813d79fd5deab660a4c19a06389160",
+     "score": 0.0282
+    },
+    {
+     "rank": 5,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "2dec61740729f337575fad34120352391b017c48191584d9547ba1c74e92d910",
+     "score": 0.0276
+    },
+    {
+     "rank": 6,
+     "doc_id": "5c566792b3d74dc8beb89a5dfdb8403d",
+     "chunk_id": "9c3b5363face57bb79619527da5affa2fddf37c79ef6b73c528010c4216b1337",
+     "score": 0.027
+    },
+    {
+     "rank": 7,
+     "doc_id": "2bd04127007148f086ad2b7d2cd3dcce",
+     "chunk_id": "54b8e2501cb3c2b11b197716089ca2f8085cb002a7581634269d9c92e89d110d",
+     "score": 0.0255
+    },
+    {
+     "rank": 8,
+     "doc_id": "2bd04127007148f086ad2b7d2cd3dcce",
+     "chunk_id": "0950c359a485ab741bc1ca123649ab1d437e62edcce9e76e12230a7e1884f4ce",
+     "score": 0.0253
+    },
+    {
+     "rank": 9,
+     "doc_id": "5c566792b3d74dc8beb89a5dfdb8403d",
+     "chunk_id": "450e863b7b0c6ed8b31ddbf5a9f16d12c1eee4bed768904c1cfbb651eaf36506",
+     "score": 0.025
+    },
+    {
+     "rank": 10,
+     "doc_id": "2eb25eb829cb464795b07dcc9a576bb8",
+     "chunk_id": "482fd93214108f4807471d2a72a7e7b94bdb30a16a348ae232c7dcfb6020ed42",
+     "score": 0.025
+    },
+    {
+     "rank": 11,
+     "doc_id": "2bd04127007148f086ad2b7d2cd3dcce",
+     "chunk_id": "ecb3cd9afef30c7f25ea087ecc31d2e8f475ff28b56f8ff61886c8e8dc36d244",
+     "score": 0.0249
+    },
+    {
+     "rank": 12,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "c43f7b2b18b5582e6339dfc8c13c0b92dc71fc2808b65f5da03957b396c3f78f",
+     "score": 0.0245
+    },
+    {
+     "rank": 13,
+     "doc_id": "5c566792b3d74dc8beb89a5dfdb8403d",
+     "chunk_id": "08ac450af094dbcdc15a9d54b6f25895dfc56084c0ad6cd3bf3e66a6e9e0c296",
+     "score": 0.0239
+    },
+    {
+     "rank": 14,
+     "doc_id": "2bd04127007148f086ad2b7d2cd3dcce",
+     "chunk_id": "3e4d8de8c8b3517bc07671fcea6324a5cde72747e91bf2abbdc307627058e7a2",
+     "score": 0.0229
+    },
+    {
+     "rank": 15,
+     "doc_id": "2bd04127007148f086ad2b7d2cd3dcce",
+     "chunk_id": "7203a2c5d650b59f8c4107d34eaca0e074b379e1aeec58597da5deb8c200e531",
+     "score": 0.0226
+    },
+    {
+     "rank": 16,
+     "doc_id": "2bd04127007148f086ad2b7d2cd3dcce",
+     "chunk_id": "1b153c8da13511a905dc2823e0a9c5e8442633f74771ffcc599983bf93ad64d3",
+     "score": 0.0226
+    },
+    {
+     "rank": 17,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "b841471b7922a1907c2a773e5325776b186d27d0a658270806c4bb2047ca21e4",
+     "score": 0.0217
+    },
+    {
+     "rank": 18,
+     "doc_id": "5c566792b3d74dc8beb89a5dfdb8403d",
+     "chunk_id": "9224c8be973ee8ea27efbe7cc98f3ba485c1e24789b6a6409ae4ac66689a6a0b",
+     "score": 0.0213
+    },
+    {
+     "rank": 19,
+     "doc_id": "005295c12c544da796a7e069d5c07afd",
+     "chunk_id": "ea157b2af29b474ef6f57d126cb880797918a69d6056654be0e3d9b789b05d73",
+     "score": 0.021
+    },
+    {
+     "rank": 20,
+     "doc_id": "5c566792b3d74dc8beb89a5dfdb8403d",
+     "chunk_id": "300462a341a608dead6c6ba101acce3d3d1011222dbe050c56269159413dd5a9",
+     "score": 0.0201
+    }
+   ],
+   "latency_s": 109.2
+  },
+  {
+   "query": "有哪些基于核素图的核素性质研究",
+   "rewrite": "基于核素图的核素性质研究",
+   "gold_doc_ids": [
+    "312f2954886f42c4acca8edc7fffe45b",
+    "51a80be59e3048ffbf9abb6b6a212eb6",
+    "5cf355f9dea949d38bf702f25e40f4a0",
+    "a44c09c26ed64a60a4ed1232caa461d9",
+    "a98c8fdd65ae49eeaa50e341701b3876",
+    "abd509a6eba846cbab0f2e2c02fac19f"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "2cb4bc338d79d9073a01b6ad601a7953c2bc2b273b972093615f5f7fda4356ce",
+     "score": 0.0264
+    },
+    {
+     "rank": 2,
+     "doc_id": "8f632c1832b24c5abccf3b4c40fdb32f",
+     "chunk_id": "a831c8ef7e8a7bf1ef8df12f8bdf651f14e1e12d43aae17a3ec9481ef93a862b",
+     "score": 0.0247
+    },
+    {
+     "rank": 3,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "f1e45c83bfda7061f55f61e3de4803ce98ff203f8a70b58c0c4ed4456c06777b",
+     "score": 0.021
+    },
+    {
+     "rank": 4,
+     "doc_id": "2dc6aea717814b18bc478839a506c2d9",
+     "chunk_id": "a3c78d3e3e139e313655fb0c988eddf6e7fc26df68513c41797c13cca65c3820",
+     "score": 0.0187
+    },
+    {
+     "rank": 5,
+     "doc_id": "8f632c1832b24c5abccf3b4c40fdb32f",
+     "chunk_id": "651d47dcad0b3db2b0f7195423aed8491b3c4a2be8dbb2b67fb6ea8532880843",
+     "score": 0.0172
+    },
+    {
+     "rank": 6,
+     "doc_id": "d0df529c2b794bdba3b5c63e49593301",
+     "chunk_id": "8986f93d556ce7967d08f5969f0d4e63a09e66523af4953a4c252478b259c721",
+     "score": 0.0164
+    },
+    {
+     "rank": 7,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "517abbb04f13693f1189b76e34af3d26b50dcdcc1c9c52567b6964a110c9d61b",
+     "score": 0.0164
+    },
+    {
+     "rank": 8,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "fb74095bf389e1bd6cba19aa40c2b226b193f467545e3ce12549c35993ec91bb",
+     "score": 0.0161
+    },
+    {
+     "rank": 9,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "e444cf04940a95cdefbd1c20de5eb609501dbb13a33a772d2152340f4a442999",
+     "score": 0.0161
+    },
+    {
+     "rank": 10,
+     "doc_id": "66be046e7e2d4ef6966258dc4d578740",
+     "chunk_id": "e13f5edc9d04870b9d75a1addd9e730208b259ad0d88dbc0e949ee34ca91fa3a",
+     "score": 0.0159
+    },
+    {
+     "rank": 11,
+     "doc_id": "81abd380b7fb4219beff1cf006b9bca8",
+     "chunk_id": "192f1a5c1c0aec38be5d52040272d23cbce396a5a1e699f8f1b167936042840b",
+     "score": 0.0159
+    },
+    {
+     "rank": 12,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "39d9b97b45d54a3624c8643c7eef4a7da609dadd43a0646f648a5d20f162fdfb",
+     "score": 0.0156
+    },
+    {
+     "rank": 13,
+     "doc_id": "4f67d908211b49ad983ff6c4f901c18d",
+     "chunk_id": "69bc6ac62a49c00ccdfa978b17ac094878fed4c6a5cfa2c262ceb123fb40e5ac",
+     "score": 0.0154
+    },
+    {
+     "rank": 14,
+     "doc_id": "abd509a6eba846cbab0f2e2c02fac19f",
+     "chunk_id": "d75a2a8eda93da7671077ecaa78963a918b4ef3a28146e01d590a625060bf8b2",
+     "score": 0.0154
+    },
+    {
+     "rank": 15,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "eafc6c8614161b902ec9e500f777bb08b3079cdb1f693b07963e8c414f27c44c",
+     "score": 0.0152
+    },
+    {
+     "rank": 16,
+     "doc_id": "51a80be59e3048ffbf9abb6b6a212eb6",
+     "chunk_id": "060cb0a85aa5f6871f64c318da77d96fe98e85f4c23e580826ec0e8d55f70f99",
+     "score": 0.0149
+    },
+    {
+     "rank": 17,
+     "doc_id": "8f632c1832b24c5abccf3b4c40fdb32f",
+     "chunk_id": "94aa461b7b93912c13e43c57f6d65d6f9216083aba1c03a29074180897e3c8c4",
+     "score": 0.0149
+    },
+    {
+     "rank": 18,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "f4a1f8b6c76dabe3057e15d546d6017f76e1a23409da8a000818d6c672e564b7",
+     "score": 0.0147
+    },
+    {
+     "rank": 19,
+     "doc_id": "cb5144d5ac38493abdec32b16ce9b822",
+     "chunk_id": "7536c5a287bc9fe551d82595cfac47e745c5a333cb9b23eceff70ab2f64e3ba7",
+     "score": 0.0145
+    },
+    {
+     "rank": 20,
+     "doc_id": "8f632c1832b24c5abccf3b4c40fdb32f",
+     "chunk_id": "5b2ab8c4644bae4436b0677228db6fa4ae8f31a30e41702d3d002fde7cf90a3e",
+     "score": 0.0145
+    }
+   ],
+   "latency_s": 75.57
+  },
+  {
+   "query": "高温核磁共振或氚相关实验中，用到 distillation 和 calibration 的文献有哪些？",
+   "rewrite": "(高温核磁共振 OR 氚) 实验 distillation calibration 文献",
+   "gold_doc_ids": [
+    "7cda267dbd8a483e84291ed96e6fca35",
+    "aeed1141c2c6406ba364ef326bcba1f6",
+    "d077aba29a1144daab6a902cf44639b0",
+    "d5b5f96e4a9340448504fd40d60b5879"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "888712d2ddeb5841079a963a7cb0b9fefd808d9c9ca0135ff04986fc8d27be44",
+     "score": 0.0301
+    },
+    {
+     "rank": 2,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "9f0d17d6df23d416c688e03599523f4acc0b3fa83127ef911d95c57f5ec06647",
+     "score": 0.0299
+    },
+    {
+     "rank": 3,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "7b7cba0bcd8ecaecb0ea6773654a1be2ea04ed3cc94e384ccb6c7d078a5d1e9b",
+     "score": 0.0298
+    },
+    {
+     "rank": 4,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "fa4aa1770f483fdecb36099c48a1e3d288c3b0f75a02aac9737ecf7b4a68cd13",
+     "score": 0.0297
+    },
+    {
+     "rank": 5,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "10370d90b2c9b7641d9d7827a00179570d88d2b121ac5c789b290fa8190815f4",
+     "score": 0.0292
+    },
+    {
+     "rank": 6,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "488e840e0611b41660f9cb0bc549cf74d907a08d5a49fc4ed72ec6c4b2183470",
+     "score": 0.0281
+    },
+    {
+     "rank": 7,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "64a753f54893e4ea2d4937dd168859e7146330ec137252959ef9eeefa19cec5a",
+     "score": 0.0279
+    },
+    {
+     "rank": 8,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "28e9250307dccde1a5e46d26701e854e875a4eb1b835bc77d0eafb98c580e03f",
+     "score": 0.0276
+    },
+    {
+     "rank": 9,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "0ad594e10cca2bca0b2cdf9e61dcf9bb6ddc05cdb49e379525d337cc89726afb",
+     "score": 0.0274
+    },
+    {
+     "rank": 10,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "5cc5eac5f40760c7f695b7a2866ca0657add410872ed23ea32ec684704d35339",
+     "score": 0.0273
+    },
+    {
+     "rank": 11,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "6a1137689dd325e51e9d0982ed94ed87efb3c3bc5411830648a5c576b8b5f4c9",
+     "score": 0.0267
+    },
+    {
+     "rank": 12,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "e5c3c305a3a9ba6659f9d153239932ec4da074bf0440c0f98663b8a9920762e2",
+     "score": 0.0266
+    },
+    {
+     "rank": 13,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "587df91db1f790d484256661bbc3c57ca84ae80c3e57f9338ee4e74ba0e3e95e",
+     "score": 0.0258
+    },
+    {
+     "rank": 14,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "84dd05aa8c214727bd08c1c2b3b0d66c16092eb73a057bd57f58cfb024d6458d",
+     "score": 0.0249
+    },
+    {
+     "rank": 15,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "3917de0f239b0a070496680d8d7f75aa28f212d0b12515274e6aea607937a1a5",
+     "score": 0.0241
+    },
+    {
+     "rank": 16,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "eec4ff703adab797041dcb322c86ff86dea499cc440e2d6df8f55d3f4b2d65c1",
+     "score": 0.0235
+    },
+    {
+     "rank": 17,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "2c0e2c85d7e6caa8c8b6ca0ddd26ee10cbdd7ee085abe38a2e17bed6e895a4dd",
+     "score": 0.0229
+    },
+    {
+     "rank": 18,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "1b78946dbab3d34fd6a798dcee1078f0fed4bdd428fe67556066ff80b8d27852",
+     "score": 0.0227
+    },
+    {
+     "rank": 19,
+     "doc_id": "aeed1141c2c6406ba364ef326bcba1f6",
+     "chunk_id": "e9a9de48d8a9ec4b75546ffea58c20bf4042c8dc3c4354a3956ae066768ed3f8",
+     "score": 0.0218
+    },
+    {
+     "rank": 20,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "3b4ae6495f5c090ad2b950a13fbf2a90b23e43adca81e7dcf003e3780b5e1f88",
+     "score": 0.0207
+    }
+   ],
+   "latency_s": 87.5
+  },
+  {
+   "query": "高纯锗冷指在废物桶γ扫描、活度测量和温度场模拟中的应用",
+   "rewrite": "高纯锗 冷指 废物桶 γ射线扫描 活度测量 温度场模拟 应用",
+   "gold_doc_ids": [
+    "19bde1d874b94c749c1022cdac320afb",
+    "2dc6aea717814b18bc478839a506c2d9",
+    "43ce5070387d4591a866ffd7a5558231",
+    "81abd380b7fb4219beff1cf006b9bca8",
+    "87a31bfd43ff4a59837fe8f72b2e744b",
+    "a7b3e22cb81d433b91076a79ba312b72"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "c40686d091b85308a85a1f96420a98c045e55d99d5b01dd5ef709287c890e433",
+     "score": 0.0272
+    },
+    {
+     "rank": 2,
+     "doc_id": "2dc6aea717814b18bc478839a506c2d9",
+     "chunk_id": "3b4b190bc062a2f652a694e30bdd45d055d03b5f8c1321885b2b458cadc38ad9",
+     "score": 0.0265
+    },
+    {
+     "rank": 3,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "9eaf94049c6feb1d5cb0806fb839f16571925c03d81907a1a5c818acddb3208e",
+     "score": 0.026
+    },
+    {
+     "rank": 4,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "a0b166cdba98bf64342ff8633461e745931f74534bf4a2d28bdbeeee32ae102e",
+     "score": 0.0257
+    },
+    {
+     "rank": 5,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "241437304827c207757130dd7b57c4947b87d1a6b5652067680f1c46ac09db4f",
+     "score": 0.0256
+    },
+    {
+     "rank": 6,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "9164dfe123b2e5a662148a683eba8feec3e6526e109edb916c2f87c3104bae05",
+     "score": 0.0252
+    },
+    {
+     "rank": 7,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "878de24635ed449d8114bbf1131da76fcdfc6321ed37a67e219e5b514149cde0",
+     "score": 0.0242
+    },
+    {
+     "rank": 8,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "9ec7f5a97e587edb3b671c74422341d2fe04018416fc56b40c4a9cda2830c1e0",
+     "score": 0.024
+    },
+    {
+     "rank": 9,
+     "doc_id": "81abd380b7fb4219beff1cf006b9bca8",
+     "chunk_id": "aa9a5b178d070ea6d3f4a99bca9d69a5354ed168d587a2081b5b60231788124b",
+     "score": 0.0239
+    },
+    {
+     "rank": 10,
+     "doc_id": "81abd380b7fb4219beff1cf006b9bca8",
+     "chunk_id": "d53c425a4d455b7679676a3095478c4a1e8e5b4e68b85614020dfcad5d1a8757",
+     "score": 0.0234
+    },
+    {
+     "rank": 11,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "767008ca769b2fcd7feaefb084356418dc797213dae492d3f92c00d0eca75a5d",
+     "score": 0.0234
+    },
+    {
+     "rank": 12,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "aad1670500e25f3a2b93efc4e049bb50129aa2f253351348d51c9223cd93cd34",
+     "score": 0.0233
+    },
+    {
+     "rank": 13,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "0b620426611017a22d5b6939ca6a1b5a33a5d7e6b28a10af8610cf0d6407c1eb",
+     "score": 0.0233
+    },
+    {
+     "rank": 14,
+     "doc_id": "81abd380b7fb4219beff1cf006b9bca8",
+     "chunk_id": "3a0a6798b57caea7aa6949b34b46e5d088266f8ad888575108339e14d7be4d26",
+     "score": 0.0227
+    },
+    {
+     "rank": 15,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "35003d7b38893b45c32f4d087eb38353ee2584ee4a26ae08005824adef4ef255",
+     "score": 0.0226
+    },
+    {
+     "rank": 16,
+     "doc_id": "81abd380b7fb4219beff1cf006b9bca8",
+     "chunk_id": "d7b826f658705ef953bf61ce4e93ecc7c41d5dad0b22b4020c4673c02935a9df",
+     "score": 0.0225
+    },
+    {
+     "rank": 17,
+     "doc_id": "fbf7d2eccb8a4acab9f334e0f15c210d",
+     "chunk_id": "c29fe970d549bf3011936d14d74be675c7946645d3a7698146b03b11bfc2fd4b",
+     "score": 0.0223
+    },
+    {
+     "rank": 18,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "a4c4810a785475b00e298272d8978cfe3f24c6dac28e79b63d474977486130b4",
+     "score": 0.0221
+    },
+    {
+     "rank": 19,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "a02b2f1dc188780b25dcea5202de8ec7e6d4097708a6a0a37a98ad25c01d9383",
+     "score": 0.0218
+    },
+    {
+     "rank": 20,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "c40a61a63e78fa979a0356c7842ce8946022cecc5ca7c893f9c2d581b55b46b6",
+     "score": 0.0216
+    }
+   ],
+   "latency_s": 94.02
+  },
+  {
+   "query": "核素γ谱分析中符合相加效应如何校正？",
+   "rewrite": "核素伽马（γ）谱分析 符合相加效应 校正",
+   "gold_doc_ids": [
+    "19bde1d874b94c749c1022cdac320afb",
+    "34da886ed5d74004a2f39fcc9e2a2ff9",
+    "65e41a8c461c4020913b0ee20933e37a",
+    "76ebf8dcd6de4c50bc85db5f2d1add5b",
+    "c2952e52266042cf8644a01ea9e53112"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "4e28c01097c731b22a56e60b5f941700a1f9c77de3b56b4022dcb5e3bf8ccad1",
+     "score": 0.0264
+    },
+    {
+     "rank": 2,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "85c63d65096c65dbc62588fc82950cb2e2f99f4e30f0b4d35142731d59665584",
+     "score": 0.026
+    },
+    {
+     "rank": 3,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "23fa79f30d2b24e8f9f4f9e89ed0c04ca48f9379bb6e86a54392a0169d13f047",
+     "score": 0.0228
+    },
+    {
+     "rank": 4,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "47886ff89013882a9a22b9bd80fa369698107e2b8f909ff00ebfaeaf7161f0c9",
+     "score": 0.0213
+    },
+    {
+     "rank": 5,
+     "doc_id": "87a31bfd43ff4a59837fe8f72b2e744b",
+     "chunk_id": "f3296eca305e8c3cf51fb70cc03154e6d53ddcc53a8fbb2597e25b223ba15dc0",
+     "score": 0.0212
+    },
+    {
+     "rank": 6,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "33d5526f06c51c502c88746cb9d67114a66f421277ebbc46d8de56b82dca2d0a",
+     "score": 0.0208
+    },
+    {
+     "rank": 7,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "657e242a2ccfb01d77618fb827b6711fac14597fa4e161f7d4a07b273981b52b",
+     "score": 0.0206
+    },
+    {
+     "rank": 8,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "f0ab27f2f085b7b92f92f882467222d3d84aba00b9d182c53811c3c5da3d6579",
+     "score": 0.0204
+    },
+    {
+     "rank": 9,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "2773e6f5f3520b4a88efd1bd4575b574100ba232e7aa53b4cda150bb26f5a9ff",
+     "score": 0.0196
+    },
+    {
+     "rank": 10,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "8b5d6dddcb0bf3a4af83957a97f94288c4ab982c6343adc598b170fa2a1e0c90",
+     "score": 0.0179
+    },
+    {
+     "rank": 11,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "c52cfe89700b6cd93318ed7c65510375dff6aa3612ba2cdb816909a1c29c4144",
+     "score": 0.0173
+    },
+    {
+     "rank": 12,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "0f5f553cefc474826d50e1c55e7e8b1242c8b50b34fca97d8e67ad824367b672",
+     "score": 0.0164
+    },
+    {
+     "rank": 13,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "6be7c0331fa7259964f04ad15928210ba6b81e84b0656be791d0705f8a5b7a8d",
+     "score": 0.0161
+    },
+    {
+     "rank": 14,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "8515c138c399dabfbabeb7ba287025e7b08d899acfc6145f4ee6c733d8a56ced",
+     "score": 0.0159
+    },
+    {
+     "rank": 15,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "2377108c27147e556d63bd1b42f0d684d9f245179f03a5cdbf92daf47504f807",
+     "score": 0.0156
+    },
+    {
+     "rank": 16,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "a675db2fd53dc826da1dcd3b3b12e0fc79a02f11c01194b836e4ed589e18a92c",
+     "score": 0.0156
+    },
+    {
+     "rank": 17,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "abdf4689e8e0b294f771bb7965b34c1411d13cdb24406977f5784d0ac9d89d73",
+     "score": 0.0154
+    },
+    {
+     "rank": 18,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "e3d0bc8ffd2167812f4440068e4c2a2908cb76156b65008c4cc0f8c6bfad5242",
+     "score": 0.0152
+    },
+    {
+     "rank": 19,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "7fb5bdad02878e5b46d5aceac999fd94f899a8adf96c52391c7af0c4c0601243",
+     "score": 0.0149
+    },
+    {
+     "rank": 20,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "d94c8400f94e539b18cfd5416d9bc42d35fc9afcd9cf4f153b86aef9635a96c1",
+     "score": 0.0149
+    }
+   ],
+   "latency_s": 86.96
+  },
+  {
+   "query": "跨阻放大器的噪声测量",
+   "rewrite": "跨阻放大器 噪声测量 Transimpedance Amplifier TIA Noise Measurement",
+   "gold_doc_ids": [
+    "2cc72bcbad214c11b44709816fca29b0",
+    "a36ed563f01a46efb47f6db24589a0d1"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "90e54ade672cddc3f1c9ccdeece9102520013b2ceca7cde3a7ef10600fc6ffa9",
+     "score": 0.032
+    },
+    {
+     "rank": 2,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "ae77baf56dd1122b93b1ca257bcb94023c6c541aa5c638e335501a0706195802",
+     "score": 0.0318
+    },
+    {
+     "rank": 3,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "c3cacbbb59dc758ce36a7c69117b16c28beded89b2b0fd36adf456e0776cc0f0",
+     "score": 0.0305
+    },
+    {
+     "rank": 4,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "70d57cc85b88db4fee1476f2795c56494b0212bd0a782ce2ba4b751228686b15",
+     "score": 0.0299
+    },
+    {
+     "rank": 5,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "041f305c88c80bf0ec40d32599e04ef30fc26c04ecf20129e94e6dee289f0880",
+     "score": 0.0293
+    },
+    {
+     "rank": 6,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "0c0dec1c05001db1559080e0f7029a69b4f851143c118eef906ae21f295a50ea",
+     "score": 0.0287
+    },
+    {
+     "rank": 7,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "21612b205753a9d8841c151ff9e451815022ab04f7090a6b5ddeb6df5340721c",
+     "score": 0.0278
+    },
+    {
+     "rank": 8,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "ea0c94432e4d780fa190833cfb69d4e0c1ab528147779c4081f32f069cd8ce43",
+     "score": 0.0274
+    },
+    {
+     "rank": 9,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "5ff9e3c911bddf2491e6a717bca0f85e8fa5ae59e7ba71f9c783d21f1a6e12f6",
+     "score": 0.027
+    },
+    {
+     "rank": 10,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "9ccd1861fa39bd68b95d6ab8588ae5f86c25fd7361aac1587b30a53baa1564db",
+     "score": 0.0267
+    },
+    {
+     "rank": 11,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "b6253c8a30d1b111d12e7b00b4151460d0107c658eff7aa32f416acf37eb7538",
+     "score": 0.026
+    },
+    {
+     "rank": 12,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "a157da57804800e86051a81217d34792eb4c773a3adf656c704f872f60623121",
+     "score": 0.0252
+    },
+    {
+     "rank": 13,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "ce13988e7c3f4db05f2b9577c99ae940eae59191fffcb122aacd2b733aedf937",
+     "score": 0.0251
+    },
+    {
+     "rank": 14,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "046f82ec387a9e7b54ca76419e50a8cd89ab6ee5644f4a08b68cf5d57034f2e8",
+     "score": 0.0232
+    },
+    {
+     "rank": 15,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "3418a101f8e7809a12961e589286d25a36324a719dff9a38f2cbb2fa2adb38a7",
+     "score": 0.0222
+    },
+    {
+     "rank": 16,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "346a4ac890f2ea4e86d139666fb21dbbb559ecf9b13776f6146974fbf6f3e9e3",
+     "score": 0.0218
+    },
+    {
+     "rank": 17,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "76501c1730b5f6ea48ab0af7ab42e1a154df3b41690b0e6188f8c19cc9f334ab",
+     "score": 0.0215
+    },
+    {
+     "rank": 18,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "e815257216e5ad419fcd647612d68a7f9cc45ffebc249f6f5d74367a7eddda44",
+     "score": 0.0212
+    },
+    {
+     "rank": 19,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "6409813173a841a6f6a24ce977619d6082d197a7e6e0f87a59601c88662c3c23",
+     "score": 0.0208
+    },
+    {
+     "rank": 20,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "b6486bf0c83cfc0c7b907b2b5d3a3348202dc01f552abe02b57f5a69cf9d6754",
+     "score": 0.0205
+    }
+   ],
+   "latency_s": 76.49
+  },
+  {
+   "query": "熔盐及镀层领域电沉积工艺应用研究",
+   "rewrite": "熔盐 镀层 电沉积 工艺 应用 研究",
+   "gold_doc_ids": [
+    "2250990ef3db4fa58aeae78d2b9b6c35",
+    "316be7d88b974ed1acbdf5e467e6f917",
+    "63c3739924d74f949e45b2e6035801e1",
+    "7551c20f6d1045d294fb2f2f671fdd2d"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "7551c20f6d1045d294fb2f2f671fdd2d",
+     "chunk_id": "7aaf18cefbec139d5bd460561fbec0631c9f9fe37b60365e79cc8b78f99692ef",
+     "score": 0.0315
+    },
+    {
+     "rank": 2,
+     "doc_id": "63c3739924d74f949e45b2e6035801e1",
+     "chunk_id": "a8b68affc3cabc4c95d38bee347d8ef2a190bc83c0d15084669f5e4e9719dd06",
+     "score": 0.0306
+    },
+    {
+     "rank": 3,
+     "doc_id": "7551c20f6d1045d294fb2f2f671fdd2d",
+     "chunk_id": "c42e9efba62d4758173a60528741308bf29340dc0b87b2e271cb6976546fe953",
+     "score": 0.0299
+    },
+    {
+     "rank": 4,
+     "doc_id": "7551c20f6d1045d294fb2f2f671fdd2d",
+     "chunk_id": "7b0e19b5745b966eee54205f9f8d7589e06d7907dc08fab96c79d880a3b2e4b1",
+     "score": 0.0273
+    },
+    {
+     "rank": 5,
+     "doc_id": "2250990ef3db4fa58aeae78d2b9b6c35",
+     "chunk_id": "c6a2be3c786fbf877d5873aff1972df2ed79cd1807fde065b4119d2c4451a464",
+     "score": 0.0263
+    },
+    {
+     "rank": 6,
+     "doc_id": "7551c20f6d1045d294fb2f2f671fdd2d",
+     "chunk_id": "0a65a3e6f2d76a97ac4356efb2f0b6bfcfd08f2609ba32dc37880aa350cfdd1d",
+     "score": 0.0252
+    },
+    {
+     "rank": 7,
+     "doc_id": "7551c20f6d1045d294fb2f2f671fdd2d",
+     "chunk_id": "a2b44721390faa44250c098f3cd7203d973236049c3e85a9fb2cd3ed622b6c97",
+     "score": 0.0251
+    },
+    {
+     "rank": 8,
+     "doc_id": "2250990ef3db4fa58aeae78d2b9b6c35",
+     "chunk_id": "36c896c947c3a4114b1d60a219797454a1b09cf95eab1f28f5c6a00ebd4de20f",
+     "score": 0.0249
+    },
+    {
+     "rank": 9,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "16365ac214c169565066f33526b1d4d664988e1ce2b4a4355ddfc6940207ce59",
+     "score": 0.0244
+    },
+    {
+     "rank": 10,
+     "doc_id": "2250990ef3db4fa58aeae78d2b9b6c35",
+     "chunk_id": "3584df278daa1f3c981a82942d364b9ea19295ce07eef4828e8115164844c324",
+     "score": 0.0237
+    },
+    {
+     "rank": 11,
+     "doc_id": "2250990ef3db4fa58aeae78d2b9b6c35",
+     "chunk_id": "e467d49404c8747025c7b1a73daf2624a56c4a5fe4fbccad9ecaee7a14d84984",
+     "score": 0.0233
+    },
+    {
+     "rank": 12,
+     "doc_id": "7551c20f6d1045d294fb2f2f671fdd2d",
+     "chunk_id": "3e4a383b1a3cf98958622dab36bf591cec4b19ad54fba3de49e750be80ca2b75",
+     "score": 0.0232
+    },
+    {
+     "rank": 13,
+     "doc_id": "7551c20f6d1045d294fb2f2f671fdd2d",
+     "chunk_id": "87a37ce24054590082fb7cf75024bc3f253509bfcc964ae5e69374c0d473a285",
+     "score": 0.0228
+    },
+    {
+     "rank": 14,
+     "doc_id": "63c3739924d74f949e45b2e6035801e1",
+     "chunk_id": "ded6b8221f2d5139cab0401677a1e755e7147be389551ce86f312fd3de103fb3",
+     "score": 0.0227
+    },
+    {
+     "rank": 15,
+     "doc_id": "63c3739924d74f949e45b2e6035801e1",
+     "chunk_id": "15d9c5e2a3aeafde2fc0d1444c5ff6770d86d478b39a21cf0062bd1af4bb0d0e",
+     "score": 0.0226
+    },
+    {
+     "rank": 16,
+     "doc_id": "e48daf1d88af44009b4cd8b869605323",
+     "chunk_id": "7e4d83d028bb21927397b57d72b22d1ce935effa77017c21474512e910f2a31f",
+     "score": 0.0215
+    },
+    {
+     "rank": 17,
+     "doc_id": "2250990ef3db4fa58aeae78d2b9b6c35",
+     "chunk_id": "ce960451300097b420e6823a1ab115a497b11bb799c07be5bf2776547d690eea",
+     "score": 0.0214
+    },
+    {
+     "rank": 18,
+     "doc_id": "2250990ef3db4fa58aeae78d2b9b6c35",
+     "chunk_id": "9d2c2018f9411c3f4faafec6c81bea937596b4ff919d889788806d3c75e18676",
+     "score": 0.0211
+    },
+    {
+     "rank": 19,
+     "doc_id": "2250990ef3db4fa58aeae78d2b9b6c35",
+     "chunk_id": "6aacf476d8ee92adde03c239bde34671733e811b6046abb00820d0786e06b5e7",
+     "score": 0.021
+    },
+    {
+     "rank": 20,
+     "doc_id": "63c3739924d74f949e45b2e6035801e1",
+     "chunk_id": "a5caa3e3fed1b5521e4eb9da3d584adee6aeb99de7817d280baf4d61db05a21b",
+     "score": 0.0206
+    }
+   ],
+   "latency_s": 80.18
+  },
+  {
+   "query": "同步辐射与结晶方法相关研究进展",
+   "rewrite": "同步辐射 结晶方法 研究进展",
+   "gold_doc_ids": [
+    "5d90d8af59a744728185b76ff7eb428d",
+    "6fb53b5f89cf40f7bd5ad680885b15f5",
+    "824098b2c1bf4ebaa5f70e4a83b920cb",
+    "91aeee772ac949bd9f49dd951fcb462e",
+    "b20b1327d1054520bf61a3718e9db964",
+    "d6be8637a7664012ad49fbb0fd24cbfa"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "2117cd33af43c465ea9f4aa93bf3e37f61b4cb0affa404977897f47012b56c43",
+     "score": 0.0325
+    },
+    {
+     "rank": 2,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "b698d313decde77cd0791bcc126965b8905af1ddf88f2c89b4a440c26006df0f",
+     "score": 0.0311
+    },
+    {
+     "rank": 3,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "e9798570452f5473285e541a4554c0e311f01af04e9f7f31bf3a1a81840d81de",
+     "score": 0.0282
+    },
+    {
+     "rank": 4,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "5ef6459d3bea78dde49738bfac68db6760777c94e6a40d2ea988d5e02c7673da",
+     "score": 0.0271
+    },
+    {
+     "rank": 5,
+     "doc_id": "a936ba1dbe8549279e71a061bc243bde",
+     "chunk_id": "e563fac6afe051d849f006ddc53d328e686b6562013be7ea70c77af618a31dcb",
+     "score": 0.0271
+    },
+    {
+     "rank": 6,
+     "doc_id": "a936ba1dbe8549279e71a061bc243bde",
+     "chunk_id": "36034f5a34a31f23071f7de9061f106fa4981ddd017f603ca3aff9c97c0ab946",
+     "score": 0.0247
+    },
+    {
+     "rank": 7,
+     "doc_id": "a936ba1dbe8549279e71a061bc243bde",
+     "chunk_id": "863e70f10d614131d98b75a5386a4327b081afcb4f9b66c1ba100c24c9a9f0da",
+     "score": 0.0246
+    },
+    {
+     "rank": 8,
+     "doc_id": "a936ba1dbe8549279e71a061bc243bde",
+     "chunk_id": "727942b2464c4ce9ef6584154e236a3c96f80d53711126e12b1326d0f8e0eaa1",
+     "score": 0.0245
+    },
+    {
+     "rank": 9,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "6ff6046be1812124b3725ac126d95967e213fa614e6fcf90626e63578b40c025",
+     "score": 0.0238
+    },
+    {
+     "rank": 10,
+     "doc_id": "a936ba1dbe8549279e71a061bc243bde",
+     "chunk_id": "c4d9ecccdc3816ec60e2d65f7439b2bbc9bc4683a938cef44b6a23730e6b0401",
+     "score": 0.023
+    },
+    {
+     "rank": 11,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "8f079f4ccc6a04b8925099ce625b30edc6a8ddf157046ac2b7e1ba2072b4ad89",
+     "score": 0.0227
+    },
+    {
+     "rank": 12,
+     "doc_id": "a936ba1dbe8549279e71a061bc243bde",
+     "chunk_id": "bbe0d67e725448c52964fc04baccec7b4e6d13f2403fe3e689bca8b15de3e8e4",
+     "score": 0.0226
+    },
+    {
+     "rank": 13,
+     "doc_id": "a936ba1dbe8549279e71a061bc243bde",
+     "chunk_id": "616475c054917d7f515c8377dae2283c3e32abaa7425f9f9daf58c82ca9810d6",
+     "score": 0.0224
+    },
+    {
+     "rank": 14,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "7677e55b75a936fbb2182088b891c53bf2e3dfd082bad7bd1c27e823a2e5fad5",
+     "score": 0.0219
+    },
+    {
+     "rank": 15,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "6764b6796d23b8eb0a5d2990a9d56f8618caba3b07d1b56eec0e9a095f77a978",
+     "score": 0.0219
+    },
+    {
+     "rank": 16,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "19216f60f429c9ab8f289712590279347237eeebec59c13b651e9a3e6a0e9825",
+     "score": 0.0215
+    },
+    {
+     "rank": 17,
+     "doc_id": "e00af04ab2484ec6aeb2f083e2a819fa",
+     "chunk_id": "867243e232eaac56d3a61f1dfc14208f2358db5f7cd2b3fb2265c06b8002fbf6",
+     "score": 0.0212
+    },
+    {
+     "rank": 18,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "157fa9df94d6b7002e9be764492ee9531322a9b57a33a2c2d486364463c774a4",
+     "score": 0.021
+    },
+    {
+     "rank": 19,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "a001e44d92a5ef151808d7e439fcd3708b473c518e9ebb1fd19d374038edef49",
+     "score": 0.021
+    },
+    {
+     "rank": 20,
+     "doc_id": "a936ba1dbe8549279e71a061bc243bde",
+     "chunk_id": "0daca9590b4ebb13abd760ae130945a3f96663385943d8c7a211e5765d891376",
+     "score": 0.0204
+    }
+   ],
+   "latency_s": 79.11
+  },
+  {
+   "query": "基于计数率的核材料富集度测量方法",
+   "rewrite": "基于计数率 核材料 富集度 测量方法",
+   "gold_doc_ids": [
+    "588151982ddc4b14a2f398dde7e6f20e",
+    "a407912c98fb421a9569cc0301a104af",
+    "ecebb255bc9a4dc4b55f36f20e2fe513"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "a80c207eb8d982a716eb26fae8740dccfd794ae36df5b79daf21e2136bc70c3a",
+     "score": 0.0301
+    },
+    {
+     "rank": 2,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "36cf3225b88a1e09b1631fec136d310e73ea2eb3d4e9d5cf27403d6a28fdefc9",
+     "score": 0.0298
+    },
+    {
+     "rank": 3,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "ac19d7df59103fead2adbbc648ef6e23ad66e603c58ae5f96ec1ec244ba09071",
+     "score": 0.0263
+    },
+    {
+     "rank": 4,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "d13c1a0a75b15cfb1a7fa3f16f2d654421ceaab9ec698fde2cd1ae2895d9969f",
+     "score": 0.0258
+    },
+    {
+     "rank": 5,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "888bd511f7e59c2202979a2e070413642a736ca8c12704ebf73adb52e8dac54d",
+     "score": 0.0236
+    },
+    {
+     "rank": 6,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "80c75c2277f04eb0f454f6c2e92e14ddabe8e98de83d5749065cd5f3c9150e92",
+     "score": 0.0235
+    },
+    {
+     "rank": 7,
+     "doc_id": "2dc6aea717814b18bc478839a506c2d9",
+     "chunk_id": "8bfe53dfa9e9bf38bd183fc667abc0aab8a4ca4cfc58070d93c7f2a1c5aebe2f",
+     "score": 0.0223
+    },
+    {
+     "rank": 8,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "c913bc47f79f58e352aabafc32eac83eda14c9791f0bcbcce931d071585c93ef",
+     "score": 0.0211
+    },
+    {
+     "rank": 9,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "951c8b003e0f8c10334f334a2fd819bf0b42d540cbe1a6069feb7e30d84f8cb6",
+     "score": 0.02
+    },
+    {
+     "rank": 10,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "839bb534310bdd29f0e2cfdd7f294be5a69300efe3b164fc4df5ba9690e1a9e7",
+     "score": 0.0191
+    },
+    {
+     "rank": 11,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "4ba25a1ed1031271657cce5bfe3fa80084b8f3f362fb4bd46b4bd8cd66ac65d4",
+     "score": 0.0185
+    },
+    {
+     "rank": 12,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "9f90b9e78baa121cd924fc3cd5e2f0f8b19cd8ee390effe7b3bb8f6dc9909af9",
+     "score": 0.0183
+    },
+    {
+     "rank": 13,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "9167dd9996d7ddb78ae4dcfb6ff27c393934976112c5c2d7e480dfb63b632787",
+     "score": 0.0183
+    },
+    {
+     "rank": 14,
+     "doc_id": "ecebb255bc9a4dc4b55f36f20e2fe513",
+     "chunk_id": "cd4dac88e96b81ac0cefdf67b24b018b13df23e8e92da63fb062df47914d6a0a",
+     "score": 0.0178
+    },
+    {
+     "rank": 15,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "1728b4f7df3e79eebc162adef86a4328be5fd547b8f88e8a9456b83480e90b44",
+     "score": 0.0175
+    },
+    {
+     "rank": 16,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "3ba1d1a66ea160e3922db3ed3f0904b91cdbfa8d4a985ea9ce491b985149c7a6",
+     "score": 0.0164
+    },
+    {
+     "rank": 17,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "a361aeb0ca3a0cd824a08ef1427815a6a25e39e0b463ee3a1f8255c06ef6fd3a",
+     "score": 0.0164
+    },
+    {
+     "rank": 18,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "eafc6c8614161b902ec9e500f777bb08b3079cdb1f693b07963e8c414f27c44c",
+     "score": 0.0161
+    },
+    {
+     "rank": 19,
+     "doc_id": "4f67d908211b49ad983ff6c4f901c18d",
+     "chunk_id": "69bc6ac62a49c00ccdfa978b17ac094878fed4c6a5cfa2c262ceb123fb40e5ac",
+     "score": 0.0154
+    },
+    {
+     "rank": 20,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "2a821140bef73df2af70f325d89f4a7badbd422f40cbe4aab668e882a9f32fd3",
+     "score": 0.0154
+    }
+   ],
+   "latency_s": 88.23
+  },
+  {
+   "query": "核物理 系统误差 不确定度 相关研究",
+   "rewrite": "核物理 系统误差 不确定度 相关研究",
+   "gold_doc_ids": [
+    "162c88cadc3044b3ac78fc8313885745",
+    "23f9b0d400444ec6ba603bc1b2dd82a9",
+    "2566433836aa4a27b4c986780cfb8ec7",
+    "7b78f01debd3446684289e32986d5529",
+    "d5b5f96e4a9340448504fd40d60b5879"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "1ebbc28edeef4845b7e5fe66577f7332",
+     "chunk_id": "2a29d981b7a0a3abd116c6fc632a36cc1812959d524189dfc5dcf07f290b456f",
+     "score": 0.028
+    },
+    {
+     "rank": 2,
+     "doc_id": "1ebbc28edeef4845b7e5fe66577f7332",
+     "chunk_id": "7043d7467e43dfb422f35d1716d9a559065fb428ac95fd17f1df2bf81c2602e1",
+     "score": 0.0252
+    },
+    {
+     "rank": 3,
+     "doc_id": "2566433836aa4a27b4c986780cfb8ec7",
+     "chunk_id": "0468f0a754b523b1a407eb1762fc4434a6aa68d04a4897120857fae6e0b7402a",
+     "score": 0.0198
+    },
+    {
+     "rank": 4,
+     "doc_id": "2566433836aa4a27b4c986780cfb8ec7",
+     "chunk_id": "a0818631c6e52414d9aeea1c7afa9815a75ac2df5617743e5bd345e2cba73e4c",
+     "score": 0.0198
+    },
+    {
+     "rank": 5,
+     "doc_id": "2566433836aa4a27b4c986780cfb8ec7",
+     "chunk_id": "63cbcef288359a14bfc8c24b34c6b67c98382e71f6b42863a3326b809cb17e27",
+     "score": 0.0184
+    },
+    {
+     "rank": 6,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "518260c6ffc5b5d621a834f5097b9c84dd2d1810ff5d0616e4b72208edeef524",
+     "score": 0.0164
+    },
+    {
+     "rank": 7,
+     "doc_id": "162c88cadc3044b3ac78fc8313885745",
+     "chunk_id": "fdc8ed6fdb85d19f7c50b86c5762d3ddd1b659816d7bee030d513863325911ba",
+     "score": 0.0164
+    },
+    {
+     "rank": 8,
+     "doc_id": "1ebbc28edeef4845b7e5fe66577f7332",
+     "chunk_id": "5443f152b64d2063d519e475435c86aa8ef64017d8ff3406eded0b28415d6de2",
+     "score": 0.0162
+    },
+    {
+     "rank": 9,
+     "doc_id": "162c88cadc3044b3ac78fc8313885745",
+     "chunk_id": "56d245cb5dcee28b2fe87578dcdb31c45bf0a7fa5d43918cd4dce3547811e1a3",
+     "score": 0.0161
+    },
+    {
+     "rank": 10,
+     "doc_id": "d0df529c2b794bdba3b5c63e49593301",
+     "chunk_id": "8986f93d556ce7967d08f5969f0d4e63a09e66523af4953a4c252478b259c721",
+     "score": 0.0159
+    },
+    {
+     "rank": 11,
+     "doc_id": "162c88cadc3044b3ac78fc8313885745",
+     "chunk_id": "3c6e66a0f19dc0d75b3a127e6546ccecf9e5b7c71e93fe2512b43d6fc5b6e02d",
+     "score": 0.0159
+    },
+    {
+     "rank": 12,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "98ac8edd74dd2f17ad8338a898c954655647c9f2a6637c9fcd121ee40400a5a5",
+     "score": 0.0156
+    },
+    {
+     "rank": 13,
+     "doc_id": "162c88cadc3044b3ac78fc8313885745",
+     "chunk_id": "ef2bce966e3cf6c521c8708b4a88a3d592c70d04c455ebd436820cdf03792f1e",
+     "score": 0.0156
+    },
+    {
+     "rank": 14,
+     "doc_id": "4cfd0af9efca40d28d365ea1d2b36e1a",
+     "chunk_id": "95f9c62fa7713408ace2ef4a1942e84e544162c2cc61d90896e8b97b474f1558",
+     "score": 0.0154
+    },
+    {
+     "rank": 15,
+     "doc_id": "2566433836aa4a27b4c986780cfb8ec7",
+     "chunk_id": "5eececb5d8abb8f0626e3c0a0ad3995d53a4472e95f6038e6746084f20e8eb18",
+     "score": 0.0152
+    },
+    {
+     "rank": 16,
+     "doc_id": "162c88cadc3044b3ac78fc8313885745",
+     "chunk_id": "149f33e3c6bc141340e9fb40c754f930c8c6d6409ef2e2296c9ccd957bce1421",
+     "score": 0.0152
+    },
+    {
+     "rank": 17,
+     "doc_id": "1ebbc28edeef4845b7e5fe66577f7332",
+     "chunk_id": "9cb76afb52b4e6235fefbae42a73e6cb9ae75b35909c254a3f45dd634e791011",
+     "score": 0.0151
+    },
+    {
+     "rank": 18,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "2cb4bc338d79d9073a01b6ad601a7953c2bc2b273b972093615f5f7fda4356ce",
+     "score": 0.015
+    },
+    {
+     "rank": 19,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "7ebee27c5939f0a0874924750d81f7b72b40dd8aca3b52676f9b5e0e4c35f841",
+     "score": 0.0149
+    },
+    {
+     "rank": 20,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "3ba1d1a66ea160e3922db3ed3f0904b91cdbfa8d4a985ea9ce491b985149c7a6",
+     "score": 0.0147
+    }
+   ],
+   "latency_s": 78.71
+  },
+  {
+   "query": "哪些模块电路使用结构钢材料？",
+   "rewrite": "哪些模块电路使用结构钢材料？ 模块 电路 结构钢 材料",
+   "gold_doc_ids": [
+    "02cfb6dd706545bfb014ed70fbc73ca7",
+    "25eac13d027d4a089014c4c735c21629"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "6aa934af637e46f686d09508922ed54f",
+     "chunk_id": "c094cf3a9977348cbd1f8f43c5d566dca9671e5b4821f4a4671b9181fddcbb3e",
+     "score": 0.0256
+    },
+    {
+     "rank": 2,
+     "doc_id": "6aa934af637e46f686d09508922ed54f",
+     "chunk_id": "4e5bced41f27180f1601f0bb4e71a70dcef5cfcc2905cc1e93ad1ca476661f8f",
+     "score": 0.019
+    },
+    {
+     "rank": 3,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "92fd12aecb91308b8fc7e20eb4280fdfebd759956bc2a34f0840b5d60e889253",
+     "score": 0.0168
+    },
+    {
+     "rank": 4,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "5711c968273a9ce8ad6a13c3a8c25f67e909b4539a3bc8a71bb5381de6b86442",
+     "score": 0.0164
+    },
+    {
+     "rank": 5,
+     "doc_id": "6aa934af637e46f686d09508922ed54f",
+     "chunk_id": "7e051203b3e87a179915f322dfa6ec1f08c999493ee6e4426b5c4746f7beff04",
+     "score": 0.0164
+    },
+    {
+     "rank": 6,
+     "doc_id": "8245c2cd4ed64139978856c92e658830",
+     "chunk_id": "c6aa44a85d410b943cacbb4cb8188f990010777eabaeaa5031d55c3f0d6244ae",
+     "score": 0.0162
+    },
+    {
+     "rank": 7,
+     "doc_id": "2f55e4c61f4641bdaaa06f88206ffe54",
+     "chunk_id": "cf5433db552c9a934c05942d90054ba7e21106eb3219a6fdc9f5966569b50d7c",
+     "score": 0.0161
+    },
+    {
+     "rank": 8,
+     "doc_id": "588151982ddc4b14a2f398dde7e6f20e",
+     "chunk_id": "efe1240470f74815adaba950b5305d6c0bd2236745ffd5c8fa0609eec391532b",
+     "score": 0.0161
+    },
+    {
+     "rank": 9,
+     "doc_id": "4f8072ee114749e88e0df6237f1e516b",
+     "chunk_id": "5fdde2a9931059554330b186de6daad8d21381a80e957cc0b36d48e117fbb110",
+     "score": 0.0159
+    },
+    {
+     "rank": 10,
+     "doc_id": "6aa934af637e46f686d09508922ed54f",
+     "chunk_id": "1e82b70f674feaa100a1234b1a451b1dc02dfbc239c0f70f889f8293900a71da",
+     "score": 0.0159
+    },
+    {
+     "rank": 11,
+     "doc_id": "2f55e4c61f4641bdaaa06f88206ffe54",
+     "chunk_id": "b4fc0b86ed4ad87b0652a8de94f9a4049555ccd3c6b7f19d6c437d402b199ad4",
+     "score": 0.0156
+    },
+    {
+     "rank": 12,
+     "doc_id": "25eac13d027d4a089014c4c735c21629",
+     "chunk_id": "65ca2f9c028f11151b3be183b35875bffd36c66ac38f3bdd61213295c4de5cf5",
+     "score": 0.0156
+    },
+    {
+     "rank": 13,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "e2623ffbd35b9f4f85890e2b99f5580409be6f4314fc40bbff4f62a6b0b15d0a",
+     "score": 0.0155
+    },
+    {
+     "rank": 14,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "a1513c86f2eb53029191b7e73437b8e94d3e89cedb5aa7eb3f2d44aa1b89a653",
+     "score": 0.0154
+    },
+    {
+     "rank": 15,
+     "doc_id": "43648c5ebaf143e687b5a3936a237f00",
+     "chunk_id": "011a4b0a2b7c071fc0e2ea9f0e20f537e41b54f16f1d08fc3c4068572be16a72",
+     "score": 0.0154
+    },
+    {
+     "rank": 16,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "a7abad1d7f4877fe97780ead1a63924d09d9d66dd336c5cabe37f42c7a7af999",
+     "score": 0.0152
+    },
+    {
+     "rank": 17,
+     "doc_id": "6aa934af637e46f686d09508922ed54f",
+     "chunk_id": "fec5a99d562b5a93c8a8574b1ae30cf59897e179962bc85ab25aa51dd5f11609",
+     "score": 0.0152
+    },
+    {
+     "rank": 18,
+     "doc_id": "2f55e4c61f4641bdaaa06f88206ffe54",
+     "chunk_id": "5c4b7b491be9595678e8718548b666b474a05f0d9db36cbe68e17435ef6402b7",
+     "score": 0.0149
+    },
+    {
+     "rank": 19,
+     "doc_id": "6aa934af637e46f686d09508922ed54f",
+     "chunk_id": "2d05fabb73db8b4d5b73f404ce9e376402b16adbdcdf6a3ea1c5cadac88d611c",
+     "score": 0.0149
+    },
+    {
+     "rank": 20,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "5d2f4539040ac5893789b799dc4b07d894a63b14a9d32cd745584b852cf45a67",
+     "score": 0.0147
+    }
+   ],
+   "latency_s": 79.31
+  },
+  {
+   "query": "synchrotron装置中air kerma与粒子通量的相关性",
+   "rewrite": "synchrotron 装置 air kerma 粒子通量 相关性",
+   "gold_doc_ids": [
+    "8399a79eee574d03a666b5e595a94c5c"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "2c4c6bae7b3b97beccafb3d51ff2ea5c9a587fa81a2e3b52a72ddec6e7f904b0",
+     "score": 0.0325
+    },
+    {
+     "rank": 2,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "ec8715022a424edcfc7129cfe362fa42d3f5743cac905acb0e85723890a23a92",
+     "score": 0.0306
+    },
+    {
+     "rank": 3,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "29c158fdd1ded3ee1dcce49da5e33c9096a3d477507ea82c1475cd365f6267d5",
+     "score": 0.0301
+    },
+    {
+     "rank": 4,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "c2d02dc04661199b41ea5ad730da7189ec81c8bd0ae94f22f478ee91b865774e",
+     "score": 0.0298
+    },
+    {
+     "rank": 5,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "dd1b3f76a3911d9207e4d7aa48f2dd5b9df2df88294b079b6d1f621b4a93dfb6",
+     "score": 0.0297
+    },
+    {
+     "rank": 6,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "6475abeb7114e5c1143a0b431416aa37b580ee849c529578e4f7e1cd6fae6500",
+     "score": 0.0296
+    },
+    {
+     "rank": 7,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "f3157ddd97fe2a2125ac524b1b3712d32c0238d4f9e53212f88068bd79774edb",
+     "score": 0.0283
+    },
+    {
+     "rank": 8,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "86686a7a97a33bfb17fe969e2d7243151653e0360bf921667db6a24d29e1ae44",
+     "score": 0.027
+    },
+    {
+     "rank": 9,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "2f24e5794c8ef46999019133e2360b32600adb7305a3bb6bdae62a6b94302e89",
+     "score": 0.0244
+    },
+    {
+     "rank": 10,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "a8be80627bd6055c6c7795d00494711f9d5cea448f1cf03f8d522fab0001bedf",
+     "score": 0.023
+    },
+    {
+     "rank": 11,
+     "doc_id": "77bca5b09b3c41b3aff15868a1f840d5",
+     "chunk_id": "078b2e6ac4d3107ea9ae716eed31bcbf72ed083248b0ba6c2903f695b0341c7d",
+     "score": 0.0217
+    },
+    {
+     "rank": 12,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "11cd7cbad099c64c0e91c746090b4d0ea0f969075229065e7162643fd14a07c0",
+     "score": 0.0212
+    },
+    {
+     "rank": 13,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "dd19975a1d1f67f59a57e67737b61e399974afcdc1b732f3a4d4f008a1f7612c",
+     "score": 0.0205
+    },
+    {
+     "rank": 14,
+     "doc_id": "77bca5b09b3c41b3aff15868a1f840d5",
+     "chunk_id": "7be334c48abd45aa3eed2a83bd1df53818cd369a22123c1d1dddb89f86416ce9",
+     "score": 0.02
+    },
+    {
+     "rank": 15,
+     "doc_id": "99370c67ecfe432ea2bde4b641529a10",
+     "chunk_id": "c7014421ff73d5fe452739046128eeebabd42074b97c64786a837398cd222f76",
+     "score": 0.0167
+    },
+    {
+     "rank": 16,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "f922d13e8d2beeadcd8bf916e9b545c7d089245136b0705c5bb0929f0bbd6698",
+     "score": 0.0162
+    },
+    {
+     "rank": 17,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "922d881e3512a82c71227b6d5517c022ff3c188c3ddd353f476a3c9c17297ac0",
+     "score": 0.0159
+    },
+    {
+     "rank": 18,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "7870a7132cfe71193f0ddb2792ceb066eeaaf37f98250cb4a1eb131444e003d7",
+     "score": 0.0159
+    },
+    {
+     "rank": 19,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "96b6a8c80c48ffcf319c5d0738ad66558dcb78b4ab595f1db8545e61e5cfff67",
+     "score": 0.0156
+    },
+    {
+     "rank": 20,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "7e888b12ad744c862d2bed2d6d2f00370c1d997b56f593148aad7657f2990af7",
+     "score": 0.0154
+    }
+   ],
+   "latency_s": 78.61
+  },
+  {
+   "query": "宇宙线缪子在成像与量能器模拟中的研究",
+   "rewrite": "宇宙线缪子 成像 量能器模拟 研究",
+   "gold_doc_ids": [
+    "10605bcd3ce44eec969e74f5c02fe1dd",
+    "414d5fb773e3449294b8e01aae26f24c",
+    "4ac14d6a9ab74fd689dc6ca11b231356",
+    "ccfaa292256c43c1b947c563214c00f7"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "414d5fb773e3449294b8e01aae26f24c",
+     "chunk_id": "39f355f256d24a55c8a750023eb1b07c2f7a050e65bf92e6ee62aef821f34cff",
+     "score": 0.0328
+    },
+    {
+     "rank": 2,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "bc7e7f5e794b896af3f998c766ddd842938bd1a13f52507545b5d3157ba5f495",
+     "score": 0.0299
+    },
+    {
+     "rank": 3,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "05ae269419e7f3db16e9d25039db9f2324c541e5b1d0c8060223ddd5147bd4a6",
+     "score": 0.0299
+    },
+    {
+     "rank": 4,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "27c27a1527f96fd363a055b7056cf0e3a385e9a6af9c9bb41970666e42332f49",
+     "score": 0.0278
+    },
+    {
+     "rank": 5,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "2e5aa597c0d3cdce395b0e55153f94978853575a663cc2ee5530e2e0b66833da",
+     "score": 0.0268
+    },
+    {
+     "rank": 6,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "0da882a32c58921e3c3535cbce8939ca0d4cecbb938fea886417b4389ec8a64b",
+     "score": 0.0265
+    },
+    {
+     "rank": 7,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "b69e57dbb58817b4ad2bad47bd074a5713b326cd73385f5c91db461954c192fc",
+     "score": 0.0265
+    },
+    {
+     "rank": 8,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "695958b100c24ee1b27faab3b7748ebb27921b2f90ba9facfddd17690178a622",
+     "score": 0.0263
+    },
+    {
+     "rank": 9,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "103e04ba1374da32cf8874f84f24955128e52684c9efe1b43653b78f132052d5",
+     "score": 0.0253
+    },
+    {
+     "rank": 10,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "b8d8722acc2be3f43d4a44cc2ab5aab119fc00a6955ec981363b0c408b9c29e8",
+     "score": 0.0251
+    },
+    {
+     "rank": 11,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "4a50eb69ea62d22e8707087e274e0611c50c833cf6dd599a9e7ced7007df86c6",
+     "score": 0.0249
+    },
+    {
+     "rank": 12,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "7eaf7529c86300926e1a1729b68058c19bb12a0c3318be0922bbd58250e5e17c",
+     "score": 0.0248
+    },
+    {
+     "rank": 13,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "e859a955c8a22529418420985df376dce15c5b5a7258c997ed581d3405a316d4",
+     "score": 0.0247
+    },
+    {
+     "rank": 14,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "2a23c9a893f09b3ea15c49f9263d8068f45fb460004a8f3403a2150bc2d6b2a2",
+     "score": 0.0243
+    },
+    {
+     "rank": 15,
+     "doc_id": "414d5fb773e3449294b8e01aae26f24c",
+     "chunk_id": "d1108894bc364b092f01f872a75aa5822be5b6a186436c55d5357e5f9a18cf2e",
+     "score": 0.0243
+    },
+    {
+     "rank": 16,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "c3c44109469abef0e63060b43d6b4bab27adfe577b1f5fd0cceba9fc71e93bc1",
+     "score": 0.0235
+    },
+    {
+     "rank": 17,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "88cfcaabbf249550223334100bd49b4948dd49256ea078fd91cefc30bb9ea030",
+     "score": 0.0235
+    },
+    {
+     "rank": 18,
+     "doc_id": "ccfaa292256c43c1b947c563214c00f7",
+     "chunk_id": "7717ec0f2d45256a8669890c68f896eae339cbd99b610ad6f1aead28947680d4",
+     "score": 0.023
+    },
+    {
+     "rank": 19,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "5082cb8f01f5738a20b873fb3645d87cfc18781d93c4987c879ba5e7985f64db",
+     "score": 0.023
+    },
+    {
+     "rank": 20,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "026785501ab95a38c3240efd85443e75bba454ee05a4958f348172b8e29c4a5f",
+     "score": 0.0212
+    }
+   ],
+   "latency_s": 95.08
+  },
+  {
+   "query": "辐射探测tdc相关电路模块",
+   "rewrite": "辐射探测 时间数字转换器（Time-to-Digital Converter, TDC）相关电路模块",
+   "gold_doc_ids": [
+    "5bcb837189c64b60a4dd2a1612dd9ac8",
+    "6d38b0442cb942448e3c5b430f39880e",
+    "be6e2372886247faad8f0a73d9111130",
+    "bf487f64352a464981e82773f8846721"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "cc488e09646e1d67c970ad5be5dc4dea42d45997e61fb9dd815b4aa2e75a0576",
+     "score": 0.0325
+    },
+    {
+     "rank": 2,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "9a6e7c0f0cf407929465c468e8cfb883576381f56fc78fb4bc2ea219fad83071",
+     "score": 0.0283
+    },
+    {
+     "rank": 3,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "7c6e18996ea00ddb332b467c67efad10ad2178ed5804487bb441c2559abf9e01",
+     "score": 0.0273
+    },
+    {
+     "rank": 4,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "d5c10fc1d1065f9cdf6cf27feb637ff92d92391722e98e33f2b4cc6a6b487dc0",
+     "score": 0.0267
+    },
+    {
+     "rank": 5,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "b029c09c3f4593738b1ad4ecc373f5c334e538253e715013fa89fb4007a069f0",
+     "score": 0.0262
+    },
+    {
+     "rank": 6,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "702908c7fbcd8a31ccdc80f94e9cb5ed6b972fb8cf3ac66ad370975065db9962",
+     "score": 0.0255
+    },
+    {
+     "rank": 7,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "4346b8ee2bbf0d15ff45282792e7eb246c352373191f0ad655617bf46421e464",
+     "score": 0.0241
+    },
+    {
+     "rank": 8,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "5e34299515480faaf4767ee04fca7ea51ef27cdba437a3df7558c0b876fc1bcb",
+     "score": 0.024
+    },
+    {
+     "rank": 9,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "6c6abce98c0f019b4c1d843660a9eeb2e25a86aa138ce0c1def6575fa8839322",
+     "score": 0.023
+    },
+    {
+     "rank": 10,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "c181e7183e1e7bd529cff004199a9bc74d4c2312c2ebed40e2c15d39771a5791",
+     "score": 0.0228
+    },
+    {
+     "rank": 11,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "292cb9be0bdb9456822cc3c99fbe3b8126bafb2d65ef61fbf5f8430002173afe",
+     "score": 0.0227
+    },
+    {
+     "rank": 12,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "b6ad736e56f1b9c9748e2d3176d8bcc2e16a725c6f3206813cc8706911c598d1",
+     "score": 0.0225
+    },
+    {
+     "rank": 13,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "028c02b6ab650d5bcaf54473332aa3f16b802c2aeb257ba738339218826f1839",
+     "score": 0.0224
+    },
+    {
+     "rank": 14,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "4bdfec1306b401030cdc2ec0b05a3e684b927abad96137d99450a39875d9c6e3",
+     "score": 0.022
+    },
+    {
+     "rank": 15,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "abd68addd35c792b127fbd2b5f40cce07169aeddc50fe0a7a549f5177437a22d",
+     "score": 0.0217
+    },
+    {
+     "rank": 16,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "3840c6d1c75daf5c0f94130f5176c780993ed7d3c0468451862b44cec78f072d",
+     "score": 0.0216
+    },
+    {
+     "rank": 17,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "b855dc5c9a0f313d0134fc0740152fc83c86e2ba89cf810a7965f5cc3b755b55",
+     "score": 0.0216
+    },
+    {
+     "rank": 18,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "cebd698c92ffadc43a33905f71f178278aa12eb4173794705cc1f0f478c53b92",
+     "score": 0.0215
+    },
+    {
+     "rank": 19,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "e092ceefeddc74a804be82a92ec59d48baaef9b8c99450d85eeb591fb611aa0f",
+     "score": 0.0206
+    },
+    {
+     "rank": 20,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "39ae18303ff12977a8ed1dd824428f868ceaa02afbad41c637a34c35789bf5e0",
+     "score": 0.0202
+    }
+   ],
+   "latency_s": 76.85
+  },
+  {
+   "query": "我想找提过同位素和同位素产额的核科技文献。",
+   "rewrite": "同位素 同位素产额 核科技文献",
+   "gold_doc_ids": [
+    "2ad958a5614a48c2b3ce39e216c426e9",
+    "7ea72b3ae8b947baa0e5475af227e80f"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "10ea6f35fae4f2e016a8371bb068e5586c335c612b159cb80bd6936888d315fc",
+     "score": 0.0323
+    },
+    {
+     "rank": 2,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "2fb03b4c5f6ae99360dc98966a4900af087c58f866110207c51914d4dd4270ba",
+     "score": 0.0318
+    },
+    {
+     "rank": 3,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "fc970aa8e76dfe4d44b2cac135121da331e674f69f1f2cdf5b00ce5d29137243",
+     "score": 0.031
+    },
+    {
+     "rank": 4,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "d066940ffde152fccc3a33066e2e5a637d6416464b8ce0a6d604ccb54900fbc3",
+     "score": 0.0301
+    },
+    {
+     "rank": 5,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "a9eaf3a3be2f30bc3ad0c0ccdfba0a0b644c955bf1c5c86abaa5191ce5605fd3",
+     "score": 0.0281
+    },
+    {
+     "rank": 6,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "8c1d5c99d95d65495d55865b220a5820b9c8f181a3e2fc18ff24d86a2f8caec7",
+     "score": 0.028
+    },
+    {
+     "rank": 7,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "2d991956fbb33e2658c994ce5e87714ee2a3b71c579302e37370367a4b266a58",
+     "score": 0.0279
+    },
+    {
+     "rank": 8,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "1ed50c9ac749246295ff13cba73e54e86342836ca3ecdb22af3a43e74aa37aa0",
+     "score": 0.0277
+    },
+    {
+     "rank": 9,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "0f8ab9b699161f737a5583c49366eeea698168c0e344254659498c5f52a85f23",
+     "score": 0.0275
+    },
+    {
+     "rank": 10,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "9aab0ccf567ab737e5921a0d2feb73ce0a575312920f8b8ae51be5b6f68f692b",
+     "score": 0.0272
+    },
+    {
+     "rank": 11,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "2b9767a94b8b1fea9ab18fb2d780ff19360ea67f65e8118e46107abc98d63221",
+     "score": 0.0269
+    },
+    {
+     "rank": 12,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "fd670a0a82207d5cef7084a6b9a0f361ff2e39d577ec4aa3aabf4564ae111ef9",
+     "score": 0.0267
+    },
+    {
+     "rank": 13,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "b234e507be1b94d7eeaa63ba00a8c2049be2c6526f11d9f7b8c83e1baa0030b7",
+     "score": 0.0267
+    },
+    {
+     "rank": 14,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "170c1e02fc6f9a14cfc13f0ca07cd16d442064c5149d2d791a79f9f68c121292",
+     "score": 0.0265
+    },
+    {
+     "rank": 15,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "f0b509a4b639452e8a8ad2e84b0a28832b87dc7c9b095fe8a7e55b17916e5f32",
+     "score": 0.0233
+    },
+    {
+     "rank": 16,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "2b3ca09958d850f5cc8d33cb5d7527381a85e1accff2e7fd0d6915bafdf29db0",
+     "score": 0.023
+    },
+    {
+     "rank": 17,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "2925b5164b491b3c982911f2cf346f02a6d1e40bc4bd069666f4dbafb069aa22",
+     "score": 0.0222
+    },
+    {
+     "rank": 18,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "ba68294a1e1b6a64c581a9047e02bd39d994142e4757a8e5efce3a385c9ae273",
+     "score": 0.0219
+    },
+    {
+     "rank": 19,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "d24d163211bdc051f5b862e9f2f0b8ea17fadcf5a8c9024fab7e51da3bf00a1a",
+     "score": 0.0209
+    },
+    {
+     "rank": 20,
+     "doc_id": "d0df529c2b794bdba3b5c63e49593301",
+     "chunk_id": "b3abb057dc76eeea6759a85892d01a8ae8ccade738b01e67f64bf597c89d1b82",
+     "score": 0.0201
+    }
+   ],
+   "latency_s": 78.83
+  },
+  {
+   "query": "前端电子学在读出热敏辐射探测元件时，硬件系统怎么设计？",
+   "rewrite": "前端电子学 热敏辐射探测元件 读出 硬件系统 设计",
+   "gold_doc_ids": [
+    "12d08ae87ba642f89b714bfad09031d7",
+    "3aa708726abd416eba8f9b6afc5be99a",
+    "3eec360fc7bc48d98d67205c98b80e28",
+    "4f8072ee114749e88e0df6237f1e516b",
+    "855174d0f49241179b5e87753f25e80d"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "3e90598ec46c37317a98adb3bc336f9b46484361c5de45a59a8c2642f9beffbb",
+     "score": 0.02
+    },
+    {
+     "rank": 2,
+     "doc_id": "f5ed787eb04f49a49e2546774adfd529",
+     "chunk_id": "343f7467828e9f6c4ab47b815afb1711f58809ded44bc8da8b9162c72d470787",
+     "score": 0.0198
+    },
+    {
+     "rank": 3,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "d61caa673420cb7f491aebf1da0b85c8d096f4664e05b1a0a0cf7e611635a935",
+     "score": 0.0178
+    },
+    {
+     "rank": 4,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "fb1042338cba635422d5637fec36bfaf21c0aa3875c528a16e3cfb4402beacca",
+     "score": 0.0164
+    },
+    {
+     "rank": 5,
+     "doc_id": "43648c5ebaf143e687b5a3936a237f00",
+     "chunk_id": "254853e2cae42c6dca12bb64d3bb5b176169d6a3f6e8357a09413f49958d8464",
+     "score": 0.0164
+    },
+    {
+     "rank": 6,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "ad5ff85332272ecdef30e32408335512a7d888cf94c749bb85dd883dd4447aaf",
+     "score": 0.0161
+    },
+    {
+     "rank": 7,
+     "doc_id": "079d82fbf30349a7904921e9ac50b50c",
+     "chunk_id": "5f840d215e8c562ffcd58665888cd31b2dcae3e4d4c91e65e92d37b9c150e621",
+     "score": 0.0161
+    },
+    {
+     "rank": 8,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "79ce0af5287c17743c4cff4a8cb487cfca94aebc0a8da6f6356c093b5cb0111e",
+     "score": 0.0159
+    },
+    {
+     "rank": 9,
+     "doc_id": "43648c5ebaf143e687b5a3936a237f00",
+     "chunk_id": "743b89c1636a852ad2e7259544bc799093448a6e5115cf0c49795779165c4a48",
+     "score": 0.0159
+    },
+    {
+     "rank": 10,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "c7ffa3065d37ee3126539baa745c0173f3b80039d0846379185d4223801276f4",
+     "score": 0.0156
+    },
+    {
+     "rank": 11,
+     "doc_id": "025f12021feb42c7b2368ae621b9825c",
+     "chunk_id": "4113939b3b1175249e0f710f34ebf1cedc7feab8e4e585d543c4c0c979f301e2",
+     "score": 0.0156
+    },
+    {
+     "rank": 12,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "14acab201877d9717cf817ecb8c2ed53e6886d251d4f7176f200f7fbfed89f46",
+     "score": 0.0154
+    },
+    {
+     "rank": 13,
+     "doc_id": "025f12021feb42c7b2368ae621b9825c",
+     "chunk_id": "cdaef2b4e401da76ddb50ab6ebb2be065cc5a71b678aeea4443d207f0fd0239c",
+     "score": 0.0154
+    },
+    {
+     "rank": 14,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "0fcc461fe5329822c308284f4e01ff060f27c79bab14a200ae3d155e933062f0",
+     "score": 0.0152
+    },
+    {
+     "rank": 15,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "85abd1fc4b44abc497b869c0e5b8048f8c1dc031f3f4bfe2c2963f7bb7df20b4",
+     "score": 0.0152
+    },
+    {
+     "rank": 16,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "552561384bf8d9accaf8328f55157147da94620d5e9ab5f9ec5e39bbe265889f",
+     "score": 0.0151
+    },
+    {
+     "rank": 17,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "23c5b28911398e92ee48b105af69b0f316d954a896b79b21aaad615e9fa2f063",
+     "score": 0.0149
+    },
+    {
+     "rank": 18,
+     "doc_id": "dc3419725b92499c9986a216a777795c",
+     "chunk_id": "24cb1f18cdeaa61fe1f29e36de9f965c4ad14f945c729fbb02740e51d9dcc426",
+     "score": 0.0149
+    },
+    {
+     "rank": 19,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "83498607eb09170594392e5731d9085d5024b49e42a7c96aeaab5a769de5a855",
+     "score": 0.0147
+    },
+    {
+     "rank": 20,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "0d6c813c692f4f14d7b8c484d71d5f5681cc17004e690308633912d5f43bdb7e",
+     "score": 0.0147
+    }
+   ],
+   "latency_s": 75.94
+  },
+  {
+   "query": "查用高压两段加速装置做低能核数据与核结构研究时分析不带电轻产物的文献",
+   "rewrite": "高压两段加速装置 低能核数据 核结构 不带电轻产物 文献",
+   "gold_doc_ids": [
+    "2b40ebc5fb394306890983020d20d129",
+    "3ae44748f26248509ac44494b7a3e386",
+    "ca1c7138787b4f389e76ce6bdf7291a2",
+    "ceca9573a2dc4cc78813de21b3702fc2",
+    "d0df529c2b794bdba3b5c63e49593301",
+    "ff3850f9a50a4ad7aca0575edef57120"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "9f5d7c8420a7eb9268cf9dcb2de2da2a85f52f69153dc74a993b2517cd04bc51",
+     "score": 0.0284
+    },
+    {
+     "rank": 2,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "1937fe940264a40e02c0a934cdb7e3939b69a7206dea770e1cbd328ba9dd5a19",
+     "score": 0.0284
+    },
+    {
+     "rank": 3,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "d4b9e234dacb1f2be92aeb7fdcdcb54df3556aecab6d9d27ccd6d2aec7625207",
+     "score": 0.0234
+    },
+    {
+     "rank": 4,
+     "doc_id": "ceca9573a2dc4cc78813de21b3702fc2",
+     "chunk_id": "a7c4b1e5817f62bc28e3ad11aa39d51cfca5281bd808b91afa01d4ddc875574e",
+     "score": 0.0232
+    },
+    {
+     "rank": 5,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "0edb411ee1f2d83a2af508bbc369515bb446fb2e61dcdc7520a88079f1667493",
+     "score": 0.0231
+    },
+    {
+     "rank": 6,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "a63e486989293a01cc8c0f4c0961c56c7e397a2bec23f8cd25f3f2b378a1d473",
+     "score": 0.0228
+    },
+    {
+     "rank": 7,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "859f07d6f5ebd82052173405c1f0e2d598c9b4a7a2cda84a35f8d222fa6ba436",
+     "score": 0.0226
+    },
+    {
+     "rank": 8,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "76c54d8e83fac016e1e608849dbe93b15500c7a7c9001bfd09400e7d2f628099",
+     "score": 0.0223
+    },
+    {
+     "rank": 9,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "bce7f5577c805f2e7db24af1b0127575f0ced1167e046cfe4c5b00c1bc7b44f4",
+     "score": 0.022
+    },
+    {
+     "rank": 10,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "2be5f4365e3028c41e46a6dd6ad2b3280c4a9d4a81bab9fbec22e0c4298fd019",
+     "score": 0.0218
+    },
+    {
+     "rank": 11,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "bb5af00b0d75862c4fb24d650537ef9b718cca90c4bc7417646aaa48efda4546",
+     "score": 0.0216
+    },
+    {
+     "rank": 12,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "e444cf04940a95cdefbd1c20de5eb609501dbb13a33a772d2152340f4a442999",
+     "score": 0.0212
+    },
+    {
+     "rank": 13,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "e3f18179f081722ff3b3af5d20c1f61cc6193f7f9ea59cb90a9d98de3b0024fc",
+     "score": 0.0208
+    },
+    {
+     "rank": 14,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "126dcac37f8a8337fa0ffa0a7ade025494f91524b14ba6bbbf33b775b8771c71",
+     "score": 0.0204
+    },
+    {
+     "rank": 15,
+     "doc_id": "ceca9573a2dc4cc78813de21b3702fc2",
+     "chunk_id": "3596d42c0e650b0ef74ca427bd4ddcbfea07bbc9e27bbb8e7eb689230f756885",
+     "score": 0.0203
+    },
+    {
+     "rank": 16,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "d094253754977bd537a454146b58d36b9970549bae573788852c69701d748678",
+     "score": 0.0198
+    },
+    {
+     "rank": 17,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "0dccb52588a9b2ba9da9354b108c1e53cad4263ce210e9394b99b70f95305337",
+     "score": 0.0193
+    },
+    {
+     "rank": 18,
+     "doc_id": "6dae33fe33e747ac9b67e2e6c509f9fc",
+     "chunk_id": "3958866d0f9fada1e5fa3ea9f29d7cb18667df4e9ccde0be98adfd39c6abc6db",
+     "score": 0.0185
+    },
+    {
+     "rank": 19,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "3b0640f0e7a9afdec63e686402fb02596b6a6b8e28791320e636bdb75424cde9",
+     "score": 0.0183
+    },
+    {
+     "rank": 20,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "f1e45c83bfda7061f55f61e3de4803ce98ff203f8a70b58c0c4ed4456c06777b",
+     "score": 0.0176
+    }
+   ],
+   "latency_s": 85.21
+  },
+  {
+   "query": "如何用铅室提高水体放射性在线监测装置的探测效率？",
+   "rewrite": "铅室 提高 水体放射性在线监测装置 探测效率",
+   "gold_doc_ids": [
+    "3deac94b6d2744989b78ab2cbfc500e0",
+    "cb5144d5ac38493abdec32b16ce9b822"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "fdf15288f667f626a6e9cca9c90118266a244ccaf9add93ff7a3f024bfbbb085",
+     "score": 0.0313
+    },
+    {
+     "rank": 2,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "4d0c626fff17bb9d393b29ecf5d83496695c68ee47680649b7a27d0ad88d242b",
+     "score": 0.031
+    },
+    {
+     "rank": 3,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "4651dc2ddb5d92ec49d61422e42563829a6ebceeb834d6bea40466537daeafe6",
+     "score": 0.0292
+    },
+    {
+     "rank": 4,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "cd701a79928dc38f4d7ca36e8ea40c63a426d78ac0aef73c93a5fd03cb0c4520",
+     "score": 0.0288
+    },
+    {
+     "rank": 5,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "513781e87cb438a75642c047a694e8947169d6321f9a265f6879e782c1432673",
+     "score": 0.0283
+    },
+    {
+     "rank": 6,
+     "doc_id": "cb5144d5ac38493abdec32b16ce9b822",
+     "chunk_id": "8941adfead59baa9f759a2e253486c4717cdb170e6a296f7e4eb3738128a2d77",
+     "score": 0.028
+    },
+    {
+     "rank": 7,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "f5771b3c140a35ef0797a8b1686f9f95571b4d4a427d42e083c86b002ded0c17",
+     "score": 0.0278
+    },
+    {
+     "rank": 8,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "8b64e8606cf958c976910da864c8a5ad54b9ed6f9cea82eb148f2c31108d600b",
+     "score": 0.0274
+    },
+    {
+     "rank": 9,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "a990bf6ba69f140eb6770f30235978c9b5f52ff6374bb8561dadb9aae61f4ee8",
+     "score": 0.0271
+    },
+    {
+     "rank": 10,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "b44e84048226bc2a2e387256f68acb0384e3fa26493daa25a8f79ee0fbe7f870",
+     "score": 0.0256
+    },
+    {
+     "rank": 11,
+     "doc_id": "cb5144d5ac38493abdec32b16ce9b822",
+     "chunk_id": "09b7f8195c36b40485c1869fb18691ed3395767e5f5a7dca4434538ce36e6f47",
+     "score": 0.0255
+    },
+    {
+     "rank": 12,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "886a0bf26f29a00a7019963b109ef3677efa7d0507f2963c2326011e9afd4fd7",
+     "score": 0.0253
+    },
+    {
+     "rank": 13,
+     "doc_id": "87a31bfd43ff4a59837fe8f72b2e744b",
+     "chunk_id": "cba900ed93f168d1dcbc41b7228ca971dc469cc86fee935d0e6bc16498983c7f",
+     "score": 0.0252
+    },
+    {
+     "rank": 14,
+     "doc_id": "cb5144d5ac38493abdec32b16ce9b822",
+     "chunk_id": "6a03f640897b00bb091149976e795bebd46e77fc24c55553643b54a222de5a78",
+     "score": 0.0245
+    },
+    {
+     "rank": 15,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "eb539be30a9239660e3512ecd432b8ce5b6f4d5a701eea36771e9374c017c721",
+     "score": 0.0244
+    },
+    {
+     "rank": 16,
+     "doc_id": "cb5144d5ac38493abdec32b16ce9b822",
+     "chunk_id": "64c8ee750905b9ea614ecaeb5a4b415515bae326fa42fb4f0cc1a1c63428a09b",
+     "score": 0.0244
+    },
+    {
+     "rank": 17,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "060f13bbf5552106e2bdad54b55aac2383b44a5f705a9a8c825bfaac1dd0d460",
+     "score": 0.0243
+    },
+    {
+     "rank": 18,
+     "doc_id": "87a31bfd43ff4a59837fe8f72b2e744b",
+     "chunk_id": "22bd613b15e712b2774e0cd8fe21761540df6ae5134b85311e9883cb79b2b455",
+     "score": 0.0241
+    },
+    {
+     "rank": 19,
+     "doc_id": "cb5144d5ac38493abdec32b16ce9b822",
+     "chunk_id": "2237c73142b8e27bdf66fccfd27055abd49b8a6758052fcb418cfde12265f232",
+     "score": 0.024
+    },
+    {
+     "rank": 20,
+     "doc_id": "cb5144d5ac38493abdec32b16ce9b822",
+     "chunk_id": "81f6a4e102a3ad0dc3b280b21fb4eaf3bf37e28632ad3724eba6d362968111f8",
+     "score": 0.0239
+    }
+   ],
+   "latency_s": 80.32
+  },
+  {
+   "query": "帮我查一下熔盐除杂里用冷指做定向凝固的文献。",
+   "rewrite": "熔盐 除杂 冷指 定向凝固",
+   "gold_doc_ids": [
+    "85e60ba5f04d498eb728e3aa37f19643",
+    "e48daf1d88af44009b4cd8b869605323"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "e93ac6a846f267961f101a14eadfffadff6516fb01094b16765d0075142cd970",
+     "score": 0.0311
+    },
+    {
+     "rank": 2,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "95781851c846b30d421936c12b9150a3107d5d6d826e2850aa3b759c4c3b94ec",
+     "score": 0.0292
+    },
+    {
+     "rank": 3,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "816428b569e15de7380159c5ab79b5f577b5d225cb07ef85320e75cb63d94fc0",
+     "score": 0.0291
+    },
+    {
+     "rank": 4,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "aec5bf775a00624e95485c770782b26ff5bc01996d3ec63ba6ae9ed278c735fd",
+     "score": 0.0289
+    },
+    {
+     "rank": 5,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "b700b44e037e77d6f72da646138a883cb8dbb1b06b044c7b1bd9fc677ceee25d",
+     "score": 0.0286
+    },
+    {
+     "rank": 6,
+     "doc_id": "e48daf1d88af44009b4cd8b869605323",
+     "chunk_id": "9614d051216ade6785b1b79719d90469cc6bdf67d5afc13bc5adc5103f4a6000",
+     "score": 0.0285
+    },
+    {
+     "rank": 7,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "2f65afba7608c044238f26c93f222635bb68b63e8a60c603eae12a0b2cb7e3cf",
+     "score": 0.0284
+    },
+    {
+     "rank": 8,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "b4e30553590f41775b309382d48f3b1c769347e81c0de7dd7f62627de30f3f05",
+     "score": 0.0283
+    },
+    {
+     "rank": 9,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "8bcb70ca6d686f2d2da52aa3523859e2d5588841546f3fa2a43887ab9665897a",
+     "score": 0.0282
+    },
+    {
+     "rank": 10,
+     "doc_id": "e48daf1d88af44009b4cd8b869605323",
+     "chunk_id": "2f7230e2878cf8d539946d129ad3e8c4083182c2a767378b6fe6e50e9d56cfdf",
+     "score": 0.0278
+    },
+    {
+     "rank": 11,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "3db723d00e3e488268bdaee450f40ebd24a349f952e658d3d7437775a7911849",
+     "score": 0.0276
+    },
+    {
+     "rank": 12,
+     "doc_id": "e48daf1d88af44009b4cd8b869605323",
+     "chunk_id": "7e4d83d028bb21927397b57d72b22d1ce935effa77017c21474512e910f2a31f",
+     "score": 0.0276
+    },
+    {
+     "rank": 13,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "516132176561e4b7a1e7b07cf0bbcfc34babab59712546d082cc48d5a790f358",
+     "score": 0.0273
+    },
+    {
+     "rank": 14,
+     "doc_id": "e48daf1d88af44009b4cd8b869605323",
+     "chunk_id": "48fdef2573248261ebf96fc9f29007639fe3ec09b9369948e37a8cade1211f6c",
+     "score": 0.0269
+    },
+    {
+     "rank": 15,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "09637a4a9846d533a5ed3b54b47fc0dbbed9312849dba2a51585ecfe23b87916",
+     "score": 0.0263
+    },
+    {
+     "rank": 16,
+     "doc_id": "e48daf1d88af44009b4cd8b869605323",
+     "chunk_id": "14f4b98e86e0f2d7671bf1b4f53ae2e3f5088e0fa04d2f999b6fccdfca13414d",
+     "score": 0.0254
+    },
+    {
+     "rank": 17,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "5368c08fa4aad402745bb10fd7b54a0ef0c188bb2d5fa845feb979c6dfba8644",
+     "score": 0.0253
+    },
+    {
+     "rank": 18,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "af650ec8d7bfe5053e9d1c4a7ea5108963f545b58decbfc04a5274b6e664f93c",
+     "score": 0.025
+    },
+    {
+     "rank": 19,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "68a85467b95f2730272d806d4d2c80c160b553335d174e484554036bc969da42",
+     "score": 0.0245
+    },
+    {
+     "rank": 20,
+     "doc_id": "e48daf1d88af44009b4cd8b869605323",
+     "chunk_id": "b4af3b2b6f86ce967a3e0dc98ec3acc35e2fdc55760b9159da4795d6d85e7427",
+     "score": 0.0242
+    }
+   ],
+   "latency_s": 78.71
+  },
+  {
+   "query": "查一下全相干光源分支线，环形光源到实验站之间磁输运通道的聚焦设计。",
+   "rewrite": "全相干光源 分支线 环形光源 实验站 磁输运通道 聚焦设计",
+   "gold_doc_ids": [
+    "c187b4913536424883be22b865af3bb2"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "208e553970f5be851555b0d1f64e08457868a233dcfc5b7cc47c3096c5f4053d",
+     "score": 0.0318
+    },
+    {
+     "rank": 2,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "e8d0082a6a21afcec4a63b25e873cf3b845ee87eb72d6f1c5e1cb5fb0e721c8a",
+     "score": 0.0317
+    },
+    {
+     "rank": 3,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "7fa4753a57516ea79439b851151c8cec5edf6e02edd2f915230bb036063a7491",
+     "score": 0.0313
+    },
+    {
+     "rank": 4,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "e35aedd0cd284a9e0ff8b6e3cc16862cc1e2ca92b539239ab5923563614efa28",
+     "score": 0.0305
+    },
+    {
+     "rank": 5,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "eb4c9fa537491079fb7b3640c5ee60bb0a924272f659bd8687abb1381dd34723",
+     "score": 0.0304
+    },
+    {
+     "rank": 6,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "42b9f87948a73f6f1b2031b549e090ef37ca0dc7e50018072dde92c0700b0d65",
+     "score": 0.0299
+    },
+    {
+     "rank": 7,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "a9af361744c5c0650b780edd2c4cd2b2e94a91869b60a314e50d89ca102b5270",
+     "score": 0.0296
+    },
+    {
+     "rank": 8,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "fff235712853bb25a015263c98887ef6678f8349627892e6fd5689d725af47cc",
+     "score": 0.0291
+    },
+    {
+     "rank": 9,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "5cafd1e91f6cd57e5103b2c8a98cb8511d566f8491dd04ac86578daf15d92856",
+     "score": 0.0288
+    },
+    {
+     "rank": 10,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "d2be73295b946f5af09fd364bf86629c469d8c74cada7b915ca6083e729b733c",
+     "score": 0.0288
+    },
+    {
+     "rank": 11,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "e8d9fbac2812e5ed8bc62b1e0e5989f78954acfd88ad74b09500ed6e6b6dbc79",
+     "score": 0.028
+    },
+    {
+     "rank": 12,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "d6e5bc49ff346117fe40228e03db32eb0782fa5f88361f84dc16388bea7b99ef",
+     "score": 0.028
+    },
+    {
+     "rank": 13,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "56bf0b952e54b19ad4bab081739a8b2977f70325072b259ab5ea7e8ace758a80",
+     "score": 0.0278
+    },
+    {
+     "rank": 14,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "97f5651a61e667e8a2ec92f1a24272cd3dd3ef38e87b8626876c6d64b837095d",
+     "score": 0.0277
+    },
+    {
+     "rank": 15,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "275c497dfbbec858290f038a9d0063cfdbdf2387438591320e357b98204d63b9",
+     "score": 0.0274
+    },
+    {
+     "rank": 16,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "c9cd1c8ca3eba7f604ea28bbb46b7095879fd5f1b832d921c9d0d33ad026ef1f",
+     "score": 0.027
+    },
+    {
+     "rank": 17,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "cc45240d74ddda853c762349f393273ea05bb42c3180c7c0618d7dbde8fafc08",
+     "score": 0.026
+    },
+    {
+     "rank": 18,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "3f643562226472e939a313ec35e3fae2e7a3c38fb9044ad1ca924cd8ba6f07ef",
+     "score": 0.0258
+    },
+    {
+     "rank": 19,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "034122eb4c42fe3ec9e00d7547c3c6bcea086e6b5f88c21e01c3c0dc7df546e6",
+     "score": 0.0253
+    },
+    {
+     "rank": 20,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "b4b9b1015da5dfb926314f3c7de55c1457708920062bdfec4ce89697654e013d",
+     "score": 0.0252
+    }
+   ],
+   "latency_s": 84.37
+  },
+  {
+   "query": "粒子探测里TDC怎么记录事件时间？有文献吗",
+   "rewrite": "粒子探测 TDC Time-to-Digital Converter 记录事件时间 文献",
+   "gold_doc_ids": [
+    "3ddfd77390ca49febadf828706a0197b",
+    "423619890ff247d084ea986ea7aea182",
+    "50b952cb4ef949bb93843a2dcc4e4a92",
+    "5bcb837189c64b60a4dd2a1612dd9ac8",
+    "be6e2372886247faad8f0a73d9111130",
+    "e4c713ee593a412c946c2a8c0c61cb3b"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "9a6e7c0f0cf407929465c468e8cfb883576381f56fc78fb4bc2ea219fad83071",
+     "score": 0.0318
+    },
+    {
+     "rank": 2,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "7c6e18996ea00ddb332b467c67efad10ad2178ed5804487bb441c2559abf9e01",
+     "score": 0.0317
+    },
+    {
+     "rank": 3,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "cc488e09646e1d67c970ad5be5dc4dea42d45997e61fb9dd815b4aa2e75a0576",
+     "score": 0.0303
+    },
+    {
+     "rank": 4,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "4346b8ee2bbf0d15ff45282792e7eb246c352373191f0ad655617bf46421e464",
+     "score": 0.0286
+    },
+    {
+     "rank": 5,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "5e34299515480faaf4767ee04fca7ea51ef27cdba437a3df7558c0b876fc1bcb",
+     "score": 0.0286
+    },
+    {
+     "rank": 6,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "702908c7fbcd8a31ccdc80f94e9cb5ed6b972fb8cf3ac66ad370975065db9962",
+     "score": 0.0282
+    },
+    {
+     "rank": 7,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "39ae18303ff12977a8ed1dd824428f868ceaa02afbad41c637a34c35789bf5e0",
+     "score": 0.0274
+    },
+    {
+     "rank": 8,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "292cb9be0bdb9456822cc3c99fbe3b8126bafb2d65ef61fbf5f8430002173afe",
+     "score": 0.0269
+    },
+    {
+     "rank": 9,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "028c02b6ab650d5bcaf54473332aa3f16b802c2aeb257ba738339218826f1839",
+     "score": 0.0267
+    },
+    {
+     "rank": 10,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "b029c09c3f4593738b1ad4ecc373f5c334e538253e715013fa89fb4007a069f0",
+     "score": 0.0267
+    },
+    {
+     "rank": 11,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "c181e7183e1e7bd529cff004199a9bc74d4c2312c2ebed40e2c15d39771a5791",
+     "score": 0.025
+    },
+    {
+     "rank": 12,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "6c6abce98c0f019b4c1d843660a9eeb2e25a86aa138ce0c1def6575fa8839322",
+     "score": 0.0249
+    },
+    {
+     "rank": 13,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "b6ad736e56f1b9c9748e2d3176d8bcc2e16a725c6f3206813cc8706911c598d1",
+     "score": 0.0235
+    },
+    {
+     "rank": 14,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "271aedd0a7541b3115376e827bdc432c539428cc2a479d56c59fd611f41f41da",
+     "score": 0.0235
+    },
+    {
+     "rank": 15,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "cebd698c92ffadc43a33905f71f178278aa12eb4173794705cc1f0f478c53b92",
+     "score": 0.0231
+    },
+    {
+     "rank": 16,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "b855dc5c9a0f313d0134fc0740152fc83c86e2ba89cf810a7965f5cc3b755b55",
+     "score": 0.0225
+    },
+    {
+     "rank": 17,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "f92af19884f70c1139a595dc77d1b910e8919a9be00d44c955d6984fdffb69b8",
+     "score": 0.0224
+    },
+    {
+     "rank": 18,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "4bdfec1306b401030cdc2ec0b05a3e684b927abad96137d99450a39875d9c6e3",
+     "score": 0.0222
+    },
+    {
+     "rank": 19,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "0d8e97418abafc067a3c240f35ca6a596e72311d087abb6c37a61bc938638f2a",
+     "score": 0.0222
+    },
+    {
+     "rank": 20,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "ff7adfea0a034080ac46719dd8bc804e009ab51127392af81e3a49d7a6db7735",
+     "score": 0.0218
+    }
+   ],
+   "latency_s": 80.64
+  },
+  {
+   "query": "中国锦屏地下实验室实验如何评估并扣除环境放射性干扰？",
+   "rewrite": "中国锦屏地下实验室 实验 评估 扣除 环境放射性干扰",
+   "gold_doc_ids": [
+    "1ebbc28edeef4845b7e5fe66577f7332",
+    "42224b1dff794910abf1292ffac2f8b9",
+    "6dae33fe33e747ac9b67e2e6c509f9fc",
+    "6dcc1107d98a46a8bbb416d079b6cd48",
+    "a7b64e5654e04564a1b57f0122d00a97"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "cd6a3f10e2b7f5c8c7b120e88fa24bc66c0a2de161c56a49b4773c070d48376d",
+     "score": 0.0323
+    },
+    {
+     "rank": 2,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "ce1dd49e76efe6a6a767329ebd44eaeb8a5f0d61fd6b4ba826a93ad08d56bc96",
+     "score": 0.0323
+    },
+    {
+     "rank": 3,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "e0205bc00fa44acc043db5026a43baca7c7188643127aa9be27da4d8739be8a3",
+     "score": 0.031
+    },
+    {
+     "rank": 4,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "ea75971c10a05caedd3d038ab18e394b1a55c13419c9c10040402dde9a0eee3c",
+     "score": 0.0294
+    },
+    {
+     "rank": 5,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "170e925a60d2593a6336212d13af36a95e43c773f73505ecb30b9a007fc73879",
+     "score": 0.0294
+    },
+    {
+     "rank": 6,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "10dfb56d1e210afabb10e4c5a5d06e46c011ce513792a69799996c7def396b2f",
+     "score": 0.029
+    },
+    {
+     "rank": 7,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "df552c6a77bda76ebb7a42d3ef9fd3bf37c25bb5db910bf45020a4ffd92222f0",
+     "score": 0.029
+    },
+    {
+     "rank": 8,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "505c81245771ff0af780c230ec98bd9dc5d5cca590491b7b198c6772dd90257e",
+     "score": 0.0288
+    },
+    {
+     "rank": 9,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "2efacf33f45cc8c5e22dfd2e6f4f21058c19362abb023839e3d9d00d6bd9af61",
+     "score": 0.0286
+    },
+    {
+     "rank": 10,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "f6cf3f0064213601ff599b32e7969e1ba5319fc7df7c4824c90b62a8959f827d",
+     "score": 0.0281
+    },
+    {
+     "rank": 11,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "c1c0a2409367e4f835a9adf41ff1e528b5939762c2b8efd83bc71cf4cd132122",
+     "score": 0.0279
+    },
+    {
+     "rank": 12,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "f07d8ec4d194e82cdc5916e1f09dd57bc16fe2d557597808fffd3e2500149d4e",
+     "score": 0.0278
+    },
+    {
+     "rank": 13,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "740f492d6fa272350a700b3921a2fa59f1f37e1aa3b08c6ef7d739a443d2cd84",
+     "score": 0.0273
+    },
+    {
+     "rank": 14,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "09bf003a0724d294022db217ea632351a7bc18b97cceffefd301992fd3b15770",
+     "score": 0.0269
+    },
+    {
+     "rank": 15,
+     "doc_id": "6dae33fe33e747ac9b67e2e6c509f9fc",
+     "chunk_id": "d3bf153768aa84500cb79f9cd111ad93ecc6718ac6cf01efb63cccd8839009a7",
+     "score": 0.0268
+    },
+    {
+     "rank": 16,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "ea7630d03fbfc9c893412c314b21dfe55242d5268a20636e92ba3e588fb1cad9",
+     "score": 0.0263
+    },
+    {
+     "rank": 17,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "c1a197ae571dd75535cdb0ef7d09f76b6b8686df2cbd1233700aa8d5eafc45c5",
+     "score": 0.0252
+    },
+    {
+     "rank": 18,
+     "doc_id": "a7b64e5654e04564a1b57f0122d00a97",
+     "chunk_id": "3947f80029859f8fb5e57e438afe1c98eec00c5aa21b2ae14374a73c5427b381",
+     "score": 0.025
+    },
+    {
+     "rank": 19,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "4c0f8850fd759fc1c0693415a33a456670b3eeb019a981a4ecaa879bbb5bddc9",
+     "score": 0.025
+    },
+    {
+     "rank": 20,
+     "doc_id": "a7b64e5654e04564a1b57f0122d00a97",
+     "chunk_id": "30239a2d31cfda41bd65ac09e75f16037f26a9a008a729693da3e9e97d862ff9",
+     "score": 0.0248
+    }
+   ],
+   "latency_s": 82.9
+  },
+  {
+   "query": "微振动测试评估时，燃料棒动力学分析与谐波展开怎样配合？",
+   "rewrite": "微振动测试 评估 燃料棒 动力学分析 谐波展开 配合",
+   "gold_doc_ids": [
+    "4a6fc896e84b4edfbfd5a70d556c0a93",
+    "a07e54c4ec804fe6a70c8828360490f3"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "8ff963489bdf1b0c0a42067eef0bba3f238ccdd741cafc3660ee368b374a5ab4",
+     "score": 0.0306
+    },
+    {
+     "rank": 2,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "b22d71f3d6c30ef96f61f3282622c3f81786804f97a10d461cc1f61f0eb4f4d3",
+     "score": 0.0306
+    },
+    {
+     "rank": 3,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "f31297afd4d7c441c2362d5b8a8171839fa99f3b6c3f3c548e8c9a4259a1556f",
+     "score": 0.0299
+    },
+    {
+     "rank": 4,
+     "doc_id": "4a6fc896e84b4edfbfd5a70d556c0a93",
+     "chunk_id": "47b11bee7e3fb6a246736f4ee06644aeab3073da1f1c8cd4de3027d50e53c409",
+     "score": 0.0287
+    },
+    {
+     "rank": 5,
+     "doc_id": "4a6fc896e84b4edfbfd5a70d556c0a93",
+     "chunk_id": "5a2cac60d65bff048d4e2f3bb64b432e3685e711d18a0618e1fdb6618a427532",
+     "score": 0.028
+    },
+    {
+     "rank": 6,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "498522794e862c5dc85e5f639b15a599bd63738f1a47bfda19c420b653aae119",
+     "score": 0.0278
+    },
+    {
+     "rank": 7,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "7241275bdd1064acc730b1a8217dcce2e8e3fe3e3dec250e9d1a511c5863a163",
+     "score": 0.0276
+    },
+    {
+     "rank": 8,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "126fc12904a37d4fa2303e267d1152894fbc21b2d109180f37e11277c3073747",
+     "score": 0.0264
+    },
+    {
+     "rank": 9,
+     "doc_id": "4a6fc896e84b4edfbfd5a70d556c0a93",
+     "chunk_id": "288cdfa1e22b2169a0f48857145f8317970e934b273ad97e9bbdaabea395ebe2",
+     "score": 0.026
+    },
+    {
+     "rank": 10,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "bebbce6c4070711b4732c4c9ef89ea92c7f95ce954bce46311190cc9bb1066d5",
+     "score": 0.0259
+    },
+    {
+     "rank": 11,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "05b28a0acba23db4e73eb567824cb9dbcbb8cd299fed592c37f762ff72881221",
+     "score": 0.0255
+    },
+    {
+     "rank": 12,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "b44457c56645d5e2c388f8c77d2dfe5a4798fac914293c98b897872a1839b989",
+     "score": 0.0255
+    },
+    {
+     "rank": 13,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "dffc28edda04ddf8b12e0639b79e128de9e883fb5772bfda2173175323ca0211",
+     "score": 0.0255
+    },
+    {
+     "rank": 14,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "2daf6937d90ff1aa7ced902e4d0fabde20b35bf438cde005fab1ac26a3cb7ec9",
+     "score": 0.0253
+    },
+    {
+     "rank": 15,
+     "doc_id": "4a6fc896e84b4edfbfd5a70d556c0a93",
+     "chunk_id": "bee51caf580cc7c3468f46341530bd144807d66f060510136a9be0d5005c966e",
+     "score": 0.0251
+    },
+    {
+     "rank": 16,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "e8488c835b42916a37abc6c786757b5865bdd0ab69b7dfae033a14285ebad9d3",
+     "score": 0.0249
+    },
+    {
+     "rank": 17,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "8f1df0dc859537fdb9f2a3372d519c083c710afcda08e34aebd2e6b7d4a831bc",
+     "score": 0.0248
+    },
+    {
+     "rank": 18,
+     "doc_id": "4a6fc896e84b4edfbfd5a70d556c0a93",
+     "chunk_id": "957e128c8f4438c935d75532f829923f18c28d2743c25a2e0535ed8eac85aa38",
+     "score": 0.0248
+    },
+    {
+     "rank": 19,
+     "doc_id": "4a6fc896e84b4edfbfd5a70d556c0a93",
+     "chunk_id": "ef1f388a2daed62e7aedbb839fd121f3c90f91e8fce4256da27f489f178adcf7",
+     "score": 0.0246
+    },
+    {
+     "rank": 20,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "75d1c71811873ea29e9d96641f6e469266c14c9527d7cebc12f15224bcbca379",
+     "score": 0.0246
+    }
+   ],
+   "latency_s": 77.16
+  },
+  {
+   "query": "有没有金刚石探测器做γ响应、中子通量或结构模拟，又提到探测器的文献？",
+   "rewrite": "金刚石探测器 γ响应 伽马响应 中子通量 结构模拟 探测器",
+   "gold_doc_ids": [
+    "089359ab1ee745a2a85c6ec3c7aafb9b",
+    "39e0d487cb244473b028443b1e247c46",
+    "8245c2cd4ed64139978856c92e658830",
+    "844d59d5f24e46a79bff5a4947853cdb",
+    "dcf2ce862b2848dfa953033cfc437030"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "110516842583f0200b3483c238d690f50bc0d2da0e941adcb3d5b525d159f5f5",
+     "score": 0.0325
+    },
+    {
+     "rank": 2,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "06602eba4983aa9feda4e13f6df5dc3a9c7c83f45fd679043c7d0cfdb28a0bfa",
+     "score": 0.031
+    },
+    {
+     "rank": 3,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "d593a8714320ce9d80bb514835be3c41de9b2a65a5784cacc1acea7d5f38bbb0",
+     "score": 0.0307
+    },
+    {
+     "rank": 4,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "d442b3a69d09e8ac5d5565e6182f0716a3db2f01700393c07feb6100a371af0d",
+     "score": 0.0293
+    },
+    {
+     "rank": 5,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "ee62b4fcfecf1b698edfbd866ac38cbbeba04265fc99aff146ec2e34cd76c2d5",
+     "score": 0.0292
+    },
+    {
+     "rank": 6,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "a91ba60045da49a33d2ebe2dfe0d5dd45620ab5c2adf28f02e7e1eb479e7d214",
+     "score": 0.029
+    },
+    {
+     "rank": 7,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "473158a9d50890c32c4a2a5023a46aa850efbcb6a9d86c65bc5540f20b4281f0",
+     "score": 0.0285
+    },
+    {
+     "rank": 8,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "20c72ff5bf88caa6ebe620a22406961ead5ca93d63baf10169470d00feda20ca",
+     "score": 0.0283
+    },
+    {
+     "rank": 9,
+     "doc_id": "844d59d5f24e46a79bff5a4947853cdb",
+     "chunk_id": "cd707c424aaf8383ac1bde0f1c3c7ea276871e56f11bf1d2f3373b220b70962c",
+     "score": 0.0272
+    },
+    {
+     "rank": 10,
+     "doc_id": "844d59d5f24e46a79bff5a4947853cdb",
+     "chunk_id": "9578ff41f32177a9fe13a1a4aed2f07e9fbc965964c3efbb66bc7487887b5bb1",
+     "score": 0.0272
+    },
+    {
+     "rank": 11,
+     "doc_id": "844d59d5f24e46a79bff5a4947853cdb",
+     "chunk_id": "533a60bd32cd06564d5da33d1c493daed9b0424dd35d56a1173dc0e02dedeacb",
+     "score": 0.0266
+    },
+    {
+     "rank": 12,
+     "doc_id": "844d59d5f24e46a79bff5a4947853cdb",
+     "chunk_id": "9b3a398d7c6b22030fdcb5a425c0bbc217238fc3a63465eb87fc1ac66c21bb1f",
+     "score": 0.0259
+    },
+    {
+     "rank": 13,
+     "doc_id": "dcf2ce862b2848dfa953033cfc437030",
+     "chunk_id": "675997ff259c6641b93284dce0e555dc13d66826665449fbb3918ab04bb6aeb5",
+     "score": 0.0257
+    },
+    {
+     "rank": 14,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "f21d58311f60fd5cf3a164d3e2a04a0d04654b6f2a880f49ac09b237bec7dbce",
+     "score": 0.0257
+    },
+    {
+     "rank": 15,
+     "doc_id": "844d59d5f24e46a79bff5a4947853cdb",
+     "chunk_id": "ea304fc32c8554f361229079352c95f56fc9ea20c11358409127f565b37a03e0",
+     "score": 0.0252
+    },
+    {
+     "rank": 16,
+     "doc_id": "844d59d5f24e46a79bff5a4947853cdb",
+     "chunk_id": "a3a7f08337f15abbf9dc542a770edf3958c48a2f54ae026acc3c2b897ed39a09",
+     "score": 0.0246
+    },
+    {
+     "rank": 17,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "4a858052ed71e4ded5270beddb28595511ba1eba55b2ee8f4c045cbd4ddc7aef",
+     "score": 0.0245
+    },
+    {
+     "rank": 18,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "ca84a6efc78c9c816952eb1582b33360daa48f1d5f6e28a8481beac7abc63463",
+     "score": 0.0235
+    },
+    {
+     "rank": 19,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "5c8c998bd8c18a87b852e33db7bbc51eef33695c684e99918aeb4093075ee100",
+     "score": 0.0234
+    },
+    {
+     "rank": 20,
+     "doc_id": "dcf2ce862b2848dfa953033cfc437030",
+     "chunk_id": "5f9478694f2e715db078d391b424515f604aa5c8d6c5f3aaf323f210d72b3bef",
+     "score": 0.0233
+    }
+   ],
+   "latency_s": 97.13
+  },
+  {
+   "query": "x-ray会诱发单粒子效应吗？",
+   "rewrite": "x-ray 会诱发 单粒子效应 Single Event Effect SEE 吗？",
+   "gold_doc_ids": [
+    "078a2f931b07443b9570a1634fe54375",
+    "43648c5ebaf143e687b5a3936a237f00",
+    "48b9a62f6eb5478f94e5721db30c564d",
+    "6690d83f50d54001a1cc8c0d98535dd5"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "6d5fce59482feb43ffe4f5b966a1689ad3142d32377937d3df1f1cbb149909b4",
+     "score": 0.0325
+    },
+    {
+     "rank": 2,
+     "doc_id": "43648c5ebaf143e687b5a3936a237f00",
+     "chunk_id": "0f379b3c3092e46ae9277ab8f8670311f94574d8fa59122795058260e209d8d5",
+     "score": 0.0307
+    },
+    {
+     "rank": 3,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "cf943528eb6b9f464131ddfa73f75596ddf5ed611e99464c3dbe7ae05c58457d",
+     "score": 0.0306
+    },
+    {
+     "rank": 4,
+     "doc_id": "43648c5ebaf143e687b5a3936a237f00",
+     "chunk_id": "c065c3fae10012241e948987af81fc404fa5c861fa4ed157b31c26672db702c0",
+     "score": 0.0285
+    },
+    {
+     "rank": 5,
+     "doc_id": "ab82c9d978db490db73a97701879f835",
+     "chunk_id": "3598508cafaa239602ebadb6d7518acf8fb4a2b98e13524812124fb69f2dc1ea",
+     "score": 0.025
+    },
+    {
+     "rank": 6,
+     "doc_id": "43648c5ebaf143e687b5a3936a237f00",
+     "chunk_id": "743b89c1636a852ad2e7259544bc799093448a6e5115cf0c49795779165c4a48",
+     "score": 0.0246
+    },
+    {
+     "rank": 7,
+     "doc_id": "43648c5ebaf143e687b5a3936a237f00",
+     "chunk_id": "949d517d56d80ec63336737b9965fc2f085c7a93c1ab502bc7b533800c99db59",
+     "score": 0.0242
+    },
+    {
+     "rank": 8,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "86256b6c1444b6096c8e59445155c6306a81bf341162b25ec425c473159a2021",
+     "score": 0.0234
+    },
+    {
+     "rank": 9,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "34b4d5db59498d220aca9faff1c5270619c839bc3c9dcade71a98c23b5440bfd",
+     "score": 0.0226
+    },
+    {
+     "rank": 10,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "4f446b170e5b1d8a0fc6303a39a2b8aeb9f30a5f24844e9d9d6578e8c0aa29e6",
+     "score": 0.022
+    },
+    {
+     "rank": 11,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "83498607eb09170594392e5731d9085d5024b49e42a7c96aeaab5a769de5a855",
+     "score": 0.0217
+    },
+    {
+     "rank": 12,
+     "doc_id": "e0d60c4152394b0ea4e32a9e6c1abaa5",
+     "chunk_id": "916f79d103f4262f7692ad3cfbda93c09465f1cc79a1b05bb6c0dfbf3bcb01c2",
+     "score": 0.0211
+    },
+    {
+     "rank": 13,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "cdf4a43809f535185e9933384ee0f51a505c968e204cfcf65623ac08d59fa175",
+     "score": 0.0203
+    },
+    {
+     "rank": 14,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "619d491efe78537e1fb4c9a00b59f3ae9d5e1659e7339742c34ae5c205d764cb",
+     "score": 0.0177
+    },
+    {
+     "rank": 15,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "5d7afa5849fae0c6860c5dd91c5dcde44982d107862d84b386c334b3cc33f7ac",
+     "score": 0.0174
+    },
+    {
+     "rank": 16,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "1b1a34f6b502b6d498a0656b22c06db633ea6d10f9d5730d02473a093283c4eb",
+     "score": 0.0166
+    },
+    {
+     "rank": 17,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "aec49f87abf989b9abf20f5f17f6cedddb95ec0a1411ba2e84379ad01e7f2961",
+     "score": 0.0161
+    },
+    {
+     "rank": 18,
+     "doc_id": "f5ed787eb04f49a49e2546774adfd529",
+     "chunk_id": "0cc45ca09a6196f1ec8d189aeae39cf5879ec0c9e6eabb3e127055e1ddb54029",
+     "score": 0.0159
+    },
+    {
+     "rank": 19,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "b20d4ccb1127f21293a9c06eaf3e0082a05c8fbcb5aa1e9e15656638861c0c46",
+     "score": 0.0156
+    },
+    {
+     "rank": 20,
+     "doc_id": "43648c5ebaf143e687b5a3936a237f00",
+     "chunk_id": "2263f9fd733dfc036ec684fffff2997fbe6f0ea2dfcd4bc833667ae21efef916",
+     "score": 0.0154
+    }
+   ],
+   "latency_s": 89.23
+  },
+  {
+   "query": "模块中使用多分辨率时频分析的文献",
+   "rewrite": "模块 多分辨率时频分析 文献",
+   "gold_doc_ids": [
+    "025f12021feb42c7b2368ae621b9825c",
+    "5bd86299ac9b485796243db5bbdea4fe",
+    "94250ccf417346dc9b1c8d60472d13e4",
+    "9444443e71ce45a5b324d5eed10c7dc1",
+    "b20b1327d1054520bf61a3718e9db964"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "9444443e71ce45a5b324d5eed10c7dc1",
+     "chunk_id": "6066a5622c97ad50ed8597ab14d5cd454b27a805e95f09402ab0b8fbdf652600",
+     "score": 0.0188
+    },
+    {
+     "rank": 2,
+     "doc_id": "4f67d908211b49ad983ff6c4f901c18d",
+     "chunk_id": "32664c0a9d7cd52377197c6c77ee437d78bc096880806721015a95f12095e4d6",
+     "score": 0.0164
+    },
+    {
+     "rank": 3,
+     "doc_id": "a936ba1dbe8549279e71a061bc243bde",
+     "chunk_id": "b5ca71d6f9848872c6830911b4a0931f43cd4f0f7953d9b214cfbcb390b3ec56",
+     "score": 0.0164
+    },
+    {
+     "rank": 4,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "685281d3b7251fbfcfddacf2c24045edbf598a816eac4ff0564c6c0c311663b2",
+     "score": 0.0161
+    },
+    {
+     "rank": 5,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "749519d44f7253623a81ed5c9014b1f3027f6c07029601330adbbb1a0a23ae7c",
+     "score": 0.0161
+    },
+    {
+     "rank": 6,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "9997856bc3b9ec04c72ae1decd21d2581d1be292d8702ba054e447c625bf9e1b",
+     "score": 0.0159
+    },
+    {
+     "rank": 7,
+     "doc_id": "5d90d8af59a744728185b76ff7eb428d",
+     "chunk_id": "90446d6e4e6e16b3e85dcb20c4846988c04a20277390783e8f2f2b7221041ff0",
+     "score": 0.0159
+    },
+    {
+     "rank": 8,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "9f4f8f1a08d820131135340839c0b1eda6c157951f1c06c6b33973b92c847d5f",
+     "score": 0.0156
+    },
+    {
+     "rank": 9,
+     "doc_id": "ed5e1481889f409b805ec44cc1d6f444",
+     "chunk_id": "660fd825122a93a1850e4df072eabc4f7e65c7d659a6860c5441a1d4e669e7e2",
+     "score": 0.0156
+    },
+    {
+     "rank": 10,
+     "doc_id": "3aa708726abd416eba8f9b6afc5be99a",
+     "chunk_id": "9b51d0fb8d121a4e363d21fd0ba781ec298ab43b632defe2ea9fb4037e6c2d67",
+     "score": 0.0154
+    },
+    {
+     "rank": 11,
+     "doc_id": "5bd86299ac9b485796243db5bbdea4fe",
+     "chunk_id": "9743ccc303f794691b3845d89b4965828b22702f8c547196b58f679dfdc48689",
+     "score": 0.0154
+    },
+    {
+     "rank": 12,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "970bb0a716c8104a248ccdb3bad92b9d9a36564b3c8244d8f4309eaa0081f36a",
+     "score": 0.0152
+    },
+    {
+     "rank": 13,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "1e6c60ccd09759130ae1d69c1ec3d96f53231cbd3fd0f0945919d7b6c11ef9f5",
+     "score": 0.0152
+    },
+    {
+     "rank": 14,
+     "doc_id": "9444443e71ce45a5b324d5eed10c7dc1",
+     "chunk_id": "a20d2f7bbf29510fdd39e05e737df5ec1556f31a94ccd7b8a513ce2cc2a96747",
+     "score": 0.0149
+    },
+    {
+     "rank": 15,
+     "doc_id": "a936ba1dbe8549279e71a061bc243bde",
+     "chunk_id": "9a816f6d6610fe1bc8f4eaa72f8f44a01bb40bed50b776534300c96d967c08bc",
+     "score": 0.0149
+    },
+    {
+     "rank": 16,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "a41a51a4f71cf97a1ab6324d56faa2d3e9f27aa864256059f8545774f8a10efe",
+     "score": 0.0147
+    },
+    {
+     "rank": 17,
+     "doc_id": "a936ba1dbe8549279e71a061bc243bde",
+     "chunk_id": "c5eff1bbaff50a5e47d9b02a26d3c57a5cd7c947b77660de4f47a2e555274e84",
+     "score": 0.0147
+    },
+    {
+     "rank": 18,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "088a57020783752b5e148bfb766f87957d5674dc2224493469f4fd6e3507ad6c",
+     "score": 0.0145
+    },
+    {
+     "rank": 19,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "2cfdb04c4b453b3878fb0f2298b6237b175f2946f2acc6362640c429739e698d",
+     "score": 0.0145
+    },
+    {
+     "rank": 20,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "e82bf59ef468464572e38e1b010c5b32c9c64a927ee9c5078b1b7bdbef52ffb9",
+     "score": 0.0143
+    }
+   ],
+   "latency_s": 79.26
+  },
+  {
+   "query": "储存环光源与前端环型加速装置联调、标定及束团诊断相关文献有哪些？",
+   "rewrite": "储存环光源 前端环型加速装置 联调 标定 束团诊断 文献",
+   "gold_doc_ids": [
+    "45be62b3b4e44fa19f1af0066ae8aa74",
+    "5afec62371f746b8a6f44a1c118a9975",
+    "7c3ca77771064b39816137cb9d2820d1",
+    "99370c67ecfe432ea2bde4b641529a10",
+    "a58700f9de8143e2ab408772cd709215"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "475a1cbdf5874768b6f405e23f076f11",
+     "chunk_id": "2fe3d77eb760f9e7671c8994aab158dbf5e23d29f35a0491db5d0718a8896949",
+     "score": 0.0304
+    },
+    {
+     "rank": 2,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "b4b9b1015da5dfb926314f3c7de55c1457708920062bdfec4ce89697654e013d",
+     "score": 0.0296
+    },
+    {
+     "rank": 3,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "f2b52a633516029a056dbd7c4732f73008f6498f512b3c705f39cceec34d2b16",
+     "score": 0.0277
+    },
+    {
+     "rank": 4,
+     "doc_id": "079d82fbf30349a7904921e9ac50b50c",
+     "chunk_id": "b47d424bb4b131d99c2b68132bf87297255eab7833de8ffbedfc199d1891898e",
+     "score": 0.0263
+    },
+    {
+     "rank": 5,
+     "doc_id": "475a1cbdf5874768b6f405e23f076f11",
+     "chunk_id": "fcb93ad9e49b1e0ddb5becf040c32d412d0d2b04448d27085a26fff6a80a2280",
+     "score": 0.0255
+    },
+    {
+     "rank": 6,
+     "doc_id": "475a1cbdf5874768b6f405e23f076f11",
+     "chunk_id": "dfc06103b0995068768db0d434ff1caf34d541f28c8123e97029e332b60876d7",
+     "score": 0.025
+    },
+    {
+     "rank": 7,
+     "doc_id": "c02c0f51df6147368bd2108e6cc59cea",
+     "chunk_id": "b7279e766bce73f040bbb4fa036a56067fc4c2f0e5cb30cab4445f77cfa26a15",
+     "score": 0.0246
+    },
+    {
+     "rank": 8,
+     "doc_id": "7c3ca77771064b39816137cb9d2820d1",
+     "chunk_id": "bff2949111eae68411f62b3b0a7e37197b7d750675c47b231dcb0b44a31e8054",
+     "score": 0.0245
+    },
+    {
+     "rank": 9,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "c9cd1c8ca3eba7f604ea28bbb46b7095879fd5f1b832d921c9d0d33ad026ef1f",
+     "score": 0.0243
+    },
+    {
+     "rank": 10,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "134c553d1cecd10ba1db9c198d0441dae99c1fdd7319c35c77ed7ecb5cd07505",
+     "score": 0.0228
+    },
+    {
+     "rank": 11,
+     "doc_id": "99370c67ecfe432ea2bde4b641529a10",
+     "chunk_id": "74b0e45fd645241f030f87e70f233b851ce6afe8dc0bb5e6bbad3b6f4b7222a6",
+     "score": 0.0225
+    },
+    {
+     "rank": 12,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "bc802f685ea76877f137456aec6f476e06b4f40fab96f61a26589a42b6c1c788",
+     "score": 0.022
+    },
+    {
+     "rank": 13,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "2d6e0e33a00039a9dfd688faaa0a790b8cd9ee0e19b79b504d55462e98c80d30",
+     "score": 0.0214
+    },
+    {
+     "rank": 14,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "28b84ce02489da4299cf19200389b8f600f6a8de26286dcd3beafab36770aa38",
+     "score": 0.0213
+    },
+    {
+     "rank": 15,
+     "doc_id": "7c3ca77771064b39816137cb9d2820d1",
+     "chunk_id": "5c55e7dd5cc67081f91abd73bc25b7601fd2173cd09b9e30d18bb9496544ff3e",
+     "score": 0.0213
+    },
+    {
+     "rank": 16,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "3bb12a5d4ba7f84f9ebfaac0961b8ed5a94b9f66185ba9363e29b8fd8f4a6dba",
+     "score": 0.0211
+    },
+    {
+     "rank": 17,
+     "doc_id": "079d82fbf30349a7904921e9ac50b50c",
+     "chunk_id": "0098c5ab69f439fc4dd279ca70dbd8491d7bb3e75edad5b100923e0535b9b05e",
+     "score": 0.0208
+    },
+    {
+     "rank": 18,
+     "doc_id": "99370c67ecfe432ea2bde4b641529a10",
+     "chunk_id": "a53ff6604ca77d1938a1c2f4ffffd04745d7a1e964b4cf8de018cb6a1e5ffbf5",
+     "score": 0.0206
+    },
+    {
+     "rank": 19,
+     "doc_id": "45be62b3b4e44fa19f1af0066ae8aa74",
+     "chunk_id": "ab75d59e3425b3555d807f7cda3311d0051a4ad63d165ae9775d4845a62f226a",
+     "score": 0.0197
+    },
+    {
+     "rank": 20,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "7fa4753a57516ea79439b851151c8cec5edf6e02edd2f915230bb036063a7491",
+     "score": 0.0196
+    }
+   ],
+   "latency_s": 82.42
+  },
+  {
+   "query": "哪些文献研究压水堆燃料芯块和光源线站中的衍射仪组件？",
+   "rewrite": "压水堆 压水反应堆 燃料芯块 光源线站 衍射仪 组件 文献 研究",
+   "gold_doc_ids": [
+    "5d90d8af59a744728185b76ff7eb428d",
+    "df9848ff4f984ca6a22ed930e1f09cdb"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "5d90d8af59a744728185b76ff7eb428d",
+     "chunk_id": "f68721d9bce6fb730e5f9d3d9c95e12220ffd2a789eea9cf040064bf986b07dc",
+     "score": 0.0297
+    },
+    {
+     "rank": 2,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "dc378becf124b31791d1fd7ea107dc2978812cc24658a992fd2aa44eb99118b5",
+     "score": 0.0287
+    },
+    {
+     "rank": 3,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "9a668e2edca4f130e203f87786fe86b5597a8d4d4162809f2dcd27c16ab63b79",
+     "score": 0.0284
+    },
+    {
+     "rank": 4,
+     "doc_id": "5d90d8af59a744728185b76ff7eb428d",
+     "chunk_id": "b1536d058f00fd495b9a482da9f00678d60b56a3c58c1ff7c7c5961bb0a742a9",
+     "score": 0.0283
+    },
+    {
+     "rank": 5,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "b313987ed07670868d2e6626257eeca5170d5cf835c7a215f145b5628f13748e",
+     "score": 0.0282
+    },
+    {
+     "rank": 6,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "e7048f2074c99a71121c2cceb7ea2f2851aae9c2f70d9de6b88f303470832fc8",
+     "score": 0.028
+    },
+    {
+     "rank": 7,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "1c68c8933d2df737639f0f713158091dfd0ba422fa3223589a1474a522a514c3",
+     "score": 0.0271
+    },
+    {
+     "rank": 8,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "c60540537ca48c7f5d66f73a14b06bb2172d48d041046301ba9de4368a12b38b",
+     "score": 0.0271
+    },
+    {
+     "rank": 9,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "f6b939433369f1d0fcbe2e36986ee471a1b7b831d614bd39e05b55c2b667c129",
+     "score": 0.0269
+    },
+    {
+     "rank": 10,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "c5e947acdbd7f3835d6b799b2b16043e4aefb37557ec715ff713bcfcb0643369",
+     "score": 0.0267
+    },
+    {
+     "rank": 11,
+     "doc_id": "5d90d8af59a744728185b76ff7eb428d",
+     "chunk_id": "ecf7d988dcaec5927309d6d29ce9a59a9d25928f90add44852d849759c34168c",
+     "score": 0.0267
+    },
+    {
+     "rank": 12,
+     "doc_id": "5d90d8af59a744728185b76ff7eb428d",
+     "chunk_id": "961dac62c5ed36087a5e8299261675c8e0a0d25494bd1f6aeab267df90186d72",
+     "score": 0.026
+    },
+    {
+     "rank": 13,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "231f5f91709724b5501f3319f4427d5a87a43904f6c070191858d192af460b30",
+     "score": 0.0251
+    },
+    {
+     "rank": 14,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "3e39ae5c9019962a7a164afca7018618f514fdd13b516f7b43dd7831b696c131",
+     "score": 0.0249
+    },
+    {
+     "rank": 15,
+     "doc_id": "5d90d8af59a744728185b76ff7eb428d",
+     "chunk_id": "4bd592c9450e9bc275da68525a6ad2a16f502b64f3a9113cd9d163994cf9e8a7",
+     "score": 0.0245
+    },
+    {
+     "rank": 16,
+     "doc_id": "5d90d8af59a744728185b76ff7eb428d",
+     "chunk_id": "a7e5fe65eef9078003d91dd38df220f78d43926f6ce1717e95054cdb3ce0c523",
+     "score": 0.0243
+    },
+    {
+     "rank": 17,
+     "doc_id": "5d90d8af59a744728185b76ff7eb428d",
+     "chunk_id": "6de844d9886eb133f7695ece92478658d286df08e2db9242284e122935c1ac10",
+     "score": 0.0234
+    },
+    {
+     "rank": 18,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "aaefae103d5faaa885ec0dce3c85252dccb75545b78b42b8eae6f197bec70898",
+     "score": 0.0228
+    },
+    {
+     "rank": 19,
+     "doc_id": "5d90d8af59a744728185b76ff7eb428d",
+     "chunk_id": "f4d397cf0f35d285345e7e0aaf85b629eac9f6470353daaab8da856bad4ac8c6",
+     "score": 0.0227
+    },
+    {
+     "rank": 20,
+     "doc_id": "5d90d8af59a744728185b76ff7eb428d",
+     "chunk_id": "6be5fdb717c02a0a40512f11487f965c102ad417a90a6b4bf06e07e659e9c86b",
+     "score": 0.0213
+    }
+   ],
+   "latency_s": 83.48
+  },
+  {
+   "query": "组件中的慢化介质有哪些类型及作用",
+   "rewrite": "组件 慢化介质 类型 作用",
+   "gold_doc_ids": [
+    "162a72d3ee2749a89cc1c72eb90447e0",
+    "2b3fd0c3005d4a318ca980e690775b24",
+    "5afec62371f746b8a6f44a1c118a9975",
+    "6cc0af69d17e42108a8a12c72a978375"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "9086731f33bf14f80c42d3673e36ecb07e979d0a0de74b3a19ad6d32cac64969",
+     "score": 0.0309
+    },
+    {
+     "rank": 2,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "b7c86cfc015c3a16b3c88674a881c32825bef906cf5d0b67846f4242324cd049",
+     "score": 0.0308
+    },
+    {
+     "rank": 3,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "584bea45e0c62a0e24b1e3927100ae6dbdf27c147effe33c7b8d3509e66c4e8e",
+     "score": 0.0302
+    },
+    {
+     "rank": 4,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "3165931ed841bde4e0f94e49dfec02a2f1ecaf69d48356d47812e04b404ba4f1",
+     "score": 0.0302
+    },
+    {
+     "rank": 5,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "936d003c3c8d2cae74c9712cd1885f89408109d14e6eaaa48550a38c9698314f",
+     "score": 0.0301
+    },
+    {
+     "rank": 6,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "95b4071ba3af3f7e639841aeadb7e1d30e3c6dc76d27139bb45da4ecd0bea2d9",
+     "score": 0.0301
+    },
+    {
+     "rank": 7,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "6063b9bfb4216b50016267fb44cadfcf7f9866d36333a84c8ad532723b341849",
+     "score": 0.0291
+    },
+    {
+     "rank": 8,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "ed9275e54747b11fae7e5691522351f4d67a9fccc2ed1d0ba8a78b5670e2d887",
+     "score": 0.029
+    },
+    {
+     "rank": 9,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "fbb924634dacbd92289e4a2ef63cefc262c5ccfbcefe009d5f228be4ca1b1dd8",
+     "score": 0.0289
+    },
+    {
+     "rank": 10,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "a065ba6d190da59f5f9e52554927db28f78acd0c0ac697bb64025558ce7aed63",
+     "score": 0.0288
+    },
+    {
+     "rank": 11,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "9f281c570ff7d45115e6e09990b1a8e7c207dc0b6229c5d92f56d7f52ebfa87a",
+     "score": 0.0284
+    },
+    {
+     "rank": 12,
+     "doc_id": "6cc0af69d17e42108a8a12c72a978375",
+     "chunk_id": "b96c6a51e57b48a82c85f6d52d4271fc6df09125637e35d3ef8d4bcc8d01681f",
+     "score": 0.0278
+    },
+    {
+     "rank": 13,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "1f35ef47fd64abe7b9051b86c6dccd9382d49604b066438c6adf049251742d2d",
+     "score": 0.0257
+    },
+    {
+     "rank": 14,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "ec7ea917e1a138dcac5f3dcf819b3e60d46dd4bd00150daf7cc6839190f5fc16",
+     "score": 0.0251
+    },
+    {
+     "rank": 15,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "913fcd25ffbb23120732fb063478302a1b93588a57fc2f7a40af9c1250fb40b3",
+     "score": 0.0232
+    },
+    {
+     "rank": 16,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "93e67b8b2b84dba57ed75d2a7299f5593a96c34b4315fdc820c346fe6c0e9699",
+     "score": 0.0231
+    },
+    {
+     "rank": 17,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "2a19280ed038ca840a7ca7e698618f9bb984d62aec4a62b1bf13b51b99677409",
+     "score": 0.023
+    },
+    {
+     "rank": 18,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "bcc78b97256b1fc1d6266fc52a8ff4b4c31a55319811d00bbc0b74d21e56bdf8",
+     "score": 0.0228
+    },
+    {
+     "rank": 19,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "08257a72cd13d582be6e910802928d1965b0b538b3db032e5dd535a777582a2e",
+     "score": 0.0227
+    },
+    {
+     "rank": 20,
+     "doc_id": "6cc0af69d17e42108a8a12c72a978375",
+     "chunk_id": "427644e160328efdd3dcb30054161d9b82f0e46888983c8bbe2fa6c8491d17f0",
+     "score": 0.0215
+    }
+   ],
+   "latency_s": 77.76
+  },
+  {
+   "query": "核谱仪装置中重金属防护件与辐射防护体系关系的研究有哪些",
+   "rewrite": "核谱仪装置 重金属防护件 辐射防护体系 关系 研究",
+   "gold_doc_ids": [
+    "0e4bfcfcabfa47c69fb14d1d6f8fe03c",
+    "3deac94b6d2744989b78ab2cbfc500e0",
+    "9740e181f7b84ba4af1d0692c3cf99d5",
+    "dd638451e78e41c48d5b424d353f9793",
+    "e0d60c4152394b0ea4e32a9e6c1abaa5"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "b841471b7922a1907c2a773e5325776b186d27d0a658270806c4bb2047ca21e4",
+     "score": 0.0271
+    },
+    {
+     "rank": 2,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "114866f4f624cb716f57d81833a8907960b25f9f902817500026a2431d18eceb",
+     "score": 0.0244
+    },
+    {
+     "rank": 3,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "4556b3faf5a7f42d18a473bf86b62d93c462cc9c9a3e58cff07973b1e92c71dc",
+     "score": 0.024
+    },
+    {
+     "rank": 4,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "c43f7b2b18b5582e6339dfc8c13c0b92dc71fc2808b65f5da03957b396c3f78f",
+     "score": 0.0215
+    },
+    {
+     "rank": 5,
+     "doc_id": "2eb25eb829cb464795b07dcc9a576bb8",
+     "chunk_id": "37a679047309f86efe0184c75a02bfb14ee108c8e7262c8efc971b661002eb84",
+     "score": 0.0204
+    },
+    {
+     "rank": 6,
+     "doc_id": "48b9a62f6eb5478f94e5721db30c564d",
+     "chunk_id": "32ca876891088e3c948a4da3b2a404075f6b25dbfa6cb04168dcd4e452f3faa9",
+     "score": 0.0203
+    },
+    {
+     "rank": 7,
+     "doc_id": "dd638451e78e41c48d5b424d353f9793",
+     "chunk_id": "8c9d3997a92b0caa536bd9e738a5ef9ad8e987bdb34215c7a75555ef97e802e9",
+     "score": 0.0203
+    },
+    {
+     "rank": 8,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "c6660f53ea5ffd2a75c7a42bd139cddc37dc575a1971197e57d77d24386518fe",
+     "score": 0.0199
+    },
+    {
+     "rank": 9,
+     "doc_id": "5c566792b3d74dc8beb89a5dfdb8403d",
+     "chunk_id": "84be4cf5d75ce72349e6db852cc8818e4f921f6f150ece489b7e02be625b1e4a",
+     "score": 0.0181
+    },
+    {
+     "rank": 10,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "2dec61740729f337575fad34120352391b017c48191584d9547ba1c74e92d910",
+     "score": 0.0171
+    },
+    {
+     "rank": 11,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "27152a7617fa810acb0bf66a7cf828a1822c38a28966810888cd2e1671f1d2c6",
+     "score": 0.0164
+    },
+    {
+     "rank": 12,
+     "doc_id": "cb5144d5ac38493abdec32b16ce9b822",
+     "chunk_id": "09b7f8195c36b40485c1869fb18691ed3395767e5f5a7dca4434538ce36e6f47",
+     "score": 0.0164
+    },
+    {
+     "rank": 13,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "36fbac545e38fdaa5dd6b6f211f7c68551ec9cc29196fa9f018be47a41ea2cd1",
+     "score": 0.0164
+    },
+    {
+     "rank": 14,
+     "doc_id": "2eb25eb829cb464795b07dcc9a576bb8",
+     "chunk_id": "482fd93214108f4807471d2a72a7e7b94bdb30a16a348ae232c7dcfb6020ed42",
+     "score": 0.0164
+    },
+    {
+     "rank": 15,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "0444ce062b0acde4e7395b2f4734adb588b889df5f6bcebd1c0eab85d90c708f",
+     "score": 0.0161
+    },
+    {
+     "rank": 16,
+     "doc_id": "d01137e831d44303bd1bb164f0b127de",
+     "chunk_id": "4aec6628bd97c6dd491cab8e0bfae0487483c91e6f282f209ccbea40d7d04d0e",
+     "score": 0.0161
+    },
+    {
+     "rank": 17,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "6837048f9b5e7655bd4f8d4b06d8f098333dc7d80a7bb2218dfc2bc9427059f3",
+     "score": 0.0159
+    },
+    {
+     "rank": 18,
+     "doc_id": "2bd04127007148f086ad2b7d2cd3dcce",
+     "chunk_id": "1b153c8da13511a905dc2823e0a9c5e8442633f74771ffcc599983bf93ad64d3",
+     "score": 0.0159
+    },
+    {
+     "rank": 19,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "197be093b62b0d3967bb3c183a003b281facb942b3777746267eaf73ae07edf5",
+     "score": 0.0156
+    },
+    {
+     "rank": 20,
+     "doc_id": "5c566792b3d74dc8beb89a5dfdb8403d",
+     "chunk_id": "450e863b7b0c6ed8b31ddbf5a9f16d12c1eee4bed768904c1cfbb651eaf36506",
+     "score": 0.0156
+    }
+   ],
+   "latency_s": 78.86
+  },
+  {
+   "query": "耗尽区如何影响半导体探测器的收集效率",
+   "rewrite": "耗尽区 半导体探测器 收集效率",
+   "gold_doc_ids": [
+    "05e6f239b6d6466db5eaee3e5f29902b",
+    "58dc8bf9308f43c199521ea61e69a3b4",
+    "c7f48eaed3d4490283970092e96865ba"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "05e6f239b6d6466db5eaee3e5f29902b",
+     "chunk_id": "159533be3750cf07c154c8d9fe794a7ed0ccdbea7f38001f9e87760e0ae7212a",
+     "score": 0.0285
+    },
+    {
+     "rank": 2,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "60d21f77098ddddc9e3eeebc9f581cc89d2710dee0c8e5a04eaaf1ec1ab13895",
+     "score": 0.0282
+    },
+    {
+     "rank": 3,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "671cc4bd77909230ad2df29dda1a518eb9b9efb8c40b3056150de746342f4cb2",
+     "score": 0.0236
+    },
+    {
+     "rank": 4,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "d2001bf2eccbd273788e401014f01af1517bcb3d51e445be5552510ed126313d",
+     "score": 0.0234
+    },
+    {
+     "rank": 5,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "361c24ed586af07db1d2dff803f0c93082a4faf6b845e2b669afe8b26907ff11",
+     "score": 0.0231
+    },
+    {
+     "rank": 6,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "9dd454c9fcb9c3a8afeb15be9cac224a6676edae3a0e26b96bd3ff3cc17fe59d",
+     "score": 0.0218
+    },
+    {
+     "rank": 7,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "eea8c12dfb773a29aa863e2c8ecf9499ff5b37b9ab3895ea99c4cbe474f267df",
+     "score": 0.0207
+    },
+    {
+     "rank": 8,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "3687510673d1f6e8433d5b0fd89f5c3aabf303cfe72ad0dba8d37fa4758ecb01",
+     "score": 0.0187
+    },
+    {
+     "rank": 9,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "3fdbbe87b624a404fae06cd9060d945056e90105d3fd69cc64eee403fc43bdc9",
+     "score": 0.0172
+    },
+    {
+     "rank": 10,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "7874cab9bb163681fa6b84087e702ad29a2fc3a125ac8817571b4b278e9e2842",
+     "score": 0.0169
+    },
+    {
+     "rank": 11,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "298f05165883243a473b2c6e056278d6a6adb21fe8fedbf9aa1929e4cfdb9429",
+     "score": 0.0169
+    },
+    {
+     "rank": 12,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "5d2e3c8fd8c992887a22b80fba0eaae959e9d3eaa5d09707ad5f4a1ea9e3c946",
+     "score": 0.0164
+    },
+    {
+     "rank": 13,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "fa11f15cf6d58cb65e18bf1bf4d8eb30df953a04f822a20e7104063d3df5243a",
+     "score": 0.0163
+    },
+    {
+     "rank": 14,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "56f015b1be7cebce5b79370b35dfc3566e4b0efc53ea8d5e5fdafc1d6cc29efe",
+     "score": 0.0161
+    },
+    {
+     "rank": 15,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "149015b3bfa86cb70b23c8e6624c546195c7c6ceb550063af148c0a067f0f6cc",
+     "score": 0.0161
+    },
+    {
+     "rank": 16,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "59ff9cc611f6e68e9b622b1113194db4d931d795c2cd5cd38584884ae45ff774",
+     "score": 0.0159
+    },
+    {
+     "rank": 17,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "a8c7ac8124c8e42943fc1104a475e39cc199d6a6fbcd481cf184f45479a75f8e",
+     "score": 0.0158
+    },
+    {
+     "rank": 18,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "f7c410e6322983a0cd74daf4e211dba2cbc1583018b2bf03c2a25308ee033112",
+     "score": 0.0156
+    },
+    {
+     "rank": 19,
+     "doc_id": "05e6f239b6d6466db5eaee3e5f29902b",
+     "chunk_id": "f6db01cffe5a1a6211062abbad966ea8cd42551cd2a957e6179d6f17e44b3332",
+     "score": 0.0156
+    },
+    {
+     "rank": 20,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "7ae539da02e78d72bfb57e12299bb00036ad4fedc76e67bf51b61170bc7c7644",
+     "score": 0.0152
+    }
+   ],
+   "latency_s": 79.59
+  },
+  {
+   "query": "哪些文献采用对 transverse energy 进行准确性核定的方法？",
+   "rewrite": "采用 transverse energy 准确性核定方法的文献",
+   "gold_doc_ids": [
+    "de882b6e2c9745ca87c3dfa7b2cae988",
+    "de9d4ec45ce44acf9c933510cc76b95b",
+    "ea50897545164cec8e7a10a876c935e8"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "ea50897545164cec8e7a10a876c935e8",
+     "chunk_id": "8fc925d67efd2a717af93498fb941133fdde3638dafa9b87b251ef707b107a94",
+     "score": 0.0164
+    },
+    {
+     "rank": 2,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "2daf6937d90ff1aa7ced902e4d0fabde20b35bf438cde005fab1ac26a3cb7ec9",
+     "score": 0.0164
+    },
+    {
+     "rank": 3,
+     "doc_id": "02cfb6dd706545bfb014ed70fbc73ca7",
+     "chunk_id": "6918cdd8fa7012287e456f2b491963d65fc1b373e51cddbfba1a616328cd5a2e",
+     "score": 0.0161
+    },
+    {
+     "rank": 4,
+     "doc_id": "5bd86299ac9b485796243db5bbdea4fe",
+     "chunk_id": "2140d50ed8e608549f76d33dbf46ad6dd1544fee4f9dcc07d4a077853f02a61b",
+     "score": 0.0161
+    },
+    {
+     "rank": 5,
+     "doc_id": "7733b3384efd443685f5d70b64475aeb",
+     "chunk_id": "6504c82eb8147fcdb0fa76a4c33521b8682a73f917e1b6b70aca782c4aa4f2ad",
+     "score": 0.0159
+    },
+    {
+     "rank": 6,
+     "doc_id": "f3e9f8a90094402191977027c6667b4d",
+     "chunk_id": "d396aa4805b69191a30227f8eef69ab6ccb3ab8da2eff220b55002869c31df8e",
+     "score": 0.0159
+    },
+    {
+     "rank": 7,
+     "doc_id": "f958d330a0d34578b9615b0c12845281",
+     "chunk_id": "d92000d4aea0bc9b881473424c5f107eb8c492f83b1094c1cb469ca5ef7a61f7",
+     "score": 0.0156
+    },
+    {
+     "rank": 8,
+     "doc_id": "dd6db7e0cf254ac2959c08b8ce603bc5",
+     "chunk_id": "559e4ba40c495695aacf75a312f498ca4a35f40fbd6859efb124372f4ee84568",
+     "score": 0.0156
+    },
+    {
+     "rank": 9,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "341aa06c96606b96a19cab9dfa144ce216bcaedf7a19f3789795d054def98028",
+     "score": 0.0154
+    },
+    {
+     "rank": 10,
+     "doc_id": "43ce5070387d4591a866ffd7a5558231",
+     "chunk_id": "4b66d329559fdc5107f3b4e69ff9c8666d78cb1b3976fc70245e4b206a62a84b",
+     "score": 0.0154
+    },
+    {
+     "rank": 11,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "81f507efd954fe63252960003d4095c40688a33085031fe4aed5470a16ef6f13",
+     "score": 0.0152
+    },
+    {
+     "rank": 12,
+     "doc_id": "68b69730ce654add88fbf3aacf74039a",
+     "chunk_id": "1a7ce986294b702ea4b6901fa183bf33d3c86b7e02b138f6fb802afe9e7bf2de",
+     "score": 0.0152
+    },
+    {
+     "rank": 13,
+     "doc_id": "28af06fdf62c4ea3b37cfc4393aad70c",
+     "chunk_id": "ce675ff223716e75ee43fd298b092af59b2a17b9b391b29eb3af257a5bac6385",
+     "score": 0.0149
+    },
+    {
+     "rank": 14,
+     "doc_id": "c2952e52266042cf8644a01ea9e53112",
+     "chunk_id": "dcacaf948fd15227114247d9e60b02d844b3c62d03aad1061026265924422bf6",
+     "score": 0.0149
+    },
+    {
+     "rank": 15,
+     "doc_id": "2668823bba7449ddb69c148898179da6",
+     "chunk_id": "984e1330e0b853b88b51514050bb27c3087ffb18bb78795574b9c26b45336a2e",
+     "score": 0.0147
+    },
+    {
+     "rank": 16,
+     "doc_id": "68b69730ce654add88fbf3aacf74039a",
+     "chunk_id": "0744f39e46e6bf42afaddd2535d26afa1e2b7f4bc8e52b848794ddd561ad1711",
+     "score": 0.0147
+    },
+    {
+     "rank": 17,
+     "doc_id": "7733b3384efd443685f5d70b64475aeb",
+     "chunk_id": "4888fe74cc756eff2f163140acd82805711dada9921e9aecc0815ecf1c4d835e",
+     "score": 0.0145
+    },
+    {
+     "rank": 18,
+     "doc_id": "c2952e52266042cf8644a01ea9e53112",
+     "chunk_id": "786d5c8fc079c3b4c42370edc956ad03e57b441f6df5f7105f5c57c14b831b96",
+     "score": 0.0145
+    },
+    {
+     "rank": 19,
+     "doc_id": "28af06fdf62c4ea3b37cfc4393aad70c",
+     "chunk_id": "5d5a0320a66ed750daee8d369da57e24c6e174f83baa1cd533b4dc29c275d474",
+     "score": 0.0143
+    },
+    {
+     "rank": 20,
+     "doc_id": "a936ba1dbe8549279e71a061bc243bde",
+     "chunk_id": "66fd902bfa2d787fd88d96ee8ca1e42a6bb42b5d2b732890aa590fb82bb4885e",
+     "score": 0.0143
+    }
+   ],
+   "latency_s": 73.04
+  },
+  {
+   "query": "γ探测能量分布与级联叠加校正参数怎么建模预测？",
+   "rewrite": "γ（gamma）探测能量分布 级联叠加校正参数 建模 预测",
+   "gold_doc_ids": [
+    "19bde1d874b94c749c1022cdac320afb",
+    "34da886ed5d74004a2f39fcc9e2a2ff9",
+    "65e41a8c461c4020913b0ee20933e37a",
+    "c2952e52266042cf8644a01ea9e53112",
+    "eff2af7d3aa049f6acee61b95edec7a5"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "f0ab27f2f085b7b92f92f882467222d3d84aba00b9d182c53811c3c5da3d6579",
+     "score": 0.0284
+    },
+    {
+     "rank": 2,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "23fa79f30d2b24e8f9f4f9e89ed0c04ca48f9379bb6e86a54392a0169d13f047",
+     "score": 0.0281
+    },
+    {
+     "rank": 3,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "85c63d65096c65dbc62588fc82950cb2e2f99f4e30f0b4d35142731d59665584",
+     "score": 0.0269
+    },
+    {
+     "rank": 4,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "47886ff89013882a9a22b9bd80fa369698107e2b8f909ff00ebfaeaf7161f0c9",
+     "score": 0.0252
+    },
+    {
+     "rank": 5,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "657e242a2ccfb01d77618fb827b6711fac14597fa4e161f7d4a07b273981b52b",
+     "score": 0.0248
+    },
+    {
+     "rank": 6,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "0d7641bd9fa865bf8cbf9e4dd7dfbe96ee91bb5e247911566e57334de00f4688",
+     "score": 0.024
+    },
+    {
+     "rank": 7,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "2773e6f5f3520b4a88efd1bd4575b574100ba232e7aa53b4cda150bb26f5a9ff",
+     "score": 0.0236
+    },
+    {
+     "rank": 8,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "4e28c01097c731b22a56e60b5f941700a1f9c77de3b56b4022dcb5e3bf8ccad1",
+     "score": 0.0226
+    },
+    {
+     "rank": 9,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "5a64dc443fc82750d30ebf3101c88b650f904c95ecd3e00a657c7192646aa4f4",
+     "score": 0.0222
+    },
+    {
+     "rank": 10,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "d94c8400f94e539b18cfd5416d9bc42d35fc9afcd9cf4f153b86aef9635a96c1",
+     "score": 0.0209
+    },
+    {
+     "rank": 11,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "8b5d6dddcb0bf3a4af83957a97f94288c4ab982c6343adc598b170fa2a1e0c90",
+     "score": 0.0201
+    },
+    {
+     "rank": 12,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "33d5526f06c51c502c88746cb9d67114a66f421277ebbc46d8de56b82dca2d0a",
+     "score": 0.0201
+    },
+    {
+     "rank": 13,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "d1f1ec62dbad25e22924b4014891e3b0482410e22bf5a5a438157259cb9e61f9",
+     "score": 0.0177
+    },
+    {
+     "rank": 14,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "0f5f553cefc474826d50e1c55e7e8b1242c8b50b34fca97d8e67ad824367b672",
+     "score": 0.0164
+    },
+    {
+     "rank": 15,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "4b1efee20a51f66757a1319108bd861f7c7070749caf243e30af309d1010df8c",
+     "score": 0.0161
+    },
+    {
+     "rank": 16,
+     "doc_id": "2dc6aea717814b18bc478839a506c2d9",
+     "chunk_id": "04cdf84f6d45a75c4c2d1a23023090d635613ffa08d8c424eeadbb3e7867529f",
+     "score": 0.0159
+    },
+    {
+     "rank": 17,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "0a0ecf9ea513bc93c76b2c812f6309e111c4af2e23f67d26b036c91b36eccd01",
+     "score": 0.0156
+    },
+    {
+     "rank": 18,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "4519d8200bb445d6fb4ad0eb74cabe0f64f779a84d2f713babd321da05d55240",
+     "score": 0.0156
+    },
+    {
+     "rank": 19,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "b7b4ef6e395ea0eaebec543c720be7d613cab26223ad27de90abd279fd9097fd",
+     "score": 0.0154
+    },
+    {
+     "rank": 20,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "7fb5bdad02878e5b46d5aceac999fd94f899a8adf96c52391c7af0c4c0601243",
+     "score": 0.0152
+    }
+   ],
+   "latency_s": 74.74
+  },
+  {
+   "query": "湿法氧化提取水中碳时回旋共振使用哪些试剂？",
+   "rewrite": "湿法氧化 提取 水中碳 回旋共振 试剂",
+   "gold_doc_ids": [
+    "7d75e1b4434e44ff9f9d46f454d7a0f3"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "41b70086f59431982fdc8642dc2e6e63b65c9bb7aece0b20bca748e5e4219739",
+     "score": 0.0274
+    },
+    {
+     "rank": 2,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "76de059b9113c26292f3edfcbeb136fb17bf834969462b3fb1ba926dbf639ea5",
+     "score": 0.0328
+    },
+    {
+     "rank": 3,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "e0e707e6c96439e669b84814d046bc9b849bb54bb1943aff4f15d45bfa2102ec",
+     "score": 0.0252
+    },
+    {
+     "rank": 4,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "ccfd6b952f383d99d48a4123207be704a1d9df50a30dbce85f890c24ac1c3a62",
+     "score": 0.0242
+    },
+    {
+     "rank": 5,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "80fc991f833a9a384d92c4b6004a3a46a071a751f9a52fbd6d7b0f31ab1c058f",
+     "score": 0.025
+    },
+    {
+     "rank": 6,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "2197eaadcd2d47e6cee568330fe78e88cc3e9feaf5b61581accb2395f9cd6cd3",
+     "score": 0.025
+    },
+    {
+     "rank": 7,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "022cad80b89270119c5d3bcda30503382b2476773bd2a30fdadbe3691cf473f8",
+     "score": 0.0278
+    },
+    {
+     "rank": 8,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "b7d8dca7f52306d1c53a719ffffbe071e65b415a22e759b6b362026775b4997a",
+     "score": 0.0253
+    },
+    {
+     "rank": 9,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "96560e6d27216647dc3d4f7a70c0d9288229886c40568774e5a42b5b49a08cda",
+     "score": 0.0252
+    },
+    {
+     "rank": 10,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "c20df5cf22771c3a70fcfb641d18f5925fd69bbc937c050031b03d6d060235b0",
+     "score": 0.0323
+    },
+    {
+     "rank": 11,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "ddab827ac6ef81995dbb9fdc89b1f937a43d750544d0cc346d6aef413d61cfba",
+     "score": 0.0296
+    },
+    {
+     "rank": 12,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "e58ad8fd54a8a2a6f9fbf8b8b400c7ddb0fb18b081fa5f589095101013bca403",
+     "score": 0.0297
+    },
+    {
+     "rank": 13,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "5c28bfdaeab017decfd963d02ad91e160392de66dc82895f06afefc152fa0e09",
+     "score": 0.0293
+    },
+    {
+     "rank": 14,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "7559859b69ead27b272afd2263286749b547486f286b0ed49238cda61ee44d93",
+     "score": 0.0268
+    },
+    {
+     "rank": 15,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "56da9d4ff5663cf53483a5d204620f3ffcaa494d0eaa28b19b8e28e726645a56",
+     "score": 0.0255
+    },
+    {
+     "rank": 16,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "98f6324574ab53f7bc726cc052ed748f8eca1c2e27276e209c84eda70001881a",
+     "score": 0.0308
+    },
+    {
+     "rank": 17,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "1e3545b39ac93231d31b5cf37963cee84100dd70d421d97bf8a3944d916dd48f",
+     "score": 0.0304
+    },
+    {
+     "rank": 18,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "5bcdc87f49b5d689129a3e771f65503b03fdcf8d4fbaa8b33552b3909db5fffe",
+     "score": 0.0308
+    },
+    {
+     "rank": 19,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "1af68186e2a0deca2b2b4803af7026f5524278bfd69154c094832907f8d8a4e7",
+     "score": 0.0249
+    },
+    {
+     "rank": 20,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "ad86559ba5286d77aeafc3c391530cb2871cdccf76101e8f7eaa1f8af110566d",
+     "score": 0.0243
+    }
+   ],
+   "latency_s": 76.01
+  }
+ ]
+}

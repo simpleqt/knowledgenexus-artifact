@@ -1,0 +1,5709 @@
+{
+ "system": "chab-noentity",
+ "slice": "L",
+ "set": "nea",
+ "corpus_docs": 300,
+ "index_cost": {
+  "wall_s": 0,
+  "note": "channels=['lexical', 'dense', 'docvec', 'synq']; KNC_COOC_OFF=1; oos 0"
+ },
+ "per_query": [
+  {
+   "query": "有哪些研究同时涉及scintillating tile与charged particle？（关联检索）",
+   "gold_doc_ids": [
+    "014bbee559184f14955833e0133aed10",
+    "724d801f5ea641a8bf593beaf9c933b2",
+    "b390a2d153854bbaa410f1873377e362",
+    "be6e2372886247faad8f0a73d9111130",
+    "de8ef9464b764f2f87385baf4b26f683"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "8a03ff8c76064113b0da4bb911638afb",
+     "chunk_id": "60970284a3aa9962eeb7ff642a2fcd54ff973ca4883ff26d05a957be30db9489"
+    },
+    {
+     "rank": 2,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "0fcf29936b01c00c4fcdfcb7975368f5ec4d19ff2ac3d204a06560b8c1701432"
+    },
+    {
+     "rank": 3,
+     "doc_id": "ca89544c0f8743f7a742031ca46ca864",
+     "chunk_id": "aae0d4c8b647fa220e16502562d6debe75e6fba15e4cb3136d7c06f14189c7de"
+    },
+    {
+     "rank": 4,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "6f26863d89c2bb47c2447a404f4862ac3acc82a148448b159751ad30829d0ead"
+    },
+    {
+     "rank": 5,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "9a37180d18ecc546ac49442588291f855b3aa459a5a6a73d339dee31b1ec14bc"
+    },
+    {
+     "rank": 6,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "b638e14c02927b3e541cc7198fa577b12a4ae2d5917e6d913fb8ae230bfe2c6a"
+    },
+    {
+     "rank": 7,
+     "doc_id": "8245c2cd4ed64139978856c92e658830",
+     "chunk_id": "f953959bd638615f4a0adfe9afe3ae4f69d59bdc57cdb5ba8a8eb6966b8dfb08"
+    },
+    {
+     "rank": 8,
+     "doc_id": "290e438bb9bc423ca6f80bc595586b5a",
+     "chunk_id": "190609ea569eea7db193d5ddcdc0d992ce315ea425f099df5c6f2356da9dd40a"
+    },
+    {
+     "rank": 9,
+     "doc_id": "64f835ed443d408481f4587a69c35b7b",
+     "chunk_id": "a383bb81be3a1810b5988f71d5c5b5b81d3ef27aa92e3b1da702106684f70c09"
+    },
+    {
+     "rank": 10,
+     "doc_id": "532cd3f4f2ff419c8348cc1142ec082c",
+     "chunk_id": "83ea695a7b86de6c0f8b89465c898a126860de25f38187d0594c2e59aaa343d0"
+    },
+    {
+     "rank": 11,
+     "doc_id": "f958d330a0d34578b9615b0c12845281",
+     "chunk_id": "ca659a42e971ce64a954f9b5508beb64f8cb4d5b16205c1e22fdc4f74effc0ba"
+    },
+    {
+     "rank": 12,
+     "doc_id": "de8ef9464b764f2f87385baf4b26f683",
+     "chunk_id": "8d7e4e95e05da60beae8db836a08c732a4a5a84d2418f826e92ceaa69f4dbd18"
+    },
+    {
+     "rank": 13,
+     "doc_id": "724d801f5ea641a8bf593beaf9c933b2",
+     "chunk_id": "3db0c0716e19ca1f434bedeb4175a4ce2f73e888fd413d79b6ee4931a66f8506"
+    },
+    {
+     "rank": 14,
+     "doc_id": "d5a81abccd4349e9a704f81df5f1e5bc",
+     "chunk_id": "98a9c0360d3959a3938f54cc33c066b3b1668e3c7ba57b831351b89117d638fa"
+    },
+    {
+     "rank": 15,
+     "doc_id": "81ab67a339564183934e466d2a398f62",
+     "chunk_id": "587d3231461b3ab3b1222dbfe73ebbb7280621f8e7bca68974dca47d335c9d16"
+    },
+    {
+     "rank": 16,
+     "doc_id": "66be046e7e2d4ef6966258dc4d578740",
+     "chunk_id": "b34564bdf173f77f9781de9111b08df353d7824c6699f3efc2b56e11adfa4833"
+    },
+    {
+     "rank": 17,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "31af5857b63c34e58bdd9088c5f17fca7dcf67ca13f2ff8505a20c73073cc148"
+    },
+    {
+     "rank": 18,
+     "doc_id": "be6e2372886247faad8f0a73d9111130",
+     "chunk_id": "6655de4798df229bbde9d85c39b72741271d06e02263e4d60de7ad500d926b3f"
+    },
+    {
+     "rank": 19,
+     "doc_id": "df5e7e8fd4154849a7e210f26e4f6aeb",
+     "chunk_id": "0ebd73a53eee0247789e6b2a4ff269b3fb2bce416f11c3cab84ee2b063249251"
+    },
+    {
+     "rank": 20,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "03efec690dfd29f058b31be6de2776febe993ae05e612bbd711706a43b0df58a"
+    }
+   ],
+   "latency_s": 0.451,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及scintillating tile与timing resolution？（关联检索）",
+   "gold_doc_ids": [
+    "3de0313da69240988788d3e12a654577",
+    "8a03ff8c76064113b0da4bb911638afb",
+    "d5a81abccd4349e9a704f81df5f1e5bc",
+    "de8ef9464b764f2f87385baf4b26f683"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "6bfdb640487d4ef1b93f1fc8ef05d098",
+     "chunk_id": "eca34925f0151f4c1491f993b129698915d2385b31da5d1ef9aa5d69d904004b"
+    },
+    {
+     "rank": 2,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "20a3b72f89945dfb9e619c3a7544a258440c4de54f68879477da8316d1d3d733"
+    },
+    {
+     "rank": 3,
+     "doc_id": "8a03ff8c76064113b0da4bb911638afb",
+     "chunk_id": "44717a4e3659f0afa9f7a3493313fbdb5f94e4bd262b8fbc206ee3207ab5c442"
+    },
+    {
+     "rank": 4,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "c46e270834ba6e297d1945ca26b4a00a7708c641f6babae333d30bf1da61dd50"
+    },
+    {
+     "rank": 5,
+     "doc_id": "014bbee559184f14955833e0133aed10",
+     "chunk_id": "897bae5aed4ae373fef26d77bf3a3822146836427f52c0fa649818215c063159"
+    },
+    {
+     "rank": 6,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "e39c37a31762e2092ba64230c6fb9bd443b1b1c5b0fafcaafc805e2e9ea18521"
+    },
+    {
+     "rank": 7,
+     "doc_id": "d5a81abccd4349e9a704f81df5f1e5bc",
+     "chunk_id": "08efe357b8625f49e64c7b82dcb26436bf2e94d032e0e63a2ce9aeeb128b532a"
+    },
+    {
+     "rank": 8,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "4c6be3cf605c5fdbbeff9d16ad9e207c981172c0ecc948fd7d18f4ce69ce5cfe"
+    },
+    {
+     "rank": 9,
+     "doc_id": "66be046e7e2d4ef6966258dc4d578740",
+     "chunk_id": "b2a28b41d89863d0e625ecaf4b3133aff6ca5a464f8260be9b433f08112e253c"
+    },
+    {
+     "rank": 10,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "4d8445e348cc174f2afcd4df631372f3489c4ca43dbcbc8fbcaa44a6064ef244"
+    },
+    {
+     "rank": 11,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "a4bd47810f4cdbfffcc695bb7e7fbfc7fe3ff49cf4e930f9a6ec583fc7094bb8"
+    },
+    {
+     "rank": 12,
+     "doc_id": "290e438bb9bc423ca6f80bc595586b5a",
+     "chunk_id": "190609ea569eea7db193d5ddcdc0d992ce315ea425f099df5c6f2356da9dd40a"
+    },
+    {
+     "rank": 13,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "2bd1ce1ccd9542777844268801c918da8dda3ab4dc8c1ec8462a70ade21d8303"
+    },
+    {
+     "rank": 14,
+     "doc_id": "5828cb87a3a9488a85fe1fbbcee2993d",
+     "chunk_id": "b9ba0399e7c9eb2077a27bfc8d25fa4a2eec1f2438b29ca782844597b8c49a7e"
+    },
+    {
+     "rank": 15,
+     "doc_id": "f39d49f647124f94b1fa1cd0b2c2b60c",
+     "chunk_id": "4d5bca4a61b408dabadb95839bd6579e0933493e34778719342391748b9f2d55"
+    },
+    {
+     "rank": 16,
+     "doc_id": "414d5fb773e3449294b8e01aae26f24c",
+     "chunk_id": "b8eba5a09ab467b59cd627162e515f8c6dbc78cd7bcf36b031fba92bd7f9bb89"
+    },
+    {
+     "rank": 17,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "172c5c598b47f31482f674bed02c402626b9325329919e40c9e82326b3ac3cd9"
+    },
+    {
+     "rank": 18,
+     "doc_id": "0b6b54ced421431a8973a729cf5ab44c",
+     "chunk_id": "a81cabad5ad93d1e6b991528dfbf222517dc77d9f360d94e62f9a3e6f0cd61ae"
+    },
+    {
+     "rank": 19,
+     "doc_id": "81ab67a339564183934e466d2a398f62",
+     "chunk_id": "587d3231461b3ab3b1222dbfe73ebbb7280621f8e7bca68974dca47d335c9d16"
+    },
+    {
+     "rank": 20,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "31af5857b63c34e58bdd9088c5f17fca7dcf67ca13f2ff8505a20c73073cc148"
+    }
+   ],
+   "latency_s": 0.493,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及自由电子激光装置与超导直线加速器？（关联检索）",
+   "gold_doc_ids": [
+    "44198d5322964c07856f403cb5876961",
+    "c46f29956e65490e968ce3ef1f8c110e",
+    "dc3419725b92499c9986a216a777795c"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "7e2c36a877374a858f3db06644a72295",
+     "chunk_id": "b4a2b53a9ec9f5aba17191f96b935bf5d528b86471960b6e9dbd4b93dc4c96e1"
+    },
+    {
+     "rank": 2,
+     "doc_id": "c46f29956e65490e968ce3ef1f8c110e",
+     "chunk_id": "2b87ac02154aac3ba564b3174dc2b89dcdc4852552e0db6230d5034baa5fdae0"
+    },
+    {
+     "rank": 3,
+     "doc_id": "af06e56794fe4abdb8be40ed340da7b5",
+     "chunk_id": "fc7f4b4a05cf0681fa3c2bf252f59340e57e890f0d54a4a1a92f5fa16329d30e"
+    },
+    {
+     "rank": 4,
+     "doc_id": "64441a9a95b24c438ea2d1b38a695786",
+     "chunk_id": "80e65c3b1cfe7da8d33ea043966bae15a3369908b2c3f2ebf2e9beb91dbfc7f7"
+    },
+    {
+     "rank": 5,
+     "doc_id": "90f8be5ec2fc478e9e0be323dc81316d",
+     "chunk_id": "872e94fd13dce541d4f7d9dcc28766e524173624a78b51948a3b952b9519a3fa"
+    },
+    {
+     "rank": 6,
+     "doc_id": "44198d5322964c07856f403cb5876961",
+     "chunk_id": "9ed7281057a63d2c066603ad6e8cff799da478fe3ee16d43fb12b5bd7a0b5669"
+    },
+    {
+     "rank": 7,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "134c553d1cecd10ba1db9c198d0441dae99c1fdd7319c35c77ed7ecb5cd07505"
+    },
+    {
+     "rank": 8,
+     "doc_id": "0b9b473374f24724b1406d311f8540eb",
+     "chunk_id": "4ee916f946d477c319698f3fbff93f46f37f07bc5e294995dae5a690c6c2b7f0"
+    },
+    {
+     "rank": 9,
+     "doc_id": "fbd0581c5d734023ae5cf56144489729",
+     "chunk_id": "fbeb1bc1cd1f2226ae1b667b2cd50cd5916e1c0d9a2053d923a6a36b757865c6"
+    },
+    {
+     "rank": 10,
+     "doc_id": "99370c67ecfe432ea2bde4b641529a10",
+     "chunk_id": "50707b3fbe9a326dabf2228428df2d86451845bde30b7433639b77bfa57bba0a"
+    },
+    {
+     "rank": 11,
+     "doc_id": "dc3419725b92499c9986a216a777795c",
+     "chunk_id": "5098aa62baab997e89fae28fe5f1d4c3beac9cbebe21ea72b15ec93fca4fad08"
+    },
+    {
+     "rank": 12,
+     "doc_id": "20280e875db748769971bc36cd95deb0",
+     "chunk_id": "23a8fa07b5099a92b8e2d7ffa781a7998cf5d798be689b984fbb2c67f6f8971d"
+    },
+    {
+     "rank": 13,
+     "doc_id": "45be62b3b4e44fa19f1af0066ae8aa74",
+     "chunk_id": "ab75d59e3425b3555d807f7cda3311d0051a4ad63d165ae9775d4845a62f226a"
+    },
+    {
+     "rank": 14,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "6da98ed11059a02650c7c1e21b50e214e6193b5dbcbb2360db2f84387fbdd4d2"
+    },
+    {
+     "rank": 15,
+     "doc_id": "64f835ed443d408481f4587a69c35b7b",
+     "chunk_id": "4048a17aec73cf74ba47ea77a95c2bf11a33c2012ecd5b7d8455caf03f94bced"
+    },
+    {
+     "rank": 16,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "a945518229a9f85c1dff863c05000b72467e9ec20f87fe4180fa32ffc51e944e"
+    },
+    {
+     "rank": 17,
+     "doc_id": "d42cb7b0179944fe8c22c1eb823a5403",
+     "chunk_id": "297a419017915fbe62e893a5d47b5643bbc173bafb51282029bd5b1b18c68da9"
+    },
+    {
+     "rank": 18,
+     "doc_id": "d0df529c2b794bdba3b5c63e49593301",
+     "chunk_id": "f770924c49f5645cac6664ecd5aa57d8d7b9ba5e13751bed5b136c0bdc25063e"
+    },
+    {
+     "rank": 19,
+     "doc_id": "c630f6ecbc75455fa4dae9c79937fe1a",
+     "chunk_id": "282556a5d7e20ce93caa9931360f39a3437cd86b439abf604b577d6104dbf3e1"
+    },
+    {
+     "rank": 20,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "a074b1ea75abbd9e767d390b3178d0b4d9b0d7ee09c113b6189f179156a3b78e"
+    }
+   ],
+   "latency_s": 0.57,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及自由电子激光装置与工艺？（关联检索）",
+   "gold_doc_ids": [
+    "64441a9a95b24c438ea2d1b38a695786",
+    "af06e56794fe4abdb8be40ed340da7b5",
+    "dd2952358a604501869c31e4e5480ff5",
+    "e00af04ab2484ec6aeb2f083e2a819fa",
+    "fe62161ce46f41cfacd6a1a6f5f242a6"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "7e2c36a877374a858f3db06644a72295",
+     "chunk_id": "b4a2b53a9ec9f5aba17191f96b935bf5d528b86471960b6e9dbd4b93dc4c96e1"
+    },
+    {
+     "rank": 2,
+     "doc_id": "af06e56794fe4abdb8be40ed340da7b5",
+     "chunk_id": "fc7f4b4a05cf0681fa3c2bf252f59340e57e890f0d54a4a1a92f5fa16329d30e"
+    },
+    {
+     "rank": 3,
+     "doc_id": "dc3419725b92499c9986a216a777795c",
+     "chunk_id": "d6b26340c30ed932367fe5d3d10ba0f8d62adea779418c58b79b01e059a294d4"
+    },
+    {
+     "rank": 4,
+     "doc_id": "e00af04ab2484ec6aeb2f083e2a819fa",
+     "chunk_id": "853ca3c9ac6c4a2f3ccd2eba5f054b07b43d15283a5d01049f518d60fc50f3d0"
+    },
+    {
+     "rank": 5,
+     "doc_id": "90f8be5ec2fc478e9e0be323dc81316d",
+     "chunk_id": "872e94fd13dce541d4f7d9dcc28766e524173624a78b51948a3b952b9519a3fa"
+    },
+    {
+     "rank": 6,
+     "doc_id": "c46f29956e65490e968ce3ef1f8c110e",
+     "chunk_id": "4b0495fdcf7bdcd96160b2177981bacf9f7ea0ee1abed713ea8ea328412babdc"
+    },
+    {
+     "rank": 7,
+     "doc_id": "0b9b473374f24724b1406d311f8540eb",
+     "chunk_id": "4ee916f946d477c319698f3fbff93f46f37f07bc5e294995dae5a690c6c2b7f0"
+    },
+    {
+     "rank": 8,
+     "doc_id": "dd2952358a604501869c31e4e5480ff5",
+     "chunk_id": "c47734a425321648b6ceca5430a8aff6782137587b39768e8026ec1ecb6319c8"
+    },
+    {
+     "rank": 9,
+     "doc_id": "20280e875db748769971bc36cd95deb0",
+     "chunk_id": "23a8fa07b5099a92b8e2d7ffa781a7998cf5d798be689b984fbb2c67f6f8971d"
+    },
+    {
+     "rank": 10,
+     "doc_id": "44198d5322964c07856f403cb5876961",
+     "chunk_id": "549b5db5cd6bb33b1d4410185155e71436dea86153d365c0d654e3050ba8b004"
+    },
+    {
+     "rank": 11,
+     "doc_id": "64f835ed443d408481f4587a69c35b7b",
+     "chunk_id": "a383bb81be3a1810b5988f71d5c5b5b81d3ef27aa92e3b1da702106684f70c09"
+    },
+    {
+     "rank": 12,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "134c553d1cecd10ba1db9c198d0441dae99c1fdd7319c35c77ed7ecb5cd07505"
+    },
+    {
+     "rank": 13,
+     "doc_id": "6c149c8de1b14cf4b3808f972391ab63",
+     "chunk_id": "c1011fc33eda20d348a589be6d1685365f815c5ab8cad5a975a02319f8864335"
+    },
+    {
+     "rank": 14,
+     "doc_id": "c630f6ecbc75455fa4dae9c79937fe1a",
+     "chunk_id": "749b5e211a5a89af585a5240017dc0cb0a640edcd793d3933c41b0697f187944"
+    },
+    {
+     "rank": 15,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "2f446a2c7e6496d861c2e8b204e7d1704ff5c327e0e62c63f585948897e9a0df"
+    },
+    {
+     "rank": 16,
+     "doc_id": "11e91abe0096409fadb6c5422745306e",
+     "chunk_id": "531eb0c6c26a16246063d341405dfbbd609472cf5290b5a8c5a7e78a19fb3428"
+    },
+    {
+     "rank": 17,
+     "doc_id": "64441a9a95b24c438ea2d1b38a695786",
+     "chunk_id": "8be070dcc3b7a8cdd54c902813d1d429858986e227823c2e582a3ab21afcf4f6"
+    },
+    {
+     "rank": 18,
+     "doc_id": "475a1cbdf5874768b6f405e23f076f11",
+     "chunk_id": "e6ada1d628ca30ae3b951dc4e7f59e3a0a315fb60ad7907894cb4ea8d639d68d"
+    },
+    {
+     "rank": 19,
+     "doc_id": "7c3ca77771064b39816137cb9d2820d1",
+     "chunk_id": "bff2949111eae68411f62b3b0a7e37197b7d750675c47b231dcb0b44a31e8054"
+    },
+    {
+     "rank": 20,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "bb0004c65294f004febe0fd4c6d75ebd3d770dbb4a0daf715e178a4de3908d9e"
+    }
+   ],
+   "latency_s": 0.54,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及自由电子激光装置与不锈钢？（关联检索）",
+   "gold_doc_ids": [
+    "7e2c36a877374a858f3db06644a72295",
+    "90f8be5ec2fc478e9e0be323dc81316d"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "d6be8637a7664012ad49fbb0fd24cbfa",
+     "chunk_id": "3d948d6d15b11df1fe964a256f066b80e6a758af76380ad79f46c8747f002371"
+    },
+    {
+     "rank": 2,
+     "doc_id": "7e2c36a877374a858f3db06644a72295",
+     "chunk_id": "b4a2b53a9ec9f5aba17191f96b935bf5d528b86471960b6e9dbd4b93dc4c96e1"
+    },
+    {
+     "rank": 3,
+     "doc_id": "20280e875db748769971bc36cd95deb0",
+     "chunk_id": "23a8fa07b5099a92b8e2d7ffa781a7998cf5d798be689b984fbb2c67f6f8971d"
+    },
+    {
+     "rank": 4,
+     "doc_id": "44198d5322964c07856f403cb5876961",
+     "chunk_id": "7a4fac9b3795e67853ca4e8fb2152f31209f6b5c47066431458720ce86437748"
+    },
+    {
+     "rank": 5,
+     "doc_id": "c46f29956e65490e968ce3ef1f8c110e",
+     "chunk_id": "4b0495fdcf7bdcd96160b2177981bacf9f7ea0ee1abed713ea8ea328412babdc"
+    },
+    {
+     "rank": 6,
+     "doc_id": "af06e56794fe4abdb8be40ed340da7b5",
+     "chunk_id": "fc7f4b4a05cf0681fa3c2bf252f59340e57e890f0d54a4a1a92f5fa16329d30e"
+    },
+    {
+     "rank": 7,
+     "doc_id": "90f8be5ec2fc478e9e0be323dc81316d",
+     "chunk_id": "872e94fd13dce541d4f7d9dcc28766e524173624a78b51948a3b952b9519a3fa"
+    },
+    {
+     "rank": 8,
+     "doc_id": "0b9b473374f24724b1406d311f8540eb",
+     "chunk_id": "4ee916f946d477c319698f3fbff93f46f37f07bc5e294995dae5a690c6c2b7f0"
+    },
+    {
+     "rank": 9,
+     "doc_id": "64f835ed443d408481f4587a69c35b7b",
+     "chunk_id": "7857f0b43e018235c8ae2894d4558f14d0035832d76bf49fd2f4eada4c2a45d0"
+    },
+    {
+     "rank": 10,
+     "doc_id": "63107ab5c74d41d4ab460a2412d38f9a",
+     "chunk_id": "4d236e8b8742e91c29056a2cb68688f750d210e02e8854edd0bc6ed638dc6f01"
+    },
+    {
+     "rank": 11,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "134c553d1cecd10ba1db9c198d0441dae99c1fdd7319c35c77ed7ecb5cd07505"
+    },
+    {
+     "rank": 12,
+     "doc_id": "e9f09ec17ee34c3d873a8a65ea431f65",
+     "chunk_id": "ad7922b9227e2826d2fdb8cb5f57dc82ad5b00e7a01fce3eb5b58af2533b4250"
+    },
+    {
+     "rank": 13,
+     "doc_id": "dc3419725b92499c9986a216a777795c",
+     "chunk_id": "5098aa62baab997e89fae28fe5f1d4c3beac9cbebe21ea72b15ec93fca4fad08"
+    },
+    {
+     "rank": 14,
+     "doc_id": "c630f6ecbc75455fa4dae9c79937fe1a",
+     "chunk_id": "70601ed55581174ad7a10a7be8ef92f99e50a6ce7a9c8c4380408b9542f7eb8b"
+    },
+    {
+     "rank": 15,
+     "doc_id": "6c149c8de1b14cf4b3808f972391ab63",
+     "chunk_id": "c1011fc33eda20d348a589be6d1685365f815c5ab8cad5a975a02319f8864335"
+    },
+    {
+     "rank": 16,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "a945518229a9f85c1dff863c05000b72467e9ec20f87fe4180fa32ffc51e944e"
+    },
+    {
+     "rank": 17,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "a074b1ea75abbd9e767d390b3178d0b4d9b0d7ee09c113b6189f179156a3b78e"
+    },
+    {
+     "rank": 18,
+     "doc_id": "99370c67ecfe432ea2bde4b641529a10",
+     "chunk_id": "f7d1e0883f1213dc93506d0d8c5a43b7c864a8a07f989b66c2bb35ab1ecd8ee9"
+    },
+    {
+     "rank": 19,
+     "doc_id": "d0df529c2b794bdba3b5c63e49593301",
+     "chunk_id": "f770924c49f5645cac6664ecd5aa57d8d7b9ba5e13751bed5b136c0bdc25063e"
+    },
+    {
+     "rank": 20,
+     "doc_id": "703536066dba4ab1a8723b7b2433cf6c",
+     "chunk_id": "aee0e82dd0fe57f86f3331b25189813cf9a1cd3c5cef6c2d77f79022d7bcda65"
+    }
+   ],
+   "latency_s": 0.545,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及自由电子激光装置与现场可编程门阵列？（关联检索）",
+   "gold_doc_ids": [
+    "079d82fbf30349a7904921e9ac50b50c",
+    "0b9b473374f24724b1406d311f8540eb",
+    "703536066dba4ab1a8723b7b2433cf6c",
+    "af06e56794fe4abdb8be40ed340da7b5",
+    "c02c0f51df6147368bd2108e6cc59cea"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "af06e56794fe4abdb8be40ed340da7b5",
+     "chunk_id": "f0394e3b45dec9e2deabf47365eaa5731db4dd6a7ea99a35ee95701dd125da80"
+    },
+    {
+     "rank": 2,
+     "doc_id": "0b9b473374f24724b1406d311f8540eb",
+     "chunk_id": "4ee916f946d477c319698f3fbff93f46f37f07bc5e294995dae5a690c6c2b7f0"
+    },
+    {
+     "rank": 3,
+     "doc_id": "90f8be5ec2fc478e9e0be323dc81316d",
+     "chunk_id": "872e94fd13dce541d4f7d9dcc28766e524173624a78b51948a3b952b9519a3fa"
+    },
+    {
+     "rank": 4,
+     "doc_id": "5027e1b3dfb048a1bd8cb193d0e57b93",
+     "chunk_id": "4ba78e7ee7b7f4355f0cbab94e32ef2a7c1ab3a07b247d87a26f31125d3e4732"
+    },
+    {
+     "rank": 5,
+     "doc_id": "703536066dba4ab1a8723b7b2433cf6c",
+     "chunk_id": "aee0e82dd0fe57f86f3331b25189813cf9a1cd3c5cef6c2d77f79022d7bcda65"
+    },
+    {
+     "rank": 6,
+     "doc_id": "44198d5322964c07856f403cb5876961",
+     "chunk_id": "549b5db5cd6bb33b1d4410185155e71436dea86153d365c0d654e3050ba8b004"
+    },
+    {
+     "rank": 7,
+     "doc_id": "20280e875db748769971bc36cd95deb0",
+     "chunk_id": "d6d21c7c0d5cc45374f5e636886965337a216958992e685a764e73006b1d04c6"
+    },
+    {
+     "rank": 8,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "134c553d1cecd10ba1db9c198d0441dae99c1fdd7319c35c77ed7ecb5cd07505"
+    },
+    {
+     "rank": 9,
+     "doc_id": "c46f29956e65490e968ce3ef1f8c110e",
+     "chunk_id": "2b87ac02154aac3ba564b3174dc2b89dcdc4852552e0db6230d5034baa5fdae0"
+    },
+    {
+     "rank": 10,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "33b4aa593618948b97eff461a8f09c25451db274b80e858dc8e75ad81c6af8e8"
+    },
+    {
+     "rank": 11,
+     "doc_id": "079d82fbf30349a7904921e9ac50b50c",
+     "chunk_id": "6006126afcd43aab6547fd78a83a5d9b83d21b4532b8c6724250789371b91b33"
+    },
+    {
+     "rank": 12,
+     "doc_id": "dc3419725b92499c9986a216a777795c",
+     "chunk_id": "d6b26340c30ed932367fe5d3d10ba0f8d62adea779418c58b79b01e059a294d4"
+    },
+    {
+     "rank": 13,
+     "doc_id": "025f12021feb42c7b2368ae621b9825c",
+     "chunk_id": "870a0b94794306915a10b81bdb8c7f8c7f9adb30bc6618197c01f10a97d1464d"
+    },
+    {
+     "rank": 14,
+     "doc_id": "e4c713ee593a412c946c2a8c0c61cb3b",
+     "chunk_id": "b60f1bacdf78a7fe40375fcb274d449242f1dcaa0c4ff85856f5238abde863d1"
+    },
+    {
+     "rank": 15,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "88eac3db676eeab30e95999606f8f0f702979f67274a56fd9f0a9d731572abe3"
+    },
+    {
+     "rank": 16,
+     "doc_id": "64f835ed443d408481f4587a69c35b7b",
+     "chunk_id": "e73156a7d3aad8b47ca46e41a26482d99cc1e3454010633a090671487e1080b6"
+    },
+    {
+     "rank": 17,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "a945518229a9f85c1dff863c05000b72467e9ec20f87fe4180fa32ffc51e944e"
+    },
+    {
+     "rank": 18,
+     "doc_id": "6c149c8de1b14cf4b3808f972391ab63",
+     "chunk_id": "e946ae2de92f280d065cbab6a387c503a777bc108143c9f2e99ec2c5ce2db4ce"
+    },
+    {
+     "rank": 19,
+     "doc_id": "290e438bb9bc423ca6f80bc595586b5a",
+     "chunk_id": "cabff71beccedef3abc9112a28c59c9567db96a13357cbcbfa7071d5b64bcdb9"
+    },
+    {
+     "rank": 20,
+     "doc_id": "6eb2fc28a6b943f88505f10b07cc2f0d",
+     "chunk_id": "1d565b5df58858d1f4d0dbd120d6671552895cce7f4a097d3d58b66c8565a778"
+    }
+   ],
+   "latency_s": 0.553,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及电子感应加速器与能量？（关联检索）",
+   "gold_doc_ids": [
+    "475a1cbdf5874768b6f405e23f076f11",
+    "87685df79e264179b43a02c5ec69856e",
+    "fbd0581c5d734023ae5cf56144489729"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "87685df79e264179b43a02c5ec69856e",
+     "chunk_id": "698c8e38caed7b73f2ce70b3bd79bc0d376f8a8cfe18c0dfee74048b1ddacde4"
+    },
+    {
+     "rank": 2,
+     "doc_id": "fbd0581c5d734023ae5cf56144489729",
+     "chunk_id": "fbeb1bc1cd1f2226ae1b667b2cd50cd5916e1c0d9a2053d923a6a36b757865c6"
+    },
+    {
+     "rank": 3,
+     "doc_id": "6dae33fe33e747ac9b67e2e6c509f9fc",
+     "chunk_id": "3958866d0f9fada1e5fa3ea9f29d7cb18667df4e9ccde0be98adfd39c6abc6db"
+    },
+    {
+     "rank": 4,
+     "doc_id": "af06e56794fe4abdb8be40ed340da7b5",
+     "chunk_id": "f0394e3b45dec9e2deabf47365eaa5731db4dd6a7ea99a35ee95701dd125da80"
+    },
+    {
+     "rank": 5,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "5b44f34788970f791d2de491767e153b0b287c47b4fdca9ddb2a9942331ab5db"
+    },
+    {
+     "rank": 6,
+     "doc_id": "ceca9573a2dc4cc78813de21b3702fc2",
+     "chunk_id": "6236c041254b0476f7fb4e61ac7590867abae4f3c2cd9979d0f02fbed4d13f18"
+    },
+    {
+     "rank": 7,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 8,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "49a4da791b3f2fcf2891192a1bacec51c629af3bdc693c6795f5f08c06260204"
+    },
+    {
+     "rank": 9,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "31af5857b63c34e58bdd9088c5f17fca7dcf67ca13f2ff8505a20c73073cc148"
+    },
+    {
+     "rank": 10,
+     "doc_id": "c630f6ecbc75455fa4dae9c79937fe1a",
+     "chunk_id": "282556a5d7e20ce93caa9931360f39a3437cd86b439abf604b577d6104dbf3e1"
+    },
+    {
+     "rank": 11,
+     "doc_id": "90f8be5ec2fc478e9e0be323dc81316d",
+     "chunk_id": "872e94fd13dce541d4f7d9dcc28766e524173624a78b51948a3b952b9519a3fa"
+    },
+    {
+     "rank": 12,
+     "doc_id": "5afec62371f746b8a6f44a1c118a9975",
+     "chunk_id": "03394cc1f6c943932be8c4784883cc3cc4951ff6d913ee8d7ebb49afc6f9de6e"
+    },
+    {
+     "rank": 13,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "5122b2e9f221d045184b86bb97fe9854d595d5ff695edb1e6807e2ca0ba9f9df"
+    },
+    {
+     "rank": 14,
+     "doc_id": "99370c67ecfe432ea2bde4b641529a10",
+     "chunk_id": "c7014421ff73d5fe452739046128eeebabd42074b97c64786a837398cd222f76"
+    },
+    {
+     "rank": 15,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "cdf4a43809f535185e9933384ee0f51a505c968e204cfcf65623ac08d59fa175"
+    },
+    {
+     "rank": 16,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "d33181f4e3800156337bd68335e2a42bf53a8c29456a4a78eb231de1eef58d7c"
+    },
+    {
+     "rank": 17,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "858f9a99d8b760d4381c06dbcfe23950430afe09ac593c1a7493243020f77013"
+    },
+    {
+     "rank": 18,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "0d7641bd9fa865bf8cbf9e4dd7dfbe96ee91bb5e247911566e57334de00f4688"
+    },
+    {
+     "rank": 19,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "b6ffec016975133a6bf1706e04779ea3ee32fb521cb2cb19d3807d12e937f2c7"
+    },
+    {
+     "rank": 20,
+     "doc_id": "6c149c8de1b14cf4b3808f972391ab63",
+     "chunk_id": "54bc52129306fbdf03ac3b24e139d728f1b9f657facb769fbb16e376c590fac4"
+    }
+   ],
+   "latency_s": 0.534,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及电子感应加速器与加速器？（关联检索）",
+   "gold_doc_ids": [
+    "475a1cbdf5874768b6f405e23f076f11",
+    "87685df79e264179b43a02c5ec69856e",
+    "fbd0581c5d734023ae5cf56144489729"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "87685df79e264179b43a02c5ec69856e",
+     "chunk_id": "698c8e38caed7b73f2ce70b3bd79bc0d376f8a8cfe18c0dfee74048b1ddacde4"
+    },
+    {
+     "rank": 2,
+     "doc_id": "fbd0581c5d734023ae5cf56144489729",
+     "chunk_id": "fbeb1bc1cd1f2226ae1b667b2cd50cd5916e1c0d9a2053d923a6a36b757865c6"
+    },
+    {
+     "rank": 3,
+     "doc_id": "af06e56794fe4abdb8be40ed340da7b5",
+     "chunk_id": "f0394e3b45dec9e2deabf47365eaa5731db4dd6a7ea99a35ee95701dd125da80"
+    },
+    {
+     "rank": 4,
+     "doc_id": "ceca9573a2dc4cc78813de21b3702fc2",
+     "chunk_id": "6236c041254b0476f7fb4e61ac7590867abae4f3c2cd9979d0f02fbed4d13f18"
+    },
+    {
+     "rank": 5,
+     "doc_id": "6dae33fe33e747ac9b67e2e6c509f9fc",
+     "chunk_id": "26a22af2a764d5f663c90555e7bc07dbba8058bc91169643b5e66b64158d2270"
+    },
+    {
+     "rank": 6,
+     "doc_id": "5afec62371f746b8a6f44a1c118a9975",
+     "chunk_id": "ebd2fb41313bc14853319ad0535f19768f6f275aba5d23c2552d0d2d79629de9"
+    },
+    {
+     "rank": 7,
+     "doc_id": "2b40ebc5fb394306890983020d20d129",
+     "chunk_id": "7b1482eaa1d631724597c0d5a085a40a85a127fd595bb984ffb2c4281ab9657b"
+    },
+    {
+     "rank": 8,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "49a4da791b3f2fcf2891192a1bacec51c629af3bdc693c6795f5f08c06260204"
+    },
+    {
+     "rank": 9,
+     "doc_id": "99370c67ecfe432ea2bde4b641529a10",
+     "chunk_id": "c7014421ff73d5fe452739046128eeebabd42074b97c64786a837398cd222f76"
+    },
+    {
+     "rank": 10,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "619d491efe78537e1fb4c9a00b59f3ae9d5e1659e7339742c34ae5c205d764cb"
+    },
+    {
+     "rank": 11,
+     "doc_id": "45be62b3b4e44fa19f1af0066ae8aa74",
+     "chunk_id": "ab75d59e3425b3555d807f7cda3311d0051a4ad63d165ae9775d4845a62f226a"
+    },
+    {
+     "rank": 12,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "858f9a99d8b760d4381c06dbcfe23950430afe09ac593c1a7493243020f77013"
+    },
+    {
+     "rank": 13,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "c333906559f6708de8709a8415a8f0bdbb3aa25cf51b0c0c2a5e754364366988"
+    },
+    {
+     "rank": 14,
+     "doc_id": "532cd3f4f2ff419c8348cc1142ec082c",
+     "chunk_id": "83ea695a7b86de6c0f8b89465c898a126860de25f38187d0594c2e59aaa343d0"
+    },
+    {
+     "rank": 15,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "fb74095bf389e1bd6cba19aa40c2b226b193f467545e3ce12549c35993ec91bb"
+    },
+    {
+     "rank": 16,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "1a9b9ecc26b9b278f3a19c438a0d3cf73670b2b835a36aac4e47bd2577d6e091"
+    },
+    {
+     "rank": 17,
+     "doc_id": "c630f6ecbc75455fa4dae9c79937fe1a",
+     "chunk_id": "282556a5d7e20ce93caa9931360f39a3437cd86b439abf604b577d6104dbf3e1"
+    },
+    {
+     "rank": 18,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "59a0c644aa085f23e01f21e4a4248c9da4287b3082dfec62e957c66493ebb5e4"
+    },
+    {
+     "rank": 19,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "94ba09fad049cf64f41a7e88a2f75aa60431a14c199a8231542234736fce58ab"
+    },
+    {
+     "rank": 20,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "d33181f4e3800156337bd68335e2a42bf53a8c29456a4a78eb231de1eef58d7c"
+    }
+   ],
+   "latency_s": 0.54,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及辐射探测器与切伦科夫计数器？（关联检索）",
+   "gold_doc_ids": [
+    "50b952cb4ef949bb93843a2dcc4e4a92"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "93bdbc1bf67d6dd76a9942ca0d3fce269673067193da27e0425a0c62b38d8e90"
+    },
+    {
+     "rank": 2,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "40c22762be9d6035c552bf5f649bc6a82efc231bee693cda6ddfb177be5fe948"
+    },
+    {
+     "rank": 3,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "5122b2e9f221d045184b86bb97fe9854d595d5ff695edb1e6807e2ca0ba9f9df"
+    },
+    {
+     "rank": 4,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "bdbd9ef39bccdf02756e15ff46830ab20ee4e9657078c9cf0e0c38af4288acdc"
+    },
+    {
+     "rank": 5,
+     "doc_id": "532cd3f4f2ff419c8348cc1142ec082c",
+     "chunk_id": "83ea695a7b86de6c0f8b89465c898a126860de25f38187d0594c2e59aaa343d0"
+    },
+    {
+     "rank": 6,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "c6f1818df94ac32978e41b2a97c9908302d6694ae7a6a4e5a753dc64f3a49e93"
+    },
+    {
+     "rank": 7,
+     "doc_id": "8a03ff8c76064113b0da4bb911638afb",
+     "chunk_id": "665732e519f8f06b3d72ae868dce87e9f419c810f28573df3c0b287a0264939c"
+    },
+    {
+     "rank": 8,
+     "doc_id": "6ae9ee5919aa4a7182b87f44f4c07217",
+     "chunk_id": "448f91149330510538a9290d25d57a671f681bc57401591b0ae4177a86389594"
+    },
+    {
+     "rank": 9,
+     "doc_id": "6c149c8de1b14cf4b3808f972391ab63",
+     "chunk_id": "3d523048f8def82a95b1a73ab609eee47beab582a3e2414d996f492cee953590"
+    },
+    {
+     "rank": 10,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "f2c9cb1eaab71ef71d2bde432801e4f0dd8c3217ca06a9aeb2c73e7deee443c1"
+    },
+    {
+     "rank": 11,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "ab6b29d18bc9cae7cdf60f7f2c1a63f4d03c36ca3d51826da07cf61df824955a"
+    },
+    {
+     "rank": 12,
+     "doc_id": "0e4bfcfcabfa47c69fb14d1d6f8fe03c",
+     "chunk_id": "46ab51130d4eb67c44f2c01edac76ae0baa7f81e5ddd391a1d112880af541fc1"
+    },
+    {
+     "rank": 13,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "c6c4907a78b7bfb6656fdecfeb35b247d5b14b77cf48bbc56bd7c952fec003e2"
+    },
+    {
+     "rank": 14,
+     "doc_id": "6bfdb640487d4ef1b93f1fc8ef05d098",
+     "chunk_id": "251ef0b8c2f00973ce83c151ef9ad794bd4948bc78de337b20a17a6f0788c80b"
+    },
+    {
+     "rank": 15,
+     "doc_id": "df5e7e8fd4154849a7e210f26e4f6aeb",
+     "chunk_id": "fe2f6cc685ce5df4ef6e59e9a00eb26eed0b47e241667ef127e33be2d55f5b5b"
+    },
+    {
+     "rank": 16,
+     "doc_id": "3de0313da69240988788d3e12a654577",
+     "chunk_id": "1a1a377be0f09839c87760ec64f37ee7cf3c574fb3a4cc5dabd3168da9ccc724"
+    },
+    {
+     "rank": 17,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "94ba09fad049cf64f41a7e88a2f75aa60431a14c199a8231542234736fce58ab"
+    },
+    {
+     "rank": 18,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "a77fcba38ff1ef8f382e23d44c3e678d4f614449a758b2e48a8474055d4e52a0"
+    },
+    {
+     "rank": 19,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "20bda2058be1a3b5d5f2c1a901a9c2c2249d700f74ef2541fb26f0a7560241c5"
+    },
+    {
+     "rank": 20,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "85abd1fc4b44abc497b869c0e5b8048f8c1dc031f3f4bfe2c2963f7bb7df20b4"
+    }
+   ],
+   "latency_s": 0.536,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及辐射探测器与切伦科夫辐射？（关联检索）",
+   "gold_doc_ids": [
+    "20280e875db748769971bc36cd95deb0",
+    "50b952cb4ef949bb93843a2dcc4e4a92"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "93bdbc1bf67d6dd76a9942ca0d3fce269673067193da27e0425a0c62b38d8e90"
+    },
+    {
+     "rank": 2,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "6c30f5b0decd68dcdd11ea012f38b51a93225ecb0877d3f5934ef8c56a0471bf"
+    },
+    {
+     "rank": 3,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "5122b2e9f221d045184b86bb97fe9854d595d5ff695edb1e6807e2ca0ba9f9df"
+    },
+    {
+     "rank": 4,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "bdbd9ef39bccdf02756e15ff46830ab20ee4e9657078c9cf0e0c38af4288acdc"
+    },
+    {
+     "rank": 5,
+     "doc_id": "532cd3f4f2ff419c8348cc1142ec082c",
+     "chunk_id": "83ea695a7b86de6c0f8b89465c898a126860de25f38187d0594c2e59aaa343d0"
+    },
+    {
+     "rank": 6,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "c6f1818df94ac32978e41b2a97c9908302d6694ae7a6a4e5a753dc64f3a49e93"
+    },
+    {
+     "rank": 7,
+     "doc_id": "6ae9ee5919aa4a7182b87f44f4c07217",
+     "chunk_id": "2105fe286bc2c8c1268a96bf5dd10343629e6e5f945fc9973736dba47cc2e663"
+    },
+    {
+     "rank": 8,
+     "doc_id": "0e4bfcfcabfa47c69fb14d1d6f8fe03c",
+     "chunk_id": "46ab51130d4eb67c44f2c01edac76ae0baa7f81e5ddd391a1d112880af541fc1"
+    },
+    {
+     "rank": 9,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "94ba09fad049cf64f41a7e88a2f75aa60431a14c199a8231542234736fce58ab"
+    },
+    {
+     "rank": 10,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "473158a9d50890c32c4a2a5023a46aa850efbcb6a9d86c65bc5540f20b4281f0"
+    },
+    {
+     "rank": 11,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "ab6b29d18bc9cae7cdf60f7f2c1a63f4d03c36ca3d51826da07cf61df824955a"
+    },
+    {
+     "rank": 12,
+     "doc_id": "16eb7b49c4254b989648778ab6793691",
+     "chunk_id": "22670a0ed0a7a2ddbfa69a41ca8cb4311d6d5df0948f8ae9a00d4c84fafc8d85"
+    },
+    {
+     "rank": 13,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "c6c4907a78b7bfb6656fdecfeb35b247d5b14b77cf48bbc56bd7c952fec003e2"
+    },
+    {
+     "rank": 14,
+     "doc_id": "df5e7e8fd4154849a7e210f26e4f6aeb",
+     "chunk_id": "fe2f6cc685ce5df4ef6e59e9a00eb26eed0b47e241667ef127e33be2d55f5b5b"
+    },
+    {
+     "rank": 15,
+     "doc_id": "6bfdb640487d4ef1b93f1fc8ef05d098",
+     "chunk_id": "251ef0b8c2f00973ce83c151ef9ad794bd4948bc78de337b20a17a6f0788c80b"
+    },
+    {
+     "rank": 16,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "99290eb3d1fd5227e2017169c6098a86d88c689768086acd4d9c71e9d4dbdd27"
+    },
+    {
+     "rank": 17,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "c193ded920bb5cbaa787a7583899b83c1364b9c2157cc033bbeb452618425041"
+    },
+    {
+     "rank": 18,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "d6b0d746f08c715e863e23c4b29e89e0d970b21d43ed444552e831674bd131ed"
+    },
+    {
+     "rank": 19,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "f2518882d5efb9f3287b7767efc13eb91bebd1cd9ff8a0ae72680720e5df8629"
+    },
+    {
+     "rank": 20,
+     "doc_id": "6ae9ee5919aa4a7182b87f44f4c07217",
+     "chunk_id": "448f91149330510538a9290d25d57a671f681bc57401591b0ae4177a86389594"
+    }
+   ],
+   "latency_s": 0.526,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及noise spectrum与ion？（关联检索）",
+   "gold_doc_ids": [
+    "2341515f1da6467da606cd68104c9ac8",
+    "5e45eaf55c6b418f842205f399feaf33",
+    "bcc8eaa5517646a0b4fd0e8828af8396",
+    "d42cb7b0179944fe8c22c1eb823a5403",
+    "fac161d820514145a20baf8e6f04b2da"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "bcc8eaa5517646a0b4fd0e8828af8396",
+     "chunk_id": "5ed9278423e903c3da2d9dd966ee89b675946071b12ed7bbfb85587418b6e537"
+    },
+    {
+     "rank": 2,
+     "doc_id": "2341515f1da6467da606cd68104c9ac8",
+     "chunk_id": "3eed220ae4936d3e43d07eaea02abf0400893d82bbbe4cb049d54319eadc3908"
+    },
+    {
+     "rank": 3,
+     "doc_id": "005295c12c544da796a7e069d5c07afd",
+     "chunk_id": "8f927872c0ff8d2fc23c6922edb3808f61126f35fb5d5e575e487032791e46c4"
+    },
+    {
+     "rank": 4,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "795cd038fc6e215945ad2fc6471b038efb61c02f7eb8f25f72995b4864b66957"
+    },
+    {
+     "rank": 5,
+     "doc_id": "5e45eaf55c6b418f842205f399feaf33",
+     "chunk_id": "ffe02f2821f2e446914bd25ae8734b7f75b7cacdcff4242d999d4a7289dab663"
+    },
+    {
+     "rank": 6,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "886c4fc548c130cf1e23a2d08ae5d35d1ae860d9f1bceec9c869cf87f1f4e87b"
+    },
+    {
+     "rank": 7,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "0573feeef396a7f3b055018f5dfd31f948c1b422f3b82862a5296054c40a252f"
+    },
+    {
+     "rank": 8,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "2a1a47b4a6d764135802a3baa12d1e02bf194105fc26b3e87486f0cf9951e14d"
+    },
+    {
+     "rank": 9,
+     "doc_id": "eff2af7d3aa049f6acee61b95edec7a5",
+     "chunk_id": "5a4a62311a10c55e14aa91ce4883f66de2826e95a1dd219213604f863bb93f58"
+    },
+    {
+     "rank": 10,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "ede9e6eb7c4505cc0c37e1abb4f62f5577d4f667422a2fc55a73e5c63caabce8"
+    },
+    {
+     "rank": 11,
+     "doc_id": "9444443e71ce45a5b324d5eed10c7dc1",
+     "chunk_id": "6066a5622c97ad50ed8597ab14d5cd454b27a805e95f09402ab0b8fbdf652600"
+    },
+    {
+     "rank": 12,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "8d0edc4c039873aa96096fd4d6945b6113baccfcb70eec862e0444b4eff5da6b"
+    },
+    {
+     "rank": 13,
+     "doc_id": "43648c5ebaf143e687b5a3936a237f00",
+     "chunk_id": "a5b9db9e1ce45c5dda6c0473795cd3a9db8b58b2990d342ff07a2f5a4cf8a609"
+    },
+    {
+     "rank": 14,
+     "doc_id": "94250ccf417346dc9b1c8d60472d13e4",
+     "chunk_id": "830fec636f052aa36ac5b2fba1ea667400312f4ba13bef9de5ed2cf20e3b1bb5"
+    },
+    {
+     "rank": 15,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "5c141b9c6282ba9a2047ae680f0087a0dc16ef617793144348ca6c70ed5bf1c1"
+    },
+    {
+     "rank": 16,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "3e2788d5276be599e64e1194172c69b2f53ae84d74beb7f70ae9e2f4c004ca4a"
+    },
+    {
+     "rank": 17,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "157fa9df94d6b7002e9be764492ee9531322a9b57a33a2c2d486364463c774a4"
+    },
+    {
+     "rank": 18,
+     "doc_id": "025f12021feb42c7b2368ae621b9825c",
+     "chunk_id": "ae5845cae6dfef47806d50918895543387596f3f382758c14602ec9a25676f21"
+    },
+    {
+     "rank": 19,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "c5cc1fd638aa3a949ced6f5b97fed05303d5e430426743985bef8b54ef7eff0a"
+    },
+    {
+     "rank": 20,
+     "doc_id": "2b40ebc5fb394306890983020d20d129",
+     "chunk_id": "15af387f160794e83dacf713af249d7bfbe6ad8e653bb6e228dc261b5625ad17"
+    }
+   ],
+   "latency_s": 0.473,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及校准源与探测效率？（关联检索）",
+   "gold_doc_ids": [
+    "2ea4691ec20941458865f18e181cd468",
+    "3deac94b6d2744989b78ab2cbfc500e0",
+    "c64c868f619449a183942c9717c927ca",
+    "fbf7d2eccb8a4acab9f334e0f15c210d"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "8b64e8606cf958c976910da864c8a5ad54b9ed6f9cea82eb148f2c31108d600b"
+    },
+    {
+     "rank": 2,
+     "doc_id": "81abd380b7fb4219beff1cf006b9bca8",
+     "chunk_id": "a89ffc0796711b85132a9c802e5d1de0efc83bc4dba62ec89007a7804f2dbe62"
+    },
+    {
+     "rank": 3,
+     "doc_id": "df5e7e8fd4154849a7e210f26e4f6aeb",
+     "chunk_id": "7fa245565a53ddc1e9c0c93afa3c6c021cb06e3611563c147e53fd6646b20424"
+    },
+    {
+     "rank": 4,
+     "doc_id": "43ce5070387d4591a866ffd7a5558231",
+     "chunk_id": "059f41e49c9b4a06fd0037f8286f4904bde3a066977114bb7d1dd03869985f00"
+    },
+    {
+     "rank": 5,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "6465438d82d85b670d0502421d753d81d11a19c945df1208d089d5bc407a67c8"
+    },
+    {
+     "rank": 6,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "190c589a84c1c0248e47525a5f3fa1ef5422b666209131d1b8adb6b1397aea5a"
+    },
+    {
+     "rank": 7,
+     "doc_id": "2dc6aea717814b18bc478839a506c2d9",
+     "chunk_id": "3b4b190bc062a2f652a694e30bdd45d055d03b5f8c1321885b2b458cadc38ad9"
+    },
+    {
+     "rank": 8,
+     "doc_id": "2bfba94796ff44cda45c15db421e378c",
+     "chunk_id": "4ea5ccf14195eeb9439d77a5f0da83777f7abda4886a4892006e9f1b93c65238"
+    },
+    {
+     "rank": 9,
+     "doc_id": "dcd0ef5b938443f98eb98407af1a5d8c",
+     "chunk_id": "98a29dc8c080a052151ad83ed35cad35e7a292196e8e98a861a3a5911f21a1cc"
+    },
+    {
+     "rank": 10,
+     "doc_id": "be6e2372886247faad8f0a73d9111130",
+     "chunk_id": "09a952dc7577ae6e35fcdd908d4578d53dcb256736b035746c4a9c48821b14ac"
+    },
+    {
+     "rank": 11,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "67510efcabf15c0cce79d9b0cbd36917ae1f6ffcf53a812c66b8944b39173814"
+    },
+    {
+     "rank": 12,
+     "doc_id": "87a31bfd43ff4a59837fe8f72b2e744b",
+     "chunk_id": "53e6612eaa27c11582350a121aa3e93c3cab3aef6c73e078f764eea5b9669a0c"
+    },
+    {
+     "rank": 13,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "131970fc43dbcaa75d4aaca6b3fdb1caa4deff8682a8f90a3aace9db901e877b"
+    },
+    {
+     "rank": 14,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "5e868583edc66883f1fd89c4d0b8854fa6f724aa8e1a5bcd06d398d509c368d1"
+    },
+    {
+     "rank": 15,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "414e10640ad619b9f85854aaa88af44da701be133ec67f6257ab6aaf3ab6d984"
+    },
+    {
+     "rank": 16,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "642e6b76a0f0f23b41ca63f39dccd31069bcdc19b3db7702fe8cf6335cceb68c"
+    },
+    {
+     "rank": 17,
+     "doc_id": "cca4f11bfb4c4f63b5b4fdaed1bdf898",
+     "chunk_id": "2f58ea363dc098201e86475547fc98a9e682376c96c88cc62ebe4d1bb584517f"
+    },
+    {
+     "rank": 18,
+     "doc_id": "99b3494a69a3476d9f286b1c5f3f6b69",
+     "chunk_id": "1162d31d8763028383b7e4dc6c757976876897787b002768c96897d20c9bf64e"
+    },
+    {
+     "rank": 19,
+     "doc_id": "c2952e52266042cf8644a01ea9e53112",
+     "chunk_id": "1546d4e166c38b3c701262b516909d0fd531e3c59a7d53ba0c42756666946e7b"
+    },
+    {
+     "rank": 20,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "fb8c6db94f5891f1dbc9110f83380fef3d4100d70fa84146c1f97874bdc6d1b1"
+    }
+   ],
+   "latency_s": 0.445,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及校准源与效率？（关联检索）",
+   "gold_doc_ids": [
+    "2bfba94796ff44cda45c15db421e378c",
+    "2ea4691ec20941458865f18e181cd468",
+    "3deac94b6d2744989b78ab2cbfc500e0",
+    "c64c868f619449a183942c9717c927ca",
+    "fbf7d2eccb8a4acab9f334e0f15c210d"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "8b64e8606cf958c976910da864c8a5ad54b9ed6f9cea82eb148f2c31108d600b"
+    },
+    {
+     "rank": 2,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "6465438d82d85b670d0502421d753d81d11a19c945df1208d089d5bc407a67c8"
+    },
+    {
+     "rank": 3,
+     "doc_id": "2bfba94796ff44cda45c15db421e378c",
+     "chunk_id": "4ea5ccf14195eeb9439d77a5f0da83777f7abda4886a4892006e9f1b93c65238"
+    },
+    {
+     "rank": 4,
+     "doc_id": "81abd380b7fb4219beff1cf006b9bca8",
+     "chunk_id": "a8db511cdb8813d22b58bf97e1e8fc69302ade363b77bd8e7a773c381c34e172"
+    },
+    {
+     "rank": 5,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "190c589a84c1c0248e47525a5f3fa1ef5422b666209131d1b8adb6b1397aea5a"
+    },
+    {
+     "rank": 6,
+     "doc_id": "43ce5070387d4591a866ffd7a5558231",
+     "chunk_id": "059f41e49c9b4a06fd0037f8286f4904bde3a066977114bb7d1dd03869985f00"
+    },
+    {
+     "rank": 7,
+     "doc_id": "cca4f11bfb4c4f63b5b4fdaed1bdf898",
+     "chunk_id": "76ccf5e4af176d139f52fd7f0cb2214f4c827429a62d5f1429417dd21a5d521d"
+    },
+    {
+     "rank": 8,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "220d689c6afe288c5e429fcc09563a54abedfa8ccbe401773377190de1ff0127"
+    },
+    {
+     "rank": 9,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "1397752fb9d4b5348d33e19c5093274d22d12fdfbc16ddffde8fc9e558d55bcd"
+    },
+    {
+     "rank": 10,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "2cfdb04c4b453b3878fb0f2298b6237b175f2946f2acc6362640c429739e698d"
+    },
+    {
+     "rank": 11,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 12,
+     "doc_id": "8f632c1832b24c5abccf3b4c40fdb32f",
+     "chunk_id": "311a15c85817f4c0c4badb645b5501e65a0dd86fffb2c3ed55e2bec3f8f56da6"
+    },
+    {
+     "rank": 13,
+     "doc_id": "475a1cbdf5874768b6f405e23f076f11",
+     "chunk_id": "dfc06103b0995068768db0d434ff1caf34d541f28c8123e97029e332b60876d7"
+    },
+    {
+     "rank": 14,
+     "doc_id": "87a31bfd43ff4a59837fe8f72b2e744b",
+     "chunk_id": "53e6612eaa27c11582350a121aa3e93c3cab3aef6c73e078f764eea5b9669a0c"
+    },
+    {
+     "rank": 15,
+     "doc_id": "99b3494a69a3476d9f286b1c5f3f6b69",
+     "chunk_id": "1162d31d8763028383b7e4dc6c757976876897787b002768c96897d20c9bf64e"
+    },
+    {
+     "rank": 16,
+     "doc_id": "7f304b9dc3714039ac66a34359f32191",
+     "chunk_id": "6066da3e69c0e95271718959c95f7e52bde9e72ceac7fc32fde71517209d0c45"
+    },
+    {
+     "rank": 17,
+     "doc_id": "c2952e52266042cf8644a01ea9e53112",
+     "chunk_id": "dcacaf948fd15227114247d9e60b02d844b3c62d03aad1061026265924422bf6"
+    },
+    {
+     "rank": 18,
+     "doc_id": "2dc6aea717814b18bc478839a506c2d9",
+     "chunk_id": "11ab18a93fe20788cbf2107591b4b7166febee5a4a874ef6fee1eedc02f4dc70"
+    },
+    {
+     "rank": 19,
+     "doc_id": "e0d60c4152394b0ea4e32a9e6c1abaa5",
+     "chunk_id": "b70bf15d8bbbbde2fff92b4228bda06e396a96ec5607e0e4f5db8bb6131b078c"
+    },
+    {
+     "rank": 20,
+     "doc_id": "dd6db7e0cf254ac2959c08b8ce603bc5",
+     "chunk_id": "7fd11e5d793d8d46a43ce7b1b11519e768cb9fe6bc8b62aad15b0116cedb86d4"
+    }
+   ],
+   "latency_s": 0.519,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及校准源与calibration？（关联检索）",
+   "gold_doc_ids": [
+    "3deac94b6d2744989b78ab2cbfc500e0"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "8b64e8606cf958c976910da864c8a5ad54b9ed6f9cea82eb148f2c31108d600b"
+    },
+    {
+     "rank": 2,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "6465438d82d85b670d0502421d753d81d11a19c945df1208d089d5bc407a67c8"
+    },
+    {
+     "rank": 3,
+     "doc_id": "45be62b3b4e44fa19f1af0066ae8aa74",
+     "chunk_id": "49fc406938498e0eb8405d401ca3284567bba4664e2c1b4b166eacaf4296e0a6"
+    },
+    {
+     "rank": 4,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "e1d4eff50c0c8910598f97e785fc23106896abaa6206c114e2a92601cc75db64"
+    },
+    {
+     "rank": 5,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "ee92d94d20512e0740f4db72c6dbcf9c9288a969812b5200cbb29d3ffa57b201"
+    },
+    {
+     "rank": 6,
+     "doc_id": "d077aba29a1144daab6a902cf44639b0",
+     "chunk_id": "33950856cbfab501d564649292ed9d2990c3f4e40a7ba05bdeff760d4901d7fd"
+    },
+    {
+     "rank": 7,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "b42f667f142b486862aaec9950d82fbc50cb600a0fc088214e08454b4711e8c2"
+    },
+    {
+     "rank": 8,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "220d689c6afe288c5e429fcc09563a54abedfa8ccbe401773377190de1ff0127"
+    },
+    {
+     "rank": 9,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "2cfdb04c4b453b3878fb0f2298b6237b175f2946f2acc6362640c429739e698d"
+    },
+    {
+     "rank": 10,
+     "doc_id": "162c88cadc3044b3ac78fc8313885745",
+     "chunk_id": "d5b1a30e0199b25c608b1c5ccecf29b715d1787942d81936361984e499f17b26"
+    },
+    {
+     "rank": 11,
+     "doc_id": "7733b3384efd443685f5d70b64475aeb",
+     "chunk_id": "bb3e8a0d2e5f9ecafe2ce7056a0be8384b91cf308893ddb727bde2fc473d12d2"
+    },
+    {
+     "rank": 12,
+     "doc_id": "43ce5070387d4591a866ffd7a5558231",
+     "chunk_id": "8676bca0b389a992756a29e876a4315347d88009d7ae5ca7b237791fbf1f0847"
+    },
+    {
+     "rank": 13,
+     "doc_id": "0b9b473374f24724b1406d311f8540eb",
+     "chunk_id": "4a3343f636a05becb1530e1a61f9c71da00b8a65a740319540f486430243a600"
+    },
+    {
+     "rank": 14,
+     "doc_id": "76ebf8dcd6de4c50bc85db5f2d1add5b",
+     "chunk_id": "a6430e508069a4090ebd41ce58ac94b938fd301246ccbbf5ebc565a422edcfba"
+    },
+    {
+     "rank": 15,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 16,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "aa74ef5f31a17c717f2d91756713fe7115c98c834b25ef1ac0a56f51cc491362"
+    },
+    {
+     "rank": 17,
+     "doc_id": "8f632c1832b24c5abccf3b4c40fdb32f",
+     "chunk_id": "311a15c85817f4c0c4badb645b5501e65a0dd86fffb2c3ed55e2bec3f8f56da6"
+    },
+    {
+     "rank": 18,
+     "doc_id": "2ea4691ec20941458865f18e181cd468",
+     "chunk_id": "c8c8d384c6acd247ef2ca1c064e2a0de00aa196fdeb0acedab1acc169b8131a0"
+    },
+    {
+     "rank": 19,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "e5c3c305a3a9ba6659f9d153239932ec4da074bf0440c0f98663b8a9920762e2"
+    },
+    {
+     "rank": 20,
+     "doc_id": "475a1cbdf5874768b6f405e23f076f11",
+     "chunk_id": "fcb93ad9e49b1e0ddb5becf040c32d412d0d2b04448d27085a26fff6a80a2280"
+    }
+   ],
+   "latency_s": 0.539,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及校准源与不确定度？（关联检索）",
+   "gold_doc_ids": [
+    "2ea4691ec20941458865f18e181cd468",
+    "3deac94b6d2744989b78ab2cbfc500e0",
+    "756189241e17431ba88bd337f3a55918",
+    "c64c868f619449a183942c9717c927ca"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "8b64e8606cf958c976910da864c8a5ad54b9ed6f9cea82eb148f2c31108d600b"
+    },
+    {
+     "rank": 2,
+     "doc_id": "162c88cadc3044b3ac78fc8313885745",
+     "chunk_id": "fdc8ed6fdb85d19f7c50b86c5762d3ddd1b659816d7bee030d513863325911ba"
+    },
+    {
+     "rank": 3,
+     "doc_id": "2ea4691ec20941458865f18e181cd468",
+     "chunk_id": "c8c8d384c6acd247ef2ca1c064e2a0de00aa196fdeb0acedab1acc169b8131a0"
+    },
+    {
+     "rank": 4,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "5e868583edc66883f1fd89c4d0b8854fa6f724aa8e1a5bcd06d398d509c368d1"
+    },
+    {
+     "rank": 5,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "6465438d82d85b670d0502421d753d81d11a19c945df1208d089d5bc407a67c8"
+    },
+    {
+     "rank": 6,
+     "doc_id": "2341515f1da6467da606cd68104c9ac8",
+     "chunk_id": "d50f5fe867b03bdf58b61980b8cd78c4dca1740851e4a7ccdd1bfa5d8f454fdc"
+    },
+    {
+     "rank": 7,
+     "doc_id": "2566433836aa4a27b4c986780cfb8ec7",
+     "chunk_id": "0468f0a754b523b1a407eb1762fc4434a6aa68d04a4897120857fae6e0b7402a"
+    },
+    {
+     "rank": 8,
+     "doc_id": "4f67d908211b49ad983ff6c4f901c18d",
+     "chunk_id": "23be1f9225f4e4b8eed7708d83e3ed535f6e3f664303b84ab07a4c9751038840"
+    },
+    {
+     "rank": 9,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "b651c230834b7def1cb564ce60b154260c91dfa09e906d47047290b7cd5511ef"
+    },
+    {
+     "rank": 10,
+     "doc_id": "809c28f9ff70434da4d24ddbf4ef4b32",
+     "chunk_id": "ba9b0aed77b200f8c66a2c4308c6aedaf529928b03494e36b09e994a24d4b9f9"
+    },
+    {
+     "rank": 11,
+     "doc_id": "76ebf8dcd6de4c50bc85db5f2d1add5b",
+     "chunk_id": "a6430e508069a4090ebd41ce58ac94b938fd301246ccbbf5ebc565a422edcfba"
+    },
+    {
+     "rank": 12,
+     "doc_id": "81abd380b7fb4219beff1cf006b9bca8",
+     "chunk_id": "d7b826f658705ef953bf61ce4e93ecc7c41d5dad0b22b4020c4673c02935a9df"
+    },
+    {
+     "rank": 13,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "2cfdb04c4b453b3878fb0f2298b6237b175f2946f2acc6362640c429739e698d"
+    },
+    {
+     "rank": 14,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 15,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "67510efcabf15c0cce79d9b0cbd36917ae1f6ffcf53a812c66b8944b39173814"
+    },
+    {
+     "rank": 16,
+     "doc_id": "8f632c1832b24c5abccf3b4c40fdb32f",
+     "chunk_id": "311a15c85817f4c0c4badb645b5501e65a0dd86fffb2c3ed55e2bec3f8f56da6"
+    },
+    {
+     "rank": 17,
+     "doc_id": "dd6db7e0cf254ac2959c08b8ce603bc5",
+     "chunk_id": "a9b088d1515a52d72493eb6196915231589c756277652b94ec61c912214011e0"
+    },
+    {
+     "rank": 18,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "8cc00acfa97eff2cde81590a6d38e2cfbbc4ad1886449b90a1e0e035e8aea1e8"
+    },
+    {
+     "rank": 19,
+     "doc_id": "7733b3384efd443685f5d70b64475aeb",
+     "chunk_id": "bb3e8a0d2e5f9ecafe2ce7056a0be8384b91cf308893ddb727bde2fc473d12d2"
+    },
+    {
+     "rank": 20,
+     "doc_id": "1ebbc28edeef4845b7e5fe66577f7332",
+     "chunk_id": "0f4961df5645366c2b56640683c121d3f51dffaeddddeee89f399449737440c8"
+    }
+   ],
+   "latency_s": 0.51,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及校准源与探测器？（关联检索）",
+   "gold_doc_ids": [
+    "3deac94b6d2744989b78ab2cbfc500e0",
+    "c64c868f619449a183942c9717c927ca"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "8b64e8606cf958c976910da864c8a5ad54b9ed6f9cea82eb148f2c31108d600b"
+    },
+    {
+     "rank": 2,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "6465438d82d85b670d0502421d753d81d11a19c945df1208d089d5bc407a67c8"
+    },
+    {
+     "rank": 3,
+     "doc_id": "532cd3f4f2ff419c8348cc1142ec082c",
+     "chunk_id": "6ea5b0faf4dadf31d59c9fdae07f59a4d0cbe8211d46fb55e09a8ec93d735d11"
+    },
+    {
+     "rank": 4,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "e1d4eff50c0c8910598f97e785fc23106896abaa6206c114e2a92601cc75db64"
+    },
+    {
+     "rank": 5,
+     "doc_id": "16eb7b49c4254b989648778ab6793691",
+     "chunk_id": "22670a0ed0a7a2ddbfa69a41ca8cb4311d6d5df0948f8ae9a00d4c84fafc8d85"
+    },
+    {
+     "rank": 6,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "a675db2fd53dc826da1dcd3b3b12e0fc79a02f11c01194b836e4ed589e18a92c"
+    },
+    {
+     "rank": 7,
+     "doc_id": "9419013574fe4580ab17b53f49cd3070",
+     "chunk_id": "c3889caa6f89a3a65a8daa25c5bc88e704a8e14995818c01a3100d2dadd9d00a"
+    },
+    {
+     "rank": 8,
+     "doc_id": "7733b3384efd443685f5d70b64475aeb",
+     "chunk_id": "0b11922f3d4c0732f200fbca2e55e69cfe353601d78c76d2a0334c13eaf0b766"
+    },
+    {
+     "rank": 9,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "b42f667f142b486862aaec9950d82fbc50cb600a0fc088214e08454b4711e8c2"
+    },
+    {
+     "rank": 10,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "220d689c6afe288c5e429fcc09563a54abedfa8ccbe401773377190de1ff0127"
+    },
+    {
+     "rank": 11,
+     "doc_id": "0b6b54ced421431a8973a729cf5ab44c",
+     "chunk_id": "094da4750594e978b0060a27cce487c64c07f56f402c6dcdb524a49ada10d2e8"
+    },
+    {
+     "rank": 12,
+     "doc_id": "df5e7e8fd4154849a7e210f26e4f6aeb",
+     "chunk_id": "d1f3aa9984f754a41a48b04a70b1dfa2043e95924762951d73f7d153f503a7fa"
+    },
+    {
+     "rank": 13,
+     "doc_id": "76ebf8dcd6de4c50bc85db5f2d1add5b",
+     "chunk_id": "a6430e508069a4090ebd41ce58ac94b938fd301246ccbbf5ebc565a422edcfba"
+    },
+    {
+     "rank": 14,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "dd1055168e54f62769dea9e1119449a4dc967013a0762b3aed7322426bbc28bc"
+    },
+    {
+     "rank": 15,
+     "doc_id": "43ce5070387d4591a866ffd7a5558231",
+     "chunk_id": "8676bca0b389a992756a29e876a4315347d88009d7ae5ca7b237791fbf1f0847"
+    },
+    {
+     "rank": 16,
+     "doc_id": "0c11a6ae5c5a4db0b957646ea91fa1d8",
+     "chunk_id": "3a05e64ab9b6debea08a1427b33726600296061913061b8050746534622b9511"
+    },
+    {
+     "rank": 17,
+     "doc_id": "fe62161ce46f41cfacd6a1a6f5f242a6",
+     "chunk_id": "e895185827234b2e63b05ca4760cfba1efb96e764c1b848f64568213c1da7a02"
+    },
+    {
+     "rank": 18,
+     "doc_id": "2dc6aea717814b18bc478839a506c2d9",
+     "chunk_id": "6a71c28b0ceaa2d089a519884685ca9d0513635bfd938320e227fc858be9a26c"
+    },
+    {
+     "rank": 19,
+     "doc_id": "290e438bb9bc423ca6f80bc595586b5a",
+     "chunk_id": "0d0656771982e831d0608415d0759d7947980f43cfbc89e6d8d93d2320c7030a"
+    },
+    {
+     "rank": 20,
+     "doc_id": "7f4b851dd2e94d4dadd9ea09e1b68207",
+     "chunk_id": "42387b6df74eb944a5e86ab971900339a26feb2934d5479dcbf7110e9c394555"
+    }
+   ],
+   "latency_s": 0.528,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及质子与抗辐射加固？（关联检索）",
+   "gold_doc_ids": [
+    "56c5119ec3ca4bafb7eb36c8ad93239a",
+    "578c09a2acb9423aa3d7dd0f219d27a4",
+    "6690d83f50d54001a1cc8c0d98535dd5",
+    "ab82c9d978db490db73a97701879f835",
+    "f5ed787eb04f49a49e2546774adfd529"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "578c09a2acb9423aa3d7dd0f219d27a4",
+     "chunk_id": "381a12deab79848368912c1b88cb45374a6df0a0873fc6bc453d26562fd8f4da"
+    },
+    {
+     "rank": 2,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "b74569254391b06f2458767e8fc3ee8674dd5db1e8d7bbf03998a7f53d1436fb"
+    },
+    {
+     "rank": 3,
+     "doc_id": "562b67ceb2e840f1ae2a149082d4ae93",
+     "chunk_id": "eb36e351e0f2f9b632b8b810516de2becd5e01f7442ad3a818f293b55151c0dc"
+    },
+    {
+     "rank": 4,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "c5e7ea126111dd2395fe555998b401b82437ae96a2e700ecc25fce944dd94d23"
+    },
+    {
+     "rank": 5,
+     "doc_id": "6aa934af637e46f686d09508922ed54f",
+     "chunk_id": "c93a1c2cfae4b9ef8ef5312252fad5ca2a415f547fe61b0d49bfa3ae19995eec"
+    },
+    {
+     "rank": 6,
+     "doc_id": "ab82c9d978db490db73a97701879f835",
+     "chunk_id": "217d33e6a0e22ef32e428b43cacc2e68312695d71251540e270dad548c81fe61"
+    },
+    {
+     "rank": 7,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 8,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "0e7aba4f5ad8eb1da48d94e27eeba781ddfe076fe4fd7c0c2c689b67d96dc676"
+    },
+    {
+     "rank": 9,
+     "doc_id": "7f5d98f9f6f742ea83f92c4bc4dc9345",
+     "chunk_id": "7e73dce385fbeb1d7acc4dcb1f3ac51728bb74f90c22cd6eec9450a4ee2d0a6c"
+    },
+    {
+     "rank": 10,
+     "doc_id": "48b9a62f6eb5478f94e5721db30c564d",
+     "chunk_id": "32ca876891088e3c948a4da3b2a404075f6b25dbfa6cb04168dcd4e452f3faa9"
+    },
+    {
+     "rank": 11,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "157fa9df94d6b7002e9be764492ee9531322a9b57a33a2c2d486364463c774a4"
+    },
+    {
+     "rank": 12,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "01c354e6abe7c7f4c2fe2664aa4c8a8723968e7e75572733829049704e8d1f7e"
+    },
+    {
+     "rank": 13,
+     "doc_id": "14791948f67e4038b1edf9387dcabdbf",
+     "chunk_id": "c42c71228e53c899ade61b001ef7eeea01350f7d6a73066ad69f313fc6a22ffb"
+    },
+    {
+     "rank": 14,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "8cc00acfa97eff2cde81590a6d38e2cfbbc4ad1886449b90a1e0e035e8aea1e8"
+    },
+    {
+     "rank": 15,
+     "doc_id": "2eb25eb829cb464795b07dcc9a576bb8",
+     "chunk_id": "482fd93214108f4807471d2a72a7e7b94bdb30a16a348ae232c7dcfb6020ed42"
+    },
+    {
+     "rank": 16,
+     "doc_id": "2b40ebc5fb394306890983020d20d129",
+     "chunk_id": "bde8f697e26a3fc43a22e53c0cb503d2db9e17f0f74e9a812038633624073473"
+    },
+    {
+     "rank": 17,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "a705d83b7fb08df6907178d26d6adc2e0d31e8e26e5192c5b6adc858d1b33936"
+    },
+    {
+     "rank": 18,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "b6ffec016975133a6bf1706e04779ea3ee32fb521cb2cb19d3807d12e937f2c7"
+    },
+    {
+     "rank": 19,
+     "doc_id": "ff3850f9a50a4ad7aca0575edef57120",
+     "chunk_id": "28d8af2eb35baaa1eab5042ff071de906a1d3c26814ee80c923bd4464750428c"
+    },
+    {
+     "rank": 20,
+     "doc_id": "43648c5ebaf143e687b5a3936a237f00",
+     "chunk_id": "2263f9fd733dfc036ec684fffff2997fbe6f0ea2dfcd4bc833667ae21efef916"
+    }
+   ],
+   "latency_s": 0.527,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及质子与屏蔽材料？（关联检索）",
+   "gold_doc_ids": [
+    "48b9a62f6eb5478f94e5721db30c564d",
+    "562b67ceb2e840f1ae2a149082d4ae93",
+    "6d38b0442cb942448e3c5b430f39880e",
+    "7f5d98f9f6f742ea83f92c4bc4dc9345",
+    "9740e181f7b84ba4af1d0692c3cf99d5",
+    "c5f51f146d8349b2a383d6d0860f8a5d"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "562b67ceb2e840f1ae2a149082d4ae93",
+     "chunk_id": "eb36e351e0f2f9b632b8b810516de2becd5e01f7442ad3a818f293b55151c0dc"
+    },
+    {
+     "rank": 2,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "37e676bbeaf88fb3c4e3a9a416db950064c64ba7938cef00483b8824d07aece4"
+    },
+    {
+     "rank": 3,
+     "doc_id": "48b9a62f6eb5478f94e5721db30c564d",
+     "chunk_id": "13105f691e212de1ee5119e3a438731bbeccfb694041ede57ac42b5d4793daff"
+    },
+    {
+     "rank": 4,
+     "doc_id": "2eb25eb829cb464795b07dcc9a576bb8",
+     "chunk_id": "1323ef60e0dd80134f8dc4c1f3d267be79e28784fdd17c95c6c66adf29a0f7d2"
+    },
+    {
+     "rank": 5,
+     "doc_id": "568eae272680415d887c072b944b1df0",
+     "chunk_id": "6b332563baeb7729a76ec631a8759246e7b82b65041cceab6ecc41cfd5d4cb4a"
+    },
+    {
+     "rank": 6,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "93f643f2a05cf29c3918879c3d508a05e7f972e279541b34eb0de80bc6b95e4e"
+    },
+    {
+     "rank": 7,
+     "doc_id": "5c566792b3d74dc8beb89a5dfdb8403d",
+     "chunk_id": "14a034d34642d58105d9a546683df9108b2cdf39817c4f97875488872d300dad"
+    },
+    {
+     "rank": 8,
+     "doc_id": "d01137e831d44303bd1bb164f0b127de",
+     "chunk_id": "4aec6628bd97c6dd491cab8e0bfae0487483c91e6f282f209ccbea40d7d04d0e"
+    },
+    {
+     "rank": 9,
+     "doc_id": "2bd04127007148f086ad2b7d2cd3dcce",
+     "chunk_id": "1b153c8da13511a905dc2823e0a9c5e8442633f74771ffcc599983bf93ad64d3"
+    },
+    {
+     "rank": 10,
+     "doc_id": "c5f51f146d8349b2a383d6d0860f8a5d",
+     "chunk_id": "36aa79265a0109ed68f4d83c9372d9de6bbefbb010e8378dff3118cc52eb9ced"
+    },
+    {
+     "rank": 11,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "c19cfea13e0d0cbce21161786da9e55a9dec1befc584a61b9accff566b01957a"
+    },
+    {
+     "rank": 12,
+     "doc_id": "e0d60c4152394b0ea4e32a9e6c1abaa5",
+     "chunk_id": "b70bf15d8bbbbde2fff92b4228bda06e396a96ec5607e0e4f5db8bb6131b078c"
+    },
+    {
+     "rank": 13,
+     "doc_id": "10c1605fb47f4fab82c481d6485e5ff4",
+     "chunk_id": "da590f5adc36619e71a7a0c3bd5caf7a2000b904d3f503082b63b1b06ad98f7f"
+    },
+    {
+     "rank": 14,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "e0205bc00fa44acc043db5026a43baca7c7188643127aa9be27da4d8739be8a3"
+    },
+    {
+     "rank": 15,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "642e6b76a0f0f23b41ca63f39dccd31069bcdc19b3db7702fe8cf6335cceb68c"
+    },
+    {
+     "rank": 16,
+     "doc_id": "5afec62371f746b8a6f44a1c118a9975",
+     "chunk_id": "03394cc1f6c943932be8c4784883cc3cc4951ff6d913ee8d7ebb49afc6f9de6e"
+    },
+    {
+     "rank": 17,
+     "doc_id": "9740e181f7b84ba4af1d0692c3cf99d5",
+     "chunk_id": "630330114515b6257d342e15d3c934ada1ada4ce204bb2bf8174c661e94a3d6a"
+    },
+    {
+     "rank": 18,
+     "doc_id": "ab82c9d978db490db73a97701879f835",
+     "chunk_id": "1448328e5968c778fe2f8c1fb1701f6354ba1afbb42d67a29d7d883890ef5dd7"
+    },
+    {
+     "rank": 19,
+     "doc_id": "14791948f67e4038b1edf9387dcabdbf",
+     "chunk_id": "78601f1727afa65ada074e48ea6252445d924eb8449efaf2a64a7f9fad5f6e78"
+    },
+    {
+     "rank": 20,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "15c22cc6f55ef833ec52d0d4326a86b18b80532bb21ad1ec49c5b57ccb53864f"
+    }
+   ],
+   "latency_s": 0.522,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及贝克勒尔与活度？（关联检索）",
+   "gold_doc_ids": [
+    "423619890ff247d084ea986ea7aea182",
+    "46791d44836241b2a6102ee0651e742e",
+    "8d6cf27aabf64017bed77a87a3562acd",
+    "99b3494a69a3476d9f286b1c5f3f6b69",
+    "fffe7bcf1daa40bcb61c2fac0caae3b9"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "ac9323d9a4419cb932f587812b17ae28927a856cc92c93cae066ff243ae82052"
+    },
+    {
+     "rank": 2,
+     "doc_id": "99b3494a69a3476d9f286b1c5f3f6b69",
+     "chunk_id": "6c9b34c848f48e0d7f5e80c1c738bdf2642918407d8d17560fee9e237a13fba2"
+    },
+    {
+     "rank": 3,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "33caaf8113bf208e2358131af2e0a8977330561c1d4e5ef2773272d13c23a336"
+    },
+    {
+     "rank": 4,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "58e204255a1ab0d5d802f629abeb88469d025c63b662aeeef85f1c269a353913"
+    },
+    {
+     "rank": 5,
+     "doc_id": "7733b3384efd443685f5d70b64475aeb",
+     "chunk_id": "00c32130a662900afcdb4785dd77a6af0bab8447587ad07139d7f3f0bfdce874"
+    },
+    {
+     "rank": 6,
+     "doc_id": "8f632c1832b24c5abccf3b4c40fdb32f",
+     "chunk_id": "311a15c85817f4c0c4badb645b5501e65a0dd86fffb2c3ed55e2bec3f8f56da6"
+    },
+    {
+     "rank": 7,
+     "doc_id": "fbf7d2eccb8a4acab9f334e0f15c210d",
+     "chunk_id": "4d7c9704d5cd8840be25eaa48365d32c4db7d0ea2089e67b050bd9af0e98677f"
+    },
+    {
+     "rank": 8,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 9,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "49db29d883b77a5657aa48d4cd7235f47c77213b45fa121c8039f0d878ec23f0"
+    },
+    {
+     "rank": 10,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "0e7aba4f5ad8eb1da48d94e27eeba781ddfe076fe4fd7c0c2c689b67d96dc676"
+    },
+    {
+     "rank": 11,
+     "doc_id": "312f2954886f42c4acca8edc7fffe45b",
+     "chunk_id": "04ec002f3af6ac5f1fe649a603494dfcfb172891d1924195e6673cdc9b130b00"
+    },
+    {
+     "rank": 12,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "aa74ef5f31a17c717f2d91756713fe7115c98c834b25ef1ac0a56f51cc491362"
+    },
+    {
+     "rank": 13,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "f8538c9aeb305b7e1c536276d6a22d9c4e68b3d2f6d43e1ea418135663a88f22"
+    },
+    {
+     "rank": 14,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "ba88f272950012fb0a0f86d454c76f56a0cf863b13ed4f02a84fa455e0dc8394"
+    },
+    {
+     "rank": 15,
+     "doc_id": "c2952e52266042cf8644a01ea9e53112",
+     "chunk_id": "3c26412919ae53e10dd027eddbca3ee21f4433946974cda7968630e3c2315f8d"
+    },
+    {
+     "rank": 16,
+     "doc_id": "d077aba29a1144daab6a902cf44639b0",
+     "chunk_id": "178dc9af4a84c6324548c273ed1ce7ab3e1557789283d37d2bc392a4cd0f9662"
+    },
+    {
+     "rank": 17,
+     "doc_id": "2dc6aea717814b18bc478839a506c2d9",
+     "chunk_id": "6a71c28b0ceaa2d089a519884685ca9d0513635bfd938320e227fc858be9a26c"
+    },
+    {
+     "rank": 18,
+     "doc_id": "fe62161ce46f41cfacd6a1a6f5f242a6",
+     "chunk_id": "e895185827234b2e63b05ca4760cfba1efb96e764c1b848f64568213c1da7a02"
+    },
+    {
+     "rank": 19,
+     "doc_id": "2566433836aa4a27b4c986780cfb8ec7",
+     "chunk_id": "6fd64801494153de869cfbd2334c7b0d7c4f0064938353680054f85bca83352f"
+    },
+    {
+     "rank": 20,
+     "doc_id": "a7b64e5654e04564a1b57f0122d00a97",
+     "chunk_id": "8e86ee750e306d37c192bda49f2e48b1e65d840ba7732aca9f969c41dc321624"
+    }
+   ],
+   "latency_s": 0.498,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及不锈钢板与反应堆？（关联检索）",
+   "gold_doc_ids": [
+    "63107ab5c74d41d4ab460a2412d38f9a"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "e9f09ec17ee34c3d873a8a65ea431f65",
+     "chunk_id": "e5fd3f5080724f2c26daedeab8735329f529ea6e48a96076dcbd5b7ef01654ad"
+    },
+    {
+     "rank": 2,
+     "doc_id": "d6be8637a7664012ad49fbb0fd24cbfa",
+     "chunk_id": "3d948d6d15b11df1fe964a256f066b80e6a758af76380ad79f46c8747f002371"
+    },
+    {
+     "rank": 3,
+     "doc_id": "64f835ed443d408481f4587a69c35b7b",
+     "chunk_id": "df0febf0833660a929e56c48510224b56901dbf3e4bb9eaadda24aa5f1e9ecbc"
+    },
+    {
+     "rank": 4,
+     "doc_id": "dd638451e78e41c48d5b424d353f9793",
+     "chunk_id": "d38199e5498f3bcd0d4bdfb580ec9a9e5f16dedc2848156749192e10324d9af6"
+    },
+    {
+     "rank": 5,
+     "doc_id": "ecebb255bc9a4dc4b55f36f20e2fe513",
+     "chunk_id": "48ed85d5ac583338086444b9a8b5931240bb0abb96998ca5d80e059b87a07b80"
+    },
+    {
+     "rank": 6,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "2d8e529940e0076aa51d35833f8b34113441de14dcdcfc8d92a57e19a1c7ce5f"
+    },
+    {
+     "rank": 7,
+     "doc_id": "63107ab5c74d41d4ab460a2412d38f9a",
+     "chunk_id": "81365bbf64aacaa2d8f82230b7a3eab53f28534157440dacd4ea00660d958a1c"
+    },
+    {
+     "rank": 8,
+     "doc_id": "25eac13d027d4a089014c4c735c21629",
+     "chunk_id": "9dff15489d3072591e2e09ec06a2a08d6bf5c0c0101f16efb4fc08d25c9f4d87"
+    },
+    {
+     "rank": 9,
+     "doc_id": "2b40ebc5fb394306890983020d20d129",
+     "chunk_id": "bde8f697e26a3fc43a22e53c0cb503d2db9e17f0f74e9a812038633624073473"
+    },
+    {
+     "rank": 10,
+     "doc_id": "2b3fd0c3005d4a318ca980e690775b24",
+     "chunk_id": "521008fc6c82eba25416c961968cb0397ebb810908fed6ad1e49ac57f301ec88"
+    },
+    {
+     "rank": 11,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "fb74095bf389e1bd6cba19aa40c2b226b193f467545e3ce12549c35993ec91bb"
+    },
+    {
+     "rank": 12,
+     "doc_id": "4768bf2e07aa4f3ea362a48627a2a30c",
+     "chunk_id": "e303b7b9bb0f24d0f055cee6fd3a82b61a9b3733b77f7af1393e57ce01039733"
+    },
+    {
+     "rank": 13,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "c8f0aad8afd770429f180d3446c8e96f5b56e365482d37d2bdd80ec61853054c"
+    },
+    {
+     "rank": 14,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "d24d163211bdc051f5b862e9f2f0b8ea17fadcf5a8c9024fab7e51da3bf00a1a"
+    },
+    {
+     "rank": 15,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 16,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "aa74ef5f31a17c717f2d91756713fe7115c98c834b25ef1ac0a56f51cc491362"
+    },
+    {
+     "rank": 17,
+     "doc_id": "ed5e1481889f409b805ec44cc1d6f444",
+     "chunk_id": "660fd825122a93a1850e4df072eabc4f7e65c7d659a6860c5441a1d4e669e7e2"
+    },
+    {
+     "rank": 18,
+     "doc_id": "831cedc88ad544b5b37ae262e5f2352e",
+     "chunk_id": "2f351ee09c0fbf22f309e211eaca1fbb98caf86966fd402eb9de8dfd4d8742e2"
+    },
+    {
+     "rank": 19,
+     "doc_id": "10feb5d41b564f2e9acedd5afcee8a27",
+     "chunk_id": "cc5c3e0c4da2b314be0a55c8d1d0bf35f4da58ccf54f8a96c038afc65e1de473"
+    },
+    {
+     "rank": 20,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "439a24f578979d81fbbd2c745e94c90c1c2c0dd38f37361f2494d5c3e743e18a"
+    }
+   ],
+   "latency_s": 0.586,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及不锈钢板与不锈钢？（关联检索）",
+   "gold_doc_ids": [
+    "63107ab5c74d41d4ab460a2412d38f9a",
+    "64f835ed443d408481f4587a69c35b7b",
+    "7e2c36a877374a858f3db06644a72295",
+    "add04d041509451caf147c7eba0e7c09"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "d6be8637a7664012ad49fbb0fd24cbfa",
+     "chunk_id": "3d948d6d15b11df1fe964a256f066b80e6a758af76380ad79f46c8747f002371"
+    },
+    {
+     "rank": 2,
+     "doc_id": "63107ab5c74d41d4ab460a2412d38f9a",
+     "chunk_id": "7e48c526aaf7c08a104e482123ffc8b7cccbb0520736ea7204766203e3f11160"
+    },
+    {
+     "rank": 3,
+     "doc_id": "64f835ed443d408481f4587a69c35b7b",
+     "chunk_id": "df0febf0833660a929e56c48510224b56901dbf3e4bb9eaadda24aa5f1e9ecbc"
+    },
+    {
+     "rank": 4,
+     "doc_id": "e9f09ec17ee34c3d873a8a65ea431f65",
+     "chunk_id": "a5f03e8a364eb0715ae3ad32be89be7fba69c9fde33e0ecc2f45183fcaeb63cc"
+    },
+    {
+     "rank": 5,
+     "doc_id": "6dae33fe33e747ac9b67e2e6c509f9fc",
+     "chunk_id": "4becc443cd0e570fd8c0b1a4bdaa3fa3247cfc41588e17a23f1c5674f86dea2d"
+    },
+    {
+     "rank": 6,
+     "doc_id": "87685df79e264179b43a02c5ec69856e",
+     "chunk_id": "e7181f0e1471bfb4992876aeaecda7779831e45b400855d132c4ce772abc5a36"
+    },
+    {
+     "rank": 7,
+     "doc_id": "9a432edef2604473ba9ce87ae03fcad7",
+     "chunk_id": "620a116330e08b6202af3b7fe875966e57113c9a83d75e5da4eae6c82ac403c8"
+    },
+    {
+     "rank": 8,
+     "doc_id": "a2fa4b2086ad49f39c87a1ee9ad35ba0",
+     "chunk_id": "05c7c6e5acd2c50265cd3316119f1644d9b5d37c38f15b9c52ac9b15c156b384"
+    },
+    {
+     "rank": 9,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "5d2f4539040ac5893789b799dc4b07d894a63b14a9d32cd745584b852cf45a67"
+    },
+    {
+     "rank": 10,
+     "doc_id": "25eac13d027d4a089014c4c735c21629",
+     "chunk_id": "ba8577d4b9bf02a9ebea30ffa8bf312f708631594c87e542748c9bc314015c7e"
+    },
+    {
+     "rank": 11,
+     "doc_id": "4768bf2e07aa4f3ea362a48627a2a30c",
+     "chunk_id": "e303b7b9bb0f24d0f055cee6fd3a82b61a9b3733b77f7af1393e57ce01039733"
+    },
+    {
+     "rank": 12,
+     "doc_id": "d01137e831d44303bd1bb164f0b127de",
+     "chunk_id": "e17a9c2ba745195fa5abc093476e398f527ef645895049ed81956e919d814b78"
+    },
+    {
+     "rank": 13,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "e7048f2074c99a71121c2cceb7ea2f2851aae9c2f70d9de6b88f303470832fc8"
+    },
+    {
+     "rank": 14,
+     "doc_id": "af06e56794fe4abdb8be40ed340da7b5",
+     "chunk_id": "d5c98aa7f02898f63197932cce7cbb723dfa56b484b6a46572f5b8703ce05fa1"
+    },
+    {
+     "rank": 15,
+     "doc_id": "dcd0ef5b938443f98eb98407af1a5d8c",
+     "chunk_id": "8190a35fce7f517f66a31ea971f53512b59dbc4e0547f69b4f2801b8004ee222"
+    },
+    {
+     "rank": 16,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 17,
+     "doc_id": "cc9e60ff88d44c54ba571f65c25ee60e",
+     "chunk_id": "abe3ac62b1d9f2ff7b2dd0d2d8e1a327ff79266db0b06054548b113aada143e8"
+    },
+    {
+     "rank": 18,
+     "doc_id": "fbf7d2eccb8a4acab9f334e0f15c210d",
+     "chunk_id": "88d91f29b68bb7a4270dcdb8661aa29fd1896389876d8815ee6804a84a657053"
+    },
+    {
+     "rank": 19,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "2117cd33af43c465ea9f4aa93bf3e37f61b4cb0affa404977897f47012b56c43"
+    },
+    {
+     "rank": 20,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "dd1055168e54f62769dea9e1119449a4dc967013a0762b3aed7322426bbc28bc"
+    }
+   ],
+   "latency_s": 0.517,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及time resolution与半高宽？（关联检索）",
+   "gold_doc_ids": [
+    "0b6b54ced421431a8973a729cf5ab44c",
+    "16eb7b49c4254b989648778ab6793691",
+    "abd25b05b1484bb0a9fd96d81f163059",
+    "c16b9ea334824962a0be7388be6ecf1b",
+    "df5e7e8fd4154849a7e210f26e4f6aeb"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "74eb84db30960b4b2c1eece6638798d49cef27d39cc5049c0bc87b17b0833676"
+    },
+    {
+     "rank": 2,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "20a3b72f89945dfb9e619c3a7544a258440c4de54f68879477da8316d1d3d733"
+    },
+    {
+     "rank": 3,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "09bc104290cbced5084f199aa9edde3d041ff487d401b3deef62bef07ed76caf"
+    },
+    {
+     "rank": 4,
+     "doc_id": "66be046e7e2d4ef6966258dc4d578740",
+     "chunk_id": "b2a28b41d89863d0e625ecaf4b3133aff6ca5a464f8260be9b433f08112e253c"
+    },
+    {
+     "rank": 5,
+     "doc_id": "9d1d0ed5bb594a269f83fe8b3d9e3549",
+     "chunk_id": "9170179dd1acf26071f658788efc3ea2607b5ea52284fece11dd3280a37a7b33"
+    },
+    {
+     "rank": 6,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "4d60e3834162d34dc09e96e7f4bba968db0ebe14d5283100aab7bf45e255704a"
+    },
+    {
+     "rank": 7,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "b22bd8034d4956e01f11f3fb7273972b97d5381b28cbaee64451f7daaf5d60ff"
+    },
+    {
+     "rank": 8,
+     "doc_id": "16eb7b49c4254b989648778ab6793691",
+     "chunk_id": "9128b96f3745a4e99b239ce2edbe7e7b79f8d916547ff0fa1c44b8d9c788fed3"
+    },
+    {
+     "rank": 9,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "b56a1cdee78e9853c9ed135526fc8b77bb14971ee0a4fe7c143b6e344e59a122"
+    },
+    {
+     "rank": 10,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "21d8baab5c4ed9d40ff66d7c0e2eee6d352bfe45add7498c453b43158e6515bc"
+    },
+    {
+     "rank": 11,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "511e60eda159147f4bae3f85cf6590cd5eeeeb8f7342ef44629ad81aaa27301f"
+    },
+    {
+     "rank": 12,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "e4dcb0542d78368078b27f643a5424a1cfaf7d754573645a16504c7a27e618ef"
+    },
+    {
+     "rank": 13,
+     "doc_id": "a2ededef9dce490aae1712e730d1f874",
+     "chunk_id": "4e23f3dc1d5c6d85d377cc0e5762031f9cc29ffe0a33d307bee994fafc7aaafd"
+    },
+    {
+     "rank": 14,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "dd1055168e54f62769dea9e1119449a4dc967013a0762b3aed7322426bbc28bc"
+    },
+    {
+     "rank": 15,
+     "doc_id": "df5e7e8fd4154849a7e210f26e4f6aeb",
+     "chunk_id": "ff9ed449244fdc436334bd5f7fa7a566da9773cb26e33c530c6f1ca82e1027e2"
+    },
+    {
+     "rank": 16,
+     "doc_id": "40b7b166eb90461b9356a752fcbc0451",
+     "chunk_id": "befd52f62ee76e57c1610158942827c4796366f49719a56af73bcca45f7c29db"
+    },
+    {
+     "rank": 17,
+     "doc_id": "c630f6ecbc75455fa4dae9c79937fe1a",
+     "chunk_id": "026a47d15bab619dac6ff1b136e8661be1956dd02831bc1736c32a28d5938dfd"
+    },
+    {
+     "rank": 18,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "8cc00acfa97eff2cde81590a6d38e2cfbbc4ad1886449b90a1e0e035e8aea1e8"
+    },
+    {
+     "rank": 19,
+     "doc_id": "5bd86299ac9b485796243db5bbdea4fe",
+     "chunk_id": "f2a47dfe9b4f9018c08d7995aeedb10b02358e26effb3af299c2630b9b4d4bec"
+    },
+    {
+     "rank": 20,
+     "doc_id": "5828cb87a3a9488a85fe1fbbcee2993d",
+     "chunk_id": "ceefee92f28fe793df7f2a5d8d0d55dfda33b2ca5e65fd755cfb576c322df7b3"
+    }
+   ],
+   "latency_s": 0.523,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及circuit与hybrid module？（关联检索）",
+   "gold_doc_ids": [
+    "0989f395521f45f29cb4234adcdd92db",
+    "2f55e4c61f4641bdaaa06f88206ffe54",
+    "6c149c8de1b14cf4b3808f972391ab63",
+    "9848f0d28bb0414393d0d651d786de84",
+    "b0e164b626644fc6a3c6fd53ad9b5de4"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "2cc72bcbad214c11b44709816fca29b0",
+     "chunk_id": "6111c4ae7b49a8eabdfe7f60898314782322856601dc3c125b0058bfef77e9b8"
+    },
+    {
+     "rank": 2,
+     "doc_id": "b0e164b626644fc6a3c6fd53ad9b5de4",
+     "chunk_id": "20842c490acb2d72fa8f0a30adfcd04a2d01b0b4757a4a113b4c4296c7c57fe3"
+    },
+    {
+     "rank": 3,
+     "doc_id": "6aa934af637e46f686d09508922ed54f",
+     "chunk_id": "7e051203b3e87a179915f322dfa6ec1f08c999493ee6e4426b5c4746f7beff04"
+    },
+    {
+     "rank": 4,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "49db7513b955ce94ea1712b7ed02d7312a0e55bc8d55c6d054003b97553c3645"
+    },
+    {
+     "rank": 5,
+     "doc_id": "f39d49f647124f94b1fa1cd0b2c2b60c",
+     "chunk_id": "b518d5c9596bd4ea55bb4e70d92e9119dded2bc5ad7148adc02e906ff84b62dc"
+    },
+    {
+     "rank": 6,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "38a462eb3f67c9ae0565fcf209d513826c0fade6132df1f03d3fda5520ebf117"
+    },
+    {
+     "rank": 7,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "6da98ed11059a02650c7c1e21b50e214e6193b5dbcbb2360db2f84387fbdd4d2"
+    },
+    {
+     "rank": 8,
+     "doc_id": "4f8072ee114749e88e0df6237f1e516b",
+     "chunk_id": "5fdde2a9931059554330b186de6daad8d21381a80e957cc0b36d48e117fbb110"
+    },
+    {
+     "rank": 9,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "dd1055168e54f62769dea9e1119449a4dc967013a0762b3aed7322426bbc28bc"
+    },
+    {
+     "rank": 10,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "9167aec638515436066ff54b04a386a955116e0ae237b3a794c744e3b1cac958"
+    },
+    {
+     "rank": 11,
+     "doc_id": "2f55e4c61f4641bdaaa06f88206ffe54",
+     "chunk_id": "cf5433db552c9a934c05942d90054ba7e21106eb3219a6fdc9f5966569b50d7c"
+    },
+    {
+     "rank": 12,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 13,
+     "doc_id": "3eec360fc7bc48d98d67205c98b80e28",
+     "chunk_id": "94c34d30c3404caf589c089994f3eec594348ff3a26802ad02bf88d82b9ac8f7"
+    },
+    {
+     "rank": 14,
+     "doc_id": "c630f6ecbc75455fa4dae9c79937fe1a",
+     "chunk_id": "d28795f791f32cbe73699ea8195ad4c77a8d055e2f366d0b110c9efdb1bc4d9f"
+    },
+    {
+     "rank": 15,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "33e1df220920e3077a36b580226a157c08a162933b54b1453039718fdc80bbf4"
+    },
+    {
+     "rank": 16,
+     "doc_id": "7b78f01debd3446684289e32986d5529",
+     "chunk_id": "2e2c28dfd33e62244bafafcce8cd8bbfbe14bacc54dad89cda291ca36426935e"
+    },
+    {
+     "rank": 17,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "79ce0af5287c17743c4cff4a8cb487cfca94aebc0a8da6f6356c093b5cb0111e"
+    },
+    {
+     "rank": 18,
+     "doc_id": "079d82fbf30349a7904921e9ac50b50c",
+     "chunk_id": "851f854fa951588660dbb599266b7ec2f4fb8bec0af70fd08631840ec960d3e2"
+    },
+    {
+     "rank": 19,
+     "doc_id": "af06e56794fe4abdb8be40ed340da7b5",
+     "chunk_id": "956219e78567158e10b4352aac07bec8f3d6afb1d1f25a707c0859d4e715d021"
+    },
+    {
+     "rank": 20,
+     "doc_id": "855174d0f49241179b5e87753f25e80d",
+     "chunk_id": "5a20febe1e49f11e10a8c2472b5f17e022b806bbffc9930d3faf897f0565fbf2"
+    }
+   ],
+   "latency_s": 0.493,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及锆合金与precipitation？（关联检索）",
+   "gold_doc_ids": [
+    "3735b009537e45adb2fadc6344707eaf",
+    "3aed6bac2893400ba7ccf5d5671ca4d0",
+    "4480d1b9c5ca42fd938d845ea350f8b2",
+    "4768bf2e07aa4f3ea362a48627a2a30c",
+    "9383489b011640d2a2417a6b4aa31500",
+    "e9f09ec17ee34c3d873a8a65ea431f65"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "3aed6bac2893400ba7ccf5d5671ca4d0",
+     "chunk_id": "f39bdc8e9c2de761fa614118e0306cffd464dea65d35d5093c9e9b1f0a5dd276"
+    },
+    {
+     "rank": 2,
+     "doc_id": "e9f09ec17ee34c3d873a8a65ea431f65",
+     "chunk_id": "2eb08f81f5991d37d50cedaeedf61ff5984173fec56e9d031289158adddb48dc"
+    },
+    {
+     "rank": 3,
+     "doc_id": "3735b009537e45adb2fadc6344707eaf",
+     "chunk_id": "25440ce55d708322e32bcca5566d81c7cc5685d16efd887e7d79414ff90e876d"
+    },
+    {
+     "rank": 4,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "b313987ed07670868d2e6626257eeca5170d5cf835c7a215f145b5628f13748e"
+    },
+    {
+     "rank": 5,
+     "doc_id": "4480d1b9c5ca42fd938d845ea350f8b2",
+     "chunk_id": "f3cd0d47f96fa61852323b47e6229bc253bec9c1a984b25bb6f5c13d1f4cc096"
+    },
+    {
+     "rank": 6,
+     "doc_id": "2250990ef3db4fa58aeae78d2b9b6c35",
+     "chunk_id": "3607b59bfa6afd7a522940de079b3720fac49cc38c3f061650aec4c2230b82e9"
+    },
+    {
+     "rank": 7,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "dd1055168e54f62769dea9e1119449a4dc967013a0762b3aed7322426bbc28bc"
+    },
+    {
+     "rank": 8,
+     "doc_id": "4768bf2e07aa4f3ea362a48627a2a30c",
+     "chunk_id": "ca88baa6c2ff8ced50bfd16dd15966b1de95e8260db059a832d39457a0273025"
+    },
+    {
+     "rank": 9,
+     "doc_id": "63c3739924d74f949e45b2e6035801e1",
+     "chunk_id": "e26d785aa76a8de7daa58fe8241f24aa82595e72231e37b1bd9819f3ca00ce3c"
+    },
+    {
+     "rank": 10,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "3cca97d3a5c5806633dc14cfd9971b8776710bb9c4f43527e83c6a59965f44f5"
+    },
+    {
+     "rank": 11,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "85045098216d05f9f756f135716a21ea653dea271225e4f9faeb8079c31ccfa4"
+    },
+    {
+     "rank": 12,
+     "doc_id": "831cedc88ad544b5b37ae262e5f2352e",
+     "chunk_id": "daf77567ad5cfe5d0dc0ccd6ef7283ac778cdd31cd5320987c3b522d29ac8e1a"
+    },
+    {
+     "rank": 13,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 14,
+     "doc_id": "d6be8637a7664012ad49fbb0fd24cbfa",
+     "chunk_id": "f0d8af5a84e8c4581cd86d2914432d4bb381e70d4e2cb67b04077f39fff37398"
+    },
+    {
+     "rank": 15,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "85c63d65096c65dbc62588fc82950cb2e2f99f4e30f0b4d35142731d59665584"
+    },
+    {
+     "rank": 16,
+     "doc_id": "475a1cbdf5874768b6f405e23f076f11",
+     "chunk_id": "fcb93ad9e49b1e0ddb5becf040c32d412d0d2b04448d27085a26fff6a80a2280"
+    },
+    {
+     "rank": 17,
+     "doc_id": "7f304b9dc3714039ac66a34359f32191",
+     "chunk_id": "6066da3e69c0e95271718959c95f7e52bde9e72ceac7fc32fde71517209d0c45"
+    },
+    {
+     "rank": 18,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "61c4fa4e01813b10fecd99622d1d736c91a647528409991f7a5d7b1ae05bebc7"
+    },
+    {
+     "rank": 19,
+     "doc_id": "8f632c1832b24c5abccf3b4c40fdb32f",
+     "chunk_id": "99614a361f4c245e41f3f1a40527ba3a2d682095191416a1fd0784e5fa4da869"
+    },
+    {
+     "rank": 20,
+     "doc_id": "c91b4d2df5e7428599184599bcab85f2",
+     "chunk_id": "b2394696e058da734b4dedba62dbc0e5508fe29b1665a8c5c2dd74d9e5557f1e"
+    }
+   ],
+   "latency_s": 0.526,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及锆合金与source term？（关联检索）",
+   "gold_doc_ids": [
+    "7f304b9dc3714039ac66a34359f32191",
+    "9383489b011640d2a2417a6b4aa31500"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "3aed6bac2893400ba7ccf5d5671ca4d0",
+     "chunk_id": "f39bdc8e9c2de761fa614118e0306cffd464dea65d35d5093c9e9b1f0a5dd276"
+    },
+    {
+     "rank": 2,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "cdb537ef97bdaea3ab47383e916b283a35a83ebfba7729b95c5dc2810cb661ad"
+    },
+    {
+     "rank": 3,
+     "doc_id": "e9f09ec17ee34c3d873a8a65ea431f65",
+     "chunk_id": "2eb08f81f5991d37d50cedaeedf61ff5984173fec56e9d031289158adddb48dc"
+    },
+    {
+     "rank": 4,
+     "doc_id": "3735b009537e45adb2fadc6344707eaf",
+     "chunk_id": "3468768b2a8144eb35665274d12aef4d500b495202d8f9dfd156339c6579e0a1"
+    },
+    {
+     "rank": 5,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "3a84f3fabf85b61adcec769d8a1e328ab153ce71137339ade1e45e847cbef2d9"
+    },
+    {
+     "rank": 6,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "93e67b8b2b84dba57ed75d2a7299f5593a96c34b4315fdc820c346fe6c0e9699"
+    },
+    {
+     "rank": 7,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "dd1055168e54f62769dea9e1119449a4dc967013a0762b3aed7322426bbc28bc"
+    },
+    {
+     "rank": 8,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "3cca97d3a5c5806633dc14cfd9971b8776710bb9c4f43527e83c6a59965f44f5"
+    },
+    {
+     "rank": 9,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 10,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "85045098216d05f9f756f135716a21ea653dea271225e4f9faeb8079c31ccfa4"
+    },
+    {
+     "rank": 11,
+     "doc_id": "4480d1b9c5ca42fd938d845ea350f8b2",
+     "chunk_id": "d8a2ded33133dde7804afa00ac2852ba5b6adb682f35411f10c68f7e3d152f27"
+    },
+    {
+     "rank": 12,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "cf23b336b7810501da32131747d4c57216bfdb1e0f15211c8490fdc6b699988d"
+    },
+    {
+     "rank": 13,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "0d7641bd9fa865bf8cbf9e4dd7dfbe96ee91bb5e247911566e57334de00f4688"
+    },
+    {
+     "rank": 14,
+     "doc_id": "7f304b9dc3714039ac66a34359f32191",
+     "chunk_id": "6066da3e69c0e95271718959c95f7e52bde9e72ceac7fc32fde71517209d0c45"
+    },
+    {
+     "rank": 15,
+     "doc_id": "77bca5b09b3c41b3aff15868a1f840d5",
+     "chunk_id": "ca444a7b157ac3eedc2e3f08b3fd2dc66bf0ae4c09dc21332e155b78d05fd631"
+    },
+    {
+     "rank": 16,
+     "doc_id": "d077aba29a1144daab6a902cf44639b0",
+     "chunk_id": "2b91c2cc2df561bdbcdb3384c28956ca3bdf091373bfb612031376e6011aca6f"
+    },
+    {
+     "rank": 17,
+     "doc_id": "fbf7d2eccb8a4acab9f334e0f15c210d",
+     "chunk_id": "4d7c9704d5cd8840be25eaa48365d32c4db7d0ea2089e67b050bd9af0e98677f"
+    },
+    {
+     "rank": 18,
+     "doc_id": "99370c67ecfe432ea2bde4b641529a10",
+     "chunk_id": "63cffbcd6f606410fab744275eb27982f38b7f2c6a1f0ee387e6aa6fe9cc7c0c"
+    },
+    {
+     "rank": 19,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "c5cc1fd638aa3a949ced6f5b97fed05303d5e430426743985bef8b54ef7eff0a"
+    },
+    {
+     "rank": 20,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "8cc00acfa97eff2cde81590a6d38e2cfbbc4ad1886449b90a1e0e035e8aea1e8"
+    }
+   ],
+   "latency_s": 0.532,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及谱学与reconstruction？（关联检索）",
+   "gold_doc_ids": [
+    "00ef29f707f9494dae763ad063cab5b7",
+    "2f510c1b03824d44b0cc827f34e9d9a1",
+    "a936ba1dbe8549279e71a061bc243bde",
+    "eff2af7d3aa049f6acee61b95edec7a5"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "a936ba1dbe8549279e71a061bc243bde",
+     "chunk_id": "e273443789f39393a657ae04f37a90a6943366c506539262d756c9b8413ab41c"
+    },
+    {
+     "rank": 2,
+     "doc_id": "6d8c166da24b476b80cc55378c1301de",
+     "chunk_id": "89719583f6e0f663dcb7739203934104af7bfdf97b93ac786db1072a92c86a93"
+    },
+    {
+     "rank": 3,
+     "doc_id": "703536066dba4ab1a8723b7b2433cf6c",
+     "chunk_id": "c922ad04b757a0d9a3b6069a1d6fd1ede19edcebd3967dba0c88e97493831d7a"
+    },
+    {
+     "rank": 4,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "dc25f8a0aaf2f456e5d322ada0259cc059e4ca61f119f702470aca1690a9e2e5"
+    },
+    {
+     "rank": 5,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "15c22cc6f55ef833ec52d0d4326a86b18b80532bb21ad1ec49c5b57ccb53864f"
+    },
+    {
+     "rank": 6,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "0e7aba4f5ad8eb1da48d94e27eeba781ddfe076fe4fd7c0c2c689b67d96dc676"
+    },
+    {
+     "rank": 7,
+     "doc_id": "87685df79e264179b43a02c5ec69856e",
+     "chunk_id": "6c18264e5eb538ad49edda418eba8bf2cb71837a5ce01ebda7292f9f3ac3d26c"
+    },
+    {
+     "rank": 8,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "6ff6046be1812124b3725ac126d95967e213fa614e6fcf90626e63578b40c025"
+    },
+    {
+     "rank": 9,
+     "doc_id": "ea50897545164cec8e7a10a876c935e8",
+     "chunk_id": "87dfdc0291ce8bcb177146aca9d1875c3e58674bacdcec65431671278503954d"
+    },
+    {
+     "rank": 10,
+     "doc_id": "ceca9573a2dc4cc78813de21b3702fc2",
+     "chunk_id": "37721c8356c466d1d476b5c06f52158a0c191e2b02b6cb61f966d6f28d2631d0"
+    },
+    {
+     "rank": 11,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "648d7c853d01fb5c6d8e7301e0a268ac39b86f3a7b32927ab541ce78274c962b"
+    },
+    {
+     "rank": 12,
+     "doc_id": "2dc6aea717814b18bc478839a506c2d9",
+     "chunk_id": "6a71c28b0ceaa2d089a519884685ca9d0513635bfd938320e227fc858be9a26c"
+    },
+    {
+     "rank": 13,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "50f69b78fa2f67d6baf073cf8f384f223a52c1d8e2f1a683eac44fe9ecc141f2"
+    },
+    {
+     "rank": 14,
+     "doc_id": "a98c8fdd65ae49eeaa50e341701b3876",
+     "chunk_id": "89aaf844d3f8202af026e5b963f680006dfbf757d306588cc3eba69d10e5309f"
+    },
+    {
+     "rank": 15,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "bc7e7f5e794b896af3f998c766ddd842938bd1a13f52507545b5d3157ba5f495"
+    },
+    {
+     "rank": 16,
+     "doc_id": "bcc8eaa5517646a0b4fd0e8828af8396",
+     "chunk_id": "5ed9278423e903c3da2d9dd966ee89b675946071b12ed7bbfb85587418b6e537"
+    },
+    {
+     "rank": 17,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "8cc00acfa97eff2cde81590a6d38e2cfbbc4ad1886449b90a1e0e035e8aea1e8"
+    },
+    {
+     "rank": 18,
+     "doc_id": "94250ccf417346dc9b1c8d60472d13e4",
+     "chunk_id": "830fec636f052aa36ac5b2fba1ea667400312f4ba13bef9de5ed2cf20e3b1bb5"
+    },
+    {
+     "rank": 19,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "5b44f34788970f791d2de491767e153b0b287c47b4fdca9ddb2a9942331ab5db"
+    },
+    {
+     "rank": 20,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "bb725e7c4d6522fbe0a6d6ad8679c958612a559e928810bf51ec0b25f7094bae"
+    }
+   ],
+   "latency_s": 0.516,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及谱学与堆积？（关联检索）",
+   "gold_doc_ids": [
+    "201233f8d5194347a68d12312fdd55e4",
+    "2f510c1b03824d44b0cc827f34e9d9a1",
+    "68b69730ce654add88fbf3aacf74039a",
+    "6d8c166da24b476b80cc55378c1301de",
+    "eff2af7d3aa049f6acee61b95edec7a5"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "cca4f11bfb4c4f63b5b4fdaed1bdf898",
+     "chunk_id": "cae3dab2fdb8456bac7489ed503da8e176b6f87469fc73d035334bf578add7df"
+    },
+    {
+     "rank": 2,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "f0ab27f2f085b7b92f92f882467222d3d84aba00b9d182c53811c3c5da3d6579"
+    },
+    {
+     "rank": 3,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "15c22cc6f55ef833ec52d0d4326a86b18b80532bb21ad1ec49c5b57ccb53864f"
+    },
+    {
+     "rank": 4,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "eec4ff703adab797041dcb322c86ff86dea499cc440e2d6df8f55d3f4b2d65c1"
+    },
+    {
+     "rank": 5,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "b313987ed07670868d2e6626257eeca5170d5cf835c7a215f145b5628f13748e"
+    },
+    {
+     "rank": 6,
+     "doc_id": "6d8c166da24b476b80cc55378c1301de",
+     "chunk_id": "89719583f6e0f663dcb7739203934104af7bfdf97b93ac786db1072a92c86a93"
+    },
+    {
+     "rank": 7,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "dbabf736ea529a4648c32754414c8d5a8047ca08e62943620ea568e7d6ed3aa3"
+    },
+    {
+     "rank": 8,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "157fa9df94d6b7002e9be764492ee9531322a9b57a33a2c2d486364463c774a4"
+    },
+    {
+     "rank": 9,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "cac764b9322dee00ae14348da653a97ced9eefe6226f72643d85bf05193e535c"
+    },
+    {
+     "rank": 10,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "648d7c853d01fb5c6d8e7301e0a268ac39b86f3a7b32927ab541ce78274c962b"
+    },
+    {
+     "rank": 11,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "932f3b5685cbdc4a192e6ce881dff5d401bb867b19b36532efc7f07dca09654b"
+    },
+    {
+     "rank": 12,
+     "doc_id": "00ef29f707f9494dae763ad063cab5b7",
+     "chunk_id": "47ca88725c424346e328000217131de4239c7a4b83ed8a2cd905506b51b9c0c4"
+    },
+    {
+     "rank": 13,
+     "doc_id": "94250ccf417346dc9b1c8d60472d13e4",
+     "chunk_id": "e3340b11e9655f7435bdc954ab393d88ddc2ae4600e2568565e43a034977faa0"
+    },
+    {
+     "rank": 14,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "2cfdb04c4b453b3878fb0f2298b6237b175f2946f2acc6362640c429739e698d"
+    },
+    {
+     "rank": 15,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "bb725e7c4d6522fbe0a6d6ad8679c958612a559e928810bf51ec0b25f7094bae"
+    },
+    {
+     "rank": 16,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "c5cc1fd638aa3a949ced6f5b97fed05303d5e430426743985bef8b54ef7eff0a"
+    },
+    {
+     "rank": 17,
+     "doc_id": "ceca9573a2dc4cc78813de21b3702fc2",
+     "chunk_id": "c682de24ed71384f1027f074d6edd1d401fdf2e063bc7cbb43512ee37dbcbf04"
+    },
+    {
+     "rank": 18,
+     "doc_id": "2b40ebc5fb394306890983020d20d129",
+     "chunk_id": "7d4614e03255453a524d0fe22d604939345b5ca2767af9337d9204f42559bb8c"
+    },
+    {
+     "rank": 19,
+     "doc_id": "2b3fd0c3005d4a318ca980e690775b24",
+     "chunk_id": "dac02b1dc1642644870b174ff0278274df2b55d407eed07515c8201300f43f79"
+    },
+    {
+     "rank": 20,
+     "doc_id": "e9f09ec17ee34c3d873a8a65ea431f65",
+     "chunk_id": "7460115d8691c420af538c29055d7d7d185bfcd5ab8e0d9dc2a875601bfdc3c5"
+    }
+   ],
+   "latency_s": 0.502,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及谱学与组态相互作用？（关联检索）",
+   "gold_doc_ids": [
+    "00ef29f707f9494dae763ad063cab5b7"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "00ef29f707f9494dae763ad063cab5b7",
+     "chunk_id": "5df8fe05b84780f4ac4e99de8db75d23b170af16594cbda87bfdbbca8928d40b"
+    },
+    {
+     "rank": 2,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "8738b4982e7d3911a1c5451c189dea1429295a54dd1e4ac30e9659e2a8b57bee"
+    },
+    {
+     "rank": 3,
+     "doc_id": "2341515f1da6467da606cd68104c9ac8",
+     "chunk_id": "37d46caa9c33059c05cbc0ba63b1ccaa02b0c3a2b59e0d9d8e0fc7fdaf261f9f"
+    },
+    {
+     "rank": 4,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "eec4ff703adab797041dcb322c86ff86dea499cc440e2d6df8f55d3f4b2d65c1"
+    },
+    {
+     "rank": 5,
+     "doc_id": "abd509a6eba846cbab0f2e2c02fac19f",
+     "chunk_id": "593e1171da95703c6e660110ae0e9b4b7b12f3d6b99301dd7034e4230afc5e7b"
+    },
+    {
+     "rank": 6,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "cac764b9322dee00ae14348da653a97ced9eefe6226f72643d85bf05193e535c"
+    },
+    {
+     "rank": 7,
+     "doc_id": "cca4f11bfb4c4f63b5b4fdaed1bdf898",
+     "chunk_id": "cae3dab2fdb8456bac7489ed503da8e176b6f87469fc73d035334bf578add7df"
+    },
+    {
+     "rank": 8,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "436a9f39b1aa6a12fc5544076c26a36fa6d0f443751d289dc503c8c0e0d21de5"
+    },
+    {
+     "rank": 9,
+     "doc_id": "2f510c1b03824d44b0cc827f34e9d9a1",
+     "chunk_id": "04101fd7ccf4fbe5a0f15b64a5d68f3d55742e483351616e3427fe37d708fd74"
+    },
+    {
+     "rank": 10,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "dbabf736ea529a4648c32754414c8d5a8047ca08e62943620ea568e7d6ed3aa3"
+    },
+    {
+     "rank": 11,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "157fa9df94d6b7002e9be764492ee9531322a9b57a33a2c2d486364463c774a4"
+    },
+    {
+     "rank": 12,
+     "doc_id": "a44c09c26ed64a60a4ed1232caa461d9",
+     "chunk_id": "a699fb7a3b3d366ebdd56097798c5e573e9941a92f3844b923dea7cba241f84c"
+    },
+    {
+     "rank": 13,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "f0ab27f2f085b7b92f92f882467222d3d84aba00b9d182c53811c3c5da3d6579"
+    },
+    {
+     "rank": 14,
+     "doc_id": "a98c8fdd65ae49eeaa50e341701b3876",
+     "chunk_id": "e513b9ac8ac50dbf98ec6d9e31750853e2dd62a97b14a9e43458e94bcde227c9"
+    },
+    {
+     "rank": 15,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "648d7c853d01fb5c6d8e7301e0a268ac39b86f3a7b32927ab541ce78274c962b"
+    },
+    {
+     "rank": 16,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "932f3b5685cbdc4a192e6ce881dff5d401bb867b19b36532efc7f07dca09654b"
+    },
+    {
+     "rank": 17,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "70882c9f69207f0c4956371c5a82fbf9240ec999d5e26ef3aab8cd23b6cd813e"
+    },
+    {
+     "rank": 18,
+     "doc_id": "94250ccf417346dc9b1c8d60472d13e4",
+     "chunk_id": "1d6b0cf1f0ba2a135f252b042a9ebbdb4278c93ea64fdfe99e62219e07c30f61"
+    },
+    {
+     "rank": 19,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "0e7aba4f5ad8eb1da48d94e27eeba781ddfe076fe4fd7c0c2c689b67d96dc676"
+    },
+    {
+     "rank": 20,
+     "doc_id": "2b40ebc5fb394306890983020d20d129",
+     "chunk_id": "7d4614e03255453a524d0fe22d604939345b5ca2767af9337d9204f42559bb8c"
+    }
+   ],
+   "latency_s": 0.526,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及谱学与电荷转移？（关联检索）",
+   "gold_doc_ids": [
+    "00ef29f707f9494dae763ad063cab5b7",
+    "824098b2c1bf4ebaa5f70e4a83b920cb"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "00ef29f707f9494dae763ad063cab5b7",
+     "chunk_id": "a482e6884f7b957825fe10d11450792d4707833ecbdb220c101d2e445d00f5a2"
+    },
+    {
+     "rank": 2,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "eec4ff703adab797041dcb322c86ff86dea499cc440e2d6df8f55d3f4b2d65c1"
+    },
+    {
+     "rank": 3,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "19dfe37d2407158b7e7cdc750fd9f0fca9cba71c1ddd1d6c6c1ec35478576e59"
+    },
+    {
+     "rank": 4,
+     "doc_id": "2341515f1da6467da606cd68104c9ac8",
+     "chunk_id": "37d46caa9c33059c05cbc0ba63b1ccaa02b0c3a2b59e0d9d8e0fc7fdaf261f9f"
+    },
+    {
+     "rank": 5,
+     "doc_id": "2b40ebc5fb394306890983020d20d129",
+     "chunk_id": "7b1482eaa1d631724597c0d5a085a40a85a127fd595bb984ffb2c4281ab9657b"
+    },
+    {
+     "rank": 6,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "15c22cc6f55ef833ec52d0d4326a86b18b80532bb21ad1ec49c5b57ccb53864f"
+    },
+    {
+     "rank": 7,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "cc1255dcb8979add26d486f57d353f9faabc88ee5b1ccd0fa5004c0b4ad03212"
+    },
+    {
+     "rank": 8,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "157fa9df94d6b7002e9be764492ee9531322a9b57a33a2c2d486364463c774a4"
+    },
+    {
+     "rank": 9,
+     "doc_id": "2f510c1b03824d44b0cc827f34e9d9a1",
+     "chunk_id": "04101fd7ccf4fbe5a0f15b64a5d68f3d55742e483351616e3427fe37d708fd74"
+    },
+    {
+     "rank": 10,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "a396eb56f14a988bb681366e8ee2c664de5f6e6783b450de9b116d7890bfd595"
+    },
+    {
+     "rank": 11,
+     "doc_id": "be6e2372886247faad8f0a73d9111130",
+     "chunk_id": "914d1b05ae2579eff470696a0e4fa8cfb17bf86809130abe3ea7b8a37683d6d9"
+    },
+    {
+     "rank": 12,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "b8fa42eac326a021d338ed6c6b60754bc9465838c5593b85163d37969bcdc271"
+    },
+    {
+     "rank": 13,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "fcb0323b020b0ef34b4f143b3ffe7cb1e221c1b9b6ed4f66358a7508626c0432"
+    },
+    {
+     "rank": 14,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "aa74ef5f31a17c717f2d91756713fe7115c98c834b25ef1ac0a56f51cc491362"
+    },
+    {
+     "rank": 15,
+     "doc_id": "3aa708726abd416eba8f9b6afc5be99a",
+     "chunk_id": "066638af7c08927067ef10c62917bd0153ea8cc71a31948790b8c9faa57f71b3"
+    },
+    {
+     "rank": 16,
+     "doc_id": "c630f6ecbc75455fa4dae9c79937fe1a",
+     "chunk_id": "d28795f791f32cbe73699ea8195ad4c77a8d055e2f366d0b110c9efdb1bc4d9f"
+    },
+    {
+     "rank": 17,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "c5cc1fd638aa3a949ced6f5b97fed05303d5e430426743985bef8b54ef7eff0a"
+    },
+    {
+     "rank": 18,
+     "doc_id": "e4c713ee593a412c946c2a8c0c61cb3b",
+     "chunk_id": "8c03ae1bb3e0c127299d6d8b1e154de624ff3f9bd5881f87714fc75ad22221fe"
+    },
+    {
+     "rank": 19,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "dd1055168e54f62769dea9e1119449a4dc967013a0762b3aed7322426bbc28bc"
+    },
+    {
+     "rank": 20,
+     "doc_id": "bcc8eaa5517646a0b4fd0e8828af8396",
+     "chunk_id": "5ed9278423e903c3da2d9dd966ee89b675946071b12ed7bbfb85587418b6e537"
+    }
+   ],
+   "latency_s": 0.532,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及数字信号处理与模拟前端？（关联检索）",
+   "gold_doc_ids": [
+    "079d82fbf30349a7904921e9ac50b50c",
+    "5027e1b3dfb048a1bd8cb193d0e57b93",
+    "c02c0f51df6147368bd2108e6cc59cea"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "079d82fbf30349a7904921e9ac50b50c",
+     "chunk_id": "0098c5ab69f439fc4dd279ca70dbd8491d7bb3e75edad5b100923e0535b9b05e"
+    },
+    {
+     "rank": 2,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "9167aec638515436066ff54b04a386a955116e0ae237b3a794c744e3b1cac958"
+    },
+    {
+     "rank": 3,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "552561384bf8d9accaf8328f55157147da94620d5e9ab5f9ec5e39bbe265889f"
+    },
+    {
+     "rank": 4,
+     "doc_id": "b0e164b626644fc6a3c6fd53ad9b5de4",
+     "chunk_id": "20842c490acb2d72fa8f0a30adfcd04a2d01b0b4757a4a113b4c4296c7c57fe3"
+    },
+    {
+     "rank": 5,
+     "doc_id": "f39d49f647124f94b1fa1cd0b2c2b60c",
+     "chunk_id": "07a652f8e6642e8055c7533fafc0f21c98bc64b8274d3f6fb612813e6a5d6f86"
+    },
+    {
+     "rank": 6,
+     "doc_id": "c02c0f51df6147368bd2108e6cc59cea",
+     "chunk_id": "285f88389c63042c939276979dd18d63f480d7702260baa745521728f3ed4622"
+    },
+    {
+     "rank": 7,
+     "doc_id": "94250ccf417346dc9b1c8d60472d13e4",
+     "chunk_id": "e3340b11e9655f7435bdc954ab393d88ddc2ae4600e2568565e43a034977faa0"
+    },
+    {
+     "rank": 8,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "653c718d66c54bf383a6ef0c62d5caec5df817d15672ee375533d92dff837436"
+    },
+    {
+     "rank": 9,
+     "doc_id": "5bd86299ac9b485796243db5bbdea4fe",
+     "chunk_id": "8ada117b11de5a7e566bdafb8403369d074bde249baab0ad7b226db61ad0190a"
+    },
+    {
+     "rank": 10,
+     "doc_id": "eff2af7d3aa049f6acee61b95edec7a5",
+     "chunk_id": "9a96bd64d2cb0f6fbefffbfcf11825e5bbc1a2f6bd21867ffa206c7e62e26541"
+    },
+    {
+     "rank": 11,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "ab219edd38ff782f3f375b540b0cf92b991930eb0102d93e2ace37087a393fc5"
+    },
+    {
+     "rank": 12,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "a1478ad28d76bb0886fcc68b816bd58ad304a9e2b7016223b628a3ce9af2a264"
+    },
+    {
+     "rank": 13,
+     "doc_id": "290e438bb9bc423ca6f80bc595586b5a",
+     "chunk_id": "9326690dbffba6271bf9178365ef7b604654a3a88514a6848015c7327922d505"
+    },
+    {
+     "rank": 14,
+     "doc_id": "5afec62371f746b8a6f44a1c118a9975",
+     "chunk_id": "e4b90d63dff0aa25e6ea7ee9d52f7da104ef66e58f5f8d485c52a2e3e8a9d40f"
+    },
+    {
+     "rank": 15,
+     "doc_id": "201233f8d5194347a68d12312fdd55e4",
+     "chunk_id": "0c186cc5e9215ae1228229967a170f60c1fc019f529ba6b747f1adfa073a02a2"
+    },
+    {
+     "rank": 16,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "ebef9b18ba20464b6f5309ce6e110d57f35883031b89e0bdf691e5690d512fb0"
+    },
+    {
+     "rank": 17,
+     "doc_id": "703536066dba4ab1a8723b7b2433cf6c",
+     "chunk_id": "063f8f165c0cece91f51f86cfbcb2ed6538260252cc2b2a5294f89e23494e450"
+    },
+    {
+     "rank": 18,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "0e3e40ee4aa6e0d4f9a3e04d69ebb5a9f931fcfedec7fb90b73b435510b573bf"
+    },
+    {
+     "rank": 19,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "8c27c9795ed8da52e6fb4ff541c47a7acfafd5a9a9b168968bb007be91ebd5f3"
+    },
+    {
+     "rank": 20,
+     "doc_id": "756189241e17431ba88bd337f3a55918",
+     "chunk_id": "ece986e269a47984bf731056c2b7bb1333f9f973d9bc9606f63c0f44d4379579"
+    }
+   ],
+   "latency_s": 0.516,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及剂量与铅屏蔽？（关联检索）",
+   "gold_doc_ids": [
+    "6d38b0442cb942448e3c5b430f39880e",
+    "77bca5b09b3c41b3aff15868a1f840d5",
+    "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+    "dd638451e78e41c48d5b424d353f9793",
+    "e0d60c4152394b0ea4e32a9e6c1abaa5"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "c5f51f146d8349b2a383d6d0860f8a5d",
+     "chunk_id": "5cb7b9df2d3dfa9e193d19cf7e9d87141175347f9c25476c98771e5ec7513442"
+    },
+    {
+     "rank": 2,
+     "doc_id": "e0d60c4152394b0ea4e32a9e6c1abaa5",
+     "chunk_id": "0a4e587377ec33ed7d0e96a9d710674d8cf0acba8a7caaf5310ad8908fc9d450"
+    },
+    {
+     "rank": 3,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "73a10391281ea5711e6d1a34a4efccf2ec3f7cb23462b56348977a7c9f6eec2a"
+    },
+    {
+     "rank": 4,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "b841471b7922a1907c2a773e5325776b186d27d0a658270806c4bb2047ca21e4"
+    },
+    {
+     "rank": 5,
+     "doc_id": "9740e181f7b84ba4af1d0692c3cf99d5",
+     "chunk_id": "59959f12ff90b008735b3ba7b3eb825d816f1f51163c2a925f286c8e226f827c"
+    },
+    {
+     "rank": 6,
+     "doc_id": "dd638451e78e41c48d5b424d353f9793",
+     "chunk_id": "8c9d3997a92b0caa536bd9e738a5ef9ad8e987bdb34215c7a75555ef97e802e9"
+    },
+    {
+     "rank": 7,
+     "doc_id": "0c11a6ae5c5a4db0b957646ea91fa1d8",
+     "chunk_id": "e31b79d00a09e7b8657b7fecba511523e6768ca7930f6b796fedbe2c84830b55"
+    },
+    {
+     "rank": 8,
+     "doc_id": "562b67ceb2e840f1ae2a149082d4ae93",
+     "chunk_id": "8dbbdf3534688bc7f3fd249b9356f2346c288d6c7be3b850ae5bdf8d19b2485d"
+    },
+    {
+     "rank": 9,
+     "doc_id": "43648c5ebaf143e687b5a3936a237f00",
+     "chunk_id": "f524ee2bd5e862748f12fc11b88b3ba2db08a9b3a01321f694152d52266fd200"
+    },
+    {
+     "rank": 10,
+     "doc_id": "0e4bfcfcabfa47c69fb14d1d6f8fe03c",
+     "chunk_id": "e296ff971966430132ccc40323ccaf15f2286809a3321f5ac442298a58716bd9"
+    },
+    {
+     "rank": 11,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "72fc37d92f6be3e97e355d140762c555348f908d04ebf206d2062eeb4893e961"
+    },
+    {
+     "rank": 12,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "0d8bc5815b1074b4e43e1e623b6fc9ba9b06af10603e916bac7d0dd461c6573c"
+    },
+    {
+     "rank": 13,
+     "doc_id": "5c566792b3d74dc8beb89a5dfdb8403d",
+     "chunk_id": "218a73da78d262be79ec6727ab9688e1fe4998cb7dfd2ef67798008636c42cde"
+    },
+    {
+     "rank": 14,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "64026dcfe79e50a7fcff709fb657bc9aa291c8c6fd444f4aba9e862fabaa882a"
+    },
+    {
+     "rank": 15,
+     "doc_id": "2bd04127007148f086ad2b7d2cd3dcce",
+     "chunk_id": "e81b853829e6e497bb7b2682402896f854975f3b6973789ee9b0f2c32ea078f5"
+    },
+    {
+     "rank": 16,
+     "doc_id": "568eae272680415d887c072b944b1df0",
+     "chunk_id": "2164bcc467cbd166da6a537f91480ad0c55975ba1f734bf04eda2e27d28b60ef"
+    },
+    {
+     "rank": 17,
+     "doc_id": "48b9a62f6eb5478f94e5721db30c564d",
+     "chunk_id": "ce7cf651caefafd8b24d634706882e9d2e1956f4d6777bdd1f83c5eeb6f5ebe2"
+    },
+    {
+     "rank": 18,
+     "doc_id": "dd6db7e0cf254ac2959c08b8ce603bc5",
+     "chunk_id": "a6a48f2638b1b74ca303cc9baa5a0e920c15a8d969bbbb77330cf9087a5a8a40"
+    },
+    {
+     "rank": 19,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "0444ce062b0acde4e7395b2f4734adb588b889df5f6bcebd1c0eab85d90c708f"
+    },
+    {
+     "rank": 20,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    }
+   ],
+   "latency_s": 0.469,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及剂量与mass spectrum？（关联检索）",
+   "gold_doc_ids": [
+    "c91b4d2df5e7428599184599bcab85f2"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "c91b4d2df5e7428599184599bcab85f2",
+     "chunk_id": "1fe18fc1c9691da4238b84e03aafe2d523f33ba7066503eef9c51d485cdb9025"
+    },
+    {
+     "rank": 2,
+     "doc_id": "47453f82116744379261400f49790e2c",
+     "chunk_id": "e0a972065647cee10fa20dc9759e7071c53a312f774b1eb6f51a302e0b46b9be"
+    },
+    {
+     "rank": 3,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "87874a726ffdc99ad3c865f90594b4393471655135c833d79a3c92fd78a5dc4a"
+    },
+    {
+     "rank": 4,
+     "doc_id": "ceca9573a2dc4cc78813de21b3702fc2",
+     "chunk_id": "59e90699bac00f525bdf2fde9a7b637b6a74f77711745996fe8ef18a7f145d77"
+    },
+    {
+     "rank": 5,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 6,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "8cc00acfa97eff2cde81590a6d38e2cfbbc4ad1886449b90a1e0e035e8aea1e8"
+    },
+    {
+     "rank": 7,
+     "doc_id": "2b40ebc5fb394306890983020d20d129",
+     "chunk_id": "7d4614e03255453a524d0fe22d604939345b5ca2767af9337d9204f42559bb8c"
+    },
+    {
+     "rank": 8,
+     "doc_id": "4602f9b7045647b89c5ab153ff74f5eb",
+     "chunk_id": "e2ca604ce0c122984e6fb7b3c173dcd534f2102a6309aea75e882cf41175d7ef"
+    },
+    {
+     "rank": 9,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "648d7c853d01fb5c6d8e7301e0a268ac39b86f3a7b32927ab541ce78274c962b"
+    },
+    {
+     "rank": 10,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "157fa9df94d6b7002e9be764492ee9531322a9b57a33a2c2d486364463c774a4"
+    },
+    {
+     "rank": 11,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "ecf271427a31a6c994045f5482d6d9a482152c1812eb0445de5be21eaa716326"
+    },
+    {
+     "rank": 12,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "0e7aba4f5ad8eb1da48d94e27eeba781ddfe076fe4fd7c0c2c689b67d96dc676"
+    },
+    {
+     "rank": 13,
+     "doc_id": "dd6db7e0cf254ac2959c08b8ce603bc5",
+     "chunk_id": "a9b088d1515a52d72493eb6196915231589c756277652b94ec61c912214011e0"
+    },
+    {
+     "rank": 14,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "50f69b78fa2f67d6baf073cf8f384f223a52c1d8e2f1a683eac44fe9ecc141f2"
+    },
+    {
+     "rank": 15,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "f0b509a4b639452e8a8ad2e84b0a28832b87dc7c9b095fe8a7e55b17916e5f32"
+    },
+    {
+     "rank": 16,
+     "doc_id": "7f5d98f9f6f742ea83f92c4bc4dc9345",
+     "chunk_id": "45feebb47c29f7710b4be9b7134f753d4c14e2e86246b4f4483000f66b4a30a6"
+    },
+    {
+     "rank": 17,
+     "doc_id": "94250ccf417346dc9b1c8d60472d13e4",
+     "chunk_id": "830fec636f052aa36ac5b2fba1ea667400312f4ba13bef9de5ed2cf20e3b1bb5"
+    },
+    {
+     "rank": 18,
+     "doc_id": "9a432edef2604473ba9ce87ae03fcad7",
+     "chunk_id": "280ef4ca71f2f795c0b33e44dcde969e0c514fed7749378ea6da7f33272e2aec"
+    },
+    {
+     "rank": 19,
+     "doc_id": "a2ededef9dce490aae1712e730d1f874",
+     "chunk_id": "f0db3728e9f13048102e84fba97484d942737844deea93b12532db7bf238a16c"
+    },
+    {
+     "rank": 20,
+     "doc_id": "c630f6ecbc75455fa4dae9c79937fe1a",
+     "chunk_id": "d28795f791f32cbe73699ea8195ad4c77a8d055e2f366d0b110c9efdb1bc4d9f"
+    }
+   ],
+   "latency_s": 0.395,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及剂量与fission product？（关联检索）",
+   "gold_doc_ids": [
+    "8d6cf27aabf64017bed77a87a3562acd",
+    "9d1d0ed5bb594a269f83fe8b3d9e3549",
+    "c91b4d2df5e7428599184599bcab85f2",
+    "f3e9f8a90094402191977027c6667b4d"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "f3e9f8a90094402191977027c6667b4d",
+     "chunk_id": "f51bcdb834b7685244923f22325314bf680f85c4a1269a014efa38edf735c601"
+    },
+    {
+     "rank": 2,
+     "doc_id": "cae05f66432c4279b4f895782b232b25",
+     "chunk_id": "2e038a33b16368bb5858e6126bcab7c66f2e99c4556b85dd6394778554be6477"
+    },
+    {
+     "rank": 3,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "fc970aa8e76dfe4d44b2cac135121da331e674f69f1f2cdf5b00ce5d29137243"
+    },
+    {
+     "rank": 4,
+     "doc_id": "d31939e64acf40d0bb5b49016d5c0822",
+     "chunk_id": "43bc12acebc3c434a53b4d1a51ba8609d3a85d2ad80617aa8201a28c0117ba7f"
+    },
+    {
+     "rank": 5,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "87874a726ffdc99ad3c865f90594b4393471655135c833d79a3c92fd78a5dc4a"
+    },
+    {
+     "rank": 6,
+     "doc_id": "ceca9573a2dc4cc78813de21b3702fc2",
+     "chunk_id": "c682de24ed71384f1027f074d6edd1d401fdf2e063bc7cbb43512ee37dbcbf04"
+    },
+    {
+     "rank": 7,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "e93ac6a846f267961f101a14eadfffadff6516fb01094b16765d0075142cd970"
+    },
+    {
+     "rank": 8,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "875a77e542d834de9bf5ba3cefe1182ecdae99b17c78a146937a7ed3fa38d632"
+    },
+    {
+     "rank": 9,
+     "doc_id": "dd6db7e0cf254ac2959c08b8ce603bc5",
+     "chunk_id": "7baf3197d03decc38f8815c9afbc1b463c63b017343588e5bdcf865f4fdaaf4a"
+    },
+    {
+     "rank": 10,
+     "doc_id": "fbf7d2eccb8a4acab9f334e0f15c210d",
+     "chunk_id": "4d7c9704d5cd8840be25eaa48365d32c4db7d0ea2089e67b050bd9af0e98677f"
+    },
+    {
+     "rank": 11,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "70efd1cd83cd0d3d5a23206f3caec19017aafd55def89a84da104d2f0f888e39"
+    },
+    {
+     "rank": 12,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "24b0b068f3b8772ba530c3f788ad18f274a5fbded977afbd3de194ae31009ab4"
+    },
+    {
+     "rank": 13,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "dd1055168e54f62769dea9e1119449a4dc967013a0762b3aed7322426bbc28bc"
+    },
+    {
+     "rank": 14,
+     "doc_id": "16eb7b49c4254b989648778ab6793691",
+     "chunk_id": "69a81a17755cdad0f1dab92357de1288feda6216fadbf9423ddac1dabd6efcac"
+    },
+    {
+     "rank": 15,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "e6644e6f67b2649d34de01a5b95ceb5a2b3b56ef9d5374a3033a2f11a46c409d"
+    },
+    {
+     "rank": 16,
+     "doc_id": "9d1d0ed5bb594a269f83fe8b3d9e3549",
+     "chunk_id": "f14a29f4a020c0772809268c624344ce7e2953e832cd7c265ed2700ad686764a"
+    },
+    {
+     "rank": 17,
+     "doc_id": "c91b4d2df5e7428599184599bcab85f2",
+     "chunk_id": "7fe5140fda9fc056246b5a8287d52d3335b6ee3a2b0d310bce5e28a0a190c998"
+    },
+    {
+     "rank": 18,
+     "doc_id": "9383489b011640d2a2417a6b4aa31500",
+     "chunk_id": "a67e030b451abd35dc0facc19ffc8d8a3957f776e7df33dc43587d2e583ea328"
+    },
+    {
+     "rank": 19,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "50f69b78fa2f67d6baf073cf8f384f223a52c1d8e2f1a683eac44fe9ecc141f2"
+    },
+    {
+     "rank": 20,
+     "doc_id": "588151982ddc4b14a2f398dde7e6f20e",
+     "chunk_id": "c0bd0a37be3661076bf26a7829e2f840acbd4d2ab93459c25ea9fc6ecc66211a"
+    }
+   ],
+   "latency_s": 0.316,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及剂量与活时间？（关联检索）",
+   "gold_doc_ids": [
+    "65e41a8c461c4020913b0ee20933e37a",
+    "abd25b05b1484bb0a9fd96d81f163059",
+    "af809508833b44b6b08ea69c5c124bc8"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "7e93827efd39603b3ce71880918b05e7941d02e082a83144cb7412c5f02291d6"
+    },
+    {
+     "rank": 2,
+     "doc_id": "af809508833b44b6b08ea69c5c124bc8",
+     "chunk_id": "96547153aede4edf8132088c6717a2ba674537eaf44268835d30e7d7357c08d9"
+    },
+    {
+     "rank": 3,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "f34ced6d14e6ce61143a5b12149a13eef4a49f1ff36418c61c879dd13b2e92ed"
+    },
+    {
+     "rank": 4,
+     "doc_id": "83ebac82d49d4e42abf04943af3073da",
+     "chunk_id": "1963daceed062884bd97649285848735c0ec958003025171cbb0f7d37827f403"
+    },
+    {
+     "rank": 5,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "88d9be1186db0ee6d1e35253045667cdfe2ac862709483e8f88b29d39d431c40"
+    },
+    {
+     "rank": 6,
+     "doc_id": "dd638451e78e41c48d5b424d353f9793",
+     "chunk_id": "8c9d3997a92b0caa536bd9e738a5ef9ad8e987bdb34215c7a75555ef97e802e9"
+    },
+    {
+     "rank": 7,
+     "doc_id": "dd6db7e0cf254ac2959c08b8ce603bc5",
+     "chunk_id": "89a6aac61dbd880a2d45be172ceb4568053098db612e9bcc7bd34505ea32fbfb"
+    },
+    {
+     "rank": 8,
+     "doc_id": "f5ed787eb04f49a49e2546774adfd529",
+     "chunk_id": "aae9fd8ab6e1fd79785ceb85fdb3018f021b36cfb422533c29e4235a334b5fe6"
+    },
+    {
+     "rank": 9,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 10,
+     "doc_id": "48b9a62f6eb5478f94e5721db30c564d",
+     "chunk_id": "5aa834d0de7fa1ec5981c2c1355fad488f5b100ce40628a4b22c7b8219fa0a2a"
+    },
+    {
+     "rank": 11,
+     "doc_id": "c91b4d2df5e7428599184599bcab85f2",
+     "chunk_id": "0a206e92e1e375628fa526e41da50eeb525ba454d8e965a6b52b29d6b757a4e6"
+    },
+    {
+     "rank": 12,
+     "doc_id": "7f5d98f9f6f742ea83f92c4bc4dc9345",
+     "chunk_id": "7e73dce385fbeb1d7acc4dcb1f3ac51728bb74f90c22cd6eec9450a4ee2d0a6c"
+    },
+    {
+     "rank": 13,
+     "doc_id": "16eb7b49c4254b989648778ab6793691",
+     "chunk_id": "a639f4ec135211941f29bdac21600b23e4448ac51d4ca6d630a12f56805d21f5"
+    },
+    {
+     "rank": 14,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "dd1055168e54f62769dea9e1119449a4dc967013a0762b3aed7322426bbc28bc"
+    },
+    {
+     "rank": 15,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "8cc00acfa97eff2cde81590a6d38e2cfbbc4ad1886449b90a1e0e035e8aea1e8"
+    },
+    {
+     "rank": 16,
+     "doc_id": "77bca5b09b3c41b3aff15868a1f840d5",
+     "chunk_id": "140c131db7fc03d215869c22b4015e3b817fc5f360384f1dd6526f13ab6a962a"
+    },
+    {
+     "rank": 17,
+     "doc_id": "c630f6ecbc75455fa4dae9c79937fe1a",
+     "chunk_id": "b2ce6f0b0313710fa76e29de8f20d927e3792f544fdd0d2d3f1c4e392f48df0d"
+    },
+    {
+     "rank": 18,
+     "doc_id": "5bcb837189c64b60a4dd2a1612dd9ac8",
+     "chunk_id": "1af78fcd2294ed9ee52371e6b3e8575c81382a26c0f5e278d28b4c5cf2265031"
+    },
+    {
+     "rank": 19,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "06602eba4983aa9feda4e13f6df5dc3a9c7c83f45fd679043c7d0cfdb28a0bfa"
+    },
+    {
+     "rank": 20,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "b1ac9fc755c57e647ede4fb66cc454e40646106fa5f270bcfa5c8390228a641b"
+    }
+   ],
+   "latency_s": 0.505,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及剂量与个人剂量当量？（关联检索）",
+   "gold_doc_ids": [
+    "4602f9b7045647b89c5ab153ff74f5eb",
+    "9a432edef2604473ba9ce87ae03fcad7"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "87874a726ffdc99ad3c865f90594b4393471655135c833d79a3c92fd78a5dc4a"
+    },
+    {
+     "rank": 2,
+     "doc_id": "48b9a62f6eb5478f94e5721db30c564d",
+     "chunk_id": "71983359af32278ff91b4813249cc17ff63bd29dcd5aacb82b58863d57d8a8ff"
+    },
+    {
+     "rank": 3,
+     "doc_id": "4602f9b7045647b89c5ab153ff74f5eb",
+     "chunk_id": "dca5be0f3afc0648e588b6ecd769866b9f3ead3d4c389eeb097f0040a1814177"
+    },
+    {
+     "rank": 4,
+     "doc_id": "c91b4d2df5e7428599184599bcab85f2",
+     "chunk_id": "94b26a319594d3545f4abfe9294b39d0014f644018d99f249bdc822cbdc8cdd4"
+    },
+    {
+     "rank": 5,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "f80a0a65bd2293cbf445627fe240249d393a7329317a8029241b9c25b5dfb330"
+    },
+    {
+     "rank": 6,
+     "doc_id": "dd6db7e0cf254ac2959c08b8ce603bc5",
+     "chunk_id": "7baf3197d03decc38f8815c9afbc1b463c63b017343588e5bdcf865f4fdaaf4a"
+    },
+    {
+     "rank": 7,
+     "doc_id": "9a432edef2604473ba9ce87ae03fcad7",
+     "chunk_id": "94ec1b42543ea1e3e077559200def07bef12786a3834c86b3b705e2cbc6ed4c1"
+    },
+    {
+     "rank": 8,
+     "doc_id": "dd638451e78e41c48d5b424d353f9793",
+     "chunk_id": "8c9d3997a92b0caa536bd9e738a5ef9ad8e987bdb34215c7a75555ef97e802e9"
+    },
+    {
+     "rank": 9,
+     "doc_id": "7f4b851dd2e94d4dadd9ea09e1b68207",
+     "chunk_id": "853f2db1e39eda21ff389e9bca2b46a3ccaead104dec9f1e7e566e7fcdf4a256"
+    },
+    {
+     "rank": 10,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "91652b028ae4aa338621124c082700270abf48cf22907a49040aaf2cd242a6b0"
+    },
+    {
+     "rank": 11,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "547106b9ac660eeb122871651b930a74c2a636bfbf3617fab30a3d916e440559"
+    },
+    {
+     "rank": 12,
+     "doc_id": "f3e9f8a90094402191977027c6667b4d",
+     "chunk_id": "4cafab57f080239f8aac76da8c300eea9d951837939e0d031aeb190ed7dcd261"
+    },
+    {
+     "rank": 13,
+     "doc_id": "c5f51f146d8349b2a383d6d0860f8a5d",
+     "chunk_id": "6a2c5337a3e3b59bcdbc3c7dd1894a9556bccd9bd23dd9d29c7fd872fdd9fd5b"
+    },
+    {
+     "rank": 14,
+     "doc_id": "77bca5b09b3c41b3aff15868a1f840d5",
+     "chunk_id": "9bc93c69940f55fde1443af60d271ff1b8557eaf10924403ff1943410eacee44"
+    },
+    {
+     "rank": 15,
+     "doc_id": "e0d60c4152394b0ea4e32a9e6c1abaa5",
+     "chunk_id": "0a4e587377ec33ed7d0e96a9d710674d8cf0acba8a7caaf5310ad8908fc9d450"
+    },
+    {
+     "rank": 16,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "06602eba4983aa9feda4e13f6df5dc3a9c7c83f45fd679043c7d0cfdb28a0bfa"
+    },
+    {
+     "rank": 17,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "27152a7617fa810acb0bf66a7cf828a1822c38a28966810888cd2e1671f1d2c6"
+    },
+    {
+     "rank": 18,
+     "doc_id": "fbf7d2eccb8a4acab9f334e0f15c210d",
+     "chunk_id": "ddb70a9841ecf5e2c01dffc3a2b8bcc16e8c5b3d03e34dc197425d61553dc3b7"
+    },
+    {
+     "rank": 19,
+     "doc_id": "562b67ceb2e840f1ae2a149082d4ae93",
+     "chunk_id": "eb36e351e0f2f9b632b8b810516de2becd5e01f7442ad3a818f293b55151c0dc"
+    },
+    {
+     "rank": 20,
+     "doc_id": "5afec62371f746b8a6f44a1c118a9975",
+     "chunk_id": "67dd73dc659e5462c76f686f51c7741a0f621de6ee2de8aaafc6090b345cc87e"
+    }
+   ],
+   "latency_s": 0.476,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及剂量与redox？（关联检索）",
+   "gold_doc_ids": [
+    "af809508833b44b6b08ea69c5c124bc8"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "c91b4d2df5e7428599184599bcab85f2",
+     "chunk_id": "1fe18fc1c9691da4238b84e03aafe2d523f33ba7066503eef9c51d485cdb9025"
+    },
+    {
+     "rank": 2,
+     "doc_id": "7f5d98f9f6f742ea83f92c4bc4dc9345",
+     "chunk_id": "2b5d96a1bc3ce8d827198bf922e84773288e0f42b06ed9f45820edb420f4ec14"
+    },
+    {
+     "rank": 3,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "87874a726ffdc99ad3c865f90594b4393471655135c833d79a3c92fd78a5dc4a"
+    },
+    {
+     "rank": 4,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "1e3545b39ac93231d31b5cf37963cee84100dd70d421d97bf8a3944d916dd48f"
+    },
+    {
+     "rank": 5,
+     "doc_id": "af809508833b44b6b08ea69c5c124bc8",
+     "chunk_id": "f682f832aa0276558249260bcfd07d635b635732a4e437b3c786c875adb76a0d"
+    },
+    {
+     "rank": 6,
+     "doc_id": "dd6db7e0cf254ac2959c08b8ce603bc5",
+     "chunk_id": "5d52bf44ce8fb1624d104c6a2ebf0d56d81859fb57ea1e8b5211d317388f7e31"
+    },
+    {
+     "rank": 7,
+     "doc_id": "2250990ef3db4fa58aeae78d2b9b6c35",
+     "chunk_id": "ab17bd11298a86133a2dcc64e10966b22d495a3819e985a854e53732645fb894"
+    },
+    {
+     "rank": 8,
+     "doc_id": "fbf7d2eccb8a4acab9f334e0f15c210d",
+     "chunk_id": "4d7c9704d5cd8840be25eaa48365d32c4db7d0ea2089e67b050bd9af0e98677f"
+    },
+    {
+     "rank": 9,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "157fa9df94d6b7002e9be764492ee9531322a9b57a33a2c2d486364463c774a4"
+    },
+    {
+     "rank": 10,
+     "doc_id": "00ef29f707f9494dae763ad063cab5b7",
+     "chunk_id": "138a956b9a415a0fba40b31b8784c32add869c6e8de8b44b86070309655ae83f"
+    },
+    {
+     "rank": 11,
+     "doc_id": "e9f09ec17ee34c3d873a8a65ea431f65",
+     "chunk_id": "780197006f2692345c27e2a7d2c73e3872868cb3d4b6169a2194df3a7f704156"
+    },
+    {
+     "rank": 12,
+     "doc_id": "4480d1b9c5ca42fd938d845ea350f8b2",
+     "chunk_id": "61d560f1be095d5647e610cb0ac83b56a5bb5596f586556a91f19513c018aa8a"
+    },
+    {
+     "rank": 13,
+     "doc_id": "25eac13d027d4a089014c4c735c21629",
+     "chunk_id": "df2781fa4abf3df6496f10a1bd2da155ac9ffc436a7b2523362ca861b5afcbf8"
+    },
+    {
+     "rank": 14,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "70efd1cd83cd0d3d5a23206f3caec19017aafd55def89a84da104d2f0f888e39"
+    },
+    {
+     "rank": 15,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "fb74095bf389e1bd6cba19aa40c2b226b193f467545e3ce12549c35993ec91bb"
+    },
+    {
+     "rank": 16,
+     "doc_id": "c5f51f146d8349b2a383d6d0860f8a5d",
+     "chunk_id": "f41d4349143c2619df78eacfa3529fe43c00017d4be9d50938d71c7e40513bf7"
+    },
+    {
+     "rank": 17,
+     "doc_id": "77bca5b09b3c41b3aff15868a1f840d5",
+     "chunk_id": "9bc93c69940f55fde1443af60d271ff1b8557eaf10924403ff1943410eacee44"
+    },
+    {
+     "rank": 18,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "b6ffec016975133a6bf1706e04779ea3ee32fb521cb2cb19d3807d12e937f2c7"
+    },
+    {
+     "rank": 19,
+     "doc_id": "08bd663646fd49dd885e9a9dd19659a1",
+     "chunk_id": "1fc23b8be5b84ecf0a80d90737615ce172ec715dd4760c68e9a0bbf2ad678823"
+    },
+    {
+     "rank": 20,
+     "doc_id": "2b40ebc5fb394306890983020d20d129",
+     "chunk_id": "5f47da14edca71673a28d484305204a60e4133cc93821695ebe90bacedfa2eaa"
+    }
+   ],
+   "latency_s": 0.498,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及剂量与空气比释动能？（关联检索）",
+   "gold_doc_ids": [
+    "76ebf8dcd6de4c50bc85db5f2d1add5b",
+    "77bca5b09b3c41b3aff15868a1f840d5",
+    "7f4b851dd2e94d4dadd9ea09e1b68207",
+    "dd6db7e0cf254ac2959c08b8ce603bc5"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "77bca5b09b3c41b3aff15868a1f840d5",
+     "chunk_id": "078b2e6ac4d3107ea9ae716eed31bcbf72ed083248b0ba6c2903f695b0341c7d"
+    },
+    {
+     "rank": 2,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "87874a726ffdc99ad3c865f90594b4393471655135c833d79a3c92fd78a5dc4a"
+    },
+    {
+     "rank": 3,
+     "doc_id": "dd6db7e0cf254ac2959c08b8ce603bc5",
+     "chunk_id": "7baf3197d03decc38f8815c9afbc1b463c63b017343588e5bdcf865f4fdaaf4a"
+    },
+    {
+     "rank": 4,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "a8be80627bd6055c6c7795d00494711f9d5cea448f1cf03f8d522fab0001bedf"
+    },
+    {
+     "rank": 5,
+     "doc_id": "48b9a62f6eb5478f94e5721db30c564d",
+     "chunk_id": "71983359af32278ff91b4813249cc17ff63bd29dcd5aacb82b58863d57d8a8ff"
+    },
+    {
+     "rank": 6,
+     "doc_id": "7f5d98f9f6f742ea83f92c4bc4dc9345",
+     "chunk_id": "2b5d96a1bc3ce8d827198bf922e84773288e0f42b06ed9f45820edb420f4ec14"
+    },
+    {
+     "rank": 7,
+     "doc_id": "f3e9f8a90094402191977027c6667b4d",
+     "chunk_id": "4cafab57f080239f8aac76da8c300eea9d951837939e0d031aeb190ed7dcd261"
+    },
+    {
+     "rank": 8,
+     "doc_id": "c91b4d2df5e7428599184599bcab85f2",
+     "chunk_id": "94b26a319594d3545f4abfe9294b39d0014f644018d99f249bdc822cbdc8cdd4"
+    },
+    {
+     "rank": 9,
+     "doc_id": "dd638451e78e41c48d5b424d353f9793",
+     "chunk_id": "8c9d3997a92b0caa536bd9e738a5ef9ad8e987bdb34215c7a75555ef97e802e9"
+    },
+    {
+     "rank": 10,
+     "doc_id": "7f4b851dd2e94d4dadd9ea09e1b68207",
+     "chunk_id": "853f2db1e39eda21ff389e9bca2b46a3ccaead104dec9f1e7e566e7fcdf4a256"
+    },
+    {
+     "rank": 11,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "3bed6ac6c586077f0e1665b661093bca6ec08bef2ba86017426e664e6a1382b3"
+    },
+    {
+     "rank": 12,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 13,
+     "doc_id": "4602f9b7045647b89c5ab153ff74f5eb",
+     "chunk_id": "7c415ba141285343651573d0adf050927c8f48b574d2a66119d80bef50267fb1"
+    },
+    {
+     "rank": 14,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "dd1055168e54f62769dea9e1119449a4dc967013a0762b3aed7322426bbc28bc"
+    },
+    {
+     "rank": 15,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "8cc00acfa97eff2cde81590a6d38e2cfbbc4ad1886449b90a1e0e035e8aea1e8"
+    },
+    {
+     "rank": 16,
+     "doc_id": "e0d60c4152394b0ea4e32a9e6c1abaa5",
+     "chunk_id": "0ece176aeede4c103d181b3caaa2cf63a25d62b75e200bbd3a0ffdcff028d37c"
+    },
+    {
+     "rank": 17,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "2f446a2c7e6496d861c2e8b204e7d1704ff5c327e0e62c63f585948897e9a0df"
+    },
+    {
+     "rank": 18,
+     "doc_id": "c5f51f146d8349b2a383d6d0860f8a5d",
+     "chunk_id": "6a2c5337a3e3b59bcdbc3c7dd1894a9556bccd9bd23dd9d29c7fd872fdd9fd5b"
+    },
+    {
+     "rank": 19,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "1c58b973fb8f78dd86bfb63f487d580b7ecd7b430b2ea66c9ec50d565e2c9d1d"
+    },
+    {
+     "rank": 20,
+     "doc_id": "fbf7d2eccb8a4acab9f334e0f15c210d",
+     "chunk_id": "dc2c922f79851e002376099de6237ef1029a1af0c935dbb41754bb9b9703f3ae"
+    }
+   ],
+   "latency_s": 0.527,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及shielding与lead shielding layer？（关联检索）",
+   "gold_doc_ids": [
+    "0c11a6ae5c5a4db0b957646ea91fa1d8",
+    "0e4bfcfcabfa47c69fb14d1d6f8fe03c",
+    "b727f895b6af4cf68f858be64171f513",
+    "dd638451e78e41c48d5b424d353f9793",
+    "e0d60c4152394b0ea4e32a9e6c1abaa5"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "37e676bbeaf88fb3c4e3a9a416db950064c64ba7938cef00483b8824d07aece4"
+    },
+    {
+     "rank": 2,
+     "doc_id": "9740e181f7b84ba4af1d0692c3cf99d5",
+     "chunk_id": "59959f12ff90b008735b3ba7b3eb825d816f1f51163c2a925f286c8e226f827c"
+    },
+    {
+     "rank": 3,
+     "doc_id": "0c11a6ae5c5a4db0b957646ea91fa1d8",
+     "chunk_id": "e31b79d00a09e7b8657b7fecba511523e6768ca7930f6b796fedbe2c84830b55"
+    },
+    {
+     "rank": 4,
+     "doc_id": "e0d60c4152394b0ea4e32a9e6c1abaa5",
+     "chunk_id": "0a4e587377ec33ed7d0e96a9d710674d8cf0acba8a7caaf5310ad8908fc9d450"
+    },
+    {
+     "rank": 5,
+     "doc_id": "0e4bfcfcabfa47c69fb14d1d6f8fe03c",
+     "chunk_id": "cc5e64d67bbca50ebc8d4a348c34edd74935a7fc6a2cfa50a40b638d9a8b037b"
+    },
+    {
+     "rank": 6,
+     "doc_id": "562b67ceb2e840f1ae2a149082d4ae93",
+     "chunk_id": "424f9b0a2a85628abc00287aad848bc089a6f4783793ba7a02a865ff7d38f436"
+    },
+    {
+     "rank": 7,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "93f643f2a05cf29c3918879c3d508a05e7f972e279541b34eb0de80bc6b95e4e"
+    },
+    {
+     "rank": 8,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "0d8bc5815b1074b4e43e1e623b6fc9ba9b06af10603e916bac7d0dd461c6573c"
+    },
+    {
+     "rank": 9,
+     "doc_id": "568eae272680415d887c072b944b1df0",
+     "chunk_id": "d01f2363ef58ba0da34e01425812e5436d5e7aa8043346f5c56e87592b067c85"
+    },
+    {
+     "rank": 10,
+     "doc_id": "dd638451e78e41c48d5b424d353f9793",
+     "chunk_id": "226e81d023df0ba86f9489a9de0b38289eafb1f7fbe4222422101006f709771e"
+    },
+    {
+     "rank": 11,
+     "doc_id": "2eb25eb829cb464795b07dcc9a576bb8",
+     "chunk_id": "ead94b7cac8e13bc86de42747b5266ecc1a1a8e5dfe8ef109ab63b11cbdee6a9"
+    },
+    {
+     "rank": 12,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "0bbdfeede9fa176789e62bdbc3288240a302327063bfa0e0d8817d3740e56c06"
+    },
+    {
+     "rank": 13,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "428abb45fae70a2cded97f2204d5e5e441ff3459addcbf1bd3f895f35597aa24"
+    },
+    {
+     "rank": 14,
+     "doc_id": "10c1605fb47f4fab82c481d6485e5ff4",
+     "chunk_id": "da590f5adc36619e71a7a0c3bd5caf7a2000b904d3f503082b63b1b06ad98f7f"
+    },
+    {
+     "rank": 15,
+     "doc_id": "2bd04127007148f086ad2b7d2cd3dcce",
+     "chunk_id": "1b153c8da13511a905dc2823e0a9c5e8442633f74771ffcc599983bf93ad64d3"
+    },
+    {
+     "rank": 16,
+     "doc_id": "c5f51f146d8349b2a383d6d0860f8a5d",
+     "chunk_id": "5827b7d3b42eda5062f83439e656ca193f3964b334e7ae156ca8c769a2aa8b59"
+    },
+    {
+     "rank": 17,
+     "doc_id": "5c566792b3d74dc8beb89a5dfdb8403d",
+     "chunk_id": "218a73da78d262be79ec6727ab9688e1fe4998cb7dfd2ef67798008636c42cde"
+    },
+    {
+     "rank": 18,
+     "doc_id": "d01137e831d44303bd1bb164f0b127de",
+     "chunk_id": "de79fa103a9346e1e913796483e9f70675223c3a78b78cfdd252a73a76e53700"
+    },
+    {
+     "rank": 19,
+     "doc_id": "48b9a62f6eb5478f94e5721db30c564d",
+     "chunk_id": "32ca876891088e3c948a4da3b2a404075f6b25dbfa6cb04168dcd4e452f3faa9"
+    },
+    {
+     "rank": 20,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "64026dcfe79e50a7fcff709fb657bc9aa291c8c6fd444f4aba9e862fabaa882a"
+    }
+   ],
+   "latency_s": 0.511,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及dead time与paralyzable dead time？（关联检索）",
+   "gold_doc_ids": [
+    "2668823bba7449ddb69c148898179da6",
+    "83ebac82d49d4e42abf04943af3073da"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "83ebac82d49d4e42abf04943af3073da",
+     "chunk_id": "24a704c12fa0f9e7accc877610b67cea82ba4c4d1fbda31c190656514cf821f3"
+    },
+    {
+     "rank": 2,
+     "doc_id": "2668823bba7449ddb69c148898179da6",
+     "chunk_id": "cc83dc222bd4aa926a406568a1300cf1c9d40e15bb35093fedde704a4d3c71c4"
+    },
+    {
+     "rank": 3,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "6b1f302cf2fe56e7ffa006f38ecc619990096b3e4132c77c71ec28e52aa2d3a9"
+    },
+    {
+     "rank": 4,
+     "doc_id": "28af06fdf62c4ea3b37cfc4393aad70c",
+     "chunk_id": "78aaa7278aad6899b4b502967a4188939e571fb8ecbd8b19d187fb4efc8f903a"
+    },
+    {
+     "rank": 5,
+     "doc_id": "cca4f11bfb4c4f63b5b4fdaed1bdf898",
+     "chunk_id": "1f09292d2722c017ba79b53124abbf5dd9f89095754501df1bb91d7d554e80ad"
+    },
+    {
+     "rank": 6,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "912027fdb8372ca903abbce481787bcaa89e35c2a28fd7f3afda7c70ca2bd8f5"
+    },
+    {
+     "rank": 7,
+     "doc_id": "e4c713ee593a412c946c2a8c0c61cb3b",
+     "chunk_id": "f2f82e4764a42b9b75c335e0dc34eea64c6a1d4a57e6a69bf1d0d50ddb734ff7"
+    },
+    {
+     "rank": 8,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "48a60543dee0d6c48654a500e4b02e458003dca9514e2b59c1227032c34e5c21"
+    },
+    {
+     "rank": 9,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "7bc42cc8cc65f41ede46ca330500df0e44b0007a876db34fe126a77bbb1aee1f"
+    },
+    {
+     "rank": 10,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "09bc104290cbced5084f199aa9edde3d041ff487d401b3deef62bef07ed76caf"
+    },
+    {
+     "rank": 11,
+     "doc_id": "14791948f67e4038b1edf9387dcabdbf",
+     "chunk_id": "16d049e447504fa97a18eb20f47498647b996649d3ee405c1696a05714a45306"
+    },
+    {
+     "rank": 12,
+     "doc_id": "eff2af7d3aa049f6acee61b95edec7a5",
+     "chunk_id": "afbc348936d717ebc256744e3eddfb0f9d3639e6b0e994348f905d39fff266cd"
+    },
+    {
+     "rank": 13,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "093d416fc06b9e0ae562e2a51c6698f436a0fdb4845b2051b6f2f90280691518"
+    },
+    {
+     "rank": 14,
+     "doc_id": "4f67d908211b49ad983ff6c4f901c18d",
+     "chunk_id": "45b8f56e17e39884da0b189cc889192cb7671f6905ec3a8b33a4ca576dff80f2"
+    },
+    {
+     "rank": 15,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 16,
+     "doc_id": "5bcb837189c64b60a4dd2a1612dd9ac8",
+     "chunk_id": "1af78fcd2294ed9ee52371e6b3e8575c81382a26c0f5e278d28b4c5cf2265031"
+    },
+    {
+     "rank": 17,
+     "doc_id": "16eb7b49c4254b989648778ab6793691",
+     "chunk_id": "22670a0ed0a7a2ddbfa69a41ca8cb4311d6d5df0948f8ae9a00d4c84fafc8d85"
+    },
+    {
+     "rank": 18,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "d2001bf2eccbd273788e401014f01af1517bcb3d51e445be5552510ed126313d"
+    },
+    {
+     "rank": 19,
+     "doc_id": "5e45eaf55c6b418f842205f399feaf33",
+     "chunk_id": "63e5cae6f5ab9c491282d6ebf376428c236d61bb72dd0818c4550aeb185965d1"
+    },
+    {
+     "rank": 20,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "4e28c01097c731b22a56e60b5f941700a1f9c77de3b56b4022dcb5e3bf8ccad1"
+    }
+   ],
+   "latency_s": 0.496,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及dead time与live-time？（关联检索）",
+   "gold_doc_ids": [
+    "2668823bba7449ddb69c148898179da6",
+    "28af06fdf62c4ea3b37cfc4393aad70c",
+    "4f67d908211b49ad983ff6c4f901c18d",
+    "9c8e14f86bc14977bf013cbaa49423f7",
+    "cae05f66432c4279b4f895782b232b25",
+    "cca4f11bfb4c4f63b5b4fdaed1bdf898"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "83ebac82d49d4e42abf04943af3073da",
+     "chunk_id": "d5d359f78d27f323ac7591b73db4a8f86907a138a4fd1e4c278c53e600d875bb"
+    },
+    {
+     "rank": 2,
+     "doc_id": "cca4f11bfb4c4f63b5b4fdaed1bdf898",
+     "chunk_id": "b4721aa861f01fecf1260f20d6605c3f25673988f5b43b5032966e87a399809b"
+    },
+    {
+     "rank": 3,
+     "doc_id": "28af06fdf62c4ea3b37cfc4393aad70c",
+     "chunk_id": "78aaa7278aad6899b4b502967a4188939e571fb8ecbd8b19d187fb4efc8f903a"
+    },
+    {
+     "rank": 4,
+     "doc_id": "2668823bba7449ddb69c148898179da6",
+     "chunk_id": "1f289746448a1fd9438c9cdcff495872944d194f5dc373ed0c54a0a1821a98fd"
+    },
+    {
+     "rank": 5,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "b1ac9fc755c57e647ede4fb66cc454e40646106fa5f270bcfa5c8390228a641b"
+    },
+    {
+     "rank": 6,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "a396eb56f14a988bb681366e8ee2c664de5f6e6783b450de9b116d7890bfd595"
+    },
+    {
+     "rank": 7,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "7bc42cc8cc65f41ede46ca330500df0e44b0007a876db34fe126a77bbb1aee1f"
+    },
+    {
+     "rank": 8,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "fcc381610948756afd07f0af691c63a2a67b8ca1faf1691a3454e1876a7ded4f"
+    },
+    {
+     "rank": 9,
+     "doc_id": "e4c713ee593a412c946c2a8c0c61cb3b",
+     "chunk_id": "f2f82e4764a42b9b75c335e0dc34eea64c6a1d4a57e6a69bf1d0d50ddb734ff7"
+    },
+    {
+     "rank": 10,
+     "doc_id": "0b6b54ced421431a8973a729cf5ab44c",
+     "chunk_id": "170452fb3fff507ac0200d96860bd4d72376749d0920df513606b1a59f97c422"
+    },
+    {
+     "rank": 11,
+     "doc_id": "5bcb837189c64b60a4dd2a1612dd9ac8",
+     "chunk_id": "1af78fcd2294ed9ee52371e6b3e8575c81382a26c0f5e278d28b4c5cf2265031"
+    },
+    {
+     "rank": 12,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "e39c37a31762e2092ba64230c6fb9bd443b1b1c5b0fafcaafc805e2e9ea18521"
+    },
+    {
+     "rank": 13,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 14,
+     "doc_id": "01ac22ad61ef48f49c0584f08aa375e9",
+     "chunk_id": "cdb5db690732acfb21a4ccfcfa8a608b08a7c7d0b72df961976bc39a74e63921"
+    },
+    {
+     "rank": 15,
+     "doc_id": "8f632c1832b24c5abccf3b4c40fdb32f",
+     "chunk_id": "f50275b2e1abed74e74556b4573e3833327fe3f3ac7ab2a0c7c4ab7e2a18035f"
+    },
+    {
+     "rank": 16,
+     "doc_id": "16eb7b49c4254b989648778ab6793691",
+     "chunk_id": "69a81a17755cdad0f1dab92357de1288feda6216fadbf9423ddac1dabd6efcac"
+    },
+    {
+     "rank": 17,
+     "doc_id": "c630f6ecbc75455fa4dae9c79937fe1a",
+     "chunk_id": "b2ce6f0b0313710fa76e29de8f20d927e3792f544fdd0d2d3f1c4e392f48df0d"
+    },
+    {
+     "rank": 18,
+     "doc_id": "4f67d908211b49ad983ff6c4f901c18d",
+     "chunk_id": "77107610b4161b575c37de1a42838582ad6fc184ad6df3f145bacc4ab38bc16a"
+    },
+    {
+     "rank": 19,
+     "doc_id": "7f5d98f9f6f742ea83f92c4bc4dc9345",
+     "chunk_id": "7e73dce385fbeb1d7acc4dcb1f3ac51728bb74f90c22cd6eec9450a4ee2d0a6c"
+    },
+    {
+     "rank": 20,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "d94c8400f94e539b18cfd5416d9bc42d35fc9afcd9cf4f153b86aef9635a96c1"
+    }
+   ],
+   "latency_s": 0.495,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及dead time与dead time model？（关联检索）",
+   "gold_doc_ids": [
+    "1c4294de3cd14f57bfb7cfee019127cd",
+    "2668823bba7449ddb69c148898179da6",
+    "28af06fdf62c4ea3b37cfc4393aad70c",
+    "83ebac82d49d4e42abf04943af3073da",
+    "bf487f64352a464981e82773f8846721"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "83ebac82d49d4e42abf04943af3073da",
+     "chunk_id": "1963daceed062884bd97649285848735c0ec958003025171cbb0f7d37827f403"
+    },
+    {
+     "rank": 2,
+     "doc_id": "2668823bba7449ddb69c148898179da6",
+     "chunk_id": "24957133122f1ef01a6dd183660df7bcbc43bbd9fdd6a170352da53917d22bd0"
+    },
+    {
+     "rank": 3,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "9b2e1ec92a02df39ff30f7c34a295a500b7a1ca855f0ce18e73a545333ef4ee5"
+    },
+    {
+     "rank": 4,
+     "doc_id": "cca4f11bfb4c4f63b5b4fdaed1bdf898",
+     "chunk_id": "1f09292d2722c017ba79b53124abbf5dd9f89095754501df1bb91d7d554e80ad"
+    },
+    {
+     "rank": 5,
+     "doc_id": "28af06fdf62c4ea3b37cfc4393aad70c",
+     "chunk_id": "78aaa7278aad6899b4b502967a4188939e571fb8ecbd8b19d187fb4efc8f903a"
+    },
+    {
+     "rank": 6,
+     "doc_id": "e4c713ee593a412c946c2a8c0c61cb3b",
+     "chunk_id": "f2f82e4764a42b9b75c335e0dc34eea64c6a1d4a57e6a69bf1d0d50ddb734ff7"
+    },
+    {
+     "rank": 7,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "48a60543dee0d6c48654a500e4b02e458003dca9514e2b59c1227032c34e5c21"
+    },
+    {
+     "rank": 8,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "7bc42cc8cc65f41ede46ca330500df0e44b0007a876db34fe126a77bbb1aee1f"
+    },
+    {
+     "rank": 9,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "a1b594d7ac7d9238a1488f779705ec5222b2a7cb9594b66669e1ce1e27c80b8c"
+    },
+    {
+     "rank": 10,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 11,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "2492489b60a5fbb08a4e4763a7e8b664ffe8f5fa8b0c5919a21ba96f507ee5c5"
+    },
+    {
+     "rank": 12,
+     "doc_id": "eff2af7d3aa049f6acee61b95edec7a5",
+     "chunk_id": "40904dce5f0f922a41e6dd88a947d87db6228b9b3f3deabf0c0852d5807424e0"
+    },
+    {
+     "rank": 13,
+     "doc_id": "5bcb837189c64b60a4dd2a1612dd9ac8",
+     "chunk_id": "1af78fcd2294ed9ee52371e6b3e8575c81382a26c0f5e278d28b4c5cf2265031"
+    },
+    {
+     "rank": 14,
+     "doc_id": "abd509a6eba846cbab0f2e2c02fac19f",
+     "chunk_id": "d75a2a8eda93da7671077ecaa78963a918b4ef3a28146e01d590a625060bf8b2"
+    },
+    {
+     "rank": 15,
+     "doc_id": "14791948f67e4038b1edf9387dcabdbf",
+     "chunk_id": "16d049e447504fa97a18eb20f47498647b996649d3ee405c1696a05714a45306"
+    },
+    {
+     "rank": 16,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "dd1055168e54f62769dea9e1119449a4dc967013a0762b3aed7322426bbc28bc"
+    },
+    {
+     "rank": 17,
+     "doc_id": "01ac22ad61ef48f49c0584f08aa375e9",
+     "chunk_id": "cdb5db690732acfb21a4ccfcfa8a608b08a7c7d0b72df961976bc39a74e63921"
+    },
+    {
+     "rank": 18,
+     "doc_id": "af06e56794fe4abdb8be40ed340da7b5",
+     "chunk_id": "f0394e3b45dec9e2deabf47365eaa5731db4dd6a7ea99a35ee95701dd125da80"
+    },
+    {
+     "rank": 19,
+     "doc_id": "e48daf1d88af44009b4cd8b869605323",
+     "chunk_id": "2f7230e2878cf8d539946d129ad3e8c4083182c2a767378b6fe6e50e9d56cfdf"
+    },
+    {
+     "rank": 20,
+     "doc_id": "201233f8d5194347a68d12312fdd55e4",
+     "chunk_id": "4e4e3be071e408f648273f8aedf4e56f3878228f7f4cb11557b8344c4a03ccf1"
+    }
+   ],
+   "latency_s": 0.506,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及single-channel analyzer与spatial resolution？（关联检索）",
+   "gold_doc_ids": [
+    "88058fb2d37e4766a554669203b79ba5",
+    "e4c713ee593a412c946c2a8c0c61cb3b"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "3ce5adb38c3b4c0ca2f5e8312743d1cf",
+     "chunk_id": "a505cab43f07d684b32aad8a6aadfda33566ae7155e9ac53aaf6792757399bde"
+    },
+    {
+     "rank": 2,
+     "doc_id": "df5e7e8fd4154849a7e210f26e4f6aeb",
+     "chunk_id": "3b50e2988d692e6c77571d8f37ec759b69ca207e173e30dff3f80dd1ca940b2c"
+    },
+    {
+     "rank": 3,
+     "doc_id": "16eb7b49c4254b989648778ab6793691",
+     "chunk_id": "22670a0ed0a7a2ddbfa69a41ca8cb4311d6d5df0948f8ae9a00d4c84fafc8d85"
+    },
+    {
+     "rank": 4,
+     "doc_id": "414d5fb773e3449294b8e01aae26f24c",
+     "chunk_id": "65dee318232b72c69d6e66eba3fcc3a1036781359234bbb72b57a400a5b5b4c0"
+    },
+    {
+     "rank": 5,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "51abaa722af5ef25c206de20d510f764424fd46a542f61aea6b105557f8adb10"
+    },
+    {
+     "rank": 6,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "ec34c19be6a36ad6037d334f8d8b85c410d8a47d75acc68c87ec32088ed40f66"
+    },
+    {
+     "rank": 7,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "4ca78e8bf44e0a24fdc62363bd3f2b8ccb9ff3954017921ba5577571bd5d9ae2"
+    },
+    {
+     "rank": 8,
+     "doc_id": "87685df79e264179b43a02c5ec69856e",
+     "chunk_id": "552b9e1fc64e05de4a30ef71593e833ccce59d7e9e96b369e154c246e7bc5ae5"
+    },
+    {
+     "rank": 9,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "72c14378a3fef9f49e3e4aa0a1323799aae54394180263b9fb8feffc67d2dd90"
+    },
+    {
+     "rank": 10,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "a2164a087512844ab56de2a2922ed66c9fd6ba17bc683ded2c47f503d3e7912f"
+    },
+    {
+     "rank": 11,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "dd1055168e54f62769dea9e1119449a4dc967013a0762b3aed7322426bbc28bc"
+    },
+    {
+     "rank": 12,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "4066c3c53dc9c95f23858138135cb0342836c9b3e407c0a49c5002dcd0e37523"
+    },
+    {
+     "rank": 13,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "149015b3bfa86cb70b23c8e6624c546195c7c6ceb550063af148c0a067f0f6cc"
+    },
+    {
+     "rank": 14,
+     "doc_id": "e4c713ee593a412c946c2a8c0c61cb3b",
+     "chunk_id": "5dc9d14476c38580b2ab2a21435c0df3d4501101fb637567b3cb6f68c3bd2cf6"
+    },
+    {
+     "rank": 15,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "47886ff89013882a9a22b9bd80fa369698107e2b8f909ff00ebfaeaf7161f0c9"
+    },
+    {
+     "rank": 16,
+     "doc_id": "3aa708726abd416eba8f9b6afc5be99a",
+     "chunk_id": "3978615215b68637f865e65800f3a514bd88929ae229c0cba090f334b14d92b6"
+    },
+    {
+     "rank": 17,
+     "doc_id": "6eb2fc28a6b943f88505f10b07cc2f0d",
+     "chunk_id": "83a11d6025f0b019b77752e1eec9ba639d55cb0bd83a99779d148dc20bc042e6"
+    },
+    {
+     "rank": 18,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "1e6c60ccd09759130ae1d69c1ec3d96f53231cbd3fd0f0945919d7b6c11ef9f5"
+    },
+    {
+     "rank": 19,
+     "doc_id": "10c1605fb47f4fab82c481d6485e5ff4",
+     "chunk_id": "e6747ec60b8bf8c54d732b1b88166d4d5324ab6f936a5e8f990d8a9ffae44807"
+    },
+    {
+     "rank": 20,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "1f7493bbf91e238d7a9d8083d5e2aa1e7de27609a53bb8721788c0d09169a5c4"
+    }
+   ],
+   "latency_s": 0.502,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及incoherent scattering与inelastic scattering？（关联检索）",
+   "gold_doc_ids": [
+    "318498efdfe2401ebfb8f84b6c246f90",
+    "9285af0cc7994ad5b55d05c1f2b7daf2",
+    "96a2dd5c1d294687b85d1b51a8e89f67",
+    "cbd8cee3fec04ab29b3e84929e8a44b4",
+    "f08785ad63a4406488464dd1baab7bec",
+    "fa6d5606fdca4361a327f5b88fde576e"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "f20f0066e8131e3fec8bb0c583a2f5d065b5960eb603bc6ffcb801d474a39828"
+    },
+    {
+     "rank": 2,
+     "doc_id": "dd638451e78e41c48d5b424d353f9793",
+     "chunk_id": "a16686908844ec115409741c8cbbe10fed8dbef236e1b53dcd2c0efdeed073d3"
+    },
+    {
+     "rank": 3,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "a7de48d93f72881aeaf2d27eda0f4e71376c2aec74ef846b494acd26f0a70b89"
+    },
+    {
+     "rank": 4,
+     "doc_id": "9285af0cc7994ad5b55d05c1f2b7daf2",
+     "chunk_id": "830a5f154f64098d2bd06aa173e206b47a15edb3cf278521b883b07311493a50"
+    },
+    {
+     "rank": 5,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "9d0c2e6428c597df394f13466b8c3150b527e36e6d8799b7795fdea9422b0e38"
+    },
+    {
+     "rank": 6,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "157fa9df94d6b7002e9be764492ee9531322a9b57a33a2c2d486364463c774a4"
+    },
+    {
+     "rank": 7,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "450818373ac5dfd97ee5c000ab748352005d6efdf933587aad23f28f4ac42b21"
+    },
+    {
+     "rank": 8,
+     "doc_id": "47453f82116744379261400f49790e2c",
+     "chunk_id": "fcf6714f0320e448f76d9789d6a69c8f76316721e6614374dc52e498ba9c4901"
+    },
+    {
+     "rank": 9,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "875a77e542d834de9bf5ba3cefe1182ecdae99b17c78a146937a7ed3fa38d632"
+    },
+    {
+     "rank": 10,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 11,
+     "doc_id": "99b3494a69a3476d9f286b1c5f3f6b69",
+     "chunk_id": "b7acd3dc74e679a9f64dd4828a32d727876fdea84540738a7ce075373cb5b495"
+    },
+    {
+     "rank": 12,
+     "doc_id": "fe62161ce46f41cfacd6a1a6f5f242a6",
+     "chunk_id": "5702d5c693e5d5c93109dfeb8c28dffafc2b7ba45e4279e74eec48dcee8375f6"
+    },
+    {
+     "rank": 13,
+     "doc_id": "2b40ebc5fb394306890983020d20d129",
+     "chunk_id": "f6d7a8780332fc2ac3bf43971a39cebff81fee9d4991685b34701c61e13ff12d"
+    },
+    {
+     "rank": 14,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "70882c9f69207f0c4956371c5a82fbf9240ec999d5e26ef3aab8cd23b6cd813e"
+    },
+    {
+     "rank": 15,
+     "doc_id": "77bca5b09b3c41b3aff15868a1f840d5",
+     "chunk_id": "52274442312fa912e40334fbded4b415e57e6e4e025befd2ead5120ed2ef2009"
+    },
+    {
+     "rank": 16,
+     "doc_id": "df5e7e8fd4154849a7e210f26e4f6aeb",
+     "chunk_id": "d1f3aa9984f754a41a48b04a70b1dfa2043e95924762951d73f7d153f503a7fa"
+    },
+    {
+     "rank": 17,
+     "doc_id": "e0d60c4152394b0ea4e32a9e6c1abaa5",
+     "chunk_id": "ddebd9be8dee23c1d563156e5301957356234f167b388855e3d687ac6fe5f32c"
+    },
+    {
+     "rank": 18,
+     "doc_id": "9740e181f7b84ba4af1d0692c3cf99d5",
+     "chunk_id": "2b0dd1d24db35e2e6522a33fa465dcc20bd17019a7b785ea0498e804c879ad96"
+    },
+    {
+     "rank": 19,
+     "doc_id": "5d90d8af59a744728185b76ff7eb428d",
+     "chunk_id": "f4c38267eaf9dfbc2adeb222c84ede0cdde2008dfd79bbc9bae9708896b4ef11"
+    },
+    {
+     "rank": 20,
+     "doc_id": "fbf7d2eccb8a4acab9f334e0f15c210d",
+     "chunk_id": "4d7c9704d5cd8840be25eaa48365d32c4db7d0ea2089e67b050bd9af0e98677f"
+    }
+   ],
+   "latency_s": 0.539,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及载流子迁移率与抗辐射能力？（关联检索）",
+   "gold_doc_ids": [
+    "578c09a2acb9423aa3d7dd0f219d27a4",
+    "58dc8bf9308f43c199521ea61e69a3b4",
+    "6aa934af637e46f686d09508922ed54f"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "578c09a2acb9423aa3d7dd0f219d27a4",
+     "chunk_id": "df898062dfbb6ab7723b2103555804d9ab86ecccb65f12e4f7f5a26536e41eae"
+    },
+    {
+     "rank": 2,
+     "doc_id": "ab82c9d978db490db73a97701879f835",
+     "chunk_id": "1448328e5968c778fe2f8c1fb1701f6354ba1afbb42d67a29d7d883890ef5dd7"
+    },
+    {
+     "rank": 3,
+     "doc_id": "562b67ceb2e840f1ae2a149082d4ae93",
+     "chunk_id": "eb36e351e0f2f9b632b8b810516de2becd5e01f7442ad3a818f293b55151c0dc"
+    },
+    {
+     "rank": 4,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "b74569254391b06f2458767e8fc3ee8674dd5db1e8d7bbf03998a7f53d1436fb"
+    },
+    {
+     "rank": 5,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "142e1c3836926b7d2f9c7f1b9738e4b3ea8785c0851d14bfb8e032f14d814422"
+    },
+    {
+     "rank": 6,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "77ac543878ba3bc901d833c328a896c33d1c19cea9d094f74e30481aa3a4d510"
+    },
+    {
+     "rank": 7,
+     "doc_id": "078a2f931b07443b9570a1634fe54375",
+     "chunk_id": "01281dd6ed457b32cc7e5ac8b96aa299df55fbda44da88b9483a9ace24bb9124"
+    },
+    {
+     "rank": 8,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "a49149e91067f93156948ff7f9504ae2254b26904ae6f87c03df708b76ac1137"
+    },
+    {
+     "rank": 9,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "2716a94cdab8816c4064a8fe7a0bbdbb57bca2245ccb2d187fc642d6eb8a29f7"
+    },
+    {
+     "rank": 10,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "157fa9df94d6b7002e9be764492ee9531322a9b57a33a2c2d486364463c774a4"
+    },
+    {
+     "rank": 11,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 12,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "0e7aba4f5ad8eb1da48d94e27eeba781ddfe076fe4fd7c0c2c689b67d96dc676"
+    },
+    {
+     "rank": 13,
+     "doc_id": "05e6f239b6d6466db5eaee3e5f29902b",
+     "chunk_id": "b8f6a6e4214380a84ccb307bf9316f65ded8ccbdd99e91fa18c6a0273180ccc0"
+    },
+    {
+     "rank": 14,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "8510ec8e273dcbac4ab498e20fdb950e3bf075e44f7035367a666d681ecc215b"
+    },
+    {
+     "rank": 15,
+     "doc_id": "8245c2cd4ed64139978856c92e658830",
+     "chunk_id": "08695bb6f67a65e72d62a2cbd1b703a67509de41ad9eb9148f60da2d625b8af8"
+    },
+    {
+     "rank": 16,
+     "doc_id": "6aa934af637e46f686d09508922ed54f",
+     "chunk_id": "c93a1c2cfae4b9ef8ef5312252fad5ca2a415f547fe61b0d49bfa3ae19995eec"
+    },
+    {
+     "rank": 17,
+     "doc_id": "7f5d98f9f6f742ea83f92c4bc4dc9345",
+     "chunk_id": "7e73dce385fbeb1d7acc4dcb1f3ac51728bb74f90c22cd6eec9450a4ee2d0a6c"
+    },
+    {
+     "rank": 18,
+     "doc_id": "44198d5322964c07856f403cb5876961",
+     "chunk_id": "7a4fac9b3795e67853ca4e8fb2152f31209f6b5c47066431458720ce86437748"
+    },
+    {
+     "rank": 19,
+     "doc_id": "77bca5b09b3c41b3aff15868a1f840d5",
+     "chunk_id": "ca964d5b887591ea45dc4d59d44827c07d92045684b32fde1f004f9ddd84bd02"
+    },
+    {
+     "rank": 20,
+     "doc_id": "43648c5ebaf143e687b5a3936a237f00",
+     "chunk_id": "0f379b3c3092e46ae9277ab8f8670311f94574d8fa59122795058260e209d8d5"
+    }
+   ],
+   "latency_s": 0.549,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及muon与planar detector？（关联检索）",
+   "gold_doc_ids": [
+    "5194d8a2663044a0a756e2fee42e3919",
+    "532cd3f4f2ff419c8348cc1142ec082c",
+    "72a906bb85b64b4487a630b6775ffcd2",
+    "81ab67a339564183934e466d2a398f62",
+    "d7f877c96bf9449493aacfe7ac004e88",
+    "f39d49f647124f94b1fa1cd0b2c2b60c"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "414d5fb773e3449294b8e01aae26f24c",
+     "chunk_id": "96015a1df9de84709e1c2d199c1a050959939a64740f261d1c8c7fd2a2ceac59"
+    },
+    {
+     "rank": 2,
+     "doc_id": "81ab67a339564183934e466d2a398f62",
+     "chunk_id": "058e811b70567a4032ca001a334fb4b376f482046f16d2bdf10d86f03a5a3273"
+    },
+    {
+     "rank": 3,
+     "doc_id": "d7f877c96bf9449493aacfe7ac004e88",
+     "chunk_id": "f69814531be2abea5575e533fdf258d27fb9cf5b4ffcef868ac123fd302fa897"
+    },
+    {
+     "rank": 4,
+     "doc_id": "3de0313da69240988788d3e12a654577",
+     "chunk_id": "d248ba4ffd96c45ded740857fa08efa424ff5c752aca4783cfccdb0852bb1bba"
+    },
+    {
+     "rank": 5,
+     "doc_id": "ccfaa292256c43c1b947c563214c00f7",
+     "chunk_id": "8b45c28ffe318ac17d95ec70fe751b8fca7b4e571ab706b6290f56fa0287feac"
+    },
+    {
+     "rank": 6,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "c3c44109469abef0e63060b43d6b4bab27adfe577b1f5fd0cceba9fc71e93bc1"
+    },
+    {
+     "rank": 7,
+     "doc_id": "be6e2372886247faad8f0a73d9111130",
+     "chunk_id": "2a7784ebc4103c650d29963a27235fdd7057501078f9fb75c1c4f2c7a967a6a4"
+    },
+    {
+     "rank": 8,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "9a9f9214f3ce8c570337abded75fc9eda61f9ebe2e331c0859185d9dba06f8d0"
+    },
+    {
+     "rank": 9,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "27c27a1527f96fd363a055b7056cf0e3a385e9a6af9c9bb41970666e42332f49"
+    },
+    {
+     "rank": 10,
+     "doc_id": "f5ed787eb04f49a49e2546774adfd529",
+     "chunk_id": "7a9cd0c6cd1a233af63400dbb740e7c8b87018d652463a22ac102d6475325df5"
+    },
+    {
+     "rank": 11,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "7f0ec8656fcf6a1e35dec63add105d091879afecebe79a8bbce9c3d682e33e83"
+    },
+    {
+     "rank": 12,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "5a22a2d9bfafef1950ecd2a6639cc83c1218ed401e99e3ecdb5413e1253bfec7"
+    },
+    {
+     "rank": 13,
+     "doc_id": "eb842a9a08ea45ef9b30dc33fd21cf06",
+     "chunk_id": "7f0647c9cd89a58653ce018d765fcd821c2319245951c4f6a594d0e9dfc4633a"
+    },
+    {
+     "rank": 14,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "dbb40c5d662621e4b4e39d52cdf2c722b05cdf537153b7532c55d3a21f005978"
+    },
+    {
+     "rank": 15,
+     "doc_id": "532cd3f4f2ff419c8348cc1142ec082c",
+     "chunk_id": "83ea695a7b86de6c0f8b89465c898a126860de25f38187d0594c2e59aaa343d0"
+    },
+    {
+     "rank": 16,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "92e6b44ebd5fdfec159d99c200c96daf4ff3b3b0b7db533bb4fa434f605d73a7"
+    },
+    {
+     "rank": 17,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "94ba09fad049cf64f41a7e88a2f75aa60431a14c199a8231542234736fce58ab"
+    },
+    {
+     "rank": 18,
+     "doc_id": "9740e181f7b84ba4af1d0692c3cf99d5",
+     "chunk_id": "143115624d1335acb2aebf91e6933af52358d9bc93967dbb09eedaab14cc16a9"
+    },
+    {
+     "rank": 19,
+     "doc_id": "df5e7e8fd4154849a7e210f26e4f6aeb",
+     "chunk_id": "d1f3aa9984f754a41a48b04a70b1dfa2043e95924762951d73f7d153f503a7fa"
+    },
+    {
+     "rank": 20,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "85c63d65096c65dbc62588fc82950cb2e2f99f4e30f0b4d35142731d59665584"
+    }
+   ],
+   "latency_s": 0.52,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及muon与scintillation fiber？（关联检索）",
+   "gold_doc_ids": [
+    "5828cb87a3a9488a85fe1fbbcee2993d",
+    "73f3ddca22784361811b14131d12aa43",
+    "ccfaa292256c43c1b947c563214c00f7"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "ccfaa292256c43c1b947c563214c00f7",
+     "chunk_id": "0c8874859bc4dbb6718ab3dcc52a03327dd26d7d6dd998791e268ee1128c5b7b"
+    },
+    {
+     "rank": 2,
+     "doc_id": "d7f877c96bf9449493aacfe7ac004e88",
+     "chunk_id": "bc435c6b96e52ca48a0a68448a36ef61651d6d62a71a124d2364d6f70db78df4"
+    },
+    {
+     "rank": 3,
+     "doc_id": "414d5fb773e3449294b8e01aae26f24c",
+     "chunk_id": "d1108894bc364b092f01f872a75aa5822be5b6a186436c55d5357e5f9a18cf2e"
+    },
+    {
+     "rank": 4,
+     "doc_id": "81ab67a339564183934e466d2a398f62",
+     "chunk_id": "058e811b70567a4032ca001a334fb4b376f482046f16d2bdf10d86f03a5a3273"
+    },
+    {
+     "rank": 5,
+     "doc_id": "d5a81abccd4349e9a704f81df5f1e5bc",
+     "chunk_id": "091da776d8e9751fde787c4627be44b0c13e9e5d00c54acbf176ac563b033745"
+    },
+    {
+     "rank": 6,
+     "doc_id": "4cfd0af9efca40d28d365ea1d2b36e1a",
+     "chunk_id": "64ad0659b3d44f35e3e4a78b36679fd9b99a550bbf32941085c7eded0f5b8f44"
+    },
+    {
+     "rank": 7,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "27c27a1527f96fd363a055b7056cf0e3a385e9a6af9c9bb41970666e42332f49"
+    },
+    {
+     "rank": 8,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "6f26863d89c2bb47c2447a404f4862ac3acc82a148448b159751ad30829d0ead"
+    },
+    {
+     "rank": 9,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "e859a955c8a22529418420985df376dce15c5b5a7258c997ed581d3405a316d4"
+    },
+    {
+     "rank": 10,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "ad51a2b05efa1c1ad521c4540cc8c40e330934d4863fd0e8b789ca3bd078ac97"
+    },
+    {
+     "rank": 11,
+     "doc_id": "eb842a9a08ea45ef9b30dc33fd21cf06",
+     "chunk_id": "966cd664bc8f9374be0fda5f3f6a69876c6b1f54dfb2d0ce4e1a5da2a6c2d18b"
+    },
+    {
+     "rank": 12,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "b25f7dc88724b8a65c08f8f613c072efb4c3da348e13a8a028a155c45a6a1046"
+    },
+    {
+     "rank": 13,
+     "doc_id": "64f835ed443d408481f4587a69c35b7b",
+     "chunk_id": "a383bb81be3a1810b5988f71d5c5b5b81d3ef27aa92e3b1da702106684f70c09"
+    },
+    {
+     "rank": 14,
+     "doc_id": "290e438bb9bc423ca6f80bc595586b5a",
+     "chunk_id": "4eeb02929d696bcdc8497b978b66dcd3caa74772fa1d4b38909d7d82174bd722"
+    },
+    {
+     "rank": 15,
+     "doc_id": "8245c2cd4ed64139978856c92e658830",
+     "chunk_id": "179da1c744491639968f08c5e9c15418ba43b96d6b0ecd87553f522cd06d7c29"
+    },
+    {
+     "rank": 16,
+     "doc_id": "be6e2372886247faad8f0a73d9111130",
+     "chunk_id": "7aaa805c7e0b7ff9ac6e9a9c89cb3358d2b122d38aed0455b26d7538521b97b8"
+    },
+    {
+     "rank": 17,
+     "doc_id": "7f5d98f9f6f742ea83f92c4bc4dc9345",
+     "chunk_id": "eb9572b518b74b8c2655df05d55714390b7c7c7220411091923eabb6a658b005"
+    },
+    {
+     "rank": 18,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "dd1055168e54f62769dea9e1119449a4dc967013a0762b3aed7322426bbc28bc"
+    },
+    {
+     "rank": 19,
+     "doc_id": "8a03ff8c76064113b0da4bb911638afb",
+     "chunk_id": "cb6b24000fd0e1afd9bd0efe443d4a82392c87825ba75f491a919eca1e3d8978"
+    },
+    {
+     "rank": 20,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "31af5857b63c34e58bdd9088c5f17fca7dcf67ca13f2ff8505a20c73073cc148"
+    }
+   ],
+   "latency_s": 0.473,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及数据集与堆积脉冲？（关联检索）",
+   "gold_doc_ids": [
+    "089359ab1ee745a2a85c6ec3c7aafb9b",
+    "201233f8d5194347a68d12312fdd55e4",
+    "290e438bb9bc423ca6f80bc595586b5a",
+    "68b69730ce654add88fbf3aacf74039a",
+    "6d8c166da24b476b80cc55378c1301de",
+    "eff2af7d3aa049f6acee61b95edec7a5"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "eff2af7d3aa049f6acee61b95edec7a5",
+     "chunk_id": "8db9550375d5a86501423b1f9a8d68fe5083044761bec510bc56f255ce1b6c2e"
+    },
+    {
+     "rank": 2,
+     "doc_id": "68b69730ce654add88fbf3aacf74039a",
+     "chunk_id": "a6bf2dbbd0cc743420915b139bce736e1117b7e1e6ee5b2b3305d69593851423"
+    },
+    {
+     "rank": 3,
+     "doc_id": "201233f8d5194347a68d12312fdd55e4",
+     "chunk_id": "628f24dd7cce279f67a7f2bf941f6e1fa210fd02661663eda4f5ff88fb67f13d"
+    },
+    {
+     "rank": 4,
+     "doc_id": "e4c713ee593a412c946c2a8c0c61cb3b",
+     "chunk_id": "db1ddba10c76c95cf305a0b563f346f1a08b51f0c122df0ebcb17247114b5c79"
+    },
+    {
+     "rank": 5,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "5b0f1788a6740b59da419ecfde6167f160f10a57a705ad8dc0cc1a044645a14c"
+    },
+    {
+     "rank": 6,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "1d30213fc89f1b9d1b1bdd56d697a193d450ef32b1198d8204a8c81221586b73"
+    },
+    {
+     "rank": 7,
+     "doc_id": "6d8c166da24b476b80cc55378c1301de",
+     "chunk_id": "998220e1c2c74380015374b091bd2d0ead2df8c0196e69250de7807e60e52367"
+    },
+    {
+     "rank": 8,
+     "doc_id": "94250ccf417346dc9b1c8d60472d13e4",
+     "chunk_id": "e3340b11e9655f7435bdc954ab393d88ddc2ae4600e2568565e43a034977faa0"
+    },
+    {
+     "rank": 9,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "9dfd06cd76a9f0a68e885ffad6e1fa15c3b58a43baa8cabea8878ae0d4940b20"
+    },
+    {
+     "rank": 10,
+     "doc_id": "5b708ad1edab4219ae8fb76e29df12cb",
+     "chunk_id": "6ca607a1aca46ad9bacb2fc8eae7c60588010e810e289467bd574f1ba5e7de2e"
+    },
+    {
+     "rank": 11,
+     "doc_id": "5bd86299ac9b485796243db5bbdea4fe",
+     "chunk_id": "8ada117b11de5a7e566bdafb8403369d074bde249baab0ad7b226db61ad0190a"
+    },
+    {
+     "rank": 12,
+     "doc_id": "849f2ad2860147e8b131de57345b33f9",
+     "chunk_id": "36ec93d49aa05e65437c59f656a720f3c8bf9c4381be0e17bcc302b07bbf8acf"
+    },
+    {
+     "rank": 13,
+     "doc_id": "67c6fbbf050b43ad9e31bf349ec0c6dc",
+     "chunk_id": "8b8a5b78324d91890d915ceedfff021c63f30e98d18cbb18564d0232a2df282b"
+    },
+    {
+     "rank": 14,
+     "doc_id": "63c3739924d74f949e45b2e6035801e1",
+     "chunk_id": "ded6b8221f2d5139cab0401677a1e755e7147be389551ce86f312fd3de103fb3"
+    },
+    {
+     "rank": 15,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "d6523af0d634d9542651550c665e7e78e70dd55de3755cc5b916ff609bd5a095"
+    },
+    {
+     "rank": 16,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 17,
+     "doc_id": "5828cb87a3a9488a85fe1fbbcee2993d",
+     "chunk_id": "349a6d454164e59e147064a015b40faa1f8f588823db37195db702a9de6d9fbe"
+    },
+    {
+     "rank": 18,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "27c2642aa2a916fba8b5c360d9f5b4552e13ea8088cebfead6a3f38fca3375cc"
+    },
+    {
+     "rank": 19,
+     "doc_id": "9444443e71ce45a5b324d5eed10c7dc1",
+     "chunk_id": "9d22845e420c151d308e0494cbaff1ef71dab77a6fb66008c6c9532ca6271798"
+    },
+    {
+     "rank": 20,
+     "doc_id": "fbf7d2eccb8a4acab9f334e0f15c210d",
+     "chunk_id": "88d91f29b68bb7a4270dcdb8661aa29fd1896389876d8815ee6804a84a657053"
+    }
+   ],
+   "latency_s": 0.512,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些研究同时涉及数据集与脉冲幅度？（关联检索）",
+   "gold_doc_ids": [
+    "201233f8d5194347a68d12312fdd55e4",
+    "68b69730ce654add88fbf3aacf74039a",
+    "6d8c166da24b476b80cc55378c1301de",
+    "8d6cf27aabf64017bed77a87a3562acd",
+    "eff2af7d3aa049f6acee61b95edec7a5"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "eff2af7d3aa049f6acee61b95edec7a5",
+     "chunk_id": "8db9550375d5a86501423b1f9a8d68fe5083044761bec510bc56f255ce1b6c2e"
+    },
+    {
+     "rank": 2,
+     "doc_id": "6d8c166da24b476b80cc55378c1301de",
+     "chunk_id": "998220e1c2c74380015374b091bd2d0ead2df8c0196e69250de7807e60e52367"
+    },
+    {
+     "rank": 3,
+     "doc_id": "201233f8d5194347a68d12312fdd55e4",
+     "chunk_id": "628f24dd7cce279f67a7f2bf941f6e1fa210fd02661663eda4f5ff88fb67f13d"
+    },
+    {
+     "rank": 4,
+     "doc_id": "68b69730ce654add88fbf3aacf74039a",
+     "chunk_id": "a6bf2dbbd0cc743420915b139bce736e1117b7e1e6ee5b2b3305d69593851423"
+    },
+    {
+     "rank": 5,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "94f5f82b95ceb628f703942270bba3d5e21efca7746d573e48ee551d5bc03756"
+    },
+    {
+     "rank": 6,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "551529b2907188a598cccc4795094c3f4b0a4be02cc12d1013a41953cb16691b"
+    },
+    {
+     "rank": 7,
+     "doc_id": "63c3739924d74f949e45b2e6035801e1",
+     "chunk_id": "ded6b8221f2d5139cab0401677a1e755e7147be389551ce86f312fd3de103fb3"
+    },
+    {
+     "rank": 8,
+     "doc_id": "5bd86299ac9b485796243db5bbdea4fe",
+     "chunk_id": "f2a47dfe9b4f9018c08d7995aeedb10b02358e26effb3af299c2630b9b4d4bec"
+    },
+    {
+     "rank": 9,
+     "doc_id": "fbf7d2eccb8a4acab9f334e0f15c210d",
+     "chunk_id": "c29fe970d549bf3011936d14d74be675c7946645d3a7698146b03b11bfc2fd4b"
+    },
+    {
+     "rank": 10,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "0e3e40ee4aa6e0d4f9a3e04d69ebb5a9f931fcfedec7fb90b73b435510b573bf"
+    },
+    {
+     "rank": 11,
+     "doc_id": "5b708ad1edab4219ae8fb76e29df12cb",
+     "chunk_id": "6ca607a1aca46ad9bacb2fc8eae7c60588010e810e289467bd574f1ba5e7de2e"
+    },
+    {
+     "rank": 12,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "6a27a1f17626af78e4e1f9c4f3b4cbe5c11e7a48aca518af53add33f650e0cc4"
+    },
+    {
+     "rank": 13,
+     "doc_id": "849f2ad2860147e8b131de57345b33f9",
+     "chunk_id": "36ec93d49aa05e65437c59f656a720f3c8bf9c4381be0e17bcc302b07bbf8acf"
+    },
+    {
+     "rank": 14,
+     "doc_id": "67c6fbbf050b43ad9e31bf349ec0c6dc",
+     "chunk_id": "8b8a5b78324d91890d915ceedfff021c63f30e98d18cbb18564d0232a2df282b"
+    },
+    {
+     "rank": 15,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "0e7aba4f5ad8eb1da48d94e27eeba781ddfe076fe4fd7c0c2c689b67d96dc676"
+    },
+    {
+     "rank": 16,
+     "doc_id": "b2b0d63752f24d92933004a573436f68",
+     "chunk_id": "878ac0e545d169367cbf19fd5fd62486d440ba973293eedc5ac935292fb56d8d"
+    },
+    {
+     "rank": 17,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "4d69a4c536ae2f5dc7b74ea118c600f4750f0ea92991e2549391b62dff6f5d0b"
+    },
+    {
+     "rank": 18,
+     "doc_id": "94250ccf417346dc9b1c8d60472d13e4",
+     "chunk_id": "e3340b11e9655f7435bdc954ab393d88ddc2ae4600e2568565e43a034977faa0"
+    },
+    {
+     "rank": 19,
+     "doc_id": "5828cb87a3a9488a85fe1fbbcee2993d",
+     "chunk_id": "349a6d454164e59e147064a015b40faa1f8f588823db37195db702a9de6d9fbe"
+    },
+    {
+     "rank": 20,
+     "doc_id": "290e438bb9bc423ca6f80bc595586b5a",
+     "chunk_id": "9326690dbffba6271bf9178365ef7b604654a3a88514a6848015c7327922d505"
+    }
+   ],
+   "latency_s": 0.532,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  }
+ ]
+}

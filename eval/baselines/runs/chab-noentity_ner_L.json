@@ -1,0 +1,4645 @@
+{
+ "system": "chab-noentity",
+ "slice": "L",
+ "set": "ner",
+ "corpus_docs": 300,
+ "index_cost": {
+  "wall_s": 0,
+  "note": "channels=['lexical', 'dense', 'docvec', 'synq']; KNC_COOC_OFF=1; oos 0"
+ },
+ "per_query": [
+  {
+   "query": "探测器磁屏蔽设计文献有哪些",
+   "gold_doc_ids": [
+    "39e0d487cb244473b028443b1e247c46",
+    "6d38b0442cb942448e3c5b430f39880e",
+    "6eb2fc28a6b943f88505f10b07cc2f0d"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "6eb2fc28a6b943f88505f10b07cc2f0d",
+     "chunk_id": "e3792495e4c2b0686199153bc5eccd1f2cea85423e5e62026911677c781a8783"
+    },
+    {
+     "rank": 2,
+     "doc_id": "568eae272680415d887c072b944b1df0",
+     "chunk_id": "d01f2363ef58ba0da34e01425812e5436d5e7aa8043346f5c56e87592b067c85"
+    },
+    {
+     "rank": 3,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "19dcfe333ebcdc00a89412e654454f0b50c624e8df372027ac7270093e6a19b0"
+    },
+    {
+     "rank": 4,
+     "doc_id": "e0d60c4152394b0ea4e32a9e6c1abaa5",
+     "chunk_id": "0a68fa9912a8cf19e86f3fc8af6971de6afec9c35f7615a20ef94fe70fcbd9b8"
+    },
+    {
+     "rank": 5,
+     "doc_id": "562b67ceb2e840f1ae2a149082d4ae93",
+     "chunk_id": "263d000ea251419a1fb1f854446f1a71ca73fb71b2510c669ca6d8258fc4986b"
+    },
+    {
+     "rank": 6,
+     "doc_id": "c5f51f146d8349b2a383d6d0860f8a5d",
+     "chunk_id": "18828fec05b884c7e8d4d59968e8a5a9761d3d901f32d9c55387b3aa5587b9d0"
+    },
+    {
+     "rank": 7,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "3a84f3fabf85b61adcec769d8a1e328ab153ce71137339ade1e45e847cbef2d9"
+    },
+    {
+     "rank": 8,
+     "doc_id": "48b9a62f6eb5478f94e5721db30c564d",
+     "chunk_id": "ce7cf651caefafd8b24d634706882e9d2e1956f4d6777bdd1f83c5eeb6f5ebe2"
+    },
+    {
+     "rank": 9,
+     "doc_id": "10c1605fb47f4fab82c481d6485e5ff4",
+     "chunk_id": "a18f4c230d11c44b6029201e9781f3ece87a78ed7c70480c7d9d4d7b2963d721"
+    },
+    {
+     "rank": 10,
+     "doc_id": "dcd0ef5b938443f98eb98407af1a5d8c",
+     "chunk_id": "928d24f63b638905130853a3b5977572423722235117f79d5f3b4f8956aa0040"
+    },
+    {
+     "rank": 11,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "b6ffec016975133a6bf1706e04779ea3ee32fb521cb2cb19d3807d12e937f2c7"
+    },
+    {
+     "rank": 12,
+     "doc_id": "2bd04127007148f086ad2b7d2cd3dcce",
+     "chunk_id": "1b153c8da13511a905dc2823e0a9c5e8442633f74771ffcc599983bf93ad64d3"
+    },
+    {
+     "rank": 13,
+     "doc_id": "9740e181f7b84ba4af1d0692c3cf99d5",
+     "chunk_id": "9b542d337d80e5e1b99cb0b64a06f0b22bc4a1f4e2d1b86b3ee821f6eb83d607"
+    },
+    {
+     "rank": 14,
+     "doc_id": "df5e7e8fd4154849a7e210f26e4f6aeb",
+     "chunk_id": "fe2f6cc685ce5df4ef6e59e9a00eb26eed0b47e241667ef127e33be2d55f5b5b"
+    },
+    {
+     "rank": 15,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "767008ca769b2fcd7feaefb084356418dc797213dae492d3f92c00d0eca75a5d"
+    },
+    {
+     "rank": 16,
+     "doc_id": "2cc72bcbad214c11b44709816fca29b0",
+     "chunk_id": "a7da36bc987a0c148547a5d55d578aa31fc0a3bbc5b913d801f06fd8eeed12fa"
+    },
+    {
+     "rank": 17,
+     "doc_id": "a7b64e5654e04564a1b57f0122d00a97",
+     "chunk_id": "30239a2d31cfda41bd65ac09e75f16037f26a9a008a729693da3e9e97d862ff9"
+    },
+    {
+     "rank": 18,
+     "doc_id": "0e4bfcfcabfa47c69fb14d1d6f8fe03c",
+     "chunk_id": "330b999ef184492378d31cbc15dfd6ab91000980df53d5fad310ef3c0bbccbdc"
+    },
+    {
+     "rank": 19,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "2dec61740729f337575fad34120352391b017c48191584d9547ba1c74e92d910"
+    },
+    {
+     "rank": 20,
+     "doc_id": "5c566792b3d74dc8beb89a5dfdb8403d",
+     "chunk_id": "edb1a1056fd67ef2b7acb1d1265e6622fd34d5fa20d87d94c8d385c29562efa3"
+    }
+   ],
+   "latency_s": 0.509,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "惯性约束聚变与聚变反应监测、混合堆设计文献",
+   "gold_doc_ids": [
+    "005295c12c544da796a7e069d5c07afd",
+    "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+    "424540ac7bf840478ccae7fee7cd2f59",
+    "809c28f9ff70434da4d24ddbf4ef4b32"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "3a84f3fabf85b61adcec769d8a1e328ab153ce71137339ade1e45e847cbef2d9"
+    },
+    {
+     "rank": 2,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "d353697931348807496f2495e7a2bde93d67edfee950215429c85a7d4f1374ba"
+    },
+    {
+     "rank": 3,
+     "doc_id": "87a31bfd43ff4a59837fe8f72b2e744b",
+     "chunk_id": "57149c4c285b642a220e4ddac0dbb925713edb36b4d12389e2e466798460eaa4"
+    },
+    {
+     "rank": 4,
+     "doc_id": "add04d041509451caf147c7eba0e7c09",
+     "chunk_id": "f04e9c2dee689a7cf476b0f0d48e8b76e39f7a39c8afd1ef76098760cdabdf72"
+    },
+    {
+     "rank": 5,
+     "doc_id": "90f8be5ec2fc478e9e0be323dc81316d",
+     "chunk_id": "eedf9d5eb39bc8a30c1ebde658bb2869689708226519e2440abcf19d6d124d7e"
+    },
+    {
+     "rank": 6,
+     "doc_id": "6eb2fc28a6b943f88505f10b07cc2f0d",
+     "chunk_id": "e3792495e4c2b0686199153bc5eccd1f2cea85423e5e62026911677c781a8783"
+    },
+    {
+     "rank": 7,
+     "doc_id": "ecebb255bc9a4dc4b55f36f20e2fe513",
+     "chunk_id": "83c0e9f6f423daa8c757c2a28894b720b66f28b3322d8c48e37593b4d0e794a2"
+    },
+    {
+     "rank": 8,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "c6486183d775e33c9dae569b5c67452f600ab9e6aa8a3642207d9a50ca8a729a"
+    },
+    {
+     "rank": 9,
+     "doc_id": "2b3fd0c3005d4a318ca980e690775b24",
+     "chunk_id": "5a81090bf5de5ca38c330107d8933ce4b552501871ffa9a10794756f968dd15a"
+    },
+    {
+     "rank": 10,
+     "doc_id": "a7b64e5654e04564a1b57f0122d00a97",
+     "chunk_id": "ba89f4be6cc90ff007cfec16ada581a45f4c68eae07e251834bf2bb0e7a13273"
+    },
+    {
+     "rank": 11,
+     "doc_id": "e9f09ec17ee34c3d873a8a65ea431f65",
+     "chunk_id": "6d87e5cc785de26c711a075444227fbc71cd9dba9077c7395e562e2626e2dd1c"
+    },
+    {
+     "rank": 12,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "28d67e58134577dc6ba1d019eb6d29cd8d98e5abafc3ede79027638bfee97109"
+    },
+    {
+     "rank": 13,
+     "doc_id": "005295c12c544da796a7e069d5c07afd",
+     "chunk_id": "ea157b2af29b474ef6f57d126cb880797918a69d6056654be0e3d9b789b05d73"
+    },
+    {
+     "rank": 14,
+     "doc_id": "f3e9f8a90094402191977027c6667b4d",
+     "chunk_id": "f51bcdb834b7685244923f22325314bf680f85c4a1269a014efa38edf735c601"
+    },
+    {
+     "rank": 15,
+     "doc_id": "76ebf8dcd6de4c50bc85db5f2d1add5b",
+     "chunk_id": "9e86eb80fedbcbedfbf2cd75d503396b0b42e0627000f1d57afba899a1c7eadb"
+    },
+    {
+     "rank": 16,
+     "doc_id": "99b3494a69a3476d9f286b1c5f3f6b69",
+     "chunk_id": "6d2dbde5bac3eb5a5082c6906cc62650064eda140ea79a6c8406e202860b0506"
+    },
+    {
+     "rank": 17,
+     "doc_id": "6c149c8de1b14cf4b3808f972391ab63",
+     "chunk_id": "77f13d5aac9c87e6c56d2d9c9ae89ec5a90547b57b3c670f34154e1179e146ba"
+    },
+    {
+     "rank": 18,
+     "doc_id": "ceca9573a2dc4cc78813de21b3702fc2",
+     "chunk_id": "491acf2b195db79dbc4667c8ca288e6c360c7a1a298f71e4a2d0f7f7febe72ce"
+    },
+    {
+     "rank": 19,
+     "doc_id": "48b9a62f6eb5478f94e5721db30c564d",
+     "chunk_id": "c4802b2200027959cd382e9f3bbb77295d678dd22da433e5024f093d04cd3731"
+    },
+    {
+     "rank": 20,
+     "doc_id": "9383489b011640d2a2417a6b4aa31500",
+     "chunk_id": "f270ce168b4f2eb91a1f77bf907a915dbcfb8248bd556bc7c19420a1ae9e8ec7"
+    }
+   ],
+   "latency_s": 0.506,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "辐射测量中如何绘制校准曲线并优化探测器的响应特性",
+   "gold_doc_ids": [
+    "47453f82116744379261400f49790e2c",
+    "9419013574fe4580ab17b53f49cd3070"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "473158a9d50890c32c4a2a5023a46aa850efbcb6a9d86c65bc5540f20b4281f0"
+    },
+    {
+     "rank": 2,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "a675db2fd53dc826da1dcd3b3b12e0fc79a02f11c01194b836e4ed589e18a92c"
+    },
+    {
+     "rank": 3,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "886a0bf26f29a00a7019963b109ef3677efa7d0507f2963c2326011e9afd4fd7"
+    },
+    {
+     "rank": 4,
+     "doc_id": "76ebf8dcd6de4c50bc85db5f2d1add5b",
+     "chunk_id": "82b8c72d2e49d831aa96b4c7b92e857702faa9fb1bcb87eca82480eb6f1f2729"
+    },
+    {
+     "rank": 5,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "94ba09fad049cf64f41a7e88a2f75aa60431a14c199a8231542234736fce58ab"
+    },
+    {
+     "rank": 6,
+     "doc_id": "9419013574fe4580ab17b53f49cd3070",
+     "chunk_id": "69ce11ca1babed0833dae7d56dee468f327609e02a63fb8817a4b22db0c477b3"
+    },
+    {
+     "rank": 7,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "b9199e0438dc740c689bf09901b398308d572947f116755298f4137a1eda15bf"
+    },
+    {
+     "rank": 8,
+     "doc_id": "f5ed787eb04f49a49e2546774adfd529",
+     "chunk_id": "7a9cd0c6cd1a233af63400dbb740e7c8b87018d652463a22ac102d6475325df5"
+    },
+    {
+     "rank": 9,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "4e28c01097c731b22a56e60b5f941700a1f9c77de3b56b4022dcb5e3bf8ccad1"
+    },
+    {
+     "rank": 10,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "414e10640ad619b9f85854aaa88af44da701be133ec67f6257ab6aaf3ab6d984"
+    },
+    {
+     "rank": 11,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "cec517ab7bc2b6f6260d4143d1c9790f4d42e0447c03da8f8faebe2427939545"
+    },
+    {
+     "rank": 12,
+     "doc_id": "a7b64e5654e04564a1b57f0122d00a97",
+     "chunk_id": "8e86ee750e306d37c192bda49f2e48b1e65d840ba7732aca9f969c41dc321624"
+    },
+    {
+     "rank": 13,
+     "doc_id": "4602f9b7045647b89c5ab153ff74f5eb",
+     "chunk_id": "b3035c50b453291f533788e203da0b070ef41274d59fc71e3eaf7ef4abb0cfc6"
+    },
+    {
+     "rank": 14,
+     "doc_id": "0e4bfcfcabfa47c69fb14d1d6f8fe03c",
+     "chunk_id": "46ab51130d4eb67c44f2c01edac76ae0baa7f81e5ddd391a1d112880af541fc1"
+    },
+    {
+     "rank": 15,
+     "doc_id": "43ce5070387d4591a866ffd7a5558231",
+     "chunk_id": "0c9733978354665d8a5e93540094652679bde87afe5991ac97b1c9298ace63be"
+    },
+    {
+     "rank": 16,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "0a358dfcd2857f74ede28b24f557d8d0893827fee09f1ba15b041a81612486e6"
+    },
+    {
+     "rank": 17,
+     "doc_id": "568eae272680415d887c072b944b1df0",
+     "chunk_id": "2a18965f9b78ed7b900ad92f5a7fc2aa5bd79f789c5f31930805eb4656f15dfd"
+    },
+    {
+     "rank": 18,
+     "doc_id": "dd638451e78e41c48d5b424d353f9793",
+     "chunk_id": "9c3989208fee1d75d2601fa5796044738cf93c642ca031a0b725f4574fd0a87d"
+    },
+    {
+     "rank": 19,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "2fb6124a68c8f152f72c65b5f79e5850608a29c3f0ec89fda819696f23c4ea60"
+    },
+    {
+     "rank": 20,
+     "doc_id": "5afec62371f746b8a6f44a1c118a9975",
+     "chunk_id": "390328047d7e945712e27f5b8b0741abf702a387353b530944fcbf34390b4e4b"
+    }
+   ],
+   "latency_s": 0.527,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "闪烁探测中正电子测量怎么配置准直器",
+   "gold_doc_ids": [
+    "10c1605fb47f4fab82c481d6485e5ff4",
+    "14791948f67e4038b1edf9387dcabdbf",
+    "64f835ed443d408481f4587a69c35b7b",
+    "6d38b0442cb942448e3c5b430f39880e",
+    "c630f6ecbc75455fa4dae9c79937fe1a",
+    "dcd0ef5b938443f98eb98407af1a5d8c"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "2bc1f679c866b1a0bba4d6323b98184a06a7c0d2840def155c453a513a3b9411"
+    },
+    {
+     "rank": 2,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "f5cb28ae0bf2eb58f9e1e2bcf9dabf7b862a0d3f7eefd6d2f8ea44f620a954fe"
+    },
+    {
+     "rank": 3,
+     "doc_id": "64f835ed443d408481f4587a69c35b7b",
+     "chunk_id": "2024cc2fda2b52f9fc22a50648d3594a6d3691d7df1ad02b26ef080c54fb1c25"
+    },
+    {
+     "rank": 4,
+     "doc_id": "2dc6aea717814b18bc478839a506c2d9",
+     "chunk_id": "f3c01e39b813ca9fd2b4bb527cf82467782f17f4bbef8988f685ba3ff91de597"
+    },
+    {
+     "rank": 5,
+     "doc_id": "9419013574fe4580ab17b53f49cd3070",
+     "chunk_id": "c3889caa6f89a3a65a8daa25c5bc88e704a8e14995818c01a3100d2dadd9d00a"
+    },
+    {
+     "rank": 6,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "a396eb56f14a988bb681366e8ee2c664de5f6e6783b450de9b116d7890bfd595"
+    },
+    {
+     "rank": 7,
+     "doc_id": "dcd0ef5b938443f98eb98407af1a5d8c",
+     "chunk_id": "638050fd59698d36eeabda705f03c5ebd1e8f77fd99e3868a7fe17ee5a0fdf8d"
+    },
+    {
+     "rank": 8,
+     "doc_id": "0b6b54ced421431a8973a729cf5ab44c",
+     "chunk_id": "a81cabad5ad93d1e6b991528dfbf222517dc77d9f360d94e62f9a3e6f0cd61ae"
+    },
+    {
+     "rank": 9,
+     "doc_id": "10c1605fb47f4fab82c481d6485e5ff4",
+     "chunk_id": "e6747ec60b8bf8c54d732b1b88166d4d5324ab6f936a5e8f990d8a9ffae44807"
+    },
+    {
+     "rank": 10,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "839fa44a27419433b9c8805c6a8bf94ec74df7d27d535b3f3e95118d42ead6e7"
+    },
+    {
+     "rank": 11,
+     "doc_id": "c630f6ecbc75455fa4dae9c79937fe1a",
+     "chunk_id": "67378b836027ed8ef011e5a7f1de74f00c82366a2af3e3301c9e038c6020f771"
+    },
+    {
+     "rank": 12,
+     "doc_id": "8245c2cd4ed64139978856c92e658830",
+     "chunk_id": "ccb96f029c3aaf569f5555e37fe6ef89715d4327434e2b033ad5ee0b86436f02"
+    },
+    {
+     "rank": 13,
+     "doc_id": "0e4bfcfcabfa47c69fb14d1d6f8fe03c",
+     "chunk_id": "46ab51130d4eb67c44f2c01edac76ae0baa7f81e5ddd391a1d112880af541fc1"
+    },
+    {
+     "rank": 14,
+     "doc_id": "df5e7e8fd4154849a7e210f26e4f6aeb",
+     "chunk_id": "fe2f6cc685ce5df4ef6e59e9a00eb26eed0b47e241667ef127e33be2d55f5b5b"
+    },
+    {
+     "rank": 15,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "9a37180d18ecc546ac49442588291f855b3aa459a5a6a73d339dee31b1ec14bc"
+    },
+    {
+     "rank": 16,
+     "doc_id": "ccfaa292256c43c1b947c563214c00f7",
+     "chunk_id": "f5815813842cdb7a83b77251ba6afaea787edf22a1c0372a35d026b5ebd843c5"
+    },
+    {
+     "rank": 17,
+     "doc_id": "290e438bb9bc423ca6f80bc595586b5a",
+     "chunk_id": "28d43a31ba94cea1196efdf03372d270ce01ff56e76530a49239892e88988b9e"
+    },
+    {
+     "rank": 18,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "c19c035f03771a16f407af3c999c81facdca8ce57bc03d17c85c22847608e753"
+    },
+    {
+     "rank": 19,
+     "doc_id": "be6e2372886247faad8f0a73d9111130",
+     "chunk_id": "9678e50ee72d99c4d145fc6cbbbc26f50f747e8fdb46cb9a169a599385e00e1d"
+    },
+    {
+     "rank": 20,
+     "doc_id": "16eb7b49c4254b989648778ab6793691",
+     "chunk_id": "22670a0ed0a7a2ddbfa69a41ca8cb4311d6d5df0948f8ae9a00d4c84fafc8d85"
+    }
+   ],
+   "latency_s": 0.458,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "正电子湮没寿命谱中偶然符合对活度测量结果影响大吗",
+   "gold_doc_ids": [
+    "abd25b05b1484bb0a9fd96d81f163059",
+    "c16b9ea334824962a0be7388be6ecf1b"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "a396eb56f14a988bb681366e8ee2c664de5f6e6783b450de9b116d7890bfd595"
+    },
+    {
+     "rank": 2,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "9878884bfe8b878d8c1793865f2cdd17a346452c1a4538e45cbf577701df4403"
+    },
+    {
+     "rank": 3,
+     "doc_id": "c630f6ecbc75455fa4dae9c79937fe1a",
+     "chunk_id": "33ee8d647b08ac8bfca5652f156e0dccbfb0ae3c018072a26645750786b92ec9"
+    },
+    {
+     "rank": 4,
+     "doc_id": "9740e181f7b84ba4af1d0692c3cf99d5",
+     "chunk_id": "ec244e26691e028c3e0d701ae61b1e582501f7a33338c5d002cd8ca727a01f73"
+    },
+    {
+     "rank": 5,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "16064a81b93f7dd0bc0cf257c1b595ac6effb8f2a78978992a89a24fc9fe4dee"
+    },
+    {
+     "rank": 6,
+     "doc_id": "dcd0ef5b938443f98eb98407af1a5d8c",
+     "chunk_id": "0a1342f25556f8c9d6ea6d2aa14d89f81f2b8a3e8d16469a93ba10f99a81d7f1"
+    },
+    {
+     "rank": 7,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "4e28c01097c731b22a56e60b5f941700a1f9c77de3b56b4022dcb5e3bf8ccad1"
+    },
+    {
+     "rank": 8,
+     "doc_id": "4cea6265b1d94ec08ce2b7a9747558cc",
+     "chunk_id": "e03a9a11dbe352fa79cf556334c6cc9b7d97c13f40d83f95e188c7aa995f5ca8"
+    },
+    {
+     "rank": 9,
+     "doc_id": "312f2954886f42c4acca8edc7fffe45b",
+     "chunk_id": "04ec002f3af6ac5f1fe649a603494dfcfb172891d1924195e6673cdc9b130b00"
+    },
+    {
+     "rank": 10,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "400bc0465d267880011b078e1934aef4ef8b6cc1fb5cdaa756f40108d46de363"
+    },
+    {
+     "rank": 11,
+     "doc_id": "c2952e52266042cf8644a01ea9e53112",
+     "chunk_id": "3c26412919ae53e10dd027eddbca3ee21f4433946974cda7968630e3c2315f8d"
+    },
+    {
+     "rank": 12,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "0bc2ccc84c99def4a623271f17772f72b9d8d9325dcab2d15c5ad09b764083e1"
+    },
+    {
+     "rank": 13,
+     "doc_id": "a7b64e5654e04564a1b57f0122d00a97",
+     "chunk_id": "8e86ee750e306d37c192bda49f2e48b1e65d840ba7732aca9f969c41dc321624"
+    },
+    {
+     "rank": 14,
+     "doc_id": "1ebbc28edeef4845b7e5fe66577f7332",
+     "chunk_id": "ed95ab04b591a09903d845aecacc9eba2920af53776b0d1a7c5671c370b766d5"
+    },
+    {
+     "rank": 15,
+     "doc_id": "2dc6aea717814b18bc478839a506c2d9",
+     "chunk_id": "422fbd074a5bc6e68ece1c1887ef34c138fa94f9e0d0167d46354bd41f14e159"
+    },
+    {
+     "rank": 16,
+     "doc_id": "47453f82116744379261400f49790e2c",
+     "chunk_id": "a19c2c9b3ee8e27130f7c834c9a92b547be31d4138025df29dfe160339a81e81"
+    },
+    {
+     "rank": 17,
+     "doc_id": "10c1605fb47f4fab82c481d6485e5ff4",
+     "chunk_id": "5059d5a2ebfa91fe31e52fe222d9493f77484dd5a6a1e0b152af39e04257f05a"
+    },
+    {
+     "rank": 18,
+     "doc_id": "64f835ed443d408481f4587a69c35b7b",
+     "chunk_id": "c9f13f73fd21405871b23b86f8b898cd45cb17b22800b8027ae51ca33de56688"
+    },
+    {
+     "rank": 19,
+     "doc_id": "43ce5070387d4591a866ffd7a5558231",
+     "chunk_id": "0c9733978354665d8a5e93540094652679bde87afe5991ac97b1c9298ace63be"
+    },
+    {
+     "rank": 20,
+     "doc_id": "dd2952358a604501869c31e4e5480ff5",
+     "chunk_id": "c47734a425321648b6ceca5430a8aff6782137587b39768e8026ec1ecb6319c8"
+    }
+   ],
+   "latency_s": 0.492,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "辐射防护材料在X射线、中子与伽马辐射防护中的应用",
+   "gold_doc_ids": [
+    "2bd04127007148f086ad2b7d2cd3dcce",
+    "2eb25eb829cb464795b07dcc9a576bb8",
+    "568eae272680415d887c072b944b1df0",
+    "5c566792b3d74dc8beb89a5dfdb8403d",
+    "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+    "d01137e831d44303bd1bb164f0b127de"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "2bd04127007148f086ad2b7d2cd3dcce",
+     "chunk_id": "0950c359a485ab741bc1ca123649ab1d437e62edcce9e76e12230a7e1884f4ce"
+    },
+    {
+     "rank": 2,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "b841471b7922a1907c2a773e5325776b186d27d0a658270806c4bb2047ca21e4"
+    },
+    {
+     "rank": 3,
+     "doc_id": "2eb25eb829cb464795b07dcc9a576bb8",
+     "chunk_id": "d48715c00dd17a6fbe617540956449caea9e23c57ca0d29f84eaa0d97a5c1739"
+    },
+    {
+     "rank": 4,
+     "doc_id": "5c566792b3d74dc8beb89a5dfdb8403d",
+     "chunk_id": "300462a341a608dead6c6ba101acce3d3d1011222dbe050c56269159413dd5a9"
+    },
+    {
+     "rank": 5,
+     "doc_id": "562b67ceb2e840f1ae2a149082d4ae93",
+     "chunk_id": "eb36e351e0f2f9b632b8b810516de2becd5e01f7442ad3a818f293b55151c0dc"
+    },
+    {
+     "rank": 6,
+     "doc_id": "d01137e831d44303bd1bb164f0b127de",
+     "chunk_id": "de79fa103a9346e1e913796483e9f70675223c3a78b78cfdd252a73a76e53700"
+    },
+    {
+     "rank": 7,
+     "doc_id": "568eae272680415d887c072b944b1df0",
+     "chunk_id": "a6ae463e602d9aa0c50a0fd4e92b41cf816febba0eb0764e1204e8f8f616849d"
+    },
+    {
+     "rank": 8,
+     "doc_id": "005295c12c544da796a7e069d5c07afd",
+     "chunk_id": "ea157b2af29b474ef6f57d126cb880797918a69d6056654be0e3d9b789b05d73"
+    },
+    {
+     "rank": 9,
+     "doc_id": "48b9a62f6eb5478f94e5721db30c564d",
+     "chunk_id": "89f119f330f03d2a09fd8678a6825dd25a9d782d05c089ece4790aec4cb1706a"
+    },
+    {
+     "rank": 10,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "b9e0dca6f588af3c07a6d22d54316023ee379677ab58eb05c3c91aab91de758c"
+    },
+    {
+     "rank": 11,
+     "doc_id": "844d59d5f24e46a79bff5a4947853cdb",
+     "chunk_id": "72e6a67496d7331f6579f46dda83d5f6fb444f05afb907ae49fc4eacd63a92c7"
+    },
+    {
+     "rank": 12,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "170c1e02fc6f9a14cfc13f0ca07cd16d442064c5149d2d791a79f9f68c121292"
+    },
+    {
+     "rank": 13,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "ea0b9d202c5a11353ac1b3c5919aea280177bdfa89026f6bee8b1b191198d8af"
+    },
+    {
+     "rank": 14,
+     "doc_id": "e0d60c4152394b0ea4e32a9e6c1abaa5",
+     "chunk_id": "0a68fa9912a8cf19e86f3fc8af6971de6afec9c35f7615a20ef94fe70fcbd9b8"
+    },
+    {
+     "rank": 15,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "ce4a36b26983fc68c9d9955597357851e3331eb09ce969d53f0c2a0cc7784e1c"
+    },
+    {
+     "rank": 16,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "b6ffec016975133a6bf1706e04779ea3ee32fb521cb2cb19d3807d12e937f2c7"
+    },
+    {
+     "rank": 17,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "3a84f3fabf85b61adcec769d8a1e328ab153ce71137339ade1e45e847cbef2d9"
+    },
+    {
+     "rank": 18,
+     "doc_id": "c5f51f146d8349b2a383d6d0860f8a5d",
+     "chunk_id": "0ee4166d5209e78ec4e3ad09743665ad82993adb724d72d66ce31cae83b6bbdc"
+    },
+    {
+     "rank": 19,
+     "doc_id": "f3e9f8a90094402191977027c6667b4d",
+     "chunk_id": "f51bcdb834b7685244923f22325314bf680f85c4a1269a014efa38edf735c601"
+    },
+    {
+     "rank": 20,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "473158a9d50890c32c4a2a5023a46aa850efbcb6a9d86c65bc5540f20b4281f0"
+    }
+   ],
+   "latency_s": 0.505,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有哪些基于核素图的核素性质研究",
+   "gold_doc_ids": [
+    "312f2954886f42c4acca8edc7fffe45b",
+    "51a80be59e3048ffbf9abb6b6a212eb6",
+    "5cf355f9dea949d38bf702f25e40f4a0",
+    "a44c09c26ed64a60a4ed1232caa461d9",
+    "a98c8fdd65ae49eeaa50e341701b3876",
+    "abd509a6eba846cbab0f2e2c02fac19f"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "2cb4bc338d79d9073a01b6ad601a7953c2bc2b273b972093615f5f7fda4356ce"
+    },
+    {
+     "rank": 2,
+     "doc_id": "d0df529c2b794bdba3b5c63e49593301",
+     "chunk_id": "b3abb057dc76eeea6759a85892d01a8ae8ccade738b01e67f64bf597c89d1b82"
+    },
+    {
+     "rank": 3,
+     "doc_id": "2b40ebc5fb394306890983020d20d129",
+     "chunk_id": "7b1482eaa1d631724597c0d5a085a40a85a127fd595bb984ffb2c4281ab9657b"
+    },
+    {
+     "rank": 4,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "70882c9f69207f0c4956371c5a82fbf9240ec999d5e26ef3aab8cd23b6cd813e"
+    },
+    {
+     "rank": 5,
+     "doc_id": "ceca9573a2dc4cc78813de21b3702fc2",
+     "chunk_id": "c078e389d59f174d38b3e44ca0403b60cf7403372eb238e544e6005a8d7b0019"
+    },
+    {
+     "rank": 6,
+     "doc_id": "5cf355f9dea949d38bf702f25e40f4a0",
+     "chunk_id": "e5cf827bee0fabfefd7c5fd7b79907a3122bbeec1c6679036a1b763f8033d694"
+    },
+    {
+     "rank": 7,
+     "doc_id": "8f632c1832b24c5abccf3b4c40fdb32f",
+     "chunk_id": "311a15c85817f4c0c4badb645b5501e65a0dd86fffb2c3ed55e2bec3f8f56da6"
+    },
+    {
+     "rank": 8,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "58e204255a1ab0d5d802f629abeb88469d025c63b662aeeef85f1c269a353913"
+    },
+    {
+     "rank": 9,
+     "doc_id": "51a80be59e3048ffbf9abb6b6a212eb6",
+     "chunk_id": "b2aa155e1a0d4d502c4b52959586e412b3579e764e13616a493ec53247f708c7"
+    },
+    {
+     "rank": 10,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "2036e8b7e0e9d29b52561a4f0f7a5f06cc2956c1aa78aa7cdfddff785d5e44e6"
+    },
+    {
+     "rank": 11,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "b9199e0438dc740c689bf09901b398308d572947f116755298f4137a1eda15bf"
+    },
+    {
+     "rank": 12,
+     "doc_id": "9a45b4b375074729810052e51ce0e1e4",
+     "chunk_id": "679e70111bfbf43823d8f38dcde435d36e42ff6d251f374cf320eef8f53f888b"
+    },
+    {
+     "rank": 13,
+     "doc_id": "312f2954886f42c4acca8edc7fffe45b",
+     "chunk_id": "04ec002f3af6ac5f1fe649a603494dfcfb172891d1924195e6673cdc9b130b00"
+    },
+    {
+     "rank": 14,
+     "doc_id": "abd509a6eba846cbab0f2e2c02fac19f",
+     "chunk_id": "d75a2a8eda93da7671077ecaa78963a918b4ef3a28146e01d590a625060bf8b2"
+    },
+    {
+     "rank": 15,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "e5966da953caf50077a9602d9ec7cb1154564ebec5e9b452888c82c58b31d630"
+    },
+    {
+     "rank": 16,
+     "doc_id": "99b3494a69a3476d9f286b1c5f3f6b69",
+     "chunk_id": "8fc8244828d059dbc5b7d4d8bae5f073868f9d555a2d9ba9226a2549166852b9"
+    },
+    {
+     "rank": 17,
+     "doc_id": "10c1605fb47f4fab82c481d6485e5ff4",
+     "chunk_id": "5059d5a2ebfa91fe31e52fe222d9493f77484dd5a6a1e0b152af39e04257f05a"
+    },
+    {
+     "rank": 18,
+     "doc_id": "c2952e52266042cf8644a01ea9e53112",
+     "chunk_id": "eb196a57277cb4793e9e8faaf5b986dcd1fa010cecd26b376a9959703bc78e05"
+    },
+    {
+     "rank": 19,
+     "doc_id": "c91b4d2df5e7428599184599bcab85f2",
+     "chunk_id": "b2394696e058da734b4dedba62dbc0e5508fe29b1665a8c5c2dd74d9e5557f1e"
+    },
+    {
+     "rank": 20,
+     "doc_id": "a7b64e5654e04564a1b57f0122d00a97",
+     "chunk_id": "8e86ee750e306d37c192bda49f2e48b1e65d840ba7732aca9f969c41dc321624"
+    }
+   ],
+   "latency_s": 0.531,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "高温核磁共振或氚相关实验中，用到 distillation 和 calibration 的文献有哪些？",
+   "gold_doc_ids": [
+    "7cda267dbd8a483e84291ed96e6fca35",
+    "aeed1141c2c6406ba364ef326bcba1f6",
+    "d077aba29a1144daab6a902cf44639b0",
+    "d5b5f96e4a9340448504fd40d60b5879"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "6a1137689dd325e51e9d0982ed94ed87efb3c3bc5411830648a5c576b8b5f4c9"
+    },
+    {
+     "rank": 2,
+     "doc_id": "aeed1141c2c6406ba364ef326bcba1f6",
+     "chunk_id": "11705a4909bcd97b8c1a80a96dbce929eccd35e60e665648df873308fa837730"
+    },
+    {
+     "rank": 3,
+     "doc_id": "7cda267dbd8a483e84291ed96e6fca35",
+     "chunk_id": "1be564d34b29d922c3a9ecefb469e013c584cbebb1cd1506f51169c077c0f28a"
+    },
+    {
+     "rank": 4,
+     "doc_id": "318498efdfe2401ebfb8f84b6c246f90",
+     "chunk_id": "799896fc26c0def7ad18c1d119b12c67bcb01f6656d7ab43b84900a4c0502e4a"
+    },
+    {
+     "rank": 5,
+     "doc_id": "46791d44836241b2a6102ee0651e742e",
+     "chunk_id": "8199585759008f0e5edd14701a6173944869772d2141533dfcacb0fde58f3fa8"
+    },
+    {
+     "rank": 6,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "a675db2fd53dc826da1dcd3b3b12e0fc79a02f11c01194b836e4ed589e18a92c"
+    },
+    {
+     "rank": 7,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "886a0bf26f29a00a7019963b109ef3677efa7d0507f2963c2326011e9afd4fd7"
+    },
+    {
+     "rank": 8,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "d94c8400f94e539b18cfd5416d9bc42d35fc9afcd9cf4f153b86aef9635a96c1"
+    },
+    {
+     "rank": 9,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "ecf271427a31a6c994045f5482d6d9a482152c1812eb0445de5be21eaa716326"
+    },
+    {
+     "rank": 10,
+     "doc_id": "add04d041509451caf147c7eba0e7c09",
+     "chunk_id": "302d27f785b69b1dde84e1ef4c9dd696c2403cd006a85d109ba0cfd26d71eb66"
+    },
+    {
+     "rank": 11,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "e50d081a7e15aa0c1737ae3b99b67018480ce39467c79a9df9fe249cf2ba3051"
+    },
+    {
+     "rank": 12,
+     "doc_id": "2b40ebc5fb394306890983020d20d129",
+     "chunk_id": "f6d7a8780332fc2ac3bf43971a39cebff81fee9d4991685b34701c61e13ff12d"
+    },
+    {
+     "rank": 13,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "bb0004c65294f004febe0fd4c6d75ebd3d770dbb4a0daf715e178a4de3908d9e"
+    },
+    {
+     "rank": 14,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "7a9c330015c371c3ac8916e14297c1b07790dc2fb49136e62e3acea7d6073bbc"
+    },
+    {
+     "rank": 15,
+     "doc_id": "2566433836aa4a27b4c986780cfb8ec7",
+     "chunk_id": "98548ce5d50574335341c756f5a0ece85a5867245f75da2d0a68c4a733adb537"
+    },
+    {
+     "rank": 16,
+     "doc_id": "45be62b3b4e44fa19f1af0066ae8aa74",
+     "chunk_id": "cddc43553e12ba8a08fa9c3059fd1bc40a4d4b30f0fe3558cea034cc5a4338b3"
+    },
+    {
+     "rank": 17,
+     "doc_id": "831cedc88ad544b5b37ae262e5f2352e",
+     "chunk_id": "738e6a2cae34f5c425f770fdf7a6bc29fbd8406ca8844a654dfd96c8dd26961d"
+    },
+    {
+     "rank": 18,
+     "doc_id": "5cf355f9dea949d38bf702f25e40f4a0",
+     "chunk_id": "9fb5aaa8f5331e53434c1868f8b50fcf3d284b9894f503c668dd6eacbc9baccc"
+    },
+    {
+     "rank": 19,
+     "doc_id": "7733b3384efd443685f5d70b64475aeb",
+     "chunk_id": "6504c82eb8147fcdb0fa76a4c33521b8682a73f917e1b6b70aca782c4aa4f2ad"
+    },
+    {
+     "rank": 20,
+     "doc_id": "a2fa4b2086ad49f39c87a1ee9ad35ba0",
+     "chunk_id": "e402fa3ffea7a85bd7675a3b09acaa6ae8295c94647923d55cd39839daaa5eb8"
+    }
+   ],
+   "latency_s": 0.574,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "高纯锗冷指在废物桶γ扫描、活度测量和温度场模拟中的应用",
+   "gold_doc_ids": [
+    "19bde1d874b94c749c1022cdac320afb",
+    "2dc6aea717814b18bc478839a506c2d9",
+    "43ce5070387d4591a866ffd7a5558231",
+    "81abd380b7fb4219beff1cf006b9bca8",
+    "87a31bfd43ff4a59837fe8f72b2e744b",
+    "a7b3e22cb81d433b91076a79ba312b72"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "767008ca769b2fcd7feaefb084356418dc797213dae492d3f92c00d0eca75a5d"
+    },
+    {
+     "rank": 2,
+     "doc_id": "43ce5070387d4591a866ffd7a5558231",
+     "chunk_id": "0c9733978354665d8a5e93540094652679bde87afe5991ac97b1c9298ace63be"
+    },
+    {
+     "rank": 3,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "a675db2fd53dc826da1dcd3b3b12e0fc79a02f11c01194b836e4ed589e18a92c"
+    },
+    {
+     "rank": 4,
+     "doc_id": "81abd380b7fb4219beff1cf006b9bca8",
+     "chunk_id": "192f1a5c1c0aec38be5d52040272d23cbce396a5a1e699f8f1b167936042840b"
+    },
+    {
+     "rank": 5,
+     "doc_id": "2dc6aea717814b18bc478839a506c2d9",
+     "chunk_id": "422fbd074a5bc6e68ece1c1887ef34c138fa94f9e0d0167d46354bd41f14e159"
+    },
+    {
+     "rank": 6,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "dca2b4efccaf2388f0f95b5354098ecec4522240609019e9ae1bb4e2b8890e30"
+    },
+    {
+     "rank": 7,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "85c63d65096c65dbc62588fc82950cb2e2f99f4e30f0b4d35142731d59665584"
+    },
+    {
+     "rank": 8,
+     "doc_id": "87a31bfd43ff4a59837fe8f72b2e744b",
+     "chunk_id": "57149c4c285b642a220e4ddac0dbb925713edb36b4d12389e2e466798460eaa4"
+    },
+    {
+     "rank": 9,
+     "doc_id": "0e4bfcfcabfa47c69fb14d1d6f8fe03c",
+     "chunk_id": "51c1bd0bdc7241e999980a44a7be76923cc7c977d88166e499c542f161c3d128"
+    },
+    {
+     "rank": 10,
+     "doc_id": "c2952e52266042cf8644a01ea9e53112",
+     "chunk_id": "c345a8289ae386386ec5d709c1dd18e3703d25bac80e287d754c1cb5ec00ac78"
+    },
+    {
+     "rank": 11,
+     "doc_id": "844d59d5f24e46a79bff5a4947853cdb",
+     "chunk_id": "ea304fc32c8554f361229079352c95f56fc9ea20c11358409127f565b37a03e0"
+    },
+    {
+     "rank": 12,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "46b079dc6f158b54f2a25d90182f2c92789d57b04a013bcf51cc5840e876d603"
+    },
+    {
+     "rank": 13,
+     "doc_id": "a7b64e5654e04564a1b57f0122d00a97",
+     "chunk_id": "8e86ee750e306d37c192bda49f2e48b1e65d840ba7732aca9f969c41dc321624"
+    },
+    {
+     "rank": 14,
+     "doc_id": "65e41a8c461c4020913b0ee20933e37a",
+     "chunk_id": "929faddb75ac0044560df9b660b3156d949a69f6e63bf126fb5bc2ad90e89c73"
+    },
+    {
+     "rank": 15,
+     "doc_id": "47453f82116744379261400f49790e2c",
+     "chunk_id": "a19c2c9b3ee8e27130f7c834c9a92b547be31d4138025df29dfe160339a81e81"
+    },
+    {
+     "rank": 16,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "ca6b741ea2b43310ab75b3b20d43ec00cc619a09c82146438ec95e7e34b0945f"
+    },
+    {
+     "rank": 17,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "cc2b1a7efa9f2dc493b928e4306ca73a6e3a65a08efdf76ecc8b2eda0d776f1a"
+    },
+    {
+     "rank": 18,
+     "doc_id": "9740e181f7b84ba4af1d0692c3cf99d5",
+     "chunk_id": "e1fc1dbe87e9e3e3701ed6dc534a4a1281629898696978788af651c559a43bb3"
+    },
+    {
+     "rank": 19,
+     "doc_id": "1ebbc28edeef4845b7e5fe66577f7332",
+     "chunk_id": "b7430acdbe1cc8607f497a8dfb8319e5718bc6619e3e08918b3a6728569d2823"
+    },
+    {
+     "rank": 20,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "473158a9d50890c32c4a2a5023a46aa850efbcb6a9d86c65bc5540f20b4281f0"
+    }
+   ],
+   "latency_s": 0.505,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "核素γ谱分析中符合相加效应如何校正？",
+   "gold_doc_ids": [
+    "19bde1d874b94c749c1022cdac320afb",
+    "34da886ed5d74004a2f39fcc9e2a2ff9",
+    "65e41a8c461c4020913b0ee20933e37a",
+    "76ebf8dcd6de4c50bc85db5f2d1add5b",
+    "c2952e52266042cf8644a01ea9e53112"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "4e28c01097c731b22a56e60b5f941700a1f9c77de3b56b4022dcb5e3bf8ccad1"
+    },
+    {
+     "rank": 2,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "a675db2fd53dc826da1dcd3b3b12e0fc79a02f11c01194b836e4ed589e18a92c"
+    },
+    {
+     "rank": 3,
+     "doc_id": "a7b64e5654e04564a1b57f0122d00a97",
+     "chunk_id": "8e86ee750e306d37c192bda49f2e48b1e65d840ba7732aca9f969c41dc321624"
+    },
+    {
+     "rank": 4,
+     "doc_id": "87a31bfd43ff4a59837fe8f72b2e744b",
+     "chunk_id": "1cda1c44a66c97589b6ecfdbe8259a828eaa20d69f6f855a4f3085302de5362e"
+    },
+    {
+     "rank": 5,
+     "doc_id": "c2952e52266042cf8644a01ea9e53112",
+     "chunk_id": "dcacaf948fd15227114247d9e60b02d844b3c62d03aad1061026265924422bf6"
+    },
+    {
+     "rank": 6,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "fa134dc1bee5c7e73f415b23b5d210ed434becb5ec66f8747887ceecb839df61"
+    },
+    {
+     "rank": 7,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "787f906b9287dab0d93487404be504f4507b64a028c14194b4f39cfcd817f9dd"
+    },
+    {
+     "rank": 8,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "c5cc1fd638aa3a949ced6f5b97fed05303d5e430426743985bef8b54ef7eff0a"
+    },
+    {
+     "rank": 9,
+     "doc_id": "81abd380b7fb4219beff1cf006b9bca8",
+     "chunk_id": "192f1a5c1c0aec38be5d52040272d23cbce396a5a1e699f8f1b167936042840b"
+    },
+    {
+     "rank": 10,
+     "doc_id": "9740e181f7b84ba4af1d0692c3cf99d5",
+     "chunk_id": "16135707afb453a60a2862128a508307062242537f9873f8507e753030589be4"
+    },
+    {
+     "rank": 11,
+     "doc_id": "cca4f11bfb4c4f63b5b4fdaed1bdf898",
+     "chunk_id": "cae3dab2fdb8456bac7489ed503da8e176b6f87469fc73d035334bf578add7df"
+    },
+    {
+     "rank": 12,
+     "doc_id": "eff2af7d3aa049f6acee61b95edec7a5",
+     "chunk_id": "31b31a93b4aac675422a669a693030974145a58e9e0658e4261cfd1dd92b6459"
+    },
+    {
+     "rank": 13,
+     "doc_id": "65e41a8c461c4020913b0ee20933e37a",
+     "chunk_id": "929faddb75ac0044560df9b660b3156d949a69f6e63bf126fb5bc2ad90e89c73"
+    },
+    {
+     "rank": 14,
+     "doc_id": "f3e9f8a90094402191977027c6667b4d",
+     "chunk_id": "f51bcdb834b7685244923f22325314bf680f85c4a1269a014efa38edf735c601"
+    },
+    {
+     "rank": 15,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "0bc2ccc84c99def4a623271f17772f72b9d8d9325dcab2d15c5ad09b764083e1"
+    },
+    {
+     "rank": 16,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "ec9afeb5a880dbec02f4b0358742e9a8a9f521a24b88011be7618b451ec6b474"
+    },
+    {
+     "rank": 17,
+     "doc_id": "0e4bfcfcabfa47c69fb14d1d6f8fe03c",
+     "chunk_id": "46ab51130d4eb67c44f2c01edac76ae0baa7f81e5ddd391a1d112880af541fc1"
+    },
+    {
+     "rank": 18,
+     "doc_id": "cb5144d5ac38493abdec32b16ce9b822",
+     "chunk_id": "f5ca06ebfae9b19979bd1c94705ce38b119ae4022131761d919ac643a7772afa"
+    },
+    {
+     "rank": 19,
+     "doc_id": "c91b4d2df5e7428599184599bcab85f2",
+     "chunk_id": "dffa51a1023bcd9b8111788df4352e8312d000b5dae83b8bf617cdd073a57883"
+    },
+    {
+     "rank": 20,
+     "doc_id": "8f632c1832b24c5abccf3b4c40fdb32f",
+     "chunk_id": "311a15c85817f4c0c4badb645b5501e65a0dd86fffb2c3ed55e2bec3f8f56da6"
+    }
+   ],
+   "latency_s": 0.509,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "跨阻放大器的噪声测量",
+   "gold_doc_ids": [
+    "2cc72bcbad214c11b44709816fca29b0",
+    "a36ed563f01a46efb47f6db24589a0d1"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "ae77baf56dd1122b93b1ca257bcb94023c6c541aa5c638e335501a0706195802"
+    },
+    {
+     "rank": 2,
+     "doc_id": "2cc72bcbad214c11b44709816fca29b0",
+     "chunk_id": "a7da36bc987a0c148547a5d55d578aa31fc0a3bbc5b913d801f06fd8eeed12fa"
+    },
+    {
+     "rank": 3,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "4fd3395c3a445acb9af2a27b48c1069dd5703797b3ea74436ef5dcc5b06fe9b5"
+    },
+    {
+     "rank": 4,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "e650fffedae1862c08f48aea29c147050a7e153475133fd3f42c0e692f65483f"
+    },
+    {
+     "rank": 5,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "c90f47fc42e9cdcdc8d610212f66434ece02927e79bd7e7c66712da55b4f3dcd"
+    },
+    {
+     "rank": 6,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "3baab1d19689c1aad47fad435a3ff67194ef1ddfa9f2d7d587fb2abe965dc81d"
+    },
+    {
+     "rank": 7,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "9c9ad35ccb74f8ced1b9a2ac8a9a8aac0b239d073190e90eb3a47a4396ca5517"
+    },
+    {
+     "rank": 8,
+     "doc_id": "025f12021feb42c7b2368ae621b9825c",
+     "chunk_id": "870a0b94794306915a10b81bdb8c7f8c7f9adb30bc6618197c01f10a97d1464d"
+    },
+    {
+     "rank": 9,
+     "doc_id": "201233f8d5194347a68d12312fdd55e4",
+     "chunk_id": "4e4e3be071e408f648273f8aedf4e56f3878228f7f4cb11557b8344c4a03ccf1"
+    },
+    {
+     "rank": 10,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "603ca357931e2ef130d08b5ff63abf224b74c58e68ead5b43e5e69ded4a73661"
+    },
+    {
+     "rank": 11,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "fa11f15cf6d58cb65e18bf1bf4d8eb30df953a04f822a20e7104063d3df5243a"
+    },
+    {
+     "rank": 12,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "e9220a22df8e218656c168feb1b9fb6b49c3a5cb54f906d9a1a1bd61073fea12"
+    },
+    {
+     "rank": 13,
+     "doc_id": "078a2f931b07443b9570a1634fe54375",
+     "chunk_id": "a555cc199ae7e2c36d318efa97e813884d61c9e2e8d8093df72b50bd6276979d"
+    },
+    {
+     "rank": 14,
+     "doc_id": "0782b664361c4237ae275c7844dcd5e9",
+     "chunk_id": "bf83ef1d063badfff1afea8883c50116d291a8f5b14977407f439d6bb7fcc49f"
+    },
+    {
+     "rank": 15,
+     "doc_id": "0b9b473374f24724b1406d311f8540eb",
+     "chunk_id": "6c34135b247003c4d421fa786eece2595fae8c305405a2115c0ecda97ff75380"
+    },
+    {
+     "rank": 16,
+     "doc_id": "5afec62371f746b8a6f44a1c118a9975",
+     "chunk_id": "dacbf8a4699c8696af7a713f7a22934c0e02e79646e2c5b8755e6f4f036d7600"
+    },
+    {
+     "rank": 17,
+     "doc_id": "f1943a2175314ddc840e4ce729076155",
+     "chunk_id": "e3f18ce4ba239896e34ebe3249eae7bd501243fd901854486424b668cbc9c14b"
+    },
+    {
+     "rank": 18,
+     "doc_id": "c02c0f51df6147368bd2108e6cc59cea",
+     "chunk_id": "285f88389c63042c939276979dd18d63f480d7702260baa745521728f3ed4622"
+    },
+    {
+     "rank": 19,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "90e54ade672cddc3f1c9ccdeece9102520013b2ceca7cde3a7ef10600fc6ffa9"
+    },
+    {
+     "rank": 20,
+     "doc_id": "2cc72bcbad214c11b44709816fca29b0",
+     "chunk_id": "455da367ba10bf2ade5a2106e2f2289e5a5ed82fa3b03a60e3e94fe9ff9f9598"
+    }
+   ],
+   "latency_s": 0.461,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "熔盐及镀层领域电沉积工艺应用研究",
+   "gold_doc_ids": [
+    "2250990ef3db4fa58aeae78d2b9b6c35",
+    "316be7d88b974ed1acbdf5e467e6f917",
+    "63c3739924d74f949e45b2e6035801e1",
+    "7551c20f6d1045d294fb2f2f671fdd2d"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "7551c20f6d1045d294fb2f2f671fdd2d",
+     "chunk_id": "a2b44721390faa44250c098f3cd7203d973236049c3e85a9fb2cd3ed622b6c97"
+    },
+    {
+     "rank": 2,
+     "doc_id": "63c3739924d74f949e45b2e6035801e1",
+     "chunk_id": "a8b68affc3cabc4c95d38bee347d8ef2a190bc83c0d15084669f5e4e9719dd06"
+    },
+    {
+     "rank": 3,
+     "doc_id": "e48daf1d88af44009b4cd8b869605323",
+     "chunk_id": "48fdef2573248261ebf96fc9f29007639fe3ec09b9369948e37a8cade1211f6c"
+    },
+    {
+     "rank": 4,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "b700b44e037e77d6f72da646138a883cb8dbb1b06b044c7b1bd9fc677ceee25d"
+    },
+    {
+     "rank": 5,
+     "doc_id": "2250990ef3db4fa58aeae78d2b9b6c35",
+     "chunk_id": "6aacf476d8ee92adde03c239bde34671733e811b6046abb00820d0786e06b5e7"
+    },
+    {
+     "rank": 6,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "3917de0f239b0a070496680d8d7f75aa28f212d0b12515274e6aea607937a1a5"
+    },
+    {
+     "rank": 7,
+     "doc_id": "72870a384d48453395c0047e1e1e2983",
+     "chunk_id": "a83f681f9b04d77055bb4d5f8a78f1ad032170f14d7e0e0a1edc2b1a52fc06d5"
+    },
+    {
+     "rank": 8,
+     "doc_id": "3735b009537e45adb2fadc6344707eaf",
+     "chunk_id": "10c0bde509e5595678861c01f2dde05e0c25946fa2807e6a70fcc90b431d6ccb"
+    },
+    {
+     "rank": 9,
+     "doc_id": "316be7d88b974ed1acbdf5e467e6f917",
+     "chunk_id": "0850fb81b1de4c58efb1fc1525a43c2d9a800631068a8384fa9a728cde3fb47d"
+    },
+    {
+     "rank": 10,
+     "doc_id": "76ebf8dcd6de4c50bc85db5f2d1add5b",
+     "chunk_id": "1403d3318baddb88bc74177f8c9dfd1c82ec734fadaf6eb82530285722b9e83a"
+    },
+    {
+     "rank": 11,
+     "doc_id": "d6be8637a7664012ad49fbb0fd24cbfa",
+     "chunk_id": "5aca9e2805616eb44c18fad3ebbf4ae6f4437bf2c7f1639e167430e7a7e9966a"
+    },
+    {
+     "rank": 12,
+     "doc_id": "e9f09ec17ee34c3d873a8a65ea431f65",
+     "chunk_id": "fa4175a71e47b9d8b906a6f5862fa8b0dd6f3c8e731e5942dd97c66e0c2710f0"
+    },
+    {
+     "rank": 13,
+     "doc_id": "2b3fd0c3005d4a318ca980e690775b24",
+     "chunk_id": "360fe05e8316a46f28aa616ab51c5c21a25e13e210ff93c445b5dd0fe9dabdc0"
+    },
+    {
+     "rank": 14,
+     "doc_id": "6fb53b5f89cf40f7bd5ad680885b15f5",
+     "chunk_id": "1cbac82b02ae31e04c9fdb244d12e98c6201ad0255dab17b69453446c91a8267"
+    },
+    {
+     "rank": 15,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "619d491efe78537e1fb4c9a00b59f3ae9d5e1659e7339742c34ae5c205d764cb"
+    },
+    {
+     "rank": 16,
+     "doc_id": "4768bf2e07aa4f3ea362a48627a2a30c",
+     "chunk_id": "7985d2e623efbd251b6443d7ebfb219daf339ff169303bce51ea58fbdb13ad9c"
+    },
+    {
+     "rank": 17,
+     "doc_id": "63107ab5c74d41d4ab460a2412d38f9a",
+     "chunk_id": "33f610f18b8ba81ad1596f0043c3c315da4129c29fa34384bc4c351d7644697a"
+    },
+    {
+     "rank": 18,
+     "doc_id": "05e6f239b6d6466db5eaee3e5f29902b",
+     "chunk_id": "6917751d8abcad211c198acb585c22a6717f734f30709ec4762b560b4fd7d07f"
+    },
+    {
+     "rank": 19,
+     "doc_id": "809c28f9ff70434da4d24ddbf4ef4b32",
+     "chunk_id": "5a8b2462147c6f1ba9fb05f521e10cabb746fe2889903650b1f046097ce1c7bc"
+    },
+    {
+     "rank": 20,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "2d8e529940e0076aa51d35833f8b34113441de14dcdcfc8d92a57e19a1c7ce5f"
+    }
+   ],
+   "latency_s": 0.487,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "同步辐射与结晶方法相关研究进展",
+   "gold_doc_ids": [
+    "5d90d8af59a744728185b76ff7eb428d",
+    "6fb53b5f89cf40f7bd5ad680885b15f5",
+    "824098b2c1bf4ebaa5f70e4a83b920cb",
+    "91aeee772ac949bd9f49dd951fcb462e",
+    "b20b1327d1054520bf61a3718e9db964",
+    "d6be8637a7664012ad49fbb0fd24cbfa"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "8f079f4ccc6a04b8925099ce625b30edc6a8ddf157046ac2b7e1ba2072b4ad89"
+    },
+    {
+     "rank": 2,
+     "doc_id": "a936ba1dbe8549279e71a061bc243bde",
+     "chunk_id": "727942b2464c4ce9ef6584154e236a3c96f80d53711126e12b1326d0f8e0eaa1"
+    },
+    {
+     "rank": 3,
+     "doc_id": "99370c67ecfe432ea2bde4b641529a10",
+     "chunk_id": "50707b3fbe9a326dabf2228428df2d86451845bde30b7433639b77bfa57bba0a"
+    },
+    {
+     "rank": 4,
+     "doc_id": "5d90d8af59a744728185b76ff7eb428d",
+     "chunk_id": "e338c299e7237e7bb203be1d5fa0d5f6371663f17437aaf81fb8572b42818753"
+    },
+    {
+     "rank": 5,
+     "doc_id": "91aeee772ac949bd9f49dd951fcb462e",
+     "chunk_id": "be55af5fb1d3ccfecd13f0d3d84fd12e3fad376f1f0250d33e2cc756c1c00339"
+    },
+    {
+     "rank": 6,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "170c1e02fc6f9a14cfc13f0ca07cd16d442064c5149d2d791a79f9f68c121292"
+    },
+    {
+     "rank": 7,
+     "doc_id": "e00af04ab2484ec6aeb2f083e2a819fa",
+     "chunk_id": "867243e232eaac56d3a61f1dfc14208f2358db5f7cd2b3fb2265c06b8002fbf6"
+    },
+    {
+     "rank": 8,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "7fa4753a57516ea79439b851151c8cec5edf6e02edd2f915230bb036063a7491"
+    },
+    {
+     "rank": 9,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "6475abeb7114e5c1143a0b431416aa37b580ee849c529578e4f7e1cd6fae6500"
+    },
+    {
+     "rank": 10,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "a7de48d93f72881aeaf2d27eda0f4e71376c2aec74ef846b494acd26f0a70b89"
+    },
+    {
+     "rank": 11,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "ec9afeb5a880dbec02f4b0358742e9a8a9f521a24b88011be7618b451ec6b474"
+    },
+    {
+     "rank": 12,
+     "doc_id": "90f8be5ec2fc478e9e0be323dc81316d",
+     "chunk_id": "e1226e6a76d1ca099f35453e0eaec6b9c3e7be2eb90147e273492d0330726c76"
+    },
+    {
+     "rank": 13,
+     "doc_id": "079d82fbf30349a7904921e9ac50b50c",
+     "chunk_id": "cf76001531cc0ef7909a9b27cd99d498fd499dabc5f20e913b25d0ba4ffffe44"
+    },
+    {
+     "rank": 14,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "2d6e0e33a00039a9dfd688faaa0a790b8cd9ee0e19b79b504d55462e98c80d30"
+    },
+    {
+     "rank": 15,
+     "doc_id": "fe62161ce46f41cfacd6a1a6f5f242a6",
+     "chunk_id": "e895185827234b2e63b05ca4760cfba1efb96e764c1b848f64568213c1da7a02"
+    },
+    {
+     "rank": 16,
+     "doc_id": "8f632c1832b24c5abccf3b4c40fdb32f",
+     "chunk_id": "311a15c85817f4c0c4badb645b5501e65a0dd86fffb2c3ed55e2bec3f8f56da6"
+    },
+    {
+     "rank": 17,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "3917de0f239b0a070496680d8d7f75aa28f212d0b12515274e6aea607937a1a5"
+    },
+    {
+     "rank": 18,
+     "doc_id": "078a2f931b07443b9570a1634fe54375",
+     "chunk_id": "73ac35382b6c754078225060b8a24132d5a7de348ad3c937e865f70eff28eb40"
+    },
+    {
+     "rank": 19,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "1a4180bcd852a40b125192433d152a43d20a4273ecb440988c7b4c8624a7f422"
+    },
+    {
+     "rank": 20,
+     "doc_id": "6fb53b5f89cf40f7bd5ad680885b15f5",
+     "chunk_id": "474645eead8d181d1fe5bf69d9ac31a2022c3a184459500f7623aa17787008c6"
+    }
+   ],
+   "latency_s": 0.53,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "基于计数率的核材料富集度测量方法",
+   "gold_doc_ids": [
+    "588151982ddc4b14a2f398dde7e6f20e",
+    "a407912c98fb421a9569cc0301a104af",
+    "ecebb255bc9a4dc4b55f36f20e2fe513"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "2a821140bef73df2af70f325d89f4a7badbd422f40cbe4aab668e882a9f32fd3"
+    },
+    {
+     "rank": 2,
+     "doc_id": "a7b64e5654e04564a1b57f0122d00a97",
+     "chunk_id": "8e86ee750e306d37c192bda49f2e48b1e65d840ba7732aca9f969c41dc321624"
+    },
+    {
+     "rank": 3,
+     "doc_id": "5cf355f9dea949d38bf702f25e40f4a0",
+     "chunk_id": "e5cf827bee0fabfefd7c5fd7b79907a3122bbeec1c6679036a1b763f8033d694"
+    },
+    {
+     "rank": 4,
+     "doc_id": "8f632c1832b24c5abccf3b4c40fdb32f",
+     "chunk_id": "311a15c85817f4c0c4badb645b5501e65a0dd86fffb2c3ed55e2bec3f8f56da6"
+    },
+    {
+     "rank": 5,
+     "doc_id": "81abd380b7fb4219beff1cf006b9bca8",
+     "chunk_id": "192f1a5c1c0aec38be5d52040272d23cbce396a5a1e699f8f1b167936042840b"
+    },
+    {
+     "rank": 6,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "16064a81b93f7dd0bc0cf257c1b595ac6effb8f2a78978992a89a24fc9fe4dee"
+    },
+    {
+     "rank": 7,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "ec9afeb5a880dbec02f4b0358742e9a8a9f521a24b88011be7618b451ec6b474"
+    },
+    {
+     "rank": 8,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "b9199e0438dc740c689bf09901b398308d572947f116755298f4137a1eda15bf"
+    },
+    {
+     "rank": 9,
+     "doc_id": "aeed1141c2c6406ba364ef326bcba1f6",
+     "chunk_id": "11705a4909bcd97b8c1a80a96dbce929eccd35e60e665648df873308fa837730"
+    },
+    {
+     "rank": 10,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "fc970aa8e76dfe4d44b2cac135121da331e674f69f1f2cdf5b00ce5d29137243"
+    },
+    {
+     "rank": 11,
+     "doc_id": "844d59d5f24e46a79bff5a4947853cdb",
+     "chunk_id": "ea304fc32c8554f361229079352c95f56fc9ea20c11358409127f565b37a03e0"
+    },
+    {
+     "rank": 12,
+     "doc_id": "9740e181f7b84ba4af1d0692c3cf99d5",
+     "chunk_id": "16135707afb453a60a2862128a508307062242537f9873f8507e753030589be4"
+    },
+    {
+     "rank": 13,
+     "doc_id": "c2952e52266042cf8644a01ea9e53112",
+     "chunk_id": "c6023906d25b55329cf402c3288b5909e5b3f56c506d659df41b84acf8259ae9"
+    },
+    {
+     "rank": 14,
+     "doc_id": "10c1605fb47f4fab82c481d6485e5ff4",
+     "chunk_id": "5059d5a2ebfa91fe31e52fe222d9493f77484dd5a6a1e0b152af39e04257f05a"
+    },
+    {
+     "rank": 15,
+     "doc_id": "ceca9573a2dc4cc78813de21b3702fc2",
+     "chunk_id": "c078e389d59f174d38b3e44ca0403b60cf7403372eb238e544e6005a8d7b0019"
+    },
+    {
+     "rank": 16,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "a00e18b3458df136bfdc2e6a3d98b928c91ab103e9c62540a79086164f802ba3"
+    },
+    {
+     "rank": 17,
+     "doc_id": "cb5144d5ac38493abdec32b16ce9b822",
+     "chunk_id": "f5ca06ebfae9b19979bd1c94705ce38b119ae4022131761d919ac643a7772afa"
+    },
+    {
+     "rank": 18,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "a361aeb0ca3a0cd824a08ef1427815a6a25e39e0b463ee3a1f8255c06ef6fd3a"
+    },
+    {
+     "rank": 19,
+     "doc_id": "dd638451e78e41c48d5b424d353f9793",
+     "chunk_id": "9c3989208fee1d75d2601fa5796044738cf93c642ca031a0b725f4574fd0a87d"
+    },
+    {
+     "rank": 20,
+     "doc_id": "df5e7e8fd4154849a7e210f26e4f6aeb",
+     "chunk_id": "b1f36227af415245add053e4a01cc4cf76502ead1840d07811f7bcda996dedcf"
+    }
+   ],
+   "latency_s": 0.529,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "核物理 系统误差 不确定度 相关研究",
+   "gold_doc_ids": [
+    "162c88cadc3044b3ac78fc8313885745",
+    "23f9b0d400444ec6ba603bc1b2dd82a9",
+    "2566433836aa4a27b4c986780cfb8ec7",
+    "7b78f01debd3446684289e32986d5529",
+    "d5b5f96e4a9340448504fd40d60b5879"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "1ebbc28edeef4845b7e5fe66577f7332",
+     "chunk_id": "2a29d981b7a0a3abd116c6fc632a36cc1812959d524189dfc5dcf07f290b456f"
+    },
+    {
+     "rank": 2,
+     "doc_id": "2566433836aa4a27b4c986780cfb8ec7",
+     "chunk_id": "0468f0a754b523b1a407eb1762fc4434a6aa68d04a4897120857fae6e0b7402a"
+    },
+    {
+     "rank": 3,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "2be5f4365e3028c41e46a6dd6ad2b3280c4a9d4a81bab9fbec22e0c4298fd019"
+    },
+    {
+     "rank": 4,
+     "doc_id": "312f2954886f42c4acca8edc7fffe45b",
+     "chunk_id": "04ec002f3af6ac5f1fe649a603494dfcfb172891d1924195e6673cdc9b130b00"
+    },
+    {
+     "rank": 5,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "2a821140bef73df2af70f325d89f4a7badbd422f40cbe4aab668e882a9f32fd3"
+    },
+    {
+     "rank": 6,
+     "doc_id": "2b40ebc5fb394306890983020d20d129",
+     "chunk_id": "7b1482eaa1d631724597c0d5a085a40a85a127fd595bb984ffb2c4281ab9657b"
+    },
+    {
+     "rank": 7,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "15c22cc6f55ef833ec52d0d4326a86b18b80532bb21ad1ec49c5b57ccb53864f"
+    },
+    {
+     "rank": 8,
+     "doc_id": "162c88cadc3044b3ac78fc8313885745",
+     "chunk_id": "56d245cb5dcee28b2fe87578dcdb31c45bf0a7fa5d43918cd4dce3547811e1a3"
+    },
+    {
+     "rank": 9,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "e9372ee58a8ba8699e9243bd5f93ec7fcf79469feaa373e208a3625b0d377d81"
+    },
+    {
+     "rank": 10,
+     "doc_id": "ceca9573a2dc4cc78813de21b3702fc2",
+     "chunk_id": "c078e389d59f174d38b3e44ca0403b60cf7403372eb238e544e6005a8d7b0019"
+    },
+    {
+     "rank": 11,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "02e7e516a8c99c80c97d0792b1c65ae2f1777f8645fd6053b6562ff3af7680f0"
+    },
+    {
+     "rank": 12,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "1937fe940264a40e02c0a934cdb7e3939b69a7206dea770e1cbd328ba9dd5a19"
+    },
+    {
+     "rank": 13,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "518260c6ffc5b5d621a834f5097b9c84dd2d1810ff5d0616e4b72208edeef524"
+    },
+    {
+     "rank": 14,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "58e204255a1ab0d5d802f629abeb88469d025c63b662aeeef85f1c269a353913"
+    },
+    {
+     "rank": 15,
+     "doc_id": "ed5e1481889f409b805ec44cc1d6f444",
+     "chunk_id": "7a1e3ed0ce58500911d649d67f6885c45c04e9b4c0a893b1a1274290a825dfae"
+    },
+    {
+     "rank": 16,
+     "doc_id": "51a80be59e3048ffbf9abb6b6a212eb6",
+     "chunk_id": "c7b066791baa1af466b8557786d4d35fdf0d219c71b8c1525c77e0e955d944be"
+    },
+    {
+     "rank": 17,
+     "doc_id": "ecebb255bc9a4dc4b55f36f20e2fe513",
+     "chunk_id": "83c0e9f6f423daa8c757c2a28894b720b66f28b3322d8c48e37593b4d0e794a2"
+    },
+    {
+     "rank": 18,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "fa1177573f41902d81f7e42acd50b230d9ea80c37d1ba65eedff4a01fa3501f9"
+    },
+    {
+     "rank": 19,
+     "doc_id": "a7b64e5654e04564a1b57f0122d00a97",
+     "chunk_id": "8e86ee750e306d37c192bda49f2e48b1e65d840ba7732aca9f969c41dc321624"
+    },
+    {
+     "rank": 20,
+     "doc_id": "81abd380b7fb4219beff1cf006b9bca8",
+     "chunk_id": "192f1a5c1c0aec38be5d52040272d23cbce396a5a1e699f8f1b167936042840b"
+    }
+   ],
+   "latency_s": 0.528,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "哪些模块电路使用结构钢材料？",
+   "gold_doc_ids": [
+    "02cfb6dd706545bfb014ed70fbc73ca7",
+    "25eac13d027d4a089014c4c735c21629"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "64f835ed443d408481f4587a69c35b7b",
+     "chunk_id": "df0febf0833660a929e56c48510224b56901dbf3e4bb9eaadda24aa5f1e9ecbc"
+    },
+    {
+     "rank": 2,
+     "doc_id": "2f55e4c61f4641bdaaa06f88206ffe54",
+     "chunk_id": "cf5433db552c9a934c05942d90054ba7e21106eb3219a6fdc9f5966569b50d7c"
+    },
+    {
+     "rank": 3,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "aea408065638e2b711a55ec7e736ef3ab96b93f91a3e8743f6ecd853badb4503"
+    },
+    {
+     "rank": 4,
+     "doc_id": "dd638451e78e41c48d5b424d353f9793",
+     "chunk_id": "cb2d5fe153afe397643a28aa230ff33ef01e09d2479a1ed1637b2e30dd18d4d3"
+    },
+    {
+     "rank": 5,
+     "doc_id": "5027e1b3dfb048a1bd8cb193d0e57b93",
+     "chunk_id": "c2bcc46e2276720f60ac0bd4c343712b3c83bac210d1f2a736305d27386a4fc9"
+    },
+    {
+     "rank": 6,
+     "doc_id": "a60395e9c1454009a95f4c5ea0d3e195",
+     "chunk_id": "3419493e1a3ac9bb742b224b98143e83d3a389e940bac39080b77edc287c3729"
+    },
+    {
+     "rank": 7,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "3cca97d3a5c5806633dc14cfd9971b8776710bb9c4f43527e83c6a59965f44f5"
+    },
+    {
+     "rank": 8,
+     "doc_id": "4768bf2e07aa4f3ea362a48627a2a30c",
+     "chunk_id": "7985d2e623efbd251b6443d7ebfb219daf339ff169303bce51ea58fbdb13ad9c"
+    },
+    {
+     "rank": 9,
+     "doc_id": "e9f09ec17ee34c3d873a8a65ea431f65",
+     "chunk_id": "57d6248bad97c0d2410d84727375b98c38a80a4d988004d81e86c5110be16fbe"
+    },
+    {
+     "rank": 10,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "5711c968273a9ce8ad6a13c3a8c25f67e909b4539a3bc8a71bb5381de6b86442"
+    },
+    {
+     "rank": 11,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "642e6b76a0f0f23b41ca63f39dccd31069bcdc19b3db7702fe8cf6335cceb68c"
+    },
+    {
+     "rank": 12,
+     "doc_id": "d6be8637a7664012ad49fbb0fd24cbfa",
+     "chunk_id": "9b3646664267be484c9be36811bdcd27bb17449acb6e6d8ec531a94483862d28"
+    },
+    {
+     "rank": 13,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "19216f60f429c9ab8f289712590279347237eeebec59c13b651e9a3e6a0e9825"
+    },
+    {
+     "rank": 14,
+     "doc_id": "4f8072ee114749e88e0df6237f1e516b",
+     "chunk_id": "84c38544d12f2832a0c0321711d7d0ae118220d7dbc4b777e3e14eb4a0ddf32e"
+    },
+    {
+     "rank": 15,
+     "doc_id": "6aa934af637e46f686d09508922ed54f",
+     "chunk_id": "4e5bced41f27180f1601f0bb4e71a70dcef5cfcc2905cc1e93ad1ca476661f8f"
+    },
+    {
+     "rank": 16,
+     "doc_id": "2eb25eb829cb464795b07dcc9a576bb8",
+     "chunk_id": "d48715c00dd17a6fbe617540956449caea9e23c57ca0d29f84eaa0d97a5c1739"
+    },
+    {
+     "rank": 17,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "619d491efe78537e1fb4c9a00b59f3ae9d5e1659e7339742c34ae5c205d764cb"
+    },
+    {
+     "rank": 18,
+     "doc_id": "3aed6bac2893400ba7ccf5d5671ca4d0",
+     "chunk_id": "96b919cd081fbaf772c95450979f07a01dc8dc1d5b306bae4c72c6c0b6fae21c"
+    },
+    {
+     "rank": 19,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "2a821140bef73df2af70f325d89f4a7badbd422f40cbe4aab668e882a9f32fd3"
+    },
+    {
+     "rank": 20,
+     "doc_id": "00ef29f707f9494dae763ad063cab5b7",
+     "chunk_id": "67b3f6ffc50f23a91bba0191f52e3a183f56c05c2f39d584965a5ba4f9da0e40"
+    }
+   ],
+   "latency_s": 0.459,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "synchrotron装置中air kerma与粒子通量的相关性",
+   "gold_doc_ids": [
+    "8399a79eee574d03a666b5e595a94c5c"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "8399a79eee574d03a666b5e595a94c5c",
+     "chunk_id": "6475abeb7114e5c1143a0b431416aa37b580ee849c529578e4f7e1cd6fae6500"
+    },
+    {
+     "rank": 2,
+     "doc_id": "99370c67ecfe432ea2bde4b641529a10",
+     "chunk_id": "50707b3fbe9a326dabf2228428df2d86451845bde30b7433639b77bfa57bba0a"
+    },
+    {
+     "rank": 3,
+     "doc_id": "77bca5b09b3c41b3aff15868a1f840d5",
+     "chunk_id": "d56132a3cb11d7791d16c5cae3553aea7dba6c9037f4a048abc42121e8161f4a"
+    },
+    {
+     "rank": 4,
+     "doc_id": "6eb2fc28a6b943f88505f10b07cc2f0d",
+     "chunk_id": "fc0237c69974f25de338eac4669b6ab095a802a59266a6ddde8718fb46b3baeb"
+    },
+    {
+     "rank": 5,
+     "doc_id": "16eb7b49c4254b989648778ab6793691",
+     "chunk_id": "ba62479ae377ad73fd77b59c725196194c7482d7c320481e086c45a95f8a47cd"
+    },
+    {
+     "rank": 6,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "3a84f3fabf85b61adcec769d8a1e328ab153ce71137339ade1e45e847cbef2d9"
+    },
+    {
+     "rank": 7,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "b6ffec016975133a6bf1706e04779ea3ee32fb521cb2cb19d3807d12e937f2c7"
+    },
+    {
+     "rank": 8,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "59a0c644aa085f23e01f21e4a4248c9da4287b3082dfec62e957c66493ebb5e4"
+    },
+    {
+     "rank": 9,
+     "doc_id": "dd2952358a604501869c31e4e5480ff5",
+     "chunk_id": "18be0d4681b7162b511466176d6b7e65dace04eceb063e126ae5d2a4bf443aeb"
+    },
+    {
+     "rank": 10,
+     "doc_id": "90f8be5ec2fc478e9e0be323dc81316d",
+     "chunk_id": "52a8795ed2ad48cecb913ba9635d5bcf66004b3122a056da11d22395de37fd72"
+    },
+    {
+     "rank": 11,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "253fdf752711b971e677646b0fb0df0b69165ddae75e5e91fd390e355f7ec8ef"
+    },
+    {
+     "rank": 12,
+     "doc_id": "dcf2ce862b2848dfa953033cfc437030",
+     "chunk_id": "a77dcaf18db190d254fb506862faa75abe17f0f25bce8a2c683aa516615d6119"
+    },
+    {
+     "rank": 13,
+     "doc_id": "7f4b851dd2e94d4dadd9ea09e1b68207",
+     "chunk_id": "c047436ac7a0295a698b6a0407d7f8b641073066f196d95ffcafe14545778222"
+    },
+    {
+     "rank": 14,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "2117cd33af43c465ea9f4aa93bf3e37f61b4cb0affa404977897f47012b56c43"
+    },
+    {
+     "rank": 15,
+     "doc_id": "02cfb6dd706545bfb014ed70fbc73ca7",
+     "chunk_id": "a6cf04bae61ad3e61077a32e4022696d969e94546b1cc0dd3c232d4516f07d97"
+    },
+    {
+     "rank": 16,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "824682e0a1438fd8fdc45ffda220bedef39c40ab7281d4884f8406adc728874e"
+    },
+    {
+     "rank": 17,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "84af2627052c16dd6d86c200af8c8d77be6faaed722a377deba2c9437d37ccb4"
+    },
+    {
+     "rank": 18,
+     "doc_id": "a936ba1dbe8549279e71a061bc243bde",
+     "chunk_id": "e273443789f39393a657ae04f37a90a6943366c506539262d756c9b8413ab41c"
+    },
+    {
+     "rank": 19,
+     "doc_id": "5afec62371f746b8a6f44a1c118a9975",
+     "chunk_id": "03394cc1f6c943932be8c4784883cc3cc4951ff6d913ee8d7ebb49afc6f9de6e"
+    },
+    {
+     "rank": 20,
+     "doc_id": "48b9a62f6eb5478f94e5721db30c564d",
+     "chunk_id": "ce7cf651caefafd8b24d634706882e9d2e1956f4d6777bdd1f83c5eeb6f5ebe2"
+    }
+   ],
+   "latency_s": 0.524,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "宇宙线缪子在成像与量能器模拟中的研究",
+   "gold_doc_ids": [
+    "10605bcd3ce44eec969e74f5c02fe1dd",
+    "414d5fb773e3449294b8e01aae26f24c",
+    "4ac14d6a9ab74fd689dc6ca11b231356",
+    "ccfaa292256c43c1b947c563214c00f7"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "414d5fb773e3449294b8e01aae26f24c",
+     "chunk_id": "d1108894bc364b092f01f872a75aa5822be5b6a186436c55d5357e5f9a18cf2e"
+    },
+    {
+     "rank": 2,
+     "doc_id": "4ac14d6a9ab74fd689dc6ca11b231356",
+     "chunk_id": "695958b100c24ee1b27faab3b7748ebb27921b2f90ba9facfddd17690178a622"
+    },
+    {
+     "rank": 3,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "0da882a32c58921e3c3535cbce8939ca0d4cecbb938fea886417b4389ec8a64b"
+    },
+    {
+     "rank": 4,
+     "doc_id": "ccfaa292256c43c1b947c563214c00f7",
+     "chunk_id": "fc7808d5f34a8cfb671602411b33ad77ededc08956ae8a34cb8ed835b1941744"
+    },
+    {
+     "rank": 5,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "a7de48d93f72881aeaf2d27eda0f4e71376c2aec74ef846b494acd26f0a70b89"
+    },
+    {
+     "rank": 6,
+     "doc_id": "14791948f67e4038b1edf9387dcabdbf",
+     "chunk_id": "78601f1727afa65ada074e48ea6252445d924eb8449efaf2a64a7f9fad5f6e78"
+    },
+    {
+     "rank": 7,
+     "doc_id": "43648c5ebaf143e687b5a3936a237f00",
+     "chunk_id": "a5b9db9e1ce45c5dda6c0473795cd3a9db8b58b2990d342ff07a2f5a4cf8a609"
+    },
+    {
+     "rank": 8,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "16064a81b93f7dd0bc0cf257c1b595ac6effb8f2a78978992a89a24fc9fe4dee"
+    },
+    {
+     "rank": 9,
+     "doc_id": "81ab67a339564183934e466d2a398f62",
+     "chunk_id": "1b7444b4a888b9aa0810a5f0b135c3941ead54f6985538dd652775e71624526a"
+    },
+    {
+     "rank": 10,
+     "doc_id": "d7f877c96bf9449493aacfe7ac004e88",
+     "chunk_id": "ced175c090e84d5c17998aa2e7d054cd0b86ea77008ecb18c082dfd1e8bf1163"
+    },
+    {
+     "rank": 11,
+     "doc_id": "7f5d98f9f6f742ea83f92c4bc4dc9345",
+     "chunk_id": "eb9572b518b74b8c2655df05d55714390b7c7c7220411091923eabb6a658b005"
+    },
+    {
+     "rank": 12,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "ec9afeb5a880dbec02f4b0358742e9a8a9f521a24b88011be7618b451ec6b474"
+    },
+    {
+     "rank": 13,
+     "doc_id": "fe62161ce46f41cfacd6a1a6f5f242a6",
+     "chunk_id": "e895185827234b2e63b05ca4760cfba1efb96e764c1b848f64568213c1da7a02"
+    },
+    {
+     "rank": 14,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "24d0505ea7acaf9eeda7fcbb9400e9f2696c5000da0976910f9d09f31db54bb8"
+    },
+    {
+     "rank": 15,
+     "doc_id": "df5e7e8fd4154849a7e210f26e4f6aeb",
+     "chunk_id": "025ff1704ceb09d2143281a6862604bf0da4cd0762e70622a099d7c98c4c9101"
+    },
+    {
+     "rank": 16,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "0deea45bd2efbdb01361e721deade89c6152a7866ca1e9b55f64758e7a25df5f"
+    },
+    {
+     "rank": 17,
+     "doc_id": "be6e2372886247faad8f0a73d9111130",
+     "chunk_id": "9678e50ee72d99c4d145fc6cbbbc26f50f747e8fdb46cb9a169a599385e00e1d"
+    },
+    {
+     "rank": 18,
+     "doc_id": "5afec62371f746b8a6f44a1c118a9975",
+     "chunk_id": "03394cc1f6c943932be8c4784883cc3cc4951ff6d913ee8d7ebb49afc6f9de6e"
+    },
+    {
+     "rank": 19,
+     "doc_id": "dcf2ce862b2848dfa953033cfc437030",
+     "chunk_id": "a77dcaf18db190d254fb506862faa75abe17f0f25bce8a2c683aa516615d6119"
+    },
+    {
+     "rank": 20,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "d422a439cdcaedd47323807cea10e7273af7b9e33cfc590fa9f55e7ecff78553"
+    }
+   ],
+   "latency_s": 0.538,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "辐射探测tdc相关电路模块",
+   "gold_doc_ids": [
+    "5bcb837189c64b60a4dd2a1612dd9ac8",
+    "6d38b0442cb942448e3c5b430f39880e",
+    "be6e2372886247faad8f0a73d9111130",
+    "bf487f64352a464981e82773f8846721"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "cc488e09646e1d67c970ad5be5dc4dea42d45997e61fb9dd815b4aa2e75a0576"
+    },
+    {
+     "rank": 2,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "94ba09fad049cf64f41a7e88a2f75aa60431a14c199a8231542234736fce58ab"
+    },
+    {
+     "rank": 3,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "795cecb68a0c9f38738febf4f758cf3a5c6f656a87dfe483de2fbd816d721a80"
+    },
+    {
+     "rank": 4,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "92bacb06b27a3a4515b710c5d1b92999ff334ea0e8f1de64a3ad7d9fd7dd31a2"
+    },
+    {
+     "rank": 5,
+     "doc_id": "2cc72bcbad214c11b44709816fca29b0",
+     "chunk_id": "455da367ba10bf2ade5a2106e2f2289e5a5ed82fa3b03a60e3e94fe9ff9f9598"
+    },
+    {
+     "rank": 6,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "d442b3a69d09e8ac5d5565e6182f0716a3db2f01700393c07feb6100a371af0d"
+    },
+    {
+     "rank": 7,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "17c6581ad36916f01686d5bdee993604c7608090a8dbd5e122791ffb135ee8fb"
+    },
+    {
+     "rank": 8,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "98869e026ea9fef397b769d2e3728c719c27613aa9bcb19dd1dbbf66ebb90a9b"
+    },
+    {
+     "rank": 9,
+     "doc_id": "6aa934af637e46f686d09508922ed54f",
+     "chunk_id": "7e051203b3e87a179915f322dfa6ec1f08c999493ee6e4426b5c4746f7beff04"
+    },
+    {
+     "rank": 10,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "f3f37d0aedc5bbb5804c3d1fbb00ba52c41cd907005876e6dbc72b8db2c4e322"
+    },
+    {
+     "rank": 11,
+     "doc_id": "be6e2372886247faad8f0a73d9111130",
+     "chunk_id": "9678e50ee72d99c4d145fc6cbbbc26f50f747e8fdb46cb9a169a599385e00e1d"
+    },
+    {
+     "rank": 12,
+     "doc_id": "290e438bb9bc423ca6f80bc595586b5a",
+     "chunk_id": "cabff71beccedef3abc9112a28c59c9567db96a13357cbcbfa7071d5b64bcdb9"
+    },
+    {
+     "rank": 13,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "d495088fc58098a6c372ad5278b418903f6700deda215d7aefe3b7703f19b792"
+    },
+    {
+     "rank": 14,
+     "doc_id": "078a2f931b07443b9570a1634fe54375",
+     "chunk_id": "a555cc199ae7e2c36d318efa97e813884d61c9e2e8d8093df72b50bd6276979d"
+    },
+    {
+     "rank": 15,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "38a462eb3f67c9ae0565fcf209d513826c0fade6132df1f03d3fda5520ebf117"
+    },
+    {
+     "rank": 16,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "18ee7f6ccf3e5ecee2c9c9df51cd5a5e3664a9c8791fe0dc33ccf4e07773ab6b"
+    },
+    {
+     "rank": 17,
+     "doc_id": "05e6f239b6d6466db5eaee3e5f29902b",
+     "chunk_id": "c5fcc40df299b2713752308045d647aa7574445aa0e4becec5deb391abf2021e"
+    },
+    {
+     "rank": 18,
+     "doc_id": "f5ed787eb04f49a49e2546774adfd529",
+     "chunk_id": "343f7467828e9f6c4ab47b815afb1711f58809ded44bc8da8b9162c72d470787"
+    },
+    {
+     "rank": 19,
+     "doc_id": "855174d0f49241179b5e87753f25e80d",
+     "chunk_id": "6305a69bdbc4c1abef6f96f7f3b2919dffc46fb3ff064788c1c517bc287ca024"
+    },
+    {
+     "rank": 20,
+     "doc_id": "703536066dba4ab1a8723b7b2433cf6c",
+     "chunk_id": "5fc30a656c3a0cd26b7a687a61b3ff25e74c8ba9e53ddee1e35586407d0a1016"
+    }
+   ],
+   "latency_s": 0.503,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "我想找提过同位素和同位素产额的核科技文献。",
+   "gold_doc_ids": [
+    "2ad958a5614a48c2b3ce39e216c426e9",
+    "7ea72b3ae8b947baa0e5475af227e80f"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "fc970aa8e76dfe4d44b2cac135121da331e674f69f1f2cdf5b00ce5d29137243"
+    },
+    {
+     "rank": 2,
+     "doc_id": "d0df529c2b794bdba3b5c63e49593301",
+     "chunk_id": "b3abb057dc76eeea6759a85892d01a8ae8ccade738b01e67f64bf597c89d1b82"
+    },
+    {
+     "rank": 3,
+     "doc_id": "abd509a6eba846cbab0f2e2c02fac19f",
+     "chunk_id": "c1b2761d4cf89c70931ca7b24a18c58f3461009f3912c47b27fda07bb9121da0"
+    },
+    {
+     "rank": 4,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "c53c2a0f184867dbb9f46c5f46d528aaf0b87acbcb3c01bc15ce9ab55ecff0b7"
+    },
+    {
+     "rank": 5,
+     "doc_id": "d077aba29a1144daab6a902cf44639b0",
+     "chunk_id": "cbc96b4d25afcd91143f63549cfdad141bf156761b17a3fbc8a04b8d6ad48ec7"
+    },
+    {
+     "rank": 6,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "1c990d214ec4846a85737bfe9036b59160aa7fc0bb63d11a983cbfdf364da552"
+    },
+    {
+     "rank": 7,
+     "doc_id": "99b3494a69a3476d9f286b1c5f3f6b69",
+     "chunk_id": "5dd52ca7f20c62b03ad0e31c5233734635ccc8b9d0a50b62b8a4e7613c24a572"
+    },
+    {
+     "rank": 8,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "2be5f4365e3028c41e46a6dd6ad2b3280c4a9d4a81bab9fbec22e0c4298fd019"
+    },
+    {
+     "rank": 9,
+     "doc_id": "ceca9573a2dc4cc78813de21b3702fc2",
+     "chunk_id": "c078e389d59f174d38b3e44ca0403b60cf7403372eb238e544e6005a8d7b0019"
+    },
+    {
+     "rank": 10,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "f15489ae6e2f9cb92ebf05da457bc113e92d4c6166b7fea72df56bbee30f1dae"
+    },
+    {
+     "rank": 11,
+     "doc_id": "c91b4d2df5e7428599184599bcab85f2",
+     "chunk_id": "dffa51a1023bcd9b8111788df4352e8312d000b5dae83b8bf617cdd073a57883"
+    },
+    {
+     "rank": 12,
+     "doc_id": "aeed1141c2c6406ba364ef326bcba1f6",
+     "chunk_id": "11705a4909bcd97b8c1a80a96dbce929eccd35e60e665648df873308fa837730"
+    },
+    {
+     "rank": 13,
+     "doc_id": "81abd380b7fb4219beff1cf006b9bca8",
+     "chunk_id": "192f1a5c1c0aec38be5d52040272d23cbce396a5a1e699f8f1b167936042840b"
+    },
+    {
+     "rank": 14,
+     "doc_id": "a98c8fdd65ae49eeaa50e341701b3876",
+     "chunk_id": "89aaf844d3f8202af026e5b963f680006dfbf757d306588cc3eba69d10e5309f"
+    },
+    {
+     "rank": 15,
+     "doc_id": "fbf7d2eccb8a4acab9f334e0f15c210d",
+     "chunk_id": "4d7c9704d5cd8840be25eaa48365d32c4db7d0ea2089e67b050bd9af0e98677f"
+    },
+    {
+     "rank": 16,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "9ccc756ed959d26680a50bd38287d7b99a9c461c5cc82bd2de2923287b9abdba"
+    },
+    {
+     "rank": 17,
+     "doc_id": "9d1d0ed5bb594a269f83fe8b3d9e3549",
+     "chunk_id": "f14a29f4a020c0772809268c624344ce7e2953e832cd7c265ed2700ad686764a"
+    },
+    {
+     "rank": 18,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "67edfa71982cfde7d9ff5001810eeb3ebd3c1691932fda6439c6fd815c005f1a"
+    },
+    {
+     "rank": 19,
+     "doc_id": "2dc6aea717814b18bc478839a506c2d9",
+     "chunk_id": "efc68d3b2ab1e49175ff95de5485f1abc2c1315a6ada899c016c301eb9b782fd"
+    },
+    {
+     "rank": 20,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "aa99e936127157dfa16b09aed3a554c1d43bb6e93b20db74e31c186c6469de1a"
+    }
+   ],
+   "latency_s": 0.472,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "前端电子学在读出热敏辐射探测元件时，硬件系统怎么设计？",
+   "gold_doc_ids": [
+    "12d08ae87ba642f89b714bfad09031d7",
+    "3aa708726abd416eba8f9b6afc5be99a",
+    "3eec360fc7bc48d98d67205c98b80e28",
+    "4f8072ee114749e88e0df6237f1e516b",
+    "855174d0f49241179b5e87753f25e80d"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "c7ffa3065d37ee3126539baa745c0173f3b80039d0846379185d4223801276f4"
+    },
+    {
+     "rank": 2,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "98b0b67713c84c5bcdc1e7ee9bc128942cf2bf92bd152b72dd3d0edb6a614d42"
+    },
+    {
+     "rank": 3,
+     "doc_id": "703536066dba4ab1a8723b7b2433cf6c",
+     "chunk_id": "b104d8aee833d3ede3ef4ad15072539f86d0dbcb0e13c5587443af7fe76f853c"
+    },
+    {
+     "rank": 4,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "0fcc461fe5329822c308284f4e01ff060f27c79bab14a200ae3d155e933062f0"
+    },
+    {
+     "rank": 5,
+     "doc_id": "f5ed787eb04f49a49e2546774adfd529",
+     "chunk_id": "343f7467828e9f6c4ab47b815afb1711f58809ded44bc8da8b9162c72d470787"
+    },
+    {
+     "rank": 6,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "ab6b29d18bc9cae7cdf60f7f2c1a63f4d03c36ca3d51826da07cf61df824955a"
+    },
+    {
+     "rank": 7,
+     "doc_id": "df5e7e8fd4154849a7e210f26e4f6aeb",
+     "chunk_id": "d1f3aa9984f754a41a48b04a70b1dfa2043e95924762951d73f7d153f503a7fa"
+    },
+    {
+     "rank": 8,
+     "doc_id": "43648c5ebaf143e687b5a3936a237f00",
+     "chunk_id": "254853e2cae42c6dca12bb64d3bb5b176169d6a3f6e8357a09413f49958d8464"
+    },
+    {
+     "rank": 9,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "2fb6124a68c8f152f72c65b5f79e5850608a29c3f0ec89fda819696f23c4ea60"
+    },
+    {
+     "rank": 10,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "760e4a6342cebfeff7faacd1de507b0d36598c6f7052dc378ffe47acf8a87475"
+    },
+    {
+     "rank": 11,
+     "doc_id": "4f8072ee114749e88e0df6237f1e516b",
+     "chunk_id": "84c38544d12f2832a0c0321711d7d0ae118220d7dbc4b777e3e14eb4a0ddf32e"
+    },
+    {
+     "rank": 12,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "7c92e2d1be5488991abeef150a716e6154291c7e49d1dc767c4c816c14f2c306"
+    },
+    {
+     "rank": 13,
+     "doc_id": "be6e2372886247faad8f0a73d9111130",
+     "chunk_id": "2a7784ebc4103c650d29963a27235fdd7057501078f9fb75c1c4f2c7a967a6a4"
+    },
+    {
+     "rank": 14,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "85abd1fc4b44abc497b869c0e5b8048f8c1dc031f3f4bfe2c2963f7bb7df20b4"
+    },
+    {
+     "rank": 15,
+     "doc_id": "a36ed563f01a46efb47f6db24589a0d1",
+     "chunk_id": "5ff9e3c911bddf2491e6a717bca0f85e8fa5ae59e7ba71f9c783d21f1a6e12f6"
+    },
+    {
+     "rank": 16,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "defc2dc0f9627c7d3a8e0a203fc5cdd92de5fae4f5f47a0a107e18bc690ebe3d"
+    },
+    {
+     "rank": 17,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "a54946853f1456ade6681b797c17ef5dcdaa1cf947f18fd3e57e4d78179b2927"
+    },
+    {
+     "rank": 18,
+     "doc_id": "fe62161ce46f41cfacd6a1a6f5f242a6",
+     "chunk_id": "e895185827234b2e63b05ca4760cfba1efb96e764c1b848f64568213c1da7a02"
+    },
+    {
+     "rank": 19,
+     "doc_id": "dcf2ce862b2848dfa953033cfc437030",
+     "chunk_id": "a77dcaf18db190d254fb506862faa75abe17f0f25bce8a2c683aa516615d6119"
+    },
+    {
+     "rank": 20,
+     "doc_id": "855174d0f49241179b5e87753f25e80d",
+     "chunk_id": "a86d224bf96080c13655d910ee36850c75d79971290c62e6c4a15645b2eb5c92"
+    }
+   ],
+   "latency_s": 0.541,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "查用高压两段加速装置做低能核数据与核结构研究时分析不带电轻产物的文献",
+   "gold_doc_ids": [
+    "2b40ebc5fb394306890983020d20d129",
+    "3ae44748f26248509ac44494b7a3e386",
+    "ca1c7138787b4f389e76ce6bdf7291a2",
+    "ceca9573a2dc4cc78813de21b3702fc2",
+    "d0df529c2b794bdba3b5c63e49593301",
+    "ff3850f9a50a4ad7aca0575edef57120"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "2be5f4365e3028c41e46a6dd6ad2b3280c4a9d4a81bab9fbec22e0c4298fd019"
+    },
+    {
+     "rank": 2,
+     "doc_id": "6dae33fe33e747ac9b67e2e6c509f9fc",
+     "chunk_id": "26a22af2a764d5f663c90555e7bc07dbba8058bc91169643b5e66b64158d2270"
+    },
+    {
+     "rank": 3,
+     "doc_id": "ceca9573a2dc4cc78813de21b3702fc2",
+     "chunk_id": "a7c4b1e5817f62bc28e3ad11aa39d51cfca5281bd808b91afa01d4ddc875574e"
+    },
+    {
+     "rank": 4,
+     "doc_id": "7ea72b3ae8b947baa0e5475af227e80f",
+     "chunk_id": "875a77e542d834de9bf5ba3cefe1182ecdae99b17c78a146937a7ed3fa38d632"
+    },
+    {
+     "rank": 5,
+     "doc_id": "5afec62371f746b8a6f44a1c118a9975",
+     "chunk_id": "67dd73dc659e5462c76f686f51c7741a0f621de6ee2de8aaafc6090b345cc87e"
+    },
+    {
+     "rank": 6,
+     "doc_id": "be6e2372886247faad8f0a73d9111130",
+     "chunk_id": "93896a37495cf94c6d03b995289db677eb298a0dd74265c5e91b7c8f0db00a58"
+    },
+    {
+     "rank": 7,
+     "doc_id": "ca1c7138787b4f389e76ce6bdf7291a2",
+     "chunk_id": "1937fe940264a40e02c0a934cdb7e3939b69a7206dea770e1cbd328ba9dd5a19"
+    },
+    {
+     "rank": 8,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "886c4fc548c130cf1e23a2d08ae5d35d1ae860d9f1bceec9c869cf87f1f4e87b"
+    },
+    {
+     "rank": 9,
+     "doc_id": "2b40ebc5fb394306890983020d20d129",
+     "chunk_id": "7b1482eaa1d631724597c0d5a085a40a85a127fd595bb984ffb2c4281ab9657b"
+    },
+    {
+     "rank": 10,
+     "doc_id": "a98c8fdd65ae49eeaa50e341701b3876",
+     "chunk_id": "89aaf844d3f8202af026e5b963f680006dfbf757d306588cc3eba69d10e5309f"
+    },
+    {
+     "rank": 11,
+     "doc_id": "7e2c36a877374a858f3db06644a72295",
+     "chunk_id": "6bda99dcf0a3138c4561828fe1269a432ecf87ecba178d5f534b8121f7a0c473"
+    },
+    {
+     "rank": 12,
+     "doc_id": "2f648caa126c4619ba789fe914d33d5c",
+     "chunk_id": "15c22cc6f55ef833ec52d0d4326a86b18b80532bb21ad1ec49c5b57ccb53864f"
+    },
+    {
+     "rank": 13,
+     "doc_id": "1ebbc28edeef4845b7e5fe66577f7332",
+     "chunk_id": "ed95ab04b591a09903d845aecacc9eba2920af53776b0d1a7c5671c370b766d5"
+    },
+    {
+     "rank": 14,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "afc831ee3ad2e5cb6dac84c6cee70d05dc6efc8bf73d6fb1d401f7563fcbc484"
+    },
+    {
+     "rank": 15,
+     "doc_id": "ff3850f9a50a4ad7aca0575edef57120",
+     "chunk_id": "4ef4814118767c1e81805d0b0bb25541a0221aad82ec68167a47233b3f1924d6"
+    },
+    {
+     "rank": 16,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "29c972a42d5e0567df178532871762bb373161e6b42db5697dead2d97ea05bb2"
+    },
+    {
+     "rank": 17,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "afe8c18fb64c64651b939baa0f9d4ffff76f79d6f2168223307f0f4f26fab3d6"
+    },
+    {
+     "rank": 18,
+     "doc_id": "48b9a62f6eb5478f94e5721db30c564d",
+     "chunk_id": "eb15b9efbe4c627e693ab7b2eac510ad791c248c69cb78b632bd0debf5d9d65e"
+    },
+    {
+     "rank": 19,
+     "doc_id": "23f9b0d400444ec6ba603bc1b2dd82a9",
+     "chunk_id": "7bf1972d0609de0e49ad3f4a3ea520e4746a2bb996c96ca05b722ad901f622c4"
+    },
+    {
+     "rank": 20,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "16064a81b93f7dd0bc0cf257c1b595ac6effb8f2a78978992a89a24fc9fe4dee"
+    }
+   ],
+   "latency_s": 0.488,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "如何用铅室提高水体放射性在线监测装置的探测效率？",
+   "gold_doc_ids": [
+    "3deac94b6d2744989b78ab2cbfc500e0",
+    "cb5144d5ac38493abdec32b16ce9b822"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "cb5144d5ac38493abdec32b16ce9b822",
+     "chunk_id": "2237c73142b8e27bdf66fccfd27055abd49b8a6758052fcb418cfde12265f232"
+    },
+    {
+     "rank": 2,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "4d0c626fff17bb9d393b29ecf5d83496695c68ee47680649b7a27d0ad88d242b"
+    },
+    {
+     "rank": 3,
+     "doc_id": "87a31bfd43ff4a59837fe8f72b2e744b",
+     "chunk_id": "57149c4c285b642a220e4ddac0dbb925713edb36b4d12389e2e466798460eaa4"
+    },
+    {
+     "rank": 4,
+     "doc_id": "2dc6aea717814b18bc478839a506c2d9",
+     "chunk_id": "3b4b190bc062a2f652a694e30bdd45d055d03b5f8c1321885b2b458cadc38ad9"
+    },
+    {
+     "rank": 5,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "27152a7617fa810acb0bf66a7cf828a1822c38a28966810888cd2e1671f1d2c6"
+    },
+    {
+     "rank": 6,
+     "doc_id": "c2952e52266042cf8644a01ea9e53112",
+     "chunk_id": "dcacaf948fd15227114247d9e60b02d844b3c62d03aad1061026265924422bf6"
+    },
+    {
+     "rank": 7,
+     "doc_id": "43ce5070387d4591a866ffd7a5558231",
+     "chunk_id": "0c9733978354665d8a5e93540094652679bde87afe5991ac97b1c9298ace63be"
+    },
+    {
+     "rank": 8,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "6a1e07c458dc9b643d7635d6f9d64782bce5cccea7630ec91f8bb5ca71a49580"
+    },
+    {
+     "rank": 9,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "75cb4b7aa1693c9e5655fc1e31b4c18bff22473c8a68c8b41d29adc7de7b8335"
+    },
+    {
+     "rank": 10,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "9d753f34c459fa02dedbfe5e14fc7a2851a1ed3bd8f8125807c667c84afad5f1"
+    },
+    {
+     "rank": 11,
+     "doc_id": "81abd380b7fb4219beff1cf006b9bca8",
+     "chunk_id": "192f1a5c1c0aec38be5d52040272d23cbce396a5a1e699f8f1b167936042840b"
+    },
+    {
+     "rank": 12,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "d21eaa7e00aa3de72a8ac6c75e74e82b5b2f22c900bd99ac968d2739171b489d"
+    },
+    {
+     "rank": 13,
+     "doc_id": "0e4bfcfcabfa47c69fb14d1d6f8fe03c",
+     "chunk_id": "46ab51130d4eb67c44f2c01edac76ae0baa7f81e5ddd391a1d112880af541fc1"
+    },
+    {
+     "rank": 14,
+     "doc_id": "90f8be5ec2fc478e9e0be323dc81316d",
+     "chunk_id": "07dded6455ddf00aa880d39ed936b2d10e9082feddd5dca90239e8e58b29e9ad"
+    },
+    {
+     "rank": 15,
+     "doc_id": "dcd0ef5b938443f98eb98407af1a5d8c",
+     "chunk_id": "9eb8d8937da92643b513e8d13a602c77ec9ad042023a1409b9a4894dada62b68"
+    },
+    {
+     "rank": 16,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "0ccb1367746519beff29b685d56ad24083cd3797e27be3f963eed251ee3e4201"
+    },
+    {
+     "rank": 17,
+     "doc_id": "1ebbc28edeef4845b7e5fe66577f7332",
+     "chunk_id": "ed95ab04b591a09903d845aecacc9eba2920af53776b0d1a7c5671c370b766d5"
+    },
+    {
+     "rank": 18,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "4e28c01097c731b22a56e60b5f941700a1f9c77de3b56b4022dcb5e3bf8ccad1"
+    },
+    {
+     "rank": 19,
+     "doc_id": "a7b64e5654e04564a1b57f0122d00a97",
+     "chunk_id": "8e86ee750e306d37c192bda49f2e48b1e65d840ba7732aca9f969c41dc321624"
+    },
+    {
+     "rank": 20,
+     "doc_id": "99b3494a69a3476d9f286b1c5f3f6b69",
+     "chunk_id": "1162d31d8763028383b7e4dc6c757976876897787b002768c96897d20c9bf64e"
+    }
+   ],
+   "latency_s": 0.55,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "帮我查一下熔盐除杂里用冷指做定向凝固的文献。",
+   "gold_doc_ids": [
+    "85e60ba5f04d498eb728e3aa37f19643",
+    "e48daf1d88af44009b4cd8b869605323"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "e48daf1d88af44009b4cd8b869605323",
+     "chunk_id": "48fdef2573248261ebf96fc9f29007639fe3ec09b9369948e37a8cade1211f6c"
+    },
+    {
+     "rank": 2,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "e93ac6a846f267961f101a14eadfffadff6516fb01094b16765d0075142cd970"
+    },
+    {
+     "rank": 3,
+     "doc_id": "316be7d88b974ed1acbdf5e467e6f917",
+     "chunk_id": "0850fb81b1de4c58efb1fc1525a43c2d9a800631068a8384fa9a728cde3fb47d"
+    },
+    {
+     "rank": 4,
+     "doc_id": "2250990ef3db4fa58aeae78d2b9b6c35",
+     "chunk_id": "3adb52cec5bbf6b0c90212d9910384b4eb501d21a94120f1c1f201ace9dadf23"
+    },
+    {
+     "rank": 5,
+     "doc_id": "72870a384d48453395c0047e1e1e2983",
+     "chunk_id": "a83f681f9b04d77055bb4d5f8a78f1ad032170f14d7e0e0a1edc2b1a52fc06d5"
+    },
+    {
+     "rank": 6,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "7b7cba0bcd8ecaecb0ea6773654a1be2ea04ed3cc94e384ccb6c7d078a5d1e9b"
+    },
+    {
+     "rank": 7,
+     "doc_id": "63c3739924d74f949e45b2e6035801e1",
+     "chunk_id": "a8b68affc3cabc4c95d38bee347d8ef2a190bc83c0d15084669f5e4e9719dd06"
+    },
+    {
+     "rank": 8,
+     "doc_id": "2b3fd0c3005d4a318ca980e690775b24",
+     "chunk_id": "6873c2e82de32987feee650c22a2a980baacc6e52be3cffc41f98b770dacfd05"
+    },
+    {
+     "rank": 9,
+     "doc_id": "e9f09ec17ee34c3d873a8a65ea431f65",
+     "chunk_id": "1f6ba915fecc641694337ad6501558935f82b6e6a55ca50c33e6f8464c798412"
+    },
+    {
+     "rank": 10,
+     "doc_id": "87a31bfd43ff4a59837fe8f72b2e744b",
+     "chunk_id": "57149c4c285b642a220e4ddac0dbb925713edb36b4d12389e2e466798460eaa4"
+    },
+    {
+     "rank": 11,
+     "doc_id": "9a45b4b375074729810052e51ce0e1e4",
+     "chunk_id": "679e70111bfbf43823d8f38dcde435d36e42ff6d251f374cf320eef8f53f888b"
+    },
+    {
+     "rank": 12,
+     "doc_id": "809c28f9ff70434da4d24ddbf4ef4b32",
+     "chunk_id": "5a8b2462147c6f1ba9fb05f521e10cabb746fe2889903650b1f046097ce1c7bc"
+    },
+    {
+     "rank": 13,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "e5e3037de198b707933c90761d4b630153ffbfc978fffefcc3d1b508aa2362be"
+    },
+    {
+     "rank": 14,
+     "doc_id": "91aeee772ac949bd9f49dd951fcb462e",
+     "chunk_id": "c480ca06b722e6ac4d8ca9c76ceb8ac08c80ed2191cc4154bb9f8ecb44fab2e7"
+    },
+    {
+     "rank": 15,
+     "doc_id": "e48daf1d88af44009b4cd8b869605323",
+     "chunk_id": "bb33e7f9dbfeeb68c23f8ddcfec47ded497eecc5e8e97f2fe199b1024a554e0c"
+    },
+    {
+     "rank": 16,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "b700b44e037e77d6f72da646138a883cb8dbb1b06b044c7b1bd9fc677ceee25d"
+    },
+    {
+     "rank": 17,
+     "doc_id": "316be7d88b974ed1acbdf5e467e6f917",
+     "chunk_id": "c8c52968e5314c68cbd339491c1b9aa7fed4b89d45ecce7c4241f9eb23ea3f15"
+    },
+    {
+     "rank": 18,
+     "doc_id": "2250990ef3db4fa58aeae78d2b9b6c35",
+     "chunk_id": "6aacf476d8ee92adde03c239bde34671733e811b6046abb00820d0786e06b5e7"
+    },
+    {
+     "rank": 19,
+     "doc_id": "72870a384d48453395c0047e1e1e2983",
+     "chunk_id": "ae703544d79e0a77766f4021491ed437cbaa5deca3427ad8e2aa81ce95d17a21"
+    },
+    {
+     "rank": 20,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "3917de0f239b0a070496680d8d7f75aa28f212d0b12515274e6aea607937a1a5"
+    }
+   ],
+   "latency_s": 0.498,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "查一下全相干光源分支线，环形光源到实验站之间磁输运通道的聚焦设计。",
+   "gold_doc_ids": [
+    "c187b4913536424883be22b865af3bb2"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "7fa4753a57516ea79439b851151c8cec5edf6e02edd2f915230bb036063a7491"
+    },
+    {
+     "rank": 2,
+     "doc_id": "99370c67ecfe432ea2bde4b641529a10",
+     "chunk_id": "9cff43bc3e42da69d16abfad415a19aa6bbce27ebdcc2b3dd80517677f4649a0"
+    },
+    {
+     "rank": 3,
+     "doc_id": "44198d5322964c07856f403cb5876961",
+     "chunk_id": "927a1f5fa5136e215b60570d5bccb1f35b12b19e76a953d3be1d6afacfd9298f"
+    },
+    {
+     "rank": 4,
+     "doc_id": "e00af04ab2484ec6aeb2f083e2a819fa",
+     "chunk_id": "867243e232eaac56d3a61f1dfc14208f2358db5f7cd2b3fb2265c06b8002fbf6"
+    },
+    {
+     "rank": 5,
+     "doc_id": "a58700f9de8143e2ab408772cd709215",
+     "chunk_id": "42f76c9f39baeae9a2e98c8caaf26e1395a8d9ade7c2bd876e1c594b24e069b5"
+    },
+    {
+     "rank": 6,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "bc802f685ea76877f137456aec6f476e06b4f40fab96f61a26589a42b6c1c788"
+    },
+    {
+     "rank": 7,
+     "doc_id": "45be62b3b4e44fa19f1af0066ae8aa74",
+     "chunk_id": "ab75d59e3425b3555d807f7cda3311d0051a4ad63d165ae9775d4845a62f226a"
+    },
+    {
+     "rank": 8,
+     "doc_id": "20280e875db748769971bc36cd95deb0",
+     "chunk_id": "d6d21c7c0d5cc45374f5e636886965337a216958992e685a764e73006b1d04c6"
+    },
+    {
+     "rank": 9,
+     "doc_id": "079d82fbf30349a7904921e9ac50b50c",
+     "chunk_id": "cf76001531cc0ef7909a9b27cd99d498fd499dabc5f20e913b25d0ba4ffffe44"
+    },
+    {
+     "rank": 10,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "a945518229a9f85c1dff863c05000b72467e9ec20f87fe4180fa32ffc51e944e"
+    },
+    {
+     "rank": 11,
+     "doc_id": "5d90d8af59a744728185b76ff7eb428d",
+     "chunk_id": "4bd592c9450e9bc275da68525a6ad2a16f502b64f3a9113cd9d163994cf9e8a7"
+    },
+    {
+     "rank": 12,
+     "doc_id": "5027e1b3dfb048a1bd8cb193d0e57b93",
+     "chunk_id": "4ba78e7ee7b7f4355f0cbab94e32ef2a7c1ab3a07b247d87a26f31125d3e4732"
+    },
+    {
+     "rank": 13,
+     "doc_id": "6eb2fc28a6b943f88505f10b07cc2f0d",
+     "chunk_id": "e3792495e4c2b0686199153bc5eccd1f2cea85423e5e62026911677c781a8783"
+    },
+    {
+     "rank": 14,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "28f5d31d23f8e6fa1e83886348fc07c96d807e635e6341cab23fa1d2e8f54f5e"
+    },
+    {
+     "rank": 15,
+     "doc_id": "fe62161ce46f41cfacd6a1a6f5f242a6",
+     "chunk_id": "5702d5c693e5d5c93109dfeb8c28dffafc2b7ba45e4279e74eec48dcee8375f6"
+    },
+    {
+     "rank": 16,
+     "doc_id": "add04d041509451caf147c7eba0e7c09",
+     "chunk_id": "302d27f785b69b1dde84e1ef4c9dd696c2403cd006a85d109ba0cfd26d71eb66"
+    },
+    {
+     "rank": 17,
+     "doc_id": "c46f29956e65490e968ce3ef1f8c110e",
+     "chunk_id": "4b0495fdcf7bdcd96160b2177981bacf9f7ea0ee1abed713ea8ea328412babdc"
+    },
+    {
+     "rank": 18,
+     "doc_id": "424540ac7bf840478ccae7fee7cd2f59",
+     "chunk_id": "cf23b336b7810501da32131747d4c57216bfdb1e0f15211c8490fdc6b699988d"
+    },
+    {
+     "rank": 19,
+     "doc_id": "af06e56794fe4abdb8be40ed340da7b5",
+     "chunk_id": "17ffb8de76d83170bd78929796d50a1935173eacdbfefc60900be5f4a2f8ec14"
+    },
+    {
+     "rank": 20,
+     "doc_id": "dc3419725b92499c9986a216a777795c",
+     "chunk_id": "f13906dd7bbd30700ea0efcb92b8f1a08e192d842c033aed48d73d896eccbcbd"
+    }
+   ],
+   "latency_s": 0.536,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "粒子探测里TDC怎么记录事件时间？有文献吗",
+   "gold_doc_ids": [
+    "3ddfd77390ca49febadf828706a0197b",
+    "423619890ff247d084ea986ea7aea182",
+    "50b952cb4ef949bb93843a2dcc4e4a92",
+    "5bcb837189c64b60a4dd2a1612dd9ac8",
+    "be6e2372886247faad8f0a73d9111130",
+    "e4c713ee593a412c946c2a8c0c61cb3b"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "c7f48eaed3d4490283970092e96865ba",
+     "chunk_id": "cc488e09646e1d67c970ad5be5dc4dea42d45997e61fb9dd815b4aa2e75a0576"
+    },
+    {
+     "rank": 2,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "26c64708c9c1ad007bc76b5b238da3a2e2a10d87361a749a05cc27641cd761a7"
+    },
+    {
+     "rank": 3,
+     "doc_id": "f39d49f647124f94b1fa1cd0b2c2b60c",
+     "chunk_id": "4fd1420945e8b609717b6ccd153ade513803061fef7fbb29119e093f4e67c6b3"
+    },
+    {
+     "rank": 4,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "7c6e18996ea00ddb332b467c67efad10ad2178ed5804487bb441c2559abf9e01"
+    },
+    {
+     "rank": 5,
+     "doc_id": "e4c713ee593a412c946c2a8c0c61cb3b",
+     "chunk_id": "dfd68a88297bc722ae2eeaf454da48d63104dcdb688d3fc797f60134895426c9"
+    },
+    {
+     "rank": 6,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "0fcf29936b01c00c4fcdfcb7975368f5ec4d19ff2ac3d204a06560b8c1701432"
+    },
+    {
+     "rank": 7,
+     "doc_id": "be6e2372886247faad8f0a73d9111130",
+     "chunk_id": "b7a59cc4679007847794c8d912feab66819df733c2978b0c4e14c225895f1055"
+    },
+    {
+     "rank": 8,
+     "doc_id": "ff3850f9a50a4ad7aca0575edef57120",
+     "chunk_id": "048f780b71e205fd09604f8fe8eff8c78f25edf58b0b28d0a105cb0c429e32eb"
+    },
+    {
+     "rank": 9,
+     "doc_id": "0b6b54ced421431a8973a729cf5ab44c",
+     "chunk_id": "170452fb3fff507ac0200d96860bd4d72376749d0920df513606b1a59f97c422"
+    },
+    {
+     "rank": 10,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "4d8445e348cc174f2afcd4df631372f3489c4ca43dbcbc8fbcaa44a6064ef244"
+    },
+    {
+     "rank": 11,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "6a1e07c458dc9b643d7635d6f9d64782bce5cccea7630ec91f8bb5ca71a49580"
+    },
+    {
+     "rank": 12,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "321acc2aa47fb0a8e2dddf6ce6533e4a37b235629de202b4aa9e02382f056f39"
+    },
+    {
+     "rank": 13,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "38a462eb3f67c9ae0565fcf209d513826c0fade6132df1f03d3fda5520ebf117"
+    },
+    {
+     "rank": 14,
+     "doc_id": "df5e7e8fd4154849a7e210f26e4f6aeb",
+     "chunk_id": "cbe057ef90f5a7b22d423ac469ab1220015d761f2612172b137bac547fb7ec3c"
+    },
+    {
+     "rank": 15,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "20a3b72f89945dfb9e619c3a7544a258440c4de54f68879477da8316d1d3d733"
+    },
+    {
+     "rank": 16,
+     "doc_id": "844d59d5f24e46a79bff5a4947853cdb",
+     "chunk_id": "0dba3fc2a4265e2dd080a208be68cb3f6701fd29e132b49108a0df91340a4ccd"
+    },
+    {
+     "rank": 17,
+     "doc_id": "69bd3f491f8f408e89382138ff6a9c84",
+     "chunk_id": "c30d436088da95876b95bca35cf666e3ed9d5334925a1768e16bd914534b7306"
+    },
+    {
+     "rank": 18,
+     "doc_id": "73f3ddca22784361811b14131d12aa43",
+     "chunk_id": "251d5681deecfd1d271a22556798d888d4736edc64e8688ac37397f5bd63a963"
+    },
+    {
+     "rank": 19,
+     "doc_id": "40b7b166eb90461b9356a752fcbc0451",
+     "chunk_id": "e93bf1e80000e32879ab3ae023fcbbb8488e641f35150a8d5eb68bb0b0889e2e"
+    },
+    {
+     "rank": 20,
+     "doc_id": "ca89544c0f8743f7a742031ca46ca864",
+     "chunk_id": "84b1417358099fa1d0f2e2936203d43b9fa3852c2227b6578c7bd53d6e07180f"
+    }
+   ],
+   "latency_s": 0.462,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "中国锦屏地下实验室实验如何评估并扣除环境放射性干扰？",
+   "gold_doc_ids": [
+    "1ebbc28edeef4845b7e5fe66577f7332",
+    "42224b1dff794910abf1292ffac2f8b9",
+    "6dae33fe33e747ac9b67e2e6c509f9fc",
+    "6dcc1107d98a46a8bbb416d079b6cd48",
+    "a7b64e5654e04564a1b57f0122d00a97"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "42224b1dff794910abf1292ffac2f8b9",
+     "chunk_id": "e0205bc00fa44acc043db5026a43baca7c7188643127aa9be27da4d8739be8a3"
+    },
+    {
+     "rank": 2,
+     "doc_id": "a7b64e5654e04564a1b57f0122d00a97",
+     "chunk_id": "30239a2d31cfda41bd65ac09e75f16037f26a9a008a729693da3e9e97d862ff9"
+    },
+    {
+     "rank": 3,
+     "doc_id": "6dcc1107d98a46a8bbb416d079b6cd48",
+     "chunk_id": "51a15d85ba1dcf7ad9ecececf6d646fd82d78372e05e73bc568d403f1b955602"
+    },
+    {
+     "rank": 4,
+     "doc_id": "6dae33fe33e747ac9b67e2e6c509f9fc",
+     "chunk_id": "26a22af2a764d5f663c90555e7bc07dbba8058bc91169643b5e66b64158d2270"
+    },
+    {
+     "rank": 5,
+     "doc_id": "abd25b05b1484bb0a9fd96d81f163059",
+     "chunk_id": "f825e1c590885d473774b0a3768803c35a7e645c7e587da16f3ffb9af400a553"
+    },
+    {
+     "rank": 6,
+     "doc_id": "8f632c1832b24c5abccf3b4c40fdb32f",
+     "chunk_id": "0c3f053f53db27d11f652e947f08588655d7e1747464cf9ac27410bf3bc21b70"
+    },
+    {
+     "rank": 7,
+     "doc_id": "1ebbc28edeef4845b7e5fe66577f7332",
+     "chunk_id": "f50ba039c702a08740223a260afe6e45b6c0fe0c8865d7db54b6c2d0250da3ca"
+    },
+    {
+     "rank": 8,
+     "doc_id": "dd638451e78e41c48d5b424d353f9793",
+     "chunk_id": "a16686908844ec115409741c8cbbe10fed8dbef236e1b53dcd2c0efdeed073d3"
+    },
+    {
+     "rank": 9,
+     "doc_id": "0e4bfcfcabfa47c69fb14d1d6f8fe03c",
+     "chunk_id": "46ab51130d4eb67c44f2c01edac76ae0baa7f81e5ddd391a1d112880af541fc1"
+    },
+    {
+     "rank": 10,
+     "doc_id": "7cda267dbd8a483e84291ed96e6fca35",
+     "chunk_id": "969fcfcc0674c22a391be43a6b435a843ddeb09bc44bd6195573062560f674c4"
+    },
+    {
+     "rank": 11,
+     "doc_id": "568eae272680415d887c072b944b1df0",
+     "chunk_id": "d01f2363ef58ba0da34e01425812e5436d5e7aa8043346f5c56e87592b067c85"
+    },
+    {
+     "rank": 12,
+     "doc_id": "4a6fc896e84b4edfbfd5a70d556c0a93",
+     "chunk_id": "47b11bee7e3fb6a246736f4ee06644aeab3073da1f1c8cd4de3027d50e53c409"
+    },
+    {
+     "rank": 13,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "cdf4a43809f535185e9933384ee0f51a505c968e204cfcf65623ac08d59fa175"
+    },
+    {
+     "rank": 14,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "0f3c038d2021dedf77bd59702e58eddb95a5f1328b086adcc4f0df2a6d4387b4"
+    },
+    {
+     "rank": 15,
+     "doc_id": "46791d44836241b2a6102ee0651e742e",
+     "chunk_id": "6dfcf18fa793a536b00ff0f041e0704ed1e3183feb04a72ad9e732eab7894e41"
+    },
+    {
+     "rank": 16,
+     "doc_id": "3ae44748f26248509ac44494b7a3e386",
+     "chunk_id": "2be5f4365e3028c41e46a6dd6ad2b3280c4a9d4a81bab9fbec22e0c4298fd019"
+    },
+    {
+     "rank": 17,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "2a821140bef73df2af70f325d89f4a7badbd422f40cbe4aab668e882a9f32fd3"
+    },
+    {
+     "rank": 18,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "a675db2fd53dc826da1dcd3b3b12e0fc79a02f11c01194b836e4ed589e18a92c"
+    },
+    {
+     "rank": 19,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "dba111bbfd7828844bd587f8911c9a61134a75d1d49f1ef30e2fef04ced14121"
+    },
+    {
+     "rank": 20,
+     "doc_id": "025f12021feb42c7b2368ae621b9825c",
+     "chunk_id": "42e426c1a6768a67a30a37da8324396d42dda14e964e055ec31884a4d6058d24"
+    }
+   ],
+   "latency_s": 0.505,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "微振动测试评估时，燃料棒动力学分析与谐波展开怎样配合？",
+   "gold_doc_ids": [
+    "4a6fc896e84b4edfbfd5a70d556c0a93",
+    "a07e54c4ec804fe6a70c8828360490f3"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "b22d71f3d6c30ef96f61f3282622c3f81786804f97a10d461cc1f61f0eb4f4d3"
+    },
+    {
+     "rank": 2,
+     "doc_id": "4a6fc896e84b4edfbfd5a70d556c0a93",
+     "chunk_id": "47b11bee7e3fb6a246736f4ee06644aeab3073da1f1c8cd4de3027d50e53c409"
+    },
+    {
+     "rank": 3,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "b313987ed07670868d2e6626257eeca5170d5cf835c7a215f145b5628f13748e"
+    },
+    {
+     "rank": 4,
+     "doc_id": "4480d1b9c5ca42fd938d845ea350f8b2",
+     "chunk_id": "f3cd0d47f96fa61852323b47e6229bc253bec9c1a984b25bb6f5c13d1f4cc096"
+    },
+    {
+     "rank": 5,
+     "doc_id": "ecebb255bc9a4dc4b55f36f20e2fe513",
+     "chunk_id": "cd4dac88e96b81ac0cefdf67b24b018b13df23e8e92da63fb062df47914d6a0a"
+    },
+    {
+     "rank": 6,
+     "doc_id": "7f304b9dc3714039ac66a34359f32191",
+     "chunk_id": "33077b7b5e917bd33841f0c2d1c429c933b78a955431eb6110d0527a20cd4336"
+    },
+    {
+     "rank": 7,
+     "doc_id": "c46f29956e65490e968ce3ef1f8c110e",
+     "chunk_id": "0fff3b9d585ab34778eadf712a3de6707c250ab2cfa3e808a25076a04a73d7ae"
+    },
+    {
+     "rank": 8,
+     "doc_id": "3735b009537e45adb2fadc6344707eaf",
+     "chunk_id": "25440ce55d708322e32bcca5566d81c7cc5685d16efd887e7d79414ff90e876d"
+    },
+    {
+     "rank": 9,
+     "doc_id": "475a1cbdf5874768b6f405e23f076f11",
+     "chunk_id": "84ca39fc6bb7b4e0d0c0f548bf5cc1c2bd7a7eedbca7cbb8af0416bd683152b7"
+    },
+    {
+     "rank": 10,
+     "doc_id": "588151982ddc4b14a2f398dde7e6f20e",
+     "chunk_id": "f8766b352379462677ab128cd76a068f411a986a0a4ade5d4af99595cf5b95d4"
+    },
+    {
+     "rank": 11,
+     "doc_id": "dd638451e78e41c48d5b424d353f9793",
+     "chunk_id": "ede48303031bbbccc7498223e5453b35d3974fce9130b9432dbc2dda17c1997f"
+    },
+    {
+     "rank": 12,
+     "doc_id": "809c28f9ff70434da4d24ddbf4ef4b32",
+     "chunk_id": "8d45c3a20b65dd8eee94f9eae8d3b218825d89a1b0a38d63fb0415a144b34849"
+    },
+    {
+     "rank": 13,
+     "doc_id": "c02c0f51df6147368bd2108e6cc59cea",
+     "chunk_id": "f6b6fcb1fd8a04bb2c94f2b870575f5843dd2253b62c280b0c0471c106e97c7e"
+    },
+    {
+     "rank": 14,
+     "doc_id": "ed5e1481889f409b805ec44cc1d6f444",
+     "chunk_id": "660fd825122a93a1850e4df072eabc4f7e65c7d659a6860c5441a1d4e669e7e2"
+    },
+    {
+     "rank": 15,
+     "doc_id": "2b3fd0c3005d4a318ca980e690775b24",
+     "chunk_id": "5ce5af030f6e32c720d14be361e12dd0648b49ed905e978a026082d632b05719"
+    },
+    {
+     "rank": 16,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "b234e507be1b94d7eeaa63ba00a8c2049be2c6526f11d9f7b8c83e1baa0030b7"
+    },
+    {
+     "rank": 17,
+     "doc_id": "47453f82116744379261400f49790e2c",
+     "chunk_id": "1865a15de56f62c3914027c66ad6bd82b59ea4bf77bd33cddf6cdfcb9a6d4145"
+    },
+    {
+     "rank": 18,
+     "doc_id": "05e6f239b6d6466db5eaee3e5f29902b",
+     "chunk_id": "b21a13f4720ffcc3ac1737884756fc2b0e9c411e56874c0fdfaaea0ac6d582ca"
+    },
+    {
+     "rank": 19,
+     "doc_id": "abd509a6eba846cbab0f2e2c02fac19f",
+     "chunk_id": "6f9bb52834b46c7fe2ea5b5c09e40f6de11054102ba43967b57a5f0edaf4825b"
+    },
+    {
+     "rank": 20,
+     "doc_id": "4768bf2e07aa4f3ea362a48627a2a30c",
+     "chunk_id": "ca88baa6c2ff8ced50bfd16dd15966b1de95e8260db059a832d39457a0273025"
+    }
+   ],
+   "latency_s": 0.533,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "有没有金刚石探测器做γ响应、中子通量或结构模拟，又提到探测器的文献？",
+   "gold_doc_ids": [
+    "089359ab1ee745a2a85c6ec3c7aafb9b",
+    "39e0d487cb244473b028443b1e247c46",
+    "8245c2cd4ed64139978856c92e658830",
+    "844d59d5f24e46a79bff5a4947853cdb",
+    "dcf2ce862b2848dfa953033cfc437030"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "844d59d5f24e46a79bff5a4947853cdb",
+     "chunk_id": "ea304fc32c8554f361229079352c95f56fc9ea20c11358409127f565b37a03e0"
+    },
+    {
+     "rank": 2,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "473158a9d50890c32c4a2a5023a46aa850efbcb6a9d86c65bc5540f20b4281f0"
+    },
+    {
+     "rank": 3,
+     "doc_id": "dcf2ce862b2848dfa953033cfc437030",
+     "chunk_id": "a77dcaf18db190d254fb506862faa75abe17f0f25bce8a2c683aa516615d6119"
+    },
+    {
+     "rank": 4,
+     "doc_id": "76ebf8dcd6de4c50bc85db5f2d1add5b",
+     "chunk_id": "82b8c72d2e49d831aa96b4c7b92e857702faa9fb1bcb87eca82480eb6f1f2729"
+    },
+    {
+     "rank": 5,
+     "doc_id": "90f8be5ec2fc478e9e0be323dc81316d",
+     "chunk_id": "eedf9d5eb39bc8a30c1ebde658bb2869689708226519e2440abcf19d6d124d7e"
+    },
+    {
+     "rank": 6,
+     "doc_id": "df5e7e8fd4154849a7e210f26e4f6aeb",
+     "chunk_id": "fe2f6cc685ce5df4ef6e59e9a00eb26eed0b47e241667ef127e33be2d55f5b5b"
+    },
+    {
+     "rank": 7,
+     "doc_id": "65e41a8c461c4020913b0ee20933e37a",
+     "chunk_id": "929faddb75ac0044560df9b660b3156d949a69f6e63bf126fb5bc2ad90e89c73"
+    },
+    {
+     "rank": 8,
+     "doc_id": "8245c2cd4ed64139978856c92e658830",
+     "chunk_id": "179da1c744491639968f08c5e9c15418ba43b96d6b0ecd87553f522cd06d7c29"
+    },
+    {
+     "rank": 9,
+     "doc_id": "16eb7b49c4254b989648778ab6793691",
+     "chunk_id": "22670a0ed0a7a2ddbfa69a41ca8cb4311d6d5df0948f8ae9a00d4c84fafc8d85"
+    },
+    {
+     "rank": 10,
+     "doc_id": "290e438bb9bc423ca6f80bc595586b5a",
+     "chunk_id": "28d43a31ba94cea1196efdf03372d270ce01ff56e76530a49239892e88988b9e"
+    },
+    {
+     "rank": 11,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "eea8c12dfb773a29aa863e2c8ecf9499ff5b37b9ab3895ea99c4cbe474f267df"
+    },
+    {
+     "rank": 12,
+     "doc_id": "0b6b54ced421431a8973a729cf5ab44c",
+     "chunk_id": "a81cabad5ad93d1e6b991528dfbf222517dc77d9f360d94e62f9a3e6f0cd61ae"
+    },
+    {
+     "rank": 13,
+     "doc_id": "a7b3e22cb81d433b91076a79ba312b72",
+     "chunk_id": "767008ca769b2fcd7feaefb084356418dc797213dae492d3f92c00d0eca75a5d"
+    },
+    {
+     "rank": 14,
+     "doc_id": "4602f9b7045647b89c5ab153ff74f5eb",
+     "chunk_id": "b3035c50b453291f533788e203da0b070ef41274d59fc71e3eaf7ef4abb0cfc6"
+    },
+    {
+     "rank": 15,
+     "doc_id": "5afec62371f746b8a6f44a1c118a9975",
+     "chunk_id": "67dd73dc659e5462c76f686f51c7741a0f621de6ee2de8aaafc6090b345cc87e"
+    },
+    {
+     "rank": 16,
+     "doc_id": "dcd0ef5b938443f98eb98407af1a5d8c",
+     "chunk_id": "648e7fcb2839cd8ff9104c42f7135150ac806abf3ec4d01155a600fe1e58e8de"
+    },
+    {
+     "rank": 17,
+     "doc_id": "005295c12c544da796a7e069d5c07afd",
+     "chunk_id": "8f927872c0ff8d2fc23c6922edb3808f61126f35fb5d5e575e487032791e46c4"
+    },
+    {
+     "rank": 18,
+     "doc_id": "43ce5070387d4591a866ffd7a5558231",
+     "chunk_id": "6da4cfc087617c1d3239d55e5ced656acc1c1507d89961a5057dee746cc93aff"
+    },
+    {
+     "rank": 19,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "3e4a2d5718a6f64f353b1d93d64911f12e95a0c2d105f5f7f01085ed1c7afedb"
+    },
+    {
+     "rank": 20,
+     "doc_id": "9740e181f7b84ba4af1d0692c3cf99d5",
+     "chunk_id": "143115624d1335acb2aebf91e6933af52358d9bc93967dbb09eedaab14cc16a9"
+    }
+   ],
+   "latency_s": 0.55,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "x-ray会诱发单粒子效应吗？",
+   "gold_doc_ids": [
+    "078a2f931b07443b9570a1634fe54375",
+    "43648c5ebaf143e687b5a3936a237f00",
+    "48b9a62f6eb5478f94e5721db30c564d",
+    "6690d83f50d54001a1cc8c0d98535dd5"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "43648c5ebaf143e687b5a3936a237f00",
+     "chunk_id": "0f379b3c3092e46ae9277ab8f8670311f94574d8fa59122795058260e209d8d5"
+    },
+    {
+     "rank": 2,
+     "doc_id": "7f5d98f9f6f742ea83f92c4bc4dc9345",
+     "chunk_id": "b5a1fb35b7a3be427d1dbac154a4b6480502cc48ed63f9fc3145d3ccedba838b"
+    },
+    {
+     "rank": 3,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "c43f7b2b18b5582e6339dfc8c13c0b92dc71fc2808b65f5da03957b396c3f78f"
+    },
+    {
+     "rank": 4,
+     "doc_id": "56c5119ec3ca4bafb7eb36c8ad93239a",
+     "chunk_id": "d495088fc58098a6c372ad5278b418903f6700deda215d7aefe3b7703f19b792"
+    },
+    {
+     "rank": 5,
+     "doc_id": "f5ed787eb04f49a49e2546774adfd529",
+     "chunk_id": "f4b2416469092dbf9bff87f790ce676f1777c921acfe4ee63645817ca04dbd46"
+    },
+    {
+     "rank": 6,
+     "doc_id": "078a2f931b07443b9570a1634fe54375",
+     "chunk_id": "01281dd6ed457b32cc7e5ac8b96aa299df55fbda44da88b9483a9ace24bb9124"
+    },
+    {
+     "rank": 7,
+     "doc_id": "e0d60c4152394b0ea4e32a9e6c1abaa5",
+     "chunk_id": "0a4e587377ec33ed7d0e96a9d710674d8cf0acba8a7caaf5310ad8908fc9d450"
+    },
+    {
+     "rank": 8,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "72110dc3c8b6e08fc345668e1c5df4b4d23d3200269eb10696164120ee46464b"
+    },
+    {
+     "rank": 9,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "a7de48d93f72881aeaf2d27eda0f4e71376c2aec74ef846b494acd26f0a70b89"
+    },
+    {
+     "rank": 10,
+     "doc_id": "fbd0581c5d734023ae5cf56144489729",
+     "chunk_id": "4466074ce0f6f36c3e65a3c3a561e8e154ccecbedd3231be528be2b9c75a772f"
+    },
+    {
+     "rank": 11,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "1a4180bcd852a40b125192433d152a43d20a4273ecb440988c7b4c8624a7f422"
+    },
+    {
+     "rank": 12,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "aec49f87abf989b9abf20f5f17f6cedddb95ec0a1411ba2e84379ad01e7f2961"
+    },
+    {
+     "rank": 13,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "723055191b82cbaccdf1dc2e004bd444ab1749d8e9aead0382b482f108064fe3"
+    },
+    {
+     "rank": 14,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "6ff4f07ecfa6409fc1072998e8f86da968f96de050f28e9004ef8fb4deba51e5"
+    },
+    {
+     "rank": 15,
+     "doc_id": "2bd04127007148f086ad2b7d2cd3dcce",
+     "chunk_id": "4538567007c39a803639a311f112a0c33b7b38b47183b4b173f03815e3f9ae18"
+    },
+    {
+     "rank": 16,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "94ba09fad049cf64f41a7e88a2f75aa60431a14c199a8231542234736fce58ab"
+    },
+    {
+     "rank": 17,
+     "doc_id": "fe62161ce46f41cfacd6a1a6f5f242a6",
+     "chunk_id": "e895185827234b2e63b05ca4760cfba1efb96e764c1b848f64568213c1da7a02"
+    },
+    {
+     "rank": 18,
+     "doc_id": "87685df79e264179b43a02c5ec69856e",
+     "chunk_id": "698c8e38caed7b73f2ce70b3bd79bc0d376f8a8cfe18c0dfee74048b1ddacde4"
+    },
+    {
+     "rank": 19,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "473158a9d50890c32c4a2a5023a46aa850efbcb6a9d86c65bc5540f20b4281f0"
+    },
+    {
+     "rank": 20,
+     "doc_id": "578c09a2acb9423aa3d7dd0f219d27a4",
+     "chunk_id": "670fbcb6287b0c8aa33a09c3d22110d2a3fb16a50ed0d44e3e8d60221d1c0ab0"
+    }
+   ],
+   "latency_s": 0.477,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "模块中使用多分辨率时频分析的文献",
+   "gold_doc_ids": [
+    "025f12021feb42c7b2368ae621b9825c",
+    "5bd86299ac9b485796243db5bbdea4fe",
+    "94250ccf417346dc9b1c8d60472d13e4",
+    "9444443e71ce45a5b324d5eed10c7dc1",
+    "b20b1327d1054520bf61a3718e9db964"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "a936ba1dbe8549279e71a061bc243bde",
+     "chunk_id": "e273443789f39393a657ae04f37a90a6943366c506539262d756c9b8413ab41c"
+    },
+    {
+     "rank": 2,
+     "doc_id": "4a6fc896e84b4edfbfd5a70d556c0a93",
+     "chunk_id": "47b11bee7e3fb6a246736f4ee06644aeab3073da1f1c8cd4de3027d50e53c409"
+    },
+    {
+     "rank": 3,
+     "doc_id": "5bd86299ac9b485796243db5bbdea4fe",
+     "chunk_id": "c221cd120022d5fd9f896d70af8a410f2f86eef98a5a2087eab8012b28e33c7e"
+    },
+    {
+     "rank": 4,
+     "doc_id": "10605bcd3ce44eec969e74f5c02fe1dd",
+     "chunk_id": "1e6c60ccd09759130ae1d69c1ec3d96f53231cbd3fd0f0945919d7b6c11ef9f5"
+    },
+    {
+     "rank": 5,
+     "doc_id": "9444443e71ce45a5b324d5eed10c7dc1",
+     "chunk_id": "0310ba6b0bcb9ba11073c001077fb003e6f4400fc072e62590ac5c2bedbbc795"
+    },
+    {
+     "rank": 6,
+     "doc_id": "6d8c166da24b476b80cc55378c1301de",
+     "chunk_id": "3d6c1f121993b70c31205d2be20f5b92c8486457a59f2f918fd9ab36cbfd6740"
+    },
+    {
+     "rank": 7,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "37492696ec7feb276cbdc22720790dd895706b469f094d5c444d3380a79f5fb6"
+    },
+    {
+     "rank": 8,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "b22d71f3d6c30ef96f61f3282622c3f81786804f97a10d461cc1f61f0eb4f4d3"
+    },
+    {
+     "rank": 9,
+     "doc_id": "e4c713ee593a412c946c2a8c0c61cb3b",
+     "chunk_id": "e46bf251eae088bdad8bcff615fd26321df402060e870f1b2e2fb751447938cd"
+    },
+    {
+     "rank": 10,
+     "doc_id": "7c3ca77771064b39816137cb9d2820d1",
+     "chunk_id": "8af51a063434e8a535f315732ad54b25cf1f54616634530ad6f86db6eb5fcd87"
+    },
+    {
+     "rank": 11,
+     "doc_id": "68b69730ce654add88fbf3aacf74039a",
+     "chunk_id": "b40167eb4a602547223b551d95d022610d3fc3e887310a1c8828757815510da8"
+    },
+    {
+     "rank": 12,
+     "doc_id": "16eb7b49c4254b989648778ab6793691",
+     "chunk_id": "1800620dfab8296d2be6838e56a582533f7227e5c052c091ad9c7d2911689c9d"
+    },
+    {
+     "rank": 13,
+     "doc_id": "10c1605fb47f4fab82c481d6485e5ff4",
+     "chunk_id": "989b0a2833d9ed7822814116542a206d2673aac6ed4566793e4f29e03350e70c"
+    },
+    {
+     "rank": 14,
+     "doc_id": "414d5fb773e3449294b8e01aae26f24c",
+     "chunk_id": "721eca727bbb6815989a3540fcc1ed7ee771e28f15f7ba346508980ea67a9c9d"
+    },
+    {
+     "rank": 15,
+     "doc_id": "c16b9ea334824962a0be7388be6ecf1b",
+     "chunk_id": "70e9a14789d40d13877bfd31c8b90be61c52d7f3ba326007d83da165f734e1ac"
+    },
+    {
+     "rank": 16,
+     "doc_id": "025f12021feb42c7b2368ae621b9825c",
+     "chunk_id": "401541cea947c9143f9d035a6e6eb8c1aa0f9f81c696004276b2a51e2178e062"
+    },
+    {
+     "rank": 17,
+     "doc_id": "43ce5070387d4591a866ffd7a5558231",
+     "chunk_id": "911926a8063aa4c604806d23b1e2a52da6b05575e359e52f4ca76b3e46db57a2"
+    },
+    {
+     "rank": 18,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "7a1d4ea15e999071e19b03e08e5c7c4486c9e709174c3baefc33edc14ab6063d"
+    },
+    {
+     "rank": 19,
+     "doc_id": "7e2c36a877374a858f3db06644a72295",
+     "chunk_id": "7263dd6012909dc605b7503aa62e8d42a64c1aead8d47c69bb3f5966a6369aa3"
+    },
+    {
+     "rank": 20,
+     "doc_id": "b20b1327d1054520bf61a3718e9db964",
+     "chunk_id": "dd1055168e54f62769dea9e1119449a4dc967013a0762b3aed7322426bbc28bc"
+    }
+   ],
+   "latency_s": 0.507,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "储存环光源与前端环型加速装置联调、标定及束团诊断相关文献有哪些？",
+   "gold_doc_ids": [
+    "45be62b3b4e44fa19f1af0066ae8aa74",
+    "5afec62371f746b8a6f44a1c118a9975",
+    "7c3ca77771064b39816137cb9d2820d1",
+    "99370c67ecfe432ea2bde4b641529a10",
+    "a58700f9de8143e2ab408772cd709215"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "089359ab1ee745a2a85c6ec3c7aafb9b",
+     "chunk_id": "f2b52a633516029a056dbd7c4732f73008f6498f512b3c705f39cceec34d2b16"
+    },
+    {
+     "rank": 2,
+     "doc_id": "475a1cbdf5874768b6f405e23f076f11",
+     "chunk_id": "dfc06103b0995068768db0d434ff1caf34d541f28c8123e97029e332b60876d7"
+    },
+    {
+     "rank": 3,
+     "doc_id": "c187b4913536424883be22b865af3bb2",
+     "chunk_id": "134c553d1cecd10ba1db9c198d0441dae99c1fdd7319c35c77ed7ecb5cd07505"
+    },
+    {
+     "rank": 4,
+     "doc_id": "7c3ca77771064b39816137cb9d2820d1",
+     "chunk_id": "bff2949111eae68411f62b3b0a7e37197b7d750675c47b231dcb0b44a31e8054"
+    },
+    {
+     "rank": 5,
+     "doc_id": "99370c67ecfe432ea2bde4b641529a10",
+     "chunk_id": "f7d1e0883f1213dc93506d0d8c5a43b7c864a8a07f989b66c2bb35ab1ecd8ee9"
+    },
+    {
+     "rank": 6,
+     "doc_id": "c02c0f51df6147368bd2108e6cc59cea",
+     "chunk_id": "b7279e766bce73f040bbb4fa036a56067fc4c2f0e5cb30cab4445f77cfa26a15"
+    },
+    {
+     "rank": 7,
+     "doc_id": "45be62b3b4e44fa19f1af0066ae8aa74",
+     "chunk_id": "ac768cc457bc18686273d9bcff0af832ebf797d11bf47e01bec499fa0cbef1b7"
+    },
+    {
+     "rank": 8,
+     "doc_id": "079d82fbf30349a7904921e9ac50b50c",
+     "chunk_id": "b47d424bb4b131d99c2b68132bf87297255eab7833de8ffbedfc199d1891898e"
+    },
+    {
+     "rank": 9,
+     "doc_id": "a58700f9de8143e2ab408772cd709215",
+     "chunk_id": "b265706c63d67dfa81d3d029b08cf2f495ba7b264a7e6f7a5a1f23c39dcbf625"
+    },
+    {
+     "rank": 10,
+     "doc_id": "dc3419725b92499c9986a216a777795c",
+     "chunk_id": "fea724673273f3ee0e5a8c11081bbb5be6a0cd84d9c1add373619fbe0744fb13"
+    },
+    {
+     "rank": 11,
+     "doc_id": "af06e56794fe4abdb8be40ed340da7b5",
+     "chunk_id": "f0394e3b45dec9e2deabf47365eaa5731db4dd6a7ea99a35ee95701dd125da80"
+    },
+    {
+     "rank": 12,
+     "doc_id": "20280e875db748769971bc36cd95deb0",
+     "chunk_id": "23a8fa07b5099a92b8e2d7ffa781a7998cf5d798be689b984fbb2c67f6f8971d"
+    },
+    {
+     "rank": 13,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "3a84f3fabf85b61adcec769d8a1e328ab153ce71137339ade1e45e847cbef2d9"
+    },
+    {
+     "rank": 14,
+     "doc_id": "fbd0581c5d734023ae5cf56144489729",
+     "chunk_id": "fbeb1bc1cd1f2226ae1b667b2cd50cd5916e1c0d9a2053d923a6a36b757865c6"
+    },
+    {
+     "rank": 15,
+     "doc_id": "5027e1b3dfb048a1bd8cb193d0e57b93",
+     "chunk_id": "6ca60aa499e230ae4c2bb0c6bea247d1b9d465c29603782d132d4e234d9c9a0c"
+    },
+    {
+     "rank": 16,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "67f25af4dd91da3e3875c34d25119a1ff733321c9a49a2d5550b44f69680c3ac"
+    },
+    {
+     "rank": 17,
+     "doc_id": "c630f6ecbc75455fa4dae9c79937fe1a",
+     "chunk_id": "2912fce2a4b2acea96f65c2bae513bbcefbb93f132d0b8cced56f89962482d30"
+    },
+    {
+     "rank": 18,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "b1cc438115e4fbfa5f837c8e907f854ddda422f852dd226b2204e3aa41dbc869"
+    },
+    {
+     "rank": 19,
+     "doc_id": "90f8be5ec2fc478e9e0be323dc81316d",
+     "chunk_id": "4e49721bf1ae5513eaf3b59033ab46a87ff1221a07d9970042491a2a4ca46d83"
+    },
+    {
+     "rank": 20,
+     "doc_id": "bcc8eaa5517646a0b4fd0e8828af8396",
+     "chunk_id": "fa11b98e321b344eea7cf1977a47ca88939efc7a3acca6f5251d29edb66f8e01"
+    }
+   ],
+   "latency_s": 0.529,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "哪些文献研究压水堆燃料芯块和光源线站中的衍射仪组件？",
+   "gold_doc_ids": [
+    "5d90d8af59a744728185b76ff7eb428d",
+    "df9848ff4f984ca6a22ed930e1f09cdb"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "b313987ed07670868d2e6626257eeca5170d5cf835c7a215f145b5628f13748e"
+    },
+    {
+     "rank": 2,
+     "doc_id": "5d90d8af59a744728185b76ff7eb428d",
+     "chunk_id": "4bd592c9450e9bc275da68525a6ad2a16f502b64f3a9113cd9d163994cf9e8a7"
+    },
+    {
+     "rank": 3,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "bcc78b97256b1fc1d6266fc52a8ff4b4c31a55319811d00bbc0b74d21e56bdf8"
+    },
+    {
+     "rank": 4,
+     "doc_id": "ecebb255bc9a4dc4b55f36f20e2fe513",
+     "chunk_id": "70ae9f5af11513646392fbb00b82eadce6c188c9ac9eb960b5d2fb1afec7233c"
+    },
+    {
+     "rank": 5,
+     "doc_id": "dd638451e78e41c48d5b424d353f9793",
+     "chunk_id": "ede48303031bbbccc7498223e5453b35d3974fce9130b9432dbc2dda17c1997f"
+    },
+    {
+     "rank": 6,
+     "doc_id": "588151982ddc4b14a2f398dde7e6f20e",
+     "chunk_id": "b152a3385b20c5747cccd48d912c0f9f69ee88fca5d51d8ef5433e7d4da07a47"
+    },
+    {
+     "rank": 7,
+     "doc_id": "4480d1b9c5ca42fd938d845ea350f8b2",
+     "chunk_id": "f3cd0d47f96fa61852323b47e6229bc253bec9c1a984b25bb6f5c13d1f4cc096"
+    },
+    {
+     "rank": 8,
+     "doc_id": "7f304b9dc3714039ac66a34359f32191",
+     "chunk_id": "ccad9a6a1befe73291c41d078bada2d93169cb60dab8093963418906da86f8b7"
+    },
+    {
+     "rank": 9,
+     "doc_id": "ed5e1481889f409b805ec44cc1d6f444",
+     "chunk_id": "660fd825122a93a1850e4df072eabc4f7e65c7d659a6860c5441a1d4e669e7e2"
+    },
+    {
+     "rank": 10,
+     "doc_id": "47453f82116744379261400f49790e2c",
+     "chunk_id": "1865a15de56f62c3914027c66ad6bd82b59ea4bf77bd33cddf6cdfcb9a6d4145"
+    },
+    {
+     "rank": 11,
+     "doc_id": "99370c67ecfe432ea2bde4b641529a10",
+     "chunk_id": "0d9d149ca8b6c01bd43f45e6fadf4e6eeffd2a2cf8088f304e898e09cc987b07"
+    },
+    {
+     "rank": 12,
+     "doc_id": "9383489b011640d2a2417a6b4aa31500",
+     "chunk_id": "fad8e5329de5290b3eeb3f9f63a3c2c3ad6da3930e8f4d15a565df0e6013e2b8"
+    },
+    {
+     "rank": 13,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "0d769d7b6b2072a1e3858b6b52478f76d247cb5d2056973be3fe75666cab7695"
+    },
+    {
+     "rank": 14,
+     "doc_id": "2b3fd0c3005d4a318ca980e690775b24",
+     "chunk_id": "85b3cc60ca16167b59388c766c993180feecb4b6ea636760cd2408fe4eef22f2"
+    },
+    {
+     "rank": 15,
+     "doc_id": "4602f9b7045647b89c5ab153ff74f5eb",
+     "chunk_id": "2c2bf11aa16dbfc86c54d6b42790d63907504434c3b878a7c285919914e13eb0"
+    },
+    {
+     "rank": 16,
+     "doc_id": "e00af04ab2484ec6aeb2f083e2a819fa",
+     "chunk_id": "867243e232eaac56d3a61f1dfc14208f2358db5f7cd2b3fb2265c06b8002fbf6"
+    },
+    {
+     "rank": 17,
+     "doc_id": "2ad958a5614a48c2b3ce39e216c426e9",
+     "chunk_id": "d24d163211bdc051f5b862e9f2f0b8ea17fadcf5a8c9024fab7e51da3bf00a1a"
+    },
+    {
+     "rank": 18,
+     "doc_id": "fe62161ce46f41cfacd6a1a6f5f242a6",
+     "chunk_id": "9ddd22de09441d19f9a5b41797f6976961dfa7f0509f6c9125735076e645d2cb"
+    },
+    {
+     "rank": 19,
+     "doc_id": "a07e54c4ec804fe6a70c8828360490f3",
+     "chunk_id": "129d8527a588b2575f13e91e675221c6b464a48596cb1f06be7239d8176be712"
+    },
+    {
+     "rank": 20,
+     "doc_id": "4768bf2e07aa4f3ea362a48627a2a30c",
+     "chunk_id": "ca88baa6c2ff8ced50bfd16dd15966b1de95e8260db059a832d39457a0273025"
+    }
+   ],
+   "latency_s": 0.553,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "组件中的慢化介质有哪些类型及作用",
+   "gold_doc_ids": [
+    "162a72d3ee2749a89cc1c72eb90447e0",
+    "2b3fd0c3005d4a318ca980e690775b24",
+    "5afec62371f746b8a6f44a1c118a9975",
+    "6cc0af69d17e42108a8a12c72a978375"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "162a72d3ee2749a89cc1c72eb90447e0",
+     "chunk_id": "6063b9bfb4216b50016267fb44cadfcf7f9866d36333a84c8ad532723b341849"
+    },
+    {
+     "rank": 2,
+     "doc_id": "6cc0af69d17e42108a8a12c72a978375",
+     "chunk_id": "b96c6a51e57b48a82c85f6d52d4271fc6df09125637e35d3ef8d4bcc8d01681f"
+    },
+    {
+     "rank": 3,
+     "doc_id": "dcd0ef5b938443f98eb98407af1a5d8c",
+     "chunk_id": "0a1342f25556f8c9d6ea6d2aa14d89f81f2b8a3e8d16469a93ba10f99a81d7f1"
+    },
+    {
+     "rank": 4,
+     "doc_id": "dcf2ce862b2848dfa953033cfc437030",
+     "chunk_id": "e6c53a276ef638897b442f8c54096c11f969d1a29b51073e9e406e77cdb63db5"
+    },
+    {
+     "rank": 5,
+     "doc_id": "f3e9f8a90094402191977027c6667b4d",
+     "chunk_id": "fb6aaa2bc8572232e5ba2bf6c9ad49c99425040c5b5de6a7f5f676c8cc1ecf92"
+    },
+    {
+     "rank": 6,
+     "doc_id": "90f8be5ec2fc478e9e0be323dc81316d",
+     "chunk_id": "a024a06c94c1ef5c2256e6f6f157b946e3e68a4edd5be03b8579178ffbbd443a"
+    },
+    {
+     "rank": 7,
+     "doc_id": "568eae272680415d887c072b944b1df0",
+     "chunk_id": "d01f2363ef58ba0da34e01425812e5436d5e7aa8043346f5c56e87592b067c85"
+    },
+    {
+     "rank": 8,
+     "doc_id": "809c28f9ff70434da4d24ddbf4ef4b32",
+     "chunk_id": "8d45c3a20b65dd8eee94f9eae8d3b218825d89a1b0a38d63fb0415a144b34849"
+    },
+    {
+     "rank": 9,
+     "doc_id": "c5f51f146d8349b2a383d6d0860f8a5d",
+     "chunk_id": "0ee4166d5209e78ec4e3ad09743665ad82993adb724d72d66ce31cae83b6bbdc"
+    },
+    {
+     "rank": 10,
+     "doc_id": "48b9a62f6eb5478f94e5721db30c564d",
+     "chunk_id": "eb15b9efbe4c627e693ab7b2eac510ad791c248c69cb78b632bd0debf5d9d65e"
+    },
+    {
+     "rank": 11,
+     "doc_id": "91aeee772ac949bd9f49dd951fcb462e",
+     "chunk_id": "e0621c6f4e0ad368c02f15376ba2f0707436b5fce918c910edd193e685952f5c"
+    },
+    {
+     "rank": 12,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "e39c37a31762e2092ba64230c6fb9bd443b1b1c5b0fafcaafc805e2e9ea18521"
+    },
+    {
+     "rank": 13,
+     "doc_id": "588151982ddc4b14a2f398dde7e6f20e",
+     "chunk_id": "86029f719218948e4ba5090d08432ee6b4667592963e45ae09c5883a0172da4d"
+    },
+    {
+     "rank": 14,
+     "doc_id": "c91b4d2df5e7428599184599bcab85f2",
+     "chunk_id": "b2394696e058da734b4dedba62dbc0e5508fe29b1665a8c5c2dd74d9e5557f1e"
+    },
+    {
+     "rank": 15,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "639eeb619442b3ee72d83d6e9ffda75e3f91fb38d564e522d8cd659b0f043495"
+    },
+    {
+     "rank": 16,
+     "doc_id": "5c566792b3d74dc8beb89a5dfdb8403d",
+     "chunk_id": "218a73da78d262be79ec6727ab9688e1fe4998cb7dfd2ef67798008636c42cde"
+    },
+    {
+     "rank": 17,
+     "doc_id": "d01137e831d44303bd1bb164f0b127de",
+     "chunk_id": "048eadd3a279b3abadec8f3fff74dfe5840eeb0d7da87c8d48bcd1dd0a3ccc57"
+    },
+    {
+     "rank": 18,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "76de059b9113c26292f3edfcbeb136fb17bf834969462b3fb1ba926dbf639ea5"
+    },
+    {
+     "rank": 19,
+     "doc_id": "4602f9b7045647b89c5ab153ff74f5eb",
+     "chunk_id": "63ebd5f8b1b2fef56f2089047e877a85b529bc38e31ecfa246b4e6f7ed8dad3b"
+    },
+    {
+     "rank": 20,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "bdbe79f643b0cdeca2a8253812bbe2e957ae4bff58a4e1c28a9a0282d66eddd1"
+    }
+   ],
+   "latency_s": 0.533,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "核谱仪装置中重金属防护件与辐射防护体系关系的研究有哪些",
+   "gold_doc_ids": [
+    "0e4bfcfcabfa47c69fb14d1d6f8fe03c",
+    "3deac94b6d2744989b78ab2cbfc500e0",
+    "9740e181f7b84ba4af1d0692c3cf99d5",
+    "dd638451e78e41c48d5b424d353f9793",
+    "e0d60c4152394b0ea4e32a9e6c1abaa5"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "b841471b7922a1907c2a773e5325776b186d27d0a658270806c4bb2047ca21e4"
+    },
+    {
+     "rank": 2,
+     "doc_id": "3bb14cf0e3e5488aa6f0cddd60cbedf3",
+     "chunk_id": "3a84f3fabf85b61adcec769d8a1e328ab153ce71137339ade1e45e847cbef2d9"
+    },
+    {
+     "rank": 3,
+     "doc_id": "4602f9b7045647b89c5ab153ff74f5eb",
+     "chunk_id": "b3035c50b453291f533788e203da0b070ef41274d59fc71e3eaf7ef4abb0cfc6"
+    },
+    {
+     "rank": 4,
+     "doc_id": "2bd04127007148f086ad2b7d2cd3dcce",
+     "chunk_id": "1b153c8da13511a905dc2823e0a9c5e8442633f74771ffcc599983bf93ad64d3"
+    },
+    {
+     "rank": 5,
+     "doc_id": "5c566792b3d74dc8beb89a5dfdb8403d",
+     "chunk_id": "300462a341a608dead6c6ba101acce3d3d1011222dbe050c56269159413dd5a9"
+    },
+    {
+     "rank": 6,
+     "doc_id": "dd638451e78e41c48d5b424d353f9793",
+     "chunk_id": "a16686908844ec115409741c8cbbe10fed8dbef236e1b53dcd2c0efdeed073d3"
+    },
+    {
+     "rank": 7,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "b6ffec016975133a6bf1706e04779ea3ee32fb521cb2cb19d3807d12e937f2c7"
+    },
+    {
+     "rank": 8,
+     "doc_id": "568eae272680415d887c072b944b1df0",
+     "chunk_id": "a6ae463e602d9aa0c50a0fd4e92b41cf816febba0eb0764e1204e8f8f616849d"
+    },
+    {
+     "rank": 9,
+     "doc_id": "0e4bfcfcabfa47c69fb14d1d6f8fe03c",
+     "chunk_id": "3e69914ba8819940051c086eba381693d9e4cb943c07be3cd360a045959f331e"
+    },
+    {
+     "rank": 10,
+     "doc_id": "2eb25eb829cb464795b07dcc9a576bb8",
+     "chunk_id": "482fd93214108f4807471d2a72a7e7b94bdb30a16a348ae232c7dcfb6020ed42"
+    },
+    {
+     "rank": 11,
+     "doc_id": "48b9a62f6eb5478f94e5721db30c564d",
+     "chunk_id": "2e5682d827bc6b5e6c0abfad4622018ca4dc2e2ab2e0ed08cc16a9f2140595e9"
+    },
+    {
+     "rank": 12,
+     "doc_id": "809c28f9ff70434da4d24ddbf4ef4b32",
+     "chunk_id": "e784a4c16e1dffadff8df5df296961177ced969fd3d55f62ea8fbc1fd26193c8"
+    },
+    {
+     "rank": 13,
+     "doc_id": "5afec62371f746b8a6f44a1c118a9975",
+     "chunk_id": "67dd73dc659e5462c76f686f51c7741a0f621de6ee2de8aaafc6090b345cc87e"
+    },
+    {
+     "rank": 14,
+     "doc_id": "10c1605fb47f4fab82c481d6485e5ff4",
+     "chunk_id": "5059d5a2ebfa91fe31e52fe222d9493f77484dd5a6a1e0b152af39e04257f05a"
+    },
+    {
+     "rank": 15,
+     "doc_id": "16eb7b49c4254b989648778ab6793691",
+     "chunk_id": "22670a0ed0a7a2ddbfa69a41ca8cb4311d6d5df0948f8ae9a00d4c84fafc8d85"
+    },
+    {
+     "rank": 16,
+     "doc_id": "cb5144d5ac38493abdec32b16ce9b822",
+     "chunk_id": "3637f241141a1d81a0427592c6ff4eddedb36a9323430d33339955b9b8689553"
+    },
+    {
+     "rank": 17,
+     "doc_id": "a407912c98fb421a9569cc0301a104af",
+     "chunk_id": "2a821140bef73df2af70f325d89f4a7badbd422f40cbe4aab668e882a9f32fd3"
+    },
+    {
+     "rank": 18,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "94ba09fad049cf64f41a7e88a2f75aa60431a14c199a8231542234736fce58ab"
+    },
+    {
+     "rank": 19,
+     "doc_id": "77bca5b09b3c41b3aff15868a1f840d5",
+     "chunk_id": "140c131db7fc03d215869c22b4015e3b817fc5f360384f1dd6526f13ab6a962a"
+    },
+    {
+     "rank": 20,
+     "doc_id": "e0d60c4152394b0ea4e32a9e6c1abaa5",
+     "chunk_id": "0a68fa9912a8cf19e86f3fc8af6971de6afec9c35f7615a20ef94fe70fcbd9b8"
+    }
+   ],
+   "latency_s": 0.537,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "耗尽区如何影响半导体探测器的收集效率",
+   "gold_doc_ids": [
+    "05e6f239b6d6466db5eaee3e5f29902b",
+    "58dc8bf9308f43c199521ea61e69a3b4",
+    "c7f48eaed3d4490283970092e96865ba"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "58dc8bf9308f43c199521ea61e69a3b4",
+     "chunk_id": "60d21f77098ddddc9e3eeebc9f581cc89d2710dee0c8e5a04eaaf1ec1ab13895"
+    },
+    {
+     "rank": 2,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "f5c06784b7c947fab399d1aa628601b9ce5e3b27d69f4ae2adab2e6879787c02"
+    },
+    {
+     "rank": 3,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "473158a9d50890c32c4a2a5023a46aa850efbcb6a9d86c65bc5540f20b4281f0"
+    },
+    {
+     "rank": 4,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "07d133886e9cf9038d06a379f1d2f6fb4bb2057ed523484678dcd4df86b788e7"
+    },
+    {
+     "rank": 5,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "d597e9853116fb9de562fd10d3f696bb2b53b508c165a87d9d3f992529e6cab9"
+    },
+    {
+     "rank": 6,
+     "doc_id": "76ebf8dcd6de4c50bc85db5f2d1add5b",
+     "chunk_id": "82b8c72d2e49d831aa96b4c7b92e857702faa9fb1bcb87eca82480eb6f1f2729"
+    },
+    {
+     "rank": 7,
+     "doc_id": "9e1fc145b04440be95666f742fb18fd2",
+     "chunk_id": "9e38ab792c7fe78cba22319d29da6976e77028e0f9dc056b4ed260b8a1d51560"
+    },
+    {
+     "rank": 8,
+     "doc_id": "3ddfd77390ca49febadf828706a0197b",
+     "chunk_id": "a68fb58ad3aa1816084f8f357385c575453d4d7634f790bf1ef0f014bcb86eb1"
+    },
+    {
+     "rank": 9,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "0573feeef396a7f3b055018f5dfd31f948c1b422f3b82862a5296054c40a252f"
+    },
+    {
+     "rank": 10,
+     "doc_id": "05e6f239b6d6466db5eaee3e5f29902b",
+     "chunk_id": "c5fcc40df299b2713752308045d647aa7574445aa0e4becec5deb391abf2021e"
+    },
+    {
+     "rank": 11,
+     "doc_id": "078a2f931b07443b9570a1634fe54375",
+     "chunk_id": "a555cc199ae7e2c36d318efa97e813884d61c9e2e8d8093df72b50bd6276979d"
+    },
+    {
+     "rank": 12,
+     "doc_id": "bf487f64352a464981e82773f8846721",
+     "chunk_id": "28ca7bfcdf043b0062ac9e42e8770a017f578ce9b1087a933be50a12d2895808"
+    },
+    {
+     "rank": 13,
+     "doc_id": "50b952cb4ef949bb93843a2dcc4e4a92",
+     "chunk_id": "ca8fbf6b3eb4bbacf90685e4e5ed0e3db2149abbd16a2840859646f91f3b509f"
+    },
+    {
+     "rank": 14,
+     "doc_id": "dcf2ce862b2848dfa953033cfc437030",
+     "chunk_id": "ed290597c561b4f04d79f2c295510bf6812b3fa903443bcdc45738c0d90a1366"
+    },
+    {
+     "rank": 15,
+     "doc_id": "87a31bfd43ff4a59837fe8f72b2e744b",
+     "chunk_id": "0dd35792b72fcd394a3606a4cf48d264b09068362454df458adde1e0c5118a09"
+    },
+    {
+     "rank": 16,
+     "doc_id": "bfccd9b27fa74fd9b9f157480b41df8d",
+     "chunk_id": "ea6057c20e59c86d2468344884dfd17c5efba17ebb0c96f4f669d6c5829aa366"
+    },
+    {
+     "rank": 17,
+     "doc_id": "90f8be5ec2fc478e9e0be323dc81316d",
+     "chunk_id": "07dded6455ddf00aa880d39ed936b2d10e9082feddd5dca90239e8e58b29e9ad"
+    },
+    {
+     "rank": 18,
+     "doc_id": "f5ed787eb04f49a49e2546774adfd529",
+     "chunk_id": "f4b2416469092dbf9bff87f790ce676f1777c921acfe4ee63645817ca04dbd46"
+    },
+    {
+     "rank": 19,
+     "doc_id": "578c09a2acb9423aa3d7dd0f219d27a4",
+     "chunk_id": "670fbcb6287b0c8aa33a09c3d22110d2a3fb16a50ed0d44e3e8d60221d1c0ab0"
+    },
+    {
+     "rank": 20,
+     "doc_id": "ab82c9d978db490db73a97701879f835",
+     "chunk_id": "1448328e5968c778fe2f8c1fb1701f6354ba1afbb42d67a29d7d883890ef5dd7"
+    }
+   ],
+   "latency_s": 0.518,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "哪些文献采用对 transverse energy 进行准确性核定的方法？",
+   "gold_doc_ids": [
+    "de882b6e2c9745ca87c3dfa7b2cae988",
+    "de9d4ec45ce44acf9c933510cc76b95b",
+    "ea50897545164cec8e7a10a876c935e8"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "e8450da8b871fedc3e9597ab3a140ed12464fe43a8267732f19f78395b2b04dd"
+    },
+    {
+     "rank": 2,
+     "doc_id": "68b69730ce654add88fbf3aacf74039a",
+     "chunk_id": "b40167eb4a602547223b551d95d022610d3fc3e887310a1c8828757815510da8"
+    },
+    {
+     "rank": 3,
+     "doc_id": "162c88cadc3044b3ac78fc8313885745",
+     "chunk_id": "d5b1a30e0199b25c608b1c5ccecf29b715d1787942d81936361984e499f17b26"
+    },
+    {
+     "rank": 4,
+     "doc_id": "51a80be59e3048ffbf9abb6b6a212eb6",
+     "chunk_id": "879c62c40b7de8bd757b3df522b7a0fbf314bcc01610ab804baa114b9354eefd"
+    },
+    {
+     "rank": 5,
+     "doc_id": "c2952e52266042cf8644a01ea9e53112",
+     "chunk_id": "786d5c8fc079c3b4c42370edc956ad03e57b441f6df5f7105f5c57c14b831b96"
+    },
+    {
+     "rank": 6,
+     "doc_id": "81abd380b7fb4219beff1cf006b9bca8",
+     "chunk_id": "192f1a5c1c0aec38be5d52040272d23cbce396a5a1e699f8f1b167936042840b"
+    },
+    {
+     "rank": 7,
+     "doc_id": "2566433836aa4a27b4c986780cfb8ec7",
+     "chunk_id": "98548ce5d50574335341c756f5a0ece85a5867245f75da2d0a68c4a733adb537"
+    },
+    {
+     "rank": 8,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "4e28c01097c731b22a56e60b5f941700a1f9c77de3b56b4022dcb5e3bf8ccad1"
+    },
+    {
+     "rank": 9,
+     "doc_id": "312f2954886f42c4acca8edc7fffe45b",
+     "chunk_id": "7b3bcd631c849259737d17bc7733bf1c75222b9551919aec3b3de5f1b6c6c2fc"
+    },
+    {
+     "rank": 10,
+     "doc_id": "423619890ff247d084ea986ea7aea182",
+     "chunk_id": "b457e10f2ecfdf3e260cbd19fd2bbc7e17b156e1042bb9285515f34170592b45"
+    },
+    {
+     "rank": 11,
+     "doc_id": "005295c12c544da796a7e069d5c07afd",
+     "chunk_id": "8f927872c0ff8d2fc23c6922edb3808f61126f35fb5d5e575e487032791e46c4"
+    },
+    {
+     "rank": 12,
+     "doc_id": "87a31bfd43ff4a59837fe8f72b2e744b",
+     "chunk_id": "f3e682ecf3c88b81b776b4e8ff0b77934b3883d9b9046e0060f334c980567559"
+    },
+    {
+     "rank": 13,
+     "doc_id": "5cf355f9dea949d38bf702f25e40f4a0",
+     "chunk_id": "892e29d6e25f8741f9eff0bcfbb0c257ac70e782ed7124b22dc9c7fe33f7522a"
+    },
+    {
+     "rank": 14,
+     "doc_id": "46791d44836241b2a6102ee0651e742e",
+     "chunk_id": "8199585759008f0e5edd14701a6173944869772d2141533dfcacb0fde58f3fa8"
+    },
+    {
+     "rank": 15,
+     "doc_id": "a0e1ad07b7aa44f9b16e57e1f5411eb1",
+     "chunk_id": "c6660f53ea5ffd2a75c7a42bd139cddc37dc575a1971197e57d77d24386518fe"
+    },
+    {
+     "rank": 16,
+     "doc_id": "ed5e1481889f409b805ec44cc1d6f444",
+     "chunk_id": "7a1e3ed0ce58500911d649d67f6885c45c04e9b4c0a893b1a1274290a825dfae"
+    },
+    {
+     "rank": 17,
+     "doc_id": "756189241e17431ba88bd337f3a55918",
+     "chunk_id": "ece986e269a47984bf731056c2b7bb1333f9f973d9bc9606f63c0f44d4379579"
+    },
+    {
+     "rank": 18,
+     "doc_id": "23f9b0d400444ec6ba603bc1b2dd82a9",
+     "chunk_id": "7bf1972d0609de0e49ad3f4a3ea520e4746a2bb996c96ca05b722ad901f622c4"
+    },
+    {
+     "rank": 19,
+     "doc_id": "ea50897545164cec8e7a10a876c935e8",
+     "chunk_id": "30b7cdebcca6007abf43b4f4773b62931ef2f33dc6ea403aa8ee98f8bf1edf3f"
+    },
+    {
+     "rank": 20,
+     "doc_id": "fbd0581c5d734023ae5cf56144489729",
+     "chunk_id": "19f964790d057d88f28d36e5328459112fb3b0cc9720830a236cdeee46e929b9"
+    }
+   ],
+   "latency_s": 0.51,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "γ探测能量分布与级联叠加校正参数怎么建模预测？",
+   "gold_doc_ids": [
+    "19bde1d874b94c749c1022cdac320afb",
+    "34da886ed5d74004a2f39fcc9e2a2ff9",
+    "65e41a8c461c4020913b0ee20933e37a",
+    "c2952e52266042cf8644a01ea9e53112",
+    "eff2af7d3aa049f6acee61b95edec7a5"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "34da886ed5d74004a2f39fcc9e2a2ff9",
+     "chunk_id": "4e28c01097c731b22a56e60b5f941700a1f9c77de3b56b4022dcb5e3bf8ccad1"
+    },
+    {
+     "rank": 2,
+     "doc_id": "19bde1d874b94c749c1022cdac320afb",
+     "chunk_id": "16064a81b93f7dd0bc0cf257c1b595ac6effb8f2a78978992a89a24fc9fe4dee"
+    },
+    {
+     "rank": 3,
+     "doc_id": "0e4bfcfcabfa47c69fb14d1d6f8fe03c",
+     "chunk_id": "51c1bd0bdc7241e999980a44a7be76923cc7c977d88166e499c542f161c3d128"
+    },
+    {
+     "rank": 4,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "5a64dc443fc82750d30ebf3101c88b650f904c95ecd3e00a657c7192646aa4f4"
+    },
+    {
+     "rank": 5,
+     "doc_id": "81abd380b7fb4219beff1cf006b9bca8",
+     "chunk_id": "192f1a5c1c0aec38be5d52040272d23cbce396a5a1e699f8f1b167936042840b"
+    },
+    {
+     "rank": 6,
+     "doc_id": "14791948f67e4038b1edf9387dcabdbf",
+     "chunk_id": "c8e9a11e52ae2a7cbb4fe735a61a7ed76b3abfd44f909b0fd8e6b8054fbd70fe"
+    },
+    {
+     "rank": 7,
+     "doc_id": "8d6cf27aabf64017bed77a87a3562acd",
+     "chunk_id": "f8ba45d40537b407f987cc5426d7fc265210fbfe06dcd3a5c01830804a199761"
+    },
+    {
+     "rank": 8,
+     "doc_id": "844d59d5f24e46a79bff5a4947853cdb",
+     "chunk_id": "9b3a398d7c6b22030fdcb5a425c0bbc217238fc3a63465eb87fc1ac66c21bb1f"
+    },
+    {
+     "rank": 9,
+     "doc_id": "a7b64e5654e04564a1b57f0122d00a97",
+     "chunk_id": "8e86ee750e306d37c192bda49f2e48b1e65d840ba7732aca9f969c41dc321624"
+    },
+    {
+     "rank": 10,
+     "doc_id": "2dc6aea717814b18bc478839a506c2d9",
+     "chunk_id": "422fbd074a5bc6e68ece1c1887ef34c138fa94f9e0d0167d46354bd41f14e159"
+    },
+    {
+     "rank": 11,
+     "doc_id": "eff2af7d3aa049f6acee61b95edec7a5",
+     "chunk_id": "afbc348936d717ebc256744e3eddfb0f9d3639e6b0e994348f905d39fff266cd"
+    },
+    {
+     "rank": 12,
+     "doc_id": "c630f6ecbc75455fa4dae9c79937fe1a",
+     "chunk_id": "2912fce2a4b2acea96f65c2bae513bbcefbb93f132d0b8cced56f89962482d30"
+    },
+    {
+     "rank": 13,
+     "doc_id": "3deac94b6d2744989b78ab2cbfc500e0",
+     "chunk_id": "886a0bf26f29a00a7019963b109ef3677efa7d0507f2963c2326011e9afd4fd7"
+    },
+    {
+     "rank": 14,
+     "doc_id": "6690d83f50d54001a1cc8c0d98535dd5",
+     "chunk_id": "94ba09fad049cf64f41a7e88a2f75aa60431a14c199a8231542234736fce58ab"
+    },
+    {
+     "rank": 15,
+     "doc_id": "87a31bfd43ff4a59837fe8f72b2e744b",
+     "chunk_id": "1cda1c44a66c97589b6ecfdbe8259a828eaa20d69f6f855a4f3085302de5362e"
+    },
+    {
+     "rank": 16,
+     "doc_id": "43ce5070387d4591a866ffd7a5558231",
+     "chunk_id": "0c9733978354665d8a5e93540094652679bde87afe5991ac97b1c9298ace63be"
+    },
+    {
+     "rank": 17,
+     "doc_id": "65e41a8c461c4020913b0ee20933e37a",
+     "chunk_id": "929faddb75ac0044560df9b660b3156d949a69f6e63bf126fb5bc2ad90e89c73"
+    },
+    {
+     "rank": 18,
+     "doc_id": "c64c868f619449a183942c9717c927ca",
+     "chunk_id": "51b806f18a0f8bd533e3e2444bc65dc6742e018d8ca5c4fc65c30c8a2f731e2c"
+    },
+    {
+     "rank": 19,
+     "doc_id": "fffe7bcf1daa40bcb61c2fac0caae3b9",
+     "chunk_id": "5bd73e6669e75ecfa5cbdbd155be65c870de603a3e73645110827182da218fed"
+    },
+    {
+     "rank": 20,
+     "doc_id": "39e0d487cb244473b028443b1e247c46",
+     "chunk_id": "473158a9d50890c32c4a2a5023a46aa850efbcb6a9d86c65bc5540f20b4281f0"
+    }
+   ],
+   "latency_s": 0.51,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  },
+  {
+   "query": "湿法氧化提取水中碳时回旋共振使用哪些试剂？",
+   "gold_doc_ids": [
+    "7d75e1b4434e44ff9f9d46f454d7a0f3"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "7d75e1b4434e44ff9f9d46f454d7a0f3",
+     "chunk_id": "76de059b9113c26292f3edfcbeb136fb17bf834969462b3fb1ba926dbf639ea5"
+    },
+    {
+     "rank": 2,
+     "doc_id": "9a432edef2604473ba9ce87ae03fcad7",
+     "chunk_id": "a7f9fb7cb9fdb21bdea9c26a17cb9fe6dc2a8285f0047e3900c30704344d5055"
+    },
+    {
+     "rank": 3,
+     "doc_id": "c91b4d2df5e7428599184599bcab85f2",
+     "chunk_id": "dffa51a1023bcd9b8111788df4352e8312d000b5dae83b8bf617cdd073a57883"
+    },
+    {
+     "rank": 4,
+     "doc_id": "d5b5f96e4a9340448504fd40d60b5879",
+     "chunk_id": "3917de0f239b0a070496680d8d7f75aa28f212d0b12515274e6aea607937a1a5"
+    },
+    {
+     "rank": 5,
+     "doc_id": "4480d1b9c5ca42fd938d845ea350f8b2",
+     "chunk_id": "f3cd0d47f96fa61852323b47e6229bc253bec9c1a984b25bb6f5c13d1f4cc096"
+    },
+    {
+     "rank": 6,
+     "doc_id": "831cedc88ad544b5b37ae262e5f2352e",
+     "chunk_id": "daf77567ad5cfe5d0dc0ccd6ef7283ac778cdd31cd5320987c3b522d29ac8e1a"
+    },
+    {
+     "rank": 7,
+     "doc_id": "824098b2c1bf4ebaa5f70e4a83b920cb",
+     "chunk_id": "8f079f4ccc6a04b8925099ce625b30edc6a8ddf157046ac2b7e1ba2072b4ad89"
+    },
+    {
+     "rank": 8,
+     "doc_id": "4768bf2e07aa4f3ea362a48627a2a30c",
+     "chunk_id": "7985d2e623efbd251b6443d7ebfb219daf339ff169303bce51ea58fbdb13ad9c"
+    },
+    {
+     "rank": 9,
+     "doc_id": "00ef29f707f9494dae763ad063cab5b7",
+     "chunk_id": "67b3f6ffc50f23a91bba0191f52e3a183f56c05c2f39d584965a5ba4f9da0e40"
+    },
+    {
+     "rank": 10,
+     "doc_id": "25eac13d027d4a089014c4c735c21629",
+     "chunk_id": "28624710bb01acaefa1084b273532a59656ebea27a5a15b72b3c9f03ad9bf1c4"
+    },
+    {
+     "rank": 11,
+     "doc_id": "91aeee772ac949bd9f49dd951fcb462e",
+     "chunk_id": "e0621c6f4e0ad368c02f15376ba2f0707436b5fce918c910edd193e685952f5c"
+    },
+    {
+     "rank": 12,
+     "doc_id": "63107ab5c74d41d4ab460a2412d38f9a",
+     "chunk_id": "ba5121158e0aa8f879116c89424c850c2876c94c3153bc603d7584ac566d2899"
+    },
+    {
+     "rank": 13,
+     "doc_id": "6d38b0442cb942448e3c5b430f39880e",
+     "chunk_id": "61664670b41a638b1be4f49ea5f253ddd73085859aba822578648d65c5b06b16"
+    },
+    {
+     "rank": 14,
+     "doc_id": "abd509a6eba846cbab0f2e2c02fac19f",
+     "chunk_id": "d75a2a8eda93da7671077ecaa78963a918b4ef3a28146e01d590a625060bf8b2"
+    },
+    {
+     "rank": 15,
+     "doc_id": "2b40ebc5fb394306890983020d20d129",
+     "chunk_id": "f6d7a8780332fc2ac3bf43971a39cebff81fee9d4991685b34701c61e13ff12d"
+    },
+    {
+     "rank": 16,
+     "doc_id": "85e60ba5f04d498eb728e3aa37f19643",
+     "chunk_id": "09637a4a9846d533a5ed3b54b47fc0dbbed9312849dba2a51585ecfe23b87916"
+    },
+    {
+     "rank": 17,
+     "doc_id": "df9848ff4f984ca6a22ed930e1f09cdb",
+     "chunk_id": "b313987ed07670868d2e6626257eeca5170d5cf835c7a215f145b5628f13748e"
+    },
+    {
+     "rank": 18,
+     "doc_id": "3735b009537e45adb2fadc6344707eaf",
+     "chunk_id": "e03fb0e07eb50007ded700bc8c7b69f9eb60ea847fe444fa9ad1799221c1a01f"
+    },
+    {
+     "rank": 19,
+     "doc_id": "7551c20f6d1045d294fb2f2f671fdd2d",
+     "chunk_id": "5963aa079161fbe16efd22b94925f46a1370e5f24eea3dcc5bf2b8c28da18860"
+    },
+    {
+     "rank": 20,
+     "doc_id": "9a45b4b375074729810052e51ce0e1e4",
+     "chunk_id": "b182707b4b9dbda8ad75a4aba6a64fb94954e9e5a8b7542a4b5699f38027b51c"
+    }
+   ],
+   "latency_s": 0.528,
+   "channels": [
+    "lexical",
+    "dense",
+    "docvec",
+    "synq"
+   ],
+   "out_of_slice_hits": 0
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+# KnowledgeNexus Evaluation Artifact
+
+Artifact release for:
+
+1. **KnowledgeNexus: A Traceable Graph–Vector Knowledge Infrastructure and
+   Adaptive Multi-Channel Retrieval for Nuclear Science Literature**
+2. **The Lexicon Is the Load-Bearing Wall** (companion lexicon-quality paper)
+
+LaTeX sources and compiled preprints of both papers are under `papers/latex/`.
+
+## Layout
+
+| Path | Contents |
+|---|---|
+| `eval/harness/` | Question sets (association 48 / real queries 39, hard93, csh cross-domain sets, paraphrase holdouts) and the corpus-first question generator `gen_assoc_set.py` |
+| `eval/baselines/scripts/` | All evaluation drivers: scoped in-process runner (`run_knc_scoped.py`), channel ablation (`run_knc_scoped_ablate_channels.py`), link-precision audit (`audit_link_precision.py`), external baselines (`run_hipporag.py`, LlamaIndex, BM25), paired-bootstrap scoring (`score.py`) |
+| `eval/baselines/data/` | Slice document lists, question variants, and the three English multi-hop benchmark pools (400-doc pools, HotpotQA/2Wiki/MuSiQue) |
+| `eval/baselines/runs/` | Per-query prediction files backing the paper tables: channel-ablation arms, scoped KNC arms, genrag capability-pipeline arms, and the same-embedder English benchmark arms |
+| `eval/baselines/results/` | Result archives: `20261009_chab` (single-variable entity-channel ablation) and `20261009_linkaudit` (100-link precision audit with per-link adjudications) |
+| `corpus/` | Three-source corpus-attested lexicon generator (`gen_term_lexicons.py`) and full-chain entity-layer rebuild driver (`rebuild_graph_enrich.py`) |
+
+## Headline numbers reproduced here
+
+- **Entity-channel ablation** (paper 1 §7.2, paper 2 §6.3): with every
+  entity-dependent channel disabled, both question families are bitwise
+  identical to the full configuration (cov@10/R@10/MRR; nea cov@20 −1.0pt,
+  CI [−3.1, 0.0]) while p50 latency halves 1.46 s → 0.52 s. Note for
+  re-runners: the co-occurrence channel ignores the `channels` request
+  parameter and must be killed via `KNC_COOC_OFF=1` (see the ablation
+  script header).
+- **Link precision audit** (paper 2 §6.4): n=100 seeded sample from the
+  rebuilt KB, span integrity 100/100, precision 0.850 (Wilson 95% CI
+  [0.767, 0.907]); domain-term stratum 25/25 = 1.000, generic stratum
+  60/75 = 0.800.
+- **Same-embedder English benchmark control** (paper 1 §7.1): all arms on
+  Qwen3-Embedding-8B, 400-doc pools — HippoRAG 2 (reproduced) beats plain
+  dense on 2 of 3 benchmarks; the cross-embedder gap in the published
+  comparison belongs to the embedding model generation.
+- **Capability pipeline vs assets** (paper 1 §7.6): query-time LLM
+  (rewrite→fuse→rerank) wins association cov@10 +10.1pt at ~60× latency
+  and zero asset accumulation.
+
+## Reproduction prerequisites
+
+The drivers run **in-process against the deployed KnowledgeNexus stack**
+(MySQL/OpenSearch/vLLM endpoints injected via environment; see
+`eval/baselines/scripts/knc_env.sh` for the variable contract — no
+credentials are stored in this repository). Scoring is fully offline:
+
+```bash
+python3 eval/baselines/scripts/score.py \
+  eval/baselines/runs/chab-all_nea_L.json \
+  eval/baselines/runs/chab-noentity_nea_L.json \
+  --ref eval/baselines/runs/chab-all_nea_L.json
+```
+
+The journal corpora are third-party copyrighted and not redistributable;
+the benchmark pools under `eval/baselines/data/bench/` contain the
+HippoRAG 2 evaluation subsets used in the paper.
+
+## License / access
+
+Evaluation code and question sets: released for review and replication.
+Third-party components (benchmark data, model names) remain under their
+respective licenses.

@@ -1,0 +1,36 @@
+{"query": "气冷微堆石墨堆芯在地震作用下的抗震性能如何？", "gold_doc_ids": ["e034c6a785b54ebd846b047906d92786"]}
+{"query": "Li6Eu(BO3)3晶体作为闪烁体在稀有过程研究中的性能表现如何？", "gold_doc_ids": ["2616088261454a44859cdfd12d42b179"]}
+{"query": "如何利用蒙特卡罗模拟研究X射线密度测井屏蔽体的效果？", "gold_doc_ids": ["075a964b6d964ce7887790a5802b890c"]}
+{"query": "如何开发用于手脚监测的大面积α成像探测器？", "gold_doc_ids": ["5dc56bf9ee384b6cb53cae2fc5a248aa"]}
+{"query": "如何表征来自Hamamatsu和Onsemi的两个SiPM阵列在液氩探测器中的应用性能？", "gold_doc_ids": ["53d52a843e5e46ab86f1ec7f80305348"]}
+{"query": "在LHC Run 3中，如何使用Tag-and-Probe方法研究CMS RPC探测器的效率？", "gold_doc_ids": ["4cdb4c9d6c66437d92ed02f84dd0713b"]}
+{"query": "如何通过蒙特卡罗模拟优化PRESET卫星电子谱仪望远镜的几何结构？", "gold_doc_ids": ["2fca73f2212f427297e19ccd5a55d1aa"]}
+{"query": "如何利用MHz XFEL光源和JUNGFRAU探测器对液体进行硬X射线发射光谱分析？", "gold_doc_ids": ["230836d9fb9042329f5039989feb3ae7"]}
+{"query": "nSpec系统有哪些最新进展？", "gold_doc_ids": ["ef66e3cc5b21449283809c6d09fa5a83"]}
+{"query": "在中子辐照与地下水耦合作用下，锡青铜的腐蚀加速机理是什么？", "gold_doc_ids": ["c0b1e0bf330f4d7984cf281ea53a8499"]}
+{"query": "如何为量热探测实验原型化高纯度锗低温 veto 系统？", "gold_doc_ids": ["1da18102d02149c4b7683d08af041bae"]}
+{"query": "二维功能填料的尺寸如何影响BN/EPDM柔性中子防护复合材料的性能？", "gold_doc_ids": ["d01137e831d44303bd1bb164f0b127de"]}
+{"query": "如何通过化学气相沉积生产用于低本底探测器的高纯度钨？", "gold_doc_ids": ["9259d194381140a9ad36e752d0213c6e"]}
+{"query": "如何评估基于PET的SiPM读出技术在紧凑型分段中子成像仪中的应用？", "gold_doc_ids": ["09a9dc615f8a45c89b1141e0f92a3a20"]}
+{"query": "如何表征用于粒子治疗中离子束计数的144通道前端电路板？", "gold_doc_ids": ["0934cec7eff44a8a9682085030930cea"]}
+{"query": "石英光纤束损监测系统在SXFEL上的应用效果如何？", "gold_doc_ids": ["20280e875db748769971bc36cd95deb0"]}
+{"query": "未来e+ e-环形对撞机中采用何种非局部螺线管补偿方案？", "gold_doc_ids": ["4afc76d8cecc4c148f073b86a8a9dd98"]}
+{"query": "SuperKEKB低Z准直器的设计特点是什么？", "gold_doc_ids": ["4fb7b9c9e2f8455c8737ec36ba59677a"]}
+{"query": "如何利用塑料闪烁体和辐射损伤的SiPM降低能量阈值？", "gold_doc_ids": ["b160e18b22a544a5b61fed92ddb9b0e2"]}
+{"query": "如何开发空间分辨率约为200 μm的单光子发射显微镜系统？", "gold_doc_ids": ["d3c9089ba00849dfa3badf65e0bb44df"]}
+{"query": "如何对辐射硬化耗尽型单片有源像素传感器MALTA2进行电荷校准？", "gold_doc_ids": ["07d96ae892234e54968e24d3068d7b19"]}
+{"query": "二次开发的RELAP5在倾斜条件下对PRS运行分析的适用性如何？", "gold_doc_ids": ["c742ed156c934e4ca81a7009a5c2579f"]}
+{"query": "如何利用空间相位偏差通过机器学习方法预测加速器束流异常？", "gold_doc_ids": ["4458205bcbd54e5db92fa218a49292ae"]}
+{"query": "如何计算延迟伽马射线中子活化分析的产额？", "gold_doc_ids": ["fcd1f7f074fd4dbbb9d6474fa89a0f90"]}
+{"query": "如何基于Seq2Seq模型预测瞬态反应堆的热工参数？", "gold_doc_ids": ["e3fd6839509b456d9744eec37cae5568"]}
+{"query": "使用C2H2F4和CO2混合气体运行RPC探测器的性能研究结果如何？", "gold_doc_ids": ["f7cc88e030cf45d0a793d401955764bb"]}
+{"query": "如何设计及测试一种小型轻量化超导重离子旋转机架？", "gold_doc_ids": ["c0a11f4885ff491398b43707ce0238a6"]}
+{"query": "DUNE远探测器光子探测系统的特性和性能如何？", "gold_doc_ids": ["91ba9726caed4e0bb118742fb0538df3"]}
+{"query": "如何利用同步辐射高时空分辨X射线成像技术研究气泡诱导微射流的演化过程？", "gold_doc_ids": ["4bbb9081403e4790b939850443235a58"]}
+{"query": "Langevin Compton Imaging: A new method of visualizing radioactive sources based on Markov chain Monte Carlo", "gold_doc_ids": ["9c31f993c88c45ff9717933647c14036"]}
+{"query": "Light concentrator design for the large array of imaging atmospheric Cherenkov Telescopes (LACT)", "gold_doc_ids": ["cf9c9e90f3574a1d8a12658344d711b4"]}
+{"query": "Spyral: A scalable analysis framework for Active-Target Time Projection Chamber data", "gold_doc_ids": ["5e869a4357cc409bbea2dc0daceb6e8e"]}
+{"query": "Ground calibration of Chang’E-7 Lunar Neutron and Gamma-ray Spectrometer at CSNS Back-n", "gold_doc_ids": ["01ac22ad61ef48f49c0584f08aa375e9"]}
+{"query": "Calibration of the ICARUS cryogenic photo-detection system at FNAL", "gold_doc_ids": ["37bd5318b82b42729df82e5b0c487ac0"]}
+{"query": "Detailed simulation for the ClearMind prototype detection module and event reconstruction using artificial intelligence", "gold_doc_ids": ["f6a2cb8ff64d4a378dad196546a1f72c"]}
+{"query": "应用正电子湮没谱学研究CaO添加对Al2O3纳米陶瓷烧结过程的影响", "gold_doc_ids": ["92a385d84db64eb2b4ad5f4d0c2fe772"]}

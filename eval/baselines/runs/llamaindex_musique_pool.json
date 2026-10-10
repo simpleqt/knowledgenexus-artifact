@@ -1,0 +1,3021 @@
+{
+ "system": "llamaindex",
+ "slice": "pool",
+ "set": "musique",
+ "corpus_docs": 400,
+ "index_cost": {
+  "wall_s": null,
+  "note": "embed=Qwen3-Embedding-8B, passage 级"
+ },
+ "per_query": [
+  {
+   "query": "Why did Roncalli leave the place where Violante's painter died?",
+   "gold_doc_ids": [
+    "42a96eca689ade81b5839f0f1028b23b",
+    "877f0964591844c2ce81ee2e51143334",
+    "a8d5fa7707a8ac4b8e572b43af83f24c"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "a12f65610281fd8c334b6715c76b18bb",
+     "chunk_id": "a12f65610281fd8c334b6715c76b18bb",
+     "score": 0.4647
+    },
+    {
+     "rank": 2,
+     "doc_id": "54f2fe783dc929fe9e12e5dd40571e8c",
+     "chunk_id": "54f2fe783dc929fe9e12e5dd40571e8c",
+     "score": 0.4028
+    },
+    {
+     "rank": 3,
+     "doc_id": "0322731f545a9283622e76974b4c1c59",
+     "chunk_id": "0322731f545a9283622e76974b4c1c59",
+     "score": 0.3958
+    },
+    {
+     "rank": 4,
+     "doc_id": "42a96eca689ade81b5839f0f1028b23b",
+     "chunk_id": "42a96eca689ade81b5839f0f1028b23b",
+     "score": 0.3938
+    },
+    {
+     "rank": 5,
+     "doc_id": "ae8280e963072ec570978c3b957d83a9",
+     "chunk_id": "ae8280e963072ec570978c3b957d83a9",
+     "score": 0.3884
+    },
+    {
+     "rank": 6,
+     "doc_id": "43b7a817a938e81c90339f88378c78cf",
+     "chunk_id": "43b7a817a938e81c90339f88378c78cf",
+     "score": 0.3824
+    },
+    {
+     "rank": 7,
+     "doc_id": "a8d5fa7707a8ac4b8e572b43af83f24c",
+     "chunk_id": "a8d5fa7707a8ac4b8e572b43af83f24c",
+     "score": 0.3781
+    },
+    {
+     "rank": 8,
+     "doc_id": "0926108e2713562e7530ec33510a768f",
+     "chunk_id": "0926108e2713562e7530ec33510a768f",
+     "score": 0.3708
+    },
+    {
+     "rank": 9,
+     "doc_id": "123f4211d621067e6e7b7d8d97907404",
+     "chunk_id": "123f4211d621067e6e7b7d8d97907404",
+     "score": 0.3702
+    },
+    {
+     "rank": 10,
+     "doc_id": "44ace224b87f5b074b80dd839ebe117e",
+     "chunk_id": "44ace224b87f5b074b80dd839ebe117e",
+     "score": 0.3674
+    },
+    {
+     "rank": 11,
+     "doc_id": "75cd5c6200c984b2576f0000ac61d90b",
+     "chunk_id": "75cd5c6200c984b2576f0000ac61d90b",
+     "score": 0.3644
+    },
+    {
+     "rank": 12,
+     "doc_id": "2a927c8c14e0ae3b4546a7e03f45df97",
+     "chunk_id": "2a927c8c14e0ae3b4546a7e03f45df97",
+     "score": 0.3537
+    },
+    {
+     "rank": 13,
+     "doc_id": "2a77f08dad0503f71744f5c74ce4615c",
+     "chunk_id": "2a77f08dad0503f71744f5c74ce4615c",
+     "score": 0.3466
+    },
+    {
+     "rank": 14,
+     "doc_id": "8b53de6b7433833f2c34ed6cb64769b4",
+     "chunk_id": "8b53de6b7433833f2c34ed6cb64769b4",
+     "score": 0.3447
+    },
+    {
+     "rank": 15,
+     "doc_id": "7304a2f2eef7e3ee21b46a0f64ce6b5f",
+     "chunk_id": "7304a2f2eef7e3ee21b46a0f64ce6b5f",
+     "score": 0.3425
+    },
+    {
+     "rank": 16,
+     "doc_id": "7ca8f4b8cc036410d4f858e6e9ffbdb6",
+     "chunk_id": "7ca8f4b8cc036410d4f858e6e9ffbdb6",
+     "score": 0.3414
+    },
+    {
+     "rank": 17,
+     "doc_id": "2d59326ddac1c6340851ab82f0900498",
+     "chunk_id": "2d59326ddac1c6340851ab82f0900498",
+     "score": 0.3411
+    },
+    {
+     "rank": 18,
+     "doc_id": "16abc17a9b76282b12353c67498fe1fa",
+     "chunk_id": "16abc17a9b76282b12353c67498fe1fa",
+     "score": 0.3351
+    },
+    {
+     "rank": 19,
+     "doc_id": "da6b5d13d22a58ab1adb8228aed024e5",
+     "chunk_id": "da6b5d13d22a58ab1adb8228aed024e5",
+     "score": 0.3324
+    },
+    {
+     "rank": 20,
+     "doc_id": "38cff9200d3abc0c6d5d6574a3b1b009",
+     "chunk_id": "38cff9200d3abc0c6d5d6574a3b1b009",
+     "score": 0.3277
+    }
+   ],
+   "latency_s": 0.91
+  },
+  {
+   "query": "What is the name of the castle in the city where the performer of Fall was born?",
+   "gold_doc_ids": [
+    "46e351fac9569b479f2b9b80776b66ba",
+    "c704d4a8d3abb357a0afd236c0c75073",
+    "c9b828e6e49a1155d3382b3934e68fc7"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "46e351fac9569b479f2b9b80776b66ba",
+     "chunk_id": "46e351fac9569b479f2b9b80776b66ba",
+     "score": 0.5665
+    },
+    {
+     "rank": 2,
+     "doc_id": "8e7ea2ae93631defacc2901193fe3de8",
+     "chunk_id": "8e7ea2ae93631defacc2901193fe3de8",
+     "score": 0.4284
+    },
+    {
+     "rank": 3,
+     "doc_id": "d7c028c1338038796f8c8c1c4fb6647d",
+     "chunk_id": "d7c028c1338038796f8c8c1c4fb6647d",
+     "score": 0.3976
+    },
+    {
+     "rank": 4,
+     "doc_id": "2a058cc1f78b228eac86d61061cb3342",
+     "chunk_id": "2a058cc1f78b228eac86d61061cb3342",
+     "score": 0.3818
+    },
+    {
+     "rank": 5,
+     "doc_id": "73f51c87b776d4094807e362fa7bcf0e",
+     "chunk_id": "73f51c87b776d4094807e362fa7bcf0e",
+     "score": 0.3803
+    },
+    {
+     "rank": 6,
+     "doc_id": "763e7e963e26266bc5370b1f86d4c3ee",
+     "chunk_id": "763e7e963e26266bc5370b1f86d4c3ee",
+     "score": 0.3755
+    },
+    {
+     "rank": 7,
+     "doc_id": "842bef3bc9cdb5772a9eea2267f4ca5d",
+     "chunk_id": "842bef3bc9cdb5772a9eea2267f4ca5d",
+     "score": 0.3751
+    },
+    {
+     "rank": 8,
+     "doc_id": "82d16c86503f14197363834f9a1b784c",
+     "chunk_id": "82d16c86503f14197363834f9a1b784c",
+     "score": 0.3713
+    },
+    {
+     "rank": 9,
+     "doc_id": "22d0f2e21fa7b212df852e3d662fee78",
+     "chunk_id": "22d0f2e21fa7b212df852e3d662fee78",
+     "score": 0.3681
+    },
+    {
+     "rank": 10,
+     "doc_id": "41eaf706a3089f16576884df513c5cb0",
+     "chunk_id": "41eaf706a3089f16576884df513c5cb0",
+     "score": 0.3656
+    },
+    {
+     "rank": 11,
+     "doc_id": "44c8428a7376b5fc659a005793ded9b5",
+     "chunk_id": "44c8428a7376b5fc659a005793ded9b5",
+     "score": 0.3651
+    },
+    {
+     "rank": 12,
+     "doc_id": "c3129e0bece8f15c0a0fe84902f45bcb",
+     "chunk_id": "c3129e0bece8f15c0a0fe84902f45bcb",
+     "score": 0.3642
+    },
+    {
+     "rank": 13,
+     "doc_id": "c9b828e6e49a1155d3382b3934e68fc7",
+     "chunk_id": "c9b828e6e49a1155d3382b3934e68fc7",
+     "score": 0.3632
+    },
+    {
+     "rank": 14,
+     "doc_id": "87b166683bff55ed7d516083313fa4ef",
+     "chunk_id": "87b166683bff55ed7d516083313fa4ef",
+     "score": 0.3609
+    },
+    {
+     "rank": 15,
+     "doc_id": "ea517fc062452db4c8c735e9e627a226",
+     "chunk_id": "ea517fc062452db4c8c735e9e627a226",
+     "score": 0.3606
+    },
+    {
+     "rank": 16,
+     "doc_id": "ee2e7401a24ea7f54e8bc00dfc5cfc08",
+     "chunk_id": "ee2e7401a24ea7f54e8bc00dfc5cfc08",
+     "score": 0.358
+    },
+    {
+     "rank": 17,
+     "doc_id": "56a7c3f92d4ad8fa49d8995633ea6bac",
+     "chunk_id": "56a7c3f92d4ad8fa49d8995633ea6bac",
+     "score": 0.3566
+    },
+    {
+     "rank": 18,
+     "doc_id": "9a0ec562c9cc8709d7e870e4f5a240b5",
+     "chunk_id": "9a0ec562c9cc8709d7e870e4f5a240b5",
+     "score": 0.3543
+    },
+    {
+     "rank": 19,
+     "doc_id": "b0cb71cef2b7ede54a05df5b2ed2f984",
+     "chunk_id": "b0cb71cef2b7ede54a05df5b2ed2f984",
+     "score": 0.3538
+    },
+    {
+     "rank": 20,
+     "doc_id": "c2a14f1e27c1ba685de333995056a7d6",
+     "chunk_id": "c2a14f1e27c1ba685de333995056a7d6",
+     "score": 0.3532
+    }
+   ],
+   "latency_s": 0.746
+  },
+  {
+   "query": "What is the meaning of the word that is also a majority religion in the area that became India when the country where Masherbrum is located was created in the Arabic dictionary?",
+   "gold_doc_ids": [
+    "161e07a309070e5829328ac30164bf3f",
+    "337d80373c3053e42d6e05a38a2bd00d",
+    "ca76c71a7479b129c94296a95923b443"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "161e07a309070e5829328ac30164bf3f",
+     "chunk_id": "161e07a309070e5829328ac30164bf3f",
+     "score": 0.6158
+    },
+    {
+     "rank": 2,
+     "doc_id": "337d80373c3053e42d6e05a38a2bd00d",
+     "chunk_id": "337d80373c3053e42d6e05a38a2bd00d",
+     "score": 0.5433
+    },
+    {
+     "rank": 3,
+     "doc_id": "85649aee6b9e3490d8b32114505b4509",
+     "chunk_id": "85649aee6b9e3490d8b32114505b4509",
+     "score": 0.5117
+    },
+    {
+     "rank": 4,
+     "doc_id": "c46f1b2b202d312dedbfc1571cac2315",
+     "chunk_id": "c46f1b2b202d312dedbfc1571cac2315",
+     "score": 0.476
+    },
+    {
+     "rank": 5,
+     "doc_id": "f6a800f0728cee34481321d435412849",
+     "chunk_id": "f6a800f0728cee34481321d435412849",
+     "score": 0.464
+    },
+    {
+     "rank": 6,
+     "doc_id": "ca76c71a7479b129c94296a95923b443",
+     "chunk_id": "ca76c71a7479b129c94296a95923b443",
+     "score": 0.4332
+    },
+    {
+     "rank": 7,
+     "doc_id": "1f355d6d721269434e4ee8c19bc9a239",
+     "chunk_id": "1f355d6d721269434e4ee8c19bc9a239",
+     "score": 0.4217
+    },
+    {
+     "rank": 8,
+     "doc_id": "eefc60bc9eb2897f4c11211e19e130f9",
+     "chunk_id": "eefc60bc9eb2897f4c11211e19e130f9",
+     "score": 0.4166
+    },
+    {
+     "rank": 9,
+     "doc_id": "4bc2b73fe1692e4c592fb3f4ccbfe48a",
+     "chunk_id": "4bc2b73fe1692e4c592fb3f4ccbfe48a",
+     "score": 0.4142
+    },
+    {
+     "rank": 10,
+     "doc_id": "2bcf926ed737578233adda578cd9385f",
+     "chunk_id": "2bcf926ed737578233adda578cd9385f",
+     "score": 0.403
+    },
+    {
+     "rank": 11,
+     "doc_id": "fc665b1a2ea43a38f1dd68d70d7e6cce",
+     "chunk_id": "fc665b1a2ea43a38f1dd68d70d7e6cce",
+     "score": 0.3989
+    },
+    {
+     "rank": 12,
+     "doc_id": "e8ea1ebb6f0ea51a47a617ebc473a4b6",
+     "chunk_id": "e8ea1ebb6f0ea51a47a617ebc473a4b6",
+     "score": 0.3904
+    },
+    {
+     "rank": 13,
+     "doc_id": "f0d03fe86cb797195fce25fd3e9d4ea7",
+     "chunk_id": "f0d03fe86cb797195fce25fd3e9d4ea7",
+     "score": 0.3893
+    },
+    {
+     "rank": 14,
+     "doc_id": "dc51cf566efe756cd05efa2f1ebb023e",
+     "chunk_id": "dc51cf566efe756cd05efa2f1ebb023e",
+     "score": 0.3853
+    },
+    {
+     "rank": 15,
+     "doc_id": "d0d752ea51c7cf567aab2fd76a828808",
+     "chunk_id": "d0d752ea51c7cf567aab2fd76a828808",
+     "score": 0.3829
+    },
+    {
+     "rank": 16,
+     "doc_id": "c5a718b59d4056a4f7c1e25529b1c629",
+     "chunk_id": "c5a718b59d4056a4f7c1e25529b1c629",
+     "score": 0.3816
+    },
+    {
+     "rank": 17,
+     "doc_id": "6888a000daac189d40a60d1f2196c24f",
+     "chunk_id": "6888a000daac189d40a60d1f2196c24f",
+     "score": 0.3787
+    },
+    {
+     "rank": 18,
+     "doc_id": "6d018f9368b2ed6a34eca060986bf20c",
+     "chunk_id": "6d018f9368b2ed6a34eca060986bf20c",
+     "score": 0.376
+    },
+    {
+     "rank": 19,
+     "doc_id": "dd31dfecfefad30fc3f72f6624930dc0",
+     "chunk_id": "dd31dfecfefad30fc3f72f6624930dc0",
+     "score": 0.374
+    },
+    {
+     "rank": 20,
+     "doc_id": "56b2142e45582f6a5d499b9bf6a8b141",
+     "chunk_id": "56b2142e45582f6a5d499b9bf6a8b141",
+     "score": 0.3722
+    }
+   ],
+   "latency_s": 0.886
+  },
+  {
+   "query": "When did Nissan, the Acura Legend maker and the Scion xD manufacturer open US assembly plants?",
+   "gold_doc_ids": [
+    "317fe1d28ed70e559d4ee95164478d4d",
+    "5129d51b9df912f11d0e2fde6b99bdf5",
+    "7302b0b3a9f86087ba39582918daa999"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "7302b0b3a9f86087ba39582918daa999",
+     "chunk_id": "7302b0b3a9f86087ba39582918daa999",
+     "score": 0.5347
+    },
+    {
+     "rank": 2,
+     "doc_id": "72bd0664fd46ebcc6bae02b73b403adb",
+     "chunk_id": "72bd0664fd46ebcc6bae02b73b403adb",
+     "score": 0.4904
+    },
+    {
+     "rank": 3,
+     "doc_id": "021f052691c380296751a6f3678d7a7f",
+     "chunk_id": "021f052691c380296751a6f3678d7a7f",
+     "score": 0.4841
+    },
+    {
+     "rank": 4,
+     "doc_id": "ca97034729e57cb2dc84f6213a5d6dd4",
+     "chunk_id": "ca97034729e57cb2dc84f6213a5d6dd4",
+     "score": 0.4805
+    },
+    {
+     "rank": 5,
+     "doc_id": "5129d51b9df912f11d0e2fde6b99bdf5",
+     "chunk_id": "5129d51b9df912f11d0e2fde6b99bdf5",
+     "score": 0.4799
+    },
+    {
+     "rank": 6,
+     "doc_id": "ea687440ff8b51152617b4e318c714e6",
+     "chunk_id": "ea687440ff8b51152617b4e318c714e6",
+     "score": 0.4716
+    },
+    {
+     "rank": 7,
+     "doc_id": "b3dbacfc7e40fff018eaca72e6b78995",
+     "chunk_id": "b3dbacfc7e40fff018eaca72e6b78995",
+     "score": 0.4601
+    },
+    {
+     "rank": 8,
+     "doc_id": "0eeb5ad51af5357dec4864e2226d9e5f",
+     "chunk_id": "0eeb5ad51af5357dec4864e2226d9e5f",
+     "score": 0.46
+    },
+    {
+     "rank": 9,
+     "doc_id": "10f88e2be7adb3a6d98debc637922d71",
+     "chunk_id": "10f88e2be7adb3a6d98debc637922d71",
+     "score": 0.4584
+    },
+    {
+     "rank": 10,
+     "doc_id": "11323dbbaffca2ead9a9011146c51797",
+     "chunk_id": "11323dbbaffca2ead9a9011146c51797",
+     "score": 0.4546
+    },
+    {
+     "rank": 11,
+     "doc_id": "4d8dc974f0f860d20541a055126ec933",
+     "chunk_id": "4d8dc974f0f860d20541a055126ec933",
+     "score": 0.4431
+    },
+    {
+     "rank": 12,
+     "doc_id": "17bb4edc8e931c1a17363f09dadea3f6",
+     "chunk_id": "17bb4edc8e931c1a17363f09dadea3f6",
+     "score": 0.4355
+    },
+    {
+     "rank": 13,
+     "doc_id": "6192bae19ee242ef98e9ac317921ff36",
+     "chunk_id": "6192bae19ee242ef98e9ac317921ff36",
+     "score": 0.408
+    },
+    {
+     "rank": 14,
+     "doc_id": "4f6f96fe7e4bf67bca9935a3c875c810",
+     "chunk_id": "4f6f96fe7e4bf67bca9935a3c875c810",
+     "score": 0.4028
+    },
+    {
+     "rank": 15,
+     "doc_id": "fda8924fab2dcdc3bd6b022623badd86",
+     "chunk_id": "fda8924fab2dcdc3bd6b022623badd86",
+     "score": 0.3922
+    },
+    {
+     "rank": 16,
+     "doc_id": "ed946c9692740a46790f6f9525ce2eeb",
+     "chunk_id": "ed946c9692740a46790f6f9525ce2eeb",
+     "score": 0.3916
+    },
+    {
+     "rank": 17,
+     "doc_id": "ce8b3528f9f69d385a5c8beb65364709",
+     "chunk_id": "ce8b3528f9f69d385a5c8beb65364709",
+     "score": 0.3857
+    },
+    {
+     "rank": 18,
+     "doc_id": "3daff38e33d473f60f2c1812ea58612b",
+     "chunk_id": "3daff38e33d473f60f2c1812ea58612b",
+     "score": 0.3533
+    },
+    {
+     "rank": 19,
+     "doc_id": "8fb5d9da7bd69230d83bb0946490a746",
+     "chunk_id": "8fb5d9da7bd69230d83bb0946490a746",
+     "score": 0.3452
+    },
+    {
+     "rank": 20,
+     "doc_id": "8d298903d539a48735c468273cb2a3fa",
+     "chunk_id": "8d298903d539a48735c468273cb2a3fa",
+     "score": 0.3413
+    }
+   ],
+   "latency_s": 0.784
+  },
+  {
+   "query": "Who is the spouse of the actor playing Bart's father in I can only imagine?",
+   "gold_doc_ids": [
+    "52dfdc9c086197b95c3aa3b9325378eb",
+    "b3ecbf1bb5e3c027d6b490dc0e9b4157"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "b3ecbf1bb5e3c027d6b490dc0e9b4157",
+     "chunk_id": "b3ecbf1bb5e3c027d6b490dc0e9b4157",
+     "score": 0.6459
+    },
+    {
+     "rank": 2,
+     "doc_id": "9df9189f323aee74ff767988067ba72a",
+     "chunk_id": "9df9189f323aee74ff767988067ba72a",
+     "score": 0.5666
+    },
+    {
+     "rank": 3,
+     "doc_id": "aa5ecec73b394c4d6fc6b599a8a80c56",
+     "chunk_id": "aa5ecec73b394c4d6fc6b599a8a80c56",
+     "score": 0.4289
+    },
+    {
+     "rank": 4,
+     "doc_id": "c4305db02c393a70c20d338a85cf662b",
+     "chunk_id": "c4305db02c393a70c20d338a85cf662b",
+     "score": 0.4267
+    },
+    {
+     "rank": 5,
+     "doc_id": "9608613754f3ff5f10622ab779c9a6a0",
+     "chunk_id": "9608613754f3ff5f10622ab779c9a6a0",
+     "score": 0.4154
+    },
+    {
+     "rank": 6,
+     "doc_id": "392a65f77a61d493061ad531d1b301da",
+     "chunk_id": "392a65f77a61d493061ad531d1b301da",
+     "score": 0.3992
+    },
+    {
+     "rank": 7,
+     "doc_id": "d2380c9fc8676457eb7f6fb5b1f51dd5",
+     "chunk_id": "d2380c9fc8676457eb7f6fb5b1f51dd5",
+     "score": 0.3971
+    },
+    {
+     "rank": 8,
+     "doc_id": "eaa5d131785dea792de6474741b1e69e",
+     "chunk_id": "eaa5d131785dea792de6474741b1e69e",
+     "score": 0.389
+    },
+    {
+     "rank": 9,
+     "doc_id": "ab3cf4861572b302fb5efae7bf379f62",
+     "chunk_id": "ab3cf4861572b302fb5efae7bf379f62",
+     "score": 0.3885
+    },
+    {
+     "rank": 10,
+     "doc_id": "4ec29e4b54165c0db5a7828b0ff2653a",
+     "chunk_id": "4ec29e4b54165c0db5a7828b0ff2653a",
+     "score": 0.3829
+    },
+    {
+     "rank": 11,
+     "doc_id": "fb0c2d823aefe12e511f851e186b3a90",
+     "chunk_id": "fb0c2d823aefe12e511f851e186b3a90",
+     "score": 0.3807
+    },
+    {
+     "rank": 12,
+     "doc_id": "a869ba19a2d808f2bca4871fe4652525",
+     "chunk_id": "a869ba19a2d808f2bca4871fe4652525",
+     "score": 0.3742
+    },
+    {
+     "rank": 13,
+     "doc_id": "807dbef1d8c7e826eed572bc784d1dce",
+     "chunk_id": "807dbef1d8c7e826eed572bc784d1dce",
+     "score": 0.371
+    },
+    {
+     "rank": 14,
+     "doc_id": "f4f52ca61640901be8f5ee4636b6b8bf",
+     "chunk_id": "f4f52ca61640901be8f5ee4636b6b8bf",
+     "score": 0.3699
+    },
+    {
+     "rank": 15,
+     "doc_id": "16987e0392f58bdd4cbe2a7e0545d4d3",
+     "chunk_id": "16987e0392f58bdd4cbe2a7e0545d4d3",
+     "score": 0.3678
+    },
+    {
+     "rank": 16,
+     "doc_id": "fc565565021c307658f150baccbbc210",
+     "chunk_id": "fc565565021c307658f150baccbbc210",
+     "score": 0.366
+    },
+    {
+     "rank": 17,
+     "doc_id": "f6888b016643b1793423b520a4413395",
+     "chunk_id": "f6888b016643b1793423b520a4413395",
+     "score": 0.3653
+    },
+    {
+     "rank": 18,
+     "doc_id": "3656a3169803150a547e0d35d3811345",
+     "chunk_id": "3656a3169803150a547e0d35d3811345",
+     "score": 0.3618
+    },
+    {
+     "rank": 19,
+     "doc_id": "82052ed3fb0f443ae592c994149aec00",
+     "chunk_id": "82052ed3fb0f443ae592c994149aec00",
+     "score": 0.3611
+    },
+    {
+     "rank": 20,
+     "doc_id": "f187f47371602734562dab0597b55235",
+     "chunk_id": "f187f47371602734562dab0597b55235",
+     "score": 0.3584
+    }
+   ],
+   "latency_s": 0.633
+  },
+  {
+   "query": "The capital of the state where Mary Boykin Chesnut lived borders a city within which county?",
+   "gold_doc_ids": [
+    "8c316e8732deb989afa9d0424d49e536",
+    "9b8dcdbf87dc91f8a7e651b246f40480",
+    "ae10a77afa03b0d19beac74e4f47e515",
+    "f6c46f6373a1dcfce87d6c4bfa146361"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "8c316e8732deb989afa9d0424d49e536",
+     "chunk_id": "8c316e8732deb989afa9d0424d49e536",
+     "score": 0.5757
+    },
+    {
+     "rank": 2,
+     "doc_id": "872141842dba7adeffa3b80f4a80b20a",
+     "chunk_id": "872141842dba7adeffa3b80f4a80b20a",
+     "score": 0.4893
+    },
+    {
+     "rank": 3,
+     "doc_id": "ec006eff189fd1bec218905fa7d62d26",
+     "chunk_id": "ec006eff189fd1bec218905fa7d62d26",
+     "score": 0.4836
+    },
+    {
+     "rank": 4,
+     "doc_id": "5173693c3136df552a48ebd2b8380910",
+     "chunk_id": "5173693c3136df552a48ebd2b8380910",
+     "score": 0.4365
+    },
+    {
+     "rank": 5,
+     "doc_id": "7e62d48d08138435bfeaf0521e8ab13a",
+     "chunk_id": "7e62d48d08138435bfeaf0521e8ab13a",
+     "score": 0.4157
+    },
+    {
+     "rank": 6,
+     "doc_id": "0f30221c35214c7d0d9e7ae9fa84975d",
+     "chunk_id": "0f30221c35214c7d0d9e7ae9fa84975d",
+     "score": 0.4116
+    },
+    {
+     "rank": 7,
+     "doc_id": "fe8f5a4aa19346c504e8853ef678566b",
+     "chunk_id": "fe8f5a4aa19346c504e8853ef678566b",
+     "score": 0.4024
+    },
+    {
+     "rank": 8,
+     "doc_id": "9b8dcdbf87dc91f8a7e651b246f40480",
+     "chunk_id": "9b8dcdbf87dc91f8a7e651b246f40480",
+     "score": 0.3907
+    },
+    {
+     "rank": 9,
+     "doc_id": "b6262d9bb239b9148f56e5e3f3c43e3a",
+     "chunk_id": "b6262d9bb239b9148f56e5e3f3c43e3a",
+     "score": 0.3901
+    },
+    {
+     "rank": 10,
+     "doc_id": "3fe324dd4e2516ea183f94e3b75e572d",
+     "chunk_id": "3fe324dd4e2516ea183f94e3b75e572d",
+     "score": 0.389
+    },
+    {
+     "rank": 11,
+     "doc_id": "2fddc389d06545df6d3de40e40f74056",
+     "chunk_id": "2fddc389d06545df6d3de40e40f74056",
+     "score": 0.3883
+    },
+    {
+     "rank": 12,
+     "doc_id": "cd1c3763b140b3893c5304c9497d433d",
+     "chunk_id": "cd1c3763b140b3893c5304c9497d433d",
+     "score": 0.3841
+    },
+    {
+     "rank": 13,
+     "doc_id": "f6c46f6373a1dcfce87d6c4bfa146361",
+     "chunk_id": "f6c46f6373a1dcfce87d6c4bfa146361",
+     "score": 0.3819
+    },
+    {
+     "rank": 14,
+     "doc_id": "5373211fc3d06a19d2b4276d0fff9fa1",
+     "chunk_id": "5373211fc3d06a19d2b4276d0fff9fa1",
+     "score": 0.3817
+    },
+    {
+     "rank": 15,
+     "doc_id": "0f4aa2da3a1fb5fa1b8f4d114d72ebb3",
+     "chunk_id": "0f4aa2da3a1fb5fa1b8f4d114d72ebb3",
+     "score": 0.3692
+    },
+    {
+     "rank": 16,
+     "doc_id": "e2b58998d3f7794a1ea3093dc83d610d",
+     "chunk_id": "e2b58998d3f7794a1ea3093dc83d610d",
+     "score": 0.36
+    },
+    {
+     "rank": 17,
+     "doc_id": "c924fbe06770ab2301628a64cac6d4eb",
+     "chunk_id": "c924fbe06770ab2301628a64cac6d4eb",
+     "score": 0.3584
+    },
+    {
+     "rank": 18,
+     "doc_id": "8eadd96105bcbc2388399bfc8696f190",
+     "chunk_id": "8eadd96105bcbc2388399bfc8696f190",
+     "score": 0.352
+    },
+    {
+     "rank": 19,
+     "doc_id": "151da0ecfa2148ab9cc6da7c29f522b7",
+     "chunk_id": "151da0ecfa2148ab9cc6da7c29f522b7",
+     "score": 0.3486
+    },
+    {
+     "rank": 20,
+     "doc_id": "f00df8a5f89336c3261b781458b7ea22",
+     "chunk_id": "f00df8a5f89336c3261b781458b7ea22",
+     "score": 0.3484
+    }
+   ],
+   "latency_s": 0.471
+  },
+  {
+   "query": "Where do greyhound buses leave from in the city where the performer of Darlings was born?",
+   "gold_doc_ids": [
+    "27c192053b7492f3a07b1429433abf2e",
+    "642d81156f621dd782c532d1c3cb0633",
+    "95b943ae0fcadcb337662cac9395d3db"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "642d81156f621dd782c532d1c3cb0633",
+     "chunk_id": "642d81156f621dd782c532d1c3cb0633",
+     "score": 0.4102
+    },
+    {
+     "rank": 2,
+     "doc_id": "4eab6f02c98df33aafd2e946ae17424c",
+     "chunk_id": "4eab6f02c98df33aafd2e946ae17424c",
+     "score": 0.381
+    },
+    {
+     "rank": 3,
+     "doc_id": "95b943ae0fcadcb337662cac9395d3db",
+     "chunk_id": "95b943ae0fcadcb337662cac9395d3db",
+     "score": 0.3708
+    },
+    {
+     "rank": 4,
+     "doc_id": "41eaf706a3089f16576884df513c5cb0",
+     "chunk_id": "41eaf706a3089f16576884df513c5cb0",
+     "score": 0.3696
+    },
+    {
+     "rank": 5,
+     "doc_id": "2a058cc1f78b228eac86d61061cb3342",
+     "chunk_id": "2a058cc1f78b228eac86d61061cb3342",
+     "score": 0.3662
+    },
+    {
+     "rank": 6,
+     "doc_id": "ecd64fb16055113fee704e92e31b7704",
+     "chunk_id": "ecd64fb16055113fee704e92e31b7704",
+     "score": 0.3599
+    },
+    {
+     "rank": 7,
+     "doc_id": "f704452565f0be48d83abe228cf6736d",
+     "chunk_id": "f704452565f0be48d83abe228cf6736d",
+     "score": 0.3594
+    },
+    {
+     "rank": 8,
+     "doc_id": "204cbde686e1dfe646630a55eb537c1d",
+     "chunk_id": "204cbde686e1dfe646630a55eb537c1d",
+     "score": 0.3592
+    },
+    {
+     "rank": 9,
+     "doc_id": "36174155da49a5651fcc6404927ac2e4",
+     "chunk_id": "36174155da49a5651fcc6404927ac2e4",
+     "score": 0.3588
+    },
+    {
+     "rank": 10,
+     "doc_id": "2b4671d88ede75df154b8b563b4b7903",
+     "chunk_id": "2b4671d88ede75df154b8b563b4b7903",
+     "score": 0.3582
+    },
+    {
+     "rank": 11,
+     "doc_id": "329430d735122333973f679e6c3fc0ad",
+     "chunk_id": "329430d735122333973f679e6c3fc0ad",
+     "score": 0.3572
+    },
+    {
+     "rank": 12,
+     "doc_id": "d80931515d81288f8bbea1fcfefc12a0",
+     "chunk_id": "d80931515d81288f8bbea1fcfefc12a0",
+     "score": 0.3555
+    },
+    {
+     "rank": 13,
+     "doc_id": "8396acca751b64faca2efc1bd2bd2720",
+     "chunk_id": "8396acca751b64faca2efc1bd2bd2720",
+     "score": 0.3551
+    },
+    {
+     "rank": 14,
+     "doc_id": "8e368f7f78b21687f826cb41a64c3ab4",
+     "chunk_id": "8e368f7f78b21687f826cb41a64c3ab4",
+     "score": 0.3537
+    },
+    {
+     "rank": 15,
+     "doc_id": "299122824af3e6b1df5c003af1e4be84",
+     "chunk_id": "299122824af3e6b1df5c003af1e4be84",
+     "score": 0.348
+    },
+    {
+     "rank": 16,
+     "doc_id": "6a345d6db72669c39d298e4582e47d25",
+     "chunk_id": "6a345d6db72669c39d298e4582e47d25",
+     "score": 0.3446
+    },
+    {
+     "rank": 17,
+     "doc_id": "2ecdc963da67e9f5ffc1b1218bc714c0",
+     "chunk_id": "2ecdc963da67e9f5ffc1b1218bc714c0",
+     "score": 0.3438
+    },
+    {
+     "rank": 18,
+     "doc_id": "842bef3bc9cdb5772a9eea2267f4ca5d",
+     "chunk_id": "842bef3bc9cdb5772a9eea2267f4ca5d",
+     "score": 0.3435
+    },
+    {
+     "rank": 19,
+     "doc_id": "e4ba1f9b239f062f6e287685c4596585",
+     "chunk_id": "e4ba1f9b239f062f6e287685c4596585",
+     "score": 0.3412
+    },
+    {
+     "rank": 20,
+     "doc_id": "c2a14f1e27c1ba685de333995056a7d6",
+     "chunk_id": "c2a14f1e27c1ba685de333995056a7d6",
+     "score": 0.3407
+    }
+   ],
+   "latency_s": 0.685
+  },
+  {
+   "query": "How many members in the seats of the organization that enacted the Directory of Public Worship into law are members of the Scottish Government?",
+   "gold_doc_ids": [
+    "43f3a3e824d51ecfa74cd9075ee77c74",
+    "79626fdbb6e7333bbed9c4b7866cc227"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "79626fdbb6e7333bbed9c4b7866cc227",
+     "chunk_id": "79626fdbb6e7333bbed9c4b7866cc227",
+     "score": 0.5155
+    },
+    {
+     "rank": 2,
+     "doc_id": "430a8961a6aaefdff1d6abc4f173af87",
+     "chunk_id": "430a8961a6aaefdff1d6abc4f173af87",
+     "score": 0.4919
+    },
+    {
+     "rank": 3,
+     "doc_id": "de37a0b36699fcf3e860f012fb84283b",
+     "chunk_id": "de37a0b36699fcf3e860f012fb84283b",
+     "score": 0.4025
+    },
+    {
+     "rank": 4,
+     "doc_id": "55173d8e73333a4273f9a0ac68089d4d",
+     "chunk_id": "55173d8e73333a4273f9a0ac68089d4d",
+     "score": 0.3869
+    },
+    {
+     "rank": 5,
+     "doc_id": "63dfd2b8ff69231d52bb40013ad1a5d7",
+     "chunk_id": "63dfd2b8ff69231d52bb40013ad1a5d7",
+     "score": 0.3815
+    },
+    {
+     "rank": 6,
+     "doc_id": "43f3a3e824d51ecfa74cd9075ee77c74",
+     "chunk_id": "43f3a3e824d51ecfa74cd9075ee77c74",
+     "score": 0.3783
+    },
+    {
+     "rank": 7,
+     "doc_id": "5f12a98d73ca669822d877ab9ab1e22b",
+     "chunk_id": "5f12a98d73ca669822d877ab9ab1e22b",
+     "score": 0.3738
+    },
+    {
+     "rank": 8,
+     "doc_id": "7ee40b2f27b60b3d295b354c1538c630",
+     "chunk_id": "7ee40b2f27b60b3d295b354c1538c630",
+     "score": 0.3642
+    },
+    {
+     "rank": 9,
+     "doc_id": "f6d8c21510428a2154f76985bda48886",
+     "chunk_id": "f6d8c21510428a2154f76985bda48886",
+     "score": 0.3627
+    },
+    {
+     "rank": 10,
+     "doc_id": "d75a7299ef4e123485ea892945359392",
+     "chunk_id": "d75a7299ef4e123485ea892945359392",
+     "score": 0.362
+    },
+    {
+     "rank": 11,
+     "doc_id": "55b7ba0ed76f6e68b424e8ed7d2263e2",
+     "chunk_id": "55b7ba0ed76f6e68b424e8ed7d2263e2",
+     "score": 0.3587
+    },
+    {
+     "rank": 12,
+     "doc_id": "c19b1e0694157796d31ae08721e4912d",
+     "chunk_id": "c19b1e0694157796d31ae08721e4912d",
+     "score": 0.3571
+    },
+    {
+     "rank": 13,
+     "doc_id": "0934d652d03c468206441863e7e4f134",
+     "chunk_id": "0934d652d03c468206441863e7e4f134",
+     "score": 0.3565
+    },
+    {
+     "rank": 14,
+     "doc_id": "bbd3a72bd2ba7b354cd5dd402242ac9e",
+     "chunk_id": "bbd3a72bd2ba7b354cd5dd402242ac9e",
+     "score": 0.3528
+    },
+    {
+     "rank": 15,
+     "doc_id": "c18a57b7f5c62a06ad8113f464dbebb1",
+     "chunk_id": "c18a57b7f5c62a06ad8113f464dbebb1",
+     "score": 0.3482
+    },
+    {
+     "rank": 16,
+     "doc_id": "f032c29f04d75fc7f5dee2e3b42b622e",
+     "chunk_id": "f032c29f04d75fc7f5dee2e3b42b622e",
+     "score": 0.3434
+    },
+    {
+     "rank": 17,
+     "doc_id": "cf711df6935c6d7d884dce6cfbc7a5fd",
+     "chunk_id": "cf711df6935c6d7d884dce6cfbc7a5fd",
+     "score": 0.3401
+    },
+    {
+     "rank": 18,
+     "doc_id": "6e0321660a45f8c13f54872b20c94c6a",
+     "chunk_id": "6e0321660a45f8c13f54872b20c94c6a",
+     "score": 0.3354
+    },
+    {
+     "rank": 19,
+     "doc_id": "34398d79440da156049b89bf70af0de9",
+     "chunk_id": "34398d79440da156049b89bf70af0de9",
+     "score": 0.3256
+    },
+    {
+     "rank": 20,
+     "doc_id": "beca1738ab2e4f173f91e00b5838f640",
+     "chunk_id": "beca1738ab2e4f173f91e00b5838f640",
+     "score": 0.3245
+    }
+   ],
+   "latency_s": 0.55
+  },
+  {
+   "query": "Who was married to the creator of Ruby Loftus Screwing a Breech Ring?",
+   "gold_doc_ids": [
+    "795b601ae1714b1e159e5602a49d76e2",
+    "93bb005b3a8f80e2d1f7b8d86881e17a"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "93bb005b3a8f80e2d1f7b8d86881e17a",
+     "chunk_id": "93bb005b3a8f80e2d1f7b8d86881e17a",
+     "score": 0.6799
+    },
+    {
+     "rank": 2,
+     "doc_id": "c35c5e6ac3f96f87b8d6ce5ac8d01e2c",
+     "chunk_id": "c35c5e6ac3f96f87b8d6ce5ac8d01e2c",
+     "score": 0.3816
+    },
+    {
+     "rank": 3,
+     "doc_id": "e5c836a755600cd64d21229f76d37eba",
+     "chunk_id": "e5c836a755600cd64d21229f76d37eba",
+     "score": 0.3562
+    },
+    {
+     "rank": 4,
+     "doc_id": "3fc7ec95bcc87340be05d3d469b54d95",
+     "chunk_id": "3fc7ec95bcc87340be05d3d469b54d95",
+     "score": 0.3478
+    },
+    {
+     "rank": 5,
+     "doc_id": "4819818097094406a201ff79e02ff414",
+     "chunk_id": "4819818097094406a201ff79e02ff414",
+     "score": 0.3469
+    },
+    {
+     "rank": 6,
+     "doc_id": "4b2ed55e53de4853d90137adfe078b44",
+     "chunk_id": "4b2ed55e53de4853d90137adfe078b44",
+     "score": 0.3439
+    },
+    {
+     "rank": 7,
+     "doc_id": "a869ba19a2d808f2bca4871fe4652525",
+     "chunk_id": "a869ba19a2d808f2bca4871fe4652525",
+     "score": 0.3433
+    },
+    {
+     "rank": 8,
+     "doc_id": "82052ed3fb0f443ae592c994149aec00",
+     "chunk_id": "82052ed3fb0f443ae592c994149aec00",
+     "score": 0.3343
+    },
+    {
+     "rank": 9,
+     "doc_id": "74fdd7ce5c086bb975f7b4359181a876",
+     "chunk_id": "74fdd7ce5c086bb975f7b4359181a876",
+     "score": 0.3332
+    },
+    {
+     "rank": 10,
+     "doc_id": "8c10d6404b00a4c539db880c6297d412",
+     "chunk_id": "8c10d6404b00a4c539db880c6297d412",
+     "score": 0.3308
+    },
+    {
+     "rank": 11,
+     "doc_id": "79b89db057b5629c36d71e01cc30b99d",
+     "chunk_id": "79b89db057b5629c36d71e01cc30b99d",
+     "score": 0.3289
+    },
+    {
+     "rank": 12,
+     "doc_id": "549109077319649dc47c80a814110bfc",
+     "chunk_id": "549109077319649dc47c80a814110bfc",
+     "score": 0.3266
+    },
+    {
+     "rank": 13,
+     "doc_id": "981aa7760cb953a6271c214dd7c3efea",
+     "chunk_id": "981aa7760cb953a6271c214dd7c3efea",
+     "score": 0.3265
+    },
+    {
+     "rank": 14,
+     "doc_id": "aa5ecec73b394c4d6fc6b599a8a80c56",
+     "chunk_id": "aa5ecec73b394c4d6fc6b599a8a80c56",
+     "score": 0.324
+    },
+    {
+     "rank": 15,
+     "doc_id": "f8943911bc3487541749a89846b62750",
+     "chunk_id": "f8943911bc3487541749a89846b62750",
+     "score": 0.3231
+    },
+    {
+     "rank": 16,
+     "doc_id": "ce86ce89143f71243f6dd6f581dfa5c2",
+     "chunk_id": "ce86ce89143f71243f6dd6f581dfa5c2",
+     "score": 0.3218
+    },
+    {
+     "rank": 17,
+     "doc_id": "644795d4548f984f5b0f2f70cd9f84a7",
+     "chunk_id": "644795d4548f984f5b0f2f70cd9f84a7",
+     "score": 0.3209
+    },
+    {
+     "rank": 18,
+     "doc_id": "836b68ec9ba8c01845e91bc29638da1a",
+     "chunk_id": "836b68ec9ba8c01845e91bc29638da1a",
+     "score": 0.3181
+    },
+    {
+     "rank": 19,
+     "doc_id": "22d0f2e21fa7b212df852e3d662fee78",
+     "chunk_id": "22d0f2e21fa7b212df852e3d662fee78",
+     "score": 0.3143
+    },
+    {
+     "rank": 20,
+     "doc_id": "acc83aed41debc01e0a6fda21b4d8d62",
+     "chunk_id": "acc83aed41debc01e0a6fda21b4d8d62",
+     "score": 0.314
+    }
+   ],
+   "latency_s": 1.011
+  },
+  {
+   "query": "In what country is women's football played in the country where the German chancellor criticized by The Sun held citizenship?",
+   "gold_doc_ids": [
+    "0b6d7b28adaf59189f5053bb86c6e389",
+    "22df98effbc408ce874383293276dda7",
+    "2fcc12c40356f397428349448767fe89"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "0b6d7b28adaf59189f5053bb86c6e389",
+     "chunk_id": "0b6d7b28adaf59189f5053bb86c6e389",
+     "score": 0.5143
+    },
+    {
+     "rank": 2,
+     "doc_id": "c19b1e0694157796d31ae08721e4912d",
+     "chunk_id": "c19b1e0694157796d31ae08721e4912d",
+     "score": 0.4571
+    },
+    {
+     "rank": 3,
+     "doc_id": "2fcc12c40356f397428349448767fe89",
+     "chunk_id": "2fcc12c40356f397428349448767fe89",
+     "score": 0.4481
+    },
+    {
+     "rank": 4,
+     "doc_id": "22df98effbc408ce874383293276dda7",
+     "chunk_id": "22df98effbc408ce874383293276dda7",
+     "score": 0.4273
+    },
+    {
+     "rank": 5,
+     "doc_id": "f983b625a7c83a26da99150804453390",
+     "chunk_id": "f983b625a7c83a26da99150804453390",
+     "score": 0.4145
+    },
+    {
+     "rank": 6,
+     "doc_id": "9945bb44dcb325ff2a20a4a0703cf6f4",
+     "chunk_id": "9945bb44dcb325ff2a20a4a0703cf6f4",
+     "score": 0.3826
+    },
+    {
+     "rank": 7,
+     "doc_id": "12ca6043c1057f03bcbd0c7e2318b766",
+     "chunk_id": "12ca6043c1057f03bcbd0c7e2318b766",
+     "score": 0.3764
+    },
+    {
+     "rank": 8,
+     "doc_id": "dc4e102086d456b86681c7b149490596",
+     "chunk_id": "dc4e102086d456b86681c7b149490596",
+     "score": 0.3763
+    },
+    {
+     "rank": 9,
+     "doc_id": "5868b82b130b354a455d0deb14548e4b",
+     "chunk_id": "5868b82b130b354a455d0deb14548e4b",
+     "score": 0.3679
+    },
+    {
+     "rank": 10,
+     "doc_id": "9f2f8bdf47d8d409e61f8bb1ea1a0356",
+     "chunk_id": "9f2f8bdf47d8d409e61f8bb1ea1a0356",
+     "score": 0.364
+    },
+    {
+     "rank": 11,
+     "doc_id": "7c7040dda0b2af5896dc3449089b7d9b",
+     "chunk_id": "7c7040dda0b2af5896dc3449089b7d9b",
+     "score": 0.3596
+    },
+    {
+     "rank": 12,
+     "doc_id": "11da33a24d9b641ff3bae9aba44cd1cb",
+     "chunk_id": "11da33a24d9b641ff3bae9aba44cd1cb",
+     "score": 0.3585
+    },
+    {
+     "rank": 13,
+     "doc_id": "812a8ea50a6c4093c4e775d3751ea8bc",
+     "chunk_id": "812a8ea50a6c4093c4e775d3751ea8bc",
+     "score": 0.3528
+    },
+    {
+     "rank": 14,
+     "doc_id": "3e372fb12cb7852caad8f7cae9a51392",
+     "chunk_id": "3e372fb12cb7852caad8f7cae9a51392",
+     "score": 0.3527
+    },
+    {
+     "rank": 15,
+     "doc_id": "657fdbfd66c5bd910dcf116e3333cd05",
+     "chunk_id": "657fdbfd66c5bd910dcf116e3333cd05",
+     "score": 0.3502
+    },
+    {
+     "rank": 16,
+     "doc_id": "c0196bee36943cb8dd9579a87b00f054",
+     "chunk_id": "c0196bee36943cb8dd9579a87b00f054",
+     "score": 0.3469
+    },
+    {
+     "rank": 17,
+     "doc_id": "bbd3a72bd2ba7b354cd5dd402242ac9e",
+     "chunk_id": "bbd3a72bd2ba7b354cd5dd402242ac9e",
+     "score": 0.3406
+    },
+    {
+     "rank": 18,
+     "doc_id": "8f3614040ec23c634f122d1705319880",
+     "chunk_id": "8f3614040ec23c634f122d1705319880",
+     "score": 0.34
+    },
+    {
+     "rank": 19,
+     "doc_id": "981aa7760cb953a6271c214dd7c3efea",
+     "chunk_id": "981aa7760cb953a6271c214dd7c3efea",
+     "score": 0.3384
+    },
+    {
+     "rank": 20,
+     "doc_id": "75a3a909539047bf548bc3e41ed322ad",
+     "chunk_id": "75a3a909539047bf548bc3e41ed322ad",
+     "score": 0.3336
+    }
+   ],
+   "latency_s": 0.775
+  },
+  {
+   "query": "In what year was the group who performed Attics To Eden formed?",
+   "gold_doc_ids": [
+    "76fe631faf883294a410684e742b506c",
+    "a4adaa08b2ff9f95ba39732db53cd6fe"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "76fe631faf883294a410684e742b506c",
+     "chunk_id": "76fe631faf883294a410684e742b506c",
+     "score": 0.6371
+    },
+    {
+     "rank": 2,
+     "doc_id": "4be9383a48a8fcbbe166077c180ade85",
+     "chunk_id": "4be9383a48a8fcbbe166077c180ade85",
+     "score": 0.4322
+    },
+    {
+     "rank": 3,
+     "doc_id": "88f847e4e1429c687e01bf2486f8c706",
+     "chunk_id": "88f847e4e1429c687e01bf2486f8c706",
+     "score": 0.4186
+    },
+    {
+     "rank": 4,
+     "doc_id": "a4adaa08b2ff9f95ba39732db53cd6fe",
+     "chunk_id": "a4adaa08b2ff9f95ba39732db53cd6fe",
+     "score": 0.3874
+    },
+    {
+     "rank": 5,
+     "doc_id": "154da551ad0a118ea57a279ad64acfe6",
+     "chunk_id": "154da551ad0a118ea57a279ad64acfe6",
+     "score": 0.3539
+    },
+    {
+     "rank": 6,
+     "doc_id": "a875da66b4db5f3f7ab0cfdc60e7dd58",
+     "chunk_id": "a875da66b4db5f3f7ab0cfdc60e7dd58",
+     "score": 0.3467
+    },
+    {
+     "rank": 7,
+     "doc_id": "c7bd47d930bf6882565a509d7c874ba8",
+     "chunk_id": "c7bd47d930bf6882565a509d7c874ba8",
+     "score": 0.3317
+    },
+    {
+     "rank": 8,
+     "doc_id": "0d4ae0c86c9fece711eca18737c472a1",
+     "chunk_id": "0d4ae0c86c9fece711eca18737c472a1",
+     "score": 0.3282
+    },
+    {
+     "rank": 9,
+     "doc_id": "4033e09396db5a6f19608fb39acf7458",
+     "chunk_id": "4033e09396db5a6f19608fb39acf7458",
+     "score": 0.3229
+    },
+    {
+     "rank": 10,
+     "doc_id": "6a345d6db72669c39d298e4582e47d25",
+     "chunk_id": "6a345d6db72669c39d298e4582e47d25",
+     "score": 0.3188
+    },
+    {
+     "rank": 11,
+     "doc_id": "3ab0bc411438914e53bcd418a43939ef",
+     "chunk_id": "3ab0bc411438914e53bcd418a43939ef",
+     "score": 0.3165
+    },
+    {
+     "rank": 12,
+     "doc_id": "b7e760877d883c2813b054743e3a7e67",
+     "chunk_id": "b7e760877d883c2813b054743e3a7e67",
+     "score": 0.3158
+    },
+    {
+     "rank": 13,
+     "doc_id": "03af37d80b94381cdfbcb6e2177edcf0",
+     "chunk_id": "03af37d80b94381cdfbcb6e2177edcf0",
+     "score": 0.3151
+    },
+    {
+     "rank": 14,
+     "doc_id": "bfc46270c21c57c7d991fa0cb992cf01",
+     "chunk_id": "bfc46270c21c57c7d991fa0cb992cf01",
+     "score": 0.3121
+    },
+    {
+     "rank": 15,
+     "doc_id": "c0ea20130bd161706249270fa22c275f",
+     "chunk_id": "c0ea20130bd161706249270fa22c275f",
+     "score": 0.3088
+    },
+    {
+     "rank": 16,
+     "doc_id": "5fc7eccd8ba6d012e7612459285443fc",
+     "chunk_id": "5fc7eccd8ba6d012e7612459285443fc",
+     "score": 0.3084
+    },
+    {
+     "rank": 17,
+     "doc_id": "be3023461399d4a9f7d4c04d3401d37e",
+     "chunk_id": "be3023461399d4a9f7d4c04d3401d37e",
+     "score": 0.3077
+    },
+    {
+     "rank": 18,
+     "doc_id": "aa59fa63df386fc066a01408c43912ec",
+     "chunk_id": "aa59fa63df386fc066a01408c43912ec",
+     "score": 0.3008
+    },
+    {
+     "rank": 19,
+     "doc_id": "ed7305b4006e1e34136904eda02def85",
+     "chunk_id": "ed7305b4006e1e34136904eda02def85",
+     "score": 0.2973
+    },
+    {
+     "rank": 20,
+     "doc_id": "d1ad3a3325e13bf20e2d6c36b5d84811",
+     "chunk_id": "d1ad3a3325e13bf20e2d6c36b5d84811",
+     "score": 0.2962
+    }
+   ],
+   "latency_s": 0.583
+  },
+  {
+   "query": "Where is the Voshmgir District located?",
+   "gold_doc_ids": [
+    "30e979cf7aa91f1417264b61b8ee29e6",
+    "a095e9b7a917087224dc0143164b08b0"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "a095e9b7a917087224dc0143164b08b0",
+     "chunk_id": "a095e9b7a917087224dc0143164b08b0",
+     "score": 0.776
+    },
+    {
+     "rank": 2,
+     "doc_id": "3d590fb8b5d525fb0e37f9e5c2fd9e7d",
+     "chunk_id": "3d590fb8b5d525fb0e37f9e5c2fd9e7d",
+     "score": 0.3968
+    },
+    {
+     "rank": 3,
+     "doc_id": "4067680710b46bfd288af374b112e697",
+     "chunk_id": "4067680710b46bfd288af374b112e697",
+     "score": 0.3663
+    },
+    {
+     "rank": 4,
+     "doc_id": "15ed616e9f0a06cc7594d3691d91bd1c",
+     "chunk_id": "15ed616e9f0a06cc7594d3691d91bd1c",
+     "score": 0.3642
+    },
+    {
+     "rank": 5,
+     "doc_id": "d89efa3ada7a93b99c5087c1cc73a636",
+     "chunk_id": "d89efa3ada7a93b99c5087c1cc73a636",
+     "score": 0.3589
+    },
+    {
+     "rank": 6,
+     "doc_id": "441c68a70c6a3ef97d9cbbd13ea415ed",
+     "chunk_id": "441c68a70c6a3ef97d9cbbd13ea415ed",
+     "score": 0.3556
+    },
+    {
+     "rank": 7,
+     "doc_id": "8f10e8d923c1d2bee1ac2db9d852d496",
+     "chunk_id": "8f10e8d923c1d2bee1ac2db9d852d496",
+     "score": 0.3543
+    },
+    {
+     "rank": 8,
+     "doc_id": "c87c40ad55a295663e44a1cc9efef575",
+     "chunk_id": "c87c40ad55a295663e44a1cc9efef575",
+     "score": 0.3535
+    },
+    {
+     "rank": 9,
+     "doc_id": "5e9a63c1de5ba818ee9ee60f29cd5f84",
+     "chunk_id": "5e9a63c1de5ba818ee9ee60f29cd5f84",
+     "score": 0.3469
+    },
+    {
+     "rank": 10,
+     "doc_id": "7a2546ca92819e6b3acd5ac9a0ed8f84",
+     "chunk_id": "7a2546ca92819e6b3acd5ac9a0ed8f84",
+     "score": 0.3453
+    },
+    {
+     "rank": 11,
+     "doc_id": "c3ad0ea7833c39778f88ca10757873fc",
+     "chunk_id": "c3ad0ea7833c39778f88ca10757873fc",
+     "score": 0.3451
+    },
+    {
+     "rank": 12,
+     "doc_id": "889175705426d4bd23c1d1ad305b20bf",
+     "chunk_id": "889175705426d4bd23c1d1ad305b20bf",
+     "score": 0.3442
+    },
+    {
+     "rank": 13,
+     "doc_id": "30e979cf7aa91f1417264b61b8ee29e6",
+     "chunk_id": "30e979cf7aa91f1417264b61b8ee29e6",
+     "score": 0.3399
+    },
+    {
+     "rank": 14,
+     "doc_id": "8778076fb55728d4a0d813e9053f385b",
+     "chunk_id": "8778076fb55728d4a0d813e9053f385b",
+     "score": 0.3393
+    },
+    {
+     "rank": 15,
+     "doc_id": "d7fb29c5ba576975872e1519d3291097",
+     "chunk_id": "d7fb29c5ba576975872e1519d3291097",
+     "score": 0.339
+    },
+    {
+     "rank": 16,
+     "doc_id": "7f67eb4d0e41a26442e8fbdd93c8eede",
+     "chunk_id": "7f67eb4d0e41a26442e8fbdd93c8eede",
+     "score": 0.3373
+    },
+    {
+     "rank": 17,
+     "doc_id": "2d1a831df1b5a35ac37d427b32b243c6",
+     "chunk_id": "2d1a831df1b5a35ac37d427b32b243c6",
+     "score": 0.3365
+    },
+    {
+     "rank": 18,
+     "doc_id": "1ee3d5fd6527c35bcc19ffd346f9907d",
+     "chunk_id": "1ee3d5fd6527c35bcc19ffd346f9907d",
+     "score": 0.3266
+    },
+    {
+     "rank": 19,
+     "doc_id": "7c44a5576c13db8fb868c5622598975e",
+     "chunk_id": "7c44a5576c13db8fb868c5622598975e",
+     "score": 0.3233
+    },
+    {
+     "rank": 20,
+     "doc_id": "dcdfb4ba84c11736fb7911c8070f867f",
+     "chunk_id": "dcdfb4ba84c11736fb7911c8070f867f",
+     "score": 0.3229
+    }
+   ],
+   "latency_s": 0.514
+  },
+  {
+   "query": "Who was the child of the Italian navigator who sailed for England, and explored the eastern coast of the continent where the birthplace of Eduardo Cuervo is found?",
+   "gold_doc_ids": [
+    "55b9a80329ac1fa840dd2e9a25f4d985",
+    "6f4dff07dea526e619846940f3d3a5af",
+    "86b3a63b3c6ed7dc4557079f75c567b9",
+    "9038ac65b22a67a43132840ab22aaa0d"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "6f4dff07dea526e619846940f3d3a5af",
+     "chunk_id": "6f4dff07dea526e619846940f3d3a5af",
+     "score": 0.5653
+    },
+    {
+     "rank": 2,
+     "doc_id": "86b3a63b3c6ed7dc4557079f75c567b9",
+     "chunk_id": "86b3a63b3c6ed7dc4557079f75c567b9",
+     "score": 0.5544
+    },
+    {
+     "rank": 3,
+     "doc_id": "c6a9c01ab00c04bff2beaf785c928b83",
+     "chunk_id": "c6a9c01ab00c04bff2beaf785c928b83",
+     "score": 0.5497
+    },
+    {
+     "rank": 4,
+     "doc_id": "00df3c166471ab419f37c1ac08ac1175",
+     "chunk_id": "00df3c166471ab419f37c1ac08ac1175",
+     "score": 0.5345
+    },
+    {
+     "rank": 5,
+     "doc_id": "23262f121e7e283a0157cb177af01e0c",
+     "chunk_id": "23262f121e7e283a0157cb177af01e0c",
+     "score": 0.4958
+    },
+    {
+     "rank": 6,
+     "doc_id": "55b9a80329ac1fa840dd2e9a25f4d985",
+     "chunk_id": "55b9a80329ac1fa840dd2e9a25f4d985",
+     "score": 0.4792
+    },
+    {
+     "rank": 7,
+     "doc_id": "c4a46c1669586ccac18fadccd931e8c7",
+     "chunk_id": "c4a46c1669586ccac18fadccd931e8c7",
+     "score": 0.4645
+    },
+    {
+     "rank": 8,
+     "doc_id": "eb9666649eb9c10b7ae94732ef1cb62f",
+     "chunk_id": "eb9666649eb9c10b7ae94732ef1cb62f",
+     "score": 0.4584
+    },
+    {
+     "rank": 9,
+     "doc_id": "c96c5f17ccbadb9fd50d1b411a3793f9",
+     "chunk_id": "c96c5f17ccbadb9fd50d1b411a3793f9",
+     "score": 0.432
+    },
+    {
+     "rank": 10,
+     "doc_id": "ee2c336d2dcf6640edb4fcc1b3484bf0",
+     "chunk_id": "ee2c336d2dcf6640edb4fcc1b3484bf0",
+     "score": 0.4239
+    },
+    {
+     "rank": 11,
+     "doc_id": "e5edf39333258e5bb3b7ac187674cd1a",
+     "chunk_id": "e5edf39333258e5bb3b7ac187674cd1a",
+     "score": 0.413
+    },
+    {
+     "rank": 12,
+     "doc_id": "2b0b36a0e708719e2c99dc8cf5781263",
+     "chunk_id": "2b0b36a0e708719e2c99dc8cf5781263",
+     "score": 0.4086
+    },
+    {
+     "rank": 13,
+     "doc_id": "2da23b440bf66f72d42693d80a1cf74f",
+     "chunk_id": "2da23b440bf66f72d42693d80a1cf74f",
+     "score": 0.4041
+    },
+    {
+     "rank": 14,
+     "doc_id": "0cf231a8469da18ae118ad859c36acca",
+     "chunk_id": "0cf231a8469da18ae118ad859c36acca",
+     "score": 0.3963
+    },
+    {
+     "rank": 15,
+     "doc_id": "ab1ce6cd5b924bfc54d786a5b3374dbb",
+     "chunk_id": "ab1ce6cd5b924bfc54d786a5b3374dbb",
+     "score": 0.3958
+    },
+    {
+     "rank": 16,
+     "doc_id": "509f0a358166aaa79bc9efe10314f863",
+     "chunk_id": "509f0a358166aaa79bc9efe10314f863",
+     "score": 0.3934
+    },
+    {
+     "rank": 17,
+     "doc_id": "18ed2fbb325eb04576a5c7a0bc985993",
+     "chunk_id": "18ed2fbb325eb04576a5c7a0bc985993",
+     "score": 0.3858
+    },
+    {
+     "rank": 18,
+     "doc_id": "05a664f8cd9d2753748e9cc571ac3631",
+     "chunk_id": "05a664f8cd9d2753748e9cc571ac3631",
+     "score": 0.3839
+    },
+    {
+     "rank": 19,
+     "doc_id": "d068607bd9d1943c743b933a16365718",
+     "chunk_id": "d068607bd9d1943c743b933a16365718",
+     "score": 0.3799
+    },
+    {
+     "rank": 20,
+     "doc_id": "14c8f46b95cb4c651f9e0bea18253f90",
+     "chunk_id": "14c8f46b95cb4c651f9e0bea18253f90",
+     "score": 0.3777
+    }
+   ],
+   "latency_s": 0.946
+  },
+  {
+   "query": "When was the region immediately north of the region that prevailed with the disgrace of Near East and the terrain feature on which shamal is located created?",
+   "gold_doc_ids": [
+    "35d9f4c8b5e767b944c5535cd6e0d6f5",
+    "c85cfdb0c3184d5a231d1ab801a4709c",
+    "cb2d82f572a62b33fa26c048175b468e",
+    "ee4fa6e8f183a7d2ceafbdb533e07dd0"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "c85cfdb0c3184d5a231d1ab801a4709c",
+     "chunk_id": "c85cfdb0c3184d5a231d1ab801a4709c",
+     "score": 0.6482
+    },
+    {
+     "rank": 2,
+     "doc_id": "cb2d82f572a62b33fa26c048175b468e",
+     "chunk_id": "cb2d82f572a62b33fa26c048175b468e",
+     "score": 0.5468
+    },
+    {
+     "rank": 3,
+     "doc_id": "9b2de9b2c8c21ae87c9420e2f3ac5876",
+     "chunk_id": "9b2de9b2c8c21ae87c9420e2f3ac5876",
+     "score": 0.4238
+    },
+    {
+     "rank": 4,
+     "doc_id": "04fc0856f6583efc7206d60b1ff64478",
+     "chunk_id": "04fc0856f6583efc7206d60b1ff64478",
+     "score": 0.418
+    },
+    {
+     "rank": 5,
+     "doc_id": "d7fb29c5ba576975872e1519d3291097",
+     "chunk_id": "d7fb29c5ba576975872e1519d3291097",
+     "score": 0.4138
+    },
+    {
+     "rank": 6,
+     "doc_id": "6de7300c2b03fc8c531709877011aa92",
+     "chunk_id": "6de7300c2b03fc8c531709877011aa92",
+     "score": 0.4073
+    },
+    {
+     "rank": 7,
+     "doc_id": "e8ea1ebb6f0ea51a47a617ebc473a4b6",
+     "chunk_id": "e8ea1ebb6f0ea51a47a617ebc473a4b6",
+     "score": 0.3904
+    },
+    {
+     "rank": 8,
+     "doc_id": "35d9f4c8b5e767b944c5535cd6e0d6f5",
+     "chunk_id": "35d9f4c8b5e767b944c5535cd6e0d6f5",
+     "score": 0.3888
+    },
+    {
+     "rank": 9,
+     "doc_id": "f1c67fc505faf176e3fd3e6463383337",
+     "chunk_id": "f1c67fc505faf176e3fd3e6463383337",
+     "score": 0.3767
+    },
+    {
+     "rank": 10,
+     "doc_id": "dedd6140403731d4ae16e6a95ba4960e",
+     "chunk_id": "dedd6140403731d4ae16e6a95ba4960e",
+     "score": 0.3727
+    },
+    {
+     "rank": 11,
+     "doc_id": "e2da80086a14c914ff52871cba882039",
+     "chunk_id": "e2da80086a14c914ff52871cba882039",
+     "score": 0.3714
+    },
+    {
+     "rank": 12,
+     "doc_id": "eefc60bc9eb2897f4c11211e19e130f9",
+     "chunk_id": "eefc60bc9eb2897f4c11211e19e130f9",
+     "score": 0.3691
+    },
+    {
+     "rank": 13,
+     "doc_id": "1fc6eeecb151dc403b1612268274ab97",
+     "chunk_id": "1fc6eeecb151dc403b1612268274ab97",
+     "score": 0.3679
+    },
+    {
+     "rank": 14,
+     "doc_id": "ee4fa6e8f183a7d2ceafbdb533e07dd0",
+     "chunk_id": "ee4fa6e8f183a7d2ceafbdb533e07dd0",
+     "score": 0.3671
+    },
+    {
+     "rank": 15,
+     "doc_id": "d267414bcc91d4bd76348d11a6c8837c",
+     "chunk_id": "d267414bcc91d4bd76348d11a6c8837c",
+     "score": 0.3669
+    },
+    {
+     "rank": 16,
+     "doc_id": "c5a718b59d4056a4f7c1e25529b1c629",
+     "chunk_id": "c5a718b59d4056a4f7c1e25529b1c629",
+     "score": 0.3666
+    },
+    {
+     "rank": 17,
+     "doc_id": "243a80a25a349e7be107ab263edc1573",
+     "chunk_id": "243a80a25a349e7be107ab263edc1573",
+     "score": 0.3586
+    },
+    {
+     "rank": 18,
+     "doc_id": "000f3e119005619537269384607dc3bb",
+     "chunk_id": "000f3e119005619537269384607dc3bb",
+     "score": 0.3581
+    },
+    {
+     "rank": 19,
+     "doc_id": "aeb29fcbb6be96333daeb731c7a8130d",
+     "chunk_id": "aeb29fcbb6be96333daeb731c7a8130d",
+     "score": 0.3541
+    },
+    {
+     "rank": 20,
+     "doc_id": "a94b6f52157a56c533505c2a378c22ba",
+     "chunk_id": "a94b6f52157a56c533505c2a378c22ba",
+     "score": 0.3534
+    }
+   ],
+   "latency_s": 0.642
+  },
+  {
+   "query": "Who is the federal leader of the political party Ken Epp belongs to?",
+   "gold_doc_ids": [
+    "58142f42f7a7bb14e9d66080b9a47b2f",
+    "ff87792889bde8d1557658ee9c9a6415"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "ff87792889bde8d1557658ee9c9a6415",
+     "chunk_id": "ff87792889bde8d1557658ee9c9a6415",
+     "score": 0.7409
+    },
+    {
+     "rank": 2,
+     "doc_id": "4179930df13bb9cd7e2ce9900908705b",
+     "chunk_id": "4179930df13bb9cd7e2ce9900908705b",
+     "score": 0.5707
+    },
+    {
+     "rank": 3,
+     "doc_id": "58142f42f7a7bb14e9d66080b9a47b2f",
+     "chunk_id": "58142f42f7a7bb14e9d66080b9a47b2f",
+     "score": 0.497
+    },
+    {
+     "rank": 4,
+     "doc_id": "3bdf7a5a58ca58f757bfef7499eb095e",
+     "chunk_id": "3bdf7a5a58ca58f757bfef7499eb095e",
+     "score": 0.4268
+    },
+    {
+     "rank": 5,
+     "doc_id": "7340390b47f908cfad5dd897142b354b",
+     "chunk_id": "7340390b47f908cfad5dd897142b354b",
+     "score": 0.4168
+    },
+    {
+     "rank": 6,
+     "doc_id": "0693bfbbb99f39d23777a2d821f9d19c",
+     "chunk_id": "0693bfbbb99f39d23777a2d821f9d19c",
+     "score": 0.4109
+    },
+    {
+     "rank": 7,
+     "doc_id": "6e6926458da4a243a9ee02b0162f98a8",
+     "chunk_id": "6e6926458da4a243a9ee02b0162f98a8",
+     "score": 0.4087
+    },
+    {
+     "rank": 8,
+     "doc_id": "d75a7299ef4e123485ea892945359392",
+     "chunk_id": "d75a7299ef4e123485ea892945359392",
+     "score": 0.4024
+    },
+    {
+     "rank": 9,
+     "doc_id": "a73165d63114708120565d9b7f04b924",
+     "chunk_id": "a73165d63114708120565d9b7f04b924",
+     "score": 0.3967
+    },
+    {
+     "rank": 10,
+     "doc_id": "bcfe5caac67137a51605117fe1eb5a8e",
+     "chunk_id": "bcfe5caac67137a51605117fe1eb5a8e",
+     "score": 0.3893
+    },
+    {
+     "rank": 11,
+     "doc_id": "a125b78cf255bdbf672c3fd0f0742bd9",
+     "chunk_id": "a125b78cf255bdbf672c3fd0f0742bd9",
+     "score": 0.3784
+    },
+    {
+     "rank": 12,
+     "doc_id": "c19b1e0694157796d31ae08721e4912d",
+     "chunk_id": "c19b1e0694157796d31ae08721e4912d",
+     "score": 0.3779
+    },
+    {
+     "rank": 13,
+     "doc_id": "fd22aefe2a5ad437ef2114414f518ee5",
+     "chunk_id": "fd22aefe2a5ad437ef2114414f518ee5",
+     "score": 0.3752
+    },
+    {
+     "rank": 14,
+     "doc_id": "f6d8c21510428a2154f76985bda48886",
+     "chunk_id": "f6d8c21510428a2154f76985bda48886",
+     "score": 0.3702
+    },
+    {
+     "rank": 15,
+     "doc_id": "df29c1ba7fbd8986c976ab4437705d9d",
+     "chunk_id": "df29c1ba7fbd8986c976ab4437705d9d",
+     "score": 0.3616
+    },
+    {
+     "rank": 16,
+     "doc_id": "e80f35145175e5cb961ac14750b3bc7f",
+     "chunk_id": "e80f35145175e5cb961ac14750b3bc7f",
+     "score": 0.3613
+    },
+    {
+     "rank": 17,
+     "doc_id": "79087d7baefd8afc75e29605831e4091",
+     "chunk_id": "79087d7baefd8afc75e29605831e4091",
+     "score": 0.3589
+    },
+    {
+     "rank": 18,
+     "doc_id": "430a8961a6aaefdff1d6abc4f173af87",
+     "chunk_id": "430a8961a6aaefdff1d6abc4f173af87",
+     "score": 0.3511
+    },
+    {
+     "rank": 19,
+     "doc_id": "910c0ad40ffc207541905d87c31a9bc9",
+     "chunk_id": "910c0ad40ffc207541905d87c31a9bc9",
+     "score": 0.3462
+    },
+    {
+     "rank": 20,
+     "doc_id": "9945bb44dcb325ff2a20a4a0703cf6f4",
+     "chunk_id": "9945bb44dcb325ff2a20a4a0703cf6f4",
+     "score": 0.3342
+    }
+   ],
+   "latency_s": 0.458
+  },
+  {
+   "query": "When did the city where Hillcrest High School is located become capitol of the state where the screenwriter of The Poor Boob was born?",
+   "gold_doc_ids": [
+    "2e23b54c4c46bb72d13b987f65961801",
+    "4b2ed55e53de4853d90137adfe078b44",
+    "7fc7b47ff3a988f7f16e08d0ba871bcc",
+    "c221026e61c56fb88664d60cc6491051"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "4b2ed55e53de4853d90137adfe078b44",
+     "chunk_id": "4b2ed55e53de4853d90137adfe078b44",
+     "score": 0.5202
+    },
+    {
+     "rank": 2,
+     "doc_id": "2e23b54c4c46bb72d13b987f65961801",
+     "chunk_id": "2e23b54c4c46bb72d13b987f65961801",
+     "score": 0.4729
+    },
+    {
+     "rank": 3,
+     "doc_id": "c221026e61c56fb88664d60cc6491051",
+     "chunk_id": "c221026e61c56fb88664d60cc6491051",
+     "score": 0.3969
+    },
+    {
+     "rank": 4,
+     "doc_id": "b6bfa4f430f5092389f15fef2b2b3f9c",
+     "chunk_id": "b6bfa4f430f5092389f15fef2b2b3f9c",
+     "score": 0.3883
+    },
+    {
+     "rank": 5,
+     "doc_id": "2b4671d88ede75df154b8b563b4b7903",
+     "chunk_id": "2b4671d88ede75df154b8b563b4b7903",
+     "score": 0.3787
+    },
+    {
+     "rank": 6,
+     "doc_id": "da34610521c78004285dc0ae86de03ca",
+     "chunk_id": "da34610521c78004285dc0ae86de03ca",
+     "score": 0.3753
+    },
+    {
+     "rank": 7,
+     "doc_id": "0f4aa2da3a1fb5fa1b8f4d114d72ebb3",
+     "chunk_id": "0f4aa2da3a1fb5fa1b8f4d114d72ebb3",
+     "score": 0.3611
+    },
+    {
+     "rank": 8,
+     "doc_id": "d80931515d81288f8bbea1fcfefc12a0",
+     "chunk_id": "d80931515d81288f8bbea1fcfefc12a0",
+     "score": 0.3606
+    },
+    {
+     "rank": 9,
+     "doc_id": "8f63616cb1103ab6b8b5ef5d1a02e1e4",
+     "chunk_id": "8f63616cb1103ab6b8b5ef5d1a02e1e4",
+     "score": 0.351
+    },
+    {
+     "rank": 10,
+     "doc_id": "d5a4c109ea24d5fff654ceb9c85710f3",
+     "chunk_id": "d5a4c109ea24d5fff654ceb9c85710f3",
+     "score": 0.3494
+    },
+    {
+     "rank": 11,
+     "doc_id": "dadf3bbe282fd030b71a5ff641f740d2",
+     "chunk_id": "dadf3bbe282fd030b71a5ff641f740d2",
+     "score": 0.3473
+    },
+    {
+     "rank": 12,
+     "doc_id": "299122824af3e6b1df5c003af1e4be84",
+     "chunk_id": "299122824af3e6b1df5c003af1e4be84",
+     "score": 0.3433
+    },
+    {
+     "rank": 13,
+     "doc_id": "27ba5fdf32b5d3cbffdcd4d528a542ee",
+     "chunk_id": "27ba5fdf32b5d3cbffdcd4d528a542ee",
+     "score": 0.3432
+    },
+    {
+     "rank": 14,
+     "doc_id": "0f30221c35214c7d0d9e7ae9fa84975d",
+     "chunk_id": "0f30221c35214c7d0d9e7ae9fa84975d",
+     "score": 0.3412
+    },
+    {
+     "rank": 15,
+     "doc_id": "ce06c8de0dd80788591df2d5f80e20c1",
+     "chunk_id": "ce06c8de0dd80788591df2d5f80e20c1",
+     "score": 0.339
+    },
+    {
+     "rank": 16,
+     "doc_id": "3fe324dd4e2516ea183f94e3b75e572d",
+     "chunk_id": "3fe324dd4e2516ea183f94e3b75e572d",
+     "score": 0.3359
+    },
+    {
+     "rank": 17,
+     "doc_id": "38b5b58e06c26735846816e95b8ab21e",
+     "chunk_id": "38b5b58e06c26735846816e95b8ab21e",
+     "score": 0.3354
+    },
+    {
+     "rank": 18,
+     "doc_id": "2fddc389d06545df6d3de40e40f74056",
+     "chunk_id": "2fddc389d06545df6d3de40e40f74056",
+     "score": 0.3352
+    },
+    {
+     "rank": 19,
+     "doc_id": "ec006eff189fd1bec218905fa7d62d26",
+     "chunk_id": "ec006eff189fd1bec218905fa7d62d26",
+     "score": 0.3349
+    },
+    {
+     "rank": 20,
+     "doc_id": "0629bc07866c867bef7c72bc76e43d4f",
+     "chunk_id": "0629bc07866c867bef7c72bc76e43d4f",
+     "score": 0.3327
+    }
+   ],
+   "latency_s": 0.532
+  },
+  {
+   "query": "A country gained control of Florida after the war in which Charles Edmund Nugent saw action. Besides their locations in that country, what other differences are there between Real Madrid and the football team from the city where Aleran died?",
+   "gold_doc_ids": [
+    "3322d7c2190be5a22b274d7020fd8b9e",
+    "4325c1489364996bed3a36e25506de0e",
+    "7a61470b47c4c300ffcdf6224e73b66e",
+    "aa9d70097d851c54b0d3660bfe981da8"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "46d0e5d2e092ebac3b8c42ac3932b5f6",
+     "chunk_id": "46d0e5d2e092ebac3b8c42ac3932b5f6",
+     "score": 0.5044
+    },
+    {
+     "rank": 2,
+     "doc_id": "4325c1489364996bed3a36e25506de0e",
+     "chunk_id": "4325c1489364996bed3a36e25506de0e",
+     "score": 0.502
+    },
+    {
+     "rank": 3,
+     "doc_id": "aa9d70097d851c54b0d3660bfe981da8",
+     "chunk_id": "aa9d70097d851c54b0d3660bfe981da8",
+     "score": 0.4823
+    },
+    {
+     "rank": 4,
+     "doc_id": "3322d7c2190be5a22b274d7020fd8b9e",
+     "chunk_id": "3322d7c2190be5a22b274d7020fd8b9e",
+     "score": 0.4739
+    },
+    {
+     "rank": 5,
+     "doc_id": "52b52121f9039b7a8046d7aac8fca04c",
+     "chunk_id": "52b52121f9039b7a8046d7aac8fca04c",
+     "score": 0.4639
+    },
+    {
+     "rank": 6,
+     "doc_id": "fe8f5a4aa19346c504e8853ef678566b",
+     "chunk_id": "fe8f5a4aa19346c504e8853ef678566b",
+     "score": 0.4442
+    },
+    {
+     "rank": 7,
+     "doc_id": "72225baa4e7fb248194843f28b9f5f2f",
+     "chunk_id": "72225baa4e7fb248194843f28b9f5f2f",
+     "score": 0.4362
+    },
+    {
+     "rank": 8,
+     "doc_id": "7ea78cee6f6a076d1f41025ee8dd84d4",
+     "chunk_id": "7ea78cee6f6a076d1f41025ee8dd84d4",
+     "score": 0.4318
+    },
+    {
+     "rank": 9,
+     "doc_id": "5d4bbe1f5c5b67843f722695fd3db380",
+     "chunk_id": "5d4bbe1f5c5b67843f722695fd3db380",
+     "score": 0.4204
+    },
+    {
+     "rank": 10,
+     "doc_id": "f5fc11dd62e1cd5c07fbb0bbb6dfeddf",
+     "chunk_id": "f5fc11dd62e1cd5c07fbb0bbb6dfeddf",
+     "score": 0.4172
+    },
+    {
+     "rank": 11,
+     "doc_id": "9475987daf8ecf7acb400f7440c4cf79",
+     "chunk_id": "9475987daf8ecf7acb400f7440c4cf79",
+     "score": 0.4036
+    },
+    {
+     "rank": 12,
+     "doc_id": "6de7300c2b03fc8c531709877011aa92",
+     "chunk_id": "6de7300c2b03fc8c531709877011aa92",
+     "score": 0.3931
+    },
+    {
+     "rank": 13,
+     "doc_id": "badb568ec28cb0e38c53f2b88e30f33a",
+     "chunk_id": "badb568ec28cb0e38c53f2b88e30f33a",
+     "score": 0.3927
+    },
+    {
+     "rank": 14,
+     "doc_id": "97bfe17af1cd759be6997390d8064fcf",
+     "chunk_id": "97bfe17af1cd759be6997390d8064fcf",
+     "score": 0.3925
+    },
+    {
+     "rank": 15,
+     "doc_id": "23262f121e7e283a0157cb177af01e0c",
+     "chunk_id": "23262f121e7e283a0157cb177af01e0c",
+     "score": 0.3924
+    },
+    {
+     "rank": 16,
+     "doc_id": "c0196bee36943cb8dd9579a87b00f054",
+     "chunk_id": "c0196bee36943cb8dd9579a87b00f054",
+     "score": 0.3909
+    },
+    {
+     "rank": 17,
+     "doc_id": "0559eab526ab023c7f864914929943e8",
+     "chunk_id": "0559eab526ab023c7f864914929943e8",
+     "score": 0.3897
+    },
+    {
+     "rank": 18,
+     "doc_id": "48725cd2a1b7aa4c9ff48ebd5639a113",
+     "chunk_id": "48725cd2a1b7aa4c9ff48ebd5639a113",
+     "score": 0.3893
+    },
+    {
+     "rank": 19,
+     "doc_id": "43c9e3f6d89ff29ca861b38fa76fa3b2",
+     "chunk_id": "43c9e3f6d89ff29ca861b38fa76fa3b2",
+     "score": 0.3825
+    },
+    {
+     "rank": 20,
+     "doc_id": "df50a9f47f136f5471275054bbbe01bc",
+     "chunk_id": "df50a9f47f136f5471275054bbbe01bc",
+     "score": 0.3799
+    }
+   ],
+   "latency_s": 0.53
+  },
+  {
+   "query": "At the end of what year did the tribes from the place where the Rossen culture is located invade the Roman Empire?",
+   "gold_doc_ids": [
+    "8a2849fe6441272c430c638f0be9facb",
+    "eec2ec1bb052e5adb5819f3ca5f94a21"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "8a2849fe6441272c430c638f0be9facb",
+     "chunk_id": "8a2849fe6441272c430c638f0be9facb",
+     "score": 0.5011
+    },
+    {
+     "rank": 2,
+     "doc_id": "0ed64b846a912edfe032e3fc382b533c",
+     "chunk_id": "0ed64b846a912edfe032e3fc382b533c",
+     "score": 0.4977
+    },
+    {
+     "rank": 3,
+     "doc_id": "e390c92953ed2f566948e62bdd529c0c",
+     "chunk_id": "e390c92953ed2f566948e62bdd529c0c",
+     "score": 0.4946
+    },
+    {
+     "rank": 4,
+     "doc_id": "1c4030588d90ee7d155611b8773d0a0d",
+     "chunk_id": "1c4030588d90ee7d155611b8773d0a0d",
+     "score": 0.467
+    },
+    {
+     "rank": 5,
+     "doc_id": "c06a782aba984507c303fa772234b2ad",
+     "chunk_id": "c06a782aba984507c303fa772234b2ad",
+     "score": 0.4493
+    },
+    {
+     "rank": 6,
+     "doc_id": "424b094b163368e6ccb686c74d81bceb",
+     "chunk_id": "424b094b163368e6ccb686c74d81bceb",
+     "score": 0.447
+    },
+    {
+     "rank": 7,
+     "doc_id": "a66a0a88545d77e19a1e3e930e314c40",
+     "chunk_id": "a66a0a88545d77e19a1e3e930e314c40",
+     "score": 0.4368
+    },
+    {
+     "rank": 8,
+     "doc_id": "4cecabcd698356183dc14faf98564dfe",
+     "chunk_id": "4cecabcd698356183dc14faf98564dfe",
+     "score": 0.4305
+    },
+    {
+     "rank": 9,
+     "doc_id": "a6f6add4a4b24f9e490e1d234eed3bd0",
+     "chunk_id": "a6f6add4a4b24f9e490e1d234eed3bd0",
+     "score": 0.4278
+    },
+    {
+     "rank": 10,
+     "doc_id": "75a3a909539047bf548bc3e41ed322ad",
+     "chunk_id": "75a3a909539047bf548bc3e41ed322ad",
+     "score": 0.4193
+    },
+    {
+     "rank": 11,
+     "doc_id": "c26e4d6138976f5ed68f635e5b7a0a1d",
+     "chunk_id": "c26e4d6138976f5ed68f635e5b7a0a1d",
+     "score": 0.4161
+    },
+    {
+     "rank": 12,
+     "doc_id": "b20aebafd31589b74096c8306778080a",
+     "chunk_id": "b20aebafd31589b74096c8306778080a",
+     "score": 0.3888
+    },
+    {
+     "rank": 13,
+     "doc_id": "6de7300c2b03fc8c531709877011aa92",
+     "chunk_id": "6de7300c2b03fc8c531709877011aa92",
+     "score": 0.383
+    },
+    {
+     "rank": 14,
+     "doc_id": "cb9fdcc6ff10bad7d4cb993f796e1ab7",
+     "chunk_id": "cb9fdcc6ff10bad7d4cb993f796e1ab7",
+     "score": 0.368
+    },
+    {
+     "rank": 15,
+     "doc_id": "5b45d3e0715734f8e9f8bf4b2218cd5a",
+     "chunk_id": "5b45d3e0715734f8e9f8bf4b2218cd5a",
+     "score": 0.3671
+    },
+    {
+     "rank": 16,
+     "doc_id": "657f78bb71195ef79f43ce46c286b7e3",
+     "chunk_id": "657f78bb71195ef79f43ce46c286b7e3",
+     "score": 0.3518
+    },
+    {
+     "rank": 17,
+     "doc_id": "928d9afa2335e703da8df634fc7f942c",
+     "chunk_id": "928d9afa2335e703da8df634fc7f942c",
+     "score": 0.334
+    },
+    {
+     "rank": 18,
+     "doc_id": "c11b88ee7d6e7a74141fd3d7bbdeb056",
+     "chunk_id": "c11b88ee7d6e7a74141fd3d7bbdeb056",
+     "score": 0.3332
+    },
+    {
+     "rank": 19,
+     "doc_id": "247d7a3ba7962bcbf1b42d49c804e7a8",
+     "chunk_id": "247d7a3ba7962bcbf1b42d49c804e7a8",
+     "score": 0.3323
+    },
+    {
+     "rank": 20,
+     "doc_id": "20c72805d8eb8245c3abdd8b61396a39",
+     "chunk_id": "20c72805d8eb8245c3abdd8b61396a39",
+     "score": 0.3285
+    }
+   ],
+   "latency_s": 0.407
+  },
+  {
+   "query": "Who is the host of Who Wants to be a Millionaire in the country that MacGruder and Loud's creator is from?",
+   "gold_doc_ids": [
+    "4ca1f5d38eb84b1a99e4edafb323cc8a",
+    "4d65e5c50e767fc2de5925c72b6ec1cf",
+    "d7aed86cc27ceb6de0fdc3035b3a4475"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "d7aed86cc27ceb6de0fdc3035b3a4475",
+     "chunk_id": "d7aed86cc27ceb6de0fdc3035b3a4475",
+     "score": 0.5584
+    },
+    {
+     "rank": 2,
+     "doc_id": "808521a13f992e9a86cab0d89616c9a4",
+     "chunk_id": "808521a13f992e9a86cab0d89616c9a4",
+     "score": 0.5563
+    },
+    {
+     "rank": 3,
+     "doc_id": "e2f4b91b2312ef057aadf39f2040a638",
+     "chunk_id": "e2f4b91b2312ef057aadf39f2040a638",
+     "score": 0.4666
+    },
+    {
+     "rank": 4,
+     "doc_id": "4d65e5c50e767fc2de5925c72b6ec1cf",
+     "chunk_id": "4d65e5c50e767fc2de5925c72b6ec1cf",
+     "score": 0.4646
+    },
+    {
+     "rank": 5,
+     "doc_id": "a9d9a7a698551b28328a4a26506b0948",
+     "chunk_id": "a9d9a7a698551b28328a4a26506b0948",
+     "score": 0.4434
+    },
+    {
+     "rank": 6,
+     "doc_id": "51193eb36969901238f2fd9b187ef10f",
+     "chunk_id": "51193eb36969901238f2fd9b187ef10f",
+     "score": 0.4391
+    },
+    {
+     "rank": 7,
+     "doc_id": "65787ce9c4f6ebf7945ff72554c0ee5a",
+     "chunk_id": "65787ce9c4f6ebf7945ff72554c0ee5a",
+     "score": 0.4089
+    },
+    {
+     "rank": 8,
+     "doc_id": "0cb04b5383526ad774b9a41fea638d4a",
+     "chunk_id": "0cb04b5383526ad774b9a41fea638d4a",
+     "score": 0.3967
+    },
+    {
+     "rank": 9,
+     "doc_id": "542072c720f59984111eecc739ae9d7a",
+     "chunk_id": "542072c720f59984111eecc739ae9d7a",
+     "score": 0.3867
+    },
+    {
+     "rank": 10,
+     "doc_id": "e6f6873d27933d369481dc951b89ba86",
+     "chunk_id": "e6f6873d27933d369481dc951b89ba86",
+     "score": 0.3751
+    },
+    {
+     "rank": 11,
+     "doc_id": "7523680aa729d5f6d1dbbc3ed6b83934",
+     "chunk_id": "7523680aa729d5f6d1dbbc3ed6b83934",
+     "score": 0.3616
+    },
+    {
+     "rank": 12,
+     "doc_id": "454962718a039cf50e7d01e63b80370e",
+     "chunk_id": "454962718a039cf50e7d01e63b80370e",
+     "score": 0.3552
+    },
+    {
+     "rank": 13,
+     "doc_id": "2322784f3f23dc7b91e8af273f747c3f",
+     "chunk_id": "2322784f3f23dc7b91e8af273f747c3f",
+     "score": 0.355
+    },
+    {
+     "rank": 14,
+     "doc_id": "63342ad919fb1c92d6e436c00b69b47a",
+     "chunk_id": "63342ad919fb1c92d6e436c00b69b47a",
+     "score": 0.3527
+    },
+    {
+     "rank": 15,
+     "doc_id": "4e21e2504e28b8ee87e01c18555cb6e5",
+     "chunk_id": "4e21e2504e28b8ee87e01c18555cb6e5",
+     "score": 0.3518
+    },
+    {
+     "rank": 16,
+     "doc_id": "392a65f77a61d493061ad531d1b301da",
+     "chunk_id": "392a65f77a61d493061ad531d1b301da",
+     "score": 0.3458
+    },
+    {
+     "rank": 17,
+     "doc_id": "14ef1ef85619c568151d7956602dd27c",
+     "chunk_id": "14ef1ef85619c568151d7956602dd27c",
+     "score": 0.3436
+    },
+    {
+     "rank": 18,
+     "doc_id": "dc0d025995f0f8dbecaa28d679db7dfc",
+     "chunk_id": "dc0d025995f0f8dbecaa28d679db7dfc",
+     "score": 0.342
+    },
+    {
+     "rank": 19,
+     "doc_id": "c4305db02c393a70c20d338a85cf662b",
+     "chunk_id": "c4305db02c393a70c20d338a85cf662b",
+     "score": 0.3402
+    },
+    {
+     "rank": 20,
+     "doc_id": "7105b7aef34cdfdeba12bdb41c0fe94a",
+     "chunk_id": "7105b7aef34cdfdeba12bdb41c0fe94a",
+     "score": 0.3398
+    }
+   ],
+   "latency_s": 0.411
+  },
+  {
+   "query": "What sports team is the person who had the most sacks in the NFL this season a member of?",
+   "gold_doc_ids": [
+    "1ccfad668b609deb35e32fd61235a22c",
+    "9cf2b13021c3d8d7b61eb8969afd652c"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "9cf2b13021c3d8d7b61eb8969afd652c",
+     "chunk_id": "9cf2b13021c3d8d7b61eb8969afd652c",
+     "score": 0.6407
+    },
+    {
+     "rank": 2,
+     "doc_id": "b24f4931916225127571067985684a5f",
+     "chunk_id": "b24f4931916225127571067985684a5f",
+     "score": 0.4895
+    },
+    {
+     "rank": 3,
+     "doc_id": "9cc38b4ae75d72bc72096f07f44570b4",
+     "chunk_id": "9cc38b4ae75d72bc72096f07f44570b4",
+     "score": 0.4607
+    },
+    {
+     "rank": 4,
+     "doc_id": "f6683145006d7f411f8ed56d44987cf3",
+     "chunk_id": "f6683145006d7f411f8ed56d44987cf3",
+     "score": 0.4599
+    },
+    {
+     "rank": 5,
+     "doc_id": "119c2c3c7b9ce0222c9844667515b69f",
+     "chunk_id": "119c2c3c7b9ce0222c9844667515b69f",
+     "score": 0.4553
+    },
+    {
+     "rank": 6,
+     "doc_id": "40586c0847651a7be85b393343bbe564",
+     "chunk_id": "40586c0847651a7be85b393343bbe564",
+     "score": 0.4358
+    },
+    {
+     "rank": 7,
+     "doc_id": "af7f6f90b58bbdd70075e8914ceb4010",
+     "chunk_id": "af7f6f90b58bbdd70075e8914ceb4010",
+     "score": 0.4351
+    },
+    {
+     "rank": 8,
+     "doc_id": "1ccfad668b609deb35e32fd61235a22c",
+     "chunk_id": "1ccfad668b609deb35e32fd61235a22c",
+     "score": 0.431
+    },
+    {
+     "rank": 9,
+     "doc_id": "c0244a9eacdebe3a9411451fe1c69905",
+     "chunk_id": "c0244a9eacdebe3a9411451fe1c69905",
+     "score": 0.4174
+    },
+    {
+     "rank": 10,
+     "doc_id": "95f448ce64331c581cdc7ae706e1e2b3",
+     "chunk_id": "95f448ce64331c581cdc7ae706e1e2b3",
+     "score": 0.4065
+    },
+    {
+     "rank": 11,
+     "doc_id": "b9102b7a2ef56d1946dc6aea50f92a13",
+     "chunk_id": "b9102b7a2ef56d1946dc6aea50f92a13",
+     "score": 0.4023
+    },
+    {
+     "rank": 12,
+     "doc_id": "ca420200518d3934fbc7102570bca997",
+     "chunk_id": "ca420200518d3934fbc7102570bca997",
+     "score": 0.3989
+    },
+    {
+     "rank": 13,
+     "doc_id": "a7e63c242e86f489444ec5c6311c2be5",
+     "chunk_id": "a7e63c242e86f489444ec5c6311c2be5",
+     "score": 0.3958
+    },
+    {
+     "rank": 14,
+     "doc_id": "089ae794c1a35670d666fcbd3663b6e7",
+     "chunk_id": "089ae794c1a35670d666fcbd3663b6e7",
+     "score": 0.3902
+    },
+    {
+     "rank": 15,
+     "doc_id": "e26aabf849510dfd72ea6ffad522d08d",
+     "chunk_id": "e26aabf849510dfd72ea6ffad522d08d",
+     "score": 0.3778
+    },
+    {
+     "rank": 16,
+     "doc_id": "5b2fc9cd02d0160665711cc0d482e672",
+     "chunk_id": "5b2fc9cd02d0160665711cc0d482e672",
+     "score": 0.3778
+    },
+    {
+     "rank": 17,
+     "doc_id": "e545bdc723c78932f21b8b0951cb0131",
+     "chunk_id": "e545bdc723c78932f21b8b0951cb0131",
+     "score": 0.362
+    },
+    {
+     "rank": 18,
+     "doc_id": "5742aa5e9a4411fe72fe790fbe6ac212",
+     "chunk_id": "5742aa5e9a4411fe72fe790fbe6ac212",
+     "score": 0.3597
+    },
+    {
+     "rank": 19,
+     "doc_id": "f7092f2ec83a7aa5c1c25e02c9e32b82",
+     "chunk_id": "f7092f2ec83a7aa5c1c25e02c9e32b82",
+     "score": 0.3556
+    },
+    {
+     "rank": 20,
+     "doc_id": "34f951e8400bd7cfd3e15e9abeb92c01",
+     "chunk_id": "34f951e8400bd7cfd3e15e9abeb92c01",
+     "score": 0.3527
+    }
+   ],
+   "latency_s": 0.466
+  },
+  {
+   "query": "What is the name of the famous bridge in the birth city of the composer of Scanderbeg?",
+   "gold_doc_ids": [
+    "6e5f6f39e70967f578145d3629386db1",
+    "99736078740e7c645a0b90e74f157b79",
+    "f5bc7a6f1a425980bcd12fa0ae3f040f"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "6e5f6f39e70967f578145d3629386db1",
+     "chunk_id": "6e5f6f39e70967f578145d3629386db1",
+     "score": 0.5381
+    },
+    {
+     "rank": 2,
+     "doc_id": "cf7873efde5d931bd7863ef3ca0a0a4a",
+     "chunk_id": "cf7873efde5d931bd7863ef3ca0a0a4a",
+     "score": 0.4877
+    },
+    {
+     "rank": 3,
+     "doc_id": "99736078740e7c645a0b90e74f157b79",
+     "chunk_id": "99736078740e7c645a0b90e74f157b79",
+     "score": 0.4566
+    },
+    {
+     "rank": 4,
+     "doc_id": "512def17235d02c308008570b0a1ab6b",
+     "chunk_id": "512def17235d02c308008570b0a1ab6b",
+     "score": 0.4148
+    },
+    {
+     "rank": 5,
+     "doc_id": "54c7085503e88427e21fc9c591393e1c",
+     "chunk_id": "54c7085503e88427e21fc9c591393e1c",
+     "score": 0.3833
+    },
+    {
+     "rank": 6,
+     "doc_id": "1e93329d1205f4299a5b3a5e1c46f064",
+     "chunk_id": "1e93329d1205f4299a5b3a5e1c46f064",
+     "score": 0.3833
+    },
+    {
+     "rank": 7,
+     "doc_id": "773c1592faa4ee7998dd330cd6350b1c",
+     "chunk_id": "773c1592faa4ee7998dd330cd6350b1c",
+     "score": 0.3756
+    },
+    {
+     "rank": 8,
+     "doc_id": "e0d1debbf8b464c5312d1dd679b46c96",
+     "chunk_id": "e0d1debbf8b464c5312d1dd679b46c96",
+     "score": 0.374
+    },
+    {
+     "rank": 9,
+     "doc_id": "dd173ba84b9607a17185477465936bf6",
+     "chunk_id": "dd173ba84b9607a17185477465936bf6",
+     "score": 0.3711
+    },
+    {
+     "rank": 10,
+     "doc_id": "ab53cf420bf996e9a19e21b6d76fe818",
+     "chunk_id": "ab53cf420bf996e9a19e21b6d76fe818",
+     "score": 0.369
+    },
+    {
+     "rank": 11,
+     "doc_id": "0dd90125fffe4f77593291cfcbb06f49",
+     "chunk_id": "0dd90125fffe4f77593291cfcbb06f49",
+     "score": 0.3676
+    },
+    {
+     "rank": 12,
+     "doc_id": "6f336d3fca58c8ca58df46c3de8f9351",
+     "chunk_id": "6f336d3fca58c8ca58df46c3de8f9351",
+     "score": 0.3633
+    },
+    {
+     "rank": 13,
+     "doc_id": "4552bcce93a3eb2768025c4ece878c78",
+     "chunk_id": "4552bcce93a3eb2768025c4ece878c78",
+     "score": 0.3622
+    },
+    {
+     "rank": 14,
+     "doc_id": "4e170dd201a24f8876b0da34299f2a24",
+     "chunk_id": "4e170dd201a24f8876b0da34299f2a24",
+     "score": 0.3569
+    },
+    {
+     "rank": 15,
+     "doc_id": "73f51c87b776d4094807e362fa7bcf0e",
+     "chunk_id": "73f51c87b776d4094807e362fa7bcf0e",
+     "score": 0.3568
+    },
+    {
+     "rank": 16,
+     "doc_id": "d1ea7c328946c23a6554f84826865313",
+     "chunk_id": "d1ea7c328946c23a6554f84826865313",
+     "score": 0.356
+    },
+    {
+     "rank": 17,
+     "doc_id": "3b745c97177d837af919b2505af6255c",
+     "chunk_id": "3b745c97177d837af919b2505af6255c",
+     "score": 0.3557
+    },
+    {
+     "rank": 18,
+     "doc_id": "2d3e101ab2551ed8e27c1d05aebba625",
+     "chunk_id": "2d3e101ab2551ed8e27c1d05aebba625",
+     "score": 0.3502
+    },
+    {
+     "rank": 19,
+     "doc_id": "54cde2d18b51ed1bc9ef9c2c0c84a561",
+     "chunk_id": "54cde2d18b51ed1bc9ef9c2c0c84a561",
+     "score": 0.3496
+    },
+    {
+     "rank": 20,
+     "doc_id": "d267414bcc91d4bd76348d11a6c8837c",
+     "chunk_id": "d267414bcc91d4bd76348d11a6c8837c",
+     "score": 0.3456
+    }
+   ],
+   "latency_s": 0.736
+  },
+  {
+   "query": "How long was the city where the Yongle Emperor greeted the leader that the edict was addressed to, the capital city of Yangzhou?",
+   "gold_doc_ids": [
+    "7ac26ee3e19b9d730382172cd6078eec",
+    "7d19c7289eb2369815b39631d00af3d0"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "7b93689737c8cd872cb7233053b1f261",
+     "chunk_id": "7b93689737c8cd872cb7233053b1f261",
+     "score": 0.4606
+    },
+    {
+     "rank": 2,
+     "doc_id": "0b09b18af30f5eb5eb83a93390b8e7de",
+     "chunk_id": "0b09b18af30f5eb5eb83a93390b8e7de",
+     "score": 0.4502
+    },
+    {
+     "rank": 3,
+     "doc_id": "a66a0a88545d77e19a1e3e930e314c40",
+     "chunk_id": "a66a0a88545d77e19a1e3e930e314c40",
+     "score": 0.4401
+    },
+    {
+     "rank": 4,
+     "doc_id": "7d19c7289eb2369815b39631d00af3d0",
+     "chunk_id": "7d19c7289eb2369815b39631d00af3d0",
+     "score": 0.4392
+    },
+    {
+     "rank": 5,
+     "doc_id": "eb9666649eb9c10b7ae94732ef1cb62f",
+     "chunk_id": "eb9666649eb9c10b7ae94732ef1cb62f",
+     "score": 0.437
+    },
+    {
+     "rank": 6,
+     "doc_id": "69340706bd43b38ae9b4a15eca90c5ee",
+     "chunk_id": "69340706bd43b38ae9b4a15eca90c5ee",
+     "score": 0.4226
+    },
+    {
+     "rank": 7,
+     "doc_id": "3cdc756939582a2e0116d5f02da64098",
+     "chunk_id": "3cdc756939582a2e0116d5f02da64098",
+     "score": 0.41
+    },
+    {
+     "rank": 8,
+     "doc_id": "68ca7ad1c94da565869f0565f5a3f03f",
+     "chunk_id": "68ca7ad1c94da565869f0565f5a3f03f",
+     "score": 0.3936
+    },
+    {
+     "rank": 9,
+     "doc_id": "aef73ae4587ed166228ae9268b38f362",
+     "chunk_id": "aef73ae4587ed166228ae9268b38f362",
+     "score": 0.3875
+    },
+    {
+     "rank": 10,
+     "doc_id": "7ac26ee3e19b9d730382172cd6078eec",
+     "chunk_id": "7ac26ee3e19b9d730382172cd6078eec",
+     "score": 0.3648
+    },
+    {
+     "rank": 11,
+     "doc_id": "ab1ce6cd5b924bfc54d786a5b3374dbb",
+     "chunk_id": "ab1ce6cd5b924bfc54d786a5b3374dbb",
+     "score": 0.3602
+    },
+    {
+     "rank": 12,
+     "doc_id": "347f4e45ca12484972fcec2a315129aa",
+     "chunk_id": "347f4e45ca12484972fcec2a315129aa",
+     "score": 0.3541
+    },
+    {
+     "rank": 13,
+     "doc_id": "037bbe17818e17da3edf5cd691a9720e",
+     "chunk_id": "037bbe17818e17da3edf5cd691a9720e",
+     "score": 0.3411
+    },
+    {
+     "rank": 14,
+     "doc_id": "6616092ac3a843b22f083895acce7022",
+     "chunk_id": "6616092ac3a843b22f083895acce7022",
+     "score": 0.3408
+    },
+    {
+     "rank": 15,
+     "doc_id": "4f671783ef659e86df2d4b6ab6aa8b85",
+     "chunk_id": "4f671783ef659e86df2d4b6ab6aa8b85",
+     "score": 0.338
+    },
+    {
+     "rank": 16,
+     "doc_id": "92e58d8839f0f41eefed319f0c49a6a0",
+     "chunk_id": "92e58d8839f0f41eefed319f0c49a6a0",
+     "score": 0.3303
+    },
+    {
+     "rank": 17,
+     "doc_id": "b6b3689005211168f0f73dd82454cb38",
+     "chunk_id": "b6b3689005211168f0f73dd82454cb38",
+     "score": 0.3266
+    },
+    {
+     "rank": 18,
+     "doc_id": "1e7b32a350ac41450691c00a5d3bf76b",
+     "chunk_id": "1e7b32a350ac41450691c00a5d3bf76b",
+     "score": 0.3251
+    },
+    {
+     "rank": 19,
+     "doc_id": "c6a9c01ab00c04bff2beaf785c928b83",
+     "chunk_id": "c6a9c01ab00c04bff2beaf785c928b83",
+     "score": 0.3245
+    },
+    {
+     "rank": 20,
+     "doc_id": "d7c028c1338038796f8c8c1c4fb6647d",
+     "chunk_id": "d7c028c1338038796f8c8c1c4fb6647d",
+     "score": 0.3224
+    }
+   ],
+   "latency_s": 0.438
+  },
+  {
+   "query": "How long was the city where the Yongle emperor greeted the person the Ming court thought the representatives were sent by the capitol of Yaxing Coach's headquarters location?",
+   "gold_doc_ids": [
+    "373de25e05625790e2fad0f28c9c87ae",
+    "7ac26ee3e19b9d730382172cd6078eec",
+    "7d19c7289eb2369815b39631d00af3d0"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "7d19c7289eb2369815b39631d00af3d0",
+     "chunk_id": "7d19c7289eb2369815b39631d00af3d0",
+     "score": 0.4828
+    },
+    {
+     "rank": 2,
+     "doc_id": "a66a0a88545d77e19a1e3e930e314c40",
+     "chunk_id": "a66a0a88545d77e19a1e3e930e314c40",
+     "score": 0.4561
+    },
+    {
+     "rank": 3,
+     "doc_id": "eb9666649eb9c10b7ae94732ef1cb62f",
+     "chunk_id": "eb9666649eb9c10b7ae94732ef1cb62f",
+     "score": 0.4367
+    },
+    {
+     "rank": 4,
+     "doc_id": "373de25e05625790e2fad0f28c9c87ae",
+     "chunk_id": "373de25e05625790e2fad0f28c9c87ae",
+     "score": 0.4338
+    },
+    {
+     "rank": 5,
+     "doc_id": "7b93689737c8cd872cb7233053b1f261",
+     "chunk_id": "7b93689737c8cd872cb7233053b1f261",
+     "score": 0.4238
+    },
+    {
+     "rank": 6,
+     "doc_id": "0b09b18af30f5eb5eb83a93390b8e7de",
+     "chunk_id": "0b09b18af30f5eb5eb83a93390b8e7de",
+     "score": 0.4169
+    },
+    {
+     "rank": 7,
+     "doc_id": "aef73ae4587ed166228ae9268b38f362",
+     "chunk_id": "aef73ae4587ed166228ae9268b38f362",
+     "score": 0.4149
+    },
+    {
+     "rank": 8,
+     "doc_id": "3cdc756939582a2e0116d5f02da64098",
+     "chunk_id": "3cdc756939582a2e0116d5f02da64098",
+     "score": 0.3794
+    },
+    {
+     "rank": 9,
+     "doc_id": "ab1ce6cd5b924bfc54d786a5b3374dbb",
+     "chunk_id": "ab1ce6cd5b924bfc54d786a5b3374dbb",
+     "score": 0.3583
+    },
+    {
+     "rank": 10,
+     "doc_id": "cd509b7647b87a37bf27f203052a3245",
+     "chunk_id": "cd509b7647b87a37bf27f203052a3245",
+     "score": 0.3554
+    },
+    {
+     "rank": 11,
+     "doc_id": "92e58d8839f0f41eefed319f0c49a6a0",
+     "chunk_id": "92e58d8839f0f41eefed319f0c49a6a0",
+     "score": 0.3526
+    },
+    {
+     "rank": 12,
+     "doc_id": "b6b3689005211168f0f73dd82454cb38",
+     "chunk_id": "b6b3689005211168f0f73dd82454cb38",
+     "score": 0.3463
+    },
+    {
+     "rank": 13,
+     "doc_id": "28d53995f762d78cdc71be619fad7899",
+     "chunk_id": "28d53995f762d78cdc71be619fad7899",
+     "score": 0.3334
+    },
+    {
+     "rank": 14,
+     "doc_id": "b97f8554727f61760279dc9c712ebc80",
+     "chunk_id": "b97f8554727f61760279dc9c712ebc80",
+     "score": 0.3332
+    },
+    {
+     "rank": 15,
+     "doc_id": "6616092ac3a843b22f083895acce7022",
+     "chunk_id": "6616092ac3a843b22f083895acce7022",
+     "score": 0.3316
+    },
+    {
+     "rank": 16,
+     "doc_id": "4f671783ef659e86df2d4b6ab6aa8b85",
+     "chunk_id": "4f671783ef659e86df2d4b6ab6aa8b85",
+     "score": 0.3311
+    },
+    {
+     "rank": 17,
+     "doc_id": "68ca7ad1c94da565869f0565f5a3f03f",
+     "chunk_id": "68ca7ad1c94da565869f0565f5a3f03f",
+     "score": 0.331
+    },
+    {
+     "rank": 18,
+     "doc_id": "c255162c0258054e474bae53f71a5e91",
+     "chunk_id": "c255162c0258054e474bae53f71a5e91",
+     "score": 0.328
+    },
+    {
+     "rank": 19,
+     "doc_id": "a618be98a07193aaa8370e63500d4550",
+     "chunk_id": "a618be98a07193aaa8370e63500d4550",
+     "score": 0.3237
+    },
+    {
+     "rank": 20,
+     "doc_id": "06c0ebf6ad387251ca17d9e4636dc8a2",
+     "chunk_id": "06c0ebf6ad387251ca17d9e4636dc8a2",
+     "score": 0.3215
+    }
+   ],
+   "latency_s": 0.597
+  }
+ ]
+}

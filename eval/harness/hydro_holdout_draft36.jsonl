@@ -1,0 +1,34 @@
+{"query": "在柳城县六塘片区地下水污染风险管控与修复项目标准化数据中，哪些监测井因坐标缺失被标记为warning级别的质量问题？", "gold_doc_ids": ["e1d74b1f7dde43ecbd7cfdddf1db3f3e"], "source_doc_title": "10-质量问题记录"}
+{"query": "在柳城县六塘片区地下水污染风险管控与修复项目中，点位D18的规划坐标与已建坐标之间的差异是多少米？", "gold_doc_ids": ["93ac9844a621415282d6c626d1dbfb68"], "source_doc_title": "10-计划与已建对比"}
+{"query": "在柳城县六塘片区地下水污染风险管控与修复项目的kml_vertices数据中，feature_id为kml-feature-0001的注入井的经度和纬度分别是多少？", "gold_doc_ids": ["9600253b65a54009873871df873c0f14"], "source_doc_title": "10-kml_vertices"}
+{"query": "在柳城县六塘片区地下水污染风险管控与修复项目的井水位测量标准化数据中，包含哪些具体的字段名称？", "gold_doc_ids": ["ba67dd8f203348499478f5d778746a98"], "source_doc_title": "10-井水位测量"}
+{"query": "在柳城县六塘片区地下水污染风险管控与修复项目的标准化数据中，water_quality_measurements表包含多少行记录？", "gold_doc_ids": ["f9e63176ae5f4654be61d4d6ccd693fa"], "source_doc_title": "10-water_quality_measurements"}
+{"query": "在柳城县六塘片区地下水污染风险管控与修复项目标准化数据中，采样点GW31上层土壤样本对应的实验室编号是多少？", "gold_doc_ids": ["1bbe2f6cf4d24f2293f62d425ef6da43"], "source_doc_title": "10-water_samples"}
+{"query": "柳城县六塘片区地下水污染风险管控与修复项目标准化数据中，KML要素的数据来源是什么？", "gold_doc_ids": ["1e9583e1c9444bde8eb4eae8d3641660"], "source_doc_title": "10-KML要素"}
+{"query": "在柳城县六塘片区地下水污染风险管控与修复项目标准化数据中，well_components表包含哪些字段？", "gold_doc_ids": ["da2c15453f884f01aa02b810e0c72d7b"], "source_doc_title": "10-well_components"}
+{"query": "在《钻井参数表6.8.xlsx》中，井编号由字母和数字组成，其中字母'D'代表哪种类型的井？", "gold_doc_ids": ["5b1b1f73c39c4778990b5546c1443b71"], "source_doc_title": "08-项目数据说明"}
+{"query": "后续数据处理的标准是什么？", "gold_doc_ids": ["844e53dd2f40462a95b3a49eb1784199"], "source_doc_title": "07-数据处理规范"}
+{"query": "在查询地下水监测点位置时，应该使用哪个真实表名，并如何筛选以区分监测点与其他类型点位？", "gold_doc_ids": ["3faee1b9171d49e1bd0617244034288d"], "source_doc_title": "09-标准化包说明"}
+{"query": "当用户询问污染物浓度或水质超标情况时，首选查询的表是什么？在计算超标倍数前，必须满足哪些关于检测值、单位和限值的前提条件？", "gold_doc_ids": ["3faee1b9171d49e1bd0617244034288d"], "source_doc_title": "09-标准化包说明"}
+{"query": "为什么禁止将 `liutang_3659_271` 与 `liutang_271_597` 这两组坐标进行跨组距离计算或插值？涉及北部区域 KML 地物时，正确的处理步骤是什么？", "gold_doc_ids": ["3faee1b9171d49e1bd0617244034288d"], "source_doc_title": "09-标准化包说明"}
+{"query": "这份数据质量报告的生成时间是什么？", "gold_doc_ids": ["23ce8372958e48c7b52fa502a022a878"], "source_doc_title": "06-数据质量说明"}
+{"query": "地勘钻孔数据来源于哪个项目？", "gold_doc_ids": ["a4652b747ecf4053bea0da5f04a7945c"], "source_doc_title": "10-地勘钻孔"}
+{"query": "在标准化数据表说明中，`planned_constructed_comparison` 表的主键或关联键是什么？", "gold_doc_ids": ["25df951bf656411db7280ef9112458be"], "source_doc_title": "05-数据表结构说明"}
+{"query": "在柳城县六塘片区地下水污染风险管控与修复项目中，调查点位Z11的坐标系统（coordinate_system）是什么？", "gold_doc_ids": ["1c6b84682c054931bd3589542170992e"], "source_doc_title": "10-调查点位"}
+{"query": "在柳城县六塘片区地下水污染风险管控与修复项目中，点ID为planned_well:P1的计划井对应的井位编码（point_code）和井类型（well_type）分别是什么？", "gold_doc_ids": ["bfce0b422eee428182d58129c6a88bc3"], "source_doc_title": "10-计划井"}
+{"query": "在广西柳城县工业区-六塘片区地下水污染风险管控与修复项目的初步调查中，共布设了多少口地下水监测井？", "gold_doc_ids": ["6f409157f21243059fd709e15969ae12"], "source_doc_title": "01-初步设计说明"}
+{"query": "根据文档，滤水管的筛网由哪些部件焊接成形，且绕丝与筋条的截面有哪些可选形状？", "gold_doc_ids": ["6f409157f21243059fd709e15969ae12"], "source_doc_title": "01-初步设计说明"}
+{"query": "针对初步调查中确定的9项与生产相关的地下水特征指标，具体对哪5个监测井点位进行了加密布点详细调查？", "gold_doc_ids": ["6f409157f21243059fd709e15969ae12"], "source_doc_title": "01-初步设计说明"}
+{"query": "在系统调试的单机调试环节中，对充气式阻隔器需要测试哪些功能以确保其密封性良好？", "gold_doc_ids": ["6f409157f21243059fd709e15969ae12"], "source_doc_title": "01-初步设计说明"}
+{"query": "根据噪声环境监测的布点要求，一般情况下测点应设在建筑施工场界外多少米处，且高度在多少米以上？", "gold_doc_ids": ["6f409157f21243059fd709e15969ae12"], "source_doc_title": "01-初步设计说明"}
+{"query": "本次岩土工程勘察报告的工程编号是多少？", "gold_doc_ids": ["182834faeaea4c8699a32426fd0e8a75"], "source_doc_title": "02-勘察报告"}
+{"query": "勘察阶段为详勘，该报告的项目负责人和技术负责人分别是谁？", "gold_doc_ids": ["182834faeaea4c8699a32426fd0e8a75"], "source_doc_title": "02-勘察报告"}
+{"query": "柳城县工业区-六塘片区规划用地面积约为多少平方公里？", "gold_doc_ids": ["182834faeaea4c8699a32426fd0e8a75"], "source_doc_title": "02-勘察报告"}
+{"query": "场地宏观地貌属于什么成因类型，并以哪条河流为区域地下水最低排泄基准面？", "gold_doc_ids": ["182834faeaea4c8699a32426fd0e8a75"], "source_doc_title": "02-勘察报告"}
+{"query": "本次详细勘察共布设了多少个钻孔，总进尺是多少米？", "gold_doc_ids": ["182834faeaea4c8699a32426fd0e8a75"], "source_doc_title": "02-勘察报告"}
+{"query": "勘察期间野外作业的具体时间范围是哪几天？", "gold_doc_ids": ["182834faeaea4c8699a32426fd0e8a75"], "source_doc_title": "02-勘察报告"}
+{"query": "场地地下水主要包含哪两种类型？", "gold_doc_ids": ["182834faeaea4c8699a32426fd0e8a75"], "source_doc_title": "02-勘察报告"}
+{"query": "根据勘察结果，场地土对混凝土结构及其中的钢筋分别具有何种腐蚀性？", "gold_doc_ids": ["182834faeaea4c8699a32426fd0e8a75"], "source_doc_title": "02-勘察报告"}
+{"query": "在地下水腐蚀性评价中，判定园区包气带防污性能为“中等”的依据是什么？", "gold_doc_ids": ["182834faeaea4c8699a32426fd0e8a75"], "source_doc_title": "02-勘察报告"}
+{"query": "拟建场地工程建设适宜性分级属于哪一级？", "gold_doc_ids": ["182834faeaea4c8699a32426fd0e8a75"], "source_doc_title": "02-勘察报告"}
+{"query": "报告建议拟建项目采用何种地基基础方案，以及以哪两个土层作为基础持力层？", "gold_doc_ids": ["182834faeaea4c8699a32426fd0e8a75"], "source_doc_title": "02-勘察报告"}

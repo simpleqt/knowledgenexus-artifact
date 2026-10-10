@@ -1,0 +1,6010 @@
+{
+ "system": "bm25",
+ "slice": "pool",
+ "set": "2wikimultihopqa",
+ "corpus_docs": 400,
+ "index_cost": {
+  "wall_s": 1.0,
+  "engine": "rank_bm25 + jieba（passage 级）"
+ },
+ "per_query": [
+  {
+   "query": "What nationality is the performer of song Daddy, Come Home?",
+   "gold_doc_ids": [
+    "22f5e4798efc23fadf93948a8bd887ff",
+    "48953b442dcf268d13052b1713abdd67"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "22f5e4798efc23fadf93948a8bd887ff",
+     "chunk_id": "22f5e4798efc23fadf93948a8bd887ff",
+     "score": 32.5452
+    },
+    {
+     "rank": 2,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 17.1572
+    },
+    {
+     "rank": 3,
+     "doc_id": "a1c967f74618d57fd6eea93801fb153f",
+     "chunk_id": "a1c967f74618d57fd6eea93801fb153f",
+     "score": 16.98
+    },
+    {
+     "rank": 4,
+     "doc_id": "79641b2f418534659aec58f33aa9fb60",
+     "chunk_id": "79641b2f418534659aec58f33aa9fb60",
+     "score": 16.3259
+    },
+    {
+     "rank": 5,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 16.0175
+    },
+    {
+     "rank": 6,
+     "doc_id": "82f2589ef0c82137b6986df81bd067dd",
+     "chunk_id": "82f2589ef0c82137b6986df81bd067dd",
+     "score": 15.9862
+    },
+    {
+     "rank": 7,
+     "doc_id": "116b1add42dee157dd96271a2f71bc2e",
+     "chunk_id": "116b1add42dee157dd96271a2f71bc2e",
+     "score": 15.0783
+    },
+    {
+     "rank": 8,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 14.0676
+    },
+    {
+     "rank": 9,
+     "doc_id": "9f3f31b6027b2a628381f31e30ed7ef2",
+     "chunk_id": "9f3f31b6027b2a628381f31e30ed7ef2",
+     "score": 14.0594
+    },
+    {
+     "rank": 10,
+     "doc_id": "42e6bc443394574a61a2b065ddbccbc2",
+     "chunk_id": "42e6bc443394574a61a2b065ddbccbc2",
+     "score": 13.0953
+    },
+    {
+     "rank": 11,
+     "doc_id": "e4d09cab477c2c1c1d96b39900e1a59e",
+     "chunk_id": "e4d09cab477c2c1c1d96b39900e1a59e",
+     "score": 12.7777
+    },
+    {
+     "rank": 12,
+     "doc_id": "080f0eeb4216c29508a206170c772540",
+     "chunk_id": "080f0eeb4216c29508a206170c772540",
+     "score": 12.5616
+    },
+    {
+     "rank": 13,
+     "doc_id": "506bb031ee3ccb5a6069d8f46626f252",
+     "chunk_id": "506bb031ee3ccb5a6069d8f46626f252",
+     "score": 12.4868
+    },
+    {
+     "rank": 14,
+     "doc_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "chunk_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "score": 12.2222
+    },
+    {
+     "rank": 15,
+     "doc_id": "cbc37e67bb046103b51fcf89b7940310",
+     "chunk_id": "cbc37e67bb046103b51fcf89b7940310",
+     "score": 11.9333
+    },
+    {
+     "rank": 16,
+     "doc_id": "64836f7a20affc0557cbe6a723b6c32b",
+     "chunk_id": "64836f7a20affc0557cbe6a723b6c32b",
+     "score": 11.7095
+    },
+    {
+     "rank": 17,
+     "doc_id": "47b0bd4362803a2f2676dba29e69bccf",
+     "chunk_id": "47b0bd4362803a2f2676dba29e69bccf",
+     "score": 11.5901
+    },
+    {
+     "rank": 18,
+     "doc_id": "91f3587ebe3addb7b3b75f6f9faf2a22",
+     "chunk_id": "91f3587ebe3addb7b3b75f6f9faf2a22",
+     "score": 11.3715
+    },
+    {
+     "rank": 19,
+     "doc_id": "5fcfe2b55ab10c6c3b61d3c06c599f06",
+     "chunk_id": "5fcfe2b55ab10c6c3b61d3c06c599f06",
+     "score": 11.2714
+    },
+    {
+     "rank": 20,
+     "doc_id": "7f69454e15b7715be75009e61156c688",
+     "chunk_id": "7f69454e15b7715be75009e61156c688",
+     "score": 11.2539
+    }
+   ],
+   "latency_s": 0.0013
+  },
+  {
+   "query": "What nationality is Ameena Begum's husband?",
+   "gold_doc_ids": [
+    "da8cd12246bbbc382ca208f658d4a835",
+    "eb3a62ab77348a0dd54fdfef6ddcaeec"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "87174303e08eb8c7348d3f49bc18848e",
+     "chunk_id": "87174303e08eb8c7348d3f49bc18848e",
+     "score": 20.2712
+    },
+    {
+     "rank": 2,
+     "doc_id": "da8cd12246bbbc382ca208f658d4a835",
+     "chunk_id": "da8cd12246bbbc382ca208f658d4a835",
+     "score": 13.0133
+    },
+    {
+     "rank": 3,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 12.5573
+    },
+    {
+     "rank": 4,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 11.8039
+    },
+    {
+     "rank": 5,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 11.5574
+    },
+    {
+     "rank": 6,
+     "doc_id": "c35f5472429634b2a7d8fdb0725e44ce",
+     "chunk_id": "c35f5472429634b2a7d8fdb0725e44ce",
+     "score": 10.9368
+    },
+    {
+     "rank": 7,
+     "doc_id": "e4d09cab477c2c1c1d96b39900e1a59e",
+     "chunk_id": "e4d09cab477c2c1c1d96b39900e1a59e",
+     "score": 10.4585
+    },
+    {
+     "rank": 8,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 10.1815
+    },
+    {
+     "rank": 9,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 9.2855
+    },
+    {
+     "rank": 10,
+     "doc_id": "364686b5765eba7188a2a0daa7476bc5",
+     "chunk_id": "364686b5765eba7188a2a0daa7476bc5",
+     "score": 8.265
+    },
+    {
+     "rank": 11,
+     "doc_id": "91f3587ebe3addb7b3b75f6f9faf2a22",
+     "chunk_id": "91f3587ebe3addb7b3b75f6f9faf2a22",
+     "score": 8.1784
+    },
+    {
+     "rank": 12,
+     "doc_id": "1d47605aba81a44128e48b837af401ab",
+     "chunk_id": "1d47605aba81a44128e48b837af401ab",
+     "score": 8.0345
+    },
+    {
+     "rank": 13,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 7.8955
+    },
+    {
+     "rank": 14,
+     "doc_id": "080f0eeb4216c29508a206170c772540",
+     "chunk_id": "080f0eeb4216c29508a206170c772540",
+     "score": 7.6304
+    },
+    {
+     "rank": 15,
+     "doc_id": "be68bf3a0071e77e669758ab9dca9cb9",
+     "chunk_id": "be68bf3a0071e77e669758ab9dca9cb9",
+     "score": 7.5648
+    },
+    {
+     "rank": 16,
+     "doc_id": "35b99ce49602f7d1b6ed821494e9796a",
+     "chunk_id": "35b99ce49602f7d1b6ed821494e9796a",
+     "score": 7.3147
+    },
+    {
+     "rank": 17,
+     "doc_id": "18e5b9aec3b17756aa93795ae41c3042",
+     "chunk_id": "18e5b9aec3b17756aa93795ae41c3042",
+     "score": 7.2198
+    },
+    {
+     "rank": 18,
+     "doc_id": "7250dceba6e15157bbb2900b30fc49d3",
+     "chunk_id": "7250dceba6e15157bbb2900b30fc49d3",
+     "score": 6.9366
+    },
+    {
+     "rank": 19,
+     "doc_id": "8908161faa71d1b7353aabe34982e9d9",
+     "chunk_id": "8908161faa71d1b7353aabe34982e9d9",
+     "score": 6.9012
+    },
+    {
+     "rank": 20,
+     "doc_id": "4825fcaf0c76f069b2a30bb2c1f59c01",
+     "chunk_id": "4825fcaf0c76f069b2a30bb2c1f59c01",
+     "score": 6.6175
+    }
+   ],
+   "latency_s": 0.0009
+  },
+  {
+   "query": "Which film came out earlier, A Slave Of Love or Remorse, A Story Of The Red Plague?",
+   "gold_doc_ids": [
+    "15cc85efd782d4bedea3aaa596a0ed64",
+    "9844108a6dbffe563fafe8874462cd44"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "15cc85efd782d4bedea3aaa596a0ed64",
+     "chunk_id": "15cc85efd782d4bedea3aaa596a0ed64",
+     "score": 50.6149
+    },
+    {
+     "rank": 2,
+     "doc_id": "9844108a6dbffe563fafe8874462cd44",
+     "chunk_id": "9844108a6dbffe563fafe8874462cd44",
+     "score": 28.7015
+    },
+    {
+     "rank": 3,
+     "doc_id": "b72d57210aed7f54cf08e433e2ff906b",
+     "chunk_id": "b72d57210aed7f54cf08e433e2ff906b",
+     "score": 23.0618
+    },
+    {
+     "rank": 4,
+     "doc_id": "18e5b9aec3b17756aa93795ae41c3042",
+     "chunk_id": "18e5b9aec3b17756aa93795ae41c3042",
+     "score": 22.1652
+    },
+    {
+     "rank": 5,
+     "doc_id": "42fb1b0d13dccba500f0f42c9aa63c62",
+     "chunk_id": "42fb1b0d13dccba500f0f42c9aa63c62",
+     "score": 21.9482
+    },
+    {
+     "rank": 6,
+     "doc_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "chunk_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "score": 21.1933
+    },
+    {
+     "rank": 7,
+     "doc_id": "9dca622f4b39f4c6d72760a5a07c48e8",
+     "chunk_id": "9dca622f4b39f4c6d72760a5a07c48e8",
+     "score": 21.0441
+    },
+    {
+     "rank": 8,
+     "doc_id": "020330c0a39d034891f2a10773589141",
+     "chunk_id": "020330c0a39d034891f2a10773589141",
+     "score": 20.7912
+    },
+    {
+     "rank": 9,
+     "doc_id": "e54fd2bdb394ecf6c5fc362d1a2bd6e7",
+     "chunk_id": "e54fd2bdb394ecf6c5fc362d1a2bd6e7",
+     "score": 20.7216
+    },
+    {
+     "rank": 10,
+     "doc_id": "eb3a62ab77348a0dd54fdfef6ddcaeec",
+     "chunk_id": "eb3a62ab77348a0dd54fdfef6ddcaeec",
+     "score": 20.4361
+    },
+    {
+     "rank": 11,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 20.2815
+    },
+    {
+     "rank": 12,
+     "doc_id": "e6bd3e1c5639a87657f61555c9d249dc",
+     "chunk_id": "e6bd3e1c5639a87657f61555c9d249dc",
+     "score": 19.8624
+    },
+    {
+     "rank": 13,
+     "doc_id": "adfbf49aa139357bce5206f057a01d36",
+     "chunk_id": "adfbf49aa139357bce5206f057a01d36",
+     "score": 19.6497
+    },
+    {
+     "rank": 14,
+     "doc_id": "4ce7961a689fca2c9b973acd76b76966",
+     "chunk_id": "4ce7961a689fca2c9b973acd76b76966",
+     "score": 19.3835
+    },
+    {
+     "rank": 15,
+     "doc_id": "7250dceba6e15157bbb2900b30fc49d3",
+     "chunk_id": "7250dceba6e15157bbb2900b30fc49d3",
+     "score": 19.304
+    },
+    {
+     "rank": 16,
+     "doc_id": "22f5e4798efc23fadf93948a8bd887ff",
+     "chunk_id": "22f5e4798efc23fadf93948a8bd887ff",
+     "score": 19.1355
+    },
+    {
+     "rank": 17,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 19.1041
+    },
+    {
+     "rank": 18,
+     "doc_id": "874ad3aa1a3853f91b067b651a7827fc",
+     "chunk_id": "874ad3aa1a3853f91b067b651a7827fc",
+     "score": 18.8376
+    },
+    {
+     "rank": 19,
+     "doc_id": "b7a3906464649154be3b9f0a677fdd7e",
+     "chunk_id": "b7a3906464649154be3b9f0a677fdd7e",
+     "score": 18.795
+    },
+    {
+     "rank": 20,
+     "doc_id": "6ef979782cd7e4b44f690aab36b56658",
+     "chunk_id": "6ef979782cd7e4b44f690aab36b56658",
+     "score": 18.7422
+    }
+   ],
+   "latency_s": 0.0016
+  },
+  {
+   "query": "Which film has the director born later, Way...Way Out or The Biggest Show On Earth?",
+   "gold_doc_ids": [
+    "227b9f8a396ba1b39dc668454e33b036",
+    "9dca622f4b39f4c6d72760a5a07c48e8",
+    "c6378f815b5d8937b94b2e30483edc09",
+    "f3060480a06c96116a5cb056830b3939"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "9dca622f4b39f4c6d72760a5a07c48e8",
+     "chunk_id": "9dca622f4b39f4c6d72760a5a07c48e8",
+     "score": 39.4847
+    },
+    {
+     "rank": 2,
+     "doc_id": "227b9f8a396ba1b39dc668454e33b036",
+     "chunk_id": "227b9f8a396ba1b39dc668454e33b036",
+     "score": 35.2087
+    },
+    {
+     "rank": 3,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 19.5858
+    },
+    {
+     "rank": 4,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 17.487
+    },
+    {
+     "rank": 5,
+     "doc_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "chunk_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "score": 17.4544
+    },
+    {
+     "rank": 6,
+     "doc_id": "282f56b04062d874ca5ab8291497c8b9",
+     "chunk_id": "282f56b04062d874ca5ab8291497c8b9",
+     "score": 17.117
+    },
+    {
+     "rank": 7,
+     "doc_id": "18e5b9aec3b17756aa93795ae41c3042",
+     "chunk_id": "18e5b9aec3b17756aa93795ae41c3042",
+     "score": 15.466
+    },
+    {
+     "rank": 8,
+     "doc_id": "42e6bc443394574a61a2b065ddbccbc2",
+     "chunk_id": "42e6bc443394574a61a2b065ddbccbc2",
+     "score": 15.3216
+    },
+    {
+     "rank": 9,
+     "doc_id": "9f3f31b6027b2a628381f31e30ed7ef2",
+     "chunk_id": "9f3f31b6027b2a628381f31e30ed7ef2",
+     "score": 15.0659
+    },
+    {
+     "rank": 10,
+     "doc_id": "e9b1467322d6190a037e5d3d654ca64a",
+     "chunk_id": "e9b1467322d6190a037e5d3d654ca64a",
+     "score": 15.0517
+    },
+    {
+     "rank": 11,
+     "doc_id": "6f3145ba53247fb494d8828d7dd0d223",
+     "chunk_id": "6f3145ba53247fb494d8828d7dd0d223",
+     "score": 15.0469
+    },
+    {
+     "rank": 12,
+     "doc_id": "4ce7961a689fca2c9b973acd76b76966",
+     "chunk_id": "4ce7961a689fca2c9b973acd76b76966",
+     "score": 14.977
+    },
+    {
+     "rank": 13,
+     "doc_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "chunk_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "score": 14.4929
+    },
+    {
+     "rank": 14,
+     "doc_id": "fa2d8129314c4c0994ece3a871b88d1e",
+     "chunk_id": "fa2d8129314c4c0994ece3a871b88d1e",
+     "score": 14.3544
+    },
+    {
+     "rank": 15,
+     "doc_id": "0822effcd5d53261ac9fda697e3e2e71",
+     "chunk_id": "0822effcd5d53261ac9fda697e3e2e71",
+     "score": 14.0027
+    },
+    {
+     "rank": 16,
+     "doc_id": "df246f13234629b579510a3439aa4568",
+     "chunk_id": "df246f13234629b579510a3439aa4568",
+     "score": 13.8383
+    },
+    {
+     "rank": 17,
+     "doc_id": "2c4411814f0e2056cb228889f78bc439",
+     "chunk_id": "2c4411814f0e2056cb228889f78bc439",
+     "score": 13.524
+    },
+    {
+     "rank": 18,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 13.2689
+    },
+    {
+     "rank": 19,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 13.0976
+    },
+    {
+     "rank": 20,
+     "doc_id": "e73232483330b2e8e94010210afd6588",
+     "chunk_id": "e73232483330b2e8e94010210afd6588",
+     "score": 12.9891
+    }
+   ],
+   "latency_s": 0.0015
+  },
+  {
+   "query": "Which film has the director who is older, Angel On The Amazon or The Small World Of Sammy Lee?",
+   "gold_doc_ids": [
+    "68e045c212600d6822b16f1da7307850",
+    "948af82c27d55fc3cb107bee24983bca",
+    "bc02c35f74a349f68d2c2e121be651b7",
+    "dcbe987492f875178de3d33254b10be0"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "948af82c27d55fc3cb107bee24983bca",
+     "chunk_id": "948af82c27d55fc3cb107bee24983bca",
+     "score": 40.4409
+    },
+    {
+     "rank": 2,
+     "doc_id": "dcbe987492f875178de3d33254b10be0",
+     "chunk_id": "dcbe987492f875178de3d33254b10be0",
+     "score": 35.2952
+    },
+    {
+     "rank": 3,
+     "doc_id": "a6b215fd9ea88e2a1341e0a257795056",
+     "chunk_id": "a6b215fd9ea88e2a1341e0a257795056",
+     "score": 27.6108
+    },
+    {
+     "rank": 4,
+     "doc_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "chunk_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "score": 23.3363
+    },
+    {
+     "rank": 5,
+     "doc_id": "f5a8353677d398438c106d1c33c46118",
+     "chunk_id": "f5a8353677d398438c106d1c33c46118",
+     "score": 23.262
+    },
+    {
+     "rank": 6,
+     "doc_id": "e73232483330b2e8e94010210afd6588",
+     "chunk_id": "e73232483330b2e8e94010210afd6588",
+     "score": 23.1636
+    },
+    {
+     "rank": 7,
+     "doc_id": "79641b2f418534659aec58f33aa9fb60",
+     "chunk_id": "79641b2f418534659aec58f33aa9fb60",
+     "score": 22.4526
+    },
+    {
+     "rank": 8,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 21.8696
+    },
+    {
+     "rank": 9,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 21.1089
+    },
+    {
+     "rank": 10,
+     "doc_id": "d7e83beb33a7b2be9261724a343c0ab7",
+     "chunk_id": "d7e83beb33a7b2be9261724a343c0ab7",
+     "score": 21.0271
+    },
+    {
+     "rank": 11,
+     "doc_id": "64836f7a20affc0557cbe6a723b6c32b",
+     "chunk_id": "64836f7a20affc0557cbe6a723b6c32b",
+     "score": 20.4237
+    },
+    {
+     "rank": 12,
+     "doc_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "chunk_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "score": 20.4075
+    },
+    {
+     "rank": 13,
+     "doc_id": "843349ba7e20f0596ddf44e4c1e56713",
+     "chunk_id": "843349ba7e20f0596ddf44e4c1e56713",
+     "score": 19.8173
+    },
+    {
+     "rank": 14,
+     "doc_id": "18e5b9aec3b17756aa93795ae41c3042",
+     "chunk_id": "18e5b9aec3b17756aa93795ae41c3042",
+     "score": 19.7223
+    },
+    {
+     "rank": 15,
+     "doc_id": "75b43cd977a260e41a794ec118f5feb6",
+     "chunk_id": "75b43cd977a260e41a794ec118f5feb6",
+     "score": 19.6435
+    },
+    {
+     "rank": 16,
+     "doc_id": "6f3145ba53247fb494d8828d7dd0d223",
+     "chunk_id": "6f3145ba53247fb494d8828d7dd0d223",
+     "score": 19.4841
+    },
+    {
+     "rank": 17,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 18.7863
+    },
+    {
+     "rank": 18,
+     "doc_id": "94be6787de027e829be756accb41bc06",
+     "chunk_id": "94be6787de027e829be756accb41bc06",
+     "score": 18.5653
+    },
+    {
+     "rank": 19,
+     "doc_id": "081e6967d8ac964c763a57710300e8c7",
+     "chunk_id": "081e6967d8ac964c763a57710300e8c7",
+     "score": 18.5261
+    },
+    {
+     "rank": 20,
+     "doc_id": "2bbbe1a5320ea02353c038fd2499be45",
+     "chunk_id": "2bbbe1a5320ea02353c038fd2499be45",
+     "score": 18.4576
+    }
+   ],
+   "latency_s": 0.0017
+  },
+  {
+   "query": "Who is the paternal grandfather of Richard Beauchamp, 1St Earl Of Worcester?",
+   "gold_doc_ids": [
+    "bd555fa4e8d0ec3c77b3e4baa2d217a0",
+    "f65a2f0de16725f31a26281d3b29e565"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "bd555fa4e8d0ec3c77b3e4baa2d217a0",
+     "chunk_id": "bd555fa4e8d0ec3c77b3e4baa2d217a0",
+     "score": 35.1795
+    },
+    {
+     "rank": 2,
+     "doc_id": "0ee4edd022cf771978dd42d7951c408c",
+     "chunk_id": "0ee4edd022cf771978dd42d7951c408c",
+     "score": 32.4915
+    },
+    {
+     "rank": 3,
+     "doc_id": "8301bcec855f5fb7983ee757cdbe123e",
+     "chunk_id": "8301bcec855f5fb7983ee757cdbe123e",
+     "score": 27.8584
+    },
+    {
+     "rank": 4,
+     "doc_id": "55a7164ab075b01dbdccafa3dcd7aa96",
+     "chunk_id": "55a7164ab075b01dbdccafa3dcd7aa96",
+     "score": 27.1055
+    },
+    {
+     "rank": 5,
+     "doc_id": "dc5df0261c4a5e49b51c752e3498eb49",
+     "chunk_id": "dc5df0261c4a5e49b51c752e3498eb49",
+     "score": 24.5763
+    },
+    {
+     "rank": 6,
+     "doc_id": "f405ced87c21bf6dc2ad2c0bd1249b5b",
+     "chunk_id": "f405ced87c21bf6dc2ad2c0bd1249b5b",
+     "score": 24.5326
+    },
+    {
+     "rank": 7,
+     "doc_id": "f65a2f0de16725f31a26281d3b29e565",
+     "chunk_id": "f65a2f0de16725f31a26281d3b29e565",
+     "score": 23.6868
+    },
+    {
+     "rank": 8,
+     "doc_id": "d9bea6ed94c19f6664649b2b507d6782",
+     "chunk_id": "d9bea6ed94c19f6664649b2b507d6782",
+     "score": 21.8155
+    },
+    {
+     "rank": 9,
+     "doc_id": "f82ceb4f885eafca2ba436996a510285",
+     "chunk_id": "f82ceb4f885eafca2ba436996a510285",
+     "score": 21.5036
+    },
+    {
+     "rank": 10,
+     "doc_id": "7dc865a1dc03707372c418b9c6d23c87",
+     "chunk_id": "7dc865a1dc03707372c418b9c6d23c87",
+     "score": 20.3797
+    },
+    {
+     "rank": 11,
+     "doc_id": "8908161faa71d1b7353aabe34982e9d9",
+     "chunk_id": "8908161faa71d1b7353aabe34982e9d9",
+     "score": 19.2098
+    },
+    {
+     "rank": 12,
+     "doc_id": "0b2cc3b302ec3650676ae022b53ef223",
+     "chunk_id": "0b2cc3b302ec3650676ae022b53ef223",
+     "score": 17.4644
+    },
+    {
+     "rank": 13,
+     "doc_id": "3fe1127679890d3a57ea65aa21f75a30",
+     "chunk_id": "3fe1127679890d3a57ea65aa21f75a30",
+     "score": 17.1179
+    },
+    {
+     "rank": 14,
+     "doc_id": "cb1e55b0af37e36c9b69fd2ac333cf3f",
+     "chunk_id": "cb1e55b0af37e36c9b69fd2ac333cf3f",
+     "score": 16.7161
+    },
+    {
+     "rank": 15,
+     "doc_id": "e2f9729a4268408fcbf6b185f0a3ebc2",
+     "chunk_id": "e2f9729a4268408fcbf6b185f0a3ebc2",
+     "score": 16.6949
+    },
+    {
+     "rank": 16,
+     "doc_id": "8c37a60698655ce3eb100d2f4c0b9a28",
+     "chunk_id": "8c37a60698655ce3eb100d2f4c0b9a28",
+     "score": 16.2391
+    },
+    {
+     "rank": 17,
+     "doc_id": "54c8b7aabcffb701daf8e6fd36f40903",
+     "chunk_id": "54c8b7aabcffb701daf8e6fd36f40903",
+     "score": 16.0337
+    },
+    {
+     "rank": 18,
+     "doc_id": "0df8a8fa629408d4eeebb36a962c01e5",
+     "chunk_id": "0df8a8fa629408d4eeebb36a962c01e5",
+     "score": 15.6632
+    },
+    {
+     "rank": 19,
+     "doc_id": "dc5b0ad3f2b766d320bf94a7b93348cb",
+     "chunk_id": "dc5b0ad3f2b766d320bf94a7b93348cb",
+     "score": 15.4878
+    },
+    {
+     "rank": 20,
+     "doc_id": "1b68e68b9e8743ffe0a1ea08f089b2e3",
+     "chunk_id": "1b68e68b9e8743ffe0a1ea08f089b2e3",
+     "score": 15.4827
+    }
+   ],
+   "latency_s": 0.0012
+  },
+  {
+   "query": "Who is the paternal grandmother of Isabel Luísa, Princess Of Beira?",
+   "gold_doc_ids": [
+    "011a3dc2730b394f29cd1a990e4f3875",
+    "0bf543655ff47e6c0e79a92fd1cc09c1"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "0bf543655ff47e6c0e79a92fd1cc09c1",
+     "chunk_id": "0bf543655ff47e6c0e79a92fd1cc09c1",
+     "score": 49.7843
+    },
+    {
+     "rank": 2,
+     "doc_id": "d5054fc59cc8dde05fe741dfb2a47540",
+     "chunk_id": "d5054fc59cc8dde05fe741dfb2a47540",
+     "score": 22.5901
+    },
+    {
+     "rank": 3,
+     "doc_id": "e3a3cbe0c65602b83047c920f0cb80fc",
+     "chunk_id": "e3a3cbe0c65602b83047c920f0cb80fc",
+     "score": 17.9262
+    },
+    {
+     "rank": 4,
+     "doc_id": "19ef7c03ef14598f6097ee6fc93dc737",
+     "chunk_id": "19ef7c03ef14598f6097ee6fc93dc737",
+     "score": 17.5435
+    },
+    {
+     "rank": 5,
+     "doc_id": "e6bd3e1c5639a87657f61555c9d249dc",
+     "chunk_id": "e6bd3e1c5639a87657f61555c9d249dc",
+     "score": 16.5483
+    },
+    {
+     "rank": 6,
+     "doc_id": "a6ec9e067466e55ebd52a27d175c9c23",
+     "chunk_id": "a6ec9e067466e55ebd52a27d175c9c23",
+     "score": 16.5034
+    },
+    {
+     "rank": 7,
+     "doc_id": "c69c9d083730ee92806cc8fea0dff0da",
+     "chunk_id": "c69c9d083730ee92806cc8fea0dff0da",
+     "score": 15.9722
+    },
+    {
+     "rank": 8,
+     "doc_id": "020330c0a39d034891f2a10773589141",
+     "chunk_id": "020330c0a39d034891f2a10773589141",
+     "score": 15.971
+    },
+    {
+     "rank": 9,
+     "doc_id": "3fe1127679890d3a57ea65aa21f75a30",
+     "chunk_id": "3fe1127679890d3a57ea65aa21f75a30",
+     "score": 15.9506
+    },
+    {
+     "rank": 10,
+     "doc_id": "0ee4edd022cf771978dd42d7951c408c",
+     "chunk_id": "0ee4edd022cf771978dd42d7951c408c",
+     "score": 15.922
+    },
+    {
+     "rank": 11,
+     "doc_id": "75b43cd977a260e41a794ec118f5feb6",
+     "chunk_id": "75b43cd977a260e41a794ec118f5feb6",
+     "score": 15.8233
+    },
+    {
+     "rank": 12,
+     "doc_id": "d52bd79d6c5c8760640889a100e1c236",
+     "chunk_id": "d52bd79d6c5c8760640889a100e1c236",
+     "score": 15.6809
+    },
+    {
+     "rank": 13,
+     "doc_id": "bd555fa4e8d0ec3c77b3e4baa2d217a0",
+     "chunk_id": "bd555fa4e8d0ec3c77b3e4baa2d217a0",
+     "score": 15.2916
+    },
+    {
+     "rank": 14,
+     "doc_id": "f1484bc3230e44a596ca964293af7054",
+     "chunk_id": "f1484bc3230e44a596ca964293af7054",
+     "score": 14.9436
+    },
+    {
+     "rank": 15,
+     "doc_id": "c51393bb99a403ce8e16d50a2ad2b045",
+     "chunk_id": "c51393bb99a403ce8e16d50a2ad2b045",
+     "score": 14.813
+    },
+    {
+     "rank": 16,
+     "doc_id": "e3f08c51abedcada56322ed5a6bd6bc7",
+     "chunk_id": "e3f08c51abedcada56322ed5a6bd6bc7",
+     "score": 14.4
+    },
+    {
+     "rank": 17,
+     "doc_id": "2f3759807e05182a79cba7a18fe69cde",
+     "chunk_id": "2f3759807e05182a79cba7a18fe69cde",
+     "score": 14.2657
+    },
+    {
+     "rank": 18,
+     "doc_id": "f4679510ea0c742824de513fbafd0a38",
+     "chunk_id": "f4679510ea0c742824de513fbafd0a38",
+     "score": 14.1643
+    },
+    {
+     "rank": 19,
+     "doc_id": "f93331691f92d6522e02b61182b5882d",
+     "chunk_id": "f93331691f92d6522e02b61182b5882d",
+     "score": 14.1111
+    },
+    {
+     "rank": 20,
+     "doc_id": "502b20341554b259379694c047b10f66",
+     "chunk_id": "502b20341554b259379694c047b10f66",
+     "score": 13.8918
+    }
+   ],
+   "latency_s": 0.0013
+  },
+  {
+   "query": "Where was the place of death of Nana Saheb's father?",
+   "gold_doc_ids": [
+    "4825fcaf0c76f069b2a30bb2c1f59c01",
+    "ce190385603596de1bcc1df2727e2182"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "4825fcaf0c76f069b2a30bb2c1f59c01",
+     "chunk_id": "4825fcaf0c76f069b2a30bb2c1f59c01",
+     "score": 27.5377
+    },
+    {
+     "rank": 2,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 20.4285
+    },
+    {
+     "rank": 3,
+     "doc_id": "842b7c30bff549a2dd24b4a2926588fd",
+     "chunk_id": "842b7c30bff549a2dd24b4a2926588fd",
+     "score": 20.2858
+    },
+    {
+     "rank": 4,
+     "doc_id": "041f5b7c73ecace1fd7a1c05c6e36570",
+     "chunk_id": "041f5b7c73ecace1fd7a1c05c6e36570",
+     "score": 19.158
+    },
+    {
+     "rank": 5,
+     "doc_id": "89fcfefcd0a305bc4fffe9de6f7673b1",
+     "chunk_id": "89fcfefcd0a305bc4fffe9de6f7673b1",
+     "score": 18.9679
+    },
+    {
+     "rank": 6,
+     "doc_id": "55a7164ab075b01dbdccafa3dcd7aa96",
+     "chunk_id": "55a7164ab075b01dbdccafa3dcd7aa96",
+     "score": 16.8565
+    },
+    {
+     "rank": 7,
+     "doc_id": "450d6f2885f58e73f6721d15f70e1371",
+     "chunk_id": "450d6f2885f58e73f6721d15f70e1371",
+     "score": 16.337
+    },
+    {
+     "rank": 8,
+     "doc_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "chunk_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "score": 16.1584
+    },
+    {
+     "rank": 9,
+     "doc_id": "8908161faa71d1b7353aabe34982e9d9",
+     "chunk_id": "8908161faa71d1b7353aabe34982e9d9",
+     "score": 15.3717
+    },
+    {
+     "rank": 10,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 15.1561
+    },
+    {
+     "rank": 11,
+     "doc_id": "e911e38f6242d040baa1fdd0eb6a08c2",
+     "chunk_id": "e911e38f6242d040baa1fdd0eb6a08c2",
+     "score": 15.1229
+    },
+    {
+     "rank": 12,
+     "doc_id": "e9e596f709ad04f53b7632e3bb9e0ddd",
+     "chunk_id": "e9e596f709ad04f53b7632e3bb9e0ddd",
+     "score": 14.7471
+    },
+    {
+     "rank": 13,
+     "doc_id": "0013b5066442f2b86c7fc8a2ca41e6be",
+     "chunk_id": "0013b5066442f2b86c7fc8a2ca41e6be",
+     "score": 14.5619
+    },
+    {
+     "rank": 14,
+     "doc_id": "6885d83314ded4891d30a177f227d116",
+     "chunk_id": "6885d83314ded4891d30a177f227d116",
+     "score": 14.225
+    },
+    {
+     "rank": 15,
+     "doc_id": "cb1e55b0af37e36c9b69fd2ac333cf3f",
+     "chunk_id": "cb1e55b0af37e36c9b69fd2ac333cf3f",
+     "score": 14.1689
+    },
+    {
+     "rank": 16,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 14.1643
+    },
+    {
+     "rank": 17,
+     "doc_id": "d52bd79d6c5c8760640889a100e1c236",
+     "chunk_id": "d52bd79d6c5c8760640889a100e1c236",
+     "score": 14.04
+    },
+    {
+     "rank": 18,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 13.6994
+    },
+    {
+     "rank": 19,
+     "doc_id": "e6bd3e1c5639a87657f61555c9d249dc",
+     "chunk_id": "e6bd3e1c5639a87657f61555c9d249dc",
+     "score": 13.6446
+    },
+    {
+     "rank": 20,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 13.6098
+    }
+   ],
+   "latency_s": 0.0011
+  },
+  {
+   "query": "Which film has the director born earlier, Did A Good Man Die? or The Last Of The Knucklemen?",
+   "gold_doc_ids": [
+    "126cde387f1f77f489004c48769151d9",
+    "364686b5765eba7188a2a0daa7476bc5",
+    "68a16bee5cd9f05a6b8827014381d4b9",
+    "f5fc9736cc77766a2e959d10ee27f8e2"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "364686b5765eba7188a2a0daa7476bc5",
+     "chunk_id": "364686b5765eba7188a2a0daa7476bc5",
+     "score": 44.8287
+    },
+    {
+     "rank": 2,
+     "doc_id": "126cde387f1f77f489004c48769151d9",
+     "chunk_id": "126cde387f1f77f489004c48769151d9",
+     "score": 30.0845
+    },
+    {
+     "rank": 3,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 26.2689
+    },
+    {
+     "rank": 4,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 24.4659
+    },
+    {
+     "rank": 5,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 23.6443
+    },
+    {
+     "rank": 6,
+     "doc_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "chunk_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "score": 23.3776
+    },
+    {
+     "rank": 7,
+     "doc_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "chunk_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "score": 22.7559
+    },
+    {
+     "rank": 8,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 22.6666
+    },
+    {
+     "rank": 9,
+     "doc_id": "4ce7961a689fca2c9b973acd76b76966",
+     "chunk_id": "4ce7961a689fca2c9b973acd76b76966",
+     "score": 22.5766
+    },
+    {
+     "rank": 10,
+     "doc_id": "ade9d5a26c029805c15918c168fc7ef5",
+     "chunk_id": "ade9d5a26c029805c15918c168fc7ef5",
+     "score": 22.26
+    },
+    {
+     "rank": 11,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 22.2569
+    },
+    {
+     "rank": 12,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 22.0032
+    },
+    {
+     "rank": 13,
+     "doc_id": "75b43cd977a260e41a794ec118f5feb6",
+     "chunk_id": "75b43cd977a260e41a794ec118f5feb6",
+     "score": 21.8279
+    },
+    {
+     "rank": 14,
+     "doc_id": "6a52838e371beeea9d95061751273a55",
+     "chunk_id": "6a52838e371beeea9d95061751273a55",
+     "score": 20.9078
+    },
+    {
+     "rank": 15,
+     "doc_id": "bfa68f09197cefeb6ebe09a5d0deff42",
+     "chunk_id": "bfa68f09197cefeb6ebe09a5d0deff42",
+     "score": 20.5242
+    },
+    {
+     "rank": 16,
+     "doc_id": "f5fc9736cc77766a2e959d10ee27f8e2",
+     "chunk_id": "f5fc9736cc77766a2e959d10ee27f8e2",
+     "score": 20.1918
+    },
+    {
+     "rank": 17,
+     "doc_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "chunk_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "score": 19.826
+    },
+    {
+     "rank": 18,
+     "doc_id": "ecfd7d7e9b3ffc34fdac924497d48788",
+     "chunk_id": "ecfd7d7e9b3ffc34fdac924497d48788",
+     "score": 19.5043
+    },
+    {
+     "rank": 19,
+     "doc_id": "ec739dd7210099355957d8deda52d8cd",
+     "chunk_id": "ec739dd7210099355957d8deda52d8cd",
+     "score": 19.1138
+    },
+    {
+     "rank": 20,
+     "doc_id": "df246f13234629b579510a3439aa4568",
+     "chunk_id": "df246f13234629b579510a3439aa4568",
+     "score": 19.0809
+    }
+   ],
+   "latency_s": 0.0017
+  },
+  {
+   "query": "Where was the place of death of James Adam (Architect)'s father?",
+   "gold_doc_ids": [
+    "1604e95abb1715258080fd3626aafbd0",
+    "2589dc481061819cb2a418c69f5eea9c"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "1604e95abb1715258080fd3626aafbd0",
+     "chunk_id": "1604e95abb1715258080fd3626aafbd0",
+     "score": 31.7986
+    },
+    {
+     "rank": 2,
+     "doc_id": "2589dc481061819cb2a418c69f5eea9c",
+     "chunk_id": "2589dc481061819cb2a418c69f5eea9c",
+     "score": 27.9894
+    },
+    {
+     "rank": 3,
+     "doc_id": "819308cd41c1ef4fe743df69de5ef073",
+     "chunk_id": "819308cd41c1ef4fe743df69de5ef073",
+     "score": 24.448
+    },
+    {
+     "rank": 4,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 23.6131
+    },
+    {
+     "rank": 5,
+     "doc_id": "89fcfefcd0a305bc4fffe9de6f7673b1",
+     "chunk_id": "89fcfefcd0a305bc4fffe9de6f7673b1",
+     "score": 22.4169
+    },
+    {
+     "rank": 6,
+     "doc_id": "5b341d5b394179f5782266ebdaab193a",
+     "chunk_id": "5b341d5b394179f5782266ebdaab193a",
+     "score": 21.4908
+    },
+    {
+     "rank": 7,
+     "doc_id": "e21e765c279268a90ee68dbb5f7a13f4",
+     "chunk_id": "e21e765c279268a90ee68dbb5f7a13f4",
+     "score": 19.4205
+    },
+    {
+     "rank": 8,
+     "doc_id": "55a7164ab075b01dbdccafa3dcd7aa96",
+     "chunk_id": "55a7164ab075b01dbdccafa3dcd7aa96",
+     "score": 19.368
+    },
+    {
+     "rank": 9,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 19.1314
+    },
+    {
+     "rank": 10,
+     "doc_id": "da40a855a96d62cf29f2e64ba9426d4a",
+     "chunk_id": "da40a855a96d62cf29f2e64ba9426d4a",
+     "score": 18.8616
+    },
+    {
+     "rank": 11,
+     "doc_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "chunk_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "score": 18.7091
+    },
+    {
+     "rank": 12,
+     "doc_id": "49f06b7c18883b92048e4c28c5be2e17",
+     "chunk_id": "49f06b7c18883b92048e4c28c5be2e17",
+     "score": 18.5972
+    },
+    {
+     "rank": 13,
+     "doc_id": "3dfd1ae106e0f2e1461147a9909b7211",
+     "chunk_id": "3dfd1ae106e0f2e1461147a9909b7211",
+     "score": 18.4987
+    },
+    {
+     "rank": 14,
+     "doc_id": "450d6f2885f58e73f6721d15f70e1371",
+     "chunk_id": "450d6f2885f58e73f6721d15f70e1371",
+     "score": 18.2727
+    },
+    {
+     "rank": 15,
+     "doc_id": "4825fcaf0c76f069b2a30bb2c1f59c01",
+     "chunk_id": "4825fcaf0c76f069b2a30bb2c1f59c01",
+     "score": 17.8431
+    },
+    {
+     "rank": 16,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 17.4076
+    },
+    {
+     "rank": 17,
+     "doc_id": "6885d83314ded4891d30a177f227d116",
+     "chunk_id": "6885d83314ded4891d30a177f227d116",
+     "score": 17.2668
+    },
+    {
+     "rank": 18,
+     "doc_id": "86cbbbcc2a7819071dfdf6dfab068f33",
+     "chunk_id": "86cbbbcc2a7819071dfdf6dfab068f33",
+     "score": 17.1396
+    },
+    {
+     "rank": 19,
+     "doc_id": "88110ead4e8a0ab1e555b10082d7ce59",
+     "chunk_id": "88110ead4e8a0ab1e555b10082d7ce59",
+     "score": 16.8379
+    },
+    {
+     "rank": 20,
+     "doc_id": "8908161faa71d1b7353aabe34982e9d9",
+     "chunk_id": "8908161faa71d1b7353aabe34982e9d9",
+     "score": 16.6989
+    }
+   ],
+   "latency_s": 0.0013
+  },
+  {
+   "query": "Where did Theodore Salisbury Woolsey's father study?",
+   "gold_doc_ids": [
+    "4c996241520f075e3ffc5834683ebf5e",
+    "e47b2bd0b2e3e395565ee092f9d390c6"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "4c996241520f075e3ffc5834683ebf5e",
+     "chunk_id": "4c996241520f075e3ffc5834683ebf5e",
+     "score": 24.7272
+    },
+    {
+     "rank": 2,
+     "doc_id": "6ea7db8cabbd8633b7fdffefeb266505",
+     "chunk_id": "6ea7db8cabbd8633b7fdffefeb266505",
+     "score": 24.0437
+    },
+    {
+     "rank": 3,
+     "doc_id": "e47b2bd0b2e3e395565ee092f9d390c6",
+     "chunk_id": "e47b2bd0b2e3e395565ee092f9d390c6",
+     "score": 16.8334
+    },
+    {
+     "rank": 4,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 15.3332
+    },
+    {
+     "rank": 5,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 14.3956
+    },
+    {
+     "rank": 6,
+     "doc_id": "364686b5765eba7188a2a0daa7476bc5",
+     "chunk_id": "364686b5765eba7188a2a0daa7476bc5",
+     "score": 12.6932
+    },
+    {
+     "rank": 7,
+     "doc_id": "ecfd7d7e9b3ffc34fdac924497d48788",
+     "chunk_id": "ecfd7d7e9b3ffc34fdac924497d48788",
+     "score": 11.8129
+    },
+    {
+     "rank": 8,
+     "doc_id": "101209719822250cab5c70e5f638cce9",
+     "chunk_id": "101209719822250cab5c70e5f638cce9",
+     "score": 11.0568
+    },
+    {
+     "rank": 9,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 10.7568
+    },
+    {
+     "rank": 10,
+     "doc_id": "ec739dd7210099355957d8deda52d8cd",
+     "chunk_id": "ec739dd7210099355957d8deda52d8cd",
+     "score": 10.6047
+    },
+    {
+     "rank": 11,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 9.9569
+    },
+    {
+     "rank": 12,
+     "doc_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "chunk_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "score": 9.9278
+    },
+    {
+     "rank": 13,
+     "doc_id": "62a1db872facd19e60e588c54aa60056",
+     "chunk_id": "62a1db872facd19e60e588c54aa60056",
+     "score": 9.7242
+    },
+    {
+     "rank": 14,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 8.8361
+    },
+    {
+     "rank": 15,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 8.0394
+    },
+    {
+     "rank": 16,
+     "doc_id": "cca06a3496803f69e2bce5c8ed2e3558",
+     "chunk_id": "cca06a3496803f69e2bce5c8ed2e3558",
+     "score": 7.0865
+    },
+    {
+     "rank": 17,
+     "doc_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "chunk_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "score": 6.3929
+    },
+    {
+     "rank": 18,
+     "doc_id": "534d1bd0889bb6eae672f6898c7c4dc4",
+     "chunk_id": "534d1bd0889bb6eae672f6898c7c4dc4",
+     "score": 6.3237
+    },
+    {
+     "rank": 19,
+     "doc_id": "4825fcaf0c76f069b2a30bb2c1f59c01",
+     "chunk_id": "4825fcaf0c76f069b2a30bb2c1f59c01",
+     "score": 5.958
+    },
+    {
+     "rank": 20,
+     "doc_id": "ea73afbb74ad10e90d4318eaffa7e4d5",
+     "chunk_id": "ea73afbb74ad10e90d4318eaffa7e4d5",
+     "score": 5.8352
+    }
+   ],
+   "latency_s": 0.0009
+  },
+  {
+   "query": "Who is James Lyon, 7Th Earl Of Strathmore And Kinghorne's paternal grandfather?",
+   "gold_doc_ids": [
+    "3f52bc23662f6998b0f6af363f03f0ed",
+    "de7b0313c5a80701d97916bedf9fca7e"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "de7b0313c5a80701d97916bedf9fca7e",
+     "chunk_id": "de7b0313c5a80701d97916bedf9fca7e",
+     "score": 40.1127
+    },
+    {
+     "rank": 2,
+     "doc_id": "3f52bc23662f6998b0f6af363f03f0ed",
+     "chunk_id": "3f52bc23662f6998b0f6af363f03f0ed",
+     "score": 33.1437
+    },
+    {
+     "rank": 3,
+     "doc_id": "3fe1127679890d3a57ea65aa21f75a30",
+     "chunk_id": "3fe1127679890d3a57ea65aa21f75a30",
+     "score": 33.0168
+    },
+    {
+     "rank": 4,
+     "doc_id": "0df8a8fa629408d4eeebb36a962c01e5",
+     "chunk_id": "0df8a8fa629408d4eeebb36a962c01e5",
+     "score": 31.6732
+    },
+    {
+     "rank": 5,
+     "doc_id": "5c75e7f248517d6efe0f74d394b71873",
+     "chunk_id": "5c75e7f248517d6efe0f74d394b71873",
+     "score": 31.4766
+    },
+    {
+     "rank": 6,
+     "doc_id": "dc5b0ad3f2b766d320bf94a7b93348cb",
+     "chunk_id": "dc5b0ad3f2b766d320bf94a7b93348cb",
+     "score": 31.4544
+    },
+    {
+     "rank": 7,
+     "doc_id": "e2f9729a4268408fcbf6b185f0a3ebc2",
+     "chunk_id": "e2f9729a4268408fcbf6b185f0a3ebc2",
+     "score": 28.7553
+    },
+    {
+     "rank": 8,
+     "doc_id": "cf27f5a5d40d813f04d37b2ebae339ed",
+     "chunk_id": "cf27f5a5d40d813f04d37b2ebae339ed",
+     "score": 28.1938
+    },
+    {
+     "rank": 9,
+     "doc_id": "5552d724f0e05924a23a29fdb50fde24",
+     "chunk_id": "5552d724f0e05924a23a29fdb50fde24",
+     "score": 25.89
+    },
+    {
+     "rank": 10,
+     "doc_id": "d95736f957bba6341daef2e149aadbff",
+     "chunk_id": "d95736f957bba6341daef2e149aadbff",
+     "score": 25.1854
+    },
+    {
+     "rank": 11,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 17.2461
+    },
+    {
+     "rank": 12,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 16.4604
+    },
+    {
+     "rank": 13,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 15.486
+    },
+    {
+     "rank": 14,
+     "doc_id": "8908161faa71d1b7353aabe34982e9d9",
+     "chunk_id": "8908161faa71d1b7353aabe34982e9d9",
+     "score": 15.134
+    },
+    {
+     "rank": 15,
+     "doc_id": "f82ceb4f885eafca2ba436996a510285",
+     "chunk_id": "f82ceb4f885eafca2ba436996a510285",
+     "score": 14.6058
+    },
+    {
+     "rank": 16,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 14.4778
+    },
+    {
+     "rank": 17,
+     "doc_id": "0b2cc3b302ec3650676ae022b53ef223",
+     "chunk_id": "0b2cc3b302ec3650676ae022b53ef223",
+     "score": 14.3607
+    },
+    {
+     "rank": 18,
+     "doc_id": "1604e95abb1715258080fd3626aafbd0",
+     "chunk_id": "1604e95abb1715258080fd3626aafbd0",
+     "score": 14.3003
+    },
+    {
+     "rank": 19,
+     "doc_id": "55a7164ab075b01dbdccafa3dcd7aa96",
+     "chunk_id": "55a7164ab075b01dbdccafa3dcd7aa96",
+     "score": 13.7805
+    },
+    {
+     "rank": 20,
+     "doc_id": "a6ec9e067466e55ebd52a27d175c9c23",
+     "chunk_id": "a6ec9e067466e55ebd52a27d175c9c23",
+     "score": 13.5202
+    }
+   ],
+   "latency_s": 0.0013
+  },
+  {
+   "query": "Which film has the director who was born earlier, The Red Eagle or Vishukkani?",
+   "gold_doc_ids": [
+    "6ef5f712c5a37e2e7664407651f230eb",
+    "93093609eb0cb3540ba8996cd276218e",
+    "c93651541e8038717f01ee9ca6fd440e",
+    "e73232483330b2e8e94010210afd6588"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "42fb1b0d13dccba500f0f42c9aa63c62",
+     "chunk_id": "42fb1b0d13dccba500f0f42c9aa63c62",
+     "score": 24.4311
+    },
+    {
+     "rank": 2,
+     "doc_id": "c93651541e8038717f01ee9ca6fd440e",
+     "chunk_id": "c93651541e8038717f01ee9ca6fd440e",
+     "score": 23.3913
+    },
+    {
+     "rank": 3,
+     "doc_id": "93093609eb0cb3540ba8996cd276218e",
+     "chunk_id": "93093609eb0cb3540ba8996cd276218e",
+     "score": 22.7026
+    },
+    {
+     "rank": 4,
+     "doc_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "chunk_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "score": 19.4015
+    },
+    {
+     "rank": 5,
+     "doc_id": "15cc85efd782d4bedea3aaa596a0ed64",
+     "chunk_id": "15cc85efd782d4bedea3aaa596a0ed64",
+     "score": 17.0341
+    },
+    {
+     "rank": 6,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 16.6443
+    },
+    {
+     "rank": 7,
+     "doc_id": "6f3145ba53247fb494d8828d7dd0d223",
+     "chunk_id": "6f3145ba53247fb494d8828d7dd0d223",
+     "score": 16.1913
+    },
+    {
+     "rank": 8,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 15.6526
+    },
+    {
+     "rank": 9,
+     "doc_id": "081e6967d8ac964c763a57710300e8c7",
+     "chunk_id": "081e6967d8ac964c763a57710300e8c7",
+     "score": 15.3944
+    },
+    {
+     "rank": 10,
+     "doc_id": "e9b1467322d6190a037e5d3d654ca64a",
+     "chunk_id": "e9b1467322d6190a037e5d3d654ca64a",
+     "score": 15.1774
+    },
+    {
+     "rank": 11,
+     "doc_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "chunk_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "score": 15.1254
+    },
+    {
+     "rank": 12,
+     "doc_id": "04be9022be73d3c30975853779418091",
+     "chunk_id": "04be9022be73d3c30975853779418091",
+     "score": 15.0396
+    },
+    {
+     "rank": 13,
+     "doc_id": "e73232483330b2e8e94010210afd6588",
+     "chunk_id": "e73232483330b2e8e94010210afd6588",
+     "score": 14.9446
+    },
+    {
+     "rank": 14,
+     "doc_id": "842b7c30bff549a2dd24b4a2926588fd",
+     "chunk_id": "842b7c30bff549a2dd24b4a2926588fd",
+     "score": 14.8878
+    },
+    {
+     "rank": 15,
+     "doc_id": "0543a1f09c95bae1dbaf810282858a32",
+     "chunk_id": "0543a1f09c95bae1dbaf810282858a32",
+     "score": 14.8224
+    },
+    {
+     "rank": 16,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 14.7264
+    },
+    {
+     "rank": 17,
+     "doc_id": "0822effcd5d53261ac9fda697e3e2e71",
+     "chunk_id": "0822effcd5d53261ac9fda697e3e2e71",
+     "score": 14.5355
+    },
+    {
+     "rank": 18,
+     "doc_id": "020330c0a39d034891f2a10773589141",
+     "chunk_id": "020330c0a39d034891f2a10773589141",
+     "score": 14.3404
+    },
+    {
+     "rank": 19,
+     "doc_id": "68e045c212600d6822b16f1da7307850",
+     "chunk_id": "68e045c212600d6822b16f1da7307850",
+     "score": 14.0567
+    },
+    {
+     "rank": 20,
+     "doc_id": "4ce7961a689fca2c9b973acd76b76966",
+     "chunk_id": "4ce7961a689fca2c9b973acd76b76966",
+     "score": 13.941
+    }
+   ],
+   "latency_s": 0.0014
+  },
+  {
+   "query": "Where was the performer of song Come Dance With Me (Song) born?",
+   "gold_doc_ids": [
+    "a1c967f74618d57fd6eea93801fb153f",
+    "d5087822dbcf9d8f4d25f3ed2fdc4eab"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "a1c967f74618d57fd6eea93801fb153f",
+     "chunk_id": "a1c967f74618d57fd6eea93801fb153f",
+     "score": 40.6529
+    },
+    {
+     "rank": 2,
+     "doc_id": "82f2589ef0c82137b6986df81bd067dd",
+     "chunk_id": "82f2589ef0c82137b6986df81bd067dd",
+     "score": 36.3885
+    },
+    {
+     "rank": 3,
+     "doc_id": "7f69454e15b7715be75009e61156c688",
+     "chunk_id": "7f69454e15b7715be75009e61156c688",
+     "score": 34.4267
+    },
+    {
+     "rank": 4,
+     "doc_id": "dd595570cb86c46c34aca8b84f7b4a93",
+     "chunk_id": "dd595570cb86c46c34aca8b84f7b4a93",
+     "score": 32.4796
+    },
+    {
+     "rank": 5,
+     "doc_id": "47b0bd4362803a2f2676dba29e69bccf",
+     "chunk_id": "47b0bd4362803a2f2676dba29e69bccf",
+     "score": 32.2181
+    },
+    {
+     "rank": 6,
+     "doc_id": "22f5e4798efc23fadf93948a8bd887ff",
+     "chunk_id": "22f5e4798efc23fadf93948a8bd887ff",
+     "score": 27.7714
+    },
+    {
+     "rank": 7,
+     "doc_id": "79641b2f418534659aec58f33aa9fb60",
+     "chunk_id": "79641b2f418534659aec58f33aa9fb60",
+     "score": 23.9622
+    },
+    {
+     "rank": 8,
+     "doc_id": "116b1add42dee157dd96271a2f71bc2e",
+     "chunk_id": "116b1add42dee157dd96271a2f71bc2e",
+     "score": 22.1129
+    },
+    {
+     "rank": 9,
+     "doc_id": "ecfd7d7e9b3ffc34fdac924497d48788",
+     "chunk_id": "ecfd7d7e9b3ffc34fdac924497d48788",
+     "score": 21.7672
+    },
+    {
+     "rank": 10,
+     "doc_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "chunk_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "score": 16.8054
+    },
+    {
+     "rank": 11,
+     "doc_id": "42e6bc443394574a61a2b065ddbccbc2",
+     "chunk_id": "42e6bc443394574a61a2b065ddbccbc2",
+     "score": 16.6662
+    },
+    {
+     "rank": 12,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 15.7859
+    },
+    {
+     "rank": 13,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 15.5503
+    },
+    {
+     "rank": 14,
+     "doc_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "chunk_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "score": 15.3316
+    },
+    {
+     "rank": 15,
+     "doc_id": "62133440855e78369c0b236da68e50ba",
+     "chunk_id": "62133440855e78369c0b236da68e50ba",
+     "score": 14.7168
+    },
+    {
+     "rank": 16,
+     "doc_id": "6ef979782cd7e4b44f690aab36b56658",
+     "chunk_id": "6ef979782cd7e4b44f690aab36b56658",
+     "score": 14.6048
+    },
+    {
+     "rank": 17,
+     "doc_id": "506bb031ee3ccb5a6069d8f46626f252",
+     "chunk_id": "506bb031ee3ccb5a6069d8f46626f252",
+     "score": 14.495
+    },
+    {
+     "rank": 18,
+     "doc_id": "adfbf49aa139357bce5206f057a01d36",
+     "chunk_id": "adfbf49aa139357bce5206f057a01d36",
+     "score": 14.1719
+    },
+    {
+     "rank": 19,
+     "doc_id": "6d77cf0f6f6c76c9317ff01fd79c9bdb",
+     "chunk_id": "6d77cf0f6f6c76c9317ff01fd79c9bdb",
+     "score": 13.6885
+    },
+    {
+     "rank": 20,
+     "doc_id": "ec739dd7210099355957d8deda52d8cd",
+     "chunk_id": "ec739dd7210099355957d8deda52d8cd",
+     "score": 13.6329
+    }
+   ],
+   "latency_s": 0.0013
+  },
+  {
+   "query": "Who was born first out of Alberto Casado Cerviño and Arjun Naidu?",
+   "gold_doc_ids": [
+    "362b459247edc3e9b538b1931522c6d4",
+    "c181267dd84c56d12a55102856ecc036"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "c181267dd84c56d12a55102856ecc036",
+     "chunk_id": "c181267dd84c56d12a55102856ecc036",
+     "score": 41.3033
+    },
+    {
+     "rank": 2,
+     "doc_id": "362b459247edc3e9b538b1931522c6d4",
+     "chunk_id": "362b459247edc3e9b538b1931522c6d4",
+     "score": 23.1784
+    },
+    {
+     "rank": 3,
+     "doc_id": "dbfed4e2141aa6dcb56530ce8443a4d5",
+     "chunk_id": "dbfed4e2141aa6dcb56530ce8443a4d5",
+     "score": 17.0023
+    },
+    {
+     "rank": 4,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 13.9203
+    },
+    {
+     "rank": 5,
+     "doc_id": "adfbf49aa139357bce5206f057a01d36",
+     "chunk_id": "adfbf49aa139357bce5206f057a01d36",
+     "score": 12.3317
+    },
+    {
+     "rank": 6,
+     "doc_id": "d5054fc59cc8dde05fe741dfb2a47540",
+     "chunk_id": "d5054fc59cc8dde05fe741dfb2a47540",
+     "score": 12.13
+    },
+    {
+     "rank": 7,
+     "doc_id": "16b62fa5a095935f878c36f7f5267675",
+     "chunk_id": "16b62fa5a095935f878c36f7f5267675",
+     "score": 11.8683
+    },
+    {
+     "rank": 8,
+     "doc_id": "e6bd3e1c5639a87657f61555c9d249dc",
+     "chunk_id": "e6bd3e1c5639a87657f61555c9d249dc",
+     "score": 11.7979
+    },
+    {
+     "rank": 9,
+     "doc_id": "9dca622f4b39f4c6d72760a5a07c48e8",
+     "chunk_id": "9dca622f4b39f4c6d72760a5a07c48e8",
+     "score": 11.7174
+    },
+    {
+     "rank": 10,
+     "doc_id": "5c6c795b0333bd7e4cffee1920629bf4",
+     "chunk_id": "5c6c795b0333bd7e4cffee1920629bf4",
+     "score": 11.6461
+    },
+    {
+     "rank": 11,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 11.5151
+    },
+    {
+     "rank": 12,
+     "doc_id": "e911e38f6242d040baa1fdd0eb6a08c2",
+     "chunk_id": "e911e38f6242d040baa1fdd0eb6a08c2",
+     "score": 11.3844
+    },
+    {
+     "rank": 13,
+     "doc_id": "ecfd7d7e9b3ffc34fdac924497d48788",
+     "chunk_id": "ecfd7d7e9b3ffc34fdac924497d48788",
+     "score": 10.5777
+    },
+    {
+     "rank": 14,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 10.1975
+    },
+    {
+     "rank": 15,
+     "doc_id": "364686b5765eba7188a2a0daa7476bc5",
+     "chunk_id": "364686b5765eba7188a2a0daa7476bc5",
+     "score": 9.8975
+    },
+    {
+     "rank": 16,
+     "doc_id": "0bf543655ff47e6c0e79a92fd1cc09c1",
+     "chunk_id": "0bf543655ff47e6c0e79a92fd1cc09c1",
+     "score": 9.7858
+    },
+    {
+     "rank": 17,
+     "doc_id": "f9fe668766b9d8f2f2da56e65c777d46",
+     "chunk_id": "f9fe668766b9d8f2f2da56e65c777d46",
+     "score": 9.7457
+    },
+    {
+     "rank": 18,
+     "doc_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "chunk_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "score": 9.7441
+    },
+    {
+     "rank": 19,
+     "doc_id": "94be6787de027e829be756accb41bc06",
+     "chunk_id": "94be6787de027e829be756accb41bc06",
+     "score": 9.5394
+    },
+    {
+     "rank": 20,
+     "doc_id": "3fe1127679890d3a57ea65aa21f75a30",
+     "chunk_id": "3fe1127679890d3a57ea65aa21f75a30",
+     "score": 9.4852
+    }
+   ],
+   "latency_s": 0.0013
+  },
+  {
+   "query": "Who is the mother-in-law of Ramiro Sánchez?",
+   "gold_doc_ids": [
+    "020330c0a39d034891f2a10773589141",
+    "e6bd3e1c5639a87657f61555c9d249dc"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "e6bd3e1c5639a87657f61555c9d249dc",
+     "chunk_id": "e6bd3e1c5639a87657f61555c9d249dc",
+     "score": 25.9005
+    },
+    {
+     "rank": 2,
+     "doc_id": "d52bd79d6c5c8760640889a100e1c236",
+     "chunk_id": "d52bd79d6c5c8760640889a100e1c236",
+     "score": 23.2613
+    },
+    {
+     "rank": 3,
+     "doc_id": "020330c0a39d034891f2a10773589141",
+     "chunk_id": "020330c0a39d034891f2a10773589141",
+     "score": 22.9638
+    },
+    {
+     "rank": 4,
+     "doc_id": "5c6c795b0333bd7e4cffee1920629bf4",
+     "chunk_id": "5c6c795b0333bd7e4cffee1920629bf4",
+     "score": 20.9129
+    },
+    {
+     "rank": 5,
+     "doc_id": "19ef7c03ef14598f6097ee6fc93dc737",
+     "chunk_id": "19ef7c03ef14598f6097ee6fc93dc737",
+     "score": 18.304
+    },
+    {
+     "rank": 6,
+     "doc_id": "2c4411814f0e2056cb228889f78bc439",
+     "chunk_id": "2c4411814f0e2056cb228889f78bc439",
+     "score": 17.5518
+    },
+    {
+     "rank": 7,
+     "doc_id": "13d625146c9adf133e7a0d07e8f646bc",
+     "chunk_id": "13d625146c9adf133e7a0d07e8f646bc",
+     "score": 17.1533
+    },
+    {
+     "rank": 8,
+     "doc_id": "244280fa6ec9d4110f4ddbdc864b8969",
+     "chunk_id": "244280fa6ec9d4110f4ddbdc864b8969",
+     "score": 14.7215
+    },
+    {
+     "rank": 9,
+     "doc_id": "5b18727ca3569b15e81484f6984e8bdc",
+     "chunk_id": "5b18727ca3569b15e81484f6984e8bdc",
+     "score": 14.2715
+    },
+    {
+     "rank": 10,
+     "doc_id": "e55282b887bab9ace6c46d17aa9bcff1",
+     "chunk_id": "e55282b887bab9ace6c46d17aa9bcff1",
+     "score": 13.9427
+    },
+    {
+     "rank": 11,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 13.4613
+    },
+    {
+     "rank": 12,
+     "doc_id": "c35f5472429634b2a7d8fdb0725e44ce",
+     "chunk_id": "c35f5472429634b2a7d8fdb0725e44ce",
+     "score": 13.4017
+    },
+    {
+     "rank": 13,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 13.2238
+    },
+    {
+     "rank": 14,
+     "doc_id": "aa936a5b2c7831ebfe4a9d7e66ff5d58",
+     "chunk_id": "aa936a5b2c7831ebfe4a9d7e66ff5d58",
+     "score": 13.126
+    },
+    {
+     "rank": 15,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 13.0142
+    },
+    {
+     "rank": 16,
+     "doc_id": "21b2b20cef1c87428e98653f29249cde",
+     "chunk_id": "21b2b20cef1c87428e98653f29249cde",
+     "score": 13.0116
+    },
+    {
+     "rank": 17,
+     "doc_id": "7f69454e15b7715be75009e61156c688",
+     "chunk_id": "7f69454e15b7715be75009e61156c688",
+     "score": 12.5861
+    },
+    {
+     "rank": 18,
+     "doc_id": "8908161faa71d1b7353aabe34982e9d9",
+     "chunk_id": "8908161faa71d1b7353aabe34982e9d9",
+     "score": 12.5796
+    },
+    {
+     "rank": 19,
+     "doc_id": "4c996241520f075e3ffc5834683ebf5e",
+     "chunk_id": "4c996241520f075e3ffc5834683ebf5e",
+     "score": 12.4276
+    },
+    {
+     "rank": 20,
+     "doc_id": "e3f08c51abedcada56322ed5a6bd6bc7",
+     "chunk_id": "e3f08c51abedcada56322ed5a6bd6bc7",
+     "score": 12.2424
+    }
+   ],
+   "latency_s": 0.0012
+  },
+  {
+   "query": "Who lived longer, Bernhard Afinger or Melvin Kranzberg?",
+   "gold_doc_ids": [
+    "1f733caaa16c9fb404bcf7d9e4c4ff36",
+    "94be6787de027e829be756accb41bc06"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "1f733caaa16c9fb404bcf7d9e4c4ff36",
+     "chunk_id": "1f733caaa16c9fb404bcf7d9e4c4ff36",
+     "score": 21.373
+    },
+    {
+     "rank": 2,
+     "doc_id": "94be6787de027e829be756accb41bc06",
+     "chunk_id": "94be6787de027e829be756accb41bc06",
+     "score": 14.4509
+    },
+    {
+     "rank": 3,
+     "doc_id": "bc419bdef394b95b5afa1aa9eb923aa5",
+     "chunk_id": "bc419bdef394b95b5afa1aa9eb923aa5",
+     "score": 13.1138
+    },
+    {
+     "rank": 4,
+     "doc_id": "ade9d5a26c029805c15918c168fc7ef5",
+     "chunk_id": "ade9d5a26c029805c15918c168fc7ef5",
+     "score": 13.1109
+    },
+    {
+     "rank": 5,
+     "doc_id": "0327a02c134135061b0c61b1752c40a0",
+     "chunk_id": "0327a02c134135061b0c61b1752c40a0",
+     "score": 11.1478
+    },
+    {
+     "rank": 6,
+     "doc_id": "cfe0c9ad2561c797ac2feb98e1df85c5",
+     "chunk_id": "cfe0c9ad2561c797ac2feb98e1df85c5",
+     "score": 10.2563
+    },
+    {
+     "rank": 7,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 9.3731
+    },
+    {
+     "rank": 8,
+     "doc_id": "fb831d6c8e4778d7cb47e29b9fee53ad",
+     "chunk_id": "fb831d6c8e4778d7cb47e29b9fee53ad",
+     "score": 8.9141
+    },
+    {
+     "rank": 9,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 8.4697
+    },
+    {
+     "rank": 10,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 8.397
+    },
+    {
+     "rank": 11,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 7.7103
+    },
+    {
+     "rank": 12,
+     "doc_id": "2208434c4f0c2e7646a61025e987a9ef",
+     "chunk_id": "2208434c4f0c2e7646a61025e987a9ef",
+     "score": 7.2798
+    },
+    {
+     "rank": 13,
+     "doc_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "chunk_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "score": 7.2222
+    },
+    {
+     "rank": 14,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 7.0715
+    },
+    {
+     "rank": 15,
+     "doc_id": "2689f623a1c74adbfd3692283841bc3d",
+     "chunk_id": "2689f623a1c74adbfd3692283841bc3d",
+     "score": 6.9696
+    },
+    {
+     "rank": 16,
+     "doc_id": "d097c78280cfd00c35ef6c1faa30e03f",
+     "chunk_id": "d097c78280cfd00c35ef6c1faa30e03f",
+     "score": 6.8581
+    },
+    {
+     "rank": 17,
+     "doc_id": "9fd00a47285ca38bf60f3181c5dbeafd",
+     "chunk_id": "9fd00a47285ca38bf60f3181c5dbeafd",
+     "score": 6.8581
+    },
+    {
+     "rank": 18,
+     "doc_id": "364686b5765eba7188a2a0daa7476bc5",
+     "chunk_id": "364686b5765eba7188a2a0daa7476bc5",
+     "score": 6.6326
+    },
+    {
+     "rank": 19,
+     "doc_id": "90478b3cf6b6aa1b19c432ea606eb672",
+     "chunk_id": "90478b3cf6b6aa1b19c432ea606eb672",
+     "score": 6.6126
+    },
+    {
+     "rank": 20,
+     "doc_id": "8c09794b627df63b7c9762c44d943e21",
+     "chunk_id": "8c09794b627df63b7c9762c44d943e21",
+     "score": 6.5731
+    }
+   ],
+   "latency_s": 0.0009
+  },
+  {
+   "query": "Where did the composer of film Kadal (1968 Film) die?",
+   "gold_doc_ids": [
+    "0822effcd5d53261ac9fda697e3e2e71",
+    "1275396c3975cd2961fb8215774ace5d"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "364686b5765eba7188a2a0daa7476bc5",
+     "chunk_id": "364686b5765eba7188a2a0daa7476bc5",
+     "score": 26.2933
+    },
+    {
+     "rank": 2,
+     "doc_id": "1275396c3975cd2961fb8215774ace5d",
+     "chunk_id": "1275396c3975cd2961fb8215774ace5d",
+     "score": 25.4648
+    },
+    {
+     "rank": 3,
+     "doc_id": "b1414e2094b0343540a5ccb27e1386c8",
+     "chunk_id": "b1414e2094b0343540a5ccb27e1386c8",
+     "score": 20.2454
+    },
+    {
+     "rank": 4,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 20.1982
+    },
+    {
+     "rank": 5,
+     "doc_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "chunk_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "score": 17.1109
+    },
+    {
+     "rank": 6,
+     "doc_id": "ecfd7d7e9b3ffc34fdac924497d48788",
+     "chunk_id": "ecfd7d7e9b3ffc34fdac924497d48788",
+     "score": 16.4624
+    },
+    {
+     "rank": 7,
+     "doc_id": "68e045c212600d6822b16f1da7307850",
+     "chunk_id": "68e045c212600d6822b16f1da7307850",
+     "score": 16.3844
+    },
+    {
+     "rank": 8,
+     "doc_id": "e2dee29d86985d618d737b59885ee001",
+     "chunk_id": "e2dee29d86985d618d737b59885ee001",
+     "score": 15.5219
+    },
+    {
+     "rank": 9,
+     "doc_id": "0b0645d14ab5006055382961dacb284f",
+     "chunk_id": "0b0645d14ab5006055382961dacb284f",
+     "score": 15.0589
+    },
+    {
+     "rank": 10,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 14.9326
+    },
+    {
+     "rank": 11,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 14.8967
+    },
+    {
+     "rank": 12,
+     "doc_id": "17f235b40b1e94933b2e051a15af2678",
+     "chunk_id": "17f235b40b1e94933b2e051a15af2678",
+     "score": 14.4985
+    },
+    {
+     "rank": 13,
+     "doc_id": "86e147141c5be12e7dc730ae405c3bf9",
+     "chunk_id": "86e147141c5be12e7dc730ae405c3bf9",
+     "score": 14.4985
+    },
+    {
+     "rank": 14,
+     "doc_id": "a929f94ac2cba0c3764d73231493096e",
+     "chunk_id": "a929f94ac2cba0c3764d73231493096e",
+     "score": 14.4985
+    },
+    {
+     "rank": 15,
+     "doc_id": "a7f12e9e10744069a8db0c64dd1c8589",
+     "chunk_id": "a7f12e9e10744069a8db0c64dd1c8589",
+     "score": 14.4985
+    },
+    {
+     "rank": 16,
+     "doc_id": "ec739dd7210099355957d8deda52d8cd",
+     "chunk_id": "ec739dd7210099355957d8deda52d8cd",
+     "score": 14.4972
+    },
+    {
+     "rank": 17,
+     "doc_id": "6922f1ced123bee50c8c8a7c362867c4",
+     "chunk_id": "6922f1ced123bee50c8c8a7c362867c4",
+     "score": 13.9969
+    },
+    {
+     "rank": 18,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 13.6457
+    },
+    {
+     "rank": 19,
+     "doc_id": "1c2d95a76ae467d35dd9bc3fc3927d78",
+     "chunk_id": "1c2d95a76ae467d35dd9bc3fc3927d78",
+     "score": 13.5569
+    },
+    {
+     "rank": 20,
+     "doc_id": "19dfc16aaa86810dcca260c535701f7f",
+     "chunk_id": "19dfc16aaa86810dcca260c535701f7f",
+     "score": 13.1292
+    }
+   ],
+   "latency_s": 0.0011
+  },
+  {
+   "query": "What is the place of birth of Tatiana Schlossberg's mother?",
+   "gold_doc_ids": [
+    "52e9403dfc3eb7cd6a82fac8c7732b14",
+    "ea73afbb74ad10e90d4318eaffa7e4d5"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 30.236
+    },
+    {
+     "rank": 2,
+     "doc_id": "89fcfefcd0a305bc4fffe9de6f7673b1",
+     "chunk_id": "89fcfefcd0a305bc4fffe9de6f7673b1",
+     "score": 26.9941
+    },
+    {
+     "rank": 3,
+     "doc_id": "52e9403dfc3eb7cd6a82fac8c7732b14",
+     "chunk_id": "52e9403dfc3eb7cd6a82fac8c7732b14",
+     "score": 23.7878
+    },
+    {
+     "rank": 4,
+     "doc_id": "5bd1cd5b4eb5be8b58c9aa9bc9435167",
+     "chunk_id": "5bd1cd5b4eb5be8b58c9aa9bc9435167",
+     "score": 17.1245
+    },
+    {
+     "rank": 5,
+     "doc_id": "e9e596f709ad04f53b7632e3bb9e0ddd",
+     "chunk_id": "e9e596f709ad04f53b7632e3bb9e0ddd",
+     "score": 16.6752
+    },
+    {
+     "rank": 6,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 15.0473
+    },
+    {
+     "rank": 7,
+     "doc_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "chunk_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "score": 15.033
+    },
+    {
+     "rank": 8,
+     "doc_id": "450d6f2885f58e73f6721d15f70e1371",
+     "chunk_id": "450d6f2885f58e73f6721d15f70e1371",
+     "score": 14.1331
+    },
+    {
+     "rank": 9,
+     "doc_id": "fae712cd6849581f65b6753a24e35ceb",
+     "chunk_id": "fae712cd6849581f65b6753a24e35ceb",
+     "score": 13.8441
+    },
+    {
+     "rank": 10,
+     "doc_id": "13d625146c9adf133e7a0d07e8f646bc",
+     "chunk_id": "13d625146c9adf133e7a0d07e8f646bc",
+     "score": 13.8382
+    },
+    {
+     "rank": 11,
+     "doc_id": "3ed4885248005fdc6262bfbc0d1d1b2c",
+     "chunk_id": "3ed4885248005fdc6262bfbc0d1d1b2c",
+     "score": 13.7095
+    },
+    {
+     "rank": 12,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 13.6994
+    },
+    {
+     "rank": 13,
+     "doc_id": "19ef7c03ef14598f6097ee6fc93dc737",
+     "chunk_id": "19ef7c03ef14598f6097ee6fc93dc737",
+     "score": 12.9875
+    },
+    {
+     "rank": 14,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 12.963
+    },
+    {
+     "rank": 15,
+     "doc_id": "842b7c30bff549a2dd24b4a2926588fd",
+     "chunk_id": "842b7c30bff549a2dd24b4a2926588fd",
+     "score": 12.9444
+    },
+    {
+     "rank": 16,
+     "doc_id": "ea73afbb74ad10e90d4318eaffa7e4d5",
+     "chunk_id": "ea73afbb74ad10e90d4318eaffa7e4d5",
+     "score": 12.9223
+    },
+    {
+     "rank": 17,
+     "doc_id": "e3a3cbe0c65602b83047c920f0cb80fc",
+     "chunk_id": "e3a3cbe0c65602b83047c920f0cb80fc",
+     "score": 12.7032
+    },
+    {
+     "rank": 18,
+     "doc_id": "5d2e8d4dc12f4fa00041d6d093a6b7aa",
+     "chunk_id": "5d2e8d4dc12f4fa00041d6d093a6b7aa",
+     "score": 12.6582
+    },
+    {
+     "rank": 19,
+     "doc_id": "4825fcaf0c76f069b2a30bb2c1f59c01",
+     "chunk_id": "4825fcaf0c76f069b2a30bb2c1f59c01",
+     "score": 12.6159
+    },
+    {
+     "rank": 20,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 12.5573
+    }
+   ],
+   "latency_s": 0.0011
+  },
+  {
+   "query": "Who is the paternal grandfather of Rudolf Of Żagań?",
+   "gold_doc_ids": [
+    "459f16ab738d82212a98a42fdea927ec",
+    "f931b581351760ed70bc389eae025e68"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "459f16ab738d82212a98a42fdea927ec",
+     "chunk_id": "459f16ab738d82212a98a42fdea927ec",
+     "score": 39.8237
+    },
+    {
+     "rank": 2,
+     "doc_id": "88110ead4e8a0ab1e555b10082d7ce59",
+     "chunk_id": "88110ead4e8a0ab1e555b10082d7ce59",
+     "score": 36.6726
+    },
+    {
+     "rank": 3,
+     "doc_id": "66c81093a8297be149a413daba8f5d90",
+     "chunk_id": "66c81093a8297be149a413daba8f5d90",
+     "score": 33.3445
+    },
+    {
+     "rank": 4,
+     "doc_id": "f931b581351760ed70bc389eae025e68",
+     "chunk_id": "f931b581351760ed70bc389eae025e68",
+     "score": 29.9324
+    },
+    {
+     "rank": 5,
+     "doc_id": "a08042c0a9171284a650d3f91f5a47cc",
+     "chunk_id": "a08042c0a9171284a650d3f91f5a47cc",
+     "score": 28.8278
+    },
+    {
+     "rank": 6,
+     "doc_id": "35b99ce49602f7d1b6ed821494e9796a",
+     "chunk_id": "35b99ce49602f7d1b6ed821494e9796a",
+     "score": 16.0679
+    },
+    {
+     "rank": 7,
+     "doc_id": "0b2cc3b302ec3650676ae022b53ef223",
+     "chunk_id": "0b2cc3b302ec3650676ae022b53ef223",
+     "score": 14.6673
+    },
+    {
+     "rank": 8,
+     "doc_id": "54c8b7aabcffb701daf8e6fd36f40903",
+     "chunk_id": "54c8b7aabcffb701daf8e6fd36f40903",
+     "score": 13.7613
+    },
+    {
+     "rank": 9,
+     "doc_id": "b3268d03ceb01196009fa72800565fa2",
+     "chunk_id": "b3268d03ceb01196009fa72800565fa2",
+     "score": 13.6739
+    },
+    {
+     "rank": 10,
+     "doc_id": "6278b053f69ecc8a3cb14f662b68a8dd",
+     "chunk_id": "6278b053f69ecc8a3cb14f662b68a8dd",
+     "score": 13.3019
+    },
+    {
+     "rank": 11,
+     "doc_id": "16ca65c9d532af52afb2f88e3e446d52",
+     "chunk_id": "16ca65c9d532af52afb2f88e3e446d52",
+     "score": 12.5746
+    },
+    {
+     "rank": 12,
+     "doc_id": "3ed4885248005fdc6262bfbc0d1d1b2c",
+     "chunk_id": "3ed4885248005fdc6262bfbc0d1d1b2c",
+     "score": 11.9131
+    },
+    {
+     "rank": 13,
+     "doc_id": "dbee498d8a0ddcc8c831d977997615fd",
+     "chunk_id": "dbee498d8a0ddcc8c831d977997615fd",
+     "score": 11.697
+    },
+    {
+     "rank": 14,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 11.5151
+    },
+    {
+     "rank": 15,
+     "doc_id": "bc419bdef394b95b5afa1aa9eb923aa5",
+     "chunk_id": "bc419bdef394b95b5afa1aa9eb923aa5",
+     "score": 11.2768
+    },
+    {
+     "rank": 16,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 11.205
+    },
+    {
+     "rank": 17,
+     "doc_id": "19ef7c03ef14598f6097ee6fc93dc737",
+     "chunk_id": "19ef7c03ef14598f6097ee6fc93dc737",
+     "score": 11.1294
+    },
+    {
+     "rank": 18,
+     "doc_id": "cf27f5a5d40d813f04d37b2ebae339ed",
+     "chunk_id": "cf27f5a5d40d813f04d37b2ebae339ed",
+     "score": 10.8282
+    },
+    {
+     "rank": 19,
+     "doc_id": "f82ceb4f885eafca2ba436996a510285",
+     "chunk_id": "f82ceb4f885eafca2ba436996a510285",
+     "score": 10.7366
+    },
+    {
+     "rank": 20,
+     "doc_id": "3fe1127679890d3a57ea65aa21f75a30",
+     "chunk_id": "3fe1127679890d3a57ea65aa21f75a30",
+     "score": 10.7043
+    }
+   ],
+   "latency_s": 0.0011
+  },
+  {
+   "query": "Which film has the director born later, Arrête Ton Cinéma or Agni (2004 Film)?",
+   "gold_doc_ids": [
+    "6a4f68bf59a7612cc57b464e9e07010d",
+    "a1fb1fca7d1559c3d6f25f715a58e88a",
+    "cdd00b331f1baf5632221f5f73183bc0",
+    "f25e7ff9d8d02152c88c2d4e4fd48191"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "6a4f68bf59a7612cc57b464e9e07010d",
+     "chunk_id": "6a4f68bf59a7612cc57b464e9e07010d",
+     "score": 65.9703
+    },
+    {
+     "rank": 2,
+     "doc_id": "0997c248f60990f02eed03b1e39f3749",
+     "chunk_id": "0997c248f60990f02eed03b1e39f3749",
+     "score": 43.4611
+    },
+    {
+     "rank": 3,
+     "doc_id": "f25e7ff9d8d02152c88c2d4e4fd48191",
+     "chunk_id": "f25e7ff9d8d02152c88c2d4e4fd48191",
+     "score": 28.0468
+    },
+    {
+     "rank": 4,
+     "doc_id": "df246f13234629b579510a3439aa4568",
+     "chunk_id": "df246f13234629b579510a3439aa4568",
+     "score": 18.1262
+    },
+    {
+     "rank": 5,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 17.4583
+    },
+    {
+     "rank": 6,
+     "doc_id": "20ef09ab5c5e2e45c56aa0f206841535",
+     "chunk_id": "20ef09ab5c5e2e45c56aa0f206841535",
+     "score": 17.2763
+    },
+    {
+     "rank": 7,
+     "doc_id": "4ce7961a689fca2c9b973acd76b76966",
+     "chunk_id": "4ce7961a689fca2c9b973acd76b76966",
+     "score": 16.2275
+    },
+    {
+     "rank": 8,
+     "doc_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "chunk_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "score": 15.9505
+    },
+    {
+     "rank": 9,
+     "doc_id": "6f3145ba53247fb494d8828d7dd0d223",
+     "chunk_id": "6f3145ba53247fb494d8828d7dd0d223",
+     "score": 15.8847
+    },
+    {
+     "rank": 10,
+     "doc_id": "e73232483330b2e8e94010210afd6588",
+     "chunk_id": "e73232483330b2e8e94010210afd6588",
+     "score": 15.6073
+    },
+    {
+     "rank": 11,
+     "doc_id": "081e6967d8ac964c763a57710300e8c7",
+     "chunk_id": "081e6967d8ac964c763a57710300e8c7",
+     "score": 15.5345
+    },
+    {
+     "rank": 12,
+     "doc_id": "ab694c2825517e868ea175d171462f97",
+     "chunk_id": "ab694c2825517e868ea175d171462f97",
+     "score": 15.5018
+    },
+    {
+     "rank": 13,
+     "doc_id": "04be9022be73d3c30975853779418091",
+     "chunk_id": "04be9022be73d3c30975853779418091",
+     "score": 15.332
+    },
+    {
+     "rank": 14,
+     "doc_id": "68e045c212600d6822b16f1da7307850",
+     "chunk_id": "68e045c212600d6822b16f1da7307850",
+     "score": 15.0111
+    },
+    {
+     "rank": 15,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 14.9326
+    },
+    {
+     "rank": 16,
+     "doc_id": "25d3e8d187cebb62bbec2b09b71a966a",
+     "chunk_id": "25d3e8d187cebb62bbec2b09b71a966a",
+     "score": 14.8756
+    },
+    {
+     "rank": 17,
+     "doc_id": "a6ec9e067466e55ebd52a27d175c9c23",
+     "chunk_id": "a6ec9e067466e55ebd52a27d175c9c23",
+     "score": 14.697
+    },
+    {
+     "rank": 18,
+     "doc_id": "b39f733548636f26bcfa9601aab13837",
+     "chunk_id": "b39f733548636f26bcfa9601aab13837",
+     "score": 14.6183
+    },
+    {
+     "rank": 19,
+     "doc_id": "3fdbf9bc10b61cd0c91aa77ccfe1e4af",
+     "chunk_id": "3fdbf9bc10b61cd0c91aa77ccfe1e4af",
+     "score": 14.5449
+    },
+    {
+     "rank": 20,
+     "doc_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "chunk_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "score": 14.5131
+    }
+   ],
+   "latency_s": 0.0017
+  },
+  {
+   "query": "Which film was released first, College Coach or Los Últimos Días?",
+   "gold_doc_ids": [
+    "05f7091a777b59b4ae72c5a03326a74e",
+    "75b43cd977a260e41a794ec118f5feb6"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "75b43cd977a260e41a794ec118f5feb6",
+     "chunk_id": "75b43cd977a260e41a794ec118f5feb6",
+     "score": 36.7322
+    },
+    {
+     "rank": 2,
+     "doc_id": "c3ca46dbd69464cf6261a90c2bb95df4",
+     "chunk_id": "c3ca46dbd69464cf6261a90c2bb95df4",
+     "score": 32.2679
+    },
+    {
+     "rank": 3,
+     "doc_id": "020330c0a39d034891f2a10773589141",
+     "chunk_id": "020330c0a39d034891f2a10773589141",
+     "score": 17.621
+    },
+    {
+     "rank": 4,
+     "doc_id": "05f7091a777b59b4ae72c5a03326a74e",
+     "chunk_id": "05f7091a777b59b4ae72c5a03326a74e",
+     "score": 17.3955
+    },
+    {
+     "rank": 5,
+     "doc_id": "a6ec9e067466e55ebd52a27d175c9c23",
+     "chunk_id": "a6ec9e067466e55ebd52a27d175c9c23",
+     "score": 15.7306
+    },
+    {
+     "rank": 6,
+     "doc_id": "90478b3cf6b6aa1b19c432ea606eb672",
+     "chunk_id": "90478b3cf6b6aa1b19c432ea606eb672",
+     "score": 15.6689
+    },
+    {
+     "rank": 7,
+     "doc_id": "e6bd3e1c5639a87657f61555c9d249dc",
+     "chunk_id": "e6bd3e1c5639a87657f61555c9d249dc",
+     "score": 14.138
+    },
+    {
+     "rank": 8,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 13.9619
+    },
+    {
+     "rank": 9,
+     "doc_id": "364686b5765eba7188a2a0daa7476bc5",
+     "chunk_id": "364686b5765eba7188a2a0daa7476bc5",
+     "score": 13.2983
+    },
+    {
+     "rank": 10,
+     "doc_id": "d52bd79d6c5c8760640889a100e1c236",
+     "chunk_id": "d52bd79d6c5c8760640889a100e1c236",
+     "score": 12.697
+    },
+    {
+     "rank": 11,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 12.5652
+    },
+    {
+     "rank": 12,
+     "doc_id": "e55282b887bab9ace6c46d17aa9bcff1",
+     "chunk_id": "e55282b887bab9ace6c46d17aa9bcff1",
+     "score": 12.565
+    },
+    {
+     "rank": 13,
+     "doc_id": "0822effcd5d53261ac9fda697e3e2e71",
+     "chunk_id": "0822effcd5d53261ac9fda697e3e2e71",
+     "score": 12.2014
+    },
+    {
+     "rank": 14,
+     "doc_id": "0bf543655ff47e6c0e79a92fd1cc09c1",
+     "chunk_id": "0bf543655ff47e6c0e79a92fd1cc09c1",
+     "score": 12.1911
+    },
+    {
+     "rank": 15,
+     "doc_id": "e3f08c51abedcada56322ed5a6bd6bc7",
+     "chunk_id": "e3f08c51abedcada56322ed5a6bd6bc7",
+     "score": 12.0482
+    },
+    {
+     "rank": 16,
+     "doc_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "chunk_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "score": 11.9545
+    },
+    {
+     "rank": 17,
+     "doc_id": "d5054fc59cc8dde05fe741dfb2a47540",
+     "chunk_id": "d5054fc59cc8dde05fe741dfb2a47540",
+     "score": 11.7148
+    },
+    {
+     "rank": 18,
+     "doc_id": "6f3145ba53247fb494d8828d7dd0d223",
+     "chunk_id": "6f3145ba53247fb494d8828d7dd0d223",
+     "score": 11.2503
+    },
+    {
+     "rank": 19,
+     "doc_id": "fa2d8129314c4c0994ece3a871b88d1e",
+     "chunk_id": "fa2d8129314c4c0994ece3a871b88d1e",
+     "score": 10.9614
+    },
+    {
+     "rank": 20,
+     "doc_id": "c98b3edcee236c86db02aa22b4ce435a",
+     "chunk_id": "c98b3edcee236c86db02aa22b4ce435a",
+     "score": 10.3628
+    }
+   ],
+   "latency_s": 0.0013
+  },
+  {
+   "query": "Who is the father-in-law of Elizabeth Howard, Countess Of Effingham?",
+   "gold_doc_ids": [
+    "8908161faa71d1b7353aabe34982e9d9",
+    "cb1e55b0af37e36c9b69fd2ac333cf3f"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "8908161faa71d1b7353aabe34982e9d9",
+     "chunk_id": "8908161faa71d1b7353aabe34982e9d9",
+     "score": 34.0971
+    },
+    {
+     "rank": 2,
+     "doc_id": "881b5934349594a87415b00fa5a285af",
+     "chunk_id": "881b5934349594a87415b00fa5a285af",
+     "score": 28.3482
+    },
+    {
+     "rank": 3,
+     "doc_id": "0aa03419099d8c4d2801c7bdddb599cc",
+     "chunk_id": "0aa03419099d8c4d2801c7bdddb599cc",
+     "score": 27.5774
+    },
+    {
+     "rank": 4,
+     "doc_id": "8c37a60698655ce3eb100d2f4c0b9a28",
+     "chunk_id": "8c37a60698655ce3eb100d2f4c0b9a28",
+     "score": 27.5167
+    },
+    {
+     "rank": 5,
+     "doc_id": "cb1e55b0af37e36c9b69fd2ac333cf3f",
+     "chunk_id": "cb1e55b0af37e36c9b69fd2ac333cf3f",
+     "score": 27.1684
+    },
+    {
+     "rank": 6,
+     "doc_id": "1b68e68b9e8743ffe0a1ea08f089b2e3",
+     "chunk_id": "1b68e68b9e8743ffe0a1ea08f089b2e3",
+     "score": 26.1718
+    },
+    {
+     "rank": 7,
+     "doc_id": "cc0ac295858074a5339b68925537ef3c",
+     "chunk_id": "cc0ac295858074a5339b68925537ef3c",
+     "score": 24.2149
+    },
+    {
+     "rank": 8,
+     "doc_id": "2f3759807e05182a79cba7a18fe69cde",
+     "chunk_id": "2f3759807e05182a79cba7a18fe69cde",
+     "score": 23.8155
+    },
+    {
+     "rank": 9,
+     "doc_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "chunk_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "score": 22.6632
+    },
+    {
+     "rank": 10,
+     "doc_id": "d95736f957bba6341daef2e149aadbff",
+     "chunk_id": "d95736f957bba6341daef2e149aadbff",
+     "score": 19.9758
+    },
+    {
+     "rank": 11,
+     "doc_id": "21b2b20cef1c87428e98653f29249cde",
+     "chunk_id": "21b2b20cef1c87428e98653f29249cde",
+     "score": 19.9637
+    },
+    {
+     "rank": 12,
+     "doc_id": "19ef7c03ef14598f6097ee6fc93dc737",
+     "chunk_id": "19ef7c03ef14598f6097ee6fc93dc737",
+     "score": 19.8554
+    },
+    {
+     "rank": 13,
+     "doc_id": "dc5b0ad3f2b766d320bf94a7b93348cb",
+     "chunk_id": "dc5b0ad3f2b766d320bf94a7b93348cb",
+     "score": 19.8348
+    },
+    {
+     "rank": 14,
+     "doc_id": "5b18727ca3569b15e81484f6984e8bdc",
+     "chunk_id": "5b18727ca3569b15e81484f6984e8bdc",
+     "score": 18.9613
+    },
+    {
+     "rank": 15,
+     "doc_id": "5552d724f0e05924a23a29fdb50fde24",
+     "chunk_id": "5552d724f0e05924a23a29fdb50fde24",
+     "score": 18.6868
+    },
+    {
+     "rank": 16,
+     "doc_id": "5b341d5b394179f5782266ebdaab193a",
+     "chunk_id": "5b341d5b394179f5782266ebdaab193a",
+     "score": 18.5735
+    },
+    {
+     "rank": 17,
+     "doc_id": "e21e765c279268a90ee68dbb5f7a13f4",
+     "chunk_id": "e21e765c279268a90ee68dbb5f7a13f4",
+     "score": 18.4412
+    },
+    {
+     "rank": 18,
+     "doc_id": "50973b62548f60c08c5441249ed4190c",
+     "chunk_id": "50973b62548f60c08c5441249ed4190c",
+     "score": 18.4116
+    },
+    {
+     "rank": 19,
+     "doc_id": "e2f9729a4268408fcbf6b185f0a3ebc2",
+     "chunk_id": "e2f9729a4268408fcbf6b185f0a3ebc2",
+     "score": 18.2099
+    },
+    {
+     "rank": 20,
+     "doc_id": "2c4411814f0e2056cb228889f78bc439",
+     "chunk_id": "2c4411814f0e2056cb228889f78bc439",
+     "score": 18.202
+    }
+   ],
+   "latency_s": 0.0014
+  },
+  {
+   "query": "Who lived longer, Clarence Moore (Businessman) or Wilhelmine Schröder-Devrient?",
+   "gold_doc_ids": [
+    "282f56b04062d874ca5ab8291497c8b9",
+    "8df824ca976e8d8310b87887a93a4393"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "8df824ca976e8d8310b87887a93a4393",
+     "chunk_id": "8df824ca976e8d8310b87887a93a4393",
+     "score": 41.4827
+    },
+    {
+     "rank": 2,
+     "doc_id": "21bb709b4481d48608be0fa744388d3a",
+     "chunk_id": "21bb709b4481d48608be0fa744388d3a",
+     "score": 32.574
+    },
+    {
+     "rank": 3,
+     "doc_id": "282f56b04062d874ca5ab8291497c8b9",
+     "chunk_id": "282f56b04062d874ca5ab8291497c8b9",
+     "score": 29.0316
+    },
+    {
+     "rank": 4,
+     "doc_id": "50ecad7aaaa2e5cd5d701499fb51e22b",
+     "chunk_id": "50ecad7aaaa2e5cd5d701499fb51e22b",
+     "score": 23.7689
+    },
+    {
+     "rank": 5,
+     "doc_id": "7c04bafd20d90dc9366390ae4d13dff5",
+     "chunk_id": "7c04bafd20d90dc9366390ae4d13dff5",
+     "score": 15.7625
+    },
+    {
+     "rank": 6,
+     "doc_id": "bc419bdef394b95b5afa1aa9eb923aa5",
+     "chunk_id": "bc419bdef394b95b5afa1aa9eb923aa5",
+     "score": 15.4571
+    },
+    {
+     "rank": 7,
+     "doc_id": "8c09794b627df63b7c9762c44d943e21",
+     "chunk_id": "8c09794b627df63b7c9762c44d943e21",
+     "score": 15.0578
+    },
+    {
+     "rank": 8,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 13.4871
+    },
+    {
+     "rank": 9,
+     "doc_id": "fb831d6c8e4778d7cb47e29b9fee53ad",
+     "chunk_id": "fb831d6c8e4778d7cb47e29b9fee53ad",
+     "score": 12.6526
+    },
+    {
+     "rank": 10,
+     "doc_id": "76e2129c1e6dda988220e5a857af2a9c",
+     "chunk_id": "76e2129c1e6dda988220e5a857af2a9c",
+     "score": 12.3754
+    },
+    {
+     "rank": 11,
+     "doc_id": "2bbbe1a5320ea02353c038fd2499be45",
+     "chunk_id": "2bbbe1a5320ea02353c038fd2499be45",
+     "score": 12.1304
+    },
+    {
+     "rank": 12,
+     "doc_id": "20ef09ab5c5e2e45c56aa0f206841535",
+     "chunk_id": "20ef09ab5c5e2e45c56aa0f206841535",
+     "score": 12.0362
+    },
+    {
+     "rank": 13,
+     "doc_id": "764ec3082ef1a8b6789d9c34ea5e6d4e",
+     "chunk_id": "764ec3082ef1a8b6789d9c34ea5e6d4e",
+     "score": 11.9242
+    },
+    {
+     "rank": 14,
+     "doc_id": "2689f623a1c74adbfd3692283841bc3d",
+     "chunk_id": "2689f623a1c74adbfd3692283841bc3d",
+     "score": 11.9007
+    },
+    {
+     "rank": 15,
+     "doc_id": "7ab497cf9eae44b932d6466b27688bd2",
+     "chunk_id": "7ab497cf9eae44b932d6466b27688bd2",
+     "score": 11.866
+    },
+    {
+     "rank": 16,
+     "doc_id": "bcabf6630fd9cd5fcddf7435708559e2",
+     "chunk_id": "bcabf6630fd9cd5fcddf7435708559e2",
+     "score": 11.8131
+    },
+    {
+     "rank": 17,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 11.7131
+    },
+    {
+     "rank": 18,
+     "doc_id": "fdd52f2d8736f17b208c454ba0c9ad86",
+     "chunk_id": "fdd52f2d8736f17b208c454ba0c9ad86",
+     "score": 11.51
+    },
+    {
+     "rank": 19,
+     "doc_id": "0327a02c134135061b0c61b1752c40a0",
+     "chunk_id": "0327a02c134135061b0c61b1752c40a0",
+     "score": 11.4819
+    },
+    {
+     "rank": 20,
+     "doc_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "chunk_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "score": 11.2716
+    }
+   ],
+   "latency_s": 0.0014
+  },
+  {
+   "query": "Who is Frederick Dickens's father?",
+   "gold_doc_ids": [
+    "a2394fcd6d7422c7908e4dc2e8e3aee7",
+    "f74216964caa52a9d058457791219718"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "f74216964caa52a9d058457791219718",
+     "chunk_id": "f74216964caa52a9d058457791219718",
+     "score": 19.9771
+    },
+    {
+     "rank": 2,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 14.6598
+    },
+    {
+     "rank": 3,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 13.5036
+    },
+    {
+     "rank": 4,
+     "doc_id": "a2394fcd6d7422c7908e4dc2e8e3aee7",
+     "chunk_id": "a2394fcd6d7422c7908e4dc2e8e3aee7",
+     "score": 12.607
+    },
+    {
+     "rank": 5,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 10.1815
+    },
+    {
+     "rank": 6,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 9.409
+    },
+    {
+     "rank": 7,
+     "doc_id": "e9b1467322d6190a037e5d3d654ca64a",
+     "chunk_id": "e9b1467322d6190a037e5d3d654ca64a",
+     "score": 8.4786
+    },
+    {
+     "rank": 8,
+     "doc_id": "6278b053f69ecc8a3cb14f662b68a8dd",
+     "chunk_id": "6278b053f69ecc8a3cb14f662b68a8dd",
+     "score": 8.3874
+    },
+    {
+     "rank": 9,
+     "doc_id": "364686b5765eba7188a2a0daa7476bc5",
+     "chunk_id": "364686b5765eba7188a2a0daa7476bc5",
+     "score": 8.265
+    },
+    {
+     "rank": 10,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 7.7299
+    },
+    {
+     "rank": 11,
+     "doc_id": "4648b2446c781a9301ea06ee0b9e527e",
+     "chunk_id": "4648b2446c781a9301ea06ee0b9e527e",
+     "score": 7.4074
+    },
+    {
+     "rank": 12,
+     "doc_id": "3ed4885248005fdc6262bfbc0d1d1b2c",
+     "chunk_id": "3ed4885248005fdc6262bfbc0d1d1b2c",
+     "score": 7.2794
+    },
+    {
+     "rank": 13,
+     "doc_id": "e4d09cab477c2c1c1d96b39900e1a59e",
+     "chunk_id": "e4d09cab477c2c1c1d96b39900e1a59e",
+     "score": 7.1886
+    },
+    {
+     "rank": 14,
+     "doc_id": "adfbf49aa139357bce5206f057a01d36",
+     "chunk_id": "adfbf49aa139357bce5206f057a01d36",
+     "score": 7.1373
+    },
+    {
+     "rank": 15,
+     "doc_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "chunk_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "score": 6.3929
+    },
+    {
+     "rank": 16,
+     "doc_id": "a6b215fd9ea88e2a1341e0a257795056",
+     "chunk_id": "a6b215fd9ea88e2a1341e0a257795056",
+     "score": 6.2636
+    },
+    {
+     "rank": 17,
+     "doc_id": "89fcfefcd0a305bc4fffe9de6f7673b1",
+     "chunk_id": "89fcfefcd0a305bc4fffe9de6f7673b1",
+     "score": 6.0637
+    },
+    {
+     "rank": 18,
+     "doc_id": "e55282b887bab9ace6c46d17aa9bcff1",
+     "chunk_id": "e55282b887bab9ace6c46d17aa9bcff1",
+     "score": 6.0535
+    },
+    {
+     "rank": 19,
+     "doc_id": "cc9cf94b2ae11fc9c6316b4a8641636a",
+     "chunk_id": "cc9cf94b2ae11fc9c6316b4a8641636a",
+     "score": 6.0227
+    },
+    {
+     "rank": 20,
+     "doc_id": "6bec27df0025820525739303e8970ba3",
+     "chunk_id": "6bec27df0025820525739303e8970ba3",
+     "score": 5.9851
+    }
+   ],
+   "latency_s": 0.0008
+  },
+  {
+   "query": "Where was the composer of song Back In The U.S.A. born?",
+   "gold_doc_ids": [
+    "6ef979782cd7e4b44f690aab36b56658",
+    "9fc5a8e914641289f7b73ff997e4c12d"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "9fc5a8e914641289f7b73ff997e4c12d",
+     "chunk_id": "9fc5a8e914641289f7b73ff997e4c12d",
+     "score": 39.1995
+    },
+    {
+     "rank": 2,
+     "doc_id": "ecfd7d7e9b3ffc34fdac924497d48788",
+     "chunk_id": "ecfd7d7e9b3ffc34fdac924497d48788",
+     "score": 28.6173
+    },
+    {
+     "rank": 3,
+     "doc_id": "82f2589ef0c82137b6986df81bd067dd",
+     "chunk_id": "82f2589ef0c82137b6986df81bd067dd",
+     "score": 25.9291
+    },
+    {
+     "rank": 4,
+     "doc_id": "b61ac296cf1573d7d10f6273a4db65dd",
+     "chunk_id": "b61ac296cf1573d7d10f6273a4db65dd",
+     "score": 25.8687
+    },
+    {
+     "rank": 5,
+     "doc_id": "62133440855e78369c0b236da68e50ba",
+     "chunk_id": "62133440855e78369c0b236da68e50ba",
+     "score": 25.6188
+    },
+    {
+     "rank": 6,
+     "doc_id": "874ad3aa1a3853f91b067b651a7827fc",
+     "chunk_id": "874ad3aa1a3853f91b067b651a7827fc",
+     "score": 25.3728
+    },
+    {
+     "rank": 7,
+     "doc_id": "52e9403dfc3eb7cd6a82fac8c7732b14",
+     "chunk_id": "52e9403dfc3eb7cd6a82fac8c7732b14",
+     "score": 25.231
+    },
+    {
+     "rank": 8,
+     "doc_id": "19dfc16aaa86810dcca260c535701f7f",
+     "chunk_id": "19dfc16aaa86810dcca260c535701f7f",
+     "score": 24.9225
+    },
+    {
+     "rank": 9,
+     "doc_id": "116b1add42dee157dd96271a2f71bc2e",
+     "chunk_id": "116b1add42dee157dd96271a2f71bc2e",
+     "score": 24.8404
+    },
+    {
+     "rank": 10,
+     "doc_id": "1c2d95a76ae467d35dd9bc3fc3927d78",
+     "chunk_id": "1c2d95a76ae467d35dd9bc3fc3927d78",
+     "score": 24.5337
+    },
+    {
+     "rank": 11,
+     "doc_id": "13d625146c9adf133e7a0d07e8f646bc",
+     "chunk_id": "13d625146c9adf133e7a0d07e8f646bc",
+     "score": 24.3579
+    },
+    {
+     "rank": 12,
+     "doc_id": "e2dee29d86985d618d737b59885ee001",
+     "chunk_id": "e2dee29d86985d618d737b59885ee001",
+     "score": 23.9291
+    },
+    {
+     "rank": 13,
+     "doc_id": "22f5e4798efc23fadf93948a8bd887ff",
+     "chunk_id": "22f5e4798efc23fadf93948a8bd887ff",
+     "score": 23.6499
+    },
+    {
+     "rank": 14,
+     "doc_id": "cca06a3496803f69e2bce5c8ed2e3558",
+     "chunk_id": "cca06a3496803f69e2bce5c8ed2e3558",
+     "score": 23.4625
+    },
+    {
+     "rank": 15,
+     "doc_id": "42e6bc443394574a61a2b065ddbccbc2",
+     "chunk_id": "42e6bc443394574a61a2b065ddbccbc2",
+     "score": 23.4487
+    },
+    {
+     "rank": 16,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 23.1533
+    },
+    {
+     "rank": 17,
+     "doc_id": "0822effcd5d53261ac9fda697e3e2e71",
+     "chunk_id": "0822effcd5d53261ac9fda697e3e2e71",
+     "score": 23.1334
+    },
+    {
+     "rank": 18,
+     "doc_id": "50973b62548f60c08c5441249ed4190c",
+     "chunk_id": "50973b62548f60c08c5441249ed4190c",
+     "score": 23.0399
+    },
+    {
+     "rank": 19,
+     "doc_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "chunk_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "score": 23.0178
+    },
+    {
+     "rank": 20,
+     "doc_id": "6d77cf0f6f6c76c9317ff01fd79c9bdb",
+     "chunk_id": "6d77cf0f6f6c76c9317ff01fd79c9bdb",
+     "score": 23.0012
+    }
+   ],
+   "latency_s": 0.0014
+  },
+  {
+   "query": "Are Gare De La Roche-Sur-Yon and Gare De Namps-Quevauvillers both located in the same country?",
+   "gold_doc_ids": [
+    "772bfd32ad4197f7521594516cdec065",
+    "c07031179c336bb846c796b5bba97635"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "c07031179c336bb846c796b5bba97635",
+     "chunk_id": "c07031179c336bb846c796b5bba97635",
+     "score": 55.7352
+    },
+    {
+     "rank": 2,
+     "doc_id": "772bfd32ad4197f7521594516cdec065",
+     "chunk_id": "772bfd32ad4197f7521594516cdec065",
+     "score": 49.9629
+    },
+    {
+     "rank": 3,
+     "doc_id": "785cfec25c8aad650fa3646349de0670",
+     "chunk_id": "785cfec25c8aad650fa3646349de0670",
+     "score": 48.1169
+    },
+    {
+     "rank": 4,
+     "doc_id": "b9b636ec82150983f85a157b7df3ee7c",
+     "chunk_id": "b9b636ec82150983f85a157b7df3ee7c",
+     "score": 47.2688
+    },
+    {
+     "rank": 5,
+     "doc_id": "9eb25a84d807e415746a34f3ddc5d19f",
+     "chunk_id": "9eb25a84d807e415746a34f3ddc5d19f",
+     "score": 47.2688
+    },
+    {
+     "rank": 6,
+     "doc_id": "d1a1f930cb6702b000d680e9b3d93d97",
+     "chunk_id": "d1a1f930cb6702b000d680e9b3d93d97",
+     "score": 44.5088
+    },
+    {
+     "rank": 7,
+     "doc_id": "2c6cee165979d9cf206fcb98803c8456",
+     "chunk_id": "2c6cee165979d9cf206fcb98803c8456",
+     "score": 33.2794
+    },
+    {
+     "rank": 8,
+     "doc_id": "d6cdf66c158fdb9a17654b247655e553",
+     "chunk_id": "d6cdf66c158fdb9a17654b247655e553",
+     "score": 29.473
+    },
+    {
+     "rank": 9,
+     "doc_id": "551e9e1472f76e1418643ebb339051b3",
+     "chunk_id": "551e9e1472f76e1418643ebb339051b3",
+     "score": 26.9779
+    },
+    {
+     "rank": 10,
+     "doc_id": "d92bf596ecc3cffa82385886a14d0aac",
+     "chunk_id": "d92bf596ecc3cffa82385886a14d0aac",
+     "score": 25.4684
+    },
+    {
+     "rank": 11,
+     "doc_id": "2d741833f6ed6354599ebd882b481d8e",
+     "chunk_id": "2d741833f6ed6354599ebd882b481d8e",
+     "score": 24.6088
+    },
+    {
+     "rank": 12,
+     "doc_id": "05a12869c50d8a06cbe0af8f3c430e4f",
+     "chunk_id": "05a12869c50d8a06cbe0af8f3c430e4f",
+     "score": 18.9868
+    },
+    {
+     "rank": 13,
+     "doc_id": "135ac01252fbdb492d0827b2c3790a7b",
+     "chunk_id": "135ac01252fbdb492d0827b2c3790a7b",
+     "score": 16.8428
+    },
+    {
+     "rank": 14,
+     "doc_id": "a6ec9e067466e55ebd52a27d175c9c23",
+     "chunk_id": "a6ec9e067466e55ebd52a27d175c9c23",
+     "score": 16.036
+    },
+    {
+     "rank": 15,
+     "doc_id": "cdd1b4a6f4f2cc5084f1c0c773b8f438",
+     "chunk_id": "cdd1b4a6f4f2cc5084f1c0c773b8f438",
+     "score": 15.2077
+    },
+    {
+     "rank": 16,
+     "doc_id": "b61ac296cf1573d7d10f6273a4db65dd",
+     "chunk_id": "b61ac296cf1573d7d10f6273a4db65dd",
+     "score": 14.9408
+    },
+    {
+     "rank": 17,
+     "doc_id": "8301bcec855f5fb7983ee757cdbe123e",
+     "chunk_id": "8301bcec855f5fb7983ee757cdbe123e",
+     "score": 14.756
+    },
+    {
+     "rank": 18,
+     "doc_id": "f405ced87c21bf6dc2ad2c0bd1249b5b",
+     "chunk_id": "f405ced87c21bf6dc2ad2c0bd1249b5b",
+     "score": 14.3423
+    },
+    {
+     "rank": 19,
+     "doc_id": "f65a2f0de16725f31a26281d3b29e565",
+     "chunk_id": "f65a2f0de16725f31a26281d3b29e565",
+     "score": 13.035
+    },
+    {
+     "rank": 20,
+     "doc_id": "dc5df0261c4a5e49b51c752e3498eb49",
+     "chunk_id": "dc5df0261c4a5e49b51c752e3498eb49",
+     "score": 12.9333
+    }
+   ],
+   "latency_s": 0.0017
+  },
+  {
+   "query": "Do director of film Ten9Eight: Shoot For The Moon and director of film Sabotage (1936 Film) share the same nationality?",
+   "gold_doc_ids": [
+    "18e5b9aec3b17756aa93795ae41c3042",
+    "b39f733548636f26bcfa9601aab13837",
+    "c98b3edcee236c86db02aa22b4ce435a",
+    "f1671ad5379af9453ac07eada7a5c7e1"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "f1671ad5379af9453ac07eada7a5c7e1",
+     "chunk_id": "f1671ad5379af9453ac07eada7a5c7e1",
+     "score": 43.4177
+    },
+    {
+     "rank": 2,
+     "doc_id": "18e5b9aec3b17756aa93795ae41c3042",
+     "chunk_id": "18e5b9aec3b17756aa93795ae41c3042",
+     "score": 32.3894
+    },
+    {
+     "rank": 3,
+     "doc_id": "2bf1679185b49ee19dc45822932ea443",
+     "chunk_id": "2bf1679185b49ee19dc45822932ea443",
+     "score": 28.9487
+    },
+    {
+     "rank": 4,
+     "doc_id": "b39f733548636f26bcfa9601aab13837",
+     "chunk_id": "b39f733548636f26bcfa9601aab13837",
+     "score": 25.3507
+    },
+    {
+     "rank": 5,
+     "doc_id": "68e045c212600d6822b16f1da7307850",
+     "chunk_id": "68e045c212600d6822b16f1da7307850",
+     "score": 25.0171
+    },
+    {
+     "rank": 6,
+     "doc_id": "e2dee29d86985d618d737b59885ee001",
+     "chunk_id": "e2dee29d86985d618d737b59885ee001",
+     "score": 24.8361
+    },
+    {
+     "rank": 7,
+     "doc_id": "e73232483330b2e8e94010210afd6588",
+     "chunk_id": "e73232483330b2e8e94010210afd6588",
+     "score": 24.569
+    },
+    {
+     "rank": 8,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 24.3204
+    },
+    {
+     "rank": 9,
+     "doc_id": "21b2b20cef1c87428e98653f29249cde",
+     "chunk_id": "21b2b20cef1c87428e98653f29249cde",
+     "score": 23.8278
+    },
+    {
+     "rank": 10,
+     "doc_id": "f5fc9736cc77766a2e959d10ee27f8e2",
+     "chunk_id": "f5fc9736cc77766a2e959d10ee27f8e2",
+     "score": 23.8113
+    },
+    {
+     "rank": 11,
+     "doc_id": "7369fd3c607dcdfaca5763c5fae0ffd7",
+     "chunk_id": "7369fd3c607dcdfaca5763c5fae0ffd7",
+     "score": 23.3983
+    },
+    {
+     "rank": 12,
+     "doc_id": "2bbbe1a5320ea02353c038fd2499be45",
+     "chunk_id": "2bbbe1a5320ea02353c038fd2499be45",
+     "score": 23.3818
+    },
+    {
+     "rank": 13,
+     "doc_id": "6ef5f712c5a37e2e7664407651f230eb",
+     "chunk_id": "6ef5f712c5a37e2e7664407651f230eb",
+     "score": 23.3253
+    },
+    {
+     "rank": 14,
+     "doc_id": "949eb8bd8fb713efe15464ec0585e119",
+     "chunk_id": "949eb8bd8fb713efe15464ec0585e119",
+     "score": 22.6584
+    },
+    {
+     "rank": 15,
+     "doc_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "chunk_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "score": 22.5718
+    },
+    {
+     "rank": 16,
+     "doc_id": "04be9022be73d3c30975853779418091",
+     "chunk_id": "04be9022be73d3c30975853779418091",
+     "score": 22.4216
+    },
+    {
+     "rank": 17,
+     "doc_id": "bcabf6630fd9cd5fcddf7435708559e2",
+     "chunk_id": "bcabf6630fd9cd5fcddf7435708559e2",
+     "score": 22.2868
+    },
+    {
+     "rank": 18,
+     "doc_id": "a6ec9e067466e55ebd52a27d175c9c23",
+     "chunk_id": "a6ec9e067466e55ebd52a27d175c9c23",
+     "score": 22.2213
+    },
+    {
+     "rank": 19,
+     "doc_id": "081e6967d8ac964c763a57710300e8c7",
+     "chunk_id": "081e6967d8ac964c763a57710300e8c7",
+     "score": 22.1663
+    },
+    {
+     "rank": 20,
+     "doc_id": "f3060480a06c96116a5cb056830b3939",
+     "chunk_id": "f3060480a06c96116a5cb056830b3939",
+     "score": 22.1636
+    }
+   ],
+   "latency_s": 0.0019
+  },
+  {
+   "query": "Are both villages, Rhosgoch and Qaleh-Ye Sahar, located in the same country?",
+   "gold_doc_ids": [
+    "c69c9d083730ee92806cc8fea0dff0da",
+    "d7e83beb33a7b2be9261724a343c0ab7"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "c69c9d083730ee92806cc8fea0dff0da",
+     "chunk_id": "c69c9d083730ee92806cc8fea0dff0da",
+     "score": 33.0617
+    },
+    {
+     "rank": 2,
+     "doc_id": "f803d26f9184e7e488bf3beb8369e95e",
+     "chunk_id": "f803d26f9184e7e488bf3beb8369e95e",
+     "score": 24.3995
+    },
+    {
+     "rank": 3,
+     "doc_id": "db1614ee5245f94fc9755ecbeb8d48df",
+     "chunk_id": "db1614ee5245f94fc9755ecbeb8d48df",
+     "score": 22.5133
+    },
+    {
+     "rank": 4,
+     "doc_id": "eb376abbaae5ba81182be779bea86123",
+     "chunk_id": "eb376abbaae5ba81182be779bea86123",
+     "score": 21.949
+    },
+    {
+     "rank": 5,
+     "doc_id": "f62753fd1213359a0b721a488b55ad24",
+     "chunk_id": "f62753fd1213359a0b721a488b55ad24",
+     "score": 20.4039
+    },
+    {
+     "rank": 6,
+     "doc_id": "3339ea249ce0fe0bade563d15cdf9dc8",
+     "chunk_id": "3339ea249ce0fe0bade563d15cdf9dc8",
+     "score": 20.3493
+    },
+    {
+     "rank": 7,
+     "doc_id": "6b78bf31220f37ad62122634aa782a64",
+     "chunk_id": "6b78bf31220f37ad62122634aa782a64",
+     "score": 20.3493
+    },
+    {
+     "rank": 8,
+     "doc_id": "cdd1b4a6f4f2cc5084f1c0c773b8f438",
+     "chunk_id": "cdd1b4a6f4f2cc5084f1c0c773b8f438",
+     "score": 18.9929
+    },
+    {
+     "rank": 9,
+     "doc_id": "d7e83beb33a7b2be9261724a343c0ab7",
+     "chunk_id": "d7e83beb33a7b2be9261724a343c0ab7",
+     "score": 18.9539
+    },
+    {
+     "rank": 10,
+     "doc_id": "135ac01252fbdb492d0827b2c3790a7b",
+     "chunk_id": "135ac01252fbdb492d0827b2c3790a7b",
+     "score": 18.4616
+    },
+    {
+     "rank": 11,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 16.6458
+    },
+    {
+     "rank": 12,
+     "doc_id": "2589dc481061819cb2a418c69f5eea9c",
+     "chunk_id": "2589dc481061819cb2a418c69f5eea9c",
+     "score": 16.4114
+    },
+    {
+     "rank": 13,
+     "doc_id": "4afe28783eac0302536e876c0cfce361",
+     "chunk_id": "4afe28783eac0302536e876c0cfce361",
+     "score": 16.1876
+    },
+    {
+     "rank": 14,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 15.4277
+    },
+    {
+     "rank": 15,
+     "doc_id": "4321c56613f4814a4f4a1e41cae7b2ff",
+     "chunk_id": "4321c56613f4814a4f4a1e41cae7b2ff",
+     "score": 15.3889
+    },
+    {
+     "rank": 16,
+     "doc_id": "45bd1d50566c1d7ebca65e6c9c0e949e",
+     "chunk_id": "45bd1d50566c1d7ebca65e6c9c0e949e",
+     "score": 15.3884
+    },
+    {
+     "rank": 17,
+     "doc_id": "8f8201a8a1c782f52a73f9284247175f",
+     "chunk_id": "8f8201a8a1c782f52a73f9284247175f",
+     "score": 15.3327
+    },
+    {
+     "rank": 18,
+     "doc_id": "f9fe668766b9d8f2f2da56e65c777d46",
+     "chunk_id": "f9fe668766b9d8f2f2da56e65c777d46",
+     "score": 14.9142
+    },
+    {
+     "rank": 19,
+     "doc_id": "772bfd32ad4197f7521594516cdec065",
+     "chunk_id": "772bfd32ad4197f7521594516cdec065",
+     "score": 14.8059
+    },
+    {
+     "rank": 20,
+     "doc_id": "82f2589ef0c82137b6986df81bd067dd",
+     "chunk_id": "82f2589ef0c82137b6986df81bd067dd",
+     "score": 14.5803
+    }
+   ],
+   "latency_s": 0.0014
+  },
+  {
+   "query": "Who is older, Les Briley or Jean Charles Carbone?",
+   "gold_doc_ids": [
+    "6bec27df0025820525739303e8970ba3",
+    "8484c3be271c02ad1d9821d9aeb8b178"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "6bec27df0025820525739303e8970ba3",
+     "chunk_id": "6bec27df0025820525739303e8970ba3",
+     "score": 22.6938
+    },
+    {
+     "rank": 2,
+     "doc_id": "8484c3be271c02ad1d9821d9aeb8b178",
+     "chunk_id": "8484c3be271c02ad1d9821d9aeb8b178",
+     "score": 18.3935
+    },
+    {
+     "rank": 3,
+     "doc_id": "cc9cf94b2ae11fc9c6316b4a8641636a",
+     "chunk_id": "cc9cf94b2ae11fc9c6316b4a8641636a",
+     "score": 15.8072
+    },
+    {
+     "rank": 4,
+     "doc_id": "4e56e35ec774e446b994635f02a615a6",
+     "chunk_id": "4e56e35ec774e446b994635f02a615a6",
+     "score": 13.7349
+    },
+    {
+     "rank": 5,
+     "doc_id": "393a70e434d47ea125e05120adb6e0cf",
+     "chunk_id": "393a70e434d47ea125e05120adb6e0cf",
+     "score": 13.7349
+    },
+    {
+     "rank": 6,
+     "doc_id": "2208434c4f0c2e7646a61025e987a9ef",
+     "chunk_id": "2208434c4f0c2e7646a61025e987a9ef",
+     "score": 13.5761
+    },
+    {
+     "rank": 7,
+     "doc_id": "0ca8b319ef6ad1fa0a8f9918f1b52a94",
+     "chunk_id": "0ca8b319ef6ad1fa0a8f9918f1b52a94",
+     "score": 13.2202
+    },
+    {
+     "rank": 8,
+     "doc_id": "d090af89819f8b5adf577ba96bb54915",
+     "chunk_id": "d090af89819f8b5adf577ba96bb54915",
+     "score": 12.01
+    },
+    {
+     "rank": 9,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 10.9736
+    },
+    {
+     "rank": 10,
+     "doc_id": "66dee39f779e5b5a80951b4154dc8202",
+     "chunk_id": "66dee39f779e5b5a80951b4154dc8202",
+     "score": 10.629
+    },
+    {
+     "rank": 11,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 10.1975
+    },
+    {
+     "rank": 12,
+     "doc_id": "ee5a55d1c7bf9771f8e64ef845fa9c0c",
+     "chunk_id": "ee5a55d1c7bf9771f8e64ef845fa9c0c",
+     "score": 9.5367
+    },
+    {
+     "rank": 13,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 9.3761
+    },
+    {
+     "rank": 14,
+     "doc_id": "df246f13234629b579510a3439aa4568",
+     "chunk_id": "df246f13234629b579510a3439aa4568",
+     "score": 8.833
+    },
+    {
+     "rank": 15,
+     "doc_id": "c95369570942e2d6e9764acb9c9ea75b",
+     "chunk_id": "c95369570942e2d6e9764acb9c9ea75b",
+     "score": 8.7315
+    },
+    {
+     "rank": 16,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 8.4697
+    },
+    {
+     "rank": 17,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 8.4169
+    },
+    {
+     "rank": 18,
+     "doc_id": "364686b5765eba7188a2a0daa7476bc5",
+     "chunk_id": "364686b5765eba7188a2a0daa7476bc5",
+     "score": 8.265
+    },
+    {
+     "rank": 19,
+     "doc_id": "ec739dd7210099355957d8deda52d8cd",
+     "chunk_id": "ec739dd7210099355957d8deda52d8cd",
+     "score": 7.9753
+    },
+    {
+     "rank": 20,
+     "doc_id": "7ca975e95190ea663cca44a134f6b93b",
+     "chunk_id": "7ca975e95190ea663cca44a134f6b93b",
+     "score": 7.7392
+    }
+   ],
+   "latency_s": 0.001
+  },
+  {
+   "query": "Are Ntnu University Museum and Anno Museum located in the same country?",
+   "gold_doc_ids": [
+    "009cdbeb0655e62b2b440746c909db40",
+    "7ab832927adea6e1879fc7aaf6ec8e85"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "009cdbeb0655e62b2b440746c909db40",
+     "chunk_id": "009cdbeb0655e62b2b440746c909db40",
+     "score": 37.9689
+    },
+    {
+     "rank": 2,
+     "doc_id": "7ab832927adea6e1879fc7aaf6ec8e85",
+     "chunk_id": "7ab832927adea6e1879fc7aaf6ec8e85",
+     "score": 28.0107
+    },
+    {
+     "rank": 3,
+     "doc_id": "0b14c8dfa5a3ab33a0bb2100d83088a9",
+     "chunk_id": "0b14c8dfa5a3ab33a0bb2100d83088a9",
+     "score": 26.9984
+    },
+    {
+     "rank": 4,
+     "doc_id": "05a12869c50d8a06cbe0af8f3c430e4f",
+     "chunk_id": "05a12869c50d8a06cbe0af8f3c430e4f",
+     "score": 26.7021
+    },
+    {
+     "rank": 5,
+     "doc_id": "4321c56613f4814a4f4a1e41cae7b2ff",
+     "chunk_id": "4321c56613f4814a4f4a1e41cae7b2ff",
+     "score": 25.37
+    },
+    {
+     "rank": 6,
+     "doc_id": "c18d6d66027bbd8eaa5e6a861a2b3da4",
+     "chunk_id": "c18d6d66027bbd8eaa5e6a861a2b3da4",
+     "score": 24.4117
+    },
+    {
+     "rank": 7,
+     "doc_id": "362adfde92bf9d9071d66618351b8935",
+     "chunk_id": "362adfde92bf9d9071d66618351b8935",
+     "score": 23.8691
+    },
+    {
+     "rank": 8,
+     "doc_id": "9a395b7cd0e823a3db9348fb9ffbb703",
+     "chunk_id": "9a395b7cd0e823a3db9348fb9ffbb703",
+     "score": 21.601
+    },
+    {
+     "rank": 9,
+     "doc_id": "e720ab502a3e3e1044c4906be24ea757",
+     "chunk_id": "e720ab502a3e3e1044c4906be24ea757",
+     "score": 20.3267
+    },
+    {
+     "rank": 10,
+     "doc_id": "2d741833f6ed6354599ebd882b481d8e",
+     "chunk_id": "2d741833f6ed6354599ebd882b481d8e",
+     "score": 19.6709
+    },
+    {
+     "rank": 11,
+     "doc_id": "135ac01252fbdb492d0827b2c3790a7b",
+     "chunk_id": "135ac01252fbdb492d0827b2c3790a7b",
+     "score": 15.1207
+    },
+    {
+     "rank": 12,
+     "doc_id": "cdd1b4a6f4f2cc5084f1c0c773b8f438",
+     "chunk_id": "cdd1b4a6f4f2cc5084f1c0c773b8f438",
+     "score": 14.1309
+    },
+    {
+     "rank": 13,
+     "doc_id": "5fcfe2b55ab10c6c3b61d3c06c599f06",
+     "chunk_id": "5fcfe2b55ab10c6c3b61d3c06c599f06",
+     "score": 13.2297
+    },
+    {
+     "rank": 14,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 11.1844
+    },
+    {
+     "rank": 15,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 10.8358
+    },
+    {
+     "rank": 16,
+     "doc_id": "2589dc481061819cb2a418c69f5eea9c",
+     "chunk_id": "2589dc481061819cb2a418c69f5eea9c",
+     "score": 10.6743
+    },
+    {
+     "rank": 17,
+     "doc_id": "49f06b7c18883b92048e4c28c5be2e17",
+     "chunk_id": "49f06b7c18883b92048e4c28c5be2e17",
+     "score": 10.635
+    },
+    {
+     "rank": 18,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 10.5964
+    },
+    {
+     "rank": 19,
+     "doc_id": "94be6787de027e829be756accb41bc06",
+     "chunk_id": "94be6787de027e829be756accb41bc06",
+     "score": 10.543
+    },
+    {
+     "rank": 20,
+     "doc_id": "82f2589ef0c82137b6986df81bd067dd",
+     "chunk_id": "82f2589ef0c82137b6986df81bd067dd",
+     "score": 10.4799
+    }
+   ],
+   "latency_s": 0.0011
+  },
+  {
+   "query": "What nationality is Beatrice I, Countess Of Burgundy's husband?",
+   "gold_doc_ids": [
+    "a5bdb95fb512145dcf9e84c265706278",
+    "e9b1467322d6190a037e5d3d654ca64a"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "a5bdb95fb512145dcf9e84c265706278",
+     "chunk_id": "a5bdb95fb512145dcf9e84c265706278",
+     "score": 27.1065
+    },
+    {
+     "rank": 2,
+     "doc_id": "71ed9fe68f9f38424cecdf499da76e06",
+     "chunk_id": "71ed9fe68f9f38424cecdf499da76e06",
+     "score": 25.0232
+    },
+    {
+     "rank": 3,
+     "doc_id": "4648b2446c781a9301ea06ee0b9e527e",
+     "chunk_id": "4648b2446c781a9301ea06ee0b9e527e",
+     "score": 22.4206
+    },
+    {
+     "rank": 4,
+     "doc_id": "ac60bd1915dadaaaa9109de0e3c83474",
+     "chunk_id": "ac60bd1915dadaaaa9109de0e3c83474",
+     "score": 18.79
+    },
+    {
+     "rank": 5,
+     "doc_id": "0c8776b2f078bc9621d46acec3af9a94",
+     "chunk_id": "0c8776b2f078bc9621d46acec3af9a94",
+     "score": 18.5422
+    },
+    {
+     "rank": 6,
+     "doc_id": "57d026e1051e1cecf90c9ae3180aea24",
+     "chunk_id": "57d026e1051e1cecf90c9ae3180aea24",
+     "score": 17.7126
+    },
+    {
+     "rank": 7,
+     "doc_id": "6a7433408700878900c0fec4c5fdb567",
+     "chunk_id": "6a7433408700878900c0fec4c5fdb567",
+     "score": 17.6969
+    },
+    {
+     "rank": 8,
+     "doc_id": "0013b5066442f2b86c7fc8a2ca41e6be",
+     "chunk_id": "0013b5066442f2b86c7fc8a2ca41e6be",
+     "score": 17.4269
+    },
+    {
+     "rank": 9,
+     "doc_id": "dbee498d8a0ddcc8c831d977997615fd",
+     "chunk_id": "dbee498d8a0ddcc8c831d977997615fd",
+     "score": 16.5246
+    },
+    {
+     "rank": 10,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 16.0175
+    },
+    {
+     "rank": 11,
+     "doc_id": "0aa03419099d8c4d2801c7bdddb599cc",
+     "chunk_id": "0aa03419099d8c4d2801c7bdddb599cc",
+     "score": 15.9468
+    },
+    {
+     "rank": 12,
+     "doc_id": "8908161faa71d1b7353aabe34982e9d9",
+     "chunk_id": "8908161faa71d1b7353aabe34982e9d9",
+     "score": 15.6425
+    },
+    {
+     "rank": 13,
+     "doc_id": "e4d09cab477c2c1c1d96b39900e1a59e",
+     "chunk_id": "e4d09cab477c2c1c1d96b39900e1a59e",
+     "score": 14.324
+    },
+    {
+     "rank": 14,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 14.29
+    },
+    {
+     "rank": 15,
+     "doc_id": "c35f5472429634b2a7d8fdb0725e44ce",
+     "chunk_id": "c35f5472429634b2a7d8fdb0725e44ce",
+     "score": 13.7832
+    },
+    {
+     "rank": 16,
+     "doc_id": "ed0dd1ef7bbcbd97cc490fb1a33861e6",
+     "chunk_id": "ed0dd1ef7bbcbd97cc490fb1a33861e6",
+     "score": 13.3636
+    },
+    {
+     "rank": 17,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 13.1578
+    },
+    {
+     "rank": 18,
+     "doc_id": "cc0ac295858074a5339b68925537ef3c",
+     "chunk_id": "cc0ac295858074a5339b68925537ef3c",
+     "score": 12.8307
+    },
+    {
+     "rank": 19,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 12.8197
+    },
+    {
+     "rank": 20,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 12.5573
+    }
+   ],
+   "latency_s": 0.0011
+  },
+  {
+   "query": "Who is Anne Gust Brown's father-in-law?",
+   "gold_doc_ids": [
+    "90670732e28e2a9ed9712c16e592fc28",
+    "f9fe668766b9d8f2f2da56e65c777d46"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "90670732e28e2a9ed9712c16e592fc28",
+     "chunk_id": "90670732e28e2a9ed9712c16e592fc28",
+     "score": 27.9471
+    },
+    {
+     "rank": 2,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 15.5836
+    },
+    {
+     "rank": 3,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 13.5036
+    },
+    {
+     "rank": 4,
+     "doc_id": "c98b3edcee236c86db02aa22b4ce435a",
+     "chunk_id": "c98b3edcee236c86db02aa22b4ce435a",
+     "score": 12.571
+    },
+    {
+     "rank": 5,
+     "doc_id": "f9fe668766b9d8f2f2da56e65c777d46",
+     "chunk_id": "f9fe668766b9d8f2f2da56e65c777d46",
+     "score": 12.4881
+    },
+    {
+     "rank": 6,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 11.6088
+    },
+    {
+     "rank": 7,
+     "doc_id": "21b2b20cef1c87428e98653f29249cde",
+     "chunk_id": "21b2b20cef1c87428e98653f29249cde",
+     "score": 11.5737
+    },
+    {
+     "rank": 8,
+     "doc_id": "c51393bb99a403ce8e16d50a2ad2b045",
+     "chunk_id": "c51393bb99a403ce8e16d50a2ad2b045",
+     "score": 10.8202
+    },
+    {
+     "rank": 9,
+     "doc_id": "8c37a60698655ce3eb100d2f4c0b9a28",
+     "chunk_id": "8c37a60698655ce3eb100d2f4c0b9a28",
+     "score": 10.7806
+    },
+    {
+     "rank": 10,
+     "doc_id": "3b84daacb25961fa31039e0bf03b7257",
+     "chunk_id": "3b84daacb25961fa31039e0bf03b7257",
+     "score": 10.6591
+    },
+    {
+     "rank": 11,
+     "doc_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "chunk_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "score": 10.6034
+    },
+    {
+     "rank": 12,
+     "doc_id": "50973b62548f60c08c5441249ed4190c",
+     "chunk_id": "50973b62548f60c08c5441249ed4190c",
+     "score": 10.2832
+    },
+    {
+     "rank": 13,
+     "doc_id": "5b341d5b394179f5782266ebdaab193a",
+     "chunk_id": "5b341d5b394179f5782266ebdaab193a",
+     "score": 10.2256
+    },
+    {
+     "rank": 14,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 10.1815
+    },
+    {
+     "rank": 15,
+     "doc_id": "e21e765c279268a90ee68dbb5f7a13f4",
+     "chunk_id": "e21e765c279268a90ee68dbb5f7a13f4",
+     "score": 10.0777
+    },
+    {
+     "rank": 16,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 9.9714
+    },
+    {
+     "rank": 17,
+     "doc_id": "364686b5765eba7188a2a0daa7476bc5",
+     "chunk_id": "364686b5765eba7188a2a0daa7476bc5",
+     "score": 9.8975
+    },
+    {
+     "rank": 18,
+     "doc_id": "19ef7c03ef14598f6097ee6fc93dc737",
+     "chunk_id": "19ef7c03ef14598f6097ee6fc93dc737",
+     "score": 9.8668
+    },
+    {
+     "rank": 19,
+     "doc_id": "f20395b903801337d1ed91f28275898c",
+     "chunk_id": "f20395b903801337d1ed91f28275898c",
+     "score": 9.8006
+    },
+    {
+     "rank": 20,
+     "doc_id": "4c996241520f075e3ffc5834683ebf5e",
+     "chunk_id": "4c996241520f075e3ffc5834683ebf5e",
+     "score": 9.7167
+    }
+   ],
+   "latency_s": 0.0011
+  },
+  {
+   "query": "Which country Lord Charles Arthur Francis Cavendish's wife is from?",
+   "gold_doc_ids": [
+    "42e6bc443394574a61a2b065ddbccbc2",
+    "cca06a3496803f69e2bce5c8ed2e3558"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "cca06a3496803f69e2bce5c8ed2e3558",
+     "chunk_id": "cca06a3496803f69e2bce5c8ed2e3558",
+     "score": 27.2559
+    },
+    {
+     "rank": 2,
+     "doc_id": "3df5eabb91663fcb50f17ccf3557c207",
+     "chunk_id": "3df5eabb91663fcb50f17ccf3557c207",
+     "score": 15.3985
+    },
+    {
+     "rank": 3,
+     "doc_id": "e1644250a0ada6dd4cb845e0c72c958b",
+     "chunk_id": "e1644250a0ada6dd4cb845e0c72c958b",
+     "score": 14.0806
+    },
+    {
+     "rank": 4,
+     "doc_id": "c3721bebc9618b7198a9dedfd4b4cbe6",
+     "chunk_id": "c3721bebc9618b7198a9dedfd4b4cbe6",
+     "score": 13.6754
+    },
+    {
+     "rank": 5,
+     "doc_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "chunk_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "score": 13.1497
+    },
+    {
+     "rank": 6,
+     "doc_id": "c9b0242e613d37467d24965170500cf7",
+     "chunk_id": "c9b0242e613d37467d24965170500cf7",
+     "score": 12.806
+    },
+    {
+     "rank": 7,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 12.5573
+    },
+    {
+     "rank": 8,
+     "doc_id": "42e6bc443394574a61a2b065ddbccbc2",
+     "chunk_id": "42e6bc443394574a61a2b065ddbccbc2",
+     "score": 12.0847
+    },
+    {
+     "rank": 9,
+     "doc_id": "7ca975e95190ea663cca44a134f6b93b",
+     "chunk_id": "7ca975e95190ea663cca44a134f6b93b",
+     "score": 11.9196
+    },
+    {
+     "rank": 10,
+     "doc_id": "50e684912f68e2eed0ad957d34ba99ef",
+     "chunk_id": "50e684912f68e2eed0ad957d34ba99ef",
+     "score": 11.7995
+    },
+    {
+     "rank": 11,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 11.5574
+    },
+    {
+     "rank": 12,
+     "doc_id": "78a3eb94de51ea2cdec5849363d7b680",
+     "chunk_id": "78a3eb94de51ea2cdec5849363d7b680",
+     "score": 11.3661
+    },
+    {
+     "rank": 13,
+     "doc_id": "62133440855e78369c0b236da68e50ba",
+     "chunk_id": "62133440855e78369c0b236da68e50ba",
+     "score": 11.3442
+    },
+    {
+     "rank": 14,
+     "doc_id": "f9db74248d8b7631b6496f432adc8075",
+     "chunk_id": "f9db74248d8b7631b6496f432adc8075",
+     "score": 11.0689
+    },
+    {
+     "rank": 15,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 10.1815
+    },
+    {
+     "rank": 16,
+     "doc_id": "cc9cf94b2ae11fc9c6316b4a8641636a",
+     "chunk_id": "cc9cf94b2ae11fc9c6316b4a8641636a",
+     "score": 9.6406
+    },
+    {
+     "rank": 17,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 9.4352
+    },
+    {
+     "rank": 18,
+     "doc_id": "adfbf49aa139357bce5206f057a01d36",
+     "chunk_id": "adfbf49aa139357bce5206f057a01d36",
+     "score": 8.7561
+    },
+    {
+     "rank": 19,
+     "doc_id": "a2394fcd6d7422c7908e4dc2e8e3aee7",
+     "chunk_id": "a2394fcd6d7422c7908e4dc2e8e3aee7",
+     "score": 8.7226
+    },
+    {
+     "rank": 20,
+     "doc_id": "364686b5765eba7188a2a0daa7476bc5",
+     "chunk_id": "364686b5765eba7188a2a0daa7476bc5",
+     "score": 8.265
+    }
+   ],
+   "latency_s": 0.0011
+  },
+  {
+   "query": "Which film has the director who was born first, Folly To Be Wise or The Jerk?",
+   "gold_doc_ids": [
+    "080f0eeb4216c29508a206170c772540",
+    "3dd732d896b44362cf9d52bd79bfcbad",
+    "efb7817d94a2e440e9b44fc01ad2da73",
+    "fb5611136ddbc8da145a43a4e7b878c4"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "080f0eeb4216c29508a206170c772540",
+     "chunk_id": "080f0eeb4216c29508a206170c772540",
+     "score": 32.0423
+    },
+    {
+     "rank": 2,
+     "doc_id": "3dd732d896b44362cf9d52bd79bfcbad",
+     "chunk_id": "3dd732d896b44362cf9d52bd79bfcbad",
+     "score": 20.8331
+    },
+    {
+     "rank": 3,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 20.3626
+    },
+    {
+     "rank": 4,
+     "doc_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "chunk_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "score": 19.4015
+    },
+    {
+     "rank": 5,
+     "doc_id": "ade9d5a26c029805c15918c168fc7ef5",
+     "chunk_id": "ade9d5a26c029805c15918c168fc7ef5",
+     "score": 18.1739
+    },
+    {
+     "rank": 6,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 17.8723
+    },
+    {
+     "rank": 7,
+     "doc_id": "6f3145ba53247fb494d8828d7dd0d223",
+     "chunk_id": "6f3145ba53247fb494d8828d7dd0d223",
+     "score": 17.6274
+    },
+    {
+     "rank": 8,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 17.4888
+    },
+    {
+     "rank": 9,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 17.3938
+    },
+    {
+     "rank": 10,
+     "doc_id": "4ce7961a689fca2c9b973acd76b76966",
+     "chunk_id": "4ce7961a689fca2c9b973acd76b76966",
+     "score": 16.2569
+    },
+    {
+     "rank": 11,
+     "doc_id": "0822effcd5d53261ac9fda697e3e2e71",
+     "chunk_id": "0822effcd5d53261ac9fda697e3e2e71",
+     "score": 16.0426
+    },
+    {
+     "rank": 12,
+     "doc_id": "90670732e28e2a9ed9712c16e592fc28",
+     "chunk_id": "90670732e28e2a9ed9712c16e592fc28",
+     "score": 15.8163
+    },
+    {
+     "rank": 13,
+     "doc_id": "da8cd12246bbbc382ca208f658d4a835",
+     "chunk_id": "da8cd12246bbbc382ca208f658d4a835",
+     "score": 15.7404
+    },
+    {
+     "rank": 14,
+     "doc_id": "e73232483330b2e8e94010210afd6588",
+     "chunk_id": "e73232483330b2e8e94010210afd6588",
+     "score": 15.6735
+    },
+    {
+     "rank": 15,
+     "doc_id": "e55282b887bab9ace6c46d17aa9bcff1",
+     "chunk_id": "e55282b887bab9ace6c46d17aa9bcff1",
+     "score": 15.6231
+    },
+    {
+     "rank": 16,
+     "doc_id": "df246f13234629b579510a3439aa4568",
+     "chunk_id": "df246f13234629b579510a3439aa4568",
+     "score": 15.1778
+    },
+    {
+     "rank": 17,
+     "doc_id": "18e5b9aec3b17756aa93795ae41c3042",
+     "chunk_id": "18e5b9aec3b17756aa93795ae41c3042",
+     "score": 15.1478
+    },
+    {
+     "rank": 18,
+     "doc_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "chunk_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "score": 15.1254
+    },
+    {
+     "rank": 19,
+     "doc_id": "04be9022be73d3c30975853779418091",
+     "chunk_id": "04be9022be73d3c30975853779418091",
+     "score": 15.0396
+    },
+    {
+     "rank": 20,
+     "doc_id": "a6ec9e067466e55ebd52a27d175c9c23",
+     "chunk_id": "a6ec9e067466e55ebd52a27d175c9c23",
+     "score": 14.9054
+    }
+   ],
+   "latency_s": 0.0015
+  },
+  {
+   "query": "Who is the uncle of Filippa Fleming?",
+   "gold_doc_ids": [
+    "45bd1d50566c1d7ebca65e6c9c0e949e",
+    "b7a3906464649154be3b9f0a677fdd7e"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "45bd1d50566c1d7ebca65e6c9c0e949e",
+     "chunk_id": "45bd1d50566c1d7ebca65e6c9c0e949e",
+     "score": 19.7595
+    },
+    {
+     "rank": 2,
+     "doc_id": "b7a3906464649154be3b9f0a677fdd7e",
+     "chunk_id": "b7a3906464649154be3b9f0a677fdd7e",
+     "score": 14.1504
+    },
+    {
+     "rank": 3,
+     "doc_id": "34e9d23908a6e6a190e2fadfe9eb9a77",
+     "chunk_id": "34e9d23908a6e6a190e2fadfe9eb9a77",
+     "score": 12.1022
+    },
+    {
+     "rank": 4,
+     "doc_id": "b0835e05416055efdb6308770f633874",
+     "chunk_id": "b0835e05416055efdb6308770f633874",
+     "score": 11.7775
+    },
+    {
+     "rank": 5,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 11.5151
+    },
+    {
+     "rank": 6,
+     "doc_id": "35b99ce49602f7d1b6ed821494e9796a",
+     "chunk_id": "35b99ce49602f7d1b6ed821494e9796a",
+     "score": 11.1063
+    },
+    {
+     "rank": 7,
+     "doc_id": "c5319a48f78fe5fc4afa908ae85b6332",
+     "chunk_id": "c5319a48f78fe5fc4afa908ae85b6332",
+     "score": 10.7474
+    },
+    {
+     "rank": 8,
+     "doc_id": "42c0a4b8a296137da6d260747cb3b31a",
+     "chunk_id": "42c0a4b8a296137da6d260747cb3b31a",
+     "score": 10.5987
+    },
+    {
+     "rank": 9,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 10.1975
+    },
+    {
+     "rank": 10,
+     "doc_id": "22feed7d9b4ea731b0d97bef7648720b",
+     "chunk_id": "22feed7d9b4ea731b0d97bef7648720b",
+     "score": 10.0284
+    },
+    {
+     "rank": 11,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 9.9101
+    },
+    {
+     "rank": 12,
+     "doc_id": "6922f1ced123bee50c8c8a7c362867c4",
+     "chunk_id": "6922f1ced123bee50c8c8a7c362867c4",
+     "score": 9.6852
+    },
+    {
+     "rank": 13,
+     "doc_id": "3ed4885248005fdc6262bfbc0d1d1b2c",
+     "chunk_id": "3ed4885248005fdc6262bfbc0d1d1b2c",
+     "score": 9.2362
+    },
+    {
+     "rank": 14,
+     "doc_id": "fed9e05852c8a12caf851e8ac70d010a",
+     "chunk_id": "fed9e05852c8a12caf851e8ac70d010a",
+     "score": 8.8174
+    },
+    {
+     "rank": 15,
+     "doc_id": "19ef7c03ef14598f6097ee6fc93dc737",
+     "chunk_id": "19ef7c03ef14598f6097ee6fc93dc737",
+     "score": 8.7572
+    },
+    {
+     "rank": 16,
+     "doc_id": "bc419bdef394b95b5afa1aa9eb923aa5",
+     "chunk_id": "bc419bdef394b95b5afa1aa9eb923aa5",
+     "score": 8.6907
+    },
+    {
+     "rank": 17,
+     "doc_id": "15cc85efd782d4bedea3aaa596a0ed64",
+     "chunk_id": "15cc85efd782d4bedea3aaa596a0ed64",
+     "score": 8.4592
+    },
+    {
+     "rank": 18,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 8.4169
+    },
+    {
+     "rank": 19,
+     "doc_id": "ac367644f88bb345c890ca00ef508f0d",
+     "chunk_id": "ac367644f88bb345c890ca00ef508f0d",
+     "score": 8.3138
+    },
+    {
+     "rank": 20,
+     "doc_id": "364686b5765eba7188a2a0daa7476bc5",
+     "chunk_id": "364686b5765eba7188a2a0daa7476bc5",
+     "score": 8.265
+    }
+   ],
+   "latency_s": 0.0008
+  },
+  {
+   "query": "What is the place of birth of the director of film The Blue And White Lion?",
+   "gold_doc_ids": [
+    "20ef09ab5c5e2e45c56aa0f206841535",
+    "ff70fac209b01b3eb88c0e6c839d52e4"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "ff70fac209b01b3eb88c0e6c839d52e4",
+     "chunk_id": "ff70fac209b01b3eb88c0e6c839d52e4",
+     "score": 38.4991
+    },
+    {
+     "rank": 2,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 35.6009
+    },
+    {
+     "rank": 3,
+     "doc_id": "89fcfefcd0a305bc4fffe9de6f7673b1",
+     "chunk_id": "89fcfefcd0a305bc4fffe9de6f7673b1",
+     "score": 30.3198
+    },
+    {
+     "rank": 4,
+     "doc_id": "7369fd3c607dcdfaca5763c5fae0ffd7",
+     "chunk_id": "7369fd3c607dcdfaca5763c5fae0ffd7",
+     "score": 22.0833
+    },
+    {
+     "rank": 5,
+     "doc_id": "450d6f2885f58e73f6721d15f70e1371",
+     "chunk_id": "450d6f2885f58e73f6721d15f70e1371",
+     "score": 21.9728
+    },
+    {
+     "rank": 6,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 21.9257
+    },
+    {
+     "rank": 7,
+     "doc_id": "e2dee29d86985d618d737b59885ee001",
+     "chunk_id": "e2dee29d86985d618d737b59885ee001",
+     "score": 21.7449
+    },
+    {
+     "rank": 8,
+     "doc_id": "21b2b20cef1c87428e98653f29249cde",
+     "chunk_id": "21b2b20cef1c87428e98653f29249cde",
+     "score": 21.7407
+    },
+    {
+     "rank": 9,
+     "doc_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "chunk_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "score": 21.7405
+    },
+    {
+     "rank": 10,
+     "doc_id": "1c37eb84853aa67603ca402056fecaa9",
+     "chunk_id": "1c37eb84853aa67603ca402056fecaa9",
+     "score": 21.3264
+    },
+    {
+     "rank": 11,
+     "doc_id": "080f0eeb4216c29508a206170c772540",
+     "chunk_id": "080f0eeb4216c29508a206170c772540",
+     "score": 21.1385
+    },
+    {
+     "rank": 12,
+     "doc_id": "0df8a8fa629408d4eeebb36a962c01e5",
+     "chunk_id": "0df8a8fa629408d4eeebb36a962c01e5",
+     "score": 21.0402
+    },
+    {
+     "rank": 13,
+     "doc_id": "bcabf6630fd9cd5fcddf7435708559e2",
+     "chunk_id": "bcabf6630fd9cd5fcddf7435708559e2",
+     "score": 20.8893
+    },
+    {
+     "rank": 14,
+     "doc_id": "0327a02c134135061b0c61b1752c40a0",
+     "chunk_id": "0327a02c134135061b0c61b1752c40a0",
+     "score": 20.7826
+    },
+    {
+     "rank": 15,
+     "doc_id": "116b1add42dee157dd96271a2f71bc2e",
+     "chunk_id": "116b1add42dee157dd96271a2f71bc2e",
+     "score": 20.7219
+    },
+    {
+     "rank": 16,
+     "doc_id": "2eec16b775677e9fe606b62239ba62ce",
+     "chunk_id": "2eec16b775677e9fe606b62239ba62ce",
+     "score": 20.4417
+    },
+    {
+     "rank": 17,
+     "doc_id": "041f5b7c73ecace1fd7a1c05c6e36570",
+     "chunk_id": "041f5b7c73ecace1fd7a1c05c6e36570",
+     "score": 20.3902
+    },
+    {
+     "rank": 18,
+     "doc_id": "764ec3082ef1a8b6789d9c34ea5e6d4e",
+     "chunk_id": "764ec3082ef1a8b6789d9c34ea5e6d4e",
+     "score": 20.3792
+    },
+    {
+     "rank": 19,
+     "doc_id": "5d2e8d4dc12f4fa00041d6d093a6b7aa",
+     "chunk_id": "5d2e8d4dc12f4fa00041d6d093a6b7aa",
+     "score": 20.1928
+    },
+    {
+     "rank": 20,
+     "doc_id": "fae712cd6849581f65b6753a24e35ceb",
+     "chunk_id": "fae712cd6849581f65b6753a24e35ceb",
+     "score": 20.1697
+    }
+   ],
+   "latency_s": 0.0014
+  },
+  {
+   "query": "Who was born first out of Aivar Kuusmaa and Andy Summers?",
+   "gold_doc_ids": [
+    "0543a1f09c95bae1dbaf810282858a32",
+    "e632a23c983e1bfdf83a84d619896091"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "0543a1f09c95bae1dbaf810282858a32",
+     "chunk_id": "0543a1f09c95bae1dbaf810282858a32",
+     "score": 23.505
+    },
+    {
+     "rank": 2,
+     "doc_id": "e632a23c983e1bfdf83a84d619896091",
+     "chunk_id": "e632a23c983e1bfdf83a84d619896091",
+     "score": 21.2203
+    },
+    {
+     "rank": 3,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 16.7773
+    },
+    {
+     "rank": 4,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 13.9203
+    },
+    {
+     "rank": 5,
+     "doc_id": "9dca622f4b39f4c6d72760a5a07c48e8",
+     "chunk_id": "9dca622f4b39f4c6d72760a5a07c48e8",
+     "score": 11.7174
+    },
+    {
+     "rank": 6,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 11.5151
+    },
+    {
+     "rank": 7,
+     "doc_id": "ecfd7d7e9b3ffc34fdac924497d48788",
+     "chunk_id": "ecfd7d7e9b3ffc34fdac924497d48788",
+     "score": 10.5777
+    },
+    {
+     "rank": 8,
+     "doc_id": "42e6bc443394574a61a2b065ddbccbc2",
+     "chunk_id": "42e6bc443394574a61a2b065ddbccbc2",
+     "score": 10.4852
+    },
+    {
+     "rank": 9,
+     "doc_id": "364686b5765eba7188a2a0daa7476bc5",
+     "chunk_id": "364686b5765eba7188a2a0daa7476bc5",
+     "score": 9.8975
+    },
+    {
+     "rank": 10,
+     "doc_id": "0bf543655ff47e6c0e79a92fd1cc09c1",
+     "chunk_id": "0bf543655ff47e6c0e79a92fd1cc09c1",
+     "score": 9.7858
+    },
+    {
+     "rank": 11,
+     "doc_id": "f9fe668766b9d8f2f2da56e65c777d46",
+     "chunk_id": "f9fe668766b9d8f2f2da56e65c777d46",
+     "score": 9.7457
+    },
+    {
+     "rank": 12,
+     "doc_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "chunk_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "score": 9.7441
+    },
+    {
+     "rank": 13,
+     "doc_id": "94be6787de027e829be756accb41bc06",
+     "chunk_id": "94be6787de027e829be756accb41bc06",
+     "score": 9.5394
+    },
+    {
+     "rank": 14,
+     "doc_id": "3fe1127679890d3a57ea65aa21f75a30",
+     "chunk_id": "3fe1127679890d3a57ea65aa21f75a30",
+     "score": 9.4852
+    },
+    {
+     "rank": 15,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 9.3761
+    },
+    {
+     "rank": 16,
+     "doc_id": "e6bd3e1c5639a87657f61555c9d249dc",
+     "chunk_id": "e6bd3e1c5639a87657f61555c9d249dc",
+     "score": 9.1661
+    },
+    {
+     "rank": 17,
+     "doc_id": "d52bd79d6c5c8760640889a100e1c236",
+     "chunk_id": "d52bd79d6c5c8760640889a100e1c236",
+     "score": 9.0679
+    },
+    {
+     "rank": 18,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 8.9114
+    },
+    {
+     "rank": 19,
+     "doc_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "chunk_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "score": 8.8761
+    },
+    {
+     "rank": 20,
+     "doc_id": "d5054fc59cc8dde05fe741dfb2a47540",
+     "chunk_id": "d5054fc59cc8dde05fe741dfb2a47540",
+     "score": 8.8743
+    }
+   ],
+   "latency_s": 0.0011
+  },
+  {
+   "query": "Who is the father of the director of film Someone I Loved?",
+   "gold_doc_ids": [
+    "59dc0497121c22799da01c68f28e6d98",
+    "df246f13234629b579510a3439aa4568"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "59dc0497121c22799da01c68f28e6d98",
+     "chunk_id": "59dc0497121c22799da01c68f28e6d98",
+     "score": 30.1307
+    },
+    {
+     "rank": 2,
+     "doc_id": "6885d83314ded4891d30a177f227d116",
+     "chunk_id": "6885d83314ded4891d30a177f227d116",
+     "score": 19.2821
+    },
+    {
+     "rank": 3,
+     "doc_id": "21b2b20cef1c87428e98653f29249cde",
+     "chunk_id": "21b2b20cef1c87428e98653f29249cde",
+     "score": 18.073
+    },
+    {
+     "rank": 4,
+     "doc_id": "e2dee29d86985d618d737b59885ee001",
+     "chunk_id": "e2dee29d86985d618d737b59885ee001",
+     "score": 17.8744
+    },
+    {
+     "rank": 5,
+     "doc_id": "1c37eb84853aa67603ca402056fecaa9",
+     "chunk_id": "1c37eb84853aa67603ca402056fecaa9",
+     "score": 17.8061
+    },
+    {
+     "rank": 6,
+     "doc_id": "0b2cc3b302ec3650676ae022b53ef223",
+     "chunk_id": "0b2cc3b302ec3650676ae022b53ef223",
+     "score": 17.5303
+    },
+    {
+     "rank": 7,
+     "doc_id": "7369fd3c607dcdfaca5763c5fae0ffd7",
+     "chunk_id": "7369fd3c607dcdfaca5763c5fae0ffd7",
+     "score": 17.2438
+    },
+    {
+     "rank": 8,
+     "doc_id": "ed0dd1ef7bbcbd97cc490fb1a33861e6",
+     "chunk_id": "ed0dd1ef7bbcbd97cc490fb1a33861e6",
+     "score": 17.1732
+    },
+    {
+     "rank": 9,
+     "doc_id": "2bbbe1a5320ea02353c038fd2499be45",
+     "chunk_id": "2bbbe1a5320ea02353c038fd2499be45",
+     "score": 16.3585
+    },
+    {
+     "rank": 10,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 16.0934
+    },
+    {
+     "rank": 11,
+     "doc_id": "2ecc960f169f316e833cbaeaffeab7e7",
+     "chunk_id": "2ecc960f169f316e833cbaeaffeab7e7",
+     "score": 15.7793
+    },
+    {
+     "rank": 12,
+     "doc_id": "0e1e2401c7af3c6e69ac6ce0eb9600d9",
+     "chunk_id": "0e1e2401c7af3c6e69ac6ce0eb9600d9",
+     "score": 15.3978
+    },
+    {
+     "rank": 13,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 15.3683
+    },
+    {
+     "rank": 14,
+     "doc_id": "15cc85efd782d4bedea3aaa596a0ed64",
+     "chunk_id": "15cc85efd782d4bedea3aaa596a0ed64",
+     "score": 15.134
+    },
+    {
+     "rank": 15,
+     "doc_id": "68e045c212600d6822b16f1da7307850",
+     "chunk_id": "68e045c212600d6822b16f1da7307850",
+     "score": 15.0601
+    },
+    {
+     "rank": 16,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 15.0438
+    },
+    {
+     "rank": 17,
+     "doc_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "chunk_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "score": 14.8737
+    },
+    {
+     "rank": 18,
+     "doc_id": "9fdd593bd9d1c27f52ee973c62b65ac8",
+     "chunk_id": "9fdd593bd9d1c27f52ee973c62b65ac8",
+     "score": 14.8203
+    },
+    {
+     "rank": 19,
+     "doc_id": "3ed4885248005fdc6262bfbc0d1d1b2c",
+     "chunk_id": "3ed4885248005fdc6262bfbc0d1d1b2c",
+     "score": 14.59
+    },
+    {
+     "rank": 20,
+     "doc_id": "90670732e28e2a9ed9712c16e592fc28",
+     "chunk_id": "90670732e28e2a9ed9712c16e592fc28",
+     "score": 14.3662
+    }
+   ],
+   "latency_s": 0.0011
+  },
+  {
+   "query": "Who is the father of the director of film Summer Skin (Film)?",
+   "gold_doc_ids": [
+    "8cc4f523fec2913605066d4039ce4b66",
+    "a6ec9e067466e55ebd52a27d175c9c23"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "8cc4f523fec2913605066d4039ce4b66",
+     "chunk_id": "8cc4f523fec2913605066d4039ce4b66",
+     "score": 31.8903
+    },
+    {
+     "rank": 2,
+     "doc_id": "e2dee29d86985d618d737b59885ee001",
+     "chunk_id": "e2dee29d86985d618d737b59885ee001",
+     "score": 22.99
+    },
+    {
+     "rank": 3,
+     "doc_id": "21b2b20cef1c87428e98653f29249cde",
+     "chunk_id": "21b2b20cef1c87428e98653f29249cde",
+     "score": 22.9473
+    },
+    {
+     "rank": 4,
+     "doc_id": "2bbbe1a5320ea02353c038fd2499be45",
+     "chunk_id": "2bbbe1a5320ea02353c038fd2499be45",
+     "score": 22.3161
+    },
+    {
+     "rank": 5,
+     "doc_id": "1c37eb84853aa67603ca402056fecaa9",
+     "chunk_id": "1c37eb84853aa67603ca402056fecaa9",
+     "score": 21.5446
+    },
+    {
+     "rank": 6,
+     "doc_id": "68e045c212600d6822b16f1da7307850",
+     "chunk_id": "68e045c212600d6822b16f1da7307850",
+     "score": 21.0687
+    },
+    {
+     "rank": 7,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 21.0405
+    },
+    {
+     "rank": 8,
+     "doc_id": "0e1e2401c7af3c6e69ac6ce0eb9600d9",
+     "chunk_id": "0e1e2401c7af3c6e69ac6ce0eb9600d9",
+     "score": 20.5971
+    },
+    {
+     "rank": 9,
+     "doc_id": "b39f733548636f26bcfa9601aab13837",
+     "chunk_id": "b39f733548636f26bcfa9601aab13837",
+     "score": 19.4152
+    },
+    {
+     "rank": 10,
+     "doc_id": "9fdd593bd9d1c27f52ee973c62b65ac8",
+     "chunk_id": "9fdd593bd9d1c27f52ee973c62b65ac8",
+     "score": 19.28
+    },
+    {
+     "rank": 11,
+     "doc_id": "f3060480a06c96116a5cb056830b3939",
+     "chunk_id": "f3060480a06c96116a5cb056830b3939",
+     "score": 19.2225
+    },
+    {
+     "rank": 12,
+     "doc_id": "c564c59deb49ffb2fe100f6162a1e4f1",
+     "chunk_id": "c564c59deb49ffb2fe100f6162a1e4f1",
+     "score": 19.0924
+    },
+    {
+     "rank": 13,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 18.8357
+    },
+    {
+     "rank": 14,
+     "doc_id": "7369fd3c607dcdfaca5763c5fae0ffd7",
+     "chunk_id": "7369fd3c607dcdfaca5763c5fae0ffd7",
+     "score": 18.8271
+    },
+    {
+     "rank": 15,
+     "doc_id": "35b99ce49602f7d1b6ed821494e9796a",
+     "chunk_id": "35b99ce49602f7d1b6ed821494e9796a",
+     "score": 18.7485
+    },
+    {
+     "rank": 16,
+     "doc_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "chunk_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "score": 18.6272
+    },
+    {
+     "rank": 17,
+     "doc_id": "bcabf6630fd9cd5fcddf7435708559e2",
+     "chunk_id": "bcabf6630fd9cd5fcddf7435708559e2",
+     "score": 18.6061
+    },
+    {
+     "rank": 18,
+     "doc_id": "6ef5f712c5a37e2e7664407651f230eb",
+     "chunk_id": "6ef5f712c5a37e2e7664407651f230eb",
+     "score": 18.3504
+    },
+    {
+     "rank": 19,
+     "doc_id": "e73232483330b2e8e94010210afd6588",
+     "chunk_id": "e73232483330b2e8e94010210afd6588",
+     "score": 18.1117
+    },
+    {
+     "rank": 20,
+     "doc_id": "6885d83314ded4891d30a177f227d116",
+     "chunk_id": "6885d83314ded4891d30a177f227d116",
+     "score": 17.7223
+    }
+   ],
+   "latency_s": 0.0013
+  },
+  {
+   "query": "Are Carl Wijk and Anders Lindstedt from the same country?",
+   "gold_doc_ids": [
+    "d24081a3acf839bafd9ffdc076656759",
+    "f4335c06af7071aedd3950bcbc5746c9"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "d24081a3acf839bafd9ffdc076656759",
+     "chunk_id": "d24081a3acf839bafd9ffdc076656759",
+     "score": 21.1583
+    },
+    {
+     "rank": 2,
+     "doc_id": "f4335c06af7071aedd3950bcbc5746c9",
+     "chunk_id": "f4335c06af7071aedd3950bcbc5746c9",
+     "score": 18.8789
+    },
+    {
+     "rank": 3,
+     "doc_id": "7b412fe9862859a871af6b2dda5f61d3",
+     "chunk_id": "7b412fe9862859a871af6b2dda5f61d3",
+     "score": 17.3836
+    },
+    {
+     "rank": 4,
+     "doc_id": "135ac01252fbdb492d0827b2c3790a7b",
+     "chunk_id": "135ac01252fbdb492d0827b2c3790a7b",
+     "score": 15.9678
+    },
+    {
+     "rank": 5,
+     "doc_id": "843f4942105c7aa2f1e4013c5ee5a4b8",
+     "chunk_id": "843f4942105c7aa2f1e4013c5ee5a4b8",
+     "score": 15.1214
+    },
+    {
+     "rank": 6,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 13.8973
+    },
+    {
+     "rank": 7,
+     "doc_id": "3dd732d896b44362cf9d52bd79bfcbad",
+     "chunk_id": "3dd732d896b44362cf9d52bd79bfcbad",
+     "score": 11.5818
+    },
+    {
+     "rank": 8,
+     "doc_id": "cdd1b4a6f4f2cc5084f1c0c773b8f438",
+     "chunk_id": "cdd1b4a6f4f2cc5084f1c0c773b8f438",
+     "score": 11.4749
+    },
+    {
+     "rank": 9,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 10.1105
+    },
+    {
+     "rank": 10,
+     "doc_id": "e55282b887bab9ace6c46d17aa9bcff1",
+     "chunk_id": "e55282b887bab9ace6c46d17aa9bcff1",
+     "score": 9.5484
+    },
+    {
+     "rank": 11,
+     "doc_id": "fcc46097ef95bc720943d0b04ca9400c",
+     "chunk_id": "fcc46097ef95bc720943d0b04ca9400c",
+     "score": 9.5444
+    },
+    {
+     "rank": 12,
+     "doc_id": "e54fd2bdb394ecf6c5fc362d1a2bd6e7",
+     "chunk_id": "e54fd2bdb394ecf6c5fc362d1a2bd6e7",
+     "score": 9.5314
+    },
+    {
+     "rank": 13,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 9.4669
+    },
+    {
+     "rank": 14,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 9.2634
+    },
+    {
+     "rank": 15,
+     "doc_id": "3355ba0a3d5ad443bcf708728aa50d70",
+     "chunk_id": "3355ba0a3d5ad443bcf708728aa50d70",
+     "score": 9.1364
+    },
+    {
+     "rank": 16,
+     "doc_id": "cfe0c9ad2561c797ac2feb98e1df85c5",
+     "chunk_id": "cfe0c9ad2561c797ac2feb98e1df85c5",
+     "score": 9.0615
+    },
+    {
+     "rank": 17,
+     "doc_id": "15cc85efd782d4bedea3aaa596a0ed64",
+     "chunk_id": "15cc85efd782d4bedea3aaa596a0ed64",
+     "score": 8.9683
+    },
+    {
+     "rank": 18,
+     "doc_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "chunk_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "score": 8.8641
+    },
+    {
+     "rank": 19,
+     "doc_id": "2589dc481061819cb2a418c69f5eea9c",
+     "chunk_id": "2589dc481061819cb2a418c69f5eea9c",
+     "score": 8.5967
+    },
+    {
+     "rank": 20,
+     "doc_id": "7250dceba6e15157bbb2900b30fc49d3",
+     "chunk_id": "7250dceba6e15157bbb2900b30fc49d3",
+     "score": 8.5355
+    }
+   ],
+   "latency_s": 0.001
+  },
+  {
+   "query": "Are the bands M3 (Band) and Cam-Pact, from the same country?",
+   "gold_doc_ids": [
+    "5a41f5600e69770fefaf4a7701c8a9fc",
+    "b143aa4cf15038b270372f78e95675bc"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "5a41f5600e69770fefaf4a7701c8a9fc",
+     "chunk_id": "5a41f5600e69770fefaf4a7701c8a9fc",
+     "score": 30.2712
+    },
+    {
+     "rank": 2,
+     "doc_id": "311b61f5923942d07e4aafe52b9ee30a",
+     "chunk_id": "311b61f5923942d07e4aafe52b9ee30a",
+     "score": 29.7376
+    },
+    {
+     "rank": 3,
+     "doc_id": "b143aa4cf15038b270372f78e95675bc",
+     "chunk_id": "b143aa4cf15038b270372f78e95675bc",
+     "score": 26.8837
+    },
+    {
+     "rank": 4,
+     "doc_id": "60c41cce41dcf1b4756ab9f25c531b58",
+     "chunk_id": "60c41cce41dcf1b4756ab9f25c531b58",
+     "score": 22.6466
+    },
+    {
+     "rank": 5,
+     "doc_id": "135ac01252fbdb492d0827b2c3790a7b",
+     "chunk_id": "135ac01252fbdb492d0827b2c3790a7b",
+     "score": 20.4785
+    },
+    {
+     "rank": 6,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 19.5074
+    },
+    {
+     "rank": 7,
+     "doc_id": "cdd1b4a6f4f2cc5084f1c0c773b8f438",
+     "chunk_id": "cdd1b4a6f4f2cc5084f1c0c773b8f438",
+     "score": 19.1354
+    },
+    {
+     "rank": 8,
+     "doc_id": "745fe5010d14a122ee615a6421b6d498",
+     "chunk_id": "745fe5010d14a122ee615a6421b6d498",
+     "score": 19.1264
+    },
+    {
+     "rank": 9,
+     "doc_id": "66c0bc419f61c49363ab7a7f72280b14",
+     "chunk_id": "66c0bc419f61c49363ab7a7f72280b14",
+     "score": 18.6286
+    },
+    {
+     "rank": 10,
+     "doc_id": "0543a1f09c95bae1dbaf810282858a32",
+     "chunk_id": "0543a1f09c95bae1dbaf810282858a32",
+     "score": 18.4093
+    },
+    {
+     "rank": 11,
+     "doc_id": "843f4942105c7aa2f1e4013c5ee5a4b8",
+     "chunk_id": "843f4942105c7aa2f1e4013c5ee5a4b8",
+     "score": 18.4066
+    },
+    {
+     "rank": 12,
+     "doc_id": "79641b2f418534659aec58f33aa9fb60",
+     "chunk_id": "79641b2f418534659aec58f33aa9fb60",
+     "score": 17.8772
+    },
+    {
+     "rank": 13,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 17.6032
+    },
+    {
+     "rank": 14,
+     "doc_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "chunk_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "score": 17.5747
+    },
+    {
+     "rank": 15,
+     "doc_id": "116b1add42dee157dd96271a2f71bc2e",
+     "chunk_id": "116b1add42dee157dd96271a2f71bc2e",
+     "score": 17.5311
+    },
+    {
+     "rank": 16,
+     "doc_id": "dd595570cb86c46c34aca8b84f7b4a93",
+     "chunk_id": "dd595570cb86c46c34aca8b84f7b4a93",
+     "score": 17.3099
+    },
+    {
+     "rank": 17,
+     "doc_id": "db93f1b5eb297d90d8efe1d25e0b96cf",
+     "chunk_id": "db93f1b5eb297d90d8efe1d25e0b96cf",
+     "score": 16.7563
+    },
+    {
+     "rank": 18,
+     "doc_id": "9f3f31b6027b2a628381f31e30ed7ef2",
+     "chunk_id": "9f3f31b6027b2a628381f31e30ed7ef2",
+     "score": 16.6996
+    },
+    {
+     "rank": 19,
+     "doc_id": "9c7b88cd1c7a997e92fea75f50b1363c",
+     "chunk_id": "9c7b88cd1c7a997e92fea75f50b1363c",
+     "score": 16.5169
+    },
+    {
+     "rank": 20,
+     "doc_id": "2589dc481061819cb2a418c69f5eea9c",
+     "chunk_id": "2589dc481061819cb2a418c69f5eea9c",
+     "score": 16.3407
+    }
+   ],
+   "latency_s": 0.0014
+  },
+  {
+   "query": "What nationality is Humehume's father?",
+   "gold_doc_ids": [
+    "874ad3aa1a3853f91b067b651a7827fc",
+    "ed0dd1ef7bbcbd97cc490fb1a33861e6"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 12.5573
+    },
+    {
+     "rank": 2,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 11.8039
+    },
+    {
+     "rank": 3,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 11.5574
+    },
+    {
+     "rank": 4,
+     "doc_id": "e4d09cab477c2c1c1d96b39900e1a59e",
+     "chunk_id": "e4d09cab477c2c1c1d96b39900e1a59e",
+     "score": 10.4585
+    },
+    {
+     "rank": 5,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 10.1815
+    },
+    {
+     "rank": 6,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 9.9106
+    },
+    {
+     "rank": 7,
+     "doc_id": "874ad3aa1a3853f91b067b651a7827fc",
+     "chunk_id": "874ad3aa1a3853f91b067b651a7827fc",
+     "score": 9.6572
+    },
+    {
+     "rank": 8,
+     "doc_id": "364686b5765eba7188a2a0daa7476bc5",
+     "chunk_id": "364686b5765eba7188a2a0daa7476bc5",
+     "score": 8.265
+    },
+    {
+     "rank": 9,
+     "doc_id": "91f3587ebe3addb7b3b75f6f9faf2a22",
+     "chunk_id": "91f3587ebe3addb7b3b75f6f9faf2a22",
+     "score": 8.1784
+    },
+    {
+     "rank": 10,
+     "doc_id": "4825fcaf0c76f069b2a30bb2c1f59c01",
+     "chunk_id": "4825fcaf0c76f069b2a30bb2c1f59c01",
+     "score": 8.1442
+    },
+    {
+     "rank": 11,
+     "doc_id": "1d47605aba81a44128e48b837af401ab",
+     "chunk_id": "1d47605aba81a44128e48b837af401ab",
+     "score": 8.0345
+    },
+    {
+     "rank": 12,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 7.8955
+    },
+    {
+     "rank": 13,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 7.7299
+    },
+    {
+     "rank": 14,
+     "doc_id": "080f0eeb4216c29508a206170c772540",
+     "chunk_id": "080f0eeb4216c29508a206170c772540",
+     "score": 7.6304
+    },
+    {
+     "rank": 15,
+     "doc_id": "be68bf3a0071e77e669758ab9dca9cb9",
+     "chunk_id": "be68bf3a0071e77e669758ab9dca9cb9",
+     "score": 7.5648
+    },
+    {
+     "rank": 16,
+     "doc_id": "c35f5472429634b2a7d8fdb0725e44ce",
+     "chunk_id": "c35f5472429634b2a7d8fdb0725e44ce",
+     "score": 7.5346
+    },
+    {
+     "rank": 17,
+     "doc_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "chunk_id": "26dbaa134c0eee56bdeddc8da5fbc209",
+     "score": 6.3929
+    },
+    {
+     "rank": 18,
+     "doc_id": "89fcfefcd0a305bc4fffe9de6f7673b1",
+     "chunk_id": "89fcfefcd0a305bc4fffe9de6f7673b1",
+     "score": 6.0637
+    },
+    {
+     "rank": 19,
+     "doc_id": "cbc37e67bb046103b51fcf89b7940310",
+     "chunk_id": "cbc37e67bb046103b51fcf89b7940310",
+     "score": 5.864
+    },
+    {
+     "rank": 20,
+     "doc_id": "31897162eb2a214846b16a8113a504a8",
+     "chunk_id": "31897162eb2a214846b16a8113a504a8",
+     "score": 5.8622
+    }
+   ],
+   "latency_s": 0.0008
+  },
+  {
+   "query": "Where was the place of burial of Bülbül Hatun's husband?",
+   "gold_doc_ids": [
+    "01f669b2755032087c8a8f0b17e65a5a",
+    "f7c747c474d2b697a35f06efad4850ec"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "f7c747c474d2b697a35f06efad4850ec",
+     "chunk_id": "f7c747c474d2b697a35f06efad4850ec",
+     "score": 55.9048
+    },
+    {
+     "rank": 2,
+     "doc_id": "f4679510ea0c742824de513fbafd0a38",
+     "chunk_id": "f4679510ea0c742824de513fbafd0a38",
+     "score": 30.6972
+    },
+    {
+     "rank": 3,
+     "doc_id": "16ca65c9d532af52afb2f88e3e446d52",
+     "chunk_id": "16ca65c9d532af52afb2f88e3e446d52",
+     "score": 22.8472
+    },
+    {
+     "rank": 4,
+     "doc_id": "e9e596f709ad04f53b7632e3bb9e0ddd",
+     "chunk_id": "e9e596f709ad04f53b7632e3bb9e0ddd",
+     "score": 21.7931
+    },
+    {
+     "rank": 5,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 19.8033
+    },
+    {
+     "rank": 6,
+     "doc_id": "5d2e8d4dc12f4fa00041d6d093a6b7aa",
+     "chunk_id": "5d2e8d4dc12f4fa00041d6d093a6b7aa",
+     "score": 19.5416
+    },
+    {
+     "rank": 7,
+     "doc_id": "d52bd79d6c5c8760640889a100e1c236",
+     "chunk_id": "d52bd79d6c5c8760640889a100e1c236",
+     "score": 19.2058
+    },
+    {
+     "rank": 8,
+     "doc_id": "89fcfefcd0a305bc4fffe9de6f7673b1",
+     "chunk_id": "89fcfefcd0a305bc4fffe9de6f7673b1",
+     "score": 18.9679
+    },
+    {
+     "rank": 9,
+     "doc_id": "8908161faa71d1b7353aabe34982e9d9",
+     "chunk_id": "8908161faa71d1b7353aabe34982e9d9",
+     "score": 18.1502
+    },
+    {
+     "rank": 10,
+     "doc_id": "5fcfe2b55ab10c6c3b61d3c06c599f06",
+     "chunk_id": "5fcfe2b55ab10c6c3b61d3c06c599f06",
+     "score": 17.682
+    },
+    {
+     "rank": 11,
+     "doc_id": "21bb709b4481d48608be0fa744388d3a",
+     "chunk_id": "21bb709b4481d48608be0fa744388d3a",
+     "score": 16.3873
+    },
+    {
+     "rank": 12,
+     "doc_id": "450d6f2885f58e73f6721d15f70e1371",
+     "chunk_id": "450d6f2885f58e73f6721d15f70e1371",
+     "score": 16.337
+    },
+    {
+     "rank": 13,
+     "doc_id": "50ecad7aaaa2e5cd5d701499fb51e22b",
+     "chunk_id": "50ecad7aaaa2e5cd5d701499fb51e22b",
+     "score": 15.1087
+    },
+    {
+     "rank": 14,
+     "doc_id": "a6b215fd9ea88e2a1341e0a257795056",
+     "chunk_id": "a6b215fd9ea88e2a1341e0a257795056",
+     "score": 14.7826
+    },
+    {
+     "rank": 15,
+     "doc_id": "6ef979782cd7e4b44f690aab36b56658",
+     "chunk_id": "6ef979782cd7e4b44f690aab36b56658",
+     "score": 14.6481
+    },
+    {
+     "rank": 16,
+     "doc_id": "041f5b7c73ecace1fd7a1c05c6e36570",
+     "chunk_id": "041f5b7c73ecace1fd7a1c05c6e36570",
+     "score": 14.6224
+    },
+    {
+     "rank": 17,
+     "doc_id": "842b7c30bff549a2dd24b4a2926588fd",
+     "chunk_id": "842b7c30bff549a2dd24b4a2926588fd",
+     "score": 14.5795
+    },
+    {
+     "rank": 18,
+     "doc_id": "e6bd3e1c5639a87657f61555c9d249dc",
+     "chunk_id": "e6bd3e1c5639a87657f61555c9d249dc",
+     "score": 14.4962
+    },
+    {
+     "rank": 19,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 14.1643
+    },
+    {
+     "rank": 20,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 13.9508
+    }
+   ],
+   "latency_s": 0.0014
+  },
+  {
+   "query": "Which film has the director who was born first, Who'S Your Brother? or The Last Outpost (1951 Film)?",
+   "gold_doc_ids": [
+    "211d7d44fcabea6f7e68de9e4a66d47b",
+    "953c0fce103c0ee95fb480a455b52f8c",
+    "bfa68f09197cefeb6ebe09a5d0deff42",
+    "e8b78e0d3b239bb6788a6e7f8d54d0fe"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 41.1987
+    },
+    {
+     "rank": 2,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 37.8973
+    },
+    {
+     "rank": 3,
+     "doc_id": "bfa68f09197cefeb6ebe09a5d0deff42",
+     "chunk_id": "bfa68f09197cefeb6ebe09a5d0deff42",
+     "score": 37.7981
+    },
+    {
+     "rank": 4,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 28.3485
+    },
+    {
+     "rank": 5,
+     "doc_id": "6f3145ba53247fb494d8828d7dd0d223",
+     "chunk_id": "6f3145ba53247fb494d8828d7dd0d223",
+     "score": 24.5536
+    },
+    {
+     "rank": 6,
+     "doc_id": "68e045c212600d6822b16f1da7307850",
+     "chunk_id": "68e045c212600d6822b16f1da7307850",
+     "score": 24.4619
+    },
+    {
+     "rank": 7,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 23.3862
+    },
+    {
+     "rank": 8,
+     "doc_id": "20ef09ab5c5e2e45c56aa0f206841535",
+     "chunk_id": "20ef09ab5c5e2e45c56aa0f206841535",
+     "score": 22.9343
+    },
+    {
+     "rank": 9,
+     "doc_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "chunk_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "score": 22.8483
+    },
+    {
+     "rank": 10,
+     "doc_id": "b39f733548636f26bcfa9601aab13837",
+     "chunk_id": "b39f733548636f26bcfa9601aab13837",
+     "score": 22.8393
+    },
+    {
+     "rank": 11,
+     "doc_id": "081e6967d8ac964c763a57710300e8c7",
+     "chunk_id": "081e6967d8ac964c763a57710300e8c7",
+     "score": 22.2661
+    },
+    {
+     "rank": 12,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 22.1677
+    },
+    {
+     "rank": 13,
+     "doc_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "chunk_id": "aa0f54e3e2522939beb985486d0b7d99",
+     "score": 22.0626
+    },
+    {
+     "rank": 14,
+     "doc_id": "a6ec9e067466e55ebd52a27d175c9c23",
+     "chunk_id": "a6ec9e067466e55ebd52a27d175c9c23",
+     "score": 21.8721
+    },
+    {
+     "rank": 15,
+     "doc_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "chunk_id": "2566cc58242a690cfd6d66bb3d6e6ad0",
+     "score": 21.852
+    },
+    {
+     "rank": 16,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 21.5189
+    },
+    {
+     "rank": 17,
+     "doc_id": "4ce7961a689fca2c9b973acd76b76966",
+     "chunk_id": "4ce7961a689fca2c9b973acd76b76966",
+     "score": 21.4778
+    },
+    {
+     "rank": 18,
+     "doc_id": "f5fc9736cc77766a2e959d10ee27f8e2",
+     "chunk_id": "f5fc9736cc77766a2e959d10ee27f8e2",
+     "score": 21.2648
+    },
+    {
+     "rank": 19,
+     "doc_id": "f74216964caa52a9d058457791219718",
+     "chunk_id": "f74216964caa52a9d058457791219718",
+     "score": 21.1438
+    },
+    {
+     "rank": 20,
+     "doc_id": "2bbbe1a5320ea02353c038fd2499be45",
+     "chunk_id": "2bbbe1a5320ea02353c038fd2499be45",
+     "score": 21.0803
+    }
+   ],
+   "latency_s": 0.002
+  },
+  {
+   "query": "Which film has the director born first, Free Hand For A Tough Cop or Man'S Favorite Sport??",
+   "gold_doc_ids": [
+    "081e6967d8ac964c763a57710300e8c7",
+    "0afca28c17182a176c96a10c9f7fafe2",
+    "4ce7961a689fca2c9b973acd76b76966",
+    "7c93e51e1832becdfff374557a78440b"
+   ],
+   "hits": [
+    {
+     "rank": 1,
+     "doc_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "chunk_id": "0afca28c17182a176c96a10c9f7fafe2",
+     "score": 42.5278
+    },
+    {
+     "rank": 2,
+     "doc_id": "7c93e51e1832becdfff374557a78440b",
+     "chunk_id": "7c93e51e1832becdfff374557a78440b",
+     "score": 37.6028
+    },
+    {
+     "rank": 3,
+     "doc_id": "6a52838e371beeea9d95061751273a55",
+     "chunk_id": "6a52838e371beeea9d95061751273a55",
+     "score": 29.304
+    },
+    {
+     "rank": 4,
+     "doc_id": "364686b5765eba7188a2a0daa7476bc5",
+     "chunk_id": "364686b5765eba7188a2a0daa7476bc5",
+     "score": 23.7553
+    },
+    {
+     "rank": 5,
+     "doc_id": "adb2f5033aa47135b6c611d0999a0cd2",
+     "chunk_id": "adb2f5033aa47135b6c611d0999a0cd2",
+     "score": 22.5658
+    },
+    {
+     "rank": 6,
+     "doc_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "chunk_id": "953c0fce103c0ee95fb480a455b52f8c",
+     "score": 22.513
+    },
+    {
+     "rank": 7,
+     "doc_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "chunk_id": "fb5611136ddbc8da145a43a4e7b878c4",
+     "score": 21.1101
+    },
+    {
+     "rank": 8,
+     "doc_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "chunk_id": "9f96a4c142c613f99ead63b8ee7fd472",
+     "score": 20.8567
+    },
+    {
+     "rank": 9,
+     "doc_id": "4ce7961a689fca2c9b973acd76b76966",
+     "chunk_id": "4ce7961a689fca2c9b973acd76b76966",
+     "score": 19.0661
+    },
+    {
+     "rank": 10,
+     "doc_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "chunk_id": "aae73736c2c86a149a06c7e06aa715f8",
+     "score": 17.4876
+    },
+    {
+     "rank": 11,
+     "doc_id": "6f3145ba53247fb494d8828d7dd0d223",
+     "chunk_id": "6f3145ba53247fb494d8828d7dd0d223",
+     "score": 16.957
+    },
+    {
+     "rank": 12,
+     "doc_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "chunk_id": "23e1d2818643949f4ba2bcbe45e1fd74",
+     "score": 16.6783
+    },
+    {
+     "rank": 13,
+     "doc_id": "df246f13234629b579510a3439aa4568",
+     "chunk_id": "df246f13234629b579510a3439aa4568",
+     "score": 16.3547
+    },
+    {
+     "rank": 14,
+     "doc_id": "ade9d5a26c029805c15918c168fc7ef5",
+     "chunk_id": "ade9d5a26c029805c15918c168fc7ef5",
+     "score": 15.5257
+    },
+    {
+     "rank": 15,
+     "doc_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "chunk_id": "90ef4bca1edd8de20ceaf9babb0de3be",
+     "score": 15.5114
+    },
+    {
+     "rank": 16,
+     "doc_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "chunk_id": "572b1943f1d4bf69740efb9b7e2dace8",
+     "score": 15.2528
+    },
+    {
+     "rank": 17,
+     "doc_id": "ec739dd7210099355957d8deda52d8cd",
+     "chunk_id": "ec739dd7210099355957d8deda52d8cd",
+     "score": 15.2289
+    },
+    {
+     "rank": 18,
+     "doc_id": "18e5b9aec3b17756aa93795ae41c3042",
+     "chunk_id": "18e5b9aec3b17756aa93795ae41c3042",
+     "score": 14.9708
+    },
+    {
+     "rank": 19,
+     "doc_id": "081e6967d8ac964c763a57710300e8c7",
+     "chunk_id": "081e6967d8ac964c763a57710300e8c7",
+     "score": 14.4632
+    },
+    {
+     "rank": 20,
+     "doc_id": "04be9022be73d3c30975853779418091",
+     "chunk_id": "04be9022be73d3c30975853779418091",
+     "score": 14.4375
+    }
+   ],
+   "latency_s": 0.0017
+  }
+ ]
+}

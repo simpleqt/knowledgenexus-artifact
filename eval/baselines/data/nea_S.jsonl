@@ -1,0 +1,22 @@
+{"query": "有哪些研究同时涉及scintillating tile与charged particle？（关联检索）", "gold_doc_ids": ["014bbee559184f14955833e0133aed10", "724d801f5ea641a8bf593beaf9c933b2", "b390a2d153854bbaa410f1873377e362", "be6e2372886247faad8f0a73d9111130", "de8ef9464b764f2f87385baf4b26f683"]}
+{"query": "有哪些研究同时涉及scintillating tile与timing resolution？（关联检索）", "gold_doc_ids": ["3de0313da69240988788d3e12a654577", "8a03ff8c76064113b0da4bb911638afb", "d5a81abccd4349e9a704f81df5f1e5bc", "de8ef9464b764f2f87385baf4b26f683"]}
+{"query": "有哪些研究同时涉及自由电子激光装置与超导直线加速器？（关联检索）", "gold_doc_ids": ["44198d5322964c07856f403cb5876961", "c46f29956e65490e968ce3ef1f8c110e", "dc3419725b92499c9986a216a777795c"]}
+{"query": "有哪些研究同时涉及自由电子激光装置与工艺？（关联检索）", "gold_doc_ids": ["64441a9a95b24c438ea2d1b38a695786", "af06e56794fe4abdb8be40ed340da7b5", "dd2952358a604501869c31e4e5480ff5", "e00af04ab2484ec6aeb2f083e2a819fa", "fe62161ce46f41cfacd6a1a6f5f242a6"]}
+{"query": "有哪些研究同时涉及自由电子激光装置与不锈钢？（关联检索）", "gold_doc_ids": ["7e2c36a877374a858f3db06644a72295", "90f8be5ec2fc478e9e0be323dc81316d"]}
+{"query": "有哪些研究同时涉及自由电子激光装置与现场可编程门阵列？（关联检索）", "gold_doc_ids": ["079d82fbf30349a7904921e9ac50b50c", "0b9b473374f24724b1406d311f8540eb", "703536066dba4ab1a8723b7b2433cf6c", "af06e56794fe4abdb8be40ed340da7b5", "c02c0f51df6147368bd2108e6cc59cea"]}
+{"query": "有哪些研究同时涉及电子感应加速器与能量？（关联检索）", "gold_doc_ids": ["475a1cbdf5874768b6f405e23f076f11", "87685df79e264179b43a02c5ec69856e", "fbd0581c5d734023ae5cf56144489729"]}
+{"query": "有哪些研究同时涉及电子感应加速器与加速器？（关联检索）", "gold_doc_ids": ["475a1cbdf5874768b6f405e23f076f11", "87685df79e264179b43a02c5ec69856e", "fbd0581c5d734023ae5cf56144489729"]}
+{"query": "有哪些研究同时涉及辐射探测器与切伦科夫计数器？（关联检索）", "gold_doc_ids": ["50b952cb4ef949bb93843a2dcc4e4a92"]}
+{"query": "有哪些研究同时涉及辐射探测器与切伦科夫辐射？（关联检索）", "gold_doc_ids": ["20280e875db748769971bc36cd95deb0", "50b952cb4ef949bb93843a2dcc4e4a92"]}
+{"query": "有哪些研究同时涉及noise spectrum与ion？（关联检索）", "gold_doc_ids": ["2341515f1da6467da606cd68104c9ac8", "5e45eaf55c6b418f842205f399feaf33", "bcc8eaa5517646a0b4fd0e8828af8396", "d42cb7b0179944fe8c22c1eb823a5403", "fac161d820514145a20baf8e6f04b2da"]}
+{"query": "有哪些研究同时涉及校准源与探测效率？（关联检索）", "gold_doc_ids": ["2ea4691ec20941458865f18e181cd468", "3deac94b6d2744989b78ab2cbfc500e0", "c64c868f619449a183942c9717c927ca", "fbf7d2eccb8a4acab9f334e0f15c210d"]}
+{"query": "有哪些研究同时涉及校准源与效率？（关联检索）", "gold_doc_ids": ["2bfba94796ff44cda45c15db421e378c", "2ea4691ec20941458865f18e181cd468", "3deac94b6d2744989b78ab2cbfc500e0", "c64c868f619449a183942c9717c927ca", "fbf7d2eccb8a4acab9f334e0f15c210d"]}
+{"query": "有哪些研究同时涉及校准源与calibration？（关联检索）", "gold_doc_ids": ["3deac94b6d2744989b78ab2cbfc500e0"]}
+{"query": "有哪些研究同时涉及校准源与不确定度？（关联检索）", "gold_doc_ids": ["2ea4691ec20941458865f18e181cd468", "3deac94b6d2744989b78ab2cbfc500e0", "756189241e17431ba88bd337f3a55918", "c64c868f619449a183942c9717c927ca"]}
+{"query": "有哪些研究同时涉及校准源与探测器？（关联检索）", "gold_doc_ids": ["3deac94b6d2744989b78ab2cbfc500e0", "c64c868f619449a183942c9717c927ca"]}
+{"query": "有哪些研究同时涉及质子与抗辐射加固？（关联检索）", "gold_doc_ids": ["56c5119ec3ca4bafb7eb36c8ad93239a", "578c09a2acb9423aa3d7dd0f219d27a4", "6690d83f50d54001a1cc8c0d98535dd5", "ab82c9d978db490db73a97701879f835", "f5ed787eb04f49a49e2546774adfd529"]}
+{"query": "有哪些研究同时涉及质子与屏蔽材料？（关联检索）", "gold_doc_ids": ["48b9a62f6eb5478f94e5721db30c564d", "562b67ceb2e840f1ae2a149082d4ae93", "6d38b0442cb942448e3c5b430f39880e", "7f5d98f9f6f742ea83f92c4bc4dc9345", "9740e181f7b84ba4af1d0692c3cf99d5", "c5f51f146d8349b2a383d6d0860f8a5d"]}
+{"query": "有哪些研究同时涉及贝克勒尔与活度？（关联检索）", "gold_doc_ids": ["423619890ff247d084ea986ea7aea182", "46791d44836241b2a6102ee0651e742e", "8d6cf27aabf64017bed77a87a3562acd", "99b3494a69a3476d9f286b1c5f3f6b69", "fffe7bcf1daa40bcb61c2fac0caae3b9"]}
+{"query": "有哪些研究同时涉及不锈钢板与反应堆？（关联检索）", "gold_doc_ids": ["63107ab5c74d41d4ab460a2412d38f9a"]}
+{"query": "有哪些研究同时涉及不锈钢板与不锈钢？（关联检索）", "gold_doc_ids": ["63107ab5c74d41d4ab460a2412d38f9a", "64f835ed443d408481f4587a69c35b7b", "7e2c36a877374a858f3db06644a72295", "add04d041509451caf147c7eba0e7c09"]}
+{"query": "有哪些研究同时涉及time resolution与半高宽？（关联检索）", "gold_doc_ids": ["0b6b54ced421431a8973a729cf5ab44c", "16eb7b49c4254b989648778ab6793691", "abd25b05b1484bb0a9fd96d81f163059", "c16b9ea334824962a0be7388be6ecf1b", "df5e7e8fd4154849a7e210f26e4f6aeb"]}
