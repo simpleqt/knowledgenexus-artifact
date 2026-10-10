@@ -51,8 +51,8 @@ claim: a single-variable channel ablation shows the retrieval gain does
 identical with every entity-dependent channel off), and an LLM-assisted
 audit of a seeded 100-link sample puts rebuilt link precision at
 \textbf{0.85} (95\% CI [0.77, 0.91]; cross-model-confirmed at 96\%
-agreement on the parseable subset)---1.00 on domain terminology, 0.80
-on the generic tail that survives repair, a documented boundary rather
+agreement on the parseable subset)---1.00 on domain terminology
+(n=25), 0.80 on the generic tail that survives repair, a documented boundary rather
 than a triumph. We argue the
 incident generalizes: wherever an LLM drafts a schema whose aliases then
 become the extraction surface, lexicon quality is load-bearing
@@ -268,10 +268,11 @@ or pipeline version.
 \textbf{Why nothing fired.} Job-level observability was all green (jobs
 DONE, throughput nominal, error rate zero). Link volume---if anything---read
 as \emph{success} (19.2M links!). The observables that expose the collapse
-are (a)~the concentration of links on the top entities---in the collapsed
-state a handful of type words hold essentially all links, versus 0.18 for
-the healthy control (Section~\ref{sec:discussion}'s monitor~(a) makes this
-precise)---and (b)~the name distribution of top-linked entities, which is
+are (a)~the concentration of links on the top entities---the collapsed
+state measures 0.419 with its top-10 entities being pure type
+vocabulary, versus 0.18 for the healthy control
+(Section~\ref{sec:discussion}'s monitor~(a) gives the measurement and
+its provenance)---and (b)~the name distribution of top-linked entities, which is
 pure type vocabulary. Entity cardinality per document---two orders of
 magnitude below the control---corroborates, but cardinality is a coarse
 signal gameable in both directions (the small-library treatment of
@@ -582,8 +583,18 @@ entities)---values we report as they are, not smoothed: the smallest
 library also illustrates the metric's floor effect (with O(10$^2$)
 entities, ten of them can hold most links under an ordinary Zipfian
 distribution alone), so the band should be read jointly with library
-size. The fully collapsed state is the degenerate limit where a handful
-of type words hold ${\sim}$100\% of links. We propose a band alarm
+size. The collapsed state itself is now measured, not gestured at:
+recovering the pre-incident cold database backup (2026-10-06, two days
+before discovery, with the collapsed enrichment still writing---4.8M
+links on KB1 at that moment versus 19.2M at discovery) gives
+\textbf{0.419} for collapsed KB1 (top-10 entities: \emph{time, model,
+method, energy, temperature, field, term, tau, phase, material}---431k
+links on ``time'' alone) and \textbf{0.290} for collapsed KB2. The
+repair moves KB1 0.419$\to$0.345 and KB2 0.290$\to$0.162---direction
+correct, and the residual gap is the generic tail. One honesty note:
+the metric partly improves simply because the entity population grows
+(503$\to$1{,}871 link-bearing entities); the name audit (c) remains the
+sharper discriminator of the collapse itself. We propose a band alarm
 ($>$0.35 investigation, $>$0.5 escalation) with an explicit caveat: the
 thresholds are calibrated post-hoc on this deployment's thirteen
 libraries, not on an external population---a starting point for
@@ -611,8 +622,10 @@ None of the four requires ground truth. The small-library treatment
 (Section~\ref{sec:limitations}) doubles as the monitors' out-of-sample
 validation: after the same repair playbook, entity counts contracted
 (870$\to$629, 209$\to$153---the cardinality signal normalizes) while the
-concentration monitor still flags both libraries above the escalation
-band---correctly, since their tails remain generic---demonstrating that
+concentration monitor still flags both libraries---one above the
+investigation threshold (0.398 $>$ 0.35), one above the escalation
+threshold (0.768 $>$ 0.5)---correctly, since their tails remain
+generic---demonstrating that
 the two monitors separate ``cardinality repaired'' from ``distribution
 still skewed'', which cardinality alone cannot.
 
@@ -717,10 +730,11 @@ Ontology generation using large language models, arXiv:2503.05388 (2025).
 \bibitem{iso1087} ISO 1087: Terminology work and terminology science ---
 vocabulary, International Organization for Standardization, 2019.
 
-\bibitem{companion} Z.~Chen. KnowledgeNexus: A traceable graph--vector
+\bibitem{companion} Anonymous. KnowledgeNexus: A traceable graph--vector
 knowledge infrastructure and adaptive multi-channel retrieval for nuclear
-science literature. Companion manuscript, 2026; preprint included in the
-artifact release.
+science literature. Companion manuscript, under submission (anonymized
+for double-blind review; the de-anonymized preprint is included in the
+artifact release).
 
 \end{thebibliography}
 
