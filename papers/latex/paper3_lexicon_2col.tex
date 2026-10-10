@@ -34,16 +34,18 @@ category-word lexicon silently collapsed the entity layer of a
 job-level monitor stayed green. We diagnose the failure across three
 layers (extraction mechanism, lexicon provenance, monitoring blindness),
 repair it with a three-source corpus-presence-attested lexicon (3{,}702
-terms), rebuild the entity layer under production load, and derive
-scale-invariant quality monitors. A controlled experiment that fixes code
+terms), rebuild the entity layer under production load, and derive gold-free
+monitors led by a concentration diagnostic invariant to uniform
+rescaling of link counts. A controlled experiment that fixes code
 and corpus and varies \emph{only the lexicon} reproduces the collapse
 signature alone (109$\pm$5 entities, top-10 concentration
-0.513$\pm$0.016, 1.85$\pm$0.05 concepts/document) and isolates the
+0.513$\pm$0.016, 1.85$\pm$0.05 concepts per matched document) and isolates the
 repair effect (692$\pm$27, 0.300$\pm$0.008, 3.89$\pm$0.07;
 mean$\pm$sd over ten random resamples of the same corpus); the rebuilt layer
 carries 1{,}871 entities, 25.1M links, and a functioning
 relation layer; distinct concepts per document rise
-15.7$\to$37.8 with document coverage 48.5\%$\to$98.5\%; a
+15.7$\to$37.8 with annotated-document coverage ${\sim}$51.5\%$\to$98.5\%
+(48.5\% of documents carried no annotations pre-repair); a
 risk-stratified 300-link audit (187 distinct entities; a stratum-mixed
 rate, not a link-uniform estimate) reads 0.84 overall --- 0.95 on
 domain terms, 0.58 on short ambiguous symbols. The generic tail survives
@@ -105,10 +107,14 @@ NER traditions~\cite{nerSurvey}; corpus-statistical term recognition
 goes back to C-value/NC-value~\cite{cvalue} --- our corpus-candidate
 source is that program reborn with an LLM classifier. Knowledge-graph
 refinement~\cite{paulheim} and production data validation~\cite{tdd}
-address adjacent problems. What prior art does not cover is the specific
-failure locus: when the dictionary effectively \emph{is} the extraction
-model, a structurally valid but terminologically hollow schema passes
-every existing gate.
+address adjacent problems. What this incident exposes is a specific failure locus: when the
+dictionary effectively \emph{is} the extraction model, a structurally
+valid but terminologically hollow schema passed every gate \emph{this
+pipeline had in place} (schema-shape validation, ingestion checks,
+job-level monitors). Distribution-statistics monitoring~\cite{tdd} is
+the right tradition, but the statistic must be aimed at the lexicon's
+terminological content; none of our gates asked whether a lexicon's
+entries are domain-specific terms.
 
 Our pipeline extracts mentions in stage K1 by normalized dictionary scan
 (CJK substring; ASCII word-boundary with optional plural, case-folded);
@@ -189,12 +195,16 @@ deduplicated on redraw (an earlier single run had sampled an ordered
 prefix, which we replace rather than defend). Fixed code, fixed corpus,
 fixed scanner; the only variable is the dictionary. All metrics are
 deterministic; Table~\ref{tab:lexiso} reports mean$\pm$sd across the
-ten resamples.
+ten resamples. Concepts-per-document is averaged over \emph{matched}
+documents only ($\geq$1 scan hit under that arm's dictionary: mean 977
+matched documents per sample under v2.0, 1{,}579 under v2.1), so the
+arms' denominators are different sets.
 
 \begin{table}[t]
 \centering
 \caption{Controlled lexicon-only comparison across ten disjoint corpus
-resamples (mean$\pm$sd).}
+resamples (mean$\pm$sd). Conc/doc = concepts per \emph{matched} document;
+arms' denominators differ (977 vs.\ 1{,}579 matched docs per sample).}
 \label{tab:lexiso}
 \footnotesize
 \begin{tabularx}{\columnwidth}{@{}lXXXX@{}}
@@ -212,13 +222,13 @@ v2.1 repair & $10{,}042\pm251$ & $692\pm27$ & $0.300\pm.008$ & $\mathbf{3.89\pm.
 
 \textbf{Finding 1 --- the collapse signature is reproduced by the lexicon
 alone.} Under v2.0, the same code on the same corpus yields 109$\pm$5
-entities at concentration 0.513$\pm$0.016 with 1.85$\pm$0.05 concepts
-per document: the collapse needs no pipeline bug, no data loss, no
+entities at concentration 0.513$\pm$0.016 with 1.85$\pm$0.05 concepts per
+\emph{matched} document: the collapse needs no pipeline bug, no data loss, no
 misconfiguration --- only a category-word dictionary.
 
 \textbf{Finding 2 --- the repair effect is isolated and monotone.}
 v2.1 multiplies link-bearing entities $\times$6.3 and concepts per
-document $\times$2.1; generic-head mass falls
+matched document $\times$2.1 (matched docs per sample 977$\to$1{,}579); generic-head mass falls
 0.146$\to$0.058. The production collapsed concentration ($C_{10}$=0.419)
 sits between the v2.0 (0.513) and v2.5 (0.322) counterfactuals,
 consistent with mid-enrichment dictionary evolution. These are
@@ -240,7 +250,11 @@ v2.1's link mass by which committed lexicon first contained each term
 --- v2.0-inherited 22.0\%, mid-evolution 16.0\%,
 \textbf{three-source-new 61.9\%} (384 of 686 entities) --- is a
 decomposition, not a per-source causal ablation; independently
-regenerating single-source lexicons remains future work.
+regenerating single-source lexicons remains future work. And the arms
+vary the dictionary as a whole (${\sim}$20$\times$ size gap), so term
+count, selection quality, and per-source method are not separately
+identified --- a size-matched frequency-candidate control and blind
+old/new matched-context judging are the priority follow-ups.
 
 \textbf{Why 692 entities here vs 1{,}871 in production
 (\S\ref{sec:after})?} The isolated frame counts only entities induced
@@ -327,7 +341,7 @@ canonical entities & 575 / 503 (10-06) & \textbf{1{,}871} \\
 entity links & ${\sim}$19.2M / 4.81M & \textbf{25.1M} \\
 typed relations & ${\sim}$0 & \textbf{44{,}043} \\
 top-10 concentration & 0.419 & \textbf{0.345} \\
-concepts/doc (all-doc) & 15.7 (48.5\% empty) & \textbf{37.8} (98.5\%) \\
+concepts/doc (all-doc) & 15.7 (51.5\% covered) & \textbf{37.8} (98.5\% covered) \\
 KB2: concepts/doc & 29.5 & \textbf{61.4} \\
 \bottomrule
 \end{tabularx}
@@ -373,7 +387,9 @@ production link frequencies: 0.837 is a stratum-mixed rate and must not
 be read as an unweighted production-wide link precision. Second, the
 300 links come from 187 distinct entities (the head stratum's 50 links
 from just six; the short and head strata share ``term''), so the
-intervals treat links, not concepts, as exchangeable. Third, the
+intervals treat links, not concepts, as exchangeable --- the CI is
+neither an interval for the 25.1M production links nor for 187
+independent concepts. Third, the
 design's purpose is to localize high-risk failure --- which it does:
 the short-ambiguous-symbol class that Figure~\ref{fig:topentities}
 colors red and \S\ref{sec:iso} prices is where validity collapses ---
@@ -453,9 +469,12 @@ entities --- and sensitive to topic concentration as well as to
 degradation. Across the 13 deployment libraries the metric spans
 0.16--0.77 among libraries with $\geq$100 entities (the smallest, five
 entities, reads 1.000 --- the floor bound, not degradation;
-Table~\ref{tab:kbstats}); healthy/repaired large libraries run
-0.16--0.19, the rebuilt nuclear library 0.345, the two small treated
-libraries \emph{currently} 0.398 and 0.768 (reported as measured). The
+Table~\ref{tab:kbstats}); healthy/repaired large libraries run 0.16--0.19, the rebuilt nuclear
+library 0.345, the two small treated libraries \emph{currently} 0.398
+and 0.768 (reported as measured). The collapsed physics backup reads
+0.290 --- \emph{below} the 0.35 band --- so a concentration threshold
+alone does not catch every collapse; the name-audit and coverage legs
+carry the rest. The
 bands ($>$0.35 investigate, $>$0.5 escalate) are \emph{candidate}
 thresholds read post-hoc from these 13 libraries --- a starting point,
 not a validated norm. Validation need not re-collapse production:
@@ -466,8 +485,10 @@ cardinality ratio} (coarse secondary, gameable both ways).
 \textbf{(c)~top-entity name audit} (five-minute quarterly control).
 \textbf{(d)~target-table growth reconciliation} --- the B95
 ghost-bucket mechanism makes this mandatory wherever a bulk writer is
-guarded by \texttt{INSERT IGNORE}. The small-library treatment doubles
-as out-of-sample validation: cardinality normalized (870$\to$629,
+guarded by \texttt{INSERT IGNORE}. The small-library treatment is an
+illustrative within-deployment case (the candidate bands were read after
+observing these 13 libraries --- not out-of-sample validation):
+cardinality normalized (870$\to$629,
 209$\to$153) while concentration still flags both --- the two monitors
 separate ``cardinality repaired'' from ``distribution still skewed.''
 
@@ -477,6 +498,20 @@ evaluation discipline. Admission criteria (corpus presence) are
 necessary but not sufficient; \emph{ranking} criteria (IDF-style
 contrast, bilingual consistency, length/type priors) are the open
 problem --- the generic tail is the standing evidence.
+
+\section{Conclusion}\label{sec:conclusion}
+
+\textbf{When does a structurally valid lexicon produce semantic
+collapse?} When its entries are category words: the scan executes
+faithfully, and a dictionary-only swap reproduces the signature.
+\textbf{What does corpus-presence gating repair, and what remains?}
+Terminology and coverage (annotated documents ${\sim}$51.5\%$\to$98.5\%)
+--- but a generic tail persists; presence is necessary, not sufficient.
+\textbf{What can gold-free diagnostics see?} Distribution and names,
+not link correctness: 0.84 stratified judged-valid (0.58 on short
+symbols) is model-assisted, and the repair's semantic gain awaits blind
+old/new comparison. The incident motivated and validated; the controlled
+swap and stratified audit carry the evidence.
 
 \section{Limitations}\label{sec:limitations}
 
@@ -518,7 +553,7 @@ recognition and classification. \textit{Lingvisticae Investigationes}
 approaches and evaluation methods. \textit{Semantic Web} 8(3), 2017,
 489--508.
 
-\bibitem{tdd} N.~Polyzotis, S.~Roy, S.~E.~Whang, M.~Zinkevich. Data
+\bibitem{tdd} E.~Breck, S.~Cai, E.~Nielsen, M.~Salib, D.~Sculley. Data
 validation for machine learning. \textit{Proc. MLSys}, 2019.
 
 \bibitem{llmonto} A.~S.~Lippolis et al. Ontology generation using large

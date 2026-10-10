@@ -28,16 +28,18 @@ links while every job-level monitor stayed green. \textbf{Method.} We
 diagnose the failure across three layers (extraction mechanism, lexicon
 provenance, monitoring blindness), repair it with a three-source
 corpus-presence-attested lexicon (3{,}702 terms), rebuild the entity
-layer under production load, and derive scale-invariant quality
-monitors. \textbf{Results.} An isolated fixed-code, fixed-corpus
+layer under production load, and derive gold-free quality monitors led
+by a link-concentration diagnostic invariant to uniform rescaling of
+link counts. \textbf{Results.} An isolated fixed-code, fixed-corpus
 experiment that varies only the lexicon reproduces the collapse
 signature alone (109$\pm$5 entities, top-10 concentration
-0.513$\pm$0.016, 1.85$\pm$0.05 concepts/document) and isolates the
+0.513$\pm$0.016, 1.85$\pm$0.05 concepts per matched document) and isolates the
 repair effect (692$\pm$27, 0.300$\pm$0.008, 3.89$\pm$0.07;
 mean$\pm$sd over ten random resamples of the same corpus); the rebuilt layer
 carries 1{,}871 entities, 25.1M links, and
 a functioning relation layer; distinct concepts per document rise
-15.7$\to$37.8 with document coverage 48.5\%$\to$98.5\%; top-10 link
+15.7$\to$37.8 with annotated-document coverage ${\sim}$51.5\%$\to$98.5\%
+(the pre-repair snapshot had 48.5\% of documents with no annotations); top-10 link
 concentration falls 0.419$\to$0.345; a risk-stratified 300-link audit
 (187 distinct entities; a stratum-mixed rate, not a link-uniform
 estimate) reads 0.84 overall---0.95 on domain terms, 0.58 on short
@@ -175,14 +177,17 @@ automatic-term-recognition program reborn with an LLM in the classifier
 seat. Likewise, detecting and repairing degraded knowledge-graph content is
 an established concern~\cite{paulheim}, and production data-validation
 systems routinely gate model inputs with schema- and statistics-level
-checks~\cite{tdd}. What is missing from that prior art, and what this
-incident supplies, is the specific failure locus: when the dictionary
-\emph{is} the extraction model, a structurally valid but terminologically
-hollow schema passes every existing gate---term-recognition research
-assumes the candidate pool is real corpus vocabulary, and data-validation
-systems check schema shape and distribution drift, not whether a lexicon's
-entries are domain-specific. The monitors we propose
-(Section~\ref{sec:discussion}) close exactly that gap.
+checks~\cite{tdd}. What this incident supplies is a specific failure locus: when the
+dictionary \emph{is} the extraction model, a structurally valid but
+terminologically hollow schema passed every gate \emph{this pipeline had
+in place}---schema-shape validation, ingestion checks, job-level
+monitoring. That is a statement about our gates, not about the prior
+art: distribution-statistics monitoring is the right tradition, but the
+statistic must be aimed at the lexicon's terminological content---none
+of our gates asked whether a lexicon's entries are domain-specific
+terms, the question term-recognition research takes as its starting
+assumption. The monitors we propose (Section~\ref{sec:discussion})
+target that acceptance gap.
 
 \section{The collapse, forensically}
 \label{sec:collapse}
@@ -198,15 +203,17 @@ words where domain concepts were expected. The full picture
 snapshot (mid-enrichment); ``disc.'' = discovery-day counts; the
 hydraulic reference case is measured 2026-10-10.}
 \label{tab:collapse}
-\begin{tabular}{lllll}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}lrrXX@{}}
 \toprule
 KB & Docs & Entities & Links & Schema provenance \\
 \midrule
-104112E6 (nuclear) & 61{,}137 & \textbf{575} (disc.) / 503 (bckp.) & \textbf{${\sim}$19.2M} (disc.) / 4.81M (bckp.) & batch v2.0 \\
-693372D5 (physics) & 13{,}408 & \textbf{2{,}018} & 2.23M (bckp., meas.) & batch \\
-hydrogeology (ref.) & 78 & 1{,}608 & 719{,}515 (2026-10-10) & hand-evolved \\
+104112E6 (nuclear) & 61{,}137 & \textbf{575} disc.\ / 503 bckp. & \textbf{${\sim}$19.2M} disc.\ / 4.81M bckp. & batch v2.0 \\
+693372D5 (physics) & 13{,}408 & \textbf{2{,}018} & 2.23M (bckp.) & batch \\
+hydrogeology (ref.) & 78 & 1{,}608 & 719{,}515 & hand-evolved \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 61{,}137 documents carrying ${\sim}$19.2M links is ${\sim}$315 links per
@@ -528,7 +535,7 @@ canonical entities & 575 (disc.) / 503 linked (10-06) & \textbf{1{,}871} \\
 entity links & ${\sim}$19.2M (disc.) / 4.81M (10-06) & \textbf{25{,}097{,}704} \\
 typed relations & ${\sim}$0 effective & \textbf{44{,}043} $+$ 1.56M evid.\ rows \\
 top-10 link concentration & 0.419 (10-06) & \textbf{0.345} \\
-concepts / document (all-doc basis) & 15.7 (48.5\% docs empty) & \textbf{37.8} (98.5\% covered) \\
+concepts / document (all-doc basis) & 15.7 (51.5\% covered) & \textbf{37.8} (98.5\% covered) \\
 KB2: concepts / document & 29.5 (91\% covered) & \textbf{61.4} (91\% covered) \\
 \bottomrule
 \end{tabularx}
@@ -690,9 +697,10 @@ precision 0.85} (Wilson 95\% CI [0.77, 0.91]); the domain stratum is
 \textbf{25/25 $=$ 1.00} (CI [0.87, 1.00]) and the generic stratum
 60/75 $=$ \textbf{0.80} (CI [0.70, 0.88]). Every adjudication, span, and
 reason string is released. The reading is the name-quality headline
-quantified: where the lexicon carries real terminology the dictionary-scan
-link layer is essentially perfect, and the residual error mass sits almost
-entirely in the generic tail. The audit is LLM-assisted rather than
+quantified: in this 25-link domain subsample no erroneous link was
+observed, and the residual error mass sits almost entirely in the generic
+tail---but ``no errors observed at $n{=}25$'' is not ``error-free'': the
+larger stratified audit's domain stratum reads 142/149, not 149/149. The audit is LLM-assisted rather than
 human-adjudicated---a limitation we keep visible
 (Section~\ref{sec:limitations})---but its stratum split is exactly what
 the monitor design predicts, and the programmatic span check removes the
@@ -739,9 +747,10 @@ subset, verdict agreement with the primary judge is
 \textbf{53/55 $=$ 96.4\%} (50 both-valid, 3 both-invalid, 2
 discordant---both discordances on the borderline generic word
 ``term''), and the domain stratum agrees \textbf{14/14}. Where an
-independent model opined, it confirmed the primary adjudication;
-residual circularity exposure is confined to the unparseable subset and
-to the small domain stratum (n=25 primary, 14 cross-parsed). A
+independent model opined, it confirmed the primary adjudication; but
+vendor-level correlation is \emph{not} confined to the unparseable
+subset---the 55 parsed links, including the domain stratum (n=25
+primary, 14 cross-parsed), carry the same family risk. A
 human-adjudicated stratified sample remains the decisive control and is
 listed as such in Section~\ref{sec:limitations}.
 
@@ -790,13 +799,19 @@ instrumented against the live service path, so absolute levels may
 drift---the experiment's force is the within-frame arm contrast. An
 earlier single run had sampled an ordered prefix---a bias we replace
 rather than defend; all metrics below are deterministic, reported as
-mean$\pm$sd across the ten resamples.
+mean$\pm$sd across the ten resamples. Concepts-per-document is averaged
+over \emph{matched} documents only (those with $\geq$1 scan hit under
+the arm's dictionary: mean 977 matched documents per sample under v2.0,
+1{,}579 under v2.1), so it is not an all-sampled-document mean, and the
+two arms' denominators are different sets.
 
 \begin{table}[t]
 \centering
 \caption{Isolated lexicon comparison across ten independent corpus
 resamples (fixed code, fixed corpus, only the dictionary differs;
-mean$\pm$sd).}
+mean$\pm$sd). Conc/doc is the mean number of distinct concepts per
+\emph{matched} document (documents with $\geq$1 scan hit under that
+arm's dictionary); the arms' denominators differ by construction (text).}
 \label{tab:lexiso}
 \footnotesize
 \setlength{\tabcolsep}{3pt}
@@ -815,11 +830,13 @@ v2.1 + stop-word & $9{,}226\pm251$ & $691\pm27$ & $0.252\pm.011$ & $3.67\pm.07$ 
 
 Three findings. \textbf{(1)~The collapse signature is reproduced by the
 lexicon alone}: 109$\pm$5 entities at concentration 0.513$\pm$0.016 and
-1.85$\pm$0.05 concepts per document from the v2.0 dictionary---same
+1.85$\pm$0.05 concepts per \emph{matched} document from the v2.0 dictionary---same
 code, same corpus, no other variable. \textbf{(2)~The repair effect is
-isolated}: v2.0$\to$v2.1 multiplies link-bearing entities $\times$6.3,
-concepts per document $\times$2.1, and halves concentration and
-generic-head mass (0.146$\to$0.058); the production collapsed
+isolated}: v2.0$\to$v2.1 multiplies link-bearing entities $\times$6.3 and
+concepts per matched document $\times$2.1 (the denominator grows too:
+mean link-bearing documents per 2{,}000-chunk sample rise
+977$\to$1{,}579), while concentration decreases 0.513$\to$0.300 and
+generic-head mass falls 0.146$\to$0.058; the production collapsed
 concentration ($C_{10}$=0.419 at the 10-06 backup) sits between the
 v2.0 (0.513) and v2.5 (0.322) counterfactuals,
 consistent with the operational dictionary having evolved
@@ -861,7 +878,13 @@ links (384 of 686 entities)}---the repair's additions carry
 three-fifths of the rebuilt link mass (shares stable against the
 retired ordered-prefix frame, which read 21.4/15.3/63.2). A true component ablation (independently
 regenerating single-source dictionaries) remains future work; this
-set-algebra attribution is its lexical lower bound.
+set-algebra attribution is its lexical lower bound. A scope note on
+dictionary size: the arms vary the dictionary \emph{as a whole} (v2.0
+and v2.1 differ by ${\sim}$20$\times$ in scan terms), so the contrast
+identifies the dictionary change, not its decomposition into term
+count, term-selection quality, and per-source method; a size-matched
+control (an equal-size frequency-candidate dictionary) and blind
+old/new matched-context semantic judging are the priority follow-ups.
 
 \section{Discussion}
 \label{sec:discussion}
@@ -882,10 +905,12 @@ the Zipfian floor effect discussed in the text.}
 \label{fig:scatter}
 \end{figure}
 
-\item[(a)] \emph{Top-10 link concentration (primary, scale-invariant).}
-The fraction of all entity links held by the ten most-linked entities. As
-a share it is comparable across corpus sizes and disciplines---exactly
-what raw cardinality is not. Measured across the thirteen libraries of
+\item[(a)] \emph{Top-10 link concentration (primary).}
+The fraction of all entity links held by the ten most-linked entities---a
+concentration diagnostic invariant to uniform rescaling of link counts.
+That specific invariance is what raw cardinality lacks; it is not a
+license to read the value as a corpus-size- or discipline-independent
+quality scale (topic concentration moves it too). Measured across the thirteen libraries of
 our deployment, the metric spans 0.16--0.77 among libraries with
 $\geq$100 entities (a five-entity library reads 1.000---the
 $\min(10,N)/N$ floor bound, not degradation; $N\leq$10 forces
@@ -907,7 +932,11 @@ links on KB1 at that moment versus 19.2M at discovery) gives
 method, energy, temperature, field, term, tau, phase, material}---431k
 links on ``time'' alone) and \textbf{0.290} for collapsed KB2. The
 repair moves KB1 0.419$\to$0.345 and KB2 0.290$\to$0.162---direction
-correct, and the residual gap is the generic tail. One honesty note:
+correct, and the residual gap is the generic tail. Note also that
+collapsed KB2's 0.290 sits \emph{below} the 0.35 investigation band: a
+concentration threshold alone does not catch every collapse---KB2's is
+exposed by the name-audit and coverage legs, which is why the monitors
+deploy as a set. One honesty note:
 the metric partly improves simply because the entity population grows
 (503$\to$1{,}871 link-bearing entities); the name audit (c) remains the
 sharper discriminator of the collapse itself. We propose a band alarm
@@ -956,12 +985,15 @@ five-minute quarterly control, and the link-precision rubric of
 Section~\ref{sec:after} is a ready-made protocol for a deeper sample.
 \item[(d)] \emph{Target-table growth reconciliation.} Completed-job
 counts reconciled against downstream row growth, mandatory wherever a
-bulk writer is guarded by INSERT IGNORE (the silent-swallow incident of
-Section~\ref{sec:rebuild} was invisible to job metrics for seven hours
-and exposed by exactly this reconciliation).
+bulk writer is guarded by INSERT IGNORE (the ghost-bucket incident of
+Section~\ref{sec:rebuild}---rows landed in an all-zero kb bucket
+invisible to every per-KB query while job metrics stayed green---was
+exposed by exactly this reconciliation).
 \end{itemize}
 None of the four requires ground truth. The small-library treatment
-(Section~\ref{sec:limitations}) doubles as the monitors' out-of-sample
+(Section~\ref{sec:limitations}) is an illustrative within-deployment
+case for the monitor stack---the candidate bands were read \emph{after}
+observing these thirteen libraries, so this is not out-of-sample
 validation: after the same repair playbook, entity counts contracted
 (870$\to$629, 209$\to$153---the cardinality signal normalizes) while the
 concentration monitor still flags both libraries---one above the
@@ -993,6 +1025,26 @@ pass structural validation---is the strongest argument we have for treating
 lexicon quality as first-class schema infrastructure with its own acceptance
 gates, not as a one-time repair.
 
+\section{Conclusion}
+\label{sec:conclusion}
+
+Three questions framed this study. \emph{When does a structurally valid
+lexicon produce semantic collapse?} When its entries are category words:
+the scan-and-link machinery executes faithfully, and a single-variable
+dictionary swap reproduces the collapse signature---no pipeline bug
+required. \emph{What does corpus-presence gating repair, and what does it
+leave?} It restores terminology and coverage (annotated documents
+${\sim}$51.5\%$\to$98.5\%; link-bearing entities $\times$6.3 in the
+isolated frame) but admits a generic tail---presence is necessary, not
+sufficient, and ranking criteria are the open problem. \emph{What can
+gold-free diagnostics see?} Distribution and names---the collapse
+signature---but not link correctness: the 0.84 risk-stratified
+judged-valid rate, with 0.58 on short ambiguous symbols, is a
+model-assisted reading, and the repair's semantic gain itself still
+awaits blind old/new comparison on matched contexts. The production
+incident supplied the motivation and the validation environment; the
+controlled lexicon swap and the stratified audit carry the evidence.
+
 \section{Limitations and honesty}
 \label{sec:limitations}
 
@@ -1016,8 +1068,8 @@ distribution is. The bilingual alias layer showed isolated anomalies (an
 entity whose mentions vanished between extraction generations) that we
 document but do not fully explain.
 \item \textbf{Incident-response cost}: six secondary incidents across the
-repair window (one silent INSERT-IGNORE swallow of seven hours, three
-half-open-connection wedges, a watchdog that mistook completion for
+repair window (one INSERT-IGNORE ghost-bucket mis-write whose logged duration was
+corrected by row-level timestamps, three half-open-connection wedges, a watchdog that mistook completion for
 failure and deleted the freshly rebuilt graph, one missing-index class)
 each extended the repair; we report them as findings, not hidden costs.
 \item \textbf{No human-adjudicated ground truth} for entity correctness:
@@ -1065,7 +1117,7 @@ recognition and classification, Lingvisticae Investigationes 30~(1)
 approaches and evaluation methods, Semantic Web 8~(3) (2017) 489--508.
 doi:10.3233/SW-160218.
 
-\bibitem{tdd} N.~Polyzotis, S.~Roy, S.~E. Whang, M.~Zinkevich, Data
+\bibitem{tdd} E.~Breck, S.~Cai, E.~Nielsen, M.~Salib, D.~Sculley, Data
 validation for machine learning, in: Proc. MLSys, 2019.
 
 \bibitem{llmonto} A.~S. Lippolis, M.~J. Saeedizade, R.~Keskis{\"a}rkk{\"a},
