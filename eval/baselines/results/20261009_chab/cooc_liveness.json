@@ -1,0 +1,18 @@
+{
+ "n": 99,
+ "cooc_fired_on_arm": 54,
+ "fired_queries_changed_top10": 26,
+ "off_vs_on_gold_hits_win_loss_tie": [
+  0,
+  20,
+  34
+ ],
+ "note": "win=off-arm better (cooc hurt), loss=off worse (cooc helped)",
+ "fired_sample": [
+  "kaon 成像",
+  "请推荐将蒙特卡罗模拟应用于信号处理领域的典型文献",
+  "伽马射线在相干散射过程中的物理机制研究",
+  "asic 同位素组成",
+  "有没有那种既能测气体又涉及强子的探测器研究？"
+ ]
+}
