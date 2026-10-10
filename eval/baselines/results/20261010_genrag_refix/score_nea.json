@@ -1,0 +1,44 @@
+[
+ {
+  "system": "genrag",
+  "set": "nea",
+  "slice": "L",
+  "n": 48,
+  "corpus_docs": 300,
+  "index_cost": {
+   "wall_s": 1575.6,
+   "engine": "LLM改写(qwen3.8-flash-next@CDUT)+BM25/Qwen3-8B RRF+LLM重排",
+   "llm_calls": 96,
+   "build_s_if_cold": 1070.9
+  },
+  "recall@5": 0.8542,
+  "recall@10": 0.8958,
+  "recall@20": 0.9375,
+  "cov@10": 0.6344,
+  "cov@20": 0.642,
+  "mrr@10": 0.7353,
+  "ndcg@10": 1.3768,
+  "latency_p50_s": 83.12,
+  "latency_p95_s": 92.85
+ },
+ {
+  "system": "knc-scoped",
+  "set": "nea",
+  "slice": "L",
+  "n": 48,
+  "corpus_docs": 300,
+  "index_cost": {
+   "wall_s": 0,
+   "note": "strategy=A + doc_ids=300 篇；top60→切片内前20；oos命中合计 3；常见通道 ['lexical', 'dense', 'docvec', 'synq', 'graph']"
+  },
+  "recall@5": 0.8958,
+  "recall@10": 0.9375,
+  "recall@20": 1.0,
+  "cov@10": 0.5993,
+  "cov@20": 0.7125,
+  "mrr@10": 0.7346,
+  "ndcg@10": 1.2678,
+  "latency_p50_s": 1.457,
+  "latency_p95_s": 1.74
+ }
+]
