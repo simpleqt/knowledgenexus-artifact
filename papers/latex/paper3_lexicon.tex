@@ -3,62 +3,46 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{multirow}
+\usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
 \setlength{\emergencystretch}{3em}
-\journal{JCDL (primary target) / Data Analysis and Knowledge Discovery (fallback)}
+\journal{Preprint, October 2026}
 
 \begin{document}
 
 \begin{frontmatter}
-\title{The Lexicon Is the Load-Bearing Wall: How Schema Term Quality Decides
-Entity-Layer Fate in Dictionary-Driven Enrichment at Production Scale}
+\title{When Schema Lexicons Fail: Diagnosing and Repairing Entity-Layer
+Collapse in a Production Knowledge Base}
 \author[addr1]{Zhiqian Chen\corref{cor1}}
 \ead{chenzhiqian@cdut.edu.cn}
 \cortext[cor1]{Corresponding author.}
 \address[addr1]{Chengdu University of Technology, Chengdu, China}
 
 \begin{abstract}
-Dictionary-driven mention extraction is a common design in production
-knowledge-base pipelines: it is cheap, reproducible, and idempotent. We
-report a production incident in which this design, fed by a
-machine-generated schema, silently collapsed the entity layer of a
-61{,}137-document scholarly knowledge base into \textbf{575 entities}
-carrying \textbf{19.2 million entity links}---every entity a bare type word
-such as ``method'' or ``energy''. No conventional monitor fired: enrichment
-jobs completed, throughput was normal, and link volume looked like growth.
-We trace the collapse through three layers---the extraction mechanism (pure
-lexicon scan), the lexicon's provenance (a batch-generated schema whose
-per-type aliases form a category taxonomy rather than a domain terminology),
-and the healthy counter-example in the same deployment (78 documents, a
-hand-curated 3{,}742-term lexicon, 1{,}608 well-formed entities). We then
-describe a three-source, anti-hallucination lexicon generation method
-(transplanted seed terms, corpus-candidate classification, and per-type
-expansion, all gated by corpus attestation; 3{,}702 and 1{,}279 terms for
-the two affected schemas) and a full-chain rebuild over 766{,}501
-re-enqueued jobs that doubled as a load test, surfacing and fixing five
-pipeline pathologies (a whole-corpus join in graph projection that
-saturated a 112-core database at load 500; two link-insertion deadlock
-classes; an $O(N^2)$ acronym check amplified by the richer lexicon
-itself---137$\times$ link throughput after the fixes; and a parameter-order
-bug whose rows were silently swallowed by \texttt{INSERT IGNORE} for seven
-hours while every job-level monitor read green). The rebuilt layer holds
-\textbf{1{,}871 canonical entities with 25.1M links and 44k typed
-relations} on the 61{,}137-document library---3.25$\times$ the collapsed
-cardinality, a relation layer where none functioned, and scoped retrieval
-coverage up +6.6/+7.3 points over the repair window. Two audits bound the
-claim: a single-variable channel ablation shows the retrieval gain does
-\emph{not} run through entity-channel fusion votes (metrics bitwise
-identical with every entity-dependent channel off), and an LLM-assisted
-audit of a seeded 100-link sample puts rebuilt link precision at
-\textbf{0.85} (95\% CI [0.77, 0.91]; cross-model-confirmed at 96\%
-agreement on the parseable subset)---1.00 on domain terminology
-(n=25), 0.80 on the generic tail that survives repair, a documented boundary rather
-than a triumph. We argue the
-incident generalizes: wherever an LLM drafts a schema whose aliases then
-become the extraction surface, lexicon quality is load-bearing
-infrastructure, and it needs its own observability---scale-invariant
-link-concentration and entity-name-distribution monitors that standard
-pipeline dashboards do not provide by default.
+\textbf{Background and problem.} In dictionary-driven entity enrichment,
+the schema lexicon \emph{is} the extraction model. We report a
+production incident in which a category-word lexicon silently collapsed
+the entity layer of a 61{,}137-document scholarly knowledge base: 575
+type-level entities (``method'', ``energy'') carrying ${\sim}$19.2M
+links while every job-level monitor stayed green. \textbf{Method.} We
+diagnose the failure across three layers (extraction mechanism, lexicon
+provenance, monitoring blindness), repair it with a three-source
+corpus-presence-attested lexicon (3{,}702 terms), rebuild the entity
+layer under production load, and derive scale-invariant quality
+monitors. \textbf{Results.} An isolated fixed-code, fixed-corpus
+experiment that varies only the lexicon quantifies the causal effect
+directly; the rebuilt layer carries 1{,}871 entities, 25.1M links, and
+a functioning relation layer; distinct concepts per document rise
+15.7$\to$37.8 with document coverage 48.5\%$\to$98.5\%; top-10 link
+concentration falls 0.419$\to$0.345; an LLM-assisted audit puts link
+precision at 0.85 (95\% CI [0.77, 0.91]; 1.00 on domain terms, n=25; a
+second Qwen-series model agrees on 96\% of its parseable subset).
+\textbf{Limitations.} The generic tail survives repair (9\% of links
+sit on the single ambiguous symbol ``be''); retrieval-facing gains are
+not attributable to the lexicon alone (entity-channel ablation is
+bitwise null; alias expansion +1.5pt, ns); audit and cross-judge are
+model-assisted, not human-adjudicated; monitor thresholds are post-hoc
+on 13 libraries.
 \end{abstract}
 
 \begin{keyword}
@@ -74,7 +58,7 @@ Large scholarly knowledge platforms increasingly generate their subject
 schemas with LLM assistance: a batch tool drafts entity types with a handful
 of aliases each, a validator checks structural well-formedness, and the
 schema is bound to knowledge bases as configuration (our own batch generator
-is the first villain of this story; LLM-for-ontology generation is surveyed
+is the primary failure source in this account; LLM-for-ontology generation is surveyed
 in~\cite{llmonto}). This is attractive at scale---our deployment covers
 80{,}855 parsed journal articles (80{,}852 active, 7{,}229{,}225 text
 chunks) across two large knowledge bases and several smaller ones---and it
@@ -202,15 +186,17 @@ words where domain concepts were expected. The full picture
 
 \begin{table}[t]
 \centering
-\caption{The collapse, measured.}
+\caption{The collapse, measured. ``bckp.'' = 2026-10-06 cold-backup
+snapshot (mid-enrichment); ``disc.'' = discovery-day counts; the
+hydraulic reference case is measured 2026-10-10.}
 \label{tab:collapse}
 \begin{tabular}{lllll}
 \toprule
 KB & Docs & Entities & Links & Schema provenance \\
 \midrule
-104112E6 (nuclear electronics) & 61{,}137 & \textbf{575} & \textbf{{\raisebox{1pt}{$\scriptstyle\sim$}}19.2M} & batch-generated \\
-693372D5 (physics) & 13{,}408 & \textbf{2{,}018} & $\approx$10$^6$ (est.) & batch-generated \\
-hydrogeology (control) & 78 & 1{,}608 & normal & hand-evolved \\
+104112E6 (nuclear) & 61{,}137 & \textbf{575} (disc.) / 503 (bckp.) & \textbf{${\sim}$19.2M} (disc.) / 4.81M (bckp.) & batch v2.0 \\
+693372D5 (physics) & 13{,}408 & \textbf{2{,}018} & 2.23M (bckp., meas.) & batch \\
+hydrogeology (ref.) & 78 & 1{,}608 & 719{,}515 (2026-10-10) & hand-evolved \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -218,7 +204,8 @@ hydrogeology (control) & 78 & 1{,}608 & normal & hand-evolved \\
 61{,}137 documents carrying ${\sim}$19.2M links is ${\sim}$315 links per
 document on average, and ${\sim}$33{,}000 links per entity: every document
 ``mentions'' the type vocabulary constantly. The graph is a bipartite
-type--document index wearing a knowledge graph's clothes.
+type--document index that is row-level indistinguishable from a
+populated knowledge graph.
 
 \textbf{The incident timeline} (dates stated plainly, because a repair of
 this scale compressed into a two-day window is exactly the kind of claim
@@ -226,17 +213,20 @@ a reader should be invited to check):
 
 \begin{table}[t]
 \centering
-\caption{Incident timeline.}
+\caption{Incident timeline (events compressed; full narrative in the text).}
 \label{tab:timeline}
 \small
-\begin{tabularx}{\textwidth}{lX}
+\begin{tabularx}{\textwidth}{@{}llX@{}}
 \toprule
-Date & Event \\
+Date & Phase & Event \\
 \midrule
-2026-10-08 & Collapse discovered (storage investigation); three-layer root cause traced same day; three-source lexicon generator built, run, and committed (nuclear v2.1, physics v1.1); rebuild driver executed; 766{,}501-job re-enqueue begins against the live fleet \\
-2026-10-08 (night) & Silent-swallow incident: 7 hours of zero link-registry growth under all-green job monitors; caught by row-count reconciliation; 51{,}459$+$24{,}372 empty jobs reset; recovery measured at $+$611k rows/min \\
-2026-10-09 & Four-stage drain completes on both libraries; per-KB statistics recomputed; entity vectors reprojected; the two smaller diseased libraries (1{,}324$+$119 docs) treated with the same playbook \\
-2026-10-09$\to$10 & Post-hoc audits on the settled system: scoped trajectory refresh, single-variable channel ablation, seeded 100-link precision audit, fleet-wide concentration measurements (the RAND seed 20261009 records the audit date); manuscript drafted and revised \\
+10-08 & discover & storage investigation surfaces type-word entities \\
+10-08 & root-cause & three-layer diagnosis; lexicon tool built, run, committed (v2.1) \\
+10-08 & rebuild & teardown + 766{,}501-event re-enqueue; B95 silent misattribution window \\
+10-09 & drain & four stages complete; stats recomputed; vectors reprojected \\
+10-09 & extend & two smaller diseased libraries treated (same playbook) \\
+10-09/10 & audit & scoped refresh, channel ablation, link audit, concentration fleet-wide \\
+10-09/10 & manuscript & drafted, revised; retrospective --- not pre-registered \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -252,7 +242,29 @@ set for type \texttt{method} contains common words (``method'',
 ``approach'', and their CJK equivalents), every occurrence of those words in
 7.2M chunks becomes a mention, and K2's normalized-form+type linkage folds
 them onto one canonical entity per (form, type) pair. The mechanism executed
-flawlessly on garbage input.
+faithfully on degenerate input.
+
+\begin{figure}[t]
+\centering
+\small
+\begin{tabular}{@{}p{0.47\textwidth}@{\hspace{4mm}}p{0.47\textwidth}@{}}
+\textbf{category-word lexicon (v2.0)} & \textbf{repaired lexicon (v2.1)} \\[1.5mm]
+\texttt{method} $\to$ type \emph{method} &
+\texttt{hpge detector} $\to$ \emph{detector} \\
+\texttt{energy} $\to$ type \emph{energy} &
+\texttt{preamplifier} $\to$ \emph{circuit} \\
+\texttt{time} $\to$ \emph{physical\_quantity} &
+\texttt{neutron irradiation} $\to$ \emph{isotope} \\[1.5mm]
+\multicolumn{1}{l}{575 entities / 19.2M links} &
+\multicolumn{1}{l}{1{,}871 entities / 25.1M links} \\
+\multicolumn{1}{l}{48.5\% of documents unannotated} &
+\multicolumn{1}{l}{98.5\% of documents annotated} \\
+\end{tabular}
+\caption{Mechanism: the schema lexicon \emph{is} the extraction model.
+Identical scan-and-link code over the same corpus; only the dictionary
+differs (terms and examples illustrative of each lexicon's content).}
+\label{fig:mechanism}
+\end{figure}
 
 \textbf{Layer 2 --- provenance.} The dictionaries were the schemas. The
 batch generator, prompted to ``draft entity types with aliases for subject
@@ -260,10 +272,12 @@ X'', produced exactly that: type-level category vocabulary. Nothing in its
 validator checks whether aliases are \emph{domain-specific}---structural
 validity is the gate, and category words are structurally valid.
 
-\textbf{Layer 3 --- the control.} Hydrogeology's 3{,}742 hand-evolved terms
-over 78 documents yield 1{,}608 entities ${\approx}$20.6 per document of
-genuine concepts. Collapse correlates with lexicon nature, not corpus size
-or pipeline version.
+\textbf{Layer 3 --- the reference case.} Hydrogeology's 3{,}742
+hand-evolved terms over 78 documents yield 1{,}608 entities. We call it
+a reference case, not a controlled comparison: domain, scale, register,
+and lexicon provenance all differ, so it establishes plausibility, not
+causation --- which is what the isolated experiment of
+Section~\ref{sec:after} (6.5) is for.
 
 \textbf{Why nothing fired.} Job-level observability was all green (jobs
 DONE, throughput nominal, error rate zero). Link volume---if anything---read
@@ -273,8 +287,9 @@ state measures 0.419 with its top-10 entities being pure type
 vocabulary, versus 0.18 for the healthy control
 (Section~\ref{sec:discussion}'s monitor~(a) gives the measurement and
 its provenance)---and (b)~the name distribution of top-linked entities, which is
-pure type vocabulary. Entity cardinality per document---two orders of
-magnitude below the control---corroborates, but cardinality is a coarse
+pure type vocabulary. Entity cardinality per document---a factor of 2{,}192
+below the reference case (0.0094 vs 20.6), over three orders of
+magnitude---corroborates, but cardinality is a coarse
 signal gameable in both directions (the small-library treatment of
 Section~\ref{sec:limitations} shows category-word aliases inflating it),
 which is why it is the secondary, not the primary, monitor. Neither
@@ -282,8 +297,24 @@ observable is provided by standard pipeline dashboards by default. This
 blindness generalizes to any dictionary-driven system whose dashboards
 count jobs and rows.
 
-\section{Lexicon generation, once and correctly}
+\section{Corpus-Attested Lexicon Construction and Validation}
 \label{sec:lexicon}
+
+Figure~\ref{fig:lexicon-method} shows the three-source admission process
+and its quality boundary.
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{../A线-figures/latex_redraw/p3_lexicon_method.pdf}
+\caption{Three-source terminology generation and deterministic enrichment.
+Healthy seeds, classified corpus candidates and per-type expansion
+proposals pass corpus-attestation, vocabulary, conflict-resolution and
+structural gates before entering a versioned schema. The admitted
+vocabulary drives mention scanning, canonical linking, typed-relation
+adjudication and graph projection. Attestation verifies occurrence;
+contextual sense and domain specificity still require an independent
+link-quality audit.}
+\label{fig:lexicon-method}
+\end{figure}
 
 The repair requirement: produce genuine domain terminology at scale, without
 per-subject lexicographers, without hallucinated terms---and make it a
@@ -303,8 +334,10 @@ frequency $\geq$5 after a boilerplate and stop-word filter (section
 vocabulary such as \emph{acknowledgements/approach/using}; closed-class
 English words). An LLM classifies each surviving candidate into a schema
 entity type or rejects it. The corpus
-floor is the anti-hallucination gate: a term the corpus never attests is
-not admitted, whatever the LLM thinks of it.
+floor is a corpus-presence gate---attestation means the term occurs in
+the corpus, which is necessary but not sufficient for termhood (the
+``be'' case of the name-quality section is exactly this gap); it
+prevents hallucinated entries, not generic-word admissions.
 \item \textbf{Per-type expansion ($\leq$60 per type).} For each entity type
 the LLM proposes additional domain terms, given the type description and
 the transplanted seeds as in-context anchors; the same corpus-attestation
@@ -348,8 +381,16 @@ layer without stopping ingestion or retrieval. The rebuild driver executes
 per knowledge base: delete graph-store vertices with edges; delete the four
 relational tables (mentions, links, relations, graph-projection queue rows)
 in bounded chunks; delete the search-side entity projection by query; then
-re-enqueue all documents through the four stages---\textbf{766{,}501 jobs}
-across the two affected libraries. The rebuild ran against the production
+re-enqueue all documents through the four stages---\textbf{766{,}501 enqueue events}
+across the two affected libraries. The count is events, not distinct
+doc-stages (74{,}545 documents $\times$ 4 stages $=$ 298{,}180): the
+surplus is the repair window's re-enqueue waves---the silent-empty
+links reset (75{,}831), the post-fix relations/graph zero-effect resets
+(${\approx}$149k), the watchdog-deletion graph recovery
+(${\approx}$122k), the small-library treatment (5{,}772), and
+re-dispatch of partially processed waves during the gated window; the
+job table holds one row per doc-stage with an attempts counter, so
+every wave re-uses rows. The rebuild ran against the production
 fleet (five multi-worker enrich instances, one links-dedicated consumer per
 KB) while normal retrieval served.
 
@@ -377,7 +418,13 @@ of 101 seconds per links task, burning the GIL while 16 threads queued.
 Caching canonical forms by schema signature (lexicon version + alias count)
 took it to 0.05\,s. Net link throughput: \textbf{8/min $\to$ 1{,}100/min
 (137$\times$)}---the collapse-era lexicon was so small it hid this bug for
-months; the \emph{repair} exposed it in an afternoon.
+months; the \emph{repair} exposed it in an afternoon. The 137$\times$ is a
+window-level aggregate over concurrent fixes (the deadlock repairs land
+in the same window); the cache's isolated contribution is measured at
+task level---95 of 101 seconds per links task---and the cache key
+(schema version $+$ alias count) can in principle alias two same-size,
+same-version, different-content lexicon edits; version-pinned bumps
+(v2.0$\to$v2.1) are the mitigation.
 \end{itemize}
 
 The last point deserves emphasis in prose, not just as a bullet: the
@@ -386,21 +433,46 @@ $N$ was tiny. Correcting the lexicon did not merely improve extraction---it
 changed the computational regime of the pipeline and surfaced latent
 engineering debt. Lexicon quality is load-bearing in the most literal sense.
 
-The rebuild also supplied its own fifth pathology, and it is the one that
-most cleanly demonstrates our observability thesis. The B93
-single-statement link writer shipped with a parameter-order bug: the SQL's
-first placeholder was the knowledge-base id (\texttt{UNHEX(\%s)}), but the
-call bound the term form there first---so every row carried
-\texttt{UNHEX('alloy')} $=$ NULL as its kb\_id, violating the NOT NULL
-column, and \textbf{INSERT IGNORE silently swallowed the entire insert}.
-Jobs completed. Entities were created. Throughput read 1{,}100 jobs per
-minute. Only one observable was wrong: the link registry stopped
-growing---for seven hours. We detected it via row-count reconciliation
-against job completions, fixed the binding, reset 51{,}459 $+$ 24{,}372
-silently-empty jobs, and measured recovery at +611k rows in the first 60
-seconds. Job-level DONE is not row-level truth; any bulk writer guarded by
-INSERT IGNORE needs an affected-rows reconciliation, and pipeline
-dashboards need a target-table growth rate beside the job queue.
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{figs/fig_rebuild_telemetry.png}
+\caption{Rebuild telemetry from the link registry's own timestamps
+(hourly \texttt{created\_at} counts). KB2's entire link layer lands in
+the 10:00 hour (5.0M rows); KB1 drains across the day at up to 9.2M
+rows/hour. The shaded band is the \emph{logged} B95 window
+(11:41--18:35); inserts continue through it, which forces the
+timestamp correction reported in the text.}
+\label{fig:telemetry}
+\end{figure}
+
+The rebuild also supplied its own fifth pathology, and revisiting it
+with the registry's own timestamps forced a correction to our incident
+log that we report in full. The original record: a single-statement
+link writer shipped with a parameter-order bug (the SQL's first
+placeholder expected the knowledge-base id; the call bound a term form
+there), jobs completed green for hours, and per-KB link counts read
+zero growth until a row-count reconciliation caught it. What a minimal
+reproduction on the production engine (MySQL 8.4, \texttt{STRICT\_TRANS\_TABLES},
+faithful DDL) now establishes is sharper than ``rows were swallowed'':
+under \texttt{INSERT IGNORE}, the NULL produced by
+\texttt{UNHEX('alloy')} is \textbf{replaced by the implicit default
+0x00$\times$16 and the row is inserted}---into a ghost bucket invisible
+to every per-KB query and monitor (warnings 1411 and 1048 fire; nothing
+fails)---and a later correct re-insert for the same (mention, entity)
+pair is \textbf{silently skipped by the unique key}, so the orphan
+actively poisons the repair unless deleted first. Production carries
+zero 0x00 rows today, so the recovery path included that cleanup. A
+second correction concerns duration: the operations log recorded
+``seven hours of zero growth'', but the surviving rows' own
+\texttt{created\_at} histogram (Figure~\ref{fig:telemetry}) shows KB1
+inserting at 1.0--2.3M rows/hour continuously through that nominal
+window and KB2's entire link layer landing in a single hour---the
+zero-growth reading cannot be reconciled with the timestamps and most
+plausibly reflects a monitoring view scoped to the buggy writer's
+partition rather than the whole table. We keep both the original log
+entry and its correction in the record: incident narratives written
+from job dashboards are themselves unverified claims; row-level
+forensics is the only authoritative account.
 
 Rebuild final state. All four stages drained across both knowledge bases:
 mentions, links, relations, graph projection. The repaired entity layer,
@@ -415,40 +487,73 @@ channels active.
 \section{Before/after}
 \label{sec:after}
 
-\textbf{Entity layer.} The headline repair (all numbers from the production
-database, reproducible SQL in the released evidence pack;
-Table~\ref{tab:after}):
+Figure~\ref{fig:entity-counts} compares entity cardinalities across the
+two main and two auxiliary repaired libraries.
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{../A线-figures/latex_redraw/p3_entity_counts.pdf}
+\caption{Entity counts before and after vocabulary repair. Gray circles
+are pre-repair snapshots; teal diamonds are rebuilt snapshots. Nuclear
+electronics and the large physics library expand, whereas the small
+physics library (D2B4AD67) and auxiliary library (F54CE546) contract.
+These are complete registry counts, not sample estimates, so no uncertainty
+intervals are shown. Increasing cardinality alone cannot establish
+improved link quality.}
+\label{fig:entity-counts}
+\end{figure}
+
+\textbf{Entity layer.} The headline repair, with snapshot provenance
+stated (collapsed-era link metrics from the 2026-10-06 cold backup, a
+mid-stream snapshot two days before discovery; terminal collapsed
+totals from the discovery-day count; repaired metrics 2026-10-10):
 
 \begin{table}[t]
 \centering
-\caption{Before/after, entity layer.}
+\caption{Before/after, entity layer, with snapshot provenance.}
 \label{tab:after}
 \small
-\begin{tabularx}{\textwidth}{lXXX}
+\begin{tabularx}{\textwidth}{lXX}
 \toprule
-Metric & Collapsed & Rebuilt & Control (hydro) \\
+Metric (KB1) & Collapsed & Repaired \\
 \midrule
-KB1 documents & 61{,}137 & 61{,}137 & 78 \\
-KB1 canonical entities & \textbf{575} & \textbf{1{,}871} (3.25$\times$) & 1{,}608 \\
-KB1 entity links & ${\sim}$19.2M (type words) & \textbf{25{,}097{,}704} (terms) & normal \\
-KB2 entities / links & 2{,}018 / $\approx$10$^6$ (est.) & \textbf{2{,}730 / 5{,}009{,}755} & --- \\
-KB1 typed relations & ${\sim}$0 effective & \textbf{44{,}043} $+$ 1.56M evid.\ rows & --- \\
+canonical entities & 575 (disc.) / 503 linked (10-06) & \textbf{1{,}871} \\
+entity links & ${\sim}$19.2M (disc.) / 4.81M (10-06) & \textbf{25{,}097{,}704} \\
+typed relations & ${\sim}$0 effective & \textbf{44{,}043} $+$ 1.56M evid.\ rows \\
+top-10 link concentration & 0.419 (10-06) & \textbf{0.345} \\
+concepts / document (all-doc basis) & 15.7 (48.5\% docs empty) & \textbf{37.8} (98.5\% covered) \\
+KB2: concepts / document & 29.5 (91\% covered) & \textbf{61.4} (91\% covered) \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-The relation layer did not exist in any usable form before the repair; it
-now carries schema-typed, LLM-adjudicated relations with per-relation
-evidence quotes, and is what the retrieval graph channel traverses.
+Concepts-per-document replaces the raw entity/document ratio as the
+cardinality-family metric: its numerator scales with documents, it is
+readable by domain experts, and the coverage column exposes the
+collapse's most user-visible symptom---half the library had
+\emph{no} entity annotations at all. The concentration drop
+0.419$\to$0.345 is honest about its own limits: the pre-repair figure
+is a mid-stream snapshot (4.81M links; the terminal state was 19.2M on
+the same entities, which can only push concentration toward the
+type-word head), and part of the drop comes from the entity population
+growing---the name audit below remains the sharper discriminator.
+Absolute link counts \emph{rise} after repair in both libraries (KB1
+${\sim}$19.2M$\to$25.1M; KB2 2.23M$\to$5.0M, same-snapshot backup on
+both sides): the repaired lexicons carry thousands of real terms that
+match more often. Count was never the quality signal---distribution
+(concentration) and names (top-entity audit) are.
 
-One reading note on absolute counts: link totals \emph{rise} after repair
-in both libraries (KB1 ${\sim}$19.2M$\to$25.1M; KB2
-${\approx}$10$^6\to$5.0M)---the repaired lexicons carry thousands of real
-terms that match more often than the category-word dictionaries did in
-these corpora. This is expected, and it is precisely why count was never
-the quality signal: the distinguishing observables are how the links
-distribute across entities (concentration) and onto which names
-(top-entity audit), not how many there are.
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.495\textwidth]{figs/fig_top_before.png}\hfill
+\includegraphics[width=0.495\textwidth]{figs/fig_top_after.png}
+\caption{Top-30 entities by link share, KB1, before (2026-10-06 cold
+backup; $C_{10}=0.419$) and after repair ($C_{10}=0.345$). Green =
+domain terms, orange = generic academic words, red = short ambiguous
+symbols. The head is dominated by generic vocabulary in both states;
+repair diversifies the mid-tail (visible as the shorter bars) but does
+not dethrone it.}
+\label{fig:topentities}
+\end{figure}
 
 \textbf{Name quality, honestly.} The top-linked entities after repair are
 \texttt{be} (2.26M links), \texttt{alpha}, \texttt{gamma}, \texttt{beta},
@@ -494,6 +599,24 @@ co-occurrence channel fired on only 6/48 association queries (its adaptive
 gate suppresses it when base retrieval already serves co-mention
 documents) and changed no outcome.
 
+Figure~\ref{fig:entity-attribution} separates the scoped zero-effect
+finding from the natural-phrasing liveness control.
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{../A线-figures/latex_redraw/p3_attribution_boundary.pdf}
+\caption{Distribution-dependent attribution of entity-channel effects.
+(a) Under the identical post-rebuild configuration, disabling all
+entity-dependent channels leaves cov@10 unchanged on the scoped
+associative ($n=48$) and real-question ($n=39$) sets. Points are observed
+set averages; no marginal confidence intervals were archived for these
+levels. (b) On the natural-phrasing liveness set ($n=99$), co-occurrence
+fires on 54 queries: its removal causes 20 gold-hit losses, zero wins
+and 34 ties. The other 45 queries are shown explicitly as not triggered.
+The liveness experiment has a different question distribution and is
+not a before/after estimate of the lexicon repair's causal effect.}
+\label{fig:entity-attribution}
+\end{figure}
+
 \textbf{Channel-liveness check (the ablation's alternative explanation,
 closed).} A bitwise-identical result admits a defensible alternative
 reading---that the entity channels are not wired, or that their gates
@@ -507,6 +630,22 @@ the channel never helps and hurts on a fifth of the set. The channel is
 alive, the gate opens exactly where designed, and the scoped zero-effect
 is the gate closing because base retrieval already serves those
 co-mention documents---not a dead wire.
+
+\textbf{Run-to-run noise floor.} Two same-configuration scoped runs
+hours apart (the refresh run and the ablation baseline) differ on
+exactly one of 39 single-intent queries (cov@10 0.675 vs 0.670)---a
+measured 0.5pt noise floor from nondeterministic channel timing that
+bounds every within-window comparison in this paper.
+
+\textbf{Alias-expansion ablation.} The one entity-adjacent mechanism
+that plausibly carried the trajectory---bilingual alias expansion
+feeding BM25---was ablated on/off under the final configuration:
+association cov@10 $+$1.5pt (CI [$-$3.9, $+$0.6], ns) and single-intent
+$+$0.1pt, at a p50 latency cost of 1.6$\to$3.5\,s. On the benchmark
+sets the retrieval-window trajectory is therefore not attributable to
+the lexicon through this mechanism either; where alias expansion pays
+is query distributions rich in dictionary surfaces (the
+natural-phrasing set), which the benchmarks under-represent.
 
 The attribution this forces is precise and we state it against interest:
 the +6.6/+7.3pt trajectory is \textbf{not} carried by entity channels
@@ -546,14 +685,43 @@ human-adjudicated---a limitation we keep visible
 the monitor design predicts, and the programmatic span check removes the
 cheapest class of audit noise.
 
+Figure~\ref{fig:link-precision} displays the audit's uncertainty and
+stratum sizes.
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{../A线-figures/latex_redraw/p3_link_precision.pdf}
+\caption{Link precision in the primary LLM-assisted audit of 100 sampled
+KB1 links. Points show valid-link fractions and horizontal intervals are
+Wilson 95\% confidence intervals. The overall sample (85/100) comprises
+domain-term (25/25) and generic-term (60/75) strata; the three rows are
+not independent samples. Domain specificity separates the observed error
+mass, but the domain stratum is small and this audit is not human
+adjudication. Every sampled link is retained.}
+\label{fig:link-precision}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.86\textwidth]{figs/fig_audit_ci.png}
+\caption{Link-precision audit with Wilson 95\% CIs. The cross-judge
+bars apply to the 55-link parseable subset only (45/100 responses were
+unparseable), and both judges are Qwen-series.}
+\label{fig:auditci}
+\end{figure}
+
 \textbf{Cross-model check (the judge-independence concern, addressed).}
 The audit judge and the lexicon classifier are the same model family---a
 self-grading risk we take seriously. We re-adjudicated the identical 100
-links with a second judge from a different model family and provider
-(Qwen3.8-Flash via an external gateway; temperature 0, identical rubric).
+links with a second judge from a different model, checkpoint, and provider
+(Qwen3.8-Flash via an external gateway; temperature 0, identical
+rubric). Both judges are Qwen-series---vendor-level correlation is not
+excluded, and we label this a cross-model check, not an independent
+family confirmation.
 The second judge failed to emit parseable verdicts on 45/100---a
-flash-tier instruction-following failure we report as-is, not hide; on
-the 55 it did adjudicate, verdict agreement with the primary judge is
+flash-tier instruction-following failure we report as-is, not hide.
+The agreement figure therefore applies only to the 55-link parseable
+subset and cannot be read as confirmation of the full 100; on that
+subset, verdict agreement with the primary judge is
 \textbf{53/55 $=$ 96.4\%} (50 both-valid, 3 both-invalid, 2
 discordant---both discordances on the borderline generic word
 ``term''), and the domain stratum agrees \textbf{14/14}. Where an
@@ -563,6 +731,72 @@ to the small domain stratum (n=25 primary, 14 cross-parsed). A
 human-adjudicated stratified sample remains the decisive control and is
 listed as such in Section~\ref{sec:limitations}.
 
+\textbf{The lexicon variable, isolated.} The repair bundled lexicon,
+teardown, and fleet changes; this experiment isolates the lexicon
+alone. Design: a semantic replica of the K1 scan-and-link semantics
+(CJK substring match; ASCII word-boundary $+$ optional plural,
+case-folded) and the K2 fold (normalized form $+$ type), run over a
+deterministic 2{,}000-chunk sample of the production corpus, with
+\textbf{only the dictionary swapped}: v2.0 as committed at library
+creation (182 scan terms), v2.5 (mid-evolution, 2{,}932), v2.1 (the
+repair, 3{,}733), plus two v2.1 governance variants (case-sensitive
+matching for short ASCII symbols; an English stop-word block at
+admission).
+
+\begin{table}[t]
+\centering
+\caption{Isolated lexicon comparison (fixed code, fixed corpus; only
+the dictionary differs).}
+\label{tab:lexiso}
+\small
+\begin{tabularx}{\textwidth}{lXXXXX}
+\toprule
+Arm & Links & Entities & $C_{10}$ & Concepts/doc & Generic-head \\
+\midrule
+v2.0 (collapse-era) & 2{,}720 & 77 & \textbf{0.557} & 1.8 & 0.163 \\
+v2.5 (mid-evolution) & 4{,}472 & 266 & 0.339 & 2.4 & 0.099 \\
+v2.1 (repair) & 9{,}456 & 493 & \textbf{0.316} & \textbf{3.7} & \textbf{0.062} \\
+v2.1 + case-sensitive short symbols & 8{,}328 & 468 & 0.290 & 3.4 & 0.070 \\
+v2.1 + stop-word block & 8{,}756 & 492 & \textbf{0.276} & 3.5 & 0.067 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Three findings. \textbf{(1)~The collapse signature is reproduced by the
+lexicon alone}: 77 entities at concentration 0.557 and 1.8 concepts per
+document from the v2.0 dictionary---same code, same corpus, no other
+variable. \textbf{(2)~The repair effect is isolated}: v2.0$\to$v2.1
+multiplies link-bearing entities $\times$6.4, concepts per document
+$\times$2.1, and halves concentration and generic-head mass; the
+production collapsed state (503 linked entities, $C_{10}$=0.419 at the
+10-06 backup) sits between the v2.0 and v2.5 counterfactuals,
+consistent with the operational dictionary having evolved
+mid-enrichment after the bulk of extraction had run.
+\textbf{(3)~The ``be'' class is treatable at known cost}: case-sensitive
+short-symbol matching removes the single largest entity (700 links =
+7.4\% of the sample; ``be'' drops out of the top-5) and takes
+concentration to 0.290, at the price of a wider case-fold recall loss
+(links $-$11.8\%, judged precision 0.95$\to$0.925); a stop-word block is
+gentler ($-$7.4\% links, $C_{10}\to$0.276, precision 0.975). Judged
+precision is near-tautological for dictionary self-matches (the entity
+name \emph{is} the surface form), so the structural metrics lead and
+precision is a bounded secondary---the same caveat the link audit
+carries. Methodological caveats: semantic-replica scanner, 2{,}000-chunk
+sample, and committed-snapshot arms rather than independently
+regenerated component ablations (the provenance decomposition in
+Section~\ref{sec:discussion} approximates that axis lexically).
+
+\textbf{Provenance decomposition (component contribution, approximated
+lexically).} The v2.1 file carries no per-term source tags, so we
+decompose its isolated link mass by which earlier committed lexicon
+first contained each matched term: v2.0-inherited terms contribute
+21.4\% of links (50 entities), mid-evolution terms 15.3\% (147), and
+terms first introduced by the three-source repair \textbf{63.2\% of
+links (296 of 493 entities)}---the repair's additions carry two-thirds
+of the rebuilt link mass. A true component ablation (independently
+regenerating single-source dictionaries) remains future work; this
+set-algebra attribution is its lexical lower bound.
+
 \section{Discussion}
 \label{sec:discussion}
 
@@ -570,6 +804,18 @@ listed as such in Section~\ref{sec:limitations}.
 caught both incidents at first symptom, in the spirit of production
 data-validation systems~\cite{tdd}:
 \begin{itemize}
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.86\textwidth]{figs/fig_conc_scatter.png}
+\caption{Top-10 link concentration vs.\ link-bearing entities across
+the 13 production libraries (log x-axis). Red = libraries rebuilt in
+this incident; green star = hand-curated reference case; gray =
+remaining production libraries. The bands are the proposed
+post-hoc alarm thresholds; the smallest libraries sit high partly by
+the Zipfian floor effect discussed in the text.}
+\label{fig:scatter}
+\end{figure}
+
 \item[(a)] \emph{Top-10 link concentration (primary, scale-invariant).}
 The fraction of all entity links held by the ten most-linked entities. As
 a share it is comparable across corpus sizes and disciplines---exactly
@@ -598,10 +844,15 @@ sharper discriminator of the collapse itself. We propose a band alarm
 ($>$0.35 investigation, $>$0.5 escalation) with an explicit caveat: the
 thresholds are calibrated post-hoc on this deployment's thirteen
 libraries, not on an external population---a starting point for
-adopters, not a validated norm.
+adopters, not a validated norm---prospective validation
+(false-positive/false-negative rates and detection delay on live
+streams) is future work, and libraries below a few hundred entities
+warrant size-stratified bands.
 \item[(b)] \emph{Entity cardinality ratio (coarse secondary).} Canonical
 entities per ingested document, alarmed against a per-domain band (our
-control suggests O(10--20) for scholarly corpora; collapse ran at 0.009).
+control suggests O(10--20) for scholarly corpora; collapse ran at 0.009, a factor 2{,}192 below the reference
+case, and the ratio's sublinear numerator makes it scale-sensitive---the
+per-document concept counts above are the better-behaved metric).
 Cardinality alone is gameable in the other direction---the small-KB
 treatment showed category-word aliases \emph{inflating} the count
 (Section~\ref{sec:limitations})---which is why it backs up (a) rather

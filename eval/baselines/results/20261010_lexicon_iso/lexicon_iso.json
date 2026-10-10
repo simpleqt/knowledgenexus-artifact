@@ -1,0 +1,2112 @@
+[
+ {
+  "arm": "v2.0-collapse",
+  "terms": 182,
+  "chunks": 2000,
+  "mentions_links": 2720,
+  "entities": 77,
+  "top10_concentration": 0.557,
+  "per_doc_distinct_entities_mean": 1.8,
+  "per_doc_distinct_entities_sd": 1.3,
+  "generic_head_mass_share": 0.163,
+  "top20": [
+   [
+    "gamma:particle",
+    450
+   ],
+   [
+    "method:method",
+    192
+   ],
+   [
+    "parameters:parameter",
+    152
+   ],
+   [
+    "term:term",
+    128
+   ],
+   [
+    "methods:method",
+    128
+   ],
+   [
+    "parameter:parameter",
+    102
+   ],
+   [
+    "terms:term",
+    98
+   ],
+   [
+    "spectrum:energy_spectrum",
+    92
+   ],
+   [
+    "background:parameter",
+    88
+   ],
+   [
+    "particles:particle",
+    86
+   ],
+   [
+    "noise:parameter",
+    72
+   ],
+   [
+    "particle:particle",
+    64
+   ],
+   [
+    "simulation:method",
+    60
+   ],
+   [
+    "beam:experimental_facility",
+    58
+   ],
+   [
+    "detector:detector",
+    48
+   ],
+   [
+    "neutrino:particle",
+    48
+   ],
+   [
+    "simulations:method",
+    44
+   ],
+   [
+    "proton:particle",
+    44
+   ],
+   [
+    "neutron:particle",
+    44
+   ],
+   [
+    "decay:nuclear_reaction",
+    42
+   ]
+  ],
+  "llm_precision": 1.0,
+  "llm_precision_ci": [
+   0.912,
+   1.0
+  ],
+  "llm_domain_stratum": "22/22",
+  "llm_generic_stratum": "18/18",
+  "judged_sample": [
+   {
+    "form": "fluences",
+    "type": "radiation_measurement",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'fluences' in the context of nuclear-electronics and physics refers to the specific physical quantity of particle fluence, which is a domain-specific technical concept."
+   },
+   {
+    "form": "particles",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the general concept of particles, which is a broad term applicable across multiple scientific fields rather than a specific technical entity."
+   },
+   {
+    "form": "proton",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span denotes the subatomic particle proton, which is a specific technical concept in nuclear physics."
+   },
+   {
+    "form": "trigger",
+    "type": "data_acquisition",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "In nuclear electronics, a trigger is a specific hardware signal used to initiate data acquisition, distinguishing it from generic uses of the word."
+   },
+   {
+    "form": "snrs",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The context explicitly defines the term as a generic 'parameter' rather than a specific domain-specific technical entity."
+   },
+   {
+    "form": "time resolution",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly denotes the technical parameter 'time resolution' within a dictionary term context, matching the canonical name."
+   },
+   {
+    "form": "signal-to-noise ratios",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the exact same concept as the canonical name, and the term is a general engineering metric applicable across multiple fields rather than a niche nuclear-electronics specific entity."
+   },
+   {
+    "form": "neutrino",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span clearly denotes the subatomic particle neutrino, which is a specific technical concept in particle physics."
+   },
+   {
+    "form": "dynamic range",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly denotes the technical parameter 'dynamic range' within a dictionary definition context, matching the canonical entity."
+   },
+   {
+    "form": "snr",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the standard engineering parameter 'signal-to-noise ratio', which is a generic term applicable across multiple fields rather than a unique domain-specific entity."
+   },
+   {
+    "form": "methods",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span 'methods' refers to the general academic concept of procedures or techniques, which is not specific to nuclear-electronics."
+   },
+   {
+    "form": "radioactive source",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span denotes a specific technical device used in nuclear physics, which is a domain-specific concept rather than a generic term."
+   },
+   {
+    "form": "throughput",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the standard engineering parameter 'throughput' which is a generic term applicable across multiple fields rather than a unique domain-specific physical entity."
+   },
+   {
+    "form": "stability",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the general concept of stability, which is a generic term applicable across multiple fields rather than a specific nuclear-electronics technical parameter."
+   },
+   {
+    "form": "noises",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the same concept as the canonical name, and 'noises' is a generic term applicable across multiple fields rather than a specific nuclear-electronics technical parameter."
+   },
+   {
+    "form": "x-ray",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The mention refers to the physical particle/radiation type, which is a specific technical concept in nuclear physics and electronics."
+   },
+   {
+    "form": "radionuclide",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly denotes the technical concept of a radioactive isotope within a nuclear physics context."
+   },
+   {
+    "form": "beam",
+    "type": "experimental_facility",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'beam' is a generic physical concept applicable across multiple fields, not restricted to a specific domain like nuclear electronics."
+   },
+   {
+    "form": "background",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the parameter 'background' in a dictionary context, matching the canonical name, but the term is generic rather than domain-specific."
+   },
+   {
+    "form": "parameters",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the standard mathematical or scientific concept of variables or settings, which is a generic term rather than a domain-specific technical entity."
+   },
+   {
+    "form": "fission",
+    "type": "nuclear_reaction",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The context explicitly defines the term as a nuclear reaction, confirming it refers to the specific scientific concept of nuclear fission rather than a generic or alternative meaning."
+   },
+   {
+    "form": "beams",
+    "type": "experimental_facility",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'beams' is a generic noun used in physics to describe particle streams, not a specific facility name or unique technical entity."
+   },
+   {
+    "form": "activity",
+    "type": "radiation_measurement",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The context explicitly defines the term as a radiation measurement, which is a specific technical concept in nuclear physics."
+   },
+   {
+    "form": "terms",
+    "type": "term",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the generic academic concept of 'terms' rather than a specific nuclear-electronics technical term."
+   },
+   {
+    "form": "data acquisition",
+    "type": "data_acquisition",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the exact same concept as the canonical name, and the term is a broad engineering process applicable across multiple fields rather than a niche nuclear-electronics specific entity."
+   },
+   {
+    "form": "sipm",
+    "type": "photodetector",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'sipm' refers to Silicon Photomultiplier, a specific photodetector technology used in nuclear and particle physics."
+   },
+   {
+    "form": "method",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span explicitly denotes the generic academic concept of a 'method' rather than a specific domain technique."
+   },
+   {
+    "form": "decays",
+    "type": "nuclear_reaction",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'decays' refers to the general physical process of radioactive decay, which is a fundamental concept in nuclear physics but is a generic verb/noun rather than a specific technical apparatus o"
+   },
+   {
+    "form": "gains",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the generic engineering parameter 'gains' rather than a specific domain-specific entity."
+   },
+   {
+    "form": "protons",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'protons' refers to a subatomic particle, which is a specific technical concept in nuclear physics and electronics."
+   },
+   {
+    "form": "isotopes",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'isotopes' is a fundamental concept in nuclear physics and chemistry, referring to variants of a particular chemical element, which fits the domain-specific criteria."
+   },
+   {
+    "form": "electron",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The mention refers to the subatomic particle, which is a specific technical concept in physics."
+   },
+   {
+    "form": "isotope",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'isotope' is a specific technical concept in nuclear physics and chemistry, distinct from generic academic terms."
+   },
+   {
+    "form": "beamline",
+    "type": "experimental_facility",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'beamline' in the context of nuclear-electronics and physics refers to a specific technical facility component for directing particle or photon beams, distinguishing it from generic usage."
+   },
+   {
+    "form": "muon",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'muon' refers to the elementary particle, which is a specific technical concept in nuclear physics."
+   },
+   {
+    "form": "parameter",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span explicitly defines the term 'parameter' as a dictionary entry, matching the canonical name, and the concept is a generic mathematical/engineering term rather than a domain-specific entity."
+   },
+   {
+    "form": "pcb",
+    "type": "circuit",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'pcb' refers to Printed Circuit Board, a specific hardware component in nuclear electronics, matching the canonical entity type 'circuit'."
+   },
+   {
+    "form": "triggers",
+    "type": "data_acquisition",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "In nuclear electronics, 'triggers' refers to specific hardware or logic signals initiating data acquisition, which is a domain-specific technical concept."
+   },
+   {
+    "form": "calorimeters",
+    "type": "detector",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'calorimeters' in the context of nuclear-electronics and physics refers to the specific particle detector type, matching the canonical entity."
+   },
+   {
+    "form": "circuits",
+    "type": "circuit",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'circuits' in the context of nuclear-electronics refers to specific electronic circuitry, which is a domain-specific technical concept."
+   }
+  ]
+ },
+ {
+  "arm": "v2.5-mid",
+  "terms": 2932,
+  "chunks": 2000,
+  "mentions_links": 4472,
+  "entities": 266,
+  "top10_concentration": 0.339,
+  "per_doc_distinct_entities_mean": 2.4,
+  "per_doc_distinct_entities_sd": 2.0,
+  "generic_head_mass_share": 0.099,
+  "top20": [
+   [
+    "gamma:particle",
+    450
+   ],
+   [
+    "method:method",
+    192
+   ],
+   [
+    "parameters:parameter",
+    152
+   ],
+   [
+    "term:term",
+    128
+   ],
+   [
+    "methods:method",
+    128
+   ],
+   [
+    "parameter:parameter",
+    102
+   ],
+   [
+    "terms:term",
+    98
+   ],
+   [
+    "spectrum:term",
+    92
+   ],
+   [
+    "background:parameter",
+    88
+   ],
+   [
+    "new:experimental_facility",
+    88
+   ],
+   [
+    "particles:particle",
+    86
+   ],
+   [
+    "error:parameter",
+    86
+   ],
+   [
+    "noise:parameter",
+    72
+   ],
+   [
+    "let:radiation_measurement",
+    68
+   ],
+   [
+    "particle:particle",
+    64
+   ],
+   [
+    "simulation:method",
+    60
+   ],
+   [
+    "dark matter:particle",
+    60
+   ],
+   [
+    "uncertainty:parameter",
+    60
+   ],
+   [
+    "beam:experimental_facility",
+    58
+   ],
+   [
+    "cross section:parameter",
+    54
+   ]
+  ],
+  "llm_precision": 1.0,
+  "llm_precision_ci": [
+   0.912,
+   1.0
+  ],
+  "llm_domain_stratum": "22/22",
+  "llm_generic_stratum": "18/18",
+  "judged_sample": [
+   {
+    "form": "offsets",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the same concept as the canonical name, but 'offsets' is a general engineering term rather than a domain-specific nuclear-electronics entity."
+   },
+   {
+    "form": "cnrs",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span explicitly denotes the entity as a 'parameter' type, which is a generic academic term rather than a domain-specific technical concept."
+   },
+   {
+    "form": "pions",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'pions' refers to subatomic mesons, which is a specific technical concept in particle physics."
+   },
+   {
+    "form": "spear",
+    "type": "experimental_facility",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the same entity, but 'spear' is a generic noun not specific to nuclear-electronics or physics terminology."
+   },
+   {
+    "form": "muon",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'muon' clearly denotes the subatomic particle, which is a specific technical concept in nuclear physics."
+   },
+   {
+    "form": "neutron flux",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly denotes the physics parameter 'neutron flux' within a dictionary definition context."
+   },
+   {
+    "form": "muons",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'muons' clearly denotes the subatomic particle, which is a specific technical concept in nuclear physics."
+   },
+   {
+    "form": "optocoupler",
+    "type": "circuit",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'optocoupler' refers to a specific electronic component used for electrical isolation, which is a domain-specific technical concept in nuclear electronics and physics instrumentation."
+   },
+   {
+    "form": "per",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span 'per' explicitly denotes the parameter type in the provided dictionary context, matching the canonical name, and 'parameter' is a generic academic term."
+   },
+   {
+    "form": "ions",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'ions' refers to charged particles, a fundamental concept in nuclear physics and electronics, making it domain-specific rather than generic."
+   },
+   {
+    "form": "jitter",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the parameter 'jitter' which matches the canonical name, but the term is a generic engineering concept applicable across multiple fields rather than being specific to nuclear electron"
+   },
+   {
+    "form": "atlas",
+    "type": "detector",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The mention refers to the ATLAS detector at CERN, which is a specific domain entity in high-energy physics."
+   },
+   {
+    "form": "spatial resolution",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the exact same concept as the canonical name, and the term is a generic engineering parameter applicable across multiple fields rather than being specific to nuclear electronics."
+   },
+   {
+    "form": "throughput",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the standard engineering parameter 'throughput', which is a generic term applicable across multiple fields rather than a domain-specific nuclear-electronics concept."
+   },
+   {
+    "form": "tungsten",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span denotes the chemical element tungsten, which is a domain-specific technical concept in nuclear physics and electronics."
+   },
+   {
+    "form": "drifts",
+    "type": "detector",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The context explicitly defines 'drifts' as a detector type, which aligns with the canonical name and represents a specific technical concept in nuclear electronics."
+   },
+   {
+    "form": "mass resolution",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span denotes the specific physical parameter of mass resolution in nuclear physics, distinct from generic uses of the word 'resolution'."
+   },
+   {
+    "form": "decay constant",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly denotes the physics parameter 'decay constant' within a dictionary definition context."
+   },
+   {
+    "form": "fission",
+    "type": "nuclear_reaction",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The context explicitly defines the term as a nuclear reaction, confirming it refers to the specific scientific concept of nuclear fission."
+   },
+   {
+    "form": "cross sections",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'cross sections' in a nuclear-electronics context refers to the specific physical probability of interaction, which is a domain-specific technical concept."
+   },
+   {
+    "form": "fluence",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'fluence' in a nuclear-electronics context refers to the specific physical quantity of particle flux integrated over time, which is a domain-specific technical concept."
+   },
+   {
+    "form": "count rate",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly denotes the technical parameter 'count rate' in a dictionary definition context, which is a specific concept in nuclear physics and electronics."
+   },
+   {
+    "form": "exposure",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the parameter 'exposure' in a dictionary context, matching the canonical name, but the term is generic and not specific to nuclear-electronics."
+   },
+   {
+    "form": "errors",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the general concept of errors as a parameter, which is a generic term applicable across fields rather than a specific nuclear-electronics technical entity."
+   },
+   {
+    "form": "parameters",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the standard mathematical or scientific concept of variables or settings, which is a generic term applicable across all fields rather than a specific nuclear-electronics technical ent"
+   },
+   {
+    "form": "tot",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the parameter 'tot' as explicitly defined in the context, which is a generic academic term rather than a domain-specific technical concept."
+   },
+   {
+    "form": "overfitting",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the standard machine learning concept of overfitting, which is a generic term applicable across various fields rather than being specific to nuclear electronics."
+   },
+   {
+    "form": "mcps",
+    "type": "detector",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'mcps' refers to the technical unit 'counts per second' used in nuclear electronics, which is a domain-specific concept."
+   },
+   {
+    "form": "spectrum",
+    "type": "term",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the standard dictionary definition of the word, which is a generic academic term rather than a specific technical concept in nuclear electronics."
+   },
+   {
+    "form": "icecube",
+    "type": "experimental_facility",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span refers to the IceCube Neutrino Observatory, which is a specific experimental facility rather than a domain-specific technical term or parameter."
+   },
+   {
+    "form": "detectors",
+    "type": "detector",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'detectors' is a standard English noun used broadly across many scientific fields, not restricted to a specific technical sub-concept."
+   },
+   {
+    "form": "noises",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the same concept as the canonical name, and 'noises' is a generic term applicable across various fields rather than a specific nuclear-electronics technical parameter."
+   },
+   {
+    "form": "gamma",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The context explicitly defines 'gamma' as a particle, which is a specific technical concept in nuclear physics."
+   },
+   {
+    "form": "absorber",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'absorber' in a nuclear-electronics context refers to a specific physical component designed to attenuate radiation, distinguishing it from generic usage."
+   },
+   {
+    "form": "fwhm",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "FWHM is a standard technical acronym for Full Width at Half Maximum, a specific parameter used in physics and spectroscopy."
+   },
+   {
+    "form": "exo",
+    "type": "experimental_facility",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the same entity, but 'exo' is a generic prefix or abbreviation rather than a specific technical term."
+   },
+   {
+    "form": "least squares",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the mathematical optimization method 'least squares', which is a generic statistical technique applicable across various fields rather than a domain-specific nuclear-electronics conce"
+   },
+   {
+    "form": "sio2",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span denotes silicon dioxide, a specific chemical material relevant to nuclear electronics and physics contexts."
+   },
+   {
+    "form": "kapton",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "Kapton is a specific brand name for polyimide film, a material widely used in nuclear electronics and physics applications."
+   },
+   {
+    "form": "thd",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'thd' refers to Total Harmonic Distortion, a specific technical parameter in nuclear electronics and signal processing."
+   }
+  ]
+ },
+ {
+  "arm": "v2.1-repair",
+  "terms": 3733,
+  "chunks": 2000,
+  "mentions_links": 9456,
+  "entities": 493,
+  "top10_concentration": 0.316,
+  "per_doc_distinct_entities_mean": 3.7,
+  "per_doc_distinct_entities_sd": 2.9,
+  "generic_head_mass_share": 0.062,
+  "top20": [
+   [
+    "be:isotope",
+    700
+   ],
+   [
+    "alpha:particle",
+    458
+   ],
+   [
+    "gamma:particle",
+    450
+   ],
+   [
+    "beta:particle",
+    354
+   ],
+   [
+    "analysis:method",
+    226
+   ],
+   [
+    "method:method",
+    192
+   ],
+   [
+    "particles:particle",
+    172
+   ],
+   [
+    "parameters:parameter",
+    152
+   ],
+   [
+    "temperature:parameter",
+    142
+   ],
+   [
+    "range:method",
+    140
+   ],
+   [
+    "term:term",
+    128
+   ],
+   [
+    "methods:method",
+    128
+   ],
+   [
+    "density:parameter",
+    104
+   ],
+   [
+    "parameter:parameter",
+    102
+   ],
+   [
+    "terms:term",
+    98
+   ],
+   [
+    "spectrum:term",
+    92
+   ],
+   [
+    "background:parameter",
+    88
+   ],
+   [
+    "new:experimental_facility",
+    88
+   ],
+   [
+    "modes:particle",
+    86
+   ],
+   [
+    "control:data_acquisition",
+    86
+   ]
+  ],
+  "llm_precision": 0.95,
+  "llm_precision_ci": [
+   0.835,
+   0.986
+  ],
+  "llm_domain_stratum": "21/21",
+  "llm_generic_stratum": "17/19",
+  "judged_sample": [
+   {
+    "form": "gain",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the parameter 'gain' which matches the canonical name, and it is a generic engineering term applicable across multiple fields rather than a domain-specific nuclear-electronics concept"
+   },
+   {
+    "form": "plastic",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the material plastic, which is a generic term rather than a domain-specific technical concept."
+   },
+   {
+    "form": "pcs",
+    "type": "material",
+    "match": false,
+    "borderline": true,
+    "specificity": "generic",
+    "reason": "The term 'pcs' is a generic abbreviation for 'pieces' or 'personal computers' and lacks the specific technical meaning required for a nuclear-electronics material entity."
+   },
+   {
+    "form": "silver",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The mention refers to the chemical element silver, which is a generic material term rather than a specialized domain-specific concept."
+   },
+   {
+    "form": "alpha",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The context explicitly defines 'alpha' as a particle, which is a specific technical concept in nuclear physics."
+   },
+   {
+    "form": "pcb",
+    "type": "circuit",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'pcb' refers to Printed Circuit Board, a specific hardware component in nuclear electronics, matching the canonical entity type 'circuit'."
+   },
+   {
+    "form": "voltages",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span 'voltages' refers to the physical quantity of electric potential difference, which is a generic engineering term rather than a domain-specific instrument or phenomenon."
+   },
+   {
+    "form": "temperatures",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the same concept as the canonical name, and 'temperatures' is a generic physical parameter applicable across multiple scientific fields rather than a domain-specific technical term."
+   },
+   {
+    "form": "osl",
+    "type": "detector",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The context explicitly defines 'osl' as a detector, which corresponds to the domain-specific technical concept of Optically Stimulated Luminescence."
+   },
+   {
+    "form": "ammonia",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the chemical substance ammonia, which is a generic material term rather than a domain-specific technical concept or instrument."
+   },
+   {
+    "form": "fluka",
+    "type": "radiation_measurement",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "FLUKA is a specific Monte Carlo simulation code for particle transport and interactions, which is a domain-specific technical concept in nuclear physics and radiation measurement."
+   },
+   {
+    "form": "atlas",
+    "type": "detector",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The mention refers to the ATLAS detector at CERN, which is a specific domain entity in high-energy physics."
+   },
+   {
+    "form": "x-ray",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'x-ray' in the context of a nuclear-electronics physics corpus denotes a specific type of electromagnetic radiation, which is a domain-specific technical concept."
+   },
+   {
+    "form": "wavelet transforms",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span denotes the specific mathematical signal processing technique used in physics and engineering, not a generic term."
+   },
+   {
+    "form": "decay constant",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly denotes the physics parameter 'decay constant' within a dictionary definition context."
+   },
+   {
+    "form": "fusion",
+    "type": "nuclear_reaction",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'fusion' in the context of a nuclear-electronics journal corpus denotes the specific nuclear reaction of combining atomic nuclei, which is a domain-specific technical concept."
+   },
+   {
+    "form": "errors",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the general concept of errors as a parameter, which is a generic term applicable across fields rather than a specific nuclear-electronics technical entity."
+   },
+   {
+    "form": "dose",
+    "type": "radiation_measurement",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'dose' in the context of radiation_measurement refers to the specific physical quantity of absorbed ionizing radiation, which is a domain-specific technical concept."
+   },
+   {
+    "form": "z boson",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly denotes the Z boson, a fundamental particle in the Standard Model of particle physics, which is a domain-specific technical concept."
+   },
+   {
+    "form": "neural network",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span clearly denotes the computational model 'neural network', which is a generic term applicable across various fields rather than a domain-specific nuclear-electronics concept."
+   },
+   {
+    "form": "deuterium",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly denotes the nuclear isotope deuterium, which is a domain-specific technical concept in physics."
+   },
+   {
+    "form": "rich",
+    "type": "detector",
+    "match": false,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'rich' is a generic adjective and does not denote a specific detector entity, despite the metadata label."
+   },
+   {
+    "form": "fission product",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'fission product' is a specific technical concept in nuclear physics referring to the fragments resulting from nuclear fission."
+   },
+   {
+    "form": "xrd",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "XRD refers to X-ray Diffraction, a specific analytical technique in physics and materials science, distinct from generic terms."
+   },
+   {
+    "form": "isotopes",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'isotopes' refers to specific nuclear physics concepts and is not a generic academic word."
+   },
+   {
+    "form": "sv",
+    "type": "radiation_measurement",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'sv' in the context of a radiation measurement dictionary term refers to the specific physical quantity Sievert, which is a domain-specific technical concept."
+   },
+   {
+    "form": "beams",
+    "type": "experimental_facility",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'beams' is a generic noun referring to physical streams of particles or radiation, which is a fundamental concept in nuclear physics but not a unique, domain-specific technical entity like a "
+   },
+   {
+    "form": "spatial resolutions",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the exact same concept as the canonical name, and the term is a general engineering/physics parameter applicable across multiple fields rather than a niche domain-specific entity."
+   },
+   {
+    "form": "parameter",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The marked span explicitly defines the term 'parameter' as a dictionary entry, matching the canonical concept, and the term is broadly applicable across scientific fields rather than being specific to"
+   },
+   {
+    "form": "parameters",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the standard academic concept of adjustable variables, which is generic rather than domain-specific."
+   },
+   {
+    "form": "threshold",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the parameter 'threshold' which matches the canonical name, and the term is a generic engineering concept rather than a domain-specific physical entity."
+   },
+   {
+    "form": "exo",
+    "type": "experimental_facility",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the same entity, but 'exo' is a generic prefix or abbreviation rather than a specific technical term."
+   },
+   {
+    "form": "reaction channels",
+    "type": "nuclear_reaction",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'reaction channels' is a specific technical concept in nuclear physics referring to distinct pathways for nuclear reactions, matching the canonical name and context."
+   },
+   {
+    "form": "resolution",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'resolution' is a generic academic word referring to the ability to distinguish details, applicable across various fields rather than being specific to nuclear electronics."
+   },
+   {
+    "form": "sfdr",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "SFDR (Spurious-Free Dynamic Range) is a specific technical parameter in radio frequency and signal processing engineering."
+   },
+   {
+    "form": "concrete",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the standard material concrete, which is a generic engineering term rather than a specialized nuclear-electronics concept."
+   },
+   {
+    "form": "scattering angles",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly denotes the physical parameter of scattering angles within a nuclear physics context."
+   },
+   {
+    "form": "activity",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The context explicitly defines the term as a parameter within a dictionary, indicating the technical physics definition of activity rather than a generic usage."
+   },
+   {
+    "form": "optimization",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the same concept as the canonical name, and 'optimization' is a generic mathematical/engineering term applicable across multiple fields rather than a domain-specific nuclear-electroni"
+   },
+   {
+    "form": "meson",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'meson' refers to a specific class of subatomic particles in particle physics, which is a domain-specific technical concept."
+   }
+  ]
+ },
+ {
+  "arm": "v2.1+caseShort",
+  "terms": 3733,
+  "chunks": 2000,
+  "mentions_links": 8328,
+  "entities": 468,
+  "top10_concentration": 0.29,
+  "per_doc_distinct_entities_mean": 3.4,
+  "per_doc_distinct_entities_sd": 2.8,
+  "generic_head_mass_share": 0.07,
+  "top20": [
+   [
+    "alpha:particle",
+    458
+   ],
+   [
+    "gamma:particle",
+    450
+   ],
+   [
+    "beta:particle",
+    354
+   ],
+   [
+    "analysis:method",
+    226
+   ],
+   [
+    "method:method",
+    192
+   ],
+   [
+    "particles:particle",
+    172
+   ],
+   [
+    "parameters:parameter",
+    152
+   ],
+   [
+    "temperature:parameter",
+    142
+   ],
+   [
+    "range:method",
+    140
+   ],
+   [
+    "term:term",
+    128
+   ],
+   [
+    "methods:method",
+    128
+   ],
+   [
+    "density:parameter",
+    104
+   ],
+   [
+    "parameter:parameter",
+    102
+   ],
+   [
+    "terms:term",
+    98
+   ],
+   [
+    "spectrum:term",
+    92
+   ],
+   [
+    "background:parameter",
+    88
+   ],
+   [
+    "modes:particle",
+    86
+   ],
+   [
+    "control:data_acquisition",
+    86
+   ],
+   [
+    "error:parameter",
+    86
+   ],
+   [
+    "constant:parameter",
+    84
+   ]
+  ],
+  "llm_precision": 0.925,
+  "llm_precision_ci": [
+   0.801,
+   0.974
+  ],
+  "llm_domain_stratum": "18/18",
+  "llm_generic_stratum": "19/22",
+  "judged_sample": [
+   {
+    "form": "controls",
+    "type": "data_acquisition",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'controls' refers to a general data acquisition component rather than a specialized nuclear-electronics device or phenomenon."
+   },
+   {
+    "form": "functions",
+    "type": "material",
+    "match": false,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'functions' is a generic mathematical or programming concept, not a specific material entity, and the context explicitly labels it as a dictionary term rather than a physical substance."
+   },
+   {
+    "form": "emi",
+    "type": "term",
+    "match": false,
+    "borderline": true,
+    "specificity": "generic",
+    "reason": "The context explicitly defines the span as a generic dictionary entry for the word 'term' rather than a specific technical concept in nuclear electronics."
+   },
+   {
+    "form": "gluons",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly refers to the elementary particle in quantum chromodynamics, which is a domain-specific technical concept."
+   },
+   {
+    "form": "quark",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span refers to the fundamental particle in the Standard Model of particle physics, which is a domain-specific technical concept."
+   },
+   {
+    "form": "scattering angle",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly denotes the physics parameter 'scattering angle' within a dictionary definition context."
+   },
+   {
+    "form": "be",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'be' refers to the chemical element Beryllium, which is a specific domain concept in nuclear physics and electronics."
+   },
+   {
+    "form": "electronics",
+    "type": "circuit",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'electronics' refers to the general field of engineering rather than a specific technical component or phenomenon."
+   },
+   {
+    "form": "bias voltage",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the exact same concept as the canonical name, and 'bias voltage' is a general engineering term applicable across multiple fields rather than being exclusive to nuclear electronics."
+   },
+   {
+    "form": "carrier",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'carrier' is used as a generic noun referring to a substance or entity that transports something, which is common across multiple scientific fields rather than being a unique domain-specific "
+   },
+   {
+    "form": "sr",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'sr' in the context of an isotope dictionary term refers to the chemical element Strontium, which is a specific domain concept in nuclear physics."
+   },
+   {
+    "form": "backgrounds",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "In nuclear-electronics and physics, 'backgrounds' specifically refers to unwanted signal events or noise sources, distinguishing it from generic usage."
+   },
+   {
+    "form": "overfitting",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the standard machine learning concept of overfitting, which is a generic term applicable across various fields rather than a specific nuclear-electronics technical entity."
+   },
+   {
+    "form": "radionuclide",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly denotes the technical concept of a radioactive isotope within a nuclear physics context."
+   },
+   {
+    "form": "materials",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the general concept of matter or substances, which is a broad academic term rather than a specific technical entity in nuclear electronics."
+   },
+   {
+    "form": "cumulative distribution function",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the standard statistical concept of a cumulative distribution function, which is a generic mathematical term rather than a domain-specific nuclear-electronics entity."
+   },
+   {
+    "form": "standard deviation",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the statistical concept of standard deviation, which is a generic mathematical term rather than a domain-specific nuclear-electronics entity."
+   },
+   {
+    "form": "burnup",
+    "type": "nuclear_reaction",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'burnup' in the context of nuclear physics specifically denotes the degree of fission of nuclear fuel, which is a domain-specific technical concept."
+   },
+   {
+    "form": "sampling rate",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the exact same concept as the canonical name, and the term is a general engineering parameter applicable across multiple fields rather than being specific to nuclear electronics."
+   },
+   {
+    "form": "tungsten",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span refers to the chemical element tungsten, which is a domain-specific technical concept in nuclear physics and materials science."
+   },
+   {
+    "form": "dynamic range",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the standard engineering parameter 'dynamic range', which is a generic term applicable across multiple fields rather than a domain-specific nuclear-electronics concept."
+   },
+   {
+    "form": "muon",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'muon' refers to the elementary particle, which is a specific technical concept in nuclear physics and electronics."
+   },
+   {
+    "form": "ccd",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "In the context of nuclear-electronics and physics, CCD refers to the Charge-Coupled Device, a specific semiconductor sensor technology used for radiation detection and imaging."
+   },
+   {
+    "form": "fluka",
+    "type": "radiation_measurement",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "FLUKA is a specific Monte Carlo simulation code for particle transport, which is a domain-specific technical concept in nuclear physics."
+   },
+   {
+    "form": "polystyrene",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span clearly denotes the material polystyrene, which is a generic chemical substance rather than a domain-specific technical instrument or phenomenon."
+   },
+   {
+    "form": "offsets",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the same concept as the canonical name, and 'offsets' is a generic engineering term rather than a domain-specific nuclear-electronics entity."
+   },
+   {
+    "form": "ptfe",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "PTFE is a specific chemical polymer (polytetrafluoroethylene) widely used in nuclear electronics for insulation and shielding, making it a domain-specific technical material."
+   },
+   {
+    "form": "gas",
+    "type": "isotope",
+    "match": false,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'gas' is a generic physical state of matter, not a specific isotope, and the context explicitly mislabels it as an isotope."
+   },
+   {
+    "form": "modeling",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the general concept of modeling, which is a broad academic term rather than a specific technical entity unique to nuclear electronics."
+   },
+   {
+    "form": "signal processing",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the same concept as the canonical name, but 'signal processing' is a broad engineering term applicable across multiple fields rather than a niche nuclear-electronics specific entity."
+   },
+   {
+    "form": "ions",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'ions' in a nuclear-electronics context refers to charged particles, which is a specific technical concept in physics rather than a generic academic term."
+   },
+   {
+    "form": "crystals",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the same concept as the canonical name, and 'crystals' is a general material term rather than a specialized technical entity."
+   },
+   {
+    "form": "x-rays",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The mention refers to the physical phenomenon of electromagnetic radiation, which is a specific technical concept in nuclear physics and electronics."
+   },
+   {
+    "form": "silver",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The mention refers to the chemical element silver, which is a generic material term rather than a specialized domain-specific concept."
+   },
+   {
+    "form": "the device",
+    "type": "detector",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span explicitly denotes the entity as a 'detector' which is a generic engineering term, not a specific domain-specific technical concept."
+   },
+   {
+    "form": "ne",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The context explicitly defines the term as an isotope, which is a specific nuclear physics concept."
+   },
+   {
+    "form": "median",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'median' is a standard statistical concept applicable across all scientific fields, not restricted to nuclear-electronics or physics."
+   },
+   {
+    "form": "cross-sections",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'cross-sections' in a nuclear-electronics context refers to the specific physical probability of interaction, which is a domain-specific technical concept."
+   },
+   {
+    "form": "isomeric states",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span denotes the specific nuclear physics concept of metastable nuclear states, which is a domain-specific technical term."
+   },
+   {
+    "form": "gain",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the parameter 'gain' in a dictionary context, matching the canonical name, but the term is generic engineering vocabulary rather than a specific nuclear-electronics domain concept."
+   }
+  ]
+ },
+ {
+  "arm": "v2.1+stopwordBlock",
+  "terms": 3733,
+  "chunks": 2000,
+  "mentions_links": 8756,
+  "entities": 492,
+  "top10_concentration": 0.276,
+  "per_doc_distinct_entities_mean": 3.5,
+  "per_doc_distinct_entities_sd": 2.8,
+  "generic_head_mass_share": 0.067,
+  "top20": [
+   [
+    "alpha:particle",
+    458
+   ],
+   [
+    "gamma:particle",
+    450
+   ],
+   [
+    "beta:particle",
+    354
+   ],
+   [
+    "analysis:method",
+    226
+   ],
+   [
+    "method:method",
+    192
+   ],
+   [
+    "particles:particle",
+    172
+   ],
+   [
+    "parameters:parameter",
+    152
+   ],
+   [
+    "temperature:parameter",
+    142
+   ],
+   [
+    "range:method",
+    140
+   ],
+   [
+    "term:term",
+    128
+   ],
+   [
+    "methods:method",
+    128
+   ],
+   [
+    "density:parameter",
+    104
+   ],
+   [
+    "parameter:parameter",
+    102
+   ],
+   [
+    "terms:term",
+    98
+   ],
+   [
+    "spectrum:term",
+    92
+   ],
+   [
+    "background:parameter",
+    88
+   ],
+   [
+    "new:experimental_facility",
+    88
+   ],
+   [
+    "modes:particle",
+    86
+   ],
+   [
+    "control:data_acquisition",
+    86
+   ],
+   [
+    "error:parameter",
+    86
+   ]
+  ],
+  "llm_precision": 0.975,
+  "llm_precision_ci": [
+   0.871,
+   0.996
+  ],
+  "llm_domain_stratum": "21/21",
+  "llm_generic_stratum": "18/19",
+  "judged_sample": [
+   {
+    "form": "lifetime",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'lifetime' in a nuclear-electronics context refers to the specific physical parameter of particle or state decay duration, which is a domain-specific technical concept."
+   },
+   {
+    "form": "silicon",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the chemical element silicon, which is a generic material term rather than a specific domain-specific technical device or phenomenon."
+   },
+   {
+    "form": "energy loss",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'energy loss' in the context of nuclear-electronics and physics refers to the specific physical process of ionization or radiation energy deposition, which is a domain-specific technical conc"
+   },
+   {
+    "form": "lifetimes",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the same concept as the canonical name, and 'lifetimes' is a general scientific term applicable across multiple disciplines rather than a unique domain-specific entity."
+   },
+   {
+    "form": "hadron",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'hadron' clearly denotes the specific physics concept of a composite subatomic particle made of quarks, which is a domain-specific technical term."
+   },
+   {
+    "form": "neutron flux",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly denotes the physics parameter 'neutron flux' as indicated by the dictionary term context."
+   },
+   {
+    "form": "dynamic range",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the standard engineering parameter 'dynamic range', which is a generic term applicable across multiple fields rather than a domain-specific nuclear-electronics concept."
+   },
+   {
+    "form": "transition",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'transition' is used as a generic methodological concept rather than a specific domain-specific technical entity like a detector or physical constant."
+   },
+   {
+    "form": "efficiency curves",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the exact same concept as the canonical name, and the term is a generic academic descriptor rather than a domain-specific technical entity."
+   },
+   {
+    "form": "composites",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the general class of composite materials, which is a broad engineering term rather than a specific domain-specific technical entity."
+   },
+   {
+    "form": "osl",
+    "type": "detector",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The context explicitly defines 'osl' as a detector, which corresponds to the domain-specific technical concept of Optically Stimulated Luminescence."
+   },
+   {
+    "form": "sr",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'sr' denotes the chemical element Strontium, which is a specific domain concept in nuclear physics and electronics."
+   },
+   {
+    "form": "means",
+    "type": "particle",
+    "match": false,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The marked span 'means' is a dictionary term or generic word, not a specific particle entity."
+   },
+   {
+    "form": "tau lepton",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly denotes the tau lepton, a fundamental particle in the Standard Model of particle physics."
+   },
+   {
+    "form": "detection limits",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span denotes the specific technical parameter of minimum detectable signal in nuclear-electronics, matching the canonical name."
+   },
+   {
+    "form": "clustering",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the same concept, but 'clustering' is a general statistical or data analysis term applicable across many fields rather than a specific nuclear-electronics technical entity."
+   },
+   {
+    "form": "dark matter",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly denotes the astrophysical particle concept of dark matter, which is a specialized term in physics."
+   },
+   {
+    "form": "msv",
+    "type": "radiation_measurement",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'msv' refers to millisievert, a specific unit of equivalent dose in radiation protection, which aligns with the entity type and context."
+   },
+   {
+    "form": "steel",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The mention clearly denotes the material steel, which is a generic engineering term rather than a domain-specific technical concept."
+   },
+   {
+    "form": "precipitation",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the general concept of precipitation as a method, which is a generic term not specific to nuclear-electronics physics."
+   },
+   {
+    "form": "tungsten",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span refers to the chemical element tungsten, which is a specific domain concept in nuclear physics and materials science, distinct from generic terms."
+   },
+   {
+    "form": "mesons",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'mesons' refers to a specific class of subatomic particles in particle physics, which is a domain-specific technical concept."
+   },
+   {
+    "form": "leq",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span explicitly denotes the parameter 'leq' as defined in the dictionary term, matching the canonical name, and 'parameter' is a generic academic term."
+   },
+   {
+    "form": "heavy ion",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'heavy ion' in the context of a dictionary term for a material denotes the specific physics concept of an atomic nucleus with a high mass number, which is a domain-specific technical term."
+   },
+   {
+    "form": "cross sections",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'cross sections' in a nuclear-electronics context refers to the specific physical probability of interaction, which is a domain-specific technical concept."
+   },
+   {
+    "form": "cnrs",
+    "type": "parameter",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the entity 'cnrs' as a parameter, which is a generic academic term rather than a domain-specific technical concept."
+   },
+   {
+    "form": "hiaf",
+    "type": "experimental_facility",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span refers to the HIAF (High Intensity Heavy-ion Accelerator Facility), a specific nuclear physics experimental facility."
+   },
+   {
+    "form": "resolutions",
+    "type": "method",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'resolutions' is a generic academic word referring to the ability to distinguish details, applicable across various fields rather than being specific to nuclear electronics."
+   },
+   {
+    "form": "fusion",
+    "type": "nuclear_reaction",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The context explicitly defines the term as a nuclear reaction, which is a specific technical concept in physics."
+   },
+   {
+    "form": "water",
+    "type": "material",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the chemical substance water, which is a generic material term rather than a specialized nuclear-electronics concept."
+   },
+   {
+    "form": "isotope",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'isotope' is a specific technical concept in nuclear physics and chemistry, distinct from generic academic terms."
+   },
+   {
+    "form": "isomeric states",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span denotes the specific nuclear physics concept of metastable nuclear states, which is a domain-specific technical term."
+   },
+   {
+    "form": "charged",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'charged' is a generic adjective describing a physical property applicable across multiple scientific fields, not a unique domain-specific technical entity."
+   },
+   {
+    "form": "atoms",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'atoms' refers to the fundamental physical particles, which is a generic scientific concept rather than a specialized domain-specific technical term or instrument."
+   },
+   {
+    "form": "baseline stabilization",
+    "type": "circuit",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span explicitly denotes the technical circuit concept of baseline stabilization within the nuclear-electronics context."
+   },
+   {
+    "form": "let",
+    "type": "radiation_measurement",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The term 'let' in the context of radiation measurement refers to Linear Energy Transfer, a specific physical quantity in dosimetry."
+   },
+   {
+    "form": "cs",
+    "type": "isotope",
+    "match": true,
+    "borderline": false,
+    "specificity": "domain",
+    "reason": "The span 'cs' in the context of an isotope dictionary term refers to the chemical element Cesium, which is a specific domain concept in nuclear physics."
+   },
+   {
+    "form": "mean",
+    "type": "particle",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The term 'mean' in the context of a dictionary definition refers to the statistical average, which is a generic mathematical concept rather than a specific nuclear-electronics particle."
+   },
+   {
+    "form": "detectors",
+    "type": "detector",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span denotes the same concept as the canonical name, but the term is a broad generic noun rather than a specific technical entity."
+   },
+   {
+    "form": "cern",
+    "type": "experimental_facility",
+    "match": true,
+    "borderline": false,
+    "specificity": "generic",
+    "reason": "The span clearly denotes the CERN facility, which is a generic proper noun rather than a domain-specific technical concept or instrument."
+   }
+  ]
+ }
+]

@@ -1,0 +1,20 @@
+{
+ "total_links": 9456,
+ "buckets": {
+  "v2.0-inherited": {
+   "links": 2028,
+   "link_share": 0.214,
+   "entities": 50
+  },
+  "v2.5-mid": {
+   "links": 1450,
+   "link_share": 0.153,
+   "entities": 147
+  },
+  "v2.1-new": {
+   "links": 5978,
+   "link_share": 0.632,
+   "entities": 296
+  }
+ }
+}
