@@ -50,14 +50,21 @@ def fig_scatter():
                    label=lab if st not in seen else None, zorder=3,
                    edgecolors="white", linewidths=0.6)
         seen.add(st)
+    OFFS = {"104112E6": (5, -11, "left"), "693372D5": (5, 6, "left"),
+            "E2ED00DD": (-5, 5, "right"), "F54CE546": (5, 5, "left"),
+            "D2B4AD67": (5, -11, "left")}
     for hex8, ents, docs, conc, st in KBS:
-        if hex8 in ("104112E6", "693372D5", "E2ED00DD", "F54CE546", "D2B4AD67"):
+        if hex8 in OFFS:
+            dx, dy, ha = OFFS[hex8]
             ax.annotate(hex8, (ents, conc), textcoords="offset points",
-                        xytext=(6, 4), fontsize=8, color="#444")
+                        xytext=(dx, dy), fontsize=8, color="#444",
+                        ha=ha, annotation_clip=True)
     ax.axhline(0.35, ls="--", lw=1, color="#e67e22")
     ax.axhline(0.50, ls="--", lw=1, color="#c0392b")
-    ax.text(2500, 0.356, "investigate > 0.35", fontsize=8, color="#e67e22")
-    ax.text(2500, 0.506, "escalate > 0.50", fontsize=8, color="#c0392b")
+    ax.text(6, 0.362, "investigate > 0.35", fontsize=8, color="#e67e22",
+            ha="left", va="bottom")
+    ax.text(6, 0.512, "escalate > 0.50", fontsize=8, color="#c0392b",
+            ha="left", va="bottom")
     ax.set_xscale("log")
     ax.set_xlabel("link-bearing canonical entities (log scale)")
     ax.set_ylabel("top-10 link concentration")
