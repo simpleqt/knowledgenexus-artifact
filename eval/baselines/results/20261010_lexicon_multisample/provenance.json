@@ -1,0 +1,22 @@
+{
+ "frame": "multisample random frame, sample 0",
+ "chunks": 2000,
+ "total_links": 9708,
+ "buckets": {
+  "v2.0-inherited": {
+   "links": 2139,
+   "link_share": 0.22,
+   "entities": 70
+  },
+  "v2.5-mid": {
+   "links": 1558,
+   "link_share": 0.16,
+   "entities": 232
+  },
+  "v2.1-new": {
+   "links": 6011,
+   "link_share": 0.619,
+   "entities": 384
+  }
+ }
+}

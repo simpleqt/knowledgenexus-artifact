@@ -1,0 +1,2433 @@
+{
+ "seed": 20261010,
+ "kb": "104112E63D9D4AA5A6C21E1C1549EF0F",
+ "strata_def": [
+  [
+   "top10",
+   1,
+   10,
+   50
+  ],
+  [
+   "medium",
+   11,
+   100,
+   100
+  ],
+  [
+   "tail",
+   101,
+   null,
+   100
+  ],
+  [
+   "short",
+   null,
+   null,
+   50
+  ]
+ ],
+ "n": 300,
+ "manifest": {
+  "66422879": {
+   "stratum": "top10",
+   "entity": "parameter",
+   "etype": "parameter",
+   "rank": 6,
+   "mention_count": 709237,
+   "offset_draw": true
+  },
+  "61185801": {
+   "stratum": "top10",
+   "entity": "gamma",
+   "etype": "particle",
+   "rank": 3,
+   "mention_count": 843979,
+   "offset_draw": true
+  },
+  "78951812": {
+   "stratum": "top10",
+   "entity": "term",
+   "etype": "term",
+   "rank": 7,
+   "mention_count": 669084,
+   "offset_draw": true
+  },
+  "69498073": {
+   "stratum": "top10",
+   "entity": "parameter",
+   "etype": "parameter",
+   "rank": 6,
+   "mention_count": 709237,
+   "offset_draw": true
+  },
+  "51954415": {
+   "stratum": "top10",
+   "entity": "method",
+   "etype": "method",
+   "rank": 5,
+   "mention_count": 727377,
+   "offset_draw": true
+  },
+  "80613706": {
+   "stratum": "top10",
+   "entity": "gamma",
+   "etype": "particle",
+   "rank": 3,
+   "mention_count": 843979,
+   "offset_draw": true
+  },
+  "79360778": {
+   "stratum": "top10",
+   "entity": "temperature",
+   "etype": "parameter",
+   "rank": 10,
+   "mention_count": 431613,
+   "offset_draw": true
+  },
+  "70776119": {
+   "stratum": "top10",
+   "entity": "temperature",
+   "etype": "parameter",
+   "rank": 10,
+   "mention_count": 431613,
+   "offset_draw": true
+  },
+  "66883222": {
+   "stratum": "top10",
+   "entity": "theory",
+   "etype": "theory",
+   "rank": 9,
+   "mention_count": 459229,
+   "offset_draw": true
+  },
+  "71992324": {
+   "stratum": "top10",
+   "entity": "theory",
+   "etype": "theory",
+   "rank": 9,
+   "mention_count": 459229,
+   "offset_draw": true
+  },
+  "54784883": {
+   "stratum": "top10",
+   "entity": "term",
+   "etype": "term",
+   "rank": 7,
+   "mention_count": 669084,
+   "offset_draw": true
+  },
+  "46805452": {
+   "stratum": "top10",
+   "entity": "parameter",
+   "etype": "parameter",
+   "rank": 6,
+   "mention_count": 709237,
+   "offset_draw": true
+  },
+  "60540738": {
+   "stratum": "top10",
+   "entity": "temperature",
+   "etype": "parameter",
+   "rank": 10,
+   "mention_count": 431613,
+   "offset_draw": true
+  },
+  "67281992": {
+   "stratum": "top10",
+   "entity": "theory",
+   "etype": "theory",
+   "rank": 9,
+   "mention_count": 459229,
+   "offset_draw": true
+  },
+  "54165957": {
+   "stratum": "top10",
+   "entity": "temperature",
+   "etype": "parameter",
+   "rank": 10,
+   "mention_count": 431613,
+   "offset_draw": true
+  },
+  "71468779": {
+   "stratum": "top10",
+   "entity": "term",
+   "etype": "term",
+   "rank": 7,
+   "mention_count": 669084,
+   "offset_draw": true
+  },
+  "67044492": {
+   "stratum": "top10",
+   "entity": "parameter",
+   "etype": "parameter",
+   "rank": 6,
+   "mention_count": 709237,
+   "offset_draw": true
+  },
+  "67505785": {
+   "stratum": "top10",
+   "entity": "gamma",
+   "etype": "particle",
+   "rank": 3,
+   "mention_count": 843979,
+   "offset_draw": true
+  },
+  "88742151": {
+   "stratum": "top10",
+   "entity": "method",
+   "etype": "method",
+   "rank": 5,
+   "mention_count": 727377,
+   "offset_draw": true
+  },
+  "78133610": {
+   "stratum": "top10",
+   "entity": "temperature",
+   "etype": "parameter",
+   "rank": 10,
+   "mention_count": 431613,
+   "offset_draw": true
+  },
+  "81882448": {
+   "stratum": "top10",
+   "entity": "term",
+   "etype": "term",
+   "rank": 7,
+   "mention_count": 669084,
+   "offset_draw": true
+  },
+  "87693012": {
+   "stratum": "top10",
+   "entity": "temperature",
+   "etype": "parameter",
+   "rank": 10,
+   "mention_count": 431613,
+   "offset_draw": true
+  },
+  "88490376": {
+   "stratum": "top10",
+   "entity": "term",
+   "etype": "term",
+   "rank": 7,
+   "mention_count": 669084,
+   "offset_draw": true
+  },
+  "54485118": {
+   "stratum": "top10",
+   "entity": "parameter",
+   "etype": "parameter",
+   "rank": 6,
+   "mention_count": 709237,
+   "offset_draw": true
+  },
+  "76626659": {
+   "stratum": "top10",
+   "entity": "gamma",
+   "etype": "particle",
+   "rank": 3,
+   "mention_count": 843979,
+   "offset_draw": true
+  },
+  "65449057": {
+   "stratum": "top10",
+   "entity": "theory",
+   "etype": "theory",
+   "rank": 9,
+   "mention_count": 459229,
+   "offset_draw": true
+  },
+  "84972691": {
+   "stratum": "top10",
+   "entity": "term",
+   "etype": "term",
+   "rank": 7,
+   "mention_count": 669084,
+   "offset_draw": true
+  },
+  "70301451": {
+   "stratum": "top10",
+   "entity": "theory",
+   "etype": "theory",
+   "rank": 9,
+   "mention_count": 459229,
+   "offset_draw": true
+  },
+  "74546897": {
+   "stratum": "top10",
+   "entity": "term",
+   "etype": "term",
+   "rank": 7,
+   "mention_count": 669084,
+   "offset_draw": true
+  },
+  "77916637": {
+   "stratum": "top10",
+   "entity": "method",
+   "etype": "method",
+   "rank": 5,
+   "mention_count": 727377,
+   "offset_draw": true
+  },
+  "48117759": {
+   "stratum": "top10",
+   "entity": "theory",
+   "etype": "theory",
+   "rank": 9,
+   "mention_count": 459229,
+   "offset_draw": true
+  },
+  "67320247": {
+   "stratum": "top10",
+   "entity": "parameter",
+   "etype": "parameter",
+   "rank": 6,
+   "mention_count": 709237,
+   "offset_draw": true
+  },
+  "87993205": {
+   "stratum": "top10",
+   "entity": "term",
+   "etype": "term",
+   "rank": 7,
+   "mention_count": 669084,
+   "offset_draw": true
+  },
+  "67789770": {
+   "stratum": "top10",
+   "entity": "temperature",
+   "etype": "parameter",
+   "rank": 10,
+   "mention_count": 431613,
+   "offset_draw": true
+  },
+  "84865977": {
+   "stratum": "top10",
+   "entity": "method",
+   "etype": "method",
+   "rank": 5,
+   "mention_count": 727377,
+   "offset_draw": true
+  },
+  "84435665": {
+   "stratum": "top10",
+   "entity": "term",
+   "etype": "term",
+   "rank": 7,
+   "mention_count": 669084,
+   "offset_draw": true
+  },
+  "55959411": {
+   "stratum": "top10",
+   "entity": "method",
+   "etype": "method",
+   "rank": 5,
+   "mention_count": 727377,
+   "offset_draw": true
+  },
+  "82046905": {
+   "stratum": "top10",
+   "entity": "parameter",
+   "etype": "parameter",
+   "rank": 6,
+   "mention_count": 709237,
+   "offset_draw": true
+  },
+  "47038283": {
+   "stratum": "top10",
+   "entity": "parameter",
+   "etype": "parameter",
+   "rank": 6,
+   "mention_count": 709237,
+   "offset_draw": true
+  },
+  "72479019": {
+   "stratum": "top10",
+   "entity": "temperature",
+   "etype": "parameter",
+   "rank": 10,
+   "mention_count": 431613,
+   "offset_draw": true
+  },
+  "46656376": {
+   "stratum": "top10",
+   "entity": "term",
+   "etype": "term",
+   "rank": 7,
+   "mention_count": 669084,
+   "offset_draw": true
+  },
+  "73716053": {
+   "stratum": "top10",
+   "entity": "gamma",
+   "etype": "particle",
+   "rank": 3,
+   "mention_count": 843979,
+   "offset_draw": true
+  },
+  "88544629": {
+   "stratum": "top10",
+   "entity": "gamma",
+   "etype": "particle",
+   "rank": 3,
+   "mention_count": 843979,
+   "offset_draw": true
+  },
+  "84381335": {
+   "stratum": "top10",
+   "entity": "gamma",
+   "etype": "particle",
+   "rank": 3,
+   "mention_count": 843979,
+   "offset_draw": true
+  },
+  "64018982": {
+   "stratum": "top10",
+   "entity": "parameter",
+   "etype": "parameter",
+   "rank": 6,
+   "mention_count": 709237,
+   "offset_draw": true
+  },
+  "50710856": {
+   "stratum": "top10",
+   "entity": "temperature",
+   "etype": "parameter",
+   "rank": 10,
+   "mention_count": 431613,
+   "offset_draw": true
+  },
+  "73611310": {
+   "stratum": "top10",
+   "entity": "parameter",
+   "etype": "parameter",
+   "rank": 6,
+   "mention_count": 709237,
+   "offset_draw": true
+  },
+  "72314030": {
+   "stratum": "top10",
+   "entity": "temperature",
+   "etype": "parameter",
+   "rank": 10,
+   "mention_count": 431613,
+   "offset_draw": true
+  },
+  "47807130": {
+   "stratum": "top10",
+   "entity": "parameter",
+   "etype": "parameter",
+   "rank": 6,
+   "mention_count": 709237,
+   "offset_draw": true
+  },
+  "80668495": {
+   "stratum": "top10",
+   "entity": "gamma",
+   "etype": "particle",
+   "rank": 3,
+   "mention_count": 843979,
+   "offset_draw": true
+  },
+  "47813718": {
+   "stratum": "medium",
+   "entity": "technology",
+   "etype": "technology",
+   "rank": 70,
+   "mention_count": 83254,
+   "offset_draw": true
+  },
+  "83984956": {
+   "stratum": "medium",
+   "entity": "stability",
+   "etype": "parameter",
+   "rank": 61,
+   "mention_count": 100096,
+   "offset_draw": true
+  },
+  "47095419": {
+   "stratum": "medium",
+   "entity": "dose",
+   "etype": "radiation_measurement",
+   "rank": 88,
+   "mention_count": 55392,
+   "offset_draw": true
+  },
+  "49811811": {
+   "stratum": "medium",
+   "entity": "technology",
+   "etype": "technology",
+   "rank": 70,
+   "mention_count": 83254,
+   "offset_draw": true
+  },
+  "69052756": {
+   "stratum": "medium",
+   "entity": "neural network",
+   "etype": "method",
+   "rank": 68,
+   "mention_count": 89850,
+   "offset_draw": true
+  },
+  "60670428": {
+   "stratum": "medium",
+   "entity": "optimization",
+   "etype": "method",
+   "rank": 63,
+   "mention_count": 98083,
+   "offset_draw": true
+  },
+  "51556870": {
+   "stratum": "medium",
+   "entity": "propertie",
+   "etype": "parameter",
+   "rank": 32,
+   "mention_count": 189093,
+   "offset_draw": true
+  },
+  "51443734": {
+   "stratum": "medium",
+   "entity": "methodology",
+   "etype": "method",
+   "rank": 97,
+   "mention_count": 47734,
+   "offset_draw": true
+  },
+  "73995607": {
+   "stratum": "medium",
+   "entity": "gluon",
+   "etype": "particle",
+   "rank": 73,
+   "mention_count": 79514,
+   "offset_draw": true
+  },
+  "58910042": {
+   "stratum": "medium",
+   "entity": "quark",
+   "etype": "particle",
+   "rank": 40,
+   "mention_count": 175582,
+   "offset_draw": true
+  },
+  "72071106": {
+   "stratum": "medium",
+   "entity": "new",
+   "etype": "experimental_facility",
+   "rank": 21,
+   "mention_count": 255610,
+   "offset_draw": true
+  },
+  "85957327": {
+   "stratum": "medium",
+   "entity": "uncertainty",
+   "etype": "parameter",
+   "rank": 55,
+   "mention_count": 117696,
+   "offset_draw": true
+  },
+  "49544843": {
+   "stratum": "medium",
+   "entity": "nanoparticle",
+   "etype": "material",
+   "rank": 83,
+   "mention_count": 60625,
+   "offset_draw": true
+  },
+  "63852944": {
+   "stratum": "medium",
+   "entity": "location",
+   "etype": "location",
+   "rank": 60,
+   "mention_count": 107093,
+   "offset_draw": true
+  },
+  "77437814": {
+   "stratum": "medium",
+   "entity": "voltage",
+   "etype": "parameter",
+   "rank": 57,
+   "mention_count": 111950,
+   "offset_draw": true
+  },
+  "69189180": {
+   "stratum": "medium",
+   "entity": "particle",
+   "etype": "particle",
+   "rank": 12,
+   "mention_count": 369976,
+   "offset_draw": true
+  },
+  "78217625": {
+   "stratum": "medium",
+   "entity": "neutron",
+   "etype": "particle",
+   "rank": 48,
+   "mention_count": 134651,
+   "offset_draw": true
+  },
+  "68909035": {
+   "stratum": "medium",
+   "entity": "transition",
+   "etype": "method",
+   "rank": 35,
+   "mention_count": 185385,
+   "offset_draw": true
+  },
+  "77936314": {
+   "stratum": "medium",
+   "entity": "ion",
+   "etype": "material",
+   "rank": 49,
+   "mention_count": 132767,
+   "offset_draw": true
+  },
+  "54423190": {
+   "stratum": "medium",
+   "entity": "particle",
+   "etype": "particle",
+   "rank": 12,
+   "mention_count": 369976,
+   "offset_draw": true
+  },
+  "74732615": {
+   "stratum": "medium",
+   "entity": "gluon",
+   "etype": "particle",
+   "rank": 73,
+   "mention_count": 79514,
+   "offset_draw": true
+  },
+  "73153661": {
+   "stratum": "medium",
+   "entity": "fusion",
+   "etype": "nuclear_reaction",
+   "rank": 62,
+   "mention_count": 99790,
+   "offset_draw": true
+  },
+  "80861187": {
+   "stratum": "medium",
+   "entity": "propertie",
+   "etype": "parameter",
+   "rank": 32,
+   "mention_count": 189093,
+   "offset_draw": true
+  },
+  "76613789": {
+   "stratum": "medium",
+   "entity": "lepton",
+   "etype": "particle",
+   "rank": 67,
+   "mention_count": 90897,
+   "offset_draw": true
+  },
+  "69292081": {
+   "stratum": "medium",
+   "entity": "spectrum",
+   "etype": "term",
+   "rank": 36,
+   "mention_count": 185057,
+   "offset_draw": true
+  },
+  "82407769": {
+   "stratum": "medium",
+   "entity": "exposure",
+   "etype": "parameter",
+   "rank": 92,
+   "mention_count": 52303,
+   "offset_draw": true
+  },
+  "47687181": {
+   "stratum": "medium",
+   "entity": "pion",
+   "etype": "particle",
+   "rank": 100,
+   "mention_count": 45764,
+   "offset_draw": true
+  },
+  "49790374": {
+   "stratum": "medium",
+   "entity": "exposure",
+   "etype": "parameter",
+   "rank": 92,
+   "mention_count": 52303,
+   "offset_draw": true
+  },
+  "83248258": {
+   "stratum": "medium",
+   "entity": "neutron",
+   "etype": "particle",
+   "rank": 48,
+   "mention_count": 134651,
+   "offset_draw": true
+  },
+  "83724181": {
+   "stratum": "medium",
+   "entity": "mode",
+   "etype": "particle",
+   "rank": 13,
+   "mention_count": 354183,
+   "offset_draw": true
+  },
+  "75658446": {
+   "stratum": "medium",
+   "entity": "range",
+   "etype": "method",
+   "rank": 14,
+   "mention_count": 349490,
+   "offset_draw": true
+  },
+  "68867082": {
+   "stratum": "medium",
+   "entity": "uncertainty",
+   "etype": "parameter",
+   "rank": 55,
+   "mention_count": 117696,
+   "offset_draw": true
+  },
+  "83344818": {
+   "stratum": "medium",
+   "entity": "proton",
+   "etype": "particle",
+   "rank": 54,
+   "mention_count": 119254,
+   "offset_draw": true
+  },
+  "47829045": {
+   "stratum": "medium",
+   "entity": "transition",
+   "etype": "method",
+   "rank": 35,
+   "mention_count": 185385,
+   "offset_draw": true
+  },
+  "46693900": {
+   "stratum": "medium",
+   "entity": "transition",
+   "etype": "method",
+   "rank": 35,
+   "mention_count": 185385,
+   "offset_draw": true
+  },
+  "46588896": {
+   "stratum": "medium",
+   "entity": "particle",
+   "etype": "particle",
+   "rank": 12,
+   "mention_count": 369976,
+   "offset_draw": true
+  },
+  "80409115": {
+   "stratum": "medium",
+   "entity": "mode",
+   "etype": "particle",
+   "rank": 13,
+   "mention_count": 354183,
+   "offset_draw": true
+  },
+  "77769520": {
+   "stratum": "medium",
+   "entity": "muon",
+   "etype": "particle",
+   "rank": 79,
+   "mention_count": 69505,
+   "offset_draw": true
+  },
+  "88963664": {
+   "stratum": "medium",
+   "entity": "law",
+   "etype": "theory",
+   "rank": 90,
+   "mention_count": 53863,
+   "offset_draw": true
+  },
+  "69087020": {
+   "stratum": "medium",
+   "entity": "muon",
+   "etype": "particle",
+   "rank": 79,
+   "mention_count": 69505,
+   "offset_draw": true
+  },
+  "85799751": {
+   "stratum": "medium",
+   "entity": "proton",
+   "etype": "particle",
+   "rank": 54,
+   "mention_count": 119254,
+   "offset_draw": true
+  },
+  "68776261": {
+   "stratum": "medium",
+   "entity": "new",
+   "etype": "experimental_facility",
+   "rank": 21,
+   "mention_count": 255610,
+   "offset_draw": true
+  },
+  "85436459": {
+   "stratum": "medium",
+   "entity": "water",
+   "etype": "material",
+   "rank": 46,
+   "mention_count": 149721,
+   "offset_draw": true
+  },
+  "82223156": {
+   "stratum": "medium",
+   "entity": "noise",
+   "etype": "parameter",
+   "rank": 45,
+   "mention_count": 156827,
+   "offset_draw": true
+  },
+  "76283211": {
+   "stratum": "medium",
+   "entity": "noise",
+   "etype": "parameter",
+   "rank": 45,
+   "mention_count": 156827,
+   "offset_draw": true
+  },
+  "86582892": {
+   "stratum": "medium",
+   "entity": "technology",
+   "etype": "technology",
+   "rank": 70,
+   "mention_count": 83254,
+   "offset_draw": true
+  },
+  "62434608": {
+   "stratum": "medium",
+   "entity": "efficiency",
+   "etype": "method",
+   "rank": 65,
+   "mention_count": 93139,
+   "offset_draw": true
+  },
+  "58471178": {
+   "stratum": "medium",
+   "entity": "let",
+   "etype": "radiation_measurement",
+   "rank": 99,
+   "mention_count": 46177,
+   "offset_draw": true
+  },
+  "49527394": {
+   "stratum": "medium",
+   "entity": "gain",
+   "etype": "parameter",
+   "rank": 81,
+   "mention_count": 63727,
+   "offset_draw": true
+  },
+  "88517691": {
+   "stratum": "medium",
+   "entity": "ga",
+   "etype": "isotope",
+   "rank": 58,
+   "mention_count": 110580,
+   "offset_draw": true
+  },
+  "68536052": {
+   "stratum": "medium",
+   "entity": "proton",
+   "etype": "particle",
+   "rank": 54,
+   "mention_count": 119254,
+   "offset_draw": true
+  },
+  "83333172": {
+   "stratum": "medium",
+   "entity": "error",
+   "etype": "parameter",
+   "rank": 17,
+   "mention_count": 274824,
+   "offset_draw": true
+  },
+  "59397964": {
+   "stratum": "medium",
+   "entity": "fusion",
+   "etype": "nuclear_reaction",
+   "rank": 62,
+   "mention_count": 99790,
+   "offset_draw": true
+  },
+  "70731382": {
+   "stratum": "medium",
+   "entity": "photon",
+   "etype": "particle",
+   "rank": 44,
+   "mention_count": 163765,
+   "offset_draw": true
+  },
+  "67723275": {
+   "stratum": "medium",
+   "entity": "range",
+   "etype": "method",
+   "rank": 14,
+   "mention_count": 349490,
+   "offset_draw": true
+  },
+  "79698243": {
+   "stratum": "medium",
+   "entity": "region",
+   "etype": "location",
+   "rank": 11,
+   "mention_count": 392961,
+   "offset_draw": true
+  },
+  "83521257": {
+   "stratum": "medium",
+   "entity": "water",
+   "etype": "material",
+   "rank": 46,
+   "mention_count": 149721,
+   "offset_draw": true
+  },
+  "74455676": {
+   "stratum": "medium",
+   "entity": "quark",
+   "etype": "particle",
+   "rank": 40,
+   "mention_count": 175582,
+   "offset_draw": true
+  },
+  "50711050": {
+   "stratum": "medium",
+   "entity": "neutron",
+   "etype": "particle",
+   "rank": 48,
+   "mention_count": 134651,
+   "offset_draw": true
+  },
+  "46750738": {
+   "stratum": "medium",
+   "entity": "ga",
+   "etype": "isotope",
+   "rank": 58,
+   "mention_count": 110580,
+   "offset_draw": true
+  },
+  "54006709": {
+   "stratum": "medium",
+   "entity": "quark",
+   "etype": "particle",
+   "rank": 40,
+   "mention_count": 175582,
+   "offset_draw": true
+  },
+  "79137329": {
+   "stratum": "medium",
+   "entity": "meson",
+   "etype": "particle",
+   "rank": 75,
+   "mention_count": 78384,
+   "offset_draw": true
+  },
+  "70391858": {
+   "stratum": "medium",
+   "entity": "new",
+   "etype": "experimental_facility",
+   "rank": 21,
+   "mention_count": 255610,
+   "offset_draw": true
+  },
+  "49608067": {
+   "stratum": "medium",
+   "entity": "optimization",
+   "etype": "method",
+   "rank": 63,
+   "mention_count": 98083,
+   "offset_draw": true
+  },
+  "60575633": {
+   "stratum": "medium",
+   "entity": "neutrino",
+   "etype": "particle",
+   "rank": 41,
+   "mention_count": 170239,
+   "offset_draw": true
+  },
+  "73342386": {
+   "stratum": "medium",
+   "entity": "lepton",
+   "etype": "particle",
+   "rank": 67,
+   "mention_count": 90897,
+   "offset_draw": true
+  },
+  "84216180": {
+   "stratum": "medium",
+   "entity": "gain",
+   "etype": "parameter",
+   "rank": 81,
+   "mention_count": 63727,
+   "offset_draw": true
+  },
+  "47577428": {
+   "stratum": "medium",
+   "entity": "pion",
+   "etype": "particle",
+   "rank": 100,
+   "mention_count": 45764,
+   "offset_draw": true
+  },
+  "57870606": {
+   "stratum": "medium",
+   "entity": "modeling",
+   "etype": "method",
+   "rank": 87,
+   "mention_count": 56131,
+   "offset_draw": true
+  },
+  "89384257": {
+   "stratum": "medium",
+   "entity": "simulation",
+   "etype": "method",
+   "rank": 25,
+   "mention_count": 243229,
+   "offset_draw": true
+  },
+  "77236792": {
+   "stratum": "medium",
+   "entity": "optimization",
+   "etype": "method",
+   "rank": 63,
+   "mention_count": 98083,
+   "offset_draw": true
+  },
+  "82282090": {
+   "stratum": "medium",
+   "entity": "filter",
+   "etype": "method",
+   "rank": 69,
+   "mention_count": 86839,
+   "offset_draw": true
+  },
+  "76907255": {
+   "stratum": "medium",
+   "entity": "electron",
+   "etype": "particle",
+   "rank": 33,
+   "mention_count": 188085,
+   "offset_draw": true
+  },
+  "50906620": {
+   "stratum": "medium",
+   "entity": "fusion",
+   "etype": "nuclear_reaction",
+   "rank": 62,
+   "mention_count": 99790,
+   "offset_draw": true
+  },
+  "87400270": {
+   "stratum": "medium",
+   "entity": "fusion",
+   "etype": "nuclear_reaction",
+   "rank": 62,
+   "mention_count": 99790,
+   "offset_draw": true
+  },
+  "76202055": {
+   "stratum": "medium",
+   "entity": "fusion",
+   "etype": "nuclear_reaction",
+   "rank": 62,
+   "mention_count": 99790,
+   "offset_draw": true
+  },
+  "78368254": {
+   "stratum": "medium",
+   "entity": "new",
+   "etype": "experimental_facility",
+   "rank": 21,
+   "mention_count": 255610,
+   "offset_draw": true
+  },
+  "78226754": {
+   "stratum": "medium",
+   "entity": "range",
+   "etype": "method",
+   "rank": 14,
+   "mention_count": 349490,
+   "offset_draw": true
+  },
+  "55899045": {
+   "stratum": "medium",
+   "entity": "resistance",
+   "etype": "parameter",
+   "rank": 85,
+   "mention_count": 57172,
+   "offset_draw": true
+  },
+  "54583229": {
+   "stratum": "medium",
+   "entity": "muon",
+   "etype": "particle",
+   "rank": 79,
+   "mention_count": 69505,
+   "offset_draw": true
+  },
+  "46674758": {
+   "stratum": "medium",
+   "entity": "exposure",
+   "etype": "parameter",
+   "rank": 92,
+   "mention_count": 52303,
+   "offset_draw": true
+  },
+  "71543726": {
+   "stratum": "medium",
+   "entity": "equation",
+   "etype": "method",
+   "rank": 37,
+   "mention_count": 184113,
+   "offset_draw": true
+  },
+  "48250014": {
+   "stratum": "medium",
+   "entity": "effect",
+   "etype": "parameter",
+   "rank": 30,
+   "mention_count": 197977,
+   "offset_draw": true
+  },
+  "70093137": {
+   "stratum": "medium",
+   "entity": "neural network",
+   "etype": "method",
+   "rank": 68,
+   "mention_count": 89850,
+   "offset_draw": true
+  },
+  "57102385": {
+   "stratum": "medium",
+   "entity": "threshold",
+   "etype": "parameter",
+   "rank": 51,
+   "mention_count": 126127,
+   "offset_draw": true
+  },
+  "87165599": {
+   "stratum": "medium",
+   "entity": "let",
+   "etype": "radiation_measurement",
+   "rank": 99,
+   "mention_count": 46177,
+   "offset_draw": true
+  },
+  "61766057": {
+   "stratum": "medium",
+   "entity": "particle",
+   "etype": "particle",
+   "rank": 12,
+   "mention_count": 369976,
+   "offset_draw": true
+  },
+  "65511037": {
+   "stratum": "medium",
+   "entity": "exposure",
+   "etype": "parameter",
+   "rank": 92,
+   "mention_count": 52303,
+   "offset_draw": true
+  },
+  "82282048": {
+   "stratum": "medium",
+   "entity": "resistance",
+   "etype": "parameter",
+   "rank": 85,
+   "mention_count": 57172,
+   "offset_draw": true
+  },
+  "49657897": {
+   "stratum": "medium",
+   "entity": "efficiency",
+   "etype": "method",
+   "rank": 65,
+   "mention_count": 93139,
+   "offset_draw": true
+  },
+  "69653452": {
+   "stratum": "medium",
+   "entity": "function",
+   "etype": "material",
+   "rank": 18,
+   "mention_count": 272263,
+   "offset_draw": true
+  },
+  "68370040": {
+   "stratum": "medium",
+   "entity": "efficiency",
+   "etype": "method",
+   "rank": 65,
+   "mention_count": 93139,
+   "offset_draw": true
+  },
+  "84883717": {
+   "stratum": "medium",
+   "entity": "effect",
+   "etype": "parameter",
+   "rank": 30,
+   "mention_count": 197977,
+   "offset_draw": true
+  },
+  "86240791": {
+   "stratum": "medium",
+   "entity": "moment",
+   "etype": "particle",
+   "rank": 76,
+   "mention_count": 77974,
+   "offset_draw": true
+  },
+  "87867053": {
+   "stratum": "medium",
+   "entity": "neutron",
+   "etype": "particle",
+   "rank": 48,
+   "mention_count": 134651,
+   "offset_draw": true
+  },
+  "74416540": {
+   "stratum": "medium",
+   "entity": "effect",
+   "etype": "parameter",
+   "rank": 30,
+   "mention_count": 197977,
+   "offset_draw": true
+  },
+  "59848573": {
+   "stratum": "medium",
+   "entity": "reconstruction",
+   "etype": "method",
+   "rank": 72,
+   "mention_count": 79699,
+   "offset_draw": true
+  },
+  "48118735": {
+   "stratum": "medium",
+   "entity": "mean",
+   "etype": "particle",
+   "rank": 24,
+   "mention_count": 244164,
+   "offset_draw": true
+  },
+  "84232207": {
+   "stratum": "medium",
+   "entity": "lepton",
+   "etype": "particle",
+   "rank": 67,
+   "mention_count": 90897,
+   "offset_draw": true
+  },
+  "79782099": {
+   "stratum": "medium",
+   "entity": "hadron",
+   "etype": "particle",
+   "rank": 94,
+   "mention_count": 51076,
+   "offset_draw": true
+  },
+  "61221575": {
+   "stratum": "tail",
+   "entity": "gain bandwidth product",
+   "etype": "parameter",
+   "rank": 1399,
+   "mention_count": 23,
+   "offset_draw": true
+  },
+  "54073727": {
+   "stratum": "tail",
+   "entity": "fall time",
+   "etype": "parameter",
+   "rank": 646,
+   "mention_count": 605,
+   "offset_draw": true
+  },
+  "59361221": {
+   "stratum": "tail",
+   "entity": "lanthanum bromide",
+   "etype": "scintillator",
+   "rank": 1233,
+   "mention_count": 52,
+   "offset_draw": true
+  },
+  "56841517": {
+   "stratum": "tail",
+   "entity": "polarization effect",
+   "etype": "semiconductor_detector",
+   "rank": 740,
+   "mention_count": 381,
+   "offset_draw": true
+  },
+  "47276915": {
+   "stratum": "tail",
+   "entity": "pre-amplifier",
+   "etype": "method",
+   "rank": 650,
+   "mention_count": 591,
+   "offset_draw": true
+  },
+  "54925908": {
+   "stratum": "tail",
+   "entity": "shielding concrete",
+   "etype": "material",
+   "rank": 1348,
+   "mention_count": 29,
+   "offset_draw": true
+  },
+  "63054957": {
+   "stratum": "tail",
+   "entity": "sinad",
+   "etype": "parameter",
+   "rank": 1818,
+   "mention_count": 1,
+   "offset_draw": true
+  },
+  "83453165": {
+   "stratum": "tail",
+   "entity": "electromagnetic interference",
+   "etype": "term",
+   "rank": 445,
+   "mention_count": 1741,
+   "offset_draw": true
+  },
+  "63527358": {
+   "stratum": "tail",
+   "entity": "offset drift",
+   "etype": "parameter",
+   "rank": 1329,
+   "mention_count": 33,
+   "offset_draw": true
+  },
+  "88941818": {
+   "stratum": "tail",
+   "entity": "effective number of bit",
+   "etype": "parameter",
+   "rank": 1291,
+   "mention_count": 39,
+   "offset_draw": true
+  },
+  "76060581": {
+   "stratum": "tail",
+   "entity": "tld",
+   "etype": "detector",
+   "rank": 1599,
+   "mention_count": 7,
+   "offset_draw": true
+  },
+  "86255822": {
+   "stratum": "tail",
+   "entity": "large hadron collider",
+   "etype": "experimental_facility",
+   "rank": 764,
+   "mention_count": 346,
+   "offset_draw": true
+  },
+  "55870722": {
+   "stratum": "tail",
+   "entity": "front-end electronic",
+   "etype": "experimental_facility",
+   "rank": 591,
+   "mention_count": 786,
+   "offset_draw": true
+  },
+  "70447089": {
+   "stratum": "tail",
+   "entity": "noise equivalent charge",
+   "etype": "parameter",
+   "rank": 898,
+   "mention_count": 207,
+   "offset_draw": true
+  },
+  "60810631": {
+   "stratum": "tail",
+   "entity": "time to digital converter",
+   "etype": "detector",
+   "rank": 1420,
+   "mention_count": 21,
+   "offset_draw": true
+  },
+  "60010175": {
+   "stratum": "tail",
+   "entity": "scintillation",
+   "etype": "scintillator",
+   "rank": 250,
+   "mention_count": 7061,
+   "offset_draw": true
+  },
+  "84658959": {
+   "stratum": "tail",
+   "entity": "short-lived isotope",
+   "etype": "isotope",
+   "rank": 963,
+   "mention_count": 152,
+   "offset_draw": true
+  },
+  "52526207": {
+   "stratum": "tail",
+   "entity": "underground laboratory",
+   "etype": "experimental_facility",
+   "rank": 840,
+   "mention_count": 251,
+   "offset_draw": true
+  },
+  "82970689": {
+   "stratum": "tail",
+   "entity": "isotope",
+   "etype": "isotope",
+   "rank": 131,
+   "mention_count": 29310,
+   "offset_draw": true
+  },
+  "54838090": {
+   "stratum": "tail",
+   "entity": "organization",
+   "etype": "organization",
+   "rank": 223,
+   "mention_count": 8788,
+   "offset_draw": true
+  },
+  "81354447": {
+   "stratum": "tail",
+   "entity": "scintillation fiber",
+   "etype": "scintillator",
+   "rank": 1283,
+   "mention_count": 41,
+   "offset_draw": true
+  },
+  "57987213": {
+   "stratum": "tail",
+   "entity": "n-type silicon",
+   "etype": "semiconductor_detector",
+   "rank": 1055,
+   "mention_count": 103,
+   "offset_draw": true
+  },
+  "86555578": {
+   "stratum": "tail",
+   "entity": "time to digital converter",
+   "etype": "detector",
+   "rank": 1420,
+   "mention_count": 21,
+   "offset_draw": true
+  },
+  "47224190": {
+   "stratum": "tail",
+   "entity": "micro-x-ray computed tomography",
+   "etype": "method",
+   "rank": 1865,
+   "mention_count": 1,
+   "offset_draw": true
+  },
+  "79483503": {
+   "stratum": "tail",
+   "entity": "frequency response",
+   "etype": "parameter",
+   "rank": 294,
+   "mention_count": 4937,
+   "offset_draw": true
+  },
+  "89221484": {
+   "stratum": "tail",
+   "entity": "noise reduction",
+   "etype": "method",
+   "rank": 341,
+   "mention_count": 3493,
+   "offset_draw": true
+  },
+  "72377936": {
+   "stratum": "tail",
+   "entity": "radiation protection",
+   "etype": "method",
+   "rank": 394,
+   "mention_count": 2469,
+   "offset_draw": true
+  },
+  "63422402": {
+   "stratum": "tail",
+   "entity": "程序",
+   "etype": "method",
+   "rank": 1596,
+   "mention_count": 7,
+   "offset_draw": true
+  },
+  "57862930": {
+   "stratum": "tail",
+   "entity": "readout system",
+   "etype": "circuit",
+   "rank": 586,
+   "mention_count": 805,
+   "offset_draw": true
+  },
+  "59726750": {
+   "stratum": "tail",
+   "entity": "time walk",
+   "etype": "parameter",
+   "rank": 998,
+   "mention_count": 131,
+   "offset_draw": true
+  },
+  "69395945": {
+   "stratum": "tail",
+   "entity": "mass spectrum",
+   "etype": "energy_spectrum",
+   "rank": 274,
+   "mention_count": 5541,
+   "offset_draw": true
+  },
+  "85232859": {
+   "stratum": "tail",
+   "entity": "input offset voltage",
+   "etype": "parameter",
+   "rank": 1417,
+   "mention_count": 21,
+   "offset_draw": true
+  },
+  "88233828": {
+   "stratum": "tail",
+   "entity": "neutron activation analysis",
+   "etype": "method",
+   "rank": 1835,
+   "mention_count": 1,
+   "offset_draw": true
+  },
+  "48382011": {
+   "stratum": "tail",
+   "entity": "impedance matching",
+   "etype": "method",
+   "rank": 434,
+   "mention_count": 1899,
+   "offset_draw": true
+  },
+  "86639239": {
+   "stratum": "tail",
+   "entity": "photodiode",
+   "etype": "photodetector",
+   "rank": 292,
+   "mention_count": 4980,
+   "offset_draw": true
+  },
+  "68671483": {
+   "stratum": "tail",
+   "entity": "strip detector",
+   "etype": "detector",
+   "rank": 608,
+   "mention_count": 738,
+   "offset_draw": true
+  },
+  "67543573": {
+   "stratum": "tail",
+   "entity": "voltage follower",
+   "etype": "circuit",
+   "rank": 1030,
+   "mention_count": 115,
+   "offset_draw": true
+  },
+  "58342950": {
+   "stratum": "tail",
+   "entity": "scintillator",
+   "etype": "scintillator",
+   "rank": 186,
+   "mention_count": 12436,
+   "offset_draw": true
+  },
+  "88478418": {
+   "stratum": "tail",
+   "entity": "internal conversion",
+   "etype": "nuclear_reaction",
+   "rank": 651,
+   "mention_count": 590,
+   "offset_draw": true
+  },
+  "75467893": {
+   "stratum": "tail",
+   "entity": "offset drift",
+   "etype": "parameter",
+   "rank": 1329,
+   "mention_count": 33,
+   "offset_draw": true
+  },
+  "62885811": {
+   "stratum": "tail",
+   "entity": "thermal reactor",
+   "etype": "experimental_facility",
+   "rank": 1049,
+   "mention_count": 106,
+   "offset_draw": true
+  },
+  "56757582": {
+   "stratum": "tail",
+   "entity": "log-normal distribution",
+   "etype": "particle",
+   "rank": 749,
+   "mention_count": 368,
+   "offset_draw": true
+  },
+  "87604763": {
+   "stratum": "tail",
+   "entity": "te",
+   "etype": "photodetector",
+   "rank": 684,
+   "mention_count": 487,
+   "offset_draw": true
+  },
+  "74954165": {
+   "stratum": "tail",
+   "entity": "dynode",
+   "etype": "photodetector",
+   "rank": 670,
+   "mention_count": 515,
+   "offset_draw": true
+  },
+  "62201433": {
+   "stratum": "tail",
+   "entity": "frequency jitter",
+   "etype": "parameter",
+   "rank": 1239,
+   "mention_count": 50,
+   "offset_draw": true
+  },
+  "75653482": {
+   "stratum": "tail",
+   "entity": "radiation resistant material",
+   "etype": "material",
+   "rank": 1620,
+   "mention_count": 6,
+   "offset_draw": true
+  },
+  "68172531": {
+   "stratum": "tail",
+   "entity": "trigger delay",
+   "etype": "parameter",
+   "rank": 1204,
+   "mention_count": 61,
+   "offset_draw": true
+  },
+  "83367070": {
+   "stratum": "tail",
+   "entity": "photoelectron number",
+   "etype": "parameter",
+   "rank": 1463,
+   "mention_count": 16,
+   "offset_draw": true
+  },
+  "61324864": {
+   "stratum": "tail",
+   "entity": "rfq",
+   "etype": "experimental_facility",
+   "rank": 1646,
+   "mention_count": 5,
+   "offset_draw": true
+  },
+  "66046795": {
+   "stratum": "tail",
+   "entity": "ground noise",
+   "etype": "parameter",
+   "rank": 1193,
+   "mention_count": 63,
+   "offset_draw": true
+  },
+  "87113829": {
+   "stratum": "tail",
+   "entity": "nonlinearity",
+   "etype": "parameter",
+   "rank": 276,
+   "mention_count": 5527,
+   "offset_draw": true
+  },
+  "46280207": {
+   "stratum": "tail",
+   "entity": "sealed source",
+   "etype": "material",
+   "rank": 1033,
+   "mention_count": 113,
+   "offset_draw": true
+  },
+  "59026661": {
+   "stratum": "tail",
+   "entity": "superconducting linac",
+   "etype": "experimental_facility",
+   "rank": 1121,
+   "mention_count": 79,
+   "offset_draw": true
+  },
+  "47421187": {
+   "stratum": "tail",
+   "entity": "round-off error",
+   "etype": "parameter",
+   "rank": 1223,
+   "mention_count": 55,
+   "offset_draw": true
+  },
+  "52563436": {
+   "stratum": "tail",
+   "entity": "institution",
+   "etype": "organization",
+   "rank": 273,
+   "mention_count": 5584,
+   "offset_draw": true
+  },
+  "72246006": {
+   "stratum": "tail",
+   "entity": "neutron flux",
+   "etype": "parameter",
+   "rank": 307,
+   "mention_count": 4443,
+   "offset_draw": true
+  },
+  "50026651": {
+   "stratum": "tail",
+   "entity": "voltage integration",
+   "etype": "method",
+   "rank": 1654,
+   "mention_count": 5,
+   "offset_draw": true
+  },
+  "47908828": {
+   "stratum": "tail",
+   "entity": "substance",
+   "etype": "material",
+   "rank": 240,
+   "mention_count": 7469,
+   "offset_draw": true
+  },
+  "84740637": {
+   "stratum": "tail",
+   "entity": "fiber link",
+   "etype": "circuit",
+   "rank": 875,
+   "mention_count": 221,
+   "offset_draw": true
+  },
+  "82598687": {
+   "stratum": "tail",
+   "entity": "equivalent dose",
+   "etype": "radiation_measurement",
+   "rank": 629,
+   "mention_count": 660,
+   "offset_draw": true
+  },
+  "70203427": {
+   "stratum": "tail",
+   "entity": "plastic scintillator",
+   "etype": "scintillator",
+   "rank": 383,
+   "mention_count": 2577,
+   "offset_draw": true
+  },
+  "77892501": {
+   "stratum": "tail",
+   "entity": "drift",
+   "etype": "detector",
+   "rank": 132,
+   "mention_count": 28286,
+   "offset_draw": true
+  },
+  "60514011": {
+   "stratum": "tail",
+   "entity": "single-ended readout",
+   "etype": "method",
+   "rank": 1535,
+   "mention_count": 10,
+   "offset_draw": true
+  },
+  "63422528": {
+   "stratum": "tail",
+   "entity": "水平",
+   "etype": "parameter",
+   "rank": 1024,
+   "mention_count": 119,
+   "offset_draw": true
+  },
+  "61518020": {
+   "stratum": "tail",
+   "entity": "power reactor",
+   "etype": "experimental_facility",
+   "rank": 693,
+   "mention_count": 467,
+   "offset_draw": true
+  },
+  "65506420": {
+   "stratum": "tail",
+   "entity": "rayleigh scattering",
+   "etype": "nuclear_reaction",
+   "rank": 1563,
+   "mention_count": 8,
+   "offset_draw": true
+  },
+  "68303130": {
+   "stratum": "tail",
+   "entity": "frame error rate",
+   "etype": "parameter",
+   "rank": 311,
+   "mention_count": 4395,
+   "offset_draw": true
+  },
+  "63416607": {
+   "stratum": "tail",
+   "entity": "半衰期",
+   "etype": "isotope",
+   "rank": 1551,
+   "mention_count": 9,
+   "offset_draw": true
+  },
+  "81838259": {
+   "stratum": "tail",
+   "entity": "rapidity",
+   "etype": "parameter",
+   "rank": 151,
+   "mention_count": 21193,
+   "offset_draw": true
+  },
+  "79441220": {
+   "stratum": "tail",
+   "entity": "time-of-flight spectrometer",
+   "etype": "experimental_facility",
+   "rank": 1091,
+   "mention_count": 89,
+   "offset_draw": true
+  },
+  "75629154": {
+   "stratum": "tail",
+   "entity": "dubna",
+   "etype": "experimental_facility",
+   "rank": 1498,
+   "mention_count": 13,
+   "offset_draw": true
+  },
+  "77819408": {
+   "stratum": "tail",
+   "entity": "high-purity germanium detector",
+   "etype": "detector",
+   "rank": 999,
+   "mention_count": 131,
+   "offset_draw": true
+  },
+  "81092333": {
+   "stratum": "tail",
+   "entity": "nemo",
+   "etype": "experimental_facility",
+   "rank": 1657,
+   "mention_count": 5,
+   "offset_draw": true
+  },
+  "67521889": {
+   "stratum": "tail",
+   "entity": "thick-film circuit",
+   "etype": "circuit",
+   "rank": 1803,
+   "mention_count": 1,
+   "offset_draw": true
+  },
+  "78157067": {
+   "stratum": "tail",
+   "entity": "particle tracking",
+   "etype": "method",
+   "rank": 602,
+   "mention_count": 746,
+   "offset_draw": true
+  },
+  "63414833": {
+   "stratum": "tail",
+   "entity": "处理",
+   "etype": "method",
+   "rank": 1230,
+   "mention_count": 53,
+   "offset_draw": true
+  },
+  "50652621": {
+   "stratum": "tail",
+   "entity": "time-of-flight",
+   "etype": "method",
+   "rank": 283,
+   "mention_count": 5244,
+   "offset_draw": true
+  },
+  "55831585": {
+   "stratum": "tail",
+   "entity": "ppm",
+   "etype": "parameter",
+   "rank": 147,
+   "mention_count": 22591,
+   "offset_draw": true
+  },
+  "62314956": {
+   "stratum": "tail",
+   "entity": "power supply noise rejection",
+   "etype": "method",
+   "rank": 1786,
+   "mention_count": 2,
+   "offset_draw": true
+  },
+  "84216396": {
+   "stratum": "tail",
+   "entity": "third-order intercept point",
+   "etype": "parameter",
+   "rank": 1411,
+   "mention_count": 22,
+   "offset_draw": true
+  },
+  "62675271": {
+   "stratum": "tail",
+   "entity": "精度",
+   "etype": "parameter",
+   "rank": 1414,
+   "mention_count": 22,
+   "offset_draw": true
+  },
+  "62582269": {
+   "stratum": "tail",
+   "entity": "x-ray tube",
+   "etype": "detector",
+   "rank": 1189,
+   "mention_count": 64,
+   "offset_draw": true
+  },
+  "63422541": {
+   "stratum": "tail",
+   "entity": "空间分辨率",
+   "etype": "parameter",
+   "rank": 1849,
+   "mention_count": 1,
+   "offset_draw": true
+  },
+  "88638313": {
+   "stratum": "tail",
+   "entity": "impedance bridge",
+   "etype": "detector",
+   "rank": 1703,
+   "mention_count": 3,
+   "offset_draw": true
+  },
+  "58757425": {
+   "stratum": "tail",
+   "entity": "experimental station",
+   "etype": "experimental_facility",
+   "rank": 763,
+   "mention_count": 347,
+   "offset_draw": true
+  },
+  "82521601": {
+   "stratum": "tail",
+   "entity": "point source",
+   "etype": "material",
+   "rank": 348,
+   "mention_count": 3252,
+   "offset_draw": true
+  },
+  "73557826": {
+   "stratum": "tail",
+   "entity": "sudden approximation",
+   "etype": "method",
+   "rank": 1154,
+   "mention_count": 70,
+   "offset_draw": true
+  },
+  "75770298": {
+   "stratum": "tail",
+   "entity": "the absorbance",
+   "etype": "parameter",
+   "rank": 428,
+   "mention_count": 1974,
+   "offset_draw": true
+  },
+  "79127554": {
+   "stratum": "tail",
+   "entity": "threshold discriminator",
+   "etype": "circuit",
+   "rank": 1377,
+   "mention_count": 26,
+   "offset_draw": true
+  },
+  "83863408": {
+   "stratum": "tail",
+   "entity": "pulse energy",
+   "etype": "parameter",
+   "rank": 377,
+   "mention_count": 2677,
+   "offset_draw": true
+  },
+  "65044632": {
+   "stratum": "tail",
+   "entity": "energy los",
+   "etype": "method",
+   "rank": 201,
+   "mention_count": 10831,
+   "offset_draw": true
+  },
+  "62281508": {
+   "stratum": "tail",
+   "entity": "kilorad",
+   "etype": "radiation_measurement",
+   "rank": 1852,
+   "mention_count": 1,
+   "offset_draw": true
+  },
+  "62311828": {
+   "stratum": "tail",
+   "entity": "net peak area",
+   "etype": "parameter",
+   "rank": 991,
+   "mention_count": 136,
+   "offset_draw": true
+  },
+  "58798528": {
+   "stratum": "tail",
+   "entity": "grounding",
+   "etype": "method",
+   "rank": 499,
+   "mention_count": 1315,
+   "offset_draw": true
+  },
+  "82681559": {
+   "stratum": "tail",
+   "entity": "trigger system",
+   "etype": "detector",
+   "rank": 456,
+   "mention_count": 1665,
+   "offset_draw": true
+  },
+  "60882390": {
+   "stratum": "tail",
+   "entity": "j-parc",
+   "etype": "experimental_facility",
+   "rank": 1369,
+   "mention_count": 27,
+   "offset_draw": true
+  },
+  "50001027": {
+   "stratum": "tail",
+   "entity": "structural material",
+   "etype": "material",
+   "rank": 507,
+   "mention_count": 1238,
+   "offset_draw": true
+  },
+  "61468970": {
+   "stratum": "tail",
+   "entity": "storage ring",
+   "etype": "experimental_facility",
+   "rank": 335,
+   "mention_count": 3618,
+   "offset_draw": true
+  },
+  "89138595": {
+   "stratum": "tail",
+   "entity": "passive filter",
+   "etype": "circuit",
+   "rank": 1241,
+   "mention_count": 50,
+   "offset_draw": true
+  },
+  "85102564": {
+   "stratum": "tail",
+   "entity": "interquartile range",
+   "etype": "particle",
+   "rank": 457,
+   "mention_count": 1665,
+   "offset_draw": true
+  },
+  "79167274": {
+   "stratum": "short",
+   "entity": "glas",
+   "etype": "material",
+   "rank": 130,
+   "mention_count": 29618,
+   "offset_draw": true
+  },
+  "58817041": {
+   "stratum": "short",
+   "entity": "pmma",
+   "etype": "material",
+   "rank": 1530,
+   "mention_count": 11,
+   "offset_draw": true
+  },
+  "46437690": {
+   "stratum": "short",
+   "entity": "tce",
+   "etype": "contaminant",
+   "rank": 1065,
+   "mention_count": 99,
+   "offset_draw": true
+  },
+  "48846072": {
+   "stratum": "short",
+   "entity": "pet",
+   "etype": "method",
+   "rank": 623,
+   "mention_count": 686,
+   "offset_draw": true
+  },
+  "65900995": {
+   "stratum": "short",
+   "entity": "tia",
+   "etype": "circuit",
+   "rank": 1289,
+   "mention_count": 39,
+   "offset_draw": true
+  },
+  "47221686": {
+   "stratum": "short",
+   "entity": "mcnp",
+   "etype": "radiation_measurement",
+   "rank": 1203,
+   "mention_count": 61,
+   "offset_draw": true
+  },
+  "50929879": {
+   "stratum": "short",
+   "entity": "pfa",
+   "etype": "material",
+   "rank": 1581,
+   "mention_count": 8,
+   "offset_draw": true
+  },
+  "50958276": {
+   "stratum": "short",
+   "entity": "pfa",
+   "etype": "material",
+   "rank": 1581,
+   "mention_count": 8,
+   "offset_draw": true
+  },
+  "87751221": {
+   "stratum": "short",
+   "entity": "emc",
+   "etype": "term",
+   "rank": 1274,
+   "mention_count": 44,
+   "offset_draw": true
+  },
+  "51365610": {
+   "stratum": "short",
+   "entity": "mcp",
+   "etype": "photodetector",
+   "rank": 1178,
+   "mention_count": 66,
+   "offset_draw": true
+  },
+  "50842387": {
+   "stratum": "short",
+   "entity": "lyso",
+   "etype": "scintillator",
+   "rank": 1471,
+   "mention_count": 15,
+   "offset_draw": true
+  },
+  "80439119": {
+   "stratum": "short",
+   "entity": "gsi",
+   "etype": "experimental_facility",
+   "rank": 1034,
+   "mention_count": 113,
+   "offset_draw": true
+  },
+  "49093079": {
+   "stratum": "short",
+   "entity": "nai",
+   "etype": "scintillator",
+   "rank": 1063,
+   "mention_count": 100,
+   "offset_draw": true
+  },
+  "46360021": {
+   "stratum": "short",
+   "entity": "tt",
+   "etype": "circuit",
+   "rank": 1406,
+   "mention_count": 22,
+   "offset_draw": true
+  },
+  "87050555": {
+   "stratum": "short",
+   "entity": "tdc",
+   "etype": "detector",
+   "rank": 1470,
+   "mention_count": 15,
+   "offset_draw": true
+  },
+  "78688669": {
+   "stratum": "short",
+   "entity": "pep",
+   "etype": "experimental_facility",
+   "rank": 847,
+   "mention_count": 243,
+   "offset_draw": true
+  },
+  "67012302": {
+   "stratum": "short",
+   "entity": "ga",
+   "etype": "isotope",
+   "rank": 58,
+   "mention_count": 110580,
+   "offset_draw": true
+  },
+  "56594972": {
+   "stratum": "short",
+   "entity": "juno",
+   "etype": "experimental_facility",
+   "rank": 1139,
+   "mention_count": 74,
+   "offset_draw": true
+  },
+  "88183461": {
+   "stratum": "short",
+   "entity": "snr",
+   "etype": "parameter",
+   "rank": 1171,
+   "mention_count": 67,
+   "offset_draw": true
+  },
+  "84329712": {
+   "stratum": "short",
+   "entity": "stm",
+   "etype": "method",
+   "rank": 1511,
+   "mention_count": 12,
+   "offset_draw": true
+  },
+  "56602210": {
+   "stratum": "short",
+   "entity": "gsi",
+   "etype": "experimental_facility",
+   "rank": 1034,
+   "mention_count": 113,
+   "offset_draw": true
+  },
+  "50499265": {
+   "stratum": "short",
+   "entity": "vpm",
+   "etype": "photodetector",
+   "rank": 1445,
+   "mention_count": 18,
+   "offset_draw": true
+  },
+  "73951811": {
+   "stratum": "short",
+   "entity": "hpge",
+   "etype": "semiconductor_detector",
+   "rank": 1425,
+   "mention_count": 20,
+   "offset_draw": true
+  },
+  "67745560": {
+   "stratum": "short",
+   "entity": "lilu",
+   "etype": "scintillator",
+   "rank": 1831,
+   "mention_count": 1,
+   "offset_draw": true
+  },
+  "81729141": {
+   "stratum": "short",
+   "entity": "reno",
+   "etype": "experimental_facility",
+   "rank": 1432,
+   "mention_count": 19,
+   "offset_draw": true
+  },
+  "71052663": {
+   "stratum": "short",
+   "entity": "snr",
+   "etype": "parameter",
+   "rank": 1171,
+   "mention_count": 67,
+   "offset_draw": true
+  },
+  "71872899": {
+   "stratum": "short",
+   "entity": "sir",
+   "etype": "parameter",
+   "rank": 1282,
+   "mention_count": 41,
+   "offset_draw": true
+  },
+  "50499421": {
+   "stratum": "short",
+   "entity": "vpm",
+   "etype": "photodetector",
+   "rank": 1445,
+   "mention_count": 18,
+   "offset_draw": true
+  },
+  "85584346": {
+   "stratum": "short",
+   "entity": "pet",
+   "etype": "method",
+   "rank": 623,
+   "mention_count": 686,
+   "offset_draw": true
+  },
+  "77516390": {
+   "stratum": "short",
+   "entity": "term",
+   "etype": "term",
+   "rank": 7,
+   "mention_count": 669084,
+   "offset_draw": true
+  },
+  "53793765": {
+   "stratum": "short",
+   "entity": "term",
+   "etype": "term",
+   "rank": 7,
+   "mention_count": 669084,
+   "offset_draw": true
+  },
+  "52281150": {
+   "stratum": "short",
+   "entity": "tia",
+   "etype": "circuit",
+   "rank": 1289,
+   "mention_count": 39,
+   "offset_draw": true
+  },
+  "58267571": {
+   "stratum": "short",
+   "entity": "napl",
+   "etype": "contaminant",
+   "rank": 1250,
+   "mention_count": 49,
+   "offset_draw": true
+  },
+  "73952310": {
+   "stratum": "short",
+   "entity": "hpge",
+   "etype": "semiconductor_detector",
+   "rank": 1425,
+   "mention_count": 20,
+   "offset_draw": true
+  },
+  "67219127": {
+   "stratum": "short",
+   "entity": "mj",
+   "etype": "parameter",
+   "rank": 1159,
+   "mention_count": 70,
+   "offset_draw": true
+  },
+  "77544189": {
+   "stratum": "short",
+   "entity": "gsi",
+   "etype": "experimental_facility",
+   "rank": 1034,
+   "mention_count": 113,
+   "offset_draw": true
+  },
+  "49891777": {
+   "stratum": "short",
+   "entity": "snr",
+   "etype": "parameter",
+   "rank": 1171,
+   "mention_count": 67,
+   "offset_draw": true
+  },
+  "71052960": {
+   "stratum": "short",
+   "entity": "snr",
+   "etype": "parameter",
+   "rank": 1171,
+   "mention_count": 67,
+   "offset_draw": true
+  },
+  "76034419": {
+   "stratum": "short",
+   "entity": "pmt",
+   "etype": "photodetector",
+   "rank": 1118,
+   "mention_count": 80,
+   "offset_draw": true
+  },
+  "74405004": {
+   "stratum": "short",
+   "entity": "kun",
+   "etype": "method",
+   "rank": 1300,
+   "mention_count": 37,
+   "offset_draw": true
+  },
+  "54116415": {
+   "stratum": "short",
+   "entity": "pfa",
+   "etype": "material",
+   "rank": 1581,
+   "mention_count": 8,
+   "offset_draw": true
+  },
+  "56123287": {
+   "stratum": "short",
+   "entity": "pet",
+   "etype": "method",
+   "rank": 623,
+   "mention_count": 686,
+   "offset_draw": true
+  },
+  "84589498": {
+   "stratum": "short",
+   "entity": "igbt",
+   "etype": "circuit",
+   "rank": 1589,
+   "mention_count": 7,
+   "offset_draw": true
+  },
+  "59646058": {
+   "stratum": "short",
+   "entity": "kun",
+   "etype": "method",
+   "rank": 1300,
+   "mention_count": 37,
+   "offset_draw": true
+  },
+  "73655574": {
+   "stratum": "short",
+   "entity": "epr",
+   "etype": "method",
+   "rank": 1265,
+   "mention_count": 46,
+   "offset_draw": true
+  },
+  "50940414": {
+   "stratum": "short",
+   "entity": "nmr",
+   "etype": "method",
+   "rank": 1248,
+   "mention_count": 49,
+   "offset_draw": true
+  },
+  "54272979": {
+   "stratum": "short",
+   "entity": "mri",
+   "etype": "method",
+   "rank": 1123,
+   "mention_count": 79,
+   "offset_draw": true
+  },
+  "77472080": {
+   "stratum": "short",
+   "entity": "glas",
+   "etype": "material",
+   "rank": 130,
+   "mention_count": 29618,
+   "offset_draw": true
+  },
+  "58268241": {
+   "stratum": "short",
+   "entity": "napl",
+   "etype": "contaminant",
+   "rank": 1250,
+   "mention_count": 49,
+   "offset_draw": true
+  },
+  "58267562": {
+   "stratum": "short",
+   "entity": "napl",
+   "etype": "contaminant",
+   "rank": 1250,
+   "mention_count": 49,
+   "offset_draw": true
+  }
+ }
+}

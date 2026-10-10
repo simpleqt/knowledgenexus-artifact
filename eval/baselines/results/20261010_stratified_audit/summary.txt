@@ -1,0 +1,5 @@
+KB=104112e63d9d4aa5a6c21e1c1549ef0f
+n=300 valid=251 precision=0.837 wilson95=[0.791,0.874]
+span_integrity=300/300 (1.000)
+domain: valid 142/149 = 0.953 [0.906,0.977]
+generic: valid 109/151 = 0.722 [0.646,0.787]

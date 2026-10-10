@@ -107,22 +107,27 @@ def fig_telemetry():
     ax.axvspan(i0, i1, color="#f39c12", alpha=0.18, zorder=0)
     ax.text((i0 + i1) / 2, 2e6, "logged B95 window\n(11:41–18:35)",
             ha="center", fontsize=7.5, color="#b9770e")
-    ax.legend(fontsize=8, frameon=False, loc="upper right")
+    # 图例悬空于坐标区上方（视觉验收：upper right 框压住窗口标注首行）
+    ax.legend(fontsize=8, frameon=False, loc="lower right",
+              bbox_to_anchor=(1.0, 1.02))
     ax.spines[["top", "right"]].set_visible(False)
     fig.tight_layout()
     fig.savefig(os.path.join(OUT, "fig_rebuild_telemetry.png"), dpi=300)
     plt.close(fig)
 
 
-# ---- audit CI fig ----
+# ---- audit CI fig（2026-10-10 三轮审查后：300 分层为主，旧 100 均匀 + 交叉裁判为辅）----
 def fig_audit():
-    groups = ["overall\n(n=100)", "domain terms\n(25/25)", "generic tail\n(60/75)",
-              "cross-judge\nparseable (55)", "cross-judge\ndomain (14/14)"]
-    vals = [0.850, 1.000, 0.800, 0.964, 1.000]
-    lo = [0.767, 0.867, 0.696, 0.887, 0.778]
-    hi = [0.907, 1.000, 0.875, 0.994, 1.000]
-    colors = ["#2c3e50", "#27ae60", "#e67e22", "#8e44ad", "#8e44ad"]
-    fig, ax = plt.subplots(figsize=(6.8, 3.4))
+    groups = ["overall (n=300)", "top-10 entities (46/50)",
+              "medium rank (85/100)", "tail rank (91/100)",
+              "short symbols (29/50)", "domain terms (142/149)",
+              "generic words (109/151)", "cross-judge parseable (53/55)"]
+    vals = [0.837, 0.920, 0.850, 0.910, 0.580, 0.953, 0.722, 0.964]
+    lo = [0.791, 0.812, 0.767, 0.838, 0.442, 0.906, 0.646, 0.887]
+    hi = [0.874, 0.968, 0.907, 0.952, 0.706, 0.977, 0.787, 0.994]
+    colors = ["#2c3e50", "#2980b9", "#2980b9", "#2980b9", "#c0392b",
+              "#27ae60", "#e67e22", "#8e44ad"]
+    fig, ax = plt.subplots(figsize=(6.8, 3.8))
     y = range(len(groups))[::-1]
     for yi, v, l, h, c in zip(y, vals, lo, hi, colors):
         ax.plot([l, h], [yi, yi], color=c, lw=2.2, solid_capstyle="round")
@@ -132,10 +137,10 @@ def fig_audit():
     ax.axvline(1.0, ls=":", lw=0.8, color="#999")
     ax.set_yticks(list(y))
     ax.set_yticklabels(groups, fontsize=8)
-    ax.set_xlim(0.6, 1.32)
+    ax.set_xlim(0.38, 1.35)
     ax.set_xlabel("link precision (Wilson 95% CI)")
-    ax.set_title("Primary judge (Qwen3.6-35B) and cross-judge (Qwen3.8-Flash, "
-                 "45/100 unparseable) — subset agreement, not full-set confirmation",
+    ax.set_title("Primary judge (Qwen3.6-35B): 300-link stratified audit\n"
+                 "cross-judge bar = 55-link parseable subset (Qwen3.8-Flash)",
                  fontsize=7.5, color="#555")
     ax.spines[["top", "right"]].set_visible(False)
     fig.tight_layout()
@@ -186,6 +191,44 @@ def fig_top(names_counts, title, fname, total):
     plt.close(fig)
 
 
+def _top_panel(ax, names_counts, total, title):
+    names = [n for n, _ in names_counts][::-1]
+    vals = [c for _, c in names_counts][::-1]
+    cols = ["#e67e22" if "generic" in cls(n) else
+            ("#c0392b" if "symbol" in cls(n) else "#27ae60") for n in names]
+    ax.barh(range(len(names)), [v / total for v in vals], color=cols,
+            height=0.72)
+    ax.set_yticks(range(len(names)))
+    ax.set_yticklabels(names, fontsize=7, family="monospace")
+    for i, v in enumerate(vals):
+        ax.text(v / total + 0.002, i,
+                f"{v/1e6:.2f}M" if v > 1e6 else f"{v/1e3:.0f}k",
+                va="center", fontsize=5.5, color="#555")
+    ax.set_title(title, fontsize=8.5)
+    ax.set_xlim(0, max(vals) / total * 1.18)
+    ax.spines[["top", "right"]].set_visible(False)
+
+
+def fig_top_pair(before, after, total_b, total_a, fname):
+    """Before | After 并排（三轮审查 #11：横排更利比较阅读）。"""
+    from matplotlib.patches import Patch
+    fig, (axb, axa) = plt.subplots(1, 2, figsize=(10.6, 5.2))
+    _top_panel(axb, before, total_b,
+               f"Collapsed (2026-10-06 backup) — 4.81M links, $C_{{10}}$=0.419")
+    _top_panel(axa, after, total_a,
+               f"After repair — 25.10M links, $C_{{10}}$=0.345")
+    axb.set_xlabel("share of all entity links", fontsize=8)
+    axa.set_xlabel("share of all entity links", fontsize=8)
+    handles = [Patch(color="#27ae60", label="domain term"),
+               Patch(color="#e67e22", label="generic word"),
+               Patch(color="#c0392b", label="short ambiguous symbol")]
+    axa.legend(handles=handles, loc="lower right", fontsize=7,
+               frameon=False)
+    fig.tight_layout()
+    fig.savefig(os.path.join(OUT, fname), dpi=300)
+    plt.close(fig)
+
+
 if __name__ == "__main__":
     fig_scatter()
     fig_telemetry()
@@ -207,7 +250,10 @@ if __name__ == "__main__":
     bf = os.path.join(OUT, "before_top30.json")
     if os.path.exists(bf):
         data = json.load(open(bf))
-        fig_top([(d[0], d[1]) for d in data],
+        before = [(d[0], d[1]) for d in data]
+        fig_top(before,
                 "KB1 collapsed state, 2026-10-06 cold backup (top-30; 4.81M links, C10=0.419)",
                 "fig_top_before.png", 4808270)
+        fig_top_pair(before, after, 4808270, 25097704,
+                     "fig_top_pair.png")
     print("figs done")
