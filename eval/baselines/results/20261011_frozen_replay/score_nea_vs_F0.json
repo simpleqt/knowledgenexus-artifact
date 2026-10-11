@@ -1,0 +1,121 @@
+[
+ {
+  "system": "frp_F0",
+  "set": "nea",
+  "slice": "L",
+  "n": 48,
+  "corpus_docs": 300,
+  "index_cost": {
+   "capture": "frozen-replay 20261011"
+  },
+  "recall@5": 0.8542,
+  "recall@10": 0.9375,
+  "recall@20": 0.9792,
+  "cov@10": 0.5906,
+  "cov@20": 0.6222,
+  "mrr@10": 0.7022,
+  "ndcg@10": 1.2431
+ },
+ {
+  "system": "frp_F1p",
+  "set": "nea",
+  "slice": "L",
+  "n": 48,
+  "corpus_docs": 300,
+  "index_cost": {
+   "capture": "frozen-replay 20261011"
+  },
+  "recall@5": 0.9167,
+  "recall@10": 0.9583,
+  "recall@20": 1.0,
+  "cov@10": 0.6101,
+  "cov@20": 0.7618,
+  "mrr@10": 0.7227,
+  "ndcg@10": 1.2752
+ },
+ {
+  "system": "frp_F1s",
+  "set": "nea",
+  "slice": "L",
+  "n": 48,
+  "corpus_docs": 300,
+  "index_cost": {
+   "capture": "frozen-replay 20261011"
+  },
+  "recall@5": 0.9167,
+  "recall@10": 0.9583,
+  "recall@20": 1.0,
+  "cov@10": 0.6101,
+  "cov@20": 0.7618,
+  "mrr@10": 0.7227,
+  "ndcg@10": 1.2752
+ },
+ {
+  "system": "frp_F2p",
+  "set": "nea",
+  "slice": "L",
+  "n": 48,
+  "corpus_docs": 300,
+  "index_cost": {
+   "capture": "frozen-replay 20261011"
+  },
+  "recall@5": 0.8542,
+  "recall@10": 0.9167,
+  "recall@20": 0.9375,
+  "cov@10": 0.5993,
+  "cov@20": 0.6035,
+  "mrr@10": 0.6865,
+  "ndcg@10": 1.2678
+ },
+ {
+  "system": "frp_F2s",
+  "set": "nea",
+  "slice": "L",
+  "n": 48,
+  "corpus_docs": 300,
+  "index_cost": {
+   "capture": "frozen-replay 20261011"
+  },
+  "recall@5": 0.8958,
+  "recall@10": 0.9375,
+  "recall@20": 1.0,
+  "cov@10": 0.5993,
+  "cov@20": 0.7021,
+  "mrr@10": 0.7346,
+  "ndcg@10": 1.2678
+ },
+ {
+  "system": "frp_F3p",
+  "set": "nea",
+  "slice": "L",
+  "n": 48,
+  "corpus_docs": 300,
+  "index_cost": {
+   "capture": "frozen-replay 20261011"
+  },
+  "recall@5": 0.7917,
+  "recall@10": 0.8542,
+  "recall@20": 0.9375,
+  "cov@10": 0.5601,
+  "cov@20": 0.5601,
+  "mrr@10": 0.6903,
+  "ndcg@10": 1.2126
+ },
+ {
+  "system": "frp_F3s",
+  "set": "nea",
+  "slice": "L",
+  "n": 48,
+  "corpus_docs": 300,
+  "index_cost": {
+   "capture": "frozen-replay 20261011"
+  },
+  "recall@5": 0.9167,
+  "recall@10": 0.9375,
+  "recall@20": 1.0,
+  "cov@10": 0.5882,
+  "cov@20": 0.7021,
+  "mrr@10": 0.7538,
+  "ndcg@10": 1.2566
+ }
+]

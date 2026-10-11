@@ -1,169 +1,279 @@
-\documentclass[preprint,12pt]{elsarticle}
-\usepackage{amsmath,amssymb}
+% KnowledgeNexus paper 1 — single canonical source (acmart sigconf two-column,
+% layout shared with paper4_when_not_rewrite). For an Elsevier/NET submission,
+% wrap this same body in an elsarticle preamble; no other copy is maintained.
+\documentclass[sigconf,nonacm]{acmart}
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{graphicx}
 \usepackage{xeCJK}
 \setCJKmainfont{Noto Serif CJK SC}
-\usepackage[hidelinks]{hyperref}
-\setlength{\emergencystretch}{3em}
-\journal{Nuclear Engineering and Technology}
+\emergencystretch=3em
+\renewcommand{\dbltopfraction}{0.92}
+\renewcommand{\textfraction}{0.06}
+\renewcommand{\dblfloatpagefraction}{0.8}
+\setcounter{dbltopnumber}{3}
+\setcounter{topnumber}{2}
+\setcounter{totalnumber}{4}
 
 \begin{document}
 
-\begin{frontmatter}
-\title{KnowledgeNexus: A Traceable Graph--Vector Knowledge Infrastructure and
-Adaptive Multi-Channel Retrieval for Nuclear Science Literature}
-\author[addr1]{Zhiqian Chen\corref{cor1}}
-\ead{chenzhiqian@cdut.edu.cn}
-\cortext[cor1]{Corresponding author.}
-\address[addr1]{Chengdu University of Technology, Chengdu, China}
+\title{Where Do Semantic Assets Help in Bilingual Scholarly Retrieval?%
+\\A Nuclear-Literature Study on the KnowledgeNexus Platform}
+\author{Zhiqian Chen}
+\email{chenzhiqian@cdut.edu.cn}
+\affiliation{\institution{Chengdu University of Technology}\city{Chengdu}\country{China}}
 
 \begin{abstract}
-Nuclear-science organisations face a rapidly growing, heterogeneous literature
-base with no domain-adapted retrieval infrastructure. We present
-KnowledgeNexus, a knowledge-centre platform that (i) constructs a traceable
-corpus of nuclear science literature with dictionary-driven entity curation,
-typed-relation enrichment and bilingual aliases; (ii) retrieves through an
-adaptive fusion of five channels---lexical, dense, synthetic-query, entity
-co-occurrence and doc-level bibliography vectors---gated by query intent; and
-(iii) is evaluated with an honest-ablation methodology on self-generated,
-corpus-first question sets across four disciplines (27--3{,}479 documents) and
-three public multi-hop benchmarks against BM25, LlamaIndex, HippoRAG~2 and
-LightRAG baselines under identical corpora, embedders and question sets. At
-full-corpus scale the system attains coverage@10 of 0.669 versus 0.351 for a
-dense-RAG baseline (LlamaIndex; 1.3\,s vs 35.9\,s per query, the latter a
-brute-force scan over its 37\,GB vector store), and intent-gated
-channel weighting lifts real-user query hit@10 from 0.897 to 0.949; a
-query-time LLM pipeline
-(rewrite$\to$fuse$\to$rerank) beat the collapsed-era system on
-association coverage (+10.1pt, CI-significant) but converges to parity
-with the matured asset system (+3.5pt, ns) while losing single-intent
-coverage ($-$13.2pt, significant) at ${\sim}$50$\times$ latency---the
-capability-versus-infrastructure trade-off measured on both sides of the
-repair. We report negative results (a
-reranker, doc caps, static weights, and a production incident in which a
-category-word schema lexicon collapsed 61{,}137 documents onto 575 type-level
-entities---diagnosed, repaired with a 3{,}702-term corpus-attested lexicon,
-and rebuilt to 1{,}871 entities with a functioning relation layer) and
-engineering findings (filtered-HNSW robustness, write-window rank jitter, a
-silently row-swallowing \texttt{INSERT IGNORE}) with the same rigour as
-positive ones. Corpus, question sets, evaluation harness and reproduction
-commands are released.
+Retrieving evidence from bilingual scientific articles often requires
+recovering several relevant documents whose support is distributed
+across passages. Multiple retrieval channels can increase candidate
+availability, yet their signals may be aggregated at a different
+granularity from the evidence the query requires. We investigate this
+mismatch in nuclear-science literature using KnowledgeNexus, a
+retrieval platform with bilingual terminology assets and
+passage-level source identifiers, as an experimental setting
+(80{,}852 documents, 7.2M chunks). Our analysis separates candidate
+availability, document-level support aggregation, and evidence
+emission, and distinguishes direct entity-dependent retrieval from
+lexical and contextual uses of semantic assets. Archived paired
+ablations show conditional effects: removing the direct
+entity-dependent channels leaves any-hit@10 and document
+coverage@10 of two scoped question sets unchanged (largest movement: $-$1.0pt cov@20, NS), while
+enabling the co-occurrence path improves any-hit@10 by 10.1 percentage
+points on 99 naturally phrased association questions (95\% CI,
+5.1--16.2). These comparisons use different retrieval profiles and do
+not establish a universal channel effect. We also examine truncated
+document-level aggregation ($\lambda{=}2$ scores each document from its
+two best chunks) and explain why its emission policy (pair vs.\ stride)
+must be evaluated separately from its scoring rule. A provenance audit
+distinguishes source addressability from semantic support: mention
+spans match their stored surfaces in 500/500 sampled cases, while a
+separate automated audit judges 59.6\% of 433 citation instances
+faithful to their cited passages. Together these findings motivate
+evaluating semantic assets by query condition and stage of use, rather
+than by the presence of an entity or graph layer alone. Production
+scale provides implementation context; comparative claims remain
+bounded by the controlled evaluation settings.
 \end{abstract}
+\maketitle
 
-\begin{keyword}
-nuclear science literature \sep domain knowledge base \sep multi-channel
-retrieval \sep entity enrichment \sep corpus-first benchmark \sep honest
-ablation
-\end{keyword}
-\end{frontmatter}
+
+\keywords{
+bilingual scholarly retrieval, semantic assets, fusion granularity,
+document-aware aggregation, evidence emission, provenance audit,
+nuclear science literature
+}
+
 
 \section{Introduction}
 \label{sec:intro}
 
-Nuclear-domain literature intelligence is a demanding consumer of retrieval
-infrastructure. Its corpus spans regulatory and academic sources, is dense
-with specialized terminology, is bilingual (Chinese regulatory texts against
-English journal literature), and---because conclusions feed safety-relevant
-analyses---carries an \emph{evidence-traceability} requirement: every
-retrieved fact must anchor to a specific passage in a specific document. A
-generic vector store answers; it does not anchor, disambiguate bilingual
-terms, or reason over domain entities.
+A scholarly query may ask how a material choice affects detector timing,
+or which studies report evidence for a particular association. Answering
+such queries requires recovering a set of relevant articles and
+identifying the passages that support the requested relation. In
+nuclear-science literature, terminology and evidence span Chinese and
+English sources, and the required support may occur in different
+sections of a long article. The retrieval objective therefore includes
+both coverage of relevant documents and access to their supporting
+passages; finding one plausible passage is insufficient when the query
+requires several sources.
 
-Existing options each miss a layer. General-purpose RAG frameworks (dense
-retrieval plus optional reranking) ship no domain entity infrastructure at
-all; graph-RAG systems build one, but their construction cost grows
-super-linearly with corpus scale---our measurements put LightRAG at $>$13\,h
-for 82 documents, infeasible for an 80-thousand-document library
-(Section~\ref{sec:results}). Domain-adapted encoders presuppose exactly the
-entity-and-evidence substrate they would index. And the field lacks
-domain-generated benchmarks: evaluation practices borrow general web queries
-whose answer distribution says nothing about bilingual regulatory--academic
-retrieval.
+Hybrid retrieval provides several ways to locate this evidence. Lexical
+matching captures explicit terminology, dense retrieval captures
+semantic similarity, and document-level or synthetic-query indexes add
+alternative representations. These channels can nevertheless assign
+their strongest signals to \emph{different passages of the same
+article}: a fusion rule operating only on passage identities may then
+leave that article below the returned cutoff even when several channels
+retrieve parts of it. Aggregating support at the document level is a
+plausible response, but the scoring rule and the output order must be
+distinguished---returning several passages consecutively from each
+document changes how many \emph{different} documents are visible within
+a fixed passage budget. Whether document aggregation helps depends on
+both decisions and on the query's evidence requirements.
 
-We present KnowledgeNexus (KNC), a knowledge-infrastructure-first platform
-for nuclear science literature, and report its construction, retrieval, and
-evaluation end to end at production scale (80{,}852 documents, 7.2M chunks).
-Our contributions are fourfold. (i)~A \emph{traceable construction
-pipeline}---schema-driven, dictionary-based entity enrichment with
-LLM-adjudicated typed relations, every claim anchored to chunk-level
-evidence---whose retrieval-facing value, our channel ablations show, runs
-through asset supply (bilingual aliases into the lexical channel, reranker
-context and knowledge chains into the deep lane and generation) rather
-than through fusion votes, a decomposition we state up front and quantify
-in Section~\ref{sec:results}. (ii)~A \emph{five-channel, intent-gated retrieval architecture}
-(lexical, dense, doc-vector, co-occurrence, graph) fused by weighted
-reciprocal-rank fusion (RRF) with query-type-adaptive gating, plus a deep
-track for budget-rich consumers. (iii)~A \emph{corpus-first benchmark
-methodology}---question sets generated from and scoped to the actual library,
-evaluated by paired-bootstrap coverage/recall with system-level attribution
-made explicit. (iv)~An \emph{honest engineering record}: negative results and
-production incidents are reported with the same rigour as positive ones.
+Entity and relation assets introduce a second distinction. They can
+supply candidates or alter the returned list through co-occurrence
+retrieval and graph-based expansion, but they can also provide
+bilingual aliases to lexical matching, entity context to reranking, or
+source-linked relations to answer construction. Disabling an entity
+retrieval channel does not remove these other uses. Moreover, an
+adaptive channel may contribute little when the base retriever already
+satisfies its triggering condition. A null channel ablation consequently
+establishes a marginal effect under a specific retrieval profile; it
+does not determine the value of the asset layer as a whole. Evaluating
+semantic assets requires identifying \emph{where} they are consumed and
+\emph{when} the relevant path is active.
 
-Headline results: on the nuclear-electronics corpus, full-library associative
-retrieval reaches any-hit@10 of 1.000 with coverage@10 of 0.652 and p50
-latency 1.46\,s---versus a dense baseline that loses a third of its any-hit
-by 16$\times$ corpus growth; construction costs 1--2 orders of magnitude less
-than graph-RAG alternatives; and the architecture transfers across four
-disciplines at R@10~$\geq$~0.90.
+We study these issues using KnowledgeNexus, a literature-retrieval
+platform with bilingual terminology assets and passage-level source
+identifiers, deployed at production scale (80{,}852 documents, 7.2M
+chunks across 13 knowledge bases); the platform is the experimental
+setting, not the contribution. Our investigation addresses two
+questions. \textbf{RQ1:} when relevant documents appear in channel
+candidates but are absent from the final list, how do document-level
+aggregation and passage emission affect evidence coverage and
+first-hit ranking? \textbf{RQ2:} under which query and gating
+conditions do direct entity-dependent retrieval and other uses of
+semantic assets have measurable marginal value? We organize the
+evaluation around these questions, distinguishing paired interventions
+from configuration bundles and deployment telemetry. Nuclear-domain
+question sets provide the main setting; public multi-hop comparisons
+require a matched retrieval unit, metric, and model configuration
+before they can support architectural conclusions
+(Section~\ref{sec:results}).
+
+The archived results show that the value of an additional channel is
+conditional on the retrieval profile and question distribution. Direct
+entity-dependent channels leave the @10 metrics of the scoped question
+sets unchanged, while a co-occurrence comparison on naturally phrased
+association questions shows a positive any-hit effect (+10.1pt,
+CI~[5.1,~16.2]). These observations motivate an analysis of gate
+activity and asset use rather than an overall claim that graph
+enrichment either helps or fails. We also distinguish the integrity of
+the source-lookup path (mention spans match stored surfaces in 500/500
+sampled cases) from the faithfulness of generated citations (59.6\% of
+433 instances under automated judgment): programmatic source checks and
+citation audits measure different properties and yield different levels
+of assurance. The production deployment establishes that the evaluated
+representations can be maintained at scale; it does not replace
+controlled comparisons or resolve the remaining attribution questions.
+
+Our contributions are threefold, each tied to evidence reported in this
+paper:
+\begin{enumerate}
+\item \textbf{A retrieval diagnosis that separates candidate
+availability, support aggregation, and output truncation}
+(Section~\ref{sec:autopsy}): a channel-isolated autopsy of every missed
+gold document locates the dominant loss layer, and states which
+observations support an aggregation-based explanation and which remain
+unresolved.
+\item \textbf{An empirical analysis of fusion granularity and
+semantic-asset use} (Sections~\ref{sec:channels}
+and~\ref{sec:results}): we examine truncated document aggregation,
+distinguish score aggregation from evidence emission, and report direct
+channel effects separately from indirect asset consumption and
+configuration bundles.
+\item \textbf{An evaluation protocol with explicit evidence units and
+provenance boundaries} (Sections~\ref{sec:bench}
+and~\ref{sec:construction}): we document candidate scope, gold
+construction, retrieval budgets, and paired comparisons, and separate
+programmatic addressability checks from automated judgments of
+citation support.
+\end{enumerate}
+Negative results are reported with the same rigour as positive ones;
+they are a reporting discipline, not a contribution in themselves.
 
 \section{Related Work}
 \label{sec:related}
 
 Nuclear-domain NLP falls into three strands. \textbf{Regulatory-side
-systems} (RADIANT-LLM~\cite{radiantllm}) adapt generic QA stacks to nuclear
-regulatory corpora; they demonstrate domain need but inherit the vector-store
-substrate, without entity layers or evidence anchoring. \textbf{Domain
-pretraining} (NukeLM~\cite{nukelm}) and ontology-grounded small-scale systems
+systems}: RADIANT-LLM~\cite{radiantllm} adapts an agentic RAG stack to
+nuclear regulatory corpora \emph{with} page- and figure-level retrieval,
+provenance tracking, citation constraints, and human verification of
+answers---evidence anchoring in this domain is not our novelty; what we
+add relative to it are bilingual dictionary assets, fusion-granularity
+interventions with paired controls, and evaluation at two additional
+orders of library scale. \textbf{Domain pretraining}
+(NukeLM~\cite{nukelm}) and ontology-grounded small-scale systems
 (CurieLM~\cite{curielm}) adapt encoders or curate ontologies for narrow
-collections; neither scales to tens of thousands of full-text documents, and
-both presuppose the infrastructure they would need.
-Fayyaz et al.'s survey~\cite{fayyaz} names three challenges---terminology
-density, bilingual sources, traceability---which our architecture answers
-channel by channel (dictionary-driven entity enrichment; bilingual alias
-expansion in the lexical channel; evidence-anchored citations in every
-retrieved chunk). HydroLLM-Benchmark~\cite{hydrollm} is precedent for
-domain-generated benchmarks; ours extends the practice with paired-bootstrap
-significance and corpus-scoped arms. In the \textbf{graph-RAG lineage},
-HippoRAG~\cite{hipporag}, LightRAG~\cite{lightrag} and
-GraphRAG~\cite{graphrag} demonstrate multi-hop or global-sensemaking gains
-at small-to-moderate scale, and RAPTOR~\cite{raptor} represents the
-parallel hierarchical-summarization line; our measurements
-(Section~\ref{sec:results}) show their
-construction cost super-linear and their LLM-extracted entities fragile on
-domain full text (10.6\% chunk-NER failure versus 0.25\% on Wikipedia-grade
-text). In the \textbf{query/document-expansion lineage},
-doc2query~\cite{doc2query} and HyDE~\cite{hyde} transform one side of the
-match into the other's space; our synq channel is a doc2query asset built
-at ingestion, and our deep-lane HyDE experiment (Section~\ref{sec:results})
-is a trained-rewriter slot that the training-free variant could not fill.
-The differentiation, in one sentence: prior work either adapts generic
-frameworks to nuclear QA or pretrains domain encoders; none builds the
-knowledge-infrastructure layer---entities, typed relations, bilingual
-aliases, evidence anchoring---nor evaluates it with domain-generated,
-corpus-first benchmarks at production scale.
+collections; neither addresses retrieval over tens of thousands of
+full-text documents. Fayyaz et al.'s survey~\cite{fayyaz} names three
+challenges---terminology density, bilingual sources, traceability---which
+organize our intervention targets (dictionary-driven entity enrichment;
+bilingual alias expansion in the lexical channel; auditable source
+lookups). HydroLLM-Benchmark~\cite{hydrollm} is precedent for
+domain-generated benchmarks; ours extends the practice with
+paired-bootstrap significance and corpus-scoped arms. On the
+infrastructure side, S2ORC~\cite{s2orc} (81.1M papers overall, 8.1M with
+structured full text, linked citations and figure/table mentions)
+demonstrates corpus-scale scholarly processing with its own evidence
+layers; it does not provide domain terminology assets or
+retrieval-side fusion controls, which is the layer we study. Bilingual
+retrieval in the cross-language IR tradition~\cite{clir} remains largely
+translation-driven, whereas our bilingual handling runs through
+dictionary alias assets inside the lexical channel. For evaluation,
+component-level RAG diagnosis~\cite{ragchecker} and citation-grounded
+generation evaluation~\cite{alce} define the lines our failure
+attribution and citation-faithfulness rounds extend. In the
+\textbf{graph-RAG lineage}, HippoRAG~\cite{hipporag},
+LightRAG~\cite{lightrag} and GraphRAG~\cite{graphrag} demonstrate
+multi-hop or global-sensemaking gains at small-to-moderate scale, and
+RAPTOR~\cite{raptor} represents the parallel
+hierarchical-summarization line; our single-implementation measurements
+(Section~\ref{sec:results}) show one configuration of this lineage
+hitting a serial-merge construction wall (${\sim}$1 document/hour after
+the first 47 of an 82-document subset) and its LLM-extracted entities
+fragile on domain full text (10.6\% chunk-NER failure versus 0.25\% on
+Wikipedia-grade text)---implementation- and configuration-scoped
+observations, not a complexity law for the family. In the
+\textbf{query/document-expansion lineage}, doc2query~\cite{doc2query}
+and HyDE~\cite{hyde} transform one side of the match into the other's
+space; our synq channel is a doc2query asset built at ingestion, and our
+docvec HyDE slot is a trained-rewriter position that the training-free
+variant could not fill (Section~\ref{sec:negative}). The
+differentiation, stated as comparison axes rather than absence claims:
+prior systems vary in bilingual dictionary assets, in where entity
+evidence enters retrieval (candidates, fusion votes, reranker context,
+or generation), and in evaluation units (rule-constructed corpus-scoped
+coverage versus open-domain QA); we do not claim prior work lacks
+provenance or domain adaptation---we measure \emph{where} such assets
+pay off in a bilingual scholarly retrieval stack, which prior
+evaluations have not isolated.
 
-\section{System Overview}
+\section{Task, Evidence Units, and System}
 \label{sec:system}
+
+\subsection{Task and evidence units}
+
+Let $D$ denote the candidate document collection, $C(d)$ the passages
+(chunks) of document $d$, and $G_q \subseteq D$ the annotated relevant
+documents for query $q$. A retrieval system returns an ordered passage
+list $H_q$, each passage carrying a document identifier and a source
+lookup key. Two properties are separate and must not be conflated:
+\emph{document relevance} (retrieving a document in $G_q$) and
+\emph{passage support} (a specific passage evidencing the query)---a
+retrieved relevant document does not guarantee that every passage
+returned from it supports the query. Gold sets for association questions
+are \emph{rule-defined} (documents covering both entities of a mined
+pair; Section~\ref{sec:bench}), not exhaustive semantic-relevance
+annotations. The interventions studied in this paper act at three
+stages of this pipeline: which documents enter channel candidates
+(\emph{candidate availability}), how passage-level support is
+aggregated into document scores (\emph{fusion granularity}), and how
+many passages per document occupy a fixed output budget (\emph{evidence
+emission}). KnowledgeNexus, described next, is the platform in which
+these stages are implemented, deployed, and measured.
 
 \subsection{Architecture}
 
 KnowledgeNexus organises the platform as four cooperating services over a
-single authoritative data plane: an ingestion worker, an enrichment worker, a
-retrieval API, and an administration/observer pair. All persisted state lives
-in three authority stores---MySQL for bibliographic and entity registries,
-OpenSearch for chunk/document/query/entity projections with kNN indexes, and
-MinIO for raw artefacts---accessed exclusively through service interfaces
+single authoritative data plane: an ingestion worker, an enrichment worker,
+a retrieval API, and an administration/observer pair. Persisted state
+splits into \textbf{two authoritative stores}---MySQL (bibliographic and
+entity registries, chunk spans, provenance, governance ledgers) and MinIO
+(content-addressed raw artefacts)---and \textbf{rebuildable serving
+projections} derived from them: OpenSearch (chunk/document/query/entity
+projections with kNN indexes; chunk text lives only here and is
+rebuildable from the MySQL spans over the MinIO raw store) and a
+NebulaGraph store (entity--relation traversal, re-projected from the
+registry tables---the post-repair production rebuild did exactly this,
+from the registry, at zero LLM cost). All
+stores are accessed exclusively through service interfaces
 (Fig.~\ref{fig:arch}). Three properties matter for the rest of this paper:
 
-\begin{figure}[t]
+\begin{figure*}[!t]
 \centering
-\includegraphics[width=0.92\textwidth]{fig1.png}
-\caption{System overview: four services over an authoritative data plane.}
+\includegraphics[width=\textwidth]{../A线-figures/latex_redraw/p1_system_overview.pdf}
+\caption{Traceable construction with independently ready base assets and
+asynchronous enrichment. MinIO preserves original files and MySQL governs
+identity, visibility and knowledge registries; OpenSearch and NebulaGraph
+are rebuildable serving projections. Dashed arrows denote asynchronous
+handoff. The four application services operate over this data plane.}
 \label{fig:arch}
-\end{figure}
+\end{figure*}
 
 \textbf{(a) Data authority.} Chunk text exists only in the search projection;
 MySQL \texttt{kb\_chunks} stores spans, and \texttt{chunk\_id} is a
@@ -206,7 +316,8 @@ discipline documented after it bit us twice.
 \subsection{Corpus and ingestion}
 
 \textbf{Corpus status.} The full-window ingestion completed: 80{,}855
-documents parsed from 75{,}476 source PDFs (80{,}852 ACTIVE) across
+documents parsed from 75{,}476 source PDFs (80{,}852 ACTIVE; the 3-document
+difference is content-duplicate soft-deletes from idempotent ingestion) across
 nuclear-domain journals---the English library led by Sensors (21.4k), JHEP
 (13.1k), Phys.\ Rev.\ D (6.2k) and Phys.\ Lett.\ B, the Chinese library by
 原子能科学技术, 强激光与粒子束, 核动力工程 and 核电子学与探测技术---across
@@ -215,8 +326,9 @@ backfill closing at 100\% \texttt{media\_uri} coverage. Ingestion accepts
 parsed Markdown (MinerU route) or pre-chunked text (RADAI migration route)
 and produces chunks at ${\sim}1{,}200$ characters respecting heading
 structure, tables as standalone blocks, with title-context prefixes. Chunk
-vectors (Qwen3-Embedding-8B, 4{,}096-d)~\cite{qwen3emb} are written
-synchronously with ingestion; lexical and dense channels are therefore
+vectors (Qwen3-Embedding-8B; native 4{,}096-d output, indexed at the
+deployed 1{,}024-d Matryoshka truncation, Section~4.2)~\cite{qwen3emb} are
+written synchronously with ingestion; lexical and dense channels are therefore
 immediately queryable while enrichment proceeds asynchronously.
 
 \subsection{Enrichment pipeline (K1--K3)}
@@ -231,7 +343,69 @@ with the LLM, persisting typed edges with evidence. Doc2query synthesis (R3)
 generates synthetic queries per chunk (${\sim}3$ per chunk,
 doc2query-style document expansion~\cite{doc2query}) into a query
 index consumed by the synq channel; doc/topic summaries feed the bibliography
-and abstract vectors.
+and abstract vectors. Evidence granularity, stated precisely: relation rows
+anchor at (document, chunk) level, while K1 mentions carry verbatim surfaces
+with character spans. Fig.~\ref{fig:trace} traces one document end to end
+with recorded values.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=0.95\textwidth]{../A线-figures/fig3_tracing_example.png}
+\caption{Evidence tracing, construction to query time. All identifiers,
+quotes and spans are recorded production values for the autopsy document of
+Section~\ref{sec:autopsy} (Mu3E scintillating-fiber timing detector,
+NIM~A 2024, \texttt{d5a81ab$\ldots$}, 133 chunks): dictionary scans record
+mentions with chunk ids and character spans; linking resolves them to
+canonical entities; typed relations carry evidence rows anchored at
+(document, chunk) granularity---character-span evidence exists at the
+mention layer. At query time the retrieved chunk cites its chunk id, which
+serves as a deterministic \emph{lookup key} into the chunk registry (kb,
+document, generation and position are recovered from stored metadata, not
+inverted from the hash).}
+\label{fig:trace}
+\end{figure*}
+
+\textbf{Traceability audit (programmatic, sampled).} Because a designed
+tracing path is not the same as a measured one, we audit the deployed
+production library read-only (n=500 per check, KB1): recomputing
+$\mathrm{sha256}(\mathrm{kb}{:}\mathrm{doc}{:}1{:}\mathrm{gen}{:}\mathrm{pos})$
+reproduces the stored \texttt{chunk\_id} for 500/500 sampled chunks; the
+OpenSearch projection's text hashes match the registry
+\texttt{content\_hash} for 499/500 (99.8\%); the registry's mention spans,
+sliced out of the projected chunk text, match the recorded surface
+\emph{exactly} for 500/500; and 496/500 (99.2\%) sampled relation-evidence
+rows cite a chunk whose text contains both endpoint entity names---an
+\emph{endpoint co-presence} check on the cited passage, not an
+adjudication of relation-type correctness and not evidence that the
+passage entails the relation; relation semantics remain unmeasured at
+scale. The
+honest boundary: relation evidence is anchored at (document, chunk)
+granularity---its quote field is a typed template and character spans are
+unpopulated (0 of 1.18M rows)---so span-level verifiability currently ends
+at the mention layer; extending it to relations is future work.
+
+\textbf{Citation faithfulness (automated round).} Following the citation-evaluation
+line~\cite{alce}, we measure the output side of traceability: we sample
+50 questions (24 association / 15 real
+queries / 11 hard-probe), generate answers over the deployed normal-lane
+retrieval with mandatory inline citations, and judge every citation
+instance (433 after excluding ``context does not provide'' disclaimer
+sentences) against the full text of the chunk it cites: 59.6\% of
+citations are judged faithful, 75.1\% faithful-or-partial (real queries:
+68.7\%/91.2\%; adversarial hard set: 45.0\%/53.3\%); 57.3\% of all 433
+citation instances carry a supportive verdict with a quote
+programmatically verified to appear verbatim in the cited chunk. The
+433 instances nest within 50 answers (mean 8.7 judged citations per
+answer), so
+instance-level percentages overstate the effective sample size; any
+interval estimate would need answer-level clustering. \emph{Disclosure:}
+this round is
+LLM-as-judge (the pipeline model judges its own generations, temperature
+0) with programmatic quote verification---an automated lower-rigour
+substitute for the human judgment the question really calls for, which
+remains open; the moderate per-citation rates also reflect a generator
+that pads citations (8.7 mean judged citations per answer over a 10-chunk
+context).
 
 \textbf{Model configuration, for reproducibility.} All pipeline LLM calls
 (doc2query synthesis, relation adjudication, context disambiguation,
@@ -257,9 +431,11 @@ make that control stricter, and we did not run one.
 \textbf{Cost profile.} For a 300-document nuclear slice (29.6M characters),
 full enrichment ${\approx}$1\,h dominated by 18{,}454 doc2query LLM calls at
 concurrency 70; dictionary stages are negligible. This contrasts with
-graph-RAG construction over the same corpus: HippoRAG~2 required 4.1\,h and
-LightRAG did not finish within 7\,h on an 82-document subset (serial entity
-merge, superlinear in graph size)---a scale wall we report as a finding.
+graph-RAG construction over the same corpus: HippoRAG~2 required 4.1\,h, and
+LightRAG needed 13\,h to complete an 82-document subset (serial entity
+merge at ${\sim}$1 document/hour after the first 47; the 300-document tier
+extrapolates to 1--2 days and was not attempted)---a scale wall we report
+as a finding.
 
 \subsection{Governance}
 
@@ -273,37 +449,16 @@ endpoints are redirected so \texttt{link\_id} survives), and \emph{replay}
 (reverse-order rollback restoring MySQL and the graph store consistently).
 Every mutation is thus auditable and reversible by construction.
 
-Three measured outcomes anchor the governance claim:
-
-\begin{enumerate}
-\item \textbf{The LLM adjudicator failed its own pre-registered gate.} The
-formal acceptance gate (merge precision $\geq$96\%, effective dedup rate
-$\geq$50\%) was evaluated for the first time on the full nine-library corpus
-after the scan stage gained an OpenSearch kNN path (pure-Python candidate
-generation is $O(n^2)$---350M pairs at 26.6k entities---and had silently
-kept the gate from ever being evaluated). LLM adjudication accepted 115
-candidate pairs; an independent review of a 50-pair sample found 5
-errors---precision 90.0\%~$<$~96\%, so automatic merging remains disabled.
-(Rejected pairs: 20 sampled, 0 misses.) The failure modes are systematic, not
-random: corporate legal-entity suffixes (Wiley Ltd/Inc), section titles
-versus teaching-point variants, and near-synonym facilities (injection versus
-recharge wells).
-
-\item \textbf{Deterministic rules cleared the actual duplicate population.}
-The gate run surfaced 87 same-name, same-type multi-ACTIVE groups---all
-person entities, all parser accent variants (Nicol\`o/Nicolo/Nicol\'o,
-Lef\`evre/Lefevre). Unicode NFD folding grouped 85 groups/90 pairs, plus 2
-pairs of \L{} (no NFD decomposition): 92 pairs merged with zero LLM
-involvement, in 19 reversible batches. Ledger reconciliation was exact
-(ACTIVE 34{,}563$\to$34{,}471; MERGED 667$\to$759) and retrieval showed zero
-regression (R@10 0.9722, MRR 0.831 unchanged).
-
-\item \textbf{Dictionary governance is batch-reviewed, not silent.} A batch
-adjudication migrated 6{,}497 term types, deleted 383 over-generic terms,
-and re-typed 3{,}589 existing mentions---raising entity typing precision from
-58.3\% to 81.7\%. Person-name merging used strict pinyin rules (6 pairs); an
-LLM-based alignment was discarded after a 6/8 error rate on a probe set.
-\end{enumerate}
+Three measured outcomes anchor the governance claim (detail in the
+released evaluation log): (i)~the LLM adjudicator \emph{failed its own
+pre-registered gate}---merge precision 90.0\% on a 50-pair audit against
+a $\geq$96\% gate, so automatic merging remains disabled; (ii)~the actual
+duplicate population was cleared by deterministic rules alone---92
+accent-variant pairs merged in 19 reversible batches with exact ledger
+reconciliation and zero retrieval regression (R@10 0.9722 unchanged);
+(iii)~dictionary governance is batch-reviewed, not silent---one batch
+deleted 383 over-generic terms and re-typed 3{,}589 mentions, raising
+entity typing precision from 58.3\% to 81.7\%.
 
 The governance position: LLM adjudication is treated as a \textbf{candidate
 generator, not an authority}---it proposes, pre-registered gates dispose,
@@ -325,13 +480,17 @@ fusion~\cite{rrf}:
 where $w_i$ is the per-channel weight (default 1.0). Five channels
 participate in the default profile:
 
-\begin{figure}[t]
+\begin{figure*}[!t]
 \centering
-\includegraphics[width=0.92\textwidth]{fig2.png}
-\caption{Retrieval planner: capability-gated channels fused by weighted RRF
-with intent gating.}
+\includegraphics[width=\textwidth]{../A线-figures/latex_redraw/p1_retrieval_planner.pdf}
+\caption{Capability- and intent-gated retrieval with document-aware RRF
+fusion. The normal lane returns fused evidence directly; the deep lane
+adds PPR, reranking and document-entity context. Graph bridge chains enrich
+the evidence output rather than casting fusion votes. Text vectors use
+the deployed 1024-dimensional client-side prefix. Lane-specific settings
+are isolated.}
 \label{fig:planner}
-\end{figure}
+\end{figure*}
 
 \begin{itemize}
 \item \textbf{Lexical}: OpenSearch BM25 over chunk text with schema term
@@ -343,33 +502,29 @@ boosts.
 chunk, 18{,}454 for the test corpus) matched against the user query vector.
 \item \textbf{Entity/Cooc}: dictionary-driven entity mentions $\to$
 document-level entity co-coverage vote (intent-gated: template words +
-$\geq$2 entity surfaces).
-\item \textbf{Docvec} (B84): kNN over title/abstract vectors $\to$
+$\geq$2 entity surfaces). This path is \emph{adaptive}, not a fixed
+extra vote list: after initial fusion it checks whether the visible
+result intersects the co-occurrence document set, conditionally re-runs
+fusion with a restricted lexical candidate list, and may insert up to
+three passages at the tail if the leading co-occurrence document
+remains absent. A cooc on/off comparison therefore measures this whole
+path (restricted re-fusion plus insertion), not the marginal value of
+one additional RRF vote source.
+\item \textbf{Docvec}: kNN over title/abstract vectors $\to$
 first-chunk proxy vote.
 \end{itemize}
 
 \subsection{Intent-gated channel weighting}
 
-We observe that static equal weights are sub-optimal in a domain-dependent
-manner (Table~\ref{tab:weighting}).
-
-\begin{table}[t]
-\centering
-\caption{Intent-gated channel weighting (B83--B85).}
-\label{tab:weighting}
-\small
-\begin{tabularx}{\textwidth}{lXXl}
-\toprule
-Variant & nea (assoc.) & ner (real) & Verdict \\
-\midrule
-synq $\times$1.4 global & +4.2pt R@10 & $\mathbf{-7.7}$pt & rejected \\
-synq $\times$1.4 intent-gated & +2pt & unchanged & adopted \\
-docvec full & +2pt & \textbf{+5pt R@10, +6pt MRR} & adopted \\
-docvec assoc-downweight 0.6 & +2pt retained & +5pt retained & adopted \\
-lexical $\times$0.3 English non-assoc & (nea unaffected) & (bench +5--17pt) & adopted \\
-\bottomrule
-\end{tabularx}
-\end{table}
+Static equal weights are sub-optimal in a domain-dependent manner: a
+global synq $\times$1.4 boost gains +4.2pt association R@10 but costs
+$-$7.7pt on real queries (rejected); the same boost intent-gated keeps an
+association gain at zero real-query cost (adopted); the docvec channel
+adds +5pt R@10 and +6pt MRR on real queries with its association weight
+down-weighted to 0.6 (adopted); and a lexical down-weight for English
+non-association queries lifts the public benchmarks by 5--17pt (adopted).
+Variant-level numbers are in the released evaluation log; the English-side
+fusion effect these gates respond to is quantified next.
 
 The intent gate (template-word regex + $\geq$2 dictionary entity surfaces) is
 deliberately lightweight (zero LLM calls) and reproducible across domains:
@@ -389,7 +544,7 @@ perfect (P/R/F1 = 1.000). The template-word stage is what prevents the
 documented over-routing failure mode: the entity gate alone fires on
 82--97\% of natural queries in both domains. All 7 residual false negatives
 are dictionary-coverage gaps (non-entity concepts), not gate-logic errors.
-The English non-assoc gate (B85) triggers on 98.5\% of 600 benchmark queries
+The English non-assoc gate triggers on 98.5\% of 600 benchmark queries
 with a 2.3\% false-trigger rate on Chinese sets. Sample sizes are small (48/39 and 34/31 labelled
 questions): the perfect cells are point estimates on tens of
 questions---the Wilson 95\% CI for csh recall (34/34) is [0.90, 1.00]---and
@@ -397,47 +552,65 @@ we read 1.000 as ``no error observed in-sample'', not as an error bound.
 
 \subsection{The fusion-versus-dense finding}
 
-Across five independent experiments (three English benchmarks + two Chinese
-question sets), multi-channel fusion with equal weights underperforms the
-dense channel alone on English multi-hop tasks while outperforming it on
-Chinese domain queries (Table~\ref{tab:fusiondense}).
+Across five independent experiments (three English benchmarks at n=1{,}000
+each + two Chinese question sets), equal-weight multi-channel fusion
+changes \emph{where} evidence appears in the English multi-hop lists
+rather than \emph{whether} it appears by depth 10. At the top of the
+list fusion trails the dense channel (any-hit@2
+$-$0.7/$-$0.7/$-$5.1pt on HotpotQA/2Wiki/MuSiQue) and loses MRR@10
+($-$1.1/$-$1.4/$-$3.6pt); at depth 10 the any-hit gap vanishes
+(+0.6/0.0/$-$0.1pt) and support coverage is marginally \emph{higher}
+for fusion (cov@10 +0.9/+0.1/+0.8pt). On the Chinese question sets the
+same comparison reverses at the top of the list (nea R@10 +2pt, MRR
++14pt, CI excludes 0; real queries $-$3pt R@10/+3pt MRR, NS). The
+English panel of Fig.~\ref{fig:forest} plots the any-hit@2
+differences.
 
-\begin{table}[t]
-\centering
-\caption{Fusion minus dense channel, five experiments.}
-\label{tab:fusiondense}
-\begin{tabular}{llll}
-\toprule
-Domain & R@10 diff & MRR diff & Significance \\
-\midrule
-HotpotQA (full) & $-$0.7pt & $-$1.1pt & n=1000 \\
-2Wiki (full) & $-$0.7pt & $-$1.4pt & n=1000 \\
-MuSiQue (full) & $-$5.1pt & $-$3.6pt & n=1000 \\
-ne association & +2pt & +14pt & CI excludes 0 \\
-ne real queries & $-$3pt & +3pt & CI includes 0 \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-This is a \textbf{language/domain dependence} finding, not a general
-anti-fusion result: the lexical vote drags English multi-hop rankings (where
-BM25 already achieves 85--95\% of dense recall), while on Chinese domain queries the
-channels provide complementary signal where each one lives: synq on the
-scoped benchmark sets (synq-only hits 4 questions dense misses on nea)
-and the co-occurrence channel on naturally-phrased association queries
-(the contribution matrix row 2---the scoped sets are its gate-closed
-regime). The
-per-domain gate is the design response, not the removal of channels.
+These are \textbf{distribution-dependent} observations, not a language
+effect: the English and Chinese sets differ simultaneously in language,
+task type, gold construction, document length and lexicon conditions,
+and isolating language would require paired bilingual questions over
+the same literature. The mechanism reading: the lexical vote drags the
+top of English multi-hop rankings (our lexical channel alone reaches
+any-hit@2 84.9/90.8/60.2 against dense's 94.6/99.7/85.7), while on
+Chinese domain queries the channels provide complementary signal where
+each one lives: synq on the scoped benchmark sets (synq-only hits 4
+questions dense misses on nea) and the co-occurrence path on
+naturally-phrased association queries (contribution-matrix row 2---the
+scoped sets are its gate-closed regime). The per-domain gate is the
+design response, not the removal of channels.
 
 \subsection{Evaluation methodology}
 
 All ablations use: identical corpus (isolated test stack), identical embedder
-(Qwen3-Embedding-8B), identical question sets, paired bootstrap 95\% CI, and
-two complementary metrics: any-hit@k (the harness convention, saturated for
-small corpora) and cov@k $=$ $|\mathrm{gold} \cap \mathrm{top}\text{-}k| /
-|\mathrm{gold}|$ (the set-recall metric that discriminates multi-gold
-questions). RRF configuration changes require explicit cache invalidation
-(documented after it invalidated results twice).
+(Qwen3-Embedding-8B), identical question sets, and paired bootstrap 95\%
+CIs. Two metric families are reported, and they consume
+\emph{different output budgets}---we state the definitions because the
+choice moves numbers: \textbf{any-hit@k} and \textbf{MRR@10} are
+computed over the first $k$ \emph{emitted passages} (passage budget),
+while \textbf{cov@k} $=$ $|\mathrm{gold} \cap \mathrm{top}\text{-}k| /
+|\mathrm{gold}|$ deduplicates the full returned list first and then
+takes the top-$k$ \emph{documents} (document budget): if the first ten
+passages come from five documents, the document budget still consumes
+passages beyond position ten, and the passage budget does not. On one
+archived baseline run (LlamaIndex, nea, n=48) the two coverage
+definitions disagree on 14/48 questions---the budget is a reporting
+obligation, not a formality. MRR ranks are passage ranks of the first
+gold-document hit under the passage budget. For external comparisons we
+do not rename any-hit as passage recall: the reference multi-hop
+protocol evaluates supporting-passage-set recall under its own corpus,
+deduplication and truncation conventions
+(Section~\ref{sec:results}). RRF configuration changes require explicit
+cache invalidation (documented after it invalidated results twice).
+
+\textbf{Status of the question sets.} The scoped nea48/ner39 sets have
+been reused across development rounds---channel weights, gates and the
+emission policy were selected against them---so we treat them as
+\emph{development and regression evidence}, not untouched confirmatory
+tests, and frame their results as effects under stated profiles. The
+natural-phrasing 99-question set and the English public benchmarks have
+seen less selection; a genuinely untouched confirmatory set remains
+future work.
 
 \textbf{Cluster-robust significance.} Queries generated from the same corpus
 are not independent, so per-query bootstrap CIs understate variance when sets
@@ -461,7 +634,24 @@ significant results would be expected by chance alone, and we ask the
 reader to weight accordingly: single-CI findings are treated as
 suggestive, while corroborated findings---cluster-robust, sign-consistent
 across independent question families, or mechanistically attributed
-(e.g.\ the failure autopsies below)---carry the paper's claims.
+(e.g.\ the failure autopsies below)---carry the paper's claims. Stated as
+a split rather than a caveat: the better-supported results of this paper
+are retrospective paired evidence---the cluster-robust doc-fusion gain,
+the sign-consistent docvec and alias effects, the co-occurrence
+channel marginal with its win/loss record, and the
+mechanistically-attributed failure autopsies; everything
+else---single-CI deltas, two-cluster intervals, bundle-level
+comparisons---is \emph{exploratory} and read as directional. Two
+boundaries on the stronger tier: cluster-level intervals and
+sign-consistency do not remove the selection bias introduced by
+choosing configurations on these same sets (Section~5.4, question-set
+status), and the four question sets span two domains, not four
+independent domains---cross-domain confirmation would require domains
+unused during development. We therefore label all archived results
+\emph{development and regression evidence}; a confirmatory tier would
+require freezing a small set of primary comparisons, metrics and
+thresholds, then evaluating on questions that played no role in
+configuration selection---not yet done.
 
 \subsection{Failure attribution: where missed golds are lost}
 \label{sec:autopsy}
@@ -469,9 +659,10 @@ across independent question families, or mechanistically attributed
 A channel-isolated autopsy of every missed gold document (97 on nea, 71 on
 ner) locates the failing layer: each of the four channels is probed directly
 at the engine level (top-100, bypassing the service's channel mixing) and
-cross-referenced against the fused ranking (Table~\ref{tab:loss}).
+cross-referenced against the fused ranking (Table~\ref{tab:loss};
+Fig.~\ref{fig:failambda}, panel a).
 
-\begin{table}[t]
+\begin{table*}[!t]
 \centering
 \caption{Loss-layer attribution of missed gold documents.}
 \label{tab:loss}
@@ -485,23 +676,32 @@ top-100, absent from fused top-20) & & \\
 deep recall miss (no channel top-100) & 7\% & 3\% \\
 \bottomrule
 \end{tabular}
-\end{table}
+\end{table*}
 
-\textbf{93--97\% of misses are aggregation/ranking failures, not recall
-failures.} The channels find the documents; chunk-level RRF cannot
-consolidate document-level support. Smoking-gun case: one missed gold
+\textbf{93--97\% of misses survive candidate generation.} The channels
+find the documents somewhere in their top-100; the loss occurs
+\emph{after} candidate generation, in fusion and
+consolidation---chunk-level RRF cannot consolidate document-level
+support. Smoking-gun case: one missed gold
 document is dense-rank-5 (its chunk \#47), synq-rank-31 (chunk \#4), and
 docvec-rank-1 (first chunk \#0)---three channels vote for three
 \emph{different} chunks of the same document, each vote individually too weak
-to surface any chunk into the top-20. The docvec channel (B84) is a
+to surface any chunk into the top-20. The docvec channel is a
 FirstP-style document signal in the MaxP/FirstP family~\cite{maxp}, but its single
 first-chunk vote does not merge with votes landing on other chunks.
 
-This attribution extends component-level RAG diagnosis to the
-\textbf{fusion layer} and directly motivates doc-aware fusion (per-channel
-per-document best-k vote consolidation before RRF---O10), which targets the
-dominant loss layer. Dictionary/enrichment coverage gaps are real but
-secondary.
+This attribution extends component-level RAG
+diagnosis~\cite{ragchecker} to the \textbf{fusion layer} and motivated
+doc-aware fusion (post-RRF document-level consolidation of chunk
+scores), which targets the loss stage \emph{after candidate generation}.
+The autopsy establishes where the loss occurs (candidates exist; the
+final list does not contain them); it does not by itself prove that
+granularity mismatch causes every such loss---in-pool ranking noise and
+truncation are alternatives---and how many missed golds the truncated
+aggregation actually recovers is answered by the frozen-score replay
+below. The measured gains of the adopted $\lambda{=}2$
+configuration are the empirical support for the aggregation component.
+Dictionary/enrichment coverage gaps are real but secondary.
 
 \textbf{Constructive validation on a hard-target set.} We instrument the
 dilution layer as a question-set constraint: 37 questions drafted from
@@ -530,23 +730,106 @@ hybrid} (dictionary $\to$ intent gating and seeding; bilingual aliases $\to$
 association-channel gains), while structural traversal contributes only at
 the margin and only inside the budget-constrained deep lane.
 
-\textbf{Doc-aware fusion (O10, adopted).} The fusion re-ranks its candidate
-pool by document: doc score $=$ sum of the document's top-$\lambda$ chunk
-votes (a truncated-sum variant of the MaxP/SumP family~\cite{maxp}), emitting at most
-$\lambda$ chunks per document. The $\lambda$ sweep traces a clean
-any-hit/coverage frontier: $\lambda$=1 lifts cov@20 (+5.0pt, per-query CI
-significant) with zero @10 change; \textbf{$\lambda$=2 lifts cov@10 +6.28pt
-under both CI standards (cluster-t interval [0.029, 0.097], both clusters
-positive---the first technique in this campaign to pass cluster-robust
-significance; k=2 clusters, so the interval is fragile and the claim is
-campaign-scoped, not field-level)} at $-$4.6pt any-hit; $\lambda$=3
-overshoots (cov@20 turns
-negative). Because the trade is intent-shaped---association queries want
-complete coverage, real queries want fast any-hit---the adopted configuration
-gates $\lambda$=2 on the association intent: association queries gain the
-full coverage lift (cov@10 0.569$\to$0.633), real queries are bitwise
-unchanged. The smoking-gun case above now resolves: the three scattered
-votes consolidate into a top-ranked document.
+\textbf{Doc-aware fusion: score aggregation and evidence emission are two
+separate decisions.} Doc-aware fusion is a \emph{post-fusion} re-ranking
+of the chunk-level RRF ranking---not a per-channel pre-aggregation; the
+deployed rule, stated precisely. (1)~Chunk-level weighted RRF runs
+first, $\mathrm{score}(c)=\sum_i w_i/(60+\mathrm{rank}_i(c))$ over the
+raw channel lists, so a chunk receiving votes from several channels
+already carries their sum. (2)~The top $\max(3k,20)$ chunks of that
+fused ranking form the candidate pool, grouped by document; a document
+whose passages fall outside the pool cannot be recovered by the
+aggregation. (3)~A document's score is the sum of its top-$\lambda$
+\emph{chunk-level RRF scores within that pool}---with $\lambda{=}2$, at
+most \emph{two} passage scores contribute, by construction. In the
+smoking-gun case the three scattered votes (dense on chunk~\#47, synq
+on chunk~\#4, docvec on chunk~\#0) enter the pool as three
+separately-scored chunks, and the document score aggregates the two
+highest of them---the third adds nothing under $\lambda{=}2$. The
+example must be read as truncated aggregation, not a three-chunk sum;
+it resolves because two aggregated votes already outrank any
+single-chunk competitor. (4)~Documents are sorted by this sum and
+emitted under a separate \emph{emission policy}: \emph{pair} emits up
+to $\lambda$ passages of the first document before the next document;
+\emph{stride} emits the first passage of every ranked document before
+any second passage. Pair and stride share identical document scores and
+differ only in how the output budget is spent---pair buys evidence
+adjacency at the cost of document diversity within the first $k$
+passages. The aggregation rule itself is a truncated sum of
+passage-level RRF scores---the RRF analogue of the established
+MaxP/SumP document-aggregation family~\cite{maxp}; document aggregation
+is not new, and we claim only the truncated-pool variant, the separated
+emission policy, and the failure-layer diagnosis that motivates both.
+
+\textbf{Measured arms, labeled by configuration.} The $\lambda$ sweep
+of Fig.~\ref{fig:failambda}(b) was measured under \emph{pair} emission
+on the scoped sets, as configuration exploration: $\lambda$=1 lifts
+cov@20 (+5.0pt, per-query CI [0.023, 0.078] significant, cluster
+interval wide) with any-hit@10 unchanged and cov@10 $-$1.3pt (NS);
+\textbf{$\lambda$=2 under pair emission} lifts cov@10 +6.28pt under
+both CI standards (cluster-t interval [0.029, 0.097], both clusters
+positive---the campaign's first cluster-robust gain; k=2 clusters, so
+the interval is fragile and the claim campaign-scoped, not field-level)
+at $-$4.6pt any-hit@10; $\lambda$=3 overshoots (cov@10 +7.4pt
+per-query-significant but not cluster-robust; cov@20 $-$2.8pt, any-hit
+$-$5.8pt). Pair-$\lambda$2 was first adopted gated on association
+intent (association cov@10 0.569$\to$0.633, real queries unchanged).
+The production adoption then changed the \emph{emission policy}:
+\textbf{$\lambda{=}2$ with stride emission, applied globally}.
+Relative to the pair configuration, stride returns the top-of-list
+concession (association R@10 +4.2pt, MRR +3.6pt, cov@20 +4.7pt) while
+giving back 2.7pt of association cov@10; relative to the pre-adoption
+chunk-level baseline it shows no regression on any reported metric on
+either question family, with single-intent coverage gains (cov@10
++4.1pt, cov@20 +7.1pt) carried through. A structural caution on that
+$-$2.7pt: with a fixed candidate pool, fixed document scores, an output
+of at least twenty passages and no downstream insertion or filtering,
+pair and stride expose the same top-ranked documents, so
+document-budget cov@10 should not differ between them. \textbf{The
+frozen-score replay confirms exactly this.} We re-captured the channel
+rankings behind the final-configuration scoped runs (tee on the fusion
+entry point) and re-ran the production aggregation/emission code itself
+over seven arms: F0 (chunk-RRF, $\lambda{=}0$) and
+$\lambda\in\{1,2,3\}\times$\{pair, stride\}. Validity check: the
+$\lambda{=}2$+stride arm reproduces the archived live run
+\emph{bitwise} (nea 0.5993/0.9375/0.7346 cov@10/R@10/MRR). Results:
+(i)~\emph{aggregation} at frozen scores contributes cov@10 $+$0.9pt
+(nea, ns) / $+$4.9pt (ner, CI [$+$1.1, $+$9.2]) at $\lambda{=}2$,
+with $\lambda{=}1$ significant on both sets ($+$1.9/$+$4.4) and
+cov@20 $+$14.0/$+$11.1pt; (ii)~\emph{emission order} moves passage
+budgets only: stride over pair buys any-hit@10 $+$10.3pt (ner, CI
+[$+$2.6, $+$20.5]) and MRR $+$4.8/$+$3.0pt (both significant) while
+the cov@10 difference is \emph{exactly 0.000 on both sets}---the
+budget identity holds, so the adoption-window $-$2.7pt was
+configuration co-variation, not an emission-order effect; (iii)~the
+$\lambda{=}3$ overshoot reproduces (any-hit $-$8.3/$-$10.3pt under
+pair, repaired by stride). Because the historical $\lambda$ sweep was
+measured against a pre-adoption baseline, its larger pooled $+$6.28pt
+carries that window's configuration context; under the final
+configuration, aggregation alone accounts for the smaller frozen-score
+deltas above. On corpora with one chunk per
+document---the public multi-hop benchmarks---the rule is structurally
+inert: toggling it reproduces the baseline \emph{bitwise} on
+HotpotQA/2Wiki and within $\pm$0.002 (NS) on MuSiQue (600 paired
+questions), so its effects are a long-document-corpus phenomenon.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{../A线-figures/fig4_failure_lambda.png}
+\caption{Failure attribution and its targeted repair. (a)~Loss-layer
+attribution of every missed gold document: 93--97\% of misses survive
+candidate generation (gold visible in some channel's top-100; the loss
+sits after it, in fusion/consolidation), not in channel recall. (b)~The doc-aware-fusion $\lambda$ trade-off \emph{as measured
+under pair emission} (configuration exploration, pooled scoped sets,
+$\Delta$ vs.\ pre-adoption baseline; whiskers on the significant points
+are paired-bootstrap 95\% CIs): $\lambda{=}1$ buys cov@20, $\lambda{=}2$
+trades $-$4.6pt any-hit for +6.28pt cov@10 (the campaign's first
+cluster-robust gain), $\lambda{=}3$ overshoots. The production adoption
+is $\lambda{=}2$ with \emph{stride} emission applied globally, measured
+separately in the text---the sweep and the adoption are different
+configurations and must not be merged into one curve.}
+\label{fig:failambda}
+\end{figure*}
 
 \section{NuclearIR-Bench}
 \label{sec:bench}
@@ -564,7 +847,7 @@ retrieval; saturating control).
 
 \subsection{Multi-disciplinary generality}
 
-\begin{table}[t]
+\begin{table*}[!t]
 \centering
 \caption{Multi-disciplinary generality.}
 \label{tab:generality}
@@ -578,24 +861,34 @@ Fundamental physics & 1{,}324 docs & 24 & 1.000 \\
 Nuclear electronics & 3{,}479 docs & 39 real / 48 assoc & 0.897 / 1.000 \\
 \bottomrule
 \end{tabular}
-\end{table}
+\end{table*}
 
-Four disciplines, 129$\times$ scale range, all R@10~$\geq$~0.90
-(Table~\ref{tab:generality})---corpus-first generation methodology and
-retrieval system are domain-general.
+Four disciplines, 129$\times$ scale range, minimum R@10 0.897 with all
+other families $\geq$0.90 (Table~\ref{tab:generality}). This shows the
+corpus-first generation methodology and the retrieval stack \emph{run}
+across four corpus environments; it is not a controlled test of retrieval
+generalization (question sets, gold and library conditions differ per
+domain), and question-generation validity is a separate property from
+retrieval quality.
 
 \subsection{Benchmark validity controls}
 
-Two controls establish that the question sets measure retrieval rather than
-artifact (\textbf{closed-book}) and that cov@k is interpretable as a
-conservative lower bound (\textbf{unjudged audit}):
+Three controls and one robustness round establish that the question sets
+measure retrieval rather than artifact (\textbf{closed-book}), that the
+top-$k$ under-count component of cov@k is bounded (\textbf{unjudged
+audit}), that construction circularity is bounded rather than denied
+(\textbf{circularity bounds}), and that the system ordering survives
+independently-judged gold extension (\textbf{pooled round}):
 
 \begin{enumerate}
 \item \textbf{Closed-book control} (HybridRAG-Bench protocol): asking the LLM
 directly which papers answer each question---without retrieval---yields a
 gold-document naming rate of \textbf{0/48 (nea) and 0/39 (ner)} (86/87
-answers are ``don't know''). The gold documents are domain journal papers
-unseen in pretraining; the benchmark cannot be solved from model memory.
+answers are ``don't know''). The gold documents are domain journal papers; no correct gold naming
+was observed for this model under this prompt protocol. Whether the
+papers appeared in the model's training data is unknown---the control
+bounds memorization-based solving \emph{as tested}, not for all models
+and protocols.
 
 \item \textbf{Unjudged audit} (topic-specific re-judging): we re-judge a
 sample of top-10 retrieved but unjudged (non-gold) documents under a strict
@@ -604,8 +897,14 @@ bilingual name set (canonical + aliases) and must quote one passage of
 original text per entity side; a ``relevant'' verdict additionally requires
 programmatic verification that both quotes are present in the document.
 Result: 18/203 sampled unjudged documents on nea carry verified both-entity
-evidence---cov@10 is a conservative lower bound with \textbf{correction
-$\leq$+8.1pt (nea) and $\leq$+2.4pt (ner)}. A naive one-word relevance
+evidence---admitting them as gold would raise measured coverage by
+\textbf{$\leq$+8.1pt (nea) and $\leq$+2.4pt (ner)}. We phrase this
+deliberately: cov@k is coverage of the \emph{constructed gold set}, not an
+estimate of full-collection recall---relevant documents absent from the gold
+set altogether would raise the denominator too, and without complete
+annotation the direction of the true-recall difference cannot be signed.
+The audit bounds only the under-count of already-retrieved relevant
+documents inside top-$k$. A naive one-word relevance
 protocol over-estimates the correction 3$\times$ (+24.7pt) and is falsified
 by a surface cross-check (0/76 of its ``relevant'' verdicts have both entity
 surfaces in the document)---we report this as a measurement methodology
@@ -620,83 +919,113 @@ mechanism, so association-set numbers partially measure the asset they
 were built from. We bound rather than deny this: (a)~the closed-book
 control above rules out memorization, not circularity; (b)~the
 natural-phrasing variants (template words banned) still show the
-co-occurrence channel's +10.1pt hit@10 gain (CI [+5.1, +16.2])---the
+co-occurrence path's +10.1pt hit@10 gain (CI [+5.1, +16.2]; the whole
+adaptive path, historical deployment profile)---the
 channel works through
 dictionary-surface hits in the query, not template-word leakage; (c)~single-intent real queries define
 gold by information need with no entity-pair construction; and (d)~the
 English public benchmarks involve none of our assets. Additionally, a
-single-variable channel ablation on the scoped association set under the
-final configuration shows the entity-dependent channels contribute
-bitwise-zero to fused ranking there (next section)---the benchmark is not
-being carried by the entity machinery it was generated from, at least at
-the fusion layer. Corpus-construction-level claims (bilingual aliases,
-dictionary coverage) remain partially circular, and we label them as such
-where they appear.
+single-variable channel ablation on the scoped sets under the final
+configuration shows the entity-dependent channels leave the @10 metrics
+unchanged there (the only movements are a +0.0006 MRR shift and a
+$-$1.0pt cov@20 change, both NS; next section)---the benchmark is not
+being carried by entity fusion votes under that profile. The bound is
+profile-specific: a channel whose gate never opens cannot demonstrate
+its value through a removal test, so this null does not extend to the
+distributions where the gates fire. Corpus-construction-level claims
+(bilingual aliases, dictionary coverage) remain partially circular, and
+we label them as such where they appear.
+
+\item \textbf{Pooled independent-judgment round (automated).} A
+TREC-style pooling check on the least-circular set (39 production real
+queries): the union of five systems' top-10 predictions (437 documents
+outside the constructed gold) was judged under the strict
+quote-verification protocol; 9 documents on 6 questions were judged
+relevant (3 with programmatically verified quotes). Under the resulting
+pooled gold, \emph{every} system's any-hit@10 is unchanged (KNC 0.949,
+HippoRAG~2 0.923, LlamaIndex 0.897, BM25 0.872; genrag $+$1 question to
+0.897)---the system ordering on real queries is robust to
+independently-judged gold extension. \emph{Disclosure:} judged by the
+pipeline LLM (temperature 0), not human annotators; a small human round
+remains the outstanding item.
 \end{enumerate}
 
 \section{Results}
 \label{sec:results}
 
-\subsection{Full-corpus benchmark comparison}
+\subsection{Public multi-hop runs: two metric definitions, our arms
+only}
 
-On the HippoRAG~2 evaluation protocol (1{,}000 queries $\times$ full
-candidate corpora, R@2/R@5; Table~\ref{tab:bench}):
+Our full-corpus English runs (n=1{,}000 per benchmark, candidate
+corpora of 9{,}811/6{,}119/9{,}838 unique-title documents,
+Qwen3-Embedding-8B) are reported under \emph{our own two arms} only.
+The published multi-hop rows one might place beside them evaluate
+supporting-passage-set recall under that paper's corpus, deduplication
+and truncation conventions; our rows are any-hit@k. These are
+different evaluation targets, not different notations for one
+target---in the reference protocol, recovering three of four supporting
+documents scores 0.75, not any-hit 1.0---and the embedding-model
+mismatch would be a second confound on top of the metric mismatch.
+Table~\ref{tab:bench} therefore reports any-hit@k (passage budget) and
+support coverage@k (the per-question fraction of gold documents
+recovered within the first $k$ hits, the diagnostic analogue of set
+recall) side by side, and no cross-system conclusion is drawn from it.
+A valid external comparison requires aligned retrieval units, corpora,
+deduplication order and truncation budgets in a re-run we have not
+executed.
 
-\begin{table}[t]
+\begin{table*}[!t]
 \centering
-\caption{Full-corpus benchmark comparison (R@2/R@5).}
+\caption{Public multi-hop runs, both metric definitions (\%; n=1{,}000
+per benchmark; both arms Qwen3-Embedding-8B; full candidate corpora).
+any-hit@k = questions with $\geq$1 gold document in the first $k$
+hits; support cov@k = mean per-question fraction of gold documents
+within the first $k$ hits. Published external results use a different
+metric (supporting-passage recall) and protocol, and are deliberately
+not tabulated here.}
 \label{tab:bench}
-\begin{tabular}{lllll}
+\begin{tabular}{llcccccc}
 \toprule
-Method & HotpotQA & 2Wiki & MuSiQue & Embedder \\
+Benchmark & Arm & any@2 & cov@2 & any@5 & cov@5 & any@10 & cov@10 \\
 \midrule
-BM25 & 57.3/74.8 & 55.3/65.3 & 32.4/43.5 & --- \\
-NV-Embed-v2 & 84.1/94.5 & 67.1/76.5 & 52.7/69.7 & NV-Embed-v2 \\
-HippoRAG 2 & 83.5/96.3 & 76.2/90.4 & 56.1/74.7 & NV-Embed-v2 \\
-\textbf{KNC dense} & \textbf{94.6/97.4} & \textbf{99.7/99.9} & \textbf{85.7/91.2} & Qwen3-Emb-8B \\
-KNC fusion & 93.9/97.9 & 99.0/100.0 & 80.6/91.3 & Qwen3-Emb-8B \\
+HotpotQA & dense & 94.6 & 71.7 & 97.4 & 85.8 & 98.0 & 90.1 \\
+ & fusion & 93.9 & 68.1 & 97.9 & 84.7 & 98.6 & 91.0 \\
+\midrule
+2Wiki & dense & 99.7 & 65.7 & 99.9 & 72.6 & 100.0 & 76.6 \\
+ & fusion & 99.0 & 63.8 & 100.0 & 72.5 & 100.0 & 76.7 \\
+\midrule
+MuSiQue & dense & 85.7 & 43.7 & 91.2 & 55.7 & 95.7 & 62.5 \\
+ & fusion & 80.6 & 39.8 & 91.3 & 54.4 & 95.6 & 63.3 \\
 \bottomrule
 \end{tabular}
-\end{table}
+\end{table*}
 
-\textbf{This table is an embedder-generation comparison, not an
-architecture comparison}: KNC-dense and the NV-Embed-v2 rows differ in
-both system and embedding model (Qwen3-Embedding-8B, 2025, versus
-NV-Embed-v2, 2024), so the +10--30pt gap cannot be attributed to
-infrastructure. To separate the two factors we re-ran the systems
-\textbf{under the same embedder} (all Qwen3-Embedding-8B, identical
-stack and scoring, 400-document pools with 40/46/23 questions per
-benchmark; Table~\ref{tab:bench-sameemb}).
+Read within our arms, the table shows: (i)~the top-of-list cost of
+equal-weight fusion on English multi-hop (any-hit@2) that closes by
+depth 10 (Section~\ref{sec:channels}); (ii)~support coverage sits far
+below any-hit at every depth (e.g.\ 71.7\% vs.\ 94.6\% at $k{=}2$ for
+dense on HotpotQA)---recovering the full supporting set is
+substantially harder than hitting any one of it, which is exactly the
+property the reference protocol's passage-recall metric targets; and
+(iii)~document-aware fusion is structurally inert on these one-chunk-per-document
+corpora (verified bitwise in Section~\ref{sec:channels}), so these
+differences are pure channel effects.
 
-\begin{table}[t]
-\centering
-\caption{Same-embedder control (cov@10; all arms Qwen3-Embedding-8B,
-400-doc pools).}
-\label{tab:bench-sameemb}
-\begin{tabular}{llll}
-\toprule
-System & HotpotQA & 2Wiki & MuSiQue \\
-\midrule
-BM25 & 0.888 & 0.766 & 0.467 \\
-LlamaIndex dense & 0.963 & 0.772 & 0.732 \\
-\textbf{HippoRAG 2 (reproduced)} & \textbf{1.000} & \textbf{0.913} & 0.779 \\
-KNC dense & 0.988 & 0.826 & \textbf{0.826} \\
-KNC fusion & 0.975 & 0.794 & 0.656 \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The same-embedder control \textbf{reverses the reading}: HippoRAG~2's
-graph machinery outperforms plain dense retrieval on 2 of 3 benchmarks
-(2Wiki +8.7pt, HotpotQA +1.2pt over KNC-dense) and trails on MuSiQue
-($-$4.7pt)---at pool scale its structure pays where multi-hop
-composition dominates. What KNC adds on these English benchmarks is not
-fusion (KNC fusion $\leq$ KNC dense everywhere here, consistent with
-the ungated-fusion degradation of Section~\ref{sec:channels}) but the
-operational substrate (production indexing, scale, traceability); the
-domain-side advantage story lives in the nuclear-electronics sections,
-not here. We report the reversal against interest: architecture claims
-in Table~\ref{tab:bench} belong to the embedding model, not to us.
+\textbf{Historical same-embedder pool control (Appendix).} A
+same-embedder comparison (all arms Qwen3-Embedding-8B, identical stack
+and scoring, 400-document pools, 40/46/23 questions per benchmark) was
+run once at pool scale in an early campaign. Its per-query files were
+later overwritten by the full-corpus n=1{,}000 runs that reused the
+same filenames, so it cannot be re-derived from archived artefacts,
+cannot be given confidence intervals today, and is not re-runnable
+without re-execution. We therefore report it in Appendix~A as
+directional historical evidence only: it indicated a reproduced
+HippoRAG~2 leading plain dense retrieval on 2 of 3 pools (2Wiki
++8.7pt, HotpotQA +1.2pt cov@10 over our dense arm) and trailing on
+MuSiQue ($-$4.7pt), and our fusion trailing our dense arm on all three
+pools, consistent with the top-of-list fusion cost above. A
+protocol-aligned rerun (matched retrieval unit, metric, model and
+corpus) is the correct next experiment, and it has not been run.
 
 \subsection{Controlled ablation on the nuclear-electronics domain}
 
@@ -706,46 +1035,67 @@ production-final configuration---associative queries cov@10
 0.533$\to$\textbf{0.599}, single-intent 0.603$\to$\textbf{0.675}, MRR
 $-$2.0/+5.0pt against the pre-rebuild baseline. The trajectory is
 system-level (two weeks of retrieval configuration evolution plus the
-lexicon repair); we bound it with a single-variable channel ablation under
-the identical final configuration---all entity-dependent channels off
-(co-occurrence, graph, entity-vector, PPR) versus the full stack:
-\textbf{metrics are bitwise identical on both families} (cov@10/R@10/MRR
-unchanged; the only movement is associative cov@20 $-$1.0pt, 95\% CI
-[$-$3.1, 0.0]) while p50 latency halves (1.46\,s $\to$ 0.52\,s). Two
-readings follow. First, the repair-window trajectory above is carried by
-the non-entity configuration evolution, not by entity channels casting
-fusion votes---we state this against interest. Second, on these benchmark
-families the entity layer's retrieval-facing value does not run through
-fusion at all: it runs through lexical alias expansion (entity names as
-BM25 terms), deep-lane reranker context, and generation-side knowledge
-chains---consistent with the graph-governance nulls reported later in
-this section.
+lexicon repair); we bound it with a paired channel ablation under the
+same final configuration---all entity-dependent channels off
+(co-occurrence, graph, entity-vector, PPR) versus the full stack.
+\textbf{On the @10 metrics the removal is a null}: R@10 and cov@10 are
+unchanged on both families; MRR moves by +0.0006 on single-intent
+(0.7695$\to$0.7701, CI [0, 0.0018]) and by zero on association; the
+largest movement anywhere is associative cov@20 $-$1.0pt (95\% CI
+[$-$3.1, 0.0]); deeper or secondary metrics are not claimed identical.
+(Two runs of the nominally identical full configuration differ
+slightly: the ablation's own all-arm reads single-intent cov@10 0.670
+against the refresh run's 0.675, so we quote the ablation's paired arms
+throughout.) p50 latency drops from 1.46\,s to 0.52\,s (association)
+and 1.54\,s to 0.51\,s (single-intent)---a two-thirds reduction, not a
+halving. What this intervention establishes is narrow: under the final
+retrieval profile, the direct entity-dependent channels are not a
+necessary contributor to the @10 levels of these sets. It does not
+isolate the effects of the repaired lexicon through aliases, reranker
+context, or answer construction, and therefore cannot attribute the
+repair-window trajectory to configuration changes alone. On these
+benchmark families the entity layer's retrieval-facing value does not
+run through fusion votes under this profile; the remaining candidate
+paths---lexical alias expansion (entity names as BM25 terms), deep-lane
+reranker context, and generation-side knowledge chains---are consistent
+with the graph-governance nulls reported later in this section, but
+their individual contributions are not separately quantified by this
+ablation.
 
 \textbf{Channel $\times$ question-distribution contribution matrix.} The
 apparent contradiction between this zero-effect result and the channel
 gains reported elsewhere resolves once the distribution axis is made
-explicit:
+explicit (Table~\ref{tab:channmatrix}; consolidated across all
+distributions in Fig.~\ref{fig:forest}):
 
-\begin{table}[t]
+\begin{table*}[!t]
 \centering
-\caption{Where the entity channels pay: contribution by question
-distribution.}
+\caption{Where each mechanism pays: observed effect by query
+distribution. Evidence class per row: \textbf{SF} = single-factor
+paired ablation under a stated profile; \textbf{BUNDLE} = configuration
+bundle against an earlier configuration (no single-factor
+attribution); \textbf{PROBE} = point estimate without a reported CI;
+\textbf{HIST} = historical profile that differs from the current
+configuration. CI = paired bootstrap 95\%.}
 \label{tab:channmatrix}
 \small
-\begin{tabularx}{\textwidth}{lXXXX}
+\begin{tabular}{p{0.265\textwidth}p{0.235\textwidth}p{0.375\textwidth}}
 \toprule
-Distribution & co-occ. & graph/PPR & entity-vec & synq \\
+Query distribution & Mechanism tested & Observed effect \\
 \midrule
-nea48/ner39 scoped, final config & 0 (fired 6/48, all ties) & 0 (bridge-only) & 0 (no candidates) & $>$0 (4 Qs) \\
-99 natural-phrasing assoc & hit@10 \textbf{+10.1} [+5.1,+16.2] & --- & --- & --- \\
-hard37 probe, deep lane & --- & PPR \textbf{+2.7pt} & --- & --- \\
-English multi-hop pools & n/a & n/a & n/a & $\leq$0 \\
-Pooled 4 sets, earlier config & \multicolumn{4}{l}{synq+cooc R@10 +0.25, cluster-robust} \\
+Scoped nea48/ner39, final config & all entity channels off (cooc, graph, entity-vec, PPR) & [SF] @10 metrics unchanged; MRR +0.0006; cov@20 $-$1.0pt NS; p50 1.46$\to$0.52\,s \\
+99 natural-phrasing association & co-occurrence path (whole adaptive stage) & [SF, HIST] hit@10 \textbf{+10.1pt} [+5.1, +16.2]; gold is co-occurrence-defined \\
+Scoped nea (lexical feed) & bilingual alias expansion & [SF] cov@10 +2.2pt [0.6, 4.3] \\
+Scoped ner (lexical feed) & bilingual alias expansion & [SF] cov@20 \textbf{+7.6pt} [3.0, 13.1] \\
+37 hard queries (deep-lane probe) & PPR graph expansion & [PROBE] hit@10 +2.7pt, no CI \\
+nea48, deep lane & rerank with entity context & [BUNDLE] hit@10 +6.2pt (adoption bundle, 0.896$\to$0.958) \\
+English multi-hop, n=1{,}000 each & fusion vs.\ dense & [SF] any-hit@2 $-$0.7/$-$0.7/$-$5.1pt; @10 gap vanishes (Section~\ref{sec:channels}) \\
+Pooled 4 sets, earlier config & synq + cooc channels & [SF, HIST] R@10 +0.25, cluster-robust (k=4) \\
 \bottomrule
-\end{tabularx}
-\end{table}
+\end{tabular}
+\end{table*}
 
-The mechanism behind the bitwise identity on the scoped sets is
+The mechanism behind the @10 null on the scoped sets is
 fourfold, not mysterious: (a)~the co-occurrence channel's adaptive gate
 fires only when base-retrieval heads do \emph{not} already serve
 co-mention documents---under the final configuration (alias expansion +
@@ -757,7 +1107,31 @@ votes; (c)~the entity-vector channel produced no candidate chunks in this
 configuration; (d)~PPR is gated to the deep lane. Removing channels that
 cast no votes removes nothing---which is also why the same removal
 \emph{does} cost on distributions where the gates open
-(Table~\ref{tab:channmatrix}: +10.1pt row 2, +2.7pt row 3).
+(the natural-phrasing and hard-query rows of Table~\ref{tab:channmatrix}).
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=0.98\textwidth]{../A线-figures/fig6_channel_forest.png}
+\caption{Where each mechanism pays, split by retrieval regime. Each row is
+a paired comparison under a stated retrieval profile (metric in the row
+label; scoped sets n=48/39, natural-association set n=99, hard-set
+probe n=37, English benchmarks n=1{,}000 each); rows differ in evidence
+class---single-factor ablations, one adoption bundle (entity-context
+rerank), and point-estimate probes---as detailed in
+Table~\ref{tab:channmatrix}. Whiskers = paired-bootstrap 95\% CI;
+filled squares: CI excludes zero; open circles: point estimates without
+a reported CI; hollow circle: exactly zero at the plotted metric.
+Metrics are not commensurable across rows (cov/hit/MRR/any-hit@2 as
+labelled) and panels deliberately carry separate x-scales. (a)~Normal
+lane: the entity layer's value is distribution-conditional---zero on
+the scoped benchmark families, decisive on natural-phrased association
+queries and alias-fed lexical coverage. (b)~Deep lane:
+marginal-positive except the bipartite PPR channel (significantly
+negative). (c)~English multi-hop: fusion trails the dense channel at
+the top of the list (any-hit@2; the any-hit@10 gap vanishes,
+Section~\ref{sec:channels}).}
+\label{fig:forest}
+\end{figure*}
 
 \textbf{Why they ship enabled.} The operations answer, stated as such:
 (1)~the benchmark families under-represent the traffic the channels
@@ -774,7 +1148,9 @@ from.
 
 \subsection{Scale curve}
 
-At 16$\times$ corpus growth (300$\to$4{,}850 docs), the dense baseline drops
+Fig.~\ref{fig:scalefig} plots the scale trajectory; the data boundary is
+part of the claim. At 16$\times$ corpus growth (300$\to$4{,}850 docs), the
+dense baseline drops
 from 95.8\% to 62.5\% any-hit@10 while KNC full-channel maintains 100\%;
 coverage@10: KNC 0.669 versus baseline 0.351 (+32pt). Latency: KNC 1.3\,s
 versus 35.9\,s for the dense baseline---a LlamaIndex retriever without an
@@ -788,9 +1164,13 @@ Post-rebuild full-scale tier (80{,}852-document production,
 ${\sim}$250$\times$ the slice): associative queries any-hit@10
 \textbf{1.000}, cov@10 0.652, MRR 0.624, p50 1.46\,s; single-intent any-hit
 0.923, cov@10 0.600, p50 1.46\,s. Coverage holds within noise of the
-4{,}850-document tier (0.669$\to$0.652) and latency does not move---under
-the fused, intent-gated architecture the scale cliff observed in
-single-vector baselines does not appear through 250$\times$ growth. The
+4{,}850-document tier (0.669$\to$0.652) and latency does not move---we
+read this as \emph{telemetry across configuration eras} (the 300/4,850
+pair was measured under the 2026-09-25 configuration, the production tier
+under the final configuration on different load), not as a
+same-configuration, same-hardware scaling experiment; with that boundary
+stated, the scale cliff observed in single-vector baselines does not
+appear through 250$\times$ growth. The
 scoped-slice versus full-library comparison under identical questions shows
 the filter-restricted slice is the \emph{harder} condition for associative
 queries (0.599 versus 0.652) and the easier one for single-intent (0.675
@@ -800,16 +1180,38 @@ directions by query type. No external baseline ran at this
 production corpus, and all baseline comparisons in this paper live at the
 300- and 4{,}850-document tiers.
 
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=0.98\textwidth]{../A线-figures/fig7_scale.png}
+\caption{Scale trajectory (associative question set). (a)~cov@10: the
+300/4,850 pair is the same-configuration 2026-09-25 comparison (KNC
+scoped/full versus LlamaIndex dense, which has no ANN index at this
+scale); the 80,852 point is post-rebuild production telemetry under the
+final configuration---no external baseline exists at that tier, and the
+4,850-tier baseline value must not be extrapolated to it. (b)~p50
+latency (log--log); the 35.9\,s point is the brute-force scan artifact
+annotated in the text. Points from different configuration eras are
+\emph{not} connected: solid markers = 2026-09-25 controlled tier, hollow
+markers = 2026-10-09 production telemetry.}
+\label{fig:scalefig}
+\end{figure*}
+
 \subsection{Domain-specific comparison}
 
-LightRAG (13\,h construction) ranks last on nuclear electronics (cov@10
-0.471 versus KNC 0.667) while competing on English benchmarks---LLM-extracted
-entities fail on domain-specific terminology (10.6\% chunk NER failure rate
-on nuclear full text versus 0.25\% on Wikipedia).
+LightRAG ranks last on nuclear electronics (cov@10 0.471 versus KNC 0.667
+on the 82-document slice), \emph{measured on its fully constructed
+13-hour index}---this is a quality comparison against a completed system,
+not a penalty for partial construction; what the 13-hour build measures is
+usability at scale (Section~\ref{sec:eng}); the two claims are
+separate---retrieval quality measured on a completed index versus
+construction scalability under this setting. LightRAG competes on English
+benchmarks but its LLM-extracted entities fail on domain-specific
+terminology (10.6\% chunk NER failure rate on nuclear full text versus
+0.25\% on Wikipedia).
 
 \subsection{Construction cost}
 
-\begin{table}[t]
+\begin{table*}[!t]
 \centering
 \caption{Construction cost.}
 \label{tab:cost}
@@ -820,13 +1222,20 @@ System & ne 300 docs & Benchmark 400 docs & Bottleneck \\
 \midrule
 KNC enrichment & ${\sim}$1\,h & ${\sim}$2\,min & synq doc2query (LLM) \\
 HippoRAG 2 & 4.1\,h & 13--14\,s (warm) / 40\,min (cold) & OpenIE (LLM) \\
-LightRAG & $>$13\,h (82 docs only) & infeasible & entity merge (serial CPU) \\
+LightRAG & 13\,h, completed (82 docs) & not attempted (extrapolates 1--2\,d) & entity merge (serial CPU) \\
 \bottomrule
 \end{tabularx}
-\end{table}
+\end{table*}
 
-Table~\ref{tab:cost} summarises: KNC construction costs 1--2 orders of
-magnitude less than graph-RAG alternatives at domain scale. The cost comparison is \textbf{asymmetric by design and we say so}:
+Table~\ref{tab:cost} summarises: at the same 300-document tier KNC
+enrichment costs 4.1$\times$ less than HippoRAG~2, and LightRAG completed
+only an 82-document subset in 13\,h---against a KNC cost of
+${\sim}$16\,min for 82 documents (linear extrapolation from the measured
+300-document ${\sim}$1\,h, not a separate measurement), i.e.\ a
+${\sim}$50$\times$ ratio reflecting the serial-merge throughput wall of
+this implementation and configuration (LightRAG 1.4.13, single-process
+merge), rather than a uniform speed claim or a family-wide complexity
+law. The cost comparison is \textbf{asymmetric by design and we say so}:
 LightRAG and HippoRAG~2 pay per-chunk LLM extraction at construction,
 our K1 is a dictionary scan---the table prices two different design
 points of entity acquisition, not the same workload twice. That
@@ -846,21 +1255,23 @@ design point, run on the same scoped questions with the identical
 scorer (n=48/39, paired bootstrap). The comparison has two reference
 points, and the gap between them is the finding:
 
-\begin{table}[t]
+\begin{table*}[!t]
 \centering
 \caption{Capability pipeline versus final-configuration KNC (same
 corpus, same questions, same scorer).}
 \label{tab:genrag}
 \small
-\begin{tabularx}{\textwidth}{lXXXXXXX}
+\begin{tabular}{lccccccc}
 \toprule
-System & nea R@10 & nea cov & nea MRR & ner R@10 & ner cov & ner MRR & p50 \\
+\multirow{2}{*}{System} & \multicolumn{3}{c}{Association (nea)} & \multicolumn{3}{c}{Single-intent (ner)} & \multirow{2}{*}{p50} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+ & R@10 & cov & MRR & R@10 & cov & MRR &  \\
 \midrule
 genrag (query-time LLM) & 0.896 & \textbf{0.634} & 0.735 & 0.872 & 0.543 & \textbf{0.780} & 79--83\,s \\
 KNC (final config) & 0.938 & 0.599 & 0.735 & 0.949 & \textbf{0.675} & 0.772 & 1.5--1.8\,s \\
 \bottomrule
-\end{tabularx}
-\end{table}
+\end{tabular}
+\end{table*}
 
 \begin{itemize}
 \item \textbf{Against the collapsed-era system (2026-09-24 baseline,
@@ -870,16 +1281,21 @@ bought recall that the impoverished asset side could not deliver, at
 ${\sim}$60$\times$ latency and 2$\times$N LLM calls per question set
 with zero asset accumulation.
 \item \textbf{Against the final production configuration} (the table
-above), the same pipeline's association edge shrinks to \textbf{+3.5pt
-(CI [$-$4.8, +11.9], not significant)} and single-intent coverage
-\textbf{loses $-$13.2pt (CI [$-$20.7, $-$5.5], significant)}---still at
+above), the same pipeline's association difference is \textbf{+3.5pt
+with CI [$-$4.8, +11.9]}---an imprecise estimate of the difference, not
+evidence of parity: establishing equivalence would require a
+pre-specified equivalence margin and a narrower interval. Single-intent
+coverage \textbf{loses $-$13.2pt (CI [$-$20.7, $-$5.5], significant)}---still at
 79--83\,s per query.
 \end{itemize}
 
 The trajectory between the two reference points is the paper's thesis
 in one experiment: query-time LLM spending buys the most when the
 infrastructure is poorest, and its edge evaporates as the asset side
-matures---the matured system dominates on both families at ${\sim}$1/50
+matures---the matured system significantly exceeds the pipeline on
+single-intent coverage ($-$13.2pt for the pipeline) while the residual
+association difference (+3.5pt for the pipeline) is not statistically
+resolved, at ${\sim}$1/50
 the per-query latency and zero marginal LLM cost. Capability renting
 and asset accumulation are complements in time, not competitors in
 configuration: rent while you build, stop renting when the assets
@@ -898,96 +1314,66 @@ stayed green. A three-source, corpus-attested term lexicon (3{,}702 entries)
 and a full-chain rebuild restored it to 1{,}871 canonical entities with
 25.1M links and a functioning relation layer (44{,}043 typed relations, 1.56M
 evidence rows); scoped retrieval over the repair window moved +6.6/+7.3
-cov@10 (system-level attribution, Section~\ref{sec:results}). Two honest
-boundaries: the top-linked entities after repair remain generic short
-symbols (admission without ranking), and the repair itself surfaced four
-secondary engineering failures---most instructively a parameter-order bug
-whose rows were silently swallowed by \texttt{INSERT IGNORE} for seven hours
-while jobs, throughput, and entity creation all read healthy. Dictionary
-quality is the load-bearing wall of dictionary-driven extraction; job
-completion is not row-level truth. The full incident forensics and lexicon
-methodology are reported in the companion lexicon-quality manuscript.
+cov@10 (system-level attribution; the repair-window trajectory cannot
+be attributed to configuration changes alone, Section~\ref{sec:results}). The top-linked entities after
+repair remain generic short symbols (admission without ranking). The
+repair also surfaced secondary engineering failures whose forensics
+belong to the companion lexicon manuscript; the finding that matters
+here is the monitoring lesson. During a link-writer bug, jobs,
+throughput and entity creation all read healthy while the asset was
+being written into a per-query-invisible state, and the original
+dashboard-derived duration narrative was later corrected by the
+surviving rows' own timestamps---job-level heartbeats measure work, not
+asset state, and ``DONE'' is indistinguishable from ``DONE with correct
+rows'' at that layer. The checks that catch this class are row-level:
+registry growth alarms keyed to ingested-document counts, dictionary
+hit-rate sampling, and affected-row accounting beside every bulk
+\texttt{INSERT IGNORE}---adopted as hard rules after the incident.
+Full incident forensics and lexicon methodology: companion lexicon
+manuscript.
 
 \subsection{Negative results (with equal rigour to positive ones)}
 
-\textit{Naming convention: findings carry internal workstream codes
-(B4x--B9x, O-serials, and \texttt{KNC\_*}/\texttt{RRF\_*} environment
-gates) verbatim, because those identifiers are the join keys into the
-released evaluation log and repository history; they name no external
-systems.}
+\textit{Mechanism-level detail, environment-gate identifiers and per-arm
+numbers for every finding below live in the released evaluation log; the
+main text carries verdicts only.}
 \label{sec:negative}
 
-\begin{enumerate}
-\item \textbf{Reranker.} After fixing the gateway bug (thinking-tag prefix
-removal) and a control-flow bug (reranked chunks overwritten by RRF),
-rerank still showed no significant gain (nea MRR +0.9pt, CI includes 0; p50
-+2.8\,s). The top-60 candidates from fusion are already consensus; the
-bottleneck is recall (cov@k), not ranking.
+\begin{table*}[!t]
+\centering
+\caption{Configuration-side rejections: intervention, conditions, observed
+effect, verdict. Scope column marks the lane/model/date the verdict
+applies to; per-arm numbers and env gates are in the released evaluation
+log. CI = paired bootstrap 95\%.}
+\label{tab:negresults}
+\small
+\begin{tabularx}{\textwidth}{p{0.27\textwidth}p{0.42\textwidth}X}
+\toprule
+Intervention (scope) & Observed effect under stated conditions & Verdict \\
+\midrule
+Normal-lane reranker (Qwen3-Reranker-4B, scoped sets, 2026-09) & nea MRR +0.9pt, CI includes 0; p50 +2.8\,s; top-60 consensus already strong & Rejected---for this lane/model/date only; deep-lane rerank later adopted (below) \\
+Doc caps (RRF\_DOC\_CAP=2) & multi-gold association coverage up, single-gold MRR $-$11pt & Rejected (structural trade) \\
+Static channel weights & fusion effects are query-type-dependent (Section~\ref{sec:channels}) & Rejected; intent gating adopted in this system \\
+Document-utility priors (\texttt{publish\_year} decay, 169/300 docs back-filled) & moves nea and ner in opposite directions; linear gain--loss frontier on both sides & Rejected; topical-adjacency failure hypothesis recorded \\
+HyDE docvec vote (training-free, $w{=}1.0$) & nea MRR $-$6.5pt, per-query CI significant; cov@20 gain NS; trade linear in $w$ & Rejected; slot env-gated for trained rewriters \\
+Multi-query fan-out (uniform RRF) & under adopted config: nea R@10 $-$8.3pt / MRR $-$20.5pt, ner R@10 $-$10.3pt (CI excl.\ 0); +8.4pt cov@10 under weak fusion & Rejected (fan-out gains apply to weak retrievers) \\
+Pointwise rerank (top-20) & MRR $-$37.7pt on multi-gold questions (partially-relevant golds score below consensus) & Rejected \\
+Listwise LLM rerank & statistically flat & Rejected \\
+Channel fetch depth (assoc-intent $\times$3) & +4.0pt cov@10 significant on the 300-doc slice; $-$2.6pt NS at full-corpus scale & Rolled back (slice $\neq$ corpus is itself a finding) \\
+Generation-side context pruning & +6.0/+3.3pt correctness directional NS (n=39/87); +1.8pt faithfulness significant; mechanisms interfere ($-$5.1pt) & Not adopted; question-type conditioning is future work \\
+\bottomrule
+\end{tabularx}
+\end{table*}
 
-\item \textbf{Doc caps} (RRF\_DOC\_CAP=2): improved multi-gold association
-coverage but degraded single-gold MRR by 11pt---a structural trade-off, not
-a bug.
+A frozen 261-question paraphrase-robustness set shows the system is
+already phrasing-stable on these sets (hit@10 retention
+96.5\%/88.9\%)---consistent with the null query-side results above,
+though not a bound on query-side mechanisms in general.
 
-\item \textbf{Static channel weights}: rejected on the principle that fusion
-gains are query-type-dependent; intent gating is the only viable path.
+Two distribution-conditional findings connect directly to RQ2 and are
+kept as prose.
 
-\item \textbf{Document-utility priors} (O8): per-document prior conditioning
-of the docvec vote (recency decay via \texttt{publish\_year}, injected as an
-entry-level multiplier in the rank fusion) was ablated with real publication
-years back-filled for 169/300 slice documents (2017--2026). The prior moves
-nea and ner in opposite directions on the two metrics; the gain--loss
-frontier is linear on both sides---a linear trade, not a tunable shape.
-Failure attribution: training-free abstracts are ``too fluent''---they match
-topically adjacent non-gold abstracts as strongly as gold, while the gold
-criterion is entity-pair co-occurrence, not topical adjacency. The
-deep-lane rewrite slot remains open for trained rewriters; the mechanism
-stays env-gated for reuse.
-
-\item \textbf{Query-side augmentation family} (equal-rigour rejections): LLM
-multi-query fan-out with uniform RRF is significantly negative under the
-adopted configuration (nea R@10 $-$8.3pt, MRR $-$20.5pt; ner R@10
-$-$10.3pt---per-query CI excludes zero) though positive (+8.4pt cov@10)
-under weak fusion---i.e.\ the literature's fan-out gains apply to weak
-retrievers and are pre-empted by tuned fusion; pointwise reranking of the
-top-20 candidates is significantly harmful on multi-gold questions (MRR
-$-$37.7pt: partially-relevant golds score below multi-channel consensus);
-listwise LLM reranking is statistically flat. A frozen 261-question
-paraphrase-robustness set shows the system is already phrasing-stable
-(hit@10 retention 96.5\%/88.9\%), explaining why query-side gains have
-nothing left to buy.
-
-\item \textbf{Channel fetch depth} (O12): association-intent depth tripling
-gains +4.0pt cov@10 (significant) on the 300-doc slice but $-$2.6pt
-(non-significant, negative) at full-corpus scale---weak-ticket interference
-grows super-linearly with corpus size. Rolled back to depth 1;
-slice-significant $\neq$ corpus-significant is itself a reported finding.
-
-\item \textbf{Generation-side context organisation}: sentence-level
-query-aware pruning of the retrieved context yields +6.0/+3.3pt
-answer-correctness directionally over two rounds (n=39/87, ns) and a
-significant +1.8pt faithfulness on the 87-question round; document-card
-headers help relevancy only; combining both mechanisms interferes
-($-$5.1pt). Conditioning the pruner on question type is future work.
-
-\item \textbf{Graph-side governance and bipartite diffusion}: motivated by
-graph-asset audits (87\% of entity--relation edges are bibliographic
-authorship stars; the doc--entity bipartite with 1.37M links is the densest
-asset), three mechanisms were ablated against the deployed deep lane:
-(a)~typed-edge governance of PPR (excluding/downweighting authored-by and
-affiliated-with edges, with bibliographic seed-type guards), (b)~dense
-entity-linking fallback for seeds when the lexicon scan misses, and
-(c)~a doc-level bipartite PPR channel. Mechanism-level checks confirm the
-interventions changed walk behaviour (person-seeded expansions drop
-31$\to$0 entities). Outcome: (a)+(b) are bitwise identical to baseline on
-every question---PPR's total contribution (${\sim}$1 question) sits below
-the deep lane's sensitivity floor; (c) is significantly negative (nea hit@10
-$-$4.2pt, CI excludes zero; hard-set $-$2.2pt; p50 +7\,s): the bipartite
-asset's value is already captured by the cooc channel's exact entity-pair
-intersection, and soft generalisation only dilutes fusion. All remain
-env/request-gated and disabled---the asset-layer positioning of graphs gains
-a sixth independent line of evidence.
-
-\item \textbf{LLM query understanding on the deep lane}: a single LLM call
+\paragraph{LLM query understanding on the deep lane.} A single LLM call
 per deep request classifies intent and extracts entity surfaces, overriding
 the template-word intent gate (natural-phrasing coverage 4/70) and feeding
 co-occurrence candidates. Verdict quality is high (48/48 template-assoc
@@ -995,48 +1381,65 @@ correctly labelled), yet on the target distribution of naturally-phrased
 association questions the hit count is unchanged (0 wins, 0 losses; MRR
 $-$0.04) and hard factual questions lose 2.2pt from assoc-mechanism false
 triggers: the bottleneck for natural association queries is not intent
-detection---the association machinery itself buys nothing there. Rejected;
+detection. Note what this ablation does \emph{not} show: at run time the
+co-occurrence machinery could not fire on the queried surfaces at all
+(trigger counts identical across arms---the surfaces were absent from the
+dictionary), so ``better intent detection buys no hits'' and ``the
+association channel has no value'' are two different claims, only the
+first of which is measured here. The dictionary backfill and channel-side
+ablation that separate the two causes follow below
+(Table~\ref{tab:naturalbridge}). Rejected;
 the understanding slot stays available for trained rewriters.
 
-\item \textbf{Deep-lane weight retune and graph-aware reranking} (both
-\textbf{ADOPTED}): single-variable attribution over the production tuning
-bundle shows the title-vector (docvec) channel actively harms the deep lane
-on both question families---its votes push co-occurrence winners out of the
-fusion pool, which reranking cannot recover (nea hit@20 $-$4.2pt, hard-set
-hit@10 $-$3.2pt); the doc-fusion step is the sole source of the hard-set
-hit@20 gain and alias expansion is strongly positive, so both stay.
-Complementarily, appending each candidate's top linked document entities
-(mention-count top-8) to the reranker input lets graph assets reach the
-ranking surface directly, bypassing RRF dilution---the first positive
-graph-side mechanism of the campaign. The deployed combination (deep lane
-drops docvec and the synq boost; rerank inputs carry document entities)
-improves every metric on both families---nea 0.896/0.917/0.583 $\to$
-0.958/1.000/0.767 (hit@10/hit@20/MRR, hit@20 saturated), hard-set
-0.527/0.634/0.380 $\to$ 0.591/0.645/0.429---with 4 of 6 metrics significant
-under paired bootstrap and no negative metric. The normal lane keeps its
-own tuned configuration: per-lane weights are precisely what the dual-track
-design is for.
-
-\item \textbf{Asset-layer completions and the generation-side path}:
-query-mined dictionary backfill adds 246 corpus-verified concepts (PWR
-df=88, nuclear physics df=175---core terms previously absent), taking
-template-association hit@10 to a saturated 1.000 (48/48) while
-natural-phrasing co-occurrence coverage grows 50\%; alias expansion (749
-validated entries) is retained as a no-cost asset. A latent budget bug
-(the deep lane's 120\,s deadline was frozen at import time, so graph/cooc
-channels were silently skipped under load) is fixed and the graph channel
-genuinely serves deep requests again. With chains live, injecting
-knowledge-chain evidence into the generation context yields correctness
-+0.25 (CI [+0.021, +0.521], n=48)---the first significant positive result
-for structural graph evidence, completing the positioning: asset layer feeds
-retrieval, structural layer feeds generation; graphs need not enter ranking
-to pay their way. On a purpose-built 99-question natural-phrasing
-association set (template words banned, gold $=$ co-mention documents), the
-co-occurrence channel's marginal is +10.1pt hit@10 (CI [+5.1, +16.2], 10
-wins 0 losses) over the identical configuration with the channel off---the
-asset-layer route's definitive number: template saturated at 1.000, natural
-phrasing +10pt at zero cost.
-\end{enumerate}
+\paragraph{Graph-side mechanisms and asset completions---one
+positioning, consolidated.} Graph-asset audits (87\% of entity--relation
+edges are bibliographic authorship stars; the doc--entity bipartite is the
+densest asset) motivated three governance mechanisms, a deep-lane retune
+and dictionary backfill; their distribution-conditional effects are
+tabulated in Table~\ref{tab:channmatrix} and Fig.~\ref{fig:forest}, so we
+state only the verdicts here. Structural traversal does not pay in
+ranking: typed-edge PPR governance and dense seed fallback are
+\emph{bitwise identical} to baseline (PPR's total contribution sits below
+the deep lane's sensitivity floor), and the doc-level bipartite PPR
+channel is significantly negative (nea hit@10 $-$4.2pt---the bipartite
+asset's value is already captured by the co-occurrence channel's exact
+entity-pair intersection). The deep-lane retune (\textbf{adopted}) drops
+the docvec channel, whose votes push co-occurrence winners out of the
+fusion pool (nea hit@20 $-$4.2pt), and feeds each reranker candidate its
+top linked document entities, letting graph assets reach the ranking
+surface directly (nea hit@10 +6.2pt, 0.896$\to$0.958; 4 of 6 metrics
+significant, none negative). Dictionary backfill (246 corpus-verified
+concepts) takes template-association hit@10 to a saturated 1.000 and
+unlocks the co-occurrence channel on natural phrasing (+10.1pt;
+reconciled with the rejected LLM-understanding ablation above in
+Table~\ref{tab:naturalbridge}); the latent deep-lane budget bug it
+surfaced (deadline frozen at import time, graph/cooc channels silently
+skipped under load) is fixed. With chains live, injecting knowledge-chain
+evidence into the generation context yields correctness +0.25 (CI
+[+0.021, +0.521], n=48)---the first significant positive for structural
+graph evidence. The positioning, stated once: \textbf{the asset layer
+feeds retrieval (dictionary, aliases, links); the structural layer feeds
+the deep lane's reranker and generation; graphs need not enter ranking to
+pay their way.} Per-mechanism details, env gates and per-arm numbers are
+in the released evaluation log.
+\begin{table*}[!t]
+\centering
+\caption{Two natural-phrasing experiments, reconciled: what each measures.}
+\label{tab:naturalbridge}
+\small
+\begin{tabularx}{\textwidth}{lXX}
+\toprule
+ & LLM understanding (deep lane) & co-occurrence channel ablation \\
+\midrule
+Question set & realq39 production real queries (target; hard93/nea48 controls) & 99 natural-phrasing association probes (template words banned) \\
+Dictionary state & pre-K1-backfill & post-K1-backfill (+246 corpus-attested concepts) \\
+Intervention & LLM intent+surface classification replaces template gate & co-occurrence channel on vs.\ off \\
+Co-oc firings & identical across arms (surfaces absent from dictionary) & 37/99 (on) vs.\ 0/99 (off) \\
+hit@10 & 0.872 both arms, 0 wins 0 losses; MRR $-$0.04 & 0.636 vs.\ 0.535, +10.1pt [+5.1, +16.2] \\
+Causal claim & better intent detection alone buys no hits & the channel buys +10.1pt once the dictionary supplies surfaces \\
+\bottomrule
+\end{tabularx}
+\end{table*}
 
 \subsection{Engineering findings}
 \label{sec:eng}
@@ -1048,17 +1451,21 @@ shared index cause zero steady-state degradation of the dense channel
 ($\pm$6pt arm-level on borderline questions) is a transient, not a permanent
 loss.
 
-\item \textbf{LightRAG scale wall}: single-process entity merging is
-superlinear in graph size---82 docs/11.5k chunks/13k+ entities $\to$
-${\sim}$1 doc/hour after the first 47 docs. LLM extraction concurrency
-(16$\to$70) helps; merge does not.
+\item \textbf{LightRAG serial-merge wall}: in this implementation and configuration
+(LightRAG 1.4.13, single-process merge), entity merging degraded to
+${\sim}$1 doc/hour after the first 47 docs of an 82-document subset
+(11.5k chunks, 13k+ entities). LLM extraction concurrency (16$\to$70)
+helps; merge does not. A single implementation/version/configuration
+observation, not a complexity characterization of the family.
 
 \item \textbf{Link-edge mass is redundant}: randomly deleting 30/60/90\% of
 the 158{,}057 entity links of the test KB causes no statistically
 significant retrieval change (nea at 90\% deletion: R@10 $-$2.1pt, cov@10
-$-$2.7pt, all CI include zero; ner bitwise unchanged). Edge quality
-dominates edge count, and link value anchors in the structural surfaces
-(governance, navigation, evidence panels), not in the fusion vote.
+$-$2.7pt, all CI include zero; ner bitwise unchanged). No link-mass effect was detected at this configuration and sample
+size; edge \emph{quality} was not manipulated, so a
+quality-over-quantity law is not established. Link value in this system
+anchors in the structural surfaces (governance, navigation, evidence
+panels), not in the fusion vote.
 
 \item \textbf{Schema binding is the root of the entity channel}: binding a
 corpus to the \texttt{generic} schema yields 14 canonical entities;
@@ -1066,16 +1473,64 @@ rebinding to \texttt{nuclear\_electronics} yields 1{,}166---an 83$\times$
 difference with zero code changes, purely from the dictionary.
 \end{enumerate}
 
+\subsection{Safety-relevant failure modes}
+
+In nuclear-domain analysis a missed or wrong passage can propagate into
+safety-relevant conclusions, so we state the failure model explicitly.
+In \emph{offline} evaluation, misses are measured against the
+constructed gold (cov@k, any-hit); \emph{online} there is no gold, so
+unmeasured misses are not knowable from the system's own output---an
+absence of reported gaps is not evidence of absence. Wrong-passage risk
+is not eliminated by infrastructure: mandatory provenance makes every
+returned claim \emph{checkable} at read time (a verification
+affordance for analysts, not a quantified bound on wrong-answer risk);
+the audits bound different things---Section~4.2's programmatic audit
+measures lookup integrity, and the citation-faithfulness round measures
+how often generated citations carry supportive evidence (75.1\%
+faithful-or-partial, an automated judgment with disclosed limits). The
+documented production failure was
+asset-side---a collapsed dictionary---and capability bits do degrade
+quietly by design, a deliberate trade now monitored at row level
+(Section~8.1). The system is an evidence-delivery layer for analysts,
+not an authoritative source; traceability is the safety mechanism, and
+uncited claims should be treated as unsupported.
+
 \subsection{Limitations}
 
 \begin{enumerate}
 \item Single-corpus domain (nuclear electronics) for the primary ablation;
 English benchmarks provide external validity but not domain depth.
-\item Synquestion generation requires LLM access (${\sim}$40 calls per
-document for synq + relations); offline corpora need a pre-processing pass.
+\item Synquestion generation requires LLM access---doc2query dominates the
+bill (${\sim}$3 calls per chunk, ${\sim}$62 per document at our
+${\sim}$1{,}200-character chunking; 18{,}454 calls for the 300-document
+slice), plus relation adjudication; offline corpora need a pre-processing
+pass.
 \item The intent gate is regex-based; LLM-based query classification could
 improve coverage but adds latency (SelRoute: 83\% accuracy with regex).
 \end{enumerate}
+
+\subsection{Conclusion}
+
+This study examined fusion granularity and semantic-asset use in
+bilingual nuclear-literature retrieval. The archived evidence shows
+conditional channel effects---direct entity-dependent retrieval adds
+nothing measurable on the scoped development sets, while the adaptive
+co-occurrence path gains +10.1pt any-hit@10 on naturally phrased
+association questions---and motivates separating candidate
+availability, document-level score aggregation, and passage emission:
+the frozen-score F0--F3 replay now separates them (aggregation
+$+$4.9pt cov@10 on single-intent; emission order $+$10.3pt any-hit@10
+at exactly zero document-budget cost). Source audits
+distinguish addressability (500/500 spans, 499/500 hashes) from the
+semantic support of generated citations (59.6\% faithful under
+automated judgment); both are needed and neither substitutes for the
+other. The production deployment provides a large-scale setting for
+these questions; the comparative conclusions remain limited to the
+evaluated profiles, question distributions, and---for public
+benchmarks---to within-system metric decompositions until a
+protocol-aligned external rerun exists. Fixed-profile component
+comparisons and independently assessed relevance are the outstanding
+work.
 
 \section*{Data availability}
 
@@ -1087,7 +1542,12 @@ the institutional GitLab \url{https://devgit.cdut.edu.cn/chenzhiqian/knowledgene
 carries the full development history, access on request). The journal corpus itself is
 third-party copyrighted material; we release document-level metadata
 (venue/year/identifier) and chunk-level gold annotations for the evaluation
-slices instead. The production incident telemetry in
+slices instead; per-query run files under \texttt{eval/baselines/runs/}
+reproduce the paired comparisons reported in this paper \emph{except}
+the historical 400-pool control of Table~\ref{tab:bench-sameemb},
+whose per-query files were overwritten by later full-corpus runs
+sharing the same filenames (disclosed there), and we invite
+reviewers to re-score them with the released harness. The production incident telemetry in
 Section~\ref{sec:incident} is sanitised log excerpts.
 
 \section*{Conflict of interest}
@@ -1096,30 +1556,36 @@ The authors declare no competing interests.
 
 \begin{thebibliography}{16}
 
-\bibitem{fayyaz} Y.~Fayyaz, W.~Elouataoui, et al. Natural language
-processing in the nuclear industry: Opportunities and challenges.
+\bibitem{fayyaz} Y.~Fayyaz, W.~Elouataoui, Y.~Gahi, K.~El-Khatib,
+G.~Harvel. Natural language processing in the nuclear industry:
+Opportunities and challenges.
 \emph{Nuclear Technology}, 2025. doi:10.1080/00295450.2025.2481358.
 
-\bibitem{radiantllm} RADIANT-LLM: An agentic retrieval augmented generation
-framework for safety-critical nuclear engineering. arXiv:2604.22755, 2026.
+\bibitem{radiantllm} Z.~N.~Ndum, J.~Tao, J.~Ford, M.~Yim, Y.~Liu.
+RADIANT-LLM: An agentic retrieval augmented generation framework for
+reliable decision support in safety-critical nuclear engineering.
+arXiv:2604.22755, 2026.
 
 \bibitem{nukelm} D.~Burke, K.~Pazdernik, et al. NukeLM: Pre-trained and
 fine-tuned language models for the nuclear and energy domains.
 arXiv:2105.12192, 2021.
 
-\bibitem{curielm} CurieLM: Enhancing large language models for nuclear
-domain. \emph{EPJ Web of Conferences} 302, 17006, 2024 (SNAMC 2024);
-ontology integration in CEUR-WS Vol.~3967.
+\bibitem{curielm} Z.~Bouhoun, A.~Allali, R.~Cocci, M.~A.~Assaad,
+A.~Plancon, F.~Godest, et al. CurieLM: Enhancing large language models
+for nuclear domain applications. \emph{EPJ Web of Conferences} 302,
+17006, 2024 (SNA+MC 2024). doi:10.1051/epjconf/202430217006.
 
-\bibitem{hydrollm} Toward HydroLLM: A benchmark dataset for
-hydrology-specific knowledge assessment for large language models.
-\emph{Environmental Data Science}, Cambridge University Press, 2025.
+\bibitem{hydrollm} D.~Kizilkaya, R.~Sajja, Y.~Sermet, I.~Demir. Toward
+HydroLLM: A benchmark dataset for hydrology-specific knowledge assessment
+for large language models. \emph{Environmental Data Science} 4, 2025.
+Cambridge University Press.
 
 \bibitem{hipporag} B.~J. Guti\'errez et al. HippoRAG: Neurobiologically
 inspired long-term memory for large language models. NeurIPS 2024.
 arXiv:2405.14831.
 
-\bibitem{hipporag2} HippoRAG 2: From RAG to memory: Non-parametric
+\bibitem{hipporag2} B.~Jim\'enez Guti\'errez, Y.~Shu, W.~Qi, S.~Zhou,
+Y.~Su. HippoRAG 2: From RAG to memory: Non-parametric
 continual learning for large language models. ICML 2025. arXiv:2502.14802.
 
 \bibitem{lightrag} LightRAG: Simple and fast retrieval-augmented generation.
@@ -1154,6 +1620,67 @@ Recursive abstractive processing for tree-organized retrieval.
 contextual neural language modeling. \emph{Proc. SIGIR}, 2019.
 arXiv:1905.09217.
 
+\bibitem{s2orc} K.~Lo, L.~L.~Wang, M.~Neumann, R.~Kinney, D.~S.~Weld.
+S2ORC: The Semantic Scholar Open Research Corpus. \emph{Proc. ACL},
+2020. arXiv:1911.02782.
+
+\bibitem{clir} P.~Galu\v{s}\v{c}\'akov\'a, D.~W.~Oard, S.~Nair.
+Cross-language information retrieval. arXiv:2111.05988, 2021.
+
+\bibitem{ragchecker} D.~Ru, L.~Qiu, X.~Hu, et al. RAGChecker: A
+fine-grained framework for diagnosing retrieval-augmented generation.
+NeurIPS 2024. arXiv:2408.08067.
+
+\bibitem{alce} T.~Gao, H.~Yen, J.~Yu, D.~Chen. Enabling large language
+models to generate text with citations. \emph{Proc. EMNLP}, 2023.
+arXiv:2305.14627.
+
 \end{thebibliography}
+
+\appendix
+
+\section{Historical same-embedder pool control}
+\label{app:sameemb}
+
+A same-embedder comparison (all arms Qwen3-Embedding-8B, identical
+stack and scoring, 400-document candidate pools, 40/46/23 questions per
+benchmark) was run once at pool scale in a 2026-09 campaign. Its
+per-query files were later overwritten by the full-corpus n=1{,}000
+runs that reused the same filenames, so these numbers are retained as a
+historical summary only: no confidence interval can be derived from
+archived artefacts today, and the data availability statement discloses
+this exception.
+
+\begin{table*}[!ht]
+\centering
+\caption{Historical same-embedder control (cov@10; all arms
+Qwen3-Embedding-8B, 400-doc pools, 2026-09 pool campaign). Directional
+historical summary; per-query files no longer exist.}
+\label{tab:bench-sameemb}
+\begin{tabular}{llll}
+\toprule
+System & HotpotQA & 2Wiki & MuSiQue \\
+\midrule
+BM25 & 0.888 & 0.766 & 0.467 \\
+LlamaIndex dense & 0.963 & 0.772 & 0.732 \\
+\textbf{HippoRAG 2 (reproduced)} & \textbf{1.000} & \textbf{0.913} & 0.779 \\
+KNC dense & 0.988 & 0.826 & \textbf{0.826} \\
+KNC fusion & 0.975 & 0.794 & 0.656 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{figure*}[!ht]
+\centering
+\includegraphics[width=0.98\textwidth]{../A线-figures/fig5_sameembed.pdf}
+\caption{Historical same-embedder control (cov@10; all arms
+Qwen3-Embedding-8B, 400-document candidate pools, 40/46/23 questions
+per benchmark; pool-scoped, not full-corpus; per-query files no longer
+exist, see Table~\ref{tab:bench-sameemb}). KNC fusion trails KNC dense
+on all three pools, consistent with the top-of-list fusion cost
+measured at full scale (Section~\ref{sec:channels}). Directional
+historical evidence; no per-bar significance is claimable.}
+\label{fig:sameembed}
+\end{figure*}
 
 \end{document}
