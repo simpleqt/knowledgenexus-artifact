@@ -256,6 +256,28 @@ count, selection quality, and per-source method are not separately
 identified --- a size-matched frequency-candidate control and blind
 old/new matched-context judging are the priority follow-ups.
 
+\textbf{Fourth-round verification: semantics, governance, monitors.}
+Three follow-ups on the same frozen samples close the declared gaps.
+(i)~\emph{Blind term-mention judging} (entity-uniform; judge
+Qwen3.6-35B, temp 0, disclosed family):
+old and new dictionaries are \emph{locally} indistinguishable (0.940
+[0.890, 0.968] vs.\ 0.927 [0.873, 0.959] of matched spans are genuine
+term mentions) --- the collapse is not per-link falsehood but a
+vocabulary-and-mass failure, which is why per-link auditing alone could
+not have caught it; an \emph{equal-size frequency-only control}
+(3{,}733 terms, top corpus frequency, no selection) reads 0.450
+[0.356, 0.548] --- size does not buy validity; selection does. (ii)~\emph{Governance verified}: short-symbol hits removed by
+case-sensitivity are 0.033 [0.009, 0.114] valid vs.\ 0.700 [0.575,
+0.801] for retained ones --- the $-$12.8\% link cut removes almost
+purely error mass (retained still carries 30\%). (iii)~\emph{Graded
+degradation} (replacement axis: drop $m$\% of v2.1, keep all category
+words): the $C_{10}$ band fires at $\geq$75\% substitution (0.371) and the
+full collapse reproduces (0.513, bitwise-identical arm); random
+shrinkage fires count monitors first (links $-$50\% at 50\% shrinkage)
+while $C_{10}$ stays flat to 50\%; moderate substitution (10--50\%) is a
+blind zone for both --- no single gold-free monitor covers it; the stack
+deploys as a set.
+
 \textbf{Why 692 entities here vs 1{,}871 in production
 (\S\ref{sec:after})?} The isolated frame counts only entities induced
 by scanning 2{,}000 chunks (0.034\% of the library) under replica
@@ -480,7 +502,8 @@ thresholds read post-hoc from these 13 libraries --- a starting point,
 not a validated norm. Validation need not re-collapse production:
 graded lexicon degradation injected offline into a frozen slice,
 reporting alarm precision, false-positive rate, detection delay, and
-size sensitivity, is the natural protocol --- future work here. \textbf{(b)~entity
+size sensitivity, is the natural protocol --- run as the graded-degradation arm of the
+fourth-round verification above. \textbf{(b)~entity
 cardinality ratio} (coarse secondary, gameable both ways).
 \textbf{(c)~top-entity name audit} (five-minute quarterly control).
 \textbf{(d)~target-table growth reconciliation} --- the B95
@@ -507,11 +530,13 @@ faithfully, and a dictionary-only swap reproduces the signature.
 \textbf{What does corpus-presence gating repair, and what remains?}
 Terminology and coverage (annotated documents ${\sim}$51.5\%$\to$98.5\%)
 --- but a generic tail persists; presence is necessary, not sufficient.
-\textbf{What can gold-free diagnostics see?} Distribution and names,
-not link correctness: 0.84 stratified judged-valid (0.58 on short
-symbols) is model-assisted, and the repair's semantic gain awaits blind
-old/new comparison. The incident motivated and validated; the controlled
-swap and stratified audit carry the evidence.
+\textbf{What can gold-free diagnostics see?} Distribution and names;
+per-link truth they cannot see --- blind judging shows old-dictionary
+links are locally as ``valid'' as new ones (0.94 vs 0.93), so the
+collapse hides from per-link audits, and the semantic gain runs through
+vocabulary and mass (equal-size frequency control: 0.45 vs 0.93). The
+incident motivated and validated; the controlled swap, the stratified
+audit, and the graded-degradation alarms carry the evidence.
 
 \section{Limitations}\label{sec:limitations}
 
@@ -529,8 +554,10 @@ be non-random. (6)~The isolated experiment uses a semantic-replica
 scanner (not instrumented against the service path) and
 committed-snapshot dictionaries over ten resamples of one corpus --- a
 stability check, not cross-domain evidence; its metrics are structural,
-with semantic reading confined to the sampled audit, and the governance
-arms await removed-vs-retained link verification.
+with semantic reading confined to sampled audits (fourth-round blind
+judging included: same judge family, term-mention rubric not
+comparable to the link audit); governance verdicts (removed 0.033 vs
+retained 0.700) inherit that exposure.
 
 \begin{acks}
 Anonymous artifact: \url{https://github.com/simpleqt/knowledgenexus-artifact}
@@ -539,7 +566,7 @@ resample results, figures, and the companion system preprint).
 \end{acks}
 
 \bibliographystyle{ACM-Reference-Format}
-\begin{thebibliography}{7}
+\begin{thebibliography}{7}\footnotesize
 
 \bibitem{cvalue} K.~Frantzi, S.~Ananiadou, H.~Mima. Automatic recognition
 of multi-word terms: the C-value/NC-value method. \textit{Int. J. on

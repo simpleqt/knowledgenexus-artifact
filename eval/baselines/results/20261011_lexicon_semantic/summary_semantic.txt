@@ -1,0 +1,7 @@
+# 词典语义盲判（judge=qwen3.5-35b(=3.6-35B-A3B 权重) temp0，术语性提及判，entity-uniform，同冻结 10 样本）
+
+old-v2.0: n=150 term-mention-valid 141/150 = 0.940 [0.890,0.968] | valid&domain 89 valid&generic 52 unparseable 0 | span_ok 150/150
+new-v2.1: n=150 term-mention-valid 139/150 = 0.927 [0.873,0.959] | valid&domain 89 valid&generic 50 unparseable 1 | span_ok 150/150
+freq-control: n=100 term-mention-valid 45/100 = 0.450 [0.356,0.548] | valid&domain 15 valid&generic 30 unparseable 1 | span_ok 100/100
+gov-removed: n=60 term-mention-valid 2/60 = 0.033 [0.009,0.114] | valid&domain 1 valid&generic 1 unparseable 0 | span_ok 60/60
+gov-retained: n=60 term-mention-valid 42/60 = 0.700 [0.575,0.801] | valid&domain 33 valid&generic 9 unparseable 0 | span_ok 60/60

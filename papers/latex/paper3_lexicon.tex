@@ -44,7 +44,14 @@ concentration falls 0.419$\to$0.345; a risk-stratified 300-link audit
 (187 distinct entities; a stratum-mixed rate, not a link-uniform
 estimate) reads 0.84 overall---0.95 on domain terms, 0.58 on short
 ambiguous symbols (a second Qwen-series model agrees on 96\% of its
-parseable subset).
+parseable subset); blind follow-ups verify the causal story's semantic
+side: matched spans are equally ``valid'' under old and new
+dictionaries (0.94 vs 0.93---the collapse is a vocabulary-and-mass
+failure, invisible to per-link audits), an equal-size frequency-only
+control reads 0.45, and case-sensitivity-removed short-symbol hits are
+0.03 valid vs 0.70 retained; graded-degradation alarms on frozen
+samples fire at $\geq$75\% category substitution while count monitors
+fire earlier under shrinkage---no single gold-free monitor suffices.
 \textbf{Limitations.} The generic tail survives repair (9\% of links
 sit on the single ambiguous symbol ``be''); retrieval-facing gains are
 not attributable to the lexicon alone (entity-channel ablation is
@@ -856,6 +863,52 @@ class motivates the treatment without yet demonstrating
 post-treatment validity---removed-vs-retained link verification is the
 open evaluation.
 
+\textbf{Fourth-round verification: semantics, governance, monitors.}
+Three pre-registered-then-run follow-ups on the same frozen samples
+close the gaps the third round declared.
+\emph{(i)~Blind term-mention judging.} The replica folds matched
+surfaces onto themselves, so the production audit's
+does-the-span-denote-the-canonical question is tautological here; we
+ask instead whether the matched span is, in context, a genuine
+terminological mention of the term (ordinary-language use of the same
+letters fails). Entity-uniform, 150 links per arm, judge Qwen3.6-35B at
+temperature 0 (same family as the lexicon classifier---disclosed, and
+the same exposure the cross-model check bounds). Result: \textbf{old
+and new dictionaries are locally indistinguishable}---0.940 [0.890,
+0.968] of v2.0's matched spans are genuine term mentions vs.\ 0.927
+[0.873, 0.959] for v2.1 (domain share among valid: 89/141 vs 89/139).
+The collapse is therefore not per-link falsehood: category-word links
+are individually ``valid'' mentions of generic concepts. What fails is
+the vocabulary and its mass---109 entities at $C_{10}$=0.513 vs 692 at
+0.300---and a per-link precision audit, however large, would not have
+caught the incident. \emph{(ii)~Equal-size frequency control.} A
+3{,}733-term dictionary drawn purely by corpus frequency (same
+$_{\!}$filters, no seed transplant, no LLM classification, no
+expansion; types randomly assigned from v2.1's inventory) reads
+\textbf{0.450 [0.356, 0.548]} on the same frozen text, and only 15 of
+its 45 valid links name domain concepts (v2.1: 89 of 139): the
+dictionary-size confound is answered directly---size buys nothing,
+selection carries the validity. \emph{(iii)~Governance verified.}
+Short-symbol hits that case-sensitivity removes (case-mismatched
+surfaces of $\leq$3-letter ASCII terms) are \textbf{0.033 [0.009,
+0.114]} valid; exact-case retained ones are 0.700 [0.575, 0.801]: the
+$-$12.8\% link cut removes almost purely error mass, and the retained
+class still carries 30\%---the treatment is demonstrated post-hoc, not
+merely motivated. \emph{(iv)~Graded-degradation monitor validation.}
+Two axes on the ten frozen samples, no gold labels: a
+\emph{replacement} axis mimicking the incident (drop $m$\% of v2.1,
+keep all category words) and a \emph{shrinkage} axis (random deletion).
+The $C_{10}$ band fires at $\geq$75\% replacement (0.371) and at 100\%
+reproduces the collapse arm bitwise (0.513/109 entities---the replica's
+cross-script determinism check); count monitors fire earlier under
+shrinkage (links $-$50\% at 50\% deletion) where $C_{10}$ stays flat
+to 50\%; and moderate replacement (10--50\%) moves $C_{10}$ by less
+than one sd while counts drop up to 41\%---a blind zone for both single-monitor
+families. Conclusion unchanged from the design argument, now with
+evidence: gold-free monitors deploy as a set, and the name audit
+remains the sharpest early discriminator of the vocabulary failure that
+per-link and count signals both miss.
+
 \textbf{Why 692 entities here vs 1{,}871 in production?} The isolated
 frame counts only entities induced by scanning 2{,}000 chunks (0.034\%
 of the library) under replica folding: rare terms need corpus mass to
@@ -944,11 +997,13 @@ sharper discriminator of the collapse itself. We propose a band alarm
 these are \emph{candidate} thresholds read post-hoc on this
 deployment's thirteen libraries, not on an external population---a
 starting point for adopters, not a validated norm. Prospective
-validation (false-positive/false-negative rates, detection delay, and
-size sensitivity) is future work, and is runnable as offline graded
-lexicon degradation on a frozen slice rather than re-collapsing
-production; libraries below a few hundred entities warrant
-size-stratified bands. The thirteen-library candidate calibration,
+validation (false-positive/false-negative behavior and size
+sensitivity) is now run as offline graded degradation on the frozen
+resamples (fourth-round verification, Section~\ref{sec:iso}): the band
+fires at $\geq$75\% category replacement and at severe shrinkage,
+count monitors fire earlier under pure shrinkage, and moderate
+replacement is a blind zone for both---monitors deploy as a set;
+libraries below a few hundred entities warrant size-stratified bands. The thirteen-library candidate calibration,
 summarized (the collapsed row is the pre-repair backup, not a live
 point):
 
@@ -1038,10 +1093,14 @@ ${\sim}$51.5\%$\to$98.5\%; link-bearing entities $\times$6.3 in the
 isolated frame) but admits a generic tail---presence is necessary, not
 sufficient, and ranking criteria are the open problem. \emph{What can
 gold-free diagnostics see?} Distribution and names---the collapse
-signature---but not link correctness: the 0.84 risk-stratified
-judged-valid rate, with 0.58 on short ambiguous symbols, is a
-model-assisted reading, and the repair's semantic gain itself still
-awaits blind old/new comparison on matched contexts. The production
+signature---but not per-link truth: blind judging shows old-dictionary
+links are locally as ``valid'' as new ones (0.94 vs 0.93), so the
+collapse hides from per-link audits; the semantic gain runs through
+vocabulary and mass (equal-size frequency control 0.45 vs 0.93), graded
+degradation bounds when the alarms fire (band at $\geq$75\%
+replacement; counts earlier under shrinkage), and the judged rates
+themselves (0.84 overall, 0.58 short symbols, removed 0.03 vs retained
+0.70) remain model-assisted readings with disclosed family exposure. The production
 incident supplied the motivation and the validation environment; the
 controlled lexicon swap and the stratified audit carry the evidence.
 
@@ -1056,8 +1115,9 @@ the problem, they do not remove it.
 channel ablation of Section~\ref{sec:after} shows the trajectory does not
 run through entity-channel fusion votes, but the full decomposition
 (lexicon old/new $\times$ retrieval configuration on/off) has not been
-run---it is runnable on frozen slices or isolated stacks via graded
-degradation, not only by re-collapsing production.
+run---the graded-degradation leg of the fourth-round verification (frozen
+slices, Section~\ref{sec:iso}) is a first step; the full
+lexicon$\times$configuration grid remains unrun.
 \item \textbf{Coverage}: two knowledge bases rebuilt (61{,}137 $+$
 13{,}408 documents) and, after the two main libraries drained (2026-10-09), the two smaller
 affected libraries (1{,}324 $+$ 119 documents) with the same playbook---where
@@ -1076,7 +1136,11 @@ each extended the repair; we report them as findings, not hidden costs.
 the link-precision audit is LLM-assisted (with programmatic span
 verification); the stratified 300-link sample replaces the uniform 100
 but entity-uniform sampling intentionally over-weights the tail
-relative to link frequency, and the cross-judge is same-vendor-family.
+relative to link frequency, and the cross-judge is same-vendor-family;
+the fourth-round blind judging (term-mention rubric), the equal-size
+control verdict, and the removed-vs-retained governance verdicts
+(0.033/0.700) inherit the same family exposure and a rubric not
+directly comparable to the production link audit.
 A human-adjudicated stratified sample is the
 natural next evaluation step.
 \end{enumerate}
