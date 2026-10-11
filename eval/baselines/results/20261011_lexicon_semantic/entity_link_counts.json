@@ -1,0 +1,245 @@
+{
+ "old-v2.0": {
+  "total_links": 29686,
+  "entities": 163,
+  "top15": [
+   {
+    "entity": "gamma",
+    "type": "particle",
+    "links": 4658
+   },
+   {
+    "entity": "method",
+    "type": "method",
+    "links": 1839
+   },
+   {
+    "entity": "parameters",
+    "type": "parameter",
+    "links": 1467
+   },
+   {
+    "entity": "terms",
+    "type": "term",
+    "links": 1423
+   },
+   {
+    "entity": "methods",
+    "type": "method",
+    "links": 1169
+   },
+   {
+    "entity": "parameter",
+    "type": "parameter",
+    "links": 1087
+   },
+   {
+    "entity": "term",
+    "type": "term",
+    "links": 974
+   },
+   {
+    "entity": "background",
+    "type": "parameter",
+    "links": 817
+   },
+   {
+    "entity": "spectrum",
+    "type": "energy_spectrum",
+    "links": 815
+   },
+   {
+    "entity": "particle",
+    "type": "particle",
+    "links": 782
+   },
+   {
+    "entity": "decay",
+    "type": "nuclear_reaction",
+    "links": 778
+   },
+   {
+    "entity": "particles",
+    "type": "particle",
+    "links": 676
+   },
+   {
+    "entity": "detector",
+    "type": "detector",
+    "links": 676
+   },
+   {
+    "entity": "beam",
+    "type": "experimental_facility",
+    "links": 675
+   },
+   {
+    "entity": "noise",
+    "type": "parameter",
+    "links": 667
+   }
+  ]
+ },
+ "new-v2.1": {
+  "total_links": 100424,
+  "entities": 1527,
+  "top15": [
+   {
+    "entity": "be",
+    "type": "isotope",
+    "links": 8154
+   },
+   {
+    "entity": "gamma",
+    "type": "particle",
+    "links": 4658
+   },
+   {
+    "entity": "alpha",
+    "type": "particle",
+    "links": 4649
+   },
+   {
+    "entity": "beta",
+    "type": "particle",
+    "links": 3074
+   },
+   {
+    "entity": "analysis",
+    "type": "method",
+    "links": 1928
+   },
+   {
+    "entity": "method",
+    "type": "method",
+    "links": 1839
+   },
+   {
+    "entity": "parameters",
+    "type": "parameter",
+    "links": 1467
+   },
+   {
+    "entity": "temperature",
+    "type": "parameter",
+    "links": 1440
+   },
+   {
+    "entity": "terms",
+    "type": "term",
+    "links": 1423
+   },
+   {
+    "entity": "particles",
+    "type": "particle",
+    "links": 1352
+   },
+   {
+    "entity": "range",
+    "type": "method",
+    "links": 1173
+   },
+   {
+    "entity": "methods",
+    "type": "method",
+    "links": 1169
+   },
+   {
+    "entity": "density",
+    "type": "parameter",
+    "links": 1168
+   },
+   {
+    "entity": "new",
+    "type": "experimental_facility",
+    "links": 1119
+   },
+   {
+    "entity": "parameter",
+    "type": "parameter",
+    "links": 1087
+   }
+  ]
+ },
+ "freq-control": {
+  "total_links": 1695296,
+  "entities": 4894,
+  "top15": [
+   {
+    "entity": "td",
+    "type": "experimental_facility",
+    "links": 68247
+   },
+   {
+    "entity": "of",
+    "type": "energy_spectrum",
+    "links": 64556
+   },
+   {
+    "entity": "sup",
+    "type": "photodetector",
+    "links": 44959
+   },
+   {
+    "entity": "in",
+    "type": "term",
+    "links": 42953
+   },
+   {
+    "entity": "in",
+    "type": "photodetector",
+    "links": 42953
+   },
+   {
+    "entity": "is",
+    "type": "method",
+    "links": 22782
+   },
+   {
+    "entity": "sub",
+    "type": "radiation_measurement",
+    "links": 21666
+   },
+   {
+    "entity": "mathrm",
+    "type": "semiconductor_detector",
+    "links": 21139
+   },
+   {
+    "entity": "frac",
+    "type": "photodetector",
+    "links": 13475
+   },
+   {
+    "entity": "tr",
+    "type": "particle",
+    "links": 13168
+   },
+   {
+    "entity": "as",
+    "type": "parameter",
+    "links": 12687
+   },
+   {
+    "entity": "as",
+    "type": "scintillator",
+    "links": 12687
+   },
+   {
+    "entity": "we",
+    "type": "semiconductor_detector",
+    "links": 11608
+   },
+   {
+    "entity": "we",
+    "type": "detector",
+    "links": 11608
+   },
+   {
+    "entity": "on",
+    "type": "photodetector",
+    "links": 11261
+   }
+  ]
+ }
+}
