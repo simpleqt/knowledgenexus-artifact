@@ -1,0 +1,154 @@
+{
+ "agreement": {
+  "kb1": {
+   "n_units": 80,
+   "domain_set_jaccard_mean": 0.586,
+   "termness_agreement_on_overlap": 0.969,
+   "termness_overlap_n": 549
+  },
+  "cs": {
+   "n_units": 40,
+   "domain_set_jaccard_mean": 0.661,
+   "termness_agreement_on_overlap": 0.988,
+   "termness_overlap_n": 1005
+  },
+  "bio": {
+   "n_units": 40,
+   "domain_set_jaccard_mean": 0.66,
+   "termness_agreement_on_overlap": 0.945,
+   "termness_overlap_n": 768
+  },
+  "mat": {
+   "n_units": 40,
+   "domain_set_jaccard_mean": 0.642,
+   "termness_agreement_on_overlap": 0.964,
+   "termness_overlap_n": 949
+  }
+ },
+ "arm_recall": {
+  "cs": {
+   "schema": {
+    "R_all": 0.0,
+    "R_specific": 0.0
+   },
+   "freq": {
+    "R_all": 0.075,
+    "R_specific": 0.074
+   },
+   "cvalue": {
+    "R_all": 0.027,
+    "R_specific": 0.009
+   },
+   "llmdirect": {
+    "R_all": 0.066,
+    "R_specific": 0.041
+   },
+   "threesource": {
+    "R_all": 0.03,
+    "R_specific": 0.016
+   },
+   "learnedrank": {
+    "R_all": 0.031,
+    "R_specific": 0.016
+   },
+   "cover": {
+    "R_all": 0.032,
+    "R_specific": 0.016
+   },
+   "coverRisk": {
+    "R_all": 0.028,
+    "R_specific": 0.014
+   }
+  },
+  "bio": {
+   "schema": {
+    "R_all": 0.01,
+    "R_specific": 0.007
+   },
+   "freq": {
+    "R_all": 0.051,
+    "R_specific": 0.046
+   },
+   "cvalue": {
+    "R_all": 0.031,
+    "R_specific": 0.021
+   },
+   "llmdirect": {
+    "R_all": 0.065,
+    "R_specific": 0.058
+   },
+   "threesource": {
+    "R_all": 0.061,
+    "R_specific": 0.058
+   },
+   "learnedrank": {
+    "R_all": 0.015,
+    "R_specific": 0.005
+   },
+   "cover": {
+    "R_all": 0.015,
+    "R_specific": 0.005
+   },
+   "coverRisk": {
+    "R_all": 0.015,
+    "R_specific": 0.005
+   }
+  },
+  "mat": {
+   "schema": {
+    "R_all": 0.007,
+    "R_specific": 0.007
+   },
+   "freq": {
+    "R_all": 0.046,
+    "R_specific": 0.042
+   },
+   "cvalue": {
+    "R_all": 0.037,
+    "R_specific": 0.017
+   },
+   "llmdirect": {
+    "R_all": 0.082,
+    "R_specific": 0.065
+   },
+   "threesource": {
+    "R_all": 0.037,
+    "R_specific": 0.04
+   },
+   "learnedrank": {
+    "R_all": 0.009,
+    "R_specific": 0.02
+   },
+   "cover": {
+    "R_all": 0.008,
+    "R_specific": 0.018
+   },
+   "coverRisk": {
+    "R_all": 0.007,
+    "R_specific": 0.017
+   }
+  }
+ },
+ "kb1": {
+  "v2.0": {
+   "R_all": 0.01,
+   "n_units": 80,
+   "ref_terms": 728
+  },
+  "v2.1": {
+   "R_all": 0.043,
+   "n_units": 80,
+   "ref_terms": 728
+  },
+  "lang_split": {
+   "en": 80
+  }
+ },
+ "notes": [
+  "双模型交叉标注替代双人标注（方案 §7.1 的模型化形态）。P1=deepseek-",
+  "flash、P2=deepseek-v4-pro——同厂商不同模型（家族重叠披露）；仲裁判官",
+  "A=Qwen3.6-35B 跨家族。参考集=双认 domain 项 ∪ 仲裁纳入（单方面形且",
+  "在文中可定位）。仪器仍是 LLM，非人类金标。网关 flash-next 全文标注",
+  "不可用（强制思考无界：1300 字符 336s/67k 字符 finish=length）。"
+ ]
+}

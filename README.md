@@ -88,3 +88,15 @@ instrument stability, short-symbol ambiguity four-policy comparison
 study (wide pools, construct-side dev silver, learned/coverage/cover+risk
 arms with budget curves). Cross-domain package updated with the new arms'
 lexicons, judge/arbitration records (ctx stripped), and tables.
+
+## Dual-annotation reference (2026-10-12, third wave)
+
+`eval/dual_annotation/` — 200 complete units (80 KB1 frozen chunks + 40
+test docs per public domain) cross-annotated in full text by two model
+annotators (deepseek-flash + deepseek-v4-pro; family overlap disclosed;
+a gateway thinking-mode model is forensically unusable for full-document
+annotation), disagreements arbitrated by the cross-family Qwen judge.
+Agreement: domain-set Jaccard 0.59-0.66, termness agreement 94.5-98.8%.
+Eight-arm recall under the adjudicated reference incl. the first KB1
+lexicon-recall estimate (v2.0 1.0% -> v2.1 4.3%). Unit texts are not
+redistributed (manifest with ids/lengths only).
