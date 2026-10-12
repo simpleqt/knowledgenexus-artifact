@@ -1,0 +1,92 @@
+{
+ "full": {
+  "terms": 251,
+  "links": 3951.7,
+  "entities": 202.1,
+  "c10": 0.404,
+  "conc_per_doc": 3.602,
+  "generic_head_share": 0.005,
+  "docs": 635.7
+ },
+ "-seed": {
+  "terms": 221,
+  "links": 3668.5,
+  "entities": 194.1,
+  "c10": 0.437,
+  "conc_per_doc": 3.353,
+  "generic_head_share": 0.005,
+  "docs": 624.3
+ },
+ "-classify": {
+  "terms": 93,
+  "links": 969.9,
+  "entities": 70.2,
+  "c10": 0.601,
+  "conc_per_doc": 1.628,
+  "generic_head_share": 0.0,
+  "docs": 383.2
+ },
+ "-expand": {
+  "terms": 232,
+  "links": 4075.2,
+  "entities": 211.7,
+  "c10": 0.397,
+  "conc_per_doc": 3.726,
+  "generic_head_share": 0.004,
+  "docs": 646.3
+ },
+ "-presence": {
+  "terms": 977,
+  "links": 4335.4,
+  "entities": 260.9,
+  "c10": 0.374,
+  "conc_per_doc": 3.917,
+  "generic_head_share": 0.004,
+  "docs": 649.1
+ },
+ "seed-only-v": {
+  "terms": 58,
+  "links": 772.9,
+  "entities": 50.9,
+  "c10": 0.666,
+  "conc_per_doc": 1.518,
+  "generic_head_share": 0.0,
+  "docs": 351.5
+ },
+ "seed-only-raw": {
+  "terms": 768,
+  "links": 836.1,
+  "entities": 80.8,
+  "c10": 0.616,
+  "conc_per_doc": 1.574,
+  "generic_head_share": 0.0,
+  "docs": 367.1
+ },
+ "classify-only": {
+  "terms": 181,
+  "links": 3461.8,
+  "entities": 169,
+  "c10": 0.463,
+  "conc_per_doc": 3.175,
+  "generic_head_share": 0.005,
+  "docs": 620
+ },
+ "expand-only": {
+  "terms": 42,
+  "links": 219.9,
+  "entities": 27.3,
+  "c10": 0.838,
+  "conc_per_doc": 1.285,
+  "generic_head_share": 0.0,
+  "docs": 111
+ },
+ "freq-size-matched": {
+  "terms": 251,
+  "links": 32171.6,
+  "entities": 312.4,
+  "c10": 0.227,
+  "conc_per_doc": 30.677,
+  "generic_head_share": 0.045,
+  "docs": 690
+ }
+}

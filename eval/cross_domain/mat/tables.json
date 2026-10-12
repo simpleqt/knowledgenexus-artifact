@@ -1,0 +1,208 @@
+{
+ "scan": {
+  "schema": {
+   "links": {
+    "mean": 3187.1,
+    "sd": 102.816
+   },
+   "entities": {
+    "mean": 58.5,
+    "sd": 3.308
+   },
+   "c10": {
+    "mean": 0.829,
+    "sd": 0.014
+   },
+   "conc_per_doc": {
+    "mean": 2.327,
+    "sd": 0.04
+   },
+   "generic_head_share": {
+    "mean": 0.238,
+    "sd": 0.016
+   },
+   "docs": {
+    "mean": 613.2,
+    "sd": 9.211
+   }
+  },
+  "freq": {
+   "links": {
+    "mean": 30762.7,
+    "sd": 409.7
+   },
+   "entities": {
+    "mean": 481.4,
+    "sd": 4.033
+   },
+   "c10": {
+    "mean": 0.131,
+    "sd": 0.003
+   },
+   "conc_per_doc": {
+    "mean": 31.781,
+    "sd": 0.277
+   },
+   "generic_head_share": {
+    "mean": 0.087,
+    "sd": 0.002
+   },
+   "docs": {
+    "mean": 690,
+    "sd": 0.0
+   }
+  },
+  "cvalue": {
+   "links": {
+    "mean": 5865,
+    "sd": 138.404
+   },
+   "entities": {
+    "mean": 411.2,
+    "sd": 5.996
+   },
+   "c10": {
+    "mean": 0.238,
+    "sd": 0.004
+   },
+   "conc_per_doc": {
+    "mean": 7.48,
+    "sd": 0.135
+   },
+   "generic_head_share": {
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "docs": {
+    "mean": 685.1,
+    "sd": 1.524
+   }
+  },
+  "llmdirect": {
+   "links": {
+    "mean": 7670,
+    "sd": 168.243
+   },
+   "entities": {
+    "mean": 713.8,
+    "sd": 14.444
+   },
+   "c10": {
+    "mean": 0.198,
+    "sd": 0.008
+   },
+   "conc_per_doc": {
+    "mean": 6.919,
+    "sd": 0.129
+   },
+   "generic_head_share": {
+    "mean": 0.049,
+    "sd": 0.003
+   },
+   "docs": {
+    "mean": 671.2,
+    "sd": 3.521
+   }
+  },
+  "threesource": {
+   "links": {
+    "mean": 6045.2,
+    "sd": 222.73
+   },
+   "entities": {
+    "mean": 337.4,
+    "sd": 6.851
+   },
+   "c10": {
+    "mean": 0.268,
+    "sd": 0.006
+   },
+   "conc_per_doc": {
+    "mean": 5.375,
+    "sd": 0.136
+   },
+   "generic_head_share": {
+    "mean": 0.07,
+    "sd": 0.004
+   },
+   "docs": {
+    "mean": 661.3,
+    "sd": 4.692
+   }
+  }
+ },
+ "prf": {
+  "schema": {
+   "P": 0.054,
+   "R": 0.004,
+   "F1": 0.007,
+   "occurrences": 445,
+   "silver_terms": 2071
+  },
+  "freq": {
+   "P": 0.029,
+   "R": 0.035,
+   "F1": 0.032,
+   "occurrences": 4412,
+   "silver_terms": 2071
+  },
+  "cvalue": {
+   "P": 0.155,
+   "R": 0.044,
+   "F1": 0.069,
+   "occurrences": 860,
+   "silver_terms": 2071
+  },
+  "llmdirect": {
+   "P": 0.336,
+   "R": 0.093,
+   "F1": 0.146,
+   "occurrences": 1043,
+   "silver_terms": 2071
+  },
+  "threesource": {
+   "P": 0.223,
+   "R": 0.046,
+   "F1": 0.076,
+   "occurrences": 892,
+   "silver_terms": 2071
+  }
+ },
+ "verdict": {
+  "schema": {
+   "rate": 0.688,
+   "n": 77,
+   "AB_agree": 0.831,
+   "AB_n": 77
+  },
+  "freq": {
+   "rate": 0.4,
+   "n": 80,
+   "AB_agree": 0.722,
+   "AB_n": 79
+  },
+  "cvalue": {
+   "rate": 0.367,
+   "n": 60,
+   "AB_agree": 0.85,
+   "AB_n": 60
+  },
+  "llmdirect": {
+   "rate": 0.925,
+   "n": 80,
+   "AB_agree": 0.937,
+   "AB_n": 79
+  },
+  "threesource": {
+   "rate": 0.912,
+   "n": 80,
+   "AB_agree": 0.899,
+   "AB_n": 79
+  }
+ },
+ "silver_reliability": {
+  "AC_jaccard_mean": 0.522,
+  "AC_n_docs": 30,
+  "note": "B(gateway flash-next) 全摘要枚举不可用（强制思考>180s 读超时），枚举可靠性以 A-C 子集一致性计量"
+ }
+}

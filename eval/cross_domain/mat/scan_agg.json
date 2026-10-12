@@ -1,0 +1,132 @@
+{
+ "schema": {
+  "links": {
+   "mean": 3187.1,
+   "sd": 102.816
+  },
+  "entities": {
+   "mean": 58.5,
+   "sd": 3.308
+  },
+  "c10": {
+   "mean": 0.829,
+   "sd": 0.014
+  },
+  "conc_per_doc": {
+   "mean": 2.327,
+   "sd": 0.04
+  },
+  "generic_head_share": {
+   "mean": 0.238,
+   "sd": 0.016
+  },
+  "docs": {
+   "mean": 613.2,
+   "sd": 9.211
+  }
+ },
+ "freq": {
+  "links": {
+   "mean": 30762.7,
+   "sd": 409.7
+  },
+  "entities": {
+   "mean": 481.4,
+   "sd": 4.033
+  },
+  "c10": {
+   "mean": 0.131,
+   "sd": 0.003
+  },
+  "conc_per_doc": {
+   "mean": 31.781,
+   "sd": 0.277
+  },
+  "generic_head_share": {
+   "mean": 0.087,
+   "sd": 0.002
+  },
+  "docs": {
+   "mean": 690,
+   "sd": 0.0
+  }
+ },
+ "cvalue": {
+  "links": {
+   "mean": 5865,
+   "sd": 138.404
+  },
+  "entities": {
+   "mean": 411.2,
+   "sd": 5.996
+  },
+  "c10": {
+   "mean": 0.238,
+   "sd": 0.004
+  },
+  "conc_per_doc": {
+   "mean": 7.48,
+   "sd": 0.135
+  },
+  "generic_head_share": {
+   "mean": 0.0,
+   "sd": 0.0
+  },
+  "docs": {
+   "mean": 685.1,
+   "sd": 1.524
+  }
+ },
+ "llmdirect": {
+  "links": {
+   "mean": 7670,
+   "sd": 168.243
+  },
+  "entities": {
+   "mean": 713.8,
+   "sd": 14.444
+  },
+  "c10": {
+   "mean": 0.198,
+   "sd": 0.008
+  },
+  "conc_per_doc": {
+   "mean": 6.919,
+   "sd": 0.129
+  },
+  "generic_head_share": {
+   "mean": 0.049,
+   "sd": 0.003
+  },
+  "docs": {
+   "mean": 671.2,
+   "sd": 3.521
+  }
+ },
+ "threesource": {
+  "links": {
+   "mean": 6045.2,
+   "sd": 222.73
+  },
+  "entities": {
+   "mean": 337.4,
+   "sd": 6.851
+  },
+  "c10": {
+   "mean": 0.268,
+   "sd": 0.006
+  },
+  "conc_per_doc": {
+   "mean": 5.375,
+   "sd": 0.136
+  },
+  "generic_head_share": {
+   "mean": 0.07,
+   "sd": 0.004
+  },
+  "docs": {
+   "mean": 661.3,
+   "sd": 4.692
+  }
+ }
+}

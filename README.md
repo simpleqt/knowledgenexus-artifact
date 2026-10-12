@@ -63,3 +63,18 @@ HippoRAG 2 evaluation subsets used in the paper.
 Evaluation code and question sets: released for review and replication.
 Third-party components (benchmark data, model names) remain under their
 respective licenses.
+
+## Cross-domain replay package (2026-10-12)
+
+`eval/cross_domain/` — three public domains (arXiv cs.CL / PubMed /
+cond-mat.mtrl-sci; 10k abstracts each; construct 3000 / frozen test 100 /
+10×~690 disjoint replay, seeded splits) × five lexicon arms (batch
+schema / frequency / C-value / LLM-direct / three-source adapted).
+Contains the drivers, per-domain arm lexicons (components/), silver +
+blind-judge + cross-family arbitration records (ctx excerpts stripped;
+doc-id manifests under corpus_manifest/ re-derive context), structural
+scan aggregates, per-domain tables.json, the CS source ablation, and
+the silver instrument-sensitivity rerun (silver_stability.json).
+`eval/scanner_parity/` — replica-vs-production scanner parity on 200
+frozen KB1 chunks (span-level 913/913 coverage; divergences attributed).
+Source corpora are not redistributed.

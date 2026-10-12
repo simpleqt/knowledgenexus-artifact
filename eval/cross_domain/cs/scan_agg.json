@@ -1,0 +1,132 @@
+{
+ "schema": {
+  "links": {
+   "mean": 94.1,
+   "sd": 16.031
+  },
+  "entities": {
+   "mean": 18.4,
+   "sd": 2.547
+  },
+  "c10": {
+   "mean": 0.899,
+   "sd": 0.031
+  },
+  "conc_per_doc": {
+   "mean": 1.144,
+   "sd": 0.046
+  },
+  "generic_head_share": {
+   "mean": 0.379,
+   "sd": 0.08
+  },
+  "docs": {
+   "mean": 39.1,
+   "sd": 6.082
+  }
+ },
+ "freq": {
+  "links": {
+   "mean": 32171.6,
+   "sd": 306.653
+  },
+  "entities": {
+   "mean": 312.4,
+   "sd": 2.171
+  },
+  "c10": {
+   "mean": 0.227,
+   "sd": 0.003
+  },
+  "conc_per_doc": {
+   "mean": 30.677,
+   "sd": 0.302
+  },
+  "generic_head_share": {
+   "mean": 0.045,
+   "sd": 0.001
+  },
+  "docs": {
+   "mean": 690,
+   "sd": 0.0
+  }
+ },
+ "cvalue": {
+  "links": {
+   "mean": 5927.3,
+   "sd": 145.583
+  },
+  "entities": {
+   "mean": 273.4,
+   "sd": 2.221
+  },
+  "c10": {
+   "mean": 0.457,
+   "sd": 0.014
+  },
+  "conc_per_doc": {
+   "mean": 7.15,
+   "sd": 0.176
+  },
+  "generic_head_share": {
+   "mean": 0.0,
+   "sd": 0.0
+  },
+  "docs": {
+   "mean": 675.4,
+   "sd": 5.461
+  }
+ },
+ "llmdirect": {
+  "links": {
+   "mean": 5983.7,
+   "sd": 228.918
+  },
+  "entities": {
+   "mean": 344.5,
+   "sd": 5.778
+  },
+  "c10": {
+   "mean": 0.501,
+   "sd": 0.008
+  },
+  "conc_per_doc": {
+   "mean": 4.634,
+   "sd": 0.117
+  },
+  "generic_head_share": {
+   "mean": 0.003,
+   "sd": 0.001
+  },
+  "docs": {
+   "mean": 649.6,
+   "sd": 6.077
+  }
+ },
+ "threesource": {
+  "links": {
+   "mean": 3951.7,
+   "sd": 135.804
+  },
+  "entities": {
+   "mean": 202.1,
+   "sd": 4.202
+  },
+  "c10": {
+   "mean": 0.404,
+   "sd": 0.01
+  },
+  "conc_per_doc": {
+   "mean": 3.602,
+   "sd": 0.073
+  },
+  "generic_head_share": {
+   "mean": 0.005,
+   "sd": 0.001
+  },
+  "docs": {
+   "mean": 635.7,
+   "sd": 6.111
+  }
+ }
+}
