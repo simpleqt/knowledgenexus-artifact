@@ -1,0 +1,455 @@
+{
+ "matching_rule": "norm = lowercase + naive plural strip (symmetric on both sides)",
+ "domains": {
+  "cs": {
+   "n_docs": 30,
+   "cells": {
+    "schema": {
+     "vs_A": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "occurrences": 7
+     },
+     "vs_C": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "occurrences": 7
+     },
+     "valid": {
+      "rate": 0.565,
+      "n": 62,
+      "wilson95": [
+       0.441,
+       0.681
+      ],
+      "arbit_fraction": 0.097
+     }
+    },
+    "freq": {
+     "vs_A": {
+      "P": 0.096,
+      "R": 0.095,
+      "F1": 0.096,
+      "occurrences": 1411
+     },
+     "vs_C": {
+      "P": 0.064,
+      "R": 0.065,
+      "F1": 0.065,
+      "occurrences": 1411
+     },
+     "valid": {
+      "rate": 0.293,
+      "n": 75,
+      "wilson95": [
+       0.202,
+       0.404
+      ],
+      "arbit_fraction": 0.267
+     }
+    },
+    "cvalue": {
+     "vs_A": {
+      "P": 0.276,
+      "R": 0.035,
+      "F1": 0.062,
+      "occurrences": 225
+     },
+     "vs_C": {
+      "P": 0.293,
+      "R": 0.038,
+      "F1": 0.067,
+      "occurrences": 225
+     },
+     "valid": {
+      "rate": 0.267,
+      "n": 60,
+      "wilson95": [
+       0.171,
+       0.39
+      ],
+      "arbit_fraction": 0.25
+     }
+    },
+    "llmdirect": {
+     "vs_A": {
+      "P": 0.653,
+      "R": 0.121,
+      "F1": 0.204,
+      "occurrences": 193
+     },
+     "vs_C": {
+      "P": 0.544,
+      "R": 0.089,
+      "F1": 0.153,
+      "occurrences": 193
+     },
+     "valid": {
+      "rate": 0.787,
+      "n": 80,
+      "wilson95": [
+       0.686,
+       0.863
+      ],
+      "arbit_fraction": 0.15
+     }
+    },
+    "threesource": {
+     "vs_A": {
+      "P": 0.218,
+      "R": 0.04,
+      "F1": 0.067,
+      "occurrences": 170
+     },
+     "vs_C": {
+      "P": 0.312,
+      "R": 0.046,
+      "F1": 0.08,
+      "occurrences": 170
+     },
+     "valid": {
+      "rate": 0.838,
+      "n": 80,
+      "wilson95": [
+       0.742,
+       0.903
+      ],
+      "arbit_fraction": 0.225
+     }
+    }
+   },
+   "rank_F1_vs_A": [
+    "llmdirect",
+    "freq",
+    "threesource",
+    "cvalue",
+    "schema"
+   ],
+   "rank_F1_vs_C": [
+    "llmdirect",
+    "threesource",
+    "cvalue",
+    "freq",
+    "schema"
+   ],
+   "rank_R_vs_A": [
+    "llmdirect",
+    "freq",
+    "threesource",
+    "cvalue",
+    "schema"
+   ],
+   "rank_R_vs_C": [
+    "llmdirect",
+    "freq",
+    "threesource",
+    "cvalue",
+    "schema"
+   ],
+   "rank_F1_stable": false,
+   "rank_R_stable": true
+  },
+  "bio": {
+   "n_docs": 30,
+   "cells": {
+    "schema": {
+     "vs_A": {
+      "P": 0.105,
+      "R": 0.01,
+      "F1": 0.019,
+      "occurrences": 133
+     },
+     "vs_C": {
+      "P": 0.12,
+      "R": 0.011,
+      "F1": 0.021,
+      "occurrences": 133
+     },
+     "valid": {
+      "rate": 0.906,
+      "n": 64,
+      "wilson95": [
+       0.81,
+       0.956
+      ],
+      "arbit_fraction": 0.203
+     }
+    },
+    "freq": {
+     "vs_A": {
+      "P": 0.026,
+      "R": 0.025,
+      "F1": 0.026,
+      "occurrences": 1407
+     },
+     "vs_C": {
+      "P": 0.048,
+      "R": 0.039,
+      "F1": 0.043,
+      "occurrences": 1407
+     },
+     "valid": {
+      "rate": 0.362,
+      "n": 80,
+      "wilson95": [
+       0.266,
+       0.472
+      ],
+      "arbit_fraction": 0.237
+     }
+    },
+    "cvalue": {
+     "vs_A": {
+      "P": 0.053,
+      "R": 0.021,
+      "F1": 0.03,
+      "occurrences": 283
+     },
+     "vs_C": {
+      "P": 0.11,
+      "R": 0.029,
+      "F1": 0.046,
+      "occurrences": 283
+     },
+     "valid": {
+      "rate": 0.35,
+      "n": 60,
+      "wilson95": [
+       0.242,
+       0.476
+      ],
+      "arbit_fraction": 0.117
+     }
+    },
+    "llmdirect": {
+     "vs_A": {
+      "P": 0.289,
+      "R": 0.085,
+      "F1": 0.131,
+      "occurrences": 322
+     },
+     "vs_C": {
+      "P": 0.376,
+      "R": 0.073,
+      "F1": 0.122,
+      "occurrences": 322
+     },
+     "valid": {
+      "rate": 0.838,
+      "n": 80,
+      "wilson95": [
+       0.742,
+       0.903
+      ],
+      "arbit_fraction": 0.175
+     }
+    },
+    "threesource": {
+     "vs_A": {
+      "P": 0.195,
+      "R": 0.058,
+      "F1": 0.09,
+      "occurrences": 338
+     },
+     "vs_C": {
+      "P": 0.287,
+      "R": 0.063,
+      "F1": 0.103,
+      "occurrences": 338
+     },
+     "valid": {
+      "rate": 0.85,
+      "n": 80,
+      "wilson95": [
+       0.756,
+       0.912
+      ],
+      "arbit_fraction": 0.113
+     }
+    }
+   },
+   "rank_F1_vs_A": [
+    "llmdirect",
+    "threesource",
+    "cvalue",
+    "freq",
+    "schema"
+   ],
+   "rank_F1_vs_C": [
+    "llmdirect",
+    "threesource",
+    "cvalue",
+    "freq",
+    "schema"
+   ],
+   "rank_R_vs_A": [
+    "llmdirect",
+    "threesource",
+    "freq",
+    "cvalue",
+    "schema"
+   ],
+   "rank_R_vs_C": [
+    "llmdirect",
+    "threesource",
+    "freq",
+    "cvalue",
+    "schema"
+   ],
+   "rank_F1_stable": true,
+   "rank_R_stable": true
+  },
+  "mat": {
+   "n_docs": 30,
+   "cells": {
+    "schema": {
+     "vs_A": {
+      "P": 0.062,
+      "R": 0.006,
+      "F1": 0.011,
+      "occurrences": 113
+     },
+     "vs_C": {
+      "P": 0.053,
+      "R": 0.006,
+      "F1": 0.01,
+      "occurrences": 113
+     },
+     "valid": {
+      "rate": 0.688,
+      "n": 77,
+      "wilson95": [
+       0.578,
+       0.781
+      ],
+      "arbit_fraction": 0.169
+     }
+    },
+    "freq": {
+     "vs_A": {
+      "P": 0.036,
+      "R": 0.041,
+      "F1": 0.038,
+      "occurrences": 1331
+     },
+     "vs_C": {
+      "P": 0.037,
+      "R": 0.042,
+      "F1": 0.039,
+      "occurrences": 1331
+     },
+     "valid": {
+      "rate": 0.4,
+      "n": 80,
+      "wilson95": [
+       0.3,
+       0.51
+      ],
+      "arbit_fraction": 0.287
+     }
+    },
+    "cvalue": {
+     "vs_A": {
+      "P": 0.168,
+      "R": 0.048,
+      "F1": 0.075,
+      "occurrences": 262
+     },
+     "vs_C": {
+      "P": 0.187,
+      "R": 0.048,
+      "F1": 0.076,
+      "occurrences": 262
+     },
+     "valid": {
+      "rate": 0.367,
+      "n": 60,
+      "wilson95": [
+       0.256,
+       0.493
+      ],
+      "arbit_fraction": 0.15
+     }
+    },
+    "llmdirect": {
+     "vs_A": {
+      "P": 0.404,
+      "R": 0.109,
+      "F1": 0.172,
+      "occurrences": 317
+     },
+     "vs_C": {
+      "P": 0.413,
+      "R": 0.105,
+      "F1": 0.167,
+      "occurrences": 317
+     },
+     "valid": {
+      "rate": 0.925,
+      "n": 80,
+      "wilson95": [
+       0.846,
+       0.965
+      ],
+      "arbit_fraction": 0.075
+     }
+    },
+    "threesource": {
+     "vs_A": {
+      "P": 0.246,
+      "R": 0.056,
+      "F1": 0.092,
+      "occurrences": 289
+     },
+     "vs_C": {
+      "P": 0.26,
+      "R": 0.061,
+      "F1": 0.099,
+      "occurrences": 289
+     },
+     "valid": {
+      "rate": 0.912,
+      "n": 80,
+      "wilson95": [
+       0.83,
+       0.957
+      ],
+      "arbit_fraction": 0.113
+     }
+    }
+   },
+   "rank_F1_vs_A": [
+    "llmdirect",
+    "threesource",
+    "cvalue",
+    "freq",
+    "schema"
+   ],
+   "rank_F1_vs_C": [
+    "llmdirect",
+    "threesource",
+    "cvalue",
+    "freq",
+    "schema"
+   ],
+   "rank_R_vs_A": [
+    "llmdirect",
+    "threesource",
+    "cvalue",
+    "freq",
+    "schema"
+   ],
+   "rank_R_vs_C": [
+    "llmdirect",
+    "threesource",
+    "cvalue",
+    "freq",
+    "schema"
+   ],
+   "rank_F1_stable": true,
+   "rank_R_stable": true
+  }
+ }
+}

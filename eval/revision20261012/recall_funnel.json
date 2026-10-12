@@ -1,0 +1,1641 @@
+{
+ "reference": "silver_A occurrence-level; instrument limits disclosed in paper; funnel locates loss source",
+ "domains": {
+  "cs": {
+   "pool_ngram_norms": 140006,
+   "pool_llm_norms": 2031,
+   "pool_union_norms": 143243,
+   "silver_occurrences": 2340,
+   "arms": {
+    "threesource": {
+     "R_final": 0.0581,
+     "P_C": 0.4419,
+     "P_K_given_C": 0.148,
+     "P_D_given_KC": 0.8889,
+     "P_L_given_DKC": 1.0,
+     "loss_counts": {
+      "candidate": 1306,
+      "selection": 881,
+      "scan": 17,
+      "link": 0
+     },
+     "top_miss_candidate": [
+      [
+       "all",
+       12
+      ],
+      [
+       "agentic-ttt",
+       8
+      ],
+      [
+       "explainer",
+       7
+      ],
+      [
+       "rct",
+       7
+      ],
+      [
+       "vlx-vr",
+       6
+      ],
+      [
+       "discriminative",
+       6
+      ],
+      [
+       "scor",
+       6
+      ],
+      [
+       "consequence-aware evaluation",
+       6
+      ],
+      [
+       "d-cut",
+       6
+      ],
+      [
+       "omnialign",
+       6
+      ],
+      [
+       "phi-2",
+       5
+      ],
+      [
+       "engramedit",
+       5
+      ]
+     ],
+     "top_miss_selection": [
+      [
+       "llm",
+       100
+      ],
+      [
+       "large language model",
+       37
+      ],
+      [
+       "agent",
+       15
+      ],
+      [
+       "structured pruning",
+       14
+      ],
+      [
+       "token",
+       13
+      ],
+      [
+       "persona",
+       12
+      ],
+      [
+       "judge",
+       11
+      ],
+      [
+       "kv cache",
+       10
+      ],
+      [
+       "classifier",
+       10
+      ],
+      [
+       "rag",
+       10
+      ],
+      [
+       "auroc",
+       9
+      ],
+      [
+       "slm",
+       8
+      ]
+     ],
+     "top_miss_scan": [
+      [
+       "knowledge graph",
+       5
+      ],
+      [
+       "llm judge",
+       3
+      ],
+      [
+       "attention head",
+       2
+      ],
+      [
+       "small language model",
+       2
+      ],
+      [
+       "reddit",
+       1
+      ],
+      [
+       "hidden state",
+       1
+      ],
+      [
+       "vision-language model",
+       1
+      ],
+      [
+       "agentic system",
+       1
+      ]
+     ]
+    },
+    "llmdirect": {
+     "R_final": 0.1491,
+     "P_C": 0.4419,
+     "P_K_given_C": 0.3549,
+     "P_D_given_KC": 0.9564,
+     "P_L_given_DKC": 0.9943,
+     "loss_counts": {
+      "candidate": 1306,
+      "selection": 667,
+      "scan": 16,
+      "link": 2
+     },
+     "top_miss_candidate": [
+      [
+       "all",
+       12
+      ],
+      [
+       "agentic-ttt",
+       8
+      ],
+      [
+       "explainer",
+       7
+      ],
+      [
+       "rct",
+       7
+      ],
+      [
+       "vlx-vr",
+       6
+      ],
+      [
+       "discriminative",
+       6
+      ],
+      [
+       "scor",
+       6
+      ],
+      [
+       "consequence-aware evaluation",
+       6
+      ],
+      [
+       "d-cut",
+       6
+      ],
+      [
+       "omnialign",
+       6
+      ],
+      [
+       "phi-2",
+       5
+      ],
+      [
+       "engramedit",
+       5
+      ]
+     ],
+     "top_miss_selection": [
+      [
+       "ttt",
+       20
+      ],
+      [
+       "agent",
+       15
+      ],
+      [
+       "structured pruning",
+       14
+      ],
+      [
+       "token",
+       13
+      ],
+      [
+       "persona",
+       12
+      ],
+      [
+       "judge",
+       11
+      ],
+      [
+       "classifier",
+       10
+      ],
+      [
+       "retrieval",
+       7
+      ],
+      [
+       "parallel",
+       7
+      ],
+      [
+       "ssd",
+       7
+      ],
+      [
+       "ema",
+       6
+      ],
+      [
+       "generative",
+       6
+      ]
+     ],
+     "top_miss_scan": [
+      [
+       "kg",
+       5
+      ],
+      [
+       "attention head",
+       2
+      ],
+      [
+       "slm",
+       2
+      ],
+      [
+       "llm",
+       2
+      ],
+      [
+       "rag",
+       2
+      ],
+      [
+       "mi",
+       1
+      ],
+      [
+       "agentic system",
+       1
+      ],
+      [
+       "language model",
+       1
+      ]
+     ]
+    },
+    "freq": {
+     "R_final": 0.1184,
+     "P_C": 0.4419,
+     "P_K_given_C": 0.2853,
+     "P_D_given_KC": 0.9458,
+     "P_L_given_DKC": 0.9928,
+     "loss_counts": {
+      "candidate": 1306,
+      "selection": 739,
+      "scan": 16,
+      "link": 2
+     },
+     "top_miss_candidate": [
+      [
+       "all",
+       12
+      ],
+      [
+       "agentic-ttt",
+       8
+      ],
+      [
+       "explainer",
+       7
+      ],
+      [
+       "rct",
+       7
+      ],
+      [
+       "vlx-vr",
+       6
+      ],
+      [
+       "discriminative",
+       6
+      ],
+      [
+       "scor",
+       6
+      ],
+      [
+       "consequence-aware evaluation",
+       6
+      ],
+      [
+       "d-cut",
+       6
+      ],
+      [
+       "omnialign",
+       6
+      ],
+      [
+       "phi-2",
+       5
+      ],
+      [
+       "engramedit",
+       5
+      ]
+     ],
+     "top_miss_selection": [
+      [
+       "ttt",
+       20
+      ],
+      [
+       "structured pruning",
+       14
+      ],
+      [
+       "persona",
+       12
+      ],
+      [
+       "judge",
+       11
+      ],
+      [
+       "kv cache",
+       10
+      ],
+      [
+       "classifier",
+       10
+      ],
+      [
+       "mi",
+       7
+      ],
+      [
+       "knowledge graph",
+       7
+      ],
+      [
+       "ssd",
+       7
+      ],
+      [
+       "ema",
+       6
+      ],
+      [
+       "post-training",
+       6
+      ],
+      [
+       "generative",
+       6
+      ]
+     ],
+     "top_miss_scan": [
+      [
+       "agent",
+       3
+      ],
+      [
+       "slm",
+       2
+      ],
+      [
+       "llm",
+       2
+      ],
+      [
+       "vlm",
+       2
+      ],
+      [
+       "rag",
+       2
+      ],
+      [
+       "token",
+       2
+      ],
+      [
+       "metric",
+       1
+      ],
+      [
+       "present",
+       1
+      ]
+     ]
+    },
+    "cvalue": {
+     "R_final": 0.0368,
+     "P_C": 0.4419,
+     "P_K_given_C": 0.0861,
+     "P_D_given_KC": 0.9775,
+     "P_L_given_DKC": 0.9885,
+     "loss_counts": {
+      "candidate": 1306,
+      "selection": 945,
+      "scan": 2,
+      "link": 1
+     },
+     "top_miss_candidate": [
+      [
+       "all",
+       12
+      ],
+      [
+       "agentic-ttt",
+       8
+      ],
+      [
+       "explainer",
+       7
+      ],
+      [
+       "rct",
+       7
+      ],
+      [
+       "vlx-vr",
+       6
+      ],
+      [
+       "discriminative",
+       6
+      ],
+      [
+       "scor",
+       6
+      ],
+      [
+       "consequence-aware evaluation",
+       6
+      ],
+      [
+       "d-cut",
+       6
+      ],
+      [
+       "omnialign",
+       6
+      ],
+      [
+       "phi-2",
+       5
+      ],
+      [
+       "engramedit",
+       5
+      ]
+     ],
+     "top_miss_selection": [
+      [
+       "llm",
+       100
+      ],
+      [
+       "ttt",
+       20
+      ],
+      [
+       "agent",
+       15
+      ],
+      [
+       "structured pruning",
+       14
+      ],
+      [
+       "token",
+       13
+      ],
+      [
+       "persona",
+       12
+      ],
+      [
+       "judge",
+       11
+      ],
+      [
+       "kv cache",
+       10
+      ],
+      [
+       "classifier",
+       10
+      ],
+      [
+       "rag",
+       10
+      ],
+      [
+       "auroc",
+       9
+      ],
+      [
+       "vlm",
+       9
+      ]
+     ],
+     "top_miss_scan": [
+      [
+       "hidden state",
+       1
+      ],
+      [
+       "vision-language model",
+       1
+      ]
+     ]
+    }
+   }
+  },
+  "bio": {
+   "pool_ngram_norms": 110489,
+   "pool_llm_norms": 3183,
+   "pool_union_norms": 115261,
+   "silver_occurrences": 2632,
+   "arms": {
+    "threesource": {
+     "R_final": 0.09,
+     "P_C": 0.4487,
+     "P_K_given_C": 0.2091,
+     "P_D_given_KC": 0.9595,
+     "P_L_given_DKC": 1.0,
+     "loss_counts": {
+      "candidate": 1451,
+      "selection": 934,
+      "scan": 10,
+      "link": 0
+     },
+     "top_miss_candidate": [
+      [
+       "tpt",
+       18
+      ],
+      [
+       "tu",
+       17
+      ],
+      [
+       "a2",
+       15
+      ],
+      [
+       "viscosity",
+       15
+      ],
+      [
+       "anti-a1",
+       12
+      ],
+      [
+       "intravenous elastomeric pump",
+       12
+      ],
+      [
+       "tb-hlh",
+       10
+      ],
+      [
+       "coral",
+       9
+      ],
+      [
+       "cot",
+       9
+      ],
+      [
+       "premenstrual symptom",
+       8
+      ],
+      [
+       "collective efficacy",
+       8
+      ],
+      [
+       "uedvt",
+       8
+      ]
+     ],
+     "top_miss_selection": [
+      [
+       "pe",
+       27
+      ],
+      [
+       "ai",
+       23
+      ],
+      [
+       "children",
+       14
+      ],
+      [
+       "ef",
+       13
+      ],
+      [
+       "tdt",
+       13
+      ],
+      [
+       "or",
+       12
+      ],
+      [
+       "ar",
+       10
+      ],
+      [
+       "frailty",
+       10
+      ],
+      [
+       "oxidative stres",
+       10
+      ],
+      [
+       "mri",
+       9
+      ],
+      [
+       "hip",
+       9
+      ],
+      [
+       "ros",
+       9
+      ]
+     ],
+     "top_miss_scan": [
+      [
+       "environment",
+       5
+      ],
+      [
+       "rom",
+       4
+      ],
+      [
+       "bacteria",
+       1
+      ]
+     ]
+    },
+    "llmdirect": {
+     "R_final": 0.1128,
+     "P_C": 0.4487,
+     "P_K_given_C": 0.3014,
+     "P_D_given_KC": 0.8792,
+     "P_L_given_DKC": 0.9489,
+     "loss_counts": {
+      "candidate": 1451,
+      "selection": 825,
+      "scan": 43,
+      "link": 16
+     },
+     "top_miss_candidate": [
+      [
+       "tpt",
+       18
+      ],
+      [
+       "tu",
+       17
+      ],
+      [
+       "a2",
+       15
+      ],
+      [
+       "viscosity",
+       15
+      ],
+      [
+       "anti-a1",
+       12
+      ],
+      [
+       "intravenous elastomeric pump",
+       12
+      ],
+      [
+       "tb-hlh",
+       10
+      ],
+      [
+       "coral",
+       9
+      ],
+      [
+       "cot",
+       9
+      ],
+      [
+       "premenstrual symptom",
+       8
+      ],
+      [
+       "collective efficacy",
+       8
+      ],
+      [
+       "uedvt",
+       8
+      ]
+     ],
+     "top_miss_selection": [
+      [
+       "qol",
+       17
+      ],
+      [
+       "children",
+       14
+      ],
+      [
+       "or",
+       12
+      ],
+      [
+       "ar",
+       10
+      ],
+      [
+       "transfusion",
+       10
+      ],
+      [
+       "frailty",
+       10
+      ],
+      [
+       "oxidative stres",
+       10
+      ],
+      [
+       "hip",
+       9
+      ],
+      [
+       "ros",
+       9
+      ],
+      [
+       "screening",
+       9
+      ],
+      [
+       "ev",
+       9
+      ],
+      [
+       "intravenous immunoglobulin",
+       9
+      ]
+     ],
+     "top_miss_scan": [
+      [
+       "pe",
+       16
+      ],
+      [
+       "os",
+       8
+      ],
+      [
+       "ef",
+       7
+      ],
+      [
+       "environment",
+       5
+      ],
+      [
+       "ai",
+       4
+      ],
+      [
+       "dementia",
+       3
+      ]
+     ]
+    },
+    "freq": {
+     "R_final": 0.0562,
+     "P_C": 0.4487,
+     "P_K_given_C": 0.1262,
+     "P_D_given_KC": 0.9933,
+     "P_L_given_DKC": 1.0,
+     "loss_counts": {
+      "candidate": 1451,
+      "selection": 1032,
+      "scan": 1,
+      "link": 0
+     },
+     "top_miss_candidate": [
+      [
+       "tpt",
+       18
+      ],
+      [
+       "tu",
+       17
+      ],
+      [
+       "a2",
+       15
+      ],
+      [
+       "viscosity",
+       15
+      ],
+      [
+       "anti-a1",
+       12
+      ],
+      [
+       "intravenous elastomeric pump",
+       12
+      ],
+      [
+       "tb-hlh",
+       10
+      ],
+      [
+       "coral",
+       9
+      ],
+      [
+       "cot",
+       9
+      ],
+      [
+       "premenstrual symptom",
+       8
+      ],
+      [
+       "collective efficacy",
+       8
+      ],
+      [
+       "uedvt",
+       8
+      ]
+     ],
+     "top_miss_selection": [
+      [
+       "pe",
+       27
+      ],
+      [
+       "ai",
+       23
+      ],
+      [
+       "qol",
+       17
+      ],
+      [
+       "tuberculosi",
+       17
+      ],
+      [
+       "stroke",
+       13
+      ],
+      [
+       "ef",
+       13
+      ],
+      [
+       "tdt",
+       13
+      ],
+      [
+       "or",
+       12
+      ],
+      [
+       "ar",
+       10
+      ],
+      [
+       "transfusion",
+       10
+      ],
+      [
+       "frailty",
+       10
+      ],
+      [
+       "oxidative stres",
+       10
+      ]
+     ],
+     "top_miss_scan": [
+      [
+       "tumor",
+       1
+      ]
+     ]
+    },
+    "cvalue": {
+     "R_final": 0.022,
+     "P_C": 0.4487,
+     "P_K_given_C": 0.05,
+     "P_D_given_KC": 0.9831,
+     "P_L_given_DKC": 1.0,
+     "loss_counts": {
+      "candidate": 1451,
+      "selection": 1122,
+      "scan": 1,
+      "link": 0
+     },
+     "top_miss_candidate": [
+      [
+       "tpt",
+       18
+      ],
+      [
+       "tu",
+       17
+      ],
+      [
+       "a2",
+       15
+      ],
+      [
+       "viscosity",
+       15
+      ],
+      [
+       "anti-a1",
+       12
+      ],
+      [
+       "intravenous elastomeric pump",
+       12
+      ],
+      [
+       "tb-hlh",
+       10
+      ],
+      [
+       "coral",
+       9
+      ],
+      [
+       "cot",
+       9
+      ],
+      [
+       "premenstrual symptom",
+       8
+      ],
+      [
+       "collective efficacy",
+       8
+      ],
+      [
+       "uedvt",
+       8
+      ]
+     ],
+     "top_miss_selection": [
+      [
+       "pe",
+       27
+      ],
+      [
+       "ai",
+       23
+      ],
+      [
+       "qol",
+       17
+      ],
+      [
+       "tuberculosi",
+       17
+      ],
+      [
+       "diabete",
+       16
+      ],
+      [
+       "children",
+       14
+      ],
+      [
+       "depression",
+       14
+      ],
+      [
+       "stroke",
+       13
+      ],
+      [
+       "ef",
+       13
+      ],
+      [
+       "tdt",
+       13
+      ],
+      [
+       "or",
+       12
+      ],
+      [
+       "ar",
+       10
+      ]
+     ],
+     "top_miss_scan": [
+      [
+       "adverse event",
+       1
+      ]
+     ]
+    }
+   }
+  },
+  "mat": {
+   "pool_ngram_norms": 121814,
+   "pool_llm_norms": 2741,
+   "pool_union_norms": 126032,
+   "silver_occurrences": 3199,
+   "arms": {
+    "threesource": {
+     "R_final": 0.0538,
+     "P_C": 0.4139,
+     "P_K_given_C": 0.1412,
+     "P_D_given_KC": 0.9198,
+     "P_L_given_DKC": 1.0,
+     "loss_counts": {
+      "candidate": 1875,
+      "selection": 1137,
+      "scan": 15,
+      "link": 0
+     },
+     "top_miss_candidate": [
+      [
+       "al",
+       44
+      ],
+      [
+       "d",
+       37
+      ],
+      [
+       "hidden spin texture",
+       21
+      ],
+      [
+       "glass composition",
+       15
+      ],
+      [
+       "graph state",
+       14
+      ],
+      [
+       "bn",
+       13
+      ],
+      [
+       "inversion-symmetry breaking",
+       12
+      ],
+      [
+       "gfc",
+       11
+      ],
+      [
+       "nli",
+       11
+      ],
+      [
+       "pt",
+       8
+      ],
+      [
+       "lsm",
+       7
+      ],
+      [
+       "colloidosome",
+       7
+      ]
+     ],
+     "top_miss_selection": [
+      [
+       "ti",
+       55
+      ],
+      [
+       "deposition rate",
+       25
+      ],
+      [
+       "co",
+       19
+      ],
+      [
+       "ct",
+       16
+      ],
+      [
+       "mocvd",
+       12
+      ],
+      [
+       "epilayer",
+       11
+      ],
+      [
+       "centrosymmetric",
+       10
+      ],
+      [
+       "si",
+       10
+      ],
+      [
+       "dmi",
+       10
+      ],
+      [
+       "first-principles calculation",
+       9
+      ],
+      [
+       "boron",
+       9
+      ],
+      [
+       "composition",
+       8
+      ]
+     ],
+     "top_miss_scan": [
+      [
+       "wte2",
+       9
+      ],
+      [
+       "qd",
+       4
+      ],
+      [
+       "rcca",
+       2
+      ]
+     ]
+    },
+    "llmdirect": {
+     "R_final": 0.0935,
+     "P_C": 0.4139,
+     "P_K_given_C": 0.2523,
+     "P_D_given_KC": 0.9281,
+     "P_L_given_DKC": 0.9645,
+     "loss_counts": {
+      "candidate": 1875,
+      "selection": 990,
+      "scan": 24,
+      "link": 11
+     },
+     "top_miss_candidate": [
+      [
+       "al",
+       44
+      ],
+      [
+       "d",
+       37
+      ],
+      [
+       "hidden spin texture",
+       21
+      ],
+      [
+       "glass composition",
+       15
+      ],
+      [
+       "graph state",
+       14
+      ],
+      [
+       "bn",
+       13
+      ],
+      [
+       "inversion-symmetry breaking",
+       12
+      ],
+      [
+       "gfc",
+       11
+      ],
+      [
+       "nli",
+       11
+      ],
+      [
+       "pt",
+       8
+      ],
+      [
+       "lsm",
+       7
+      ],
+      [
+       "colloidosome",
+       7
+      ]
+     ],
+     "top_miss_selection": [
+      [
+       "ti",
+       55
+      ],
+      [
+       "deposition rate",
+       25
+      ],
+      [
+       "glas",
+       24
+      ],
+      [
+       "co",
+       19
+      ],
+      [
+       "ct",
+       16
+      ],
+      [
+       "mocvd",
+       12
+      ],
+      [
+       "wte2",
+       11
+      ],
+      [
+       "epilayer",
+       11
+      ],
+      [
+       "centrosymmetric",
+       10
+      ],
+      [
+       "dmi",
+       10
+      ],
+      [
+       "boron",
+       9
+      ],
+      [
+       "composition",
+       8
+      ]
+     ],
+     "top_miss_scan": [
+      [
+       "si",
+       6
+      ],
+      [
+       "spin texture",
+       4
+      ],
+      [
+       "tmd",
+       3
+      ],
+      [
+       "xpeem",
+       3
+      ],
+      [
+       "au",
+       2
+      ],
+      [
+       "transition metal dichalcogenide",
+       1
+      ],
+      [
+       "nanowire",
+       1
+      ],
+      [
+       "mlip",
+       1
+      ]
+     ]
+    },
+    "freq": {
+     "R_final": 0.0381,
+     "P_C": 0.4139,
+     "P_K_given_C": 0.1005,
+     "P_D_given_KC": 0.9173,
+     "P_L_given_DKC": 1.0,
+     "loss_counts": {
+      "candidate": 1875,
+      "selection": 1191,
+      "scan": 11,
+      "link": 0
+     },
+     "top_miss_candidate": [
+      [
+       "al",
+       44
+      ],
+      [
+       "d",
+       37
+      ],
+      [
+       "hidden spin texture",
+       21
+      ],
+      [
+       "glass composition",
+       15
+      ],
+      [
+       "graph state",
+       14
+      ],
+      [
+       "bn",
+       13
+      ],
+      [
+       "inversion-symmetry breaking",
+       12
+      ],
+      [
+       "gfc",
+       11
+      ],
+      [
+       "nli",
+       11
+      ],
+      [
+       "pt",
+       8
+      ],
+      [
+       "lsm",
+       7
+      ],
+      [
+       "colloidosome",
+       7
+      ]
+     ],
+     "top_miss_selection": [
+      [
+       "ti",
+       55
+      ],
+      [
+       "deposition rate",
+       25
+      ],
+      [
+       "glas",
+       24
+      ],
+      [
+       "co",
+       19
+      ],
+      [
+       "ct",
+       16
+      ],
+      [
+       "mocvd",
+       12
+      ],
+      [
+       "wte2",
+       11
+      ],
+      [
+       "epilayer",
+       11
+      ],
+      [
+       "centrosymmetric",
+       10
+      ],
+      [
+       "si",
+       10
+      ],
+      [
+       "dmi",
+       10
+      ],
+      [
+       "molecular dynamics simulation",
+       9
+      ]
+     ],
+     "top_miss_scan": [
+      [
+       "altermagnet",
+       6
+      ],
+      [
+       "spintronic",
+       2
+      ],
+      [
+       "substrate",
+       2
+      ],
+      [
+       "mlip",
+       1
+      ]
+     ]
+    },
+    "cvalue": {
+     "R_final": 0.0372,
+     "P_C": 0.4139,
+     "P_K_given_C": 0.0959,
+     "P_D_given_KC": 0.9449,
+     "P_L_given_DKC": 0.9917,
+     "loss_counts": {
+      "candidate": 1875,
+      "selection": 1197,
+      "scan": 7,
+      "link": 1
+     },
+     "top_miss_candidate": [
+      [
+       "al",
+       44
+      ],
+      [
+       "d",
+       37
+      ],
+      [
+       "hidden spin texture",
+       21
+      ],
+      [
+       "glass composition",
+       15
+      ],
+      [
+       "graph state",
+       14
+      ],
+      [
+       "bn",
+       13
+      ],
+      [
+       "inversion-symmetry breaking",
+       12
+      ],
+      [
+       "gfc",
+       11
+      ],
+      [
+       "nli",
+       11
+      ],
+      [
+       "pt",
+       8
+      ],
+      [
+       "lsm",
+       7
+      ],
+      [
+       "colloidosome",
+       7
+      ]
+     ],
+     "top_miss_selection": [
+      [
+       "ti",
+       55
+      ],
+      [
+       "deposition rate",
+       25
+      ],
+      [
+       "glas",
+       24
+      ],
+      [
+       "co",
+       19
+      ],
+      [
+       "ct",
+       16
+      ],
+      [
+       "graphene",
+       14
+      ],
+      [
+       "mocvd",
+       12
+      ],
+      [
+       "wte2",
+       11
+      ],
+      [
+       "epilayer",
+       11
+      ],
+      [
+       "centrosymmetric",
+       10
+      ],
+      [
+       "si",
+       10
+      ],
+      [
+       "dmi",
+       10
+      ]
+     ],
+     "top_miss_scan": [
+      [
+       "quantum dot",
+       2
+      ],
+      [
+       "transition metal dichalcogenide",
+       1
+      ],
+      [
+       "charge carrier",
+       1
+      ],
+      [
+       "magnetic order",
+       1
+      ],
+      [
+       "magnetic system",
+       1
+      ],
+      [
+       "magnetic ordering",
+       1
+      ]
+     ]
+    }
+   }
+  }
+ }
+}

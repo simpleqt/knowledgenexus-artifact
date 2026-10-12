@@ -129,6 +129,84 @@
     "mean": 661.3,
     "sd": 4.692
    }
+  },
+  "learnedrank": {
+   "links": {
+    "mean": 590.5,
+    "sd": 46.217
+   },
+   "entities": {
+    "mean": 110.7,
+    "sd": 7.15
+   },
+   "c10": {
+    "mean": 0.441,
+    "sd": 0.043
+   },
+   "conc_per_doc": {
+    "mean": 1.505,
+    "sd": 0.068
+   },
+   "generic_head_share": {
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "docs": {
+    "mean": 244.9,
+    "sd": 14.294
+   }
+  },
+  "cover": {
+   "links": {
+    "mean": 589.7,
+    "sd": 44.87
+   },
+   "entities": {
+    "mean": 111.4,
+    "sd": 6.818
+   },
+   "c10": {
+    "mean": 0.441,
+    "sd": 0.043
+   },
+   "conc_per_doc": {
+    "mean": 1.505,
+    "sd": 0.069
+   },
+   "generic_head_share": {
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "docs": {
+    "mean": 245.7,
+    "sd": 14.119
+   }
+  },
+  "coverRisk": {
+   "links": {
+    "mean": 505.8,
+    "sd": 31.198
+   },
+   "entities": {
+    "mean": 112,
+    "sd": 7.134
+   },
+   "c10": {
+    "mean": 0.358,
+    "sd": 0.028
+   },
+   "conc_per_doc": {
+    "mean": 1.415,
+    "sd": 0.055
+   },
+   "generic_head_share": {
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "docs": {
+    "mean": 226.6,
+    "sd": 16.043
+   }
   }
  },
  "prf": {
@@ -166,6 +244,27 @@
    "F1": 0.076,
    "occurrences": 892,
    "silver_terms": 2071
+  },
+  "learnedrank": {
+   "P": 0.526,
+   "R": 0.009,
+   "F1": 0.018,
+   "occurrences": 78,
+   "silver_terms": 2071
+  },
+  "cover": {
+   "P": 0.513,
+   "R": 0.008,
+   "F1": 0.016,
+   "occurrences": 76,
+   "silver_terms": 2071
+  },
+  "coverRisk": {
+   "P": 0.478,
+   "R": 0.007,
+   "F1": 0.014,
+   "occurrences": 69,
+   "silver_terms": 2071
   }
  },
  "verdict": {
@@ -198,6 +297,24 @@
    "n": 80,
    "AB_agree": 0.899,
    "AB_n": 79
+  },
+  "learnedrank": {
+   "rate": 0.855,
+   "n": 62,
+   "AB_agree": 0.967,
+   "AB_n": 60
+  },
+  "cover": {
+   "rate": 0.887,
+   "n": 62,
+   "AB_agree": 0.952,
+   "AB_n": 62
+  },
+  "coverRisk": {
+   "rate": 0.803,
+   "n": 61,
+   "AB_agree": 0.918,
+   "AB_n": 61
   }
  },
  "silver_reliability": {

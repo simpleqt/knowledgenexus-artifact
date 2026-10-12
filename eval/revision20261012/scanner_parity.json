@@ -1,0 +1,145 @@
+{
+ "lexicon_size": 3824,
+ "chunks": 200,
+ "frozen_source": "20261010_lexicon_multisample sample 0 前 N 块",
+ "prod_hits": 913,
+ "replica_hits": 1176,
+ "exact_multiset_matches": 865,
+ "agreement_on_replica": 0.7355,
+ "agreement_on_prod": 0.9474,
+ "span_level_prod_covered_by_replica": 913,
+ "span_level_coverage": 1.0,
+ "replica_extra_nested_in_prod_span": 27,
+ "replica_extra_crossing_or_absent": 224,
+ "same_span_normalized_key_diff": 251,
+ "divergence_attribution": {
+  "nested_crossing": "生产 dict-v3 合并 alternation 长词优先+非重叠——嵌套/交叠短词设计性不重复计数；replica 逐词扫描全部报出（span 级超集）",
+  "normalized_key": "尾 s 剥除规则对本身以 s 结尾的词条（analysis→analysi）——簿记差非匹配差"
+ },
+ "replica_only_top": [
+  [
+   "analysis",
+   21
+  ],
+  [
+   "gamma",
+   16
+  ],
+  [
+   "functions",
+   14
+  ],
+  [
+   "university",
+   14
+  ],
+  [
+   "particles",
+   10
+  ],
+  [
+   "equations",
+   9
+  ],
+  [
+   "ber",
+   8
+  ],
+  [
+   "conference",
+   7
+  ],
+  [
+   "technology",
+   7
+  ],
+  [
+   "properties",
+   6
+  ]
+ ],
+ "examples": {
+  "rep_only": [
+   {
+    "chunk": "001e10e6",
+    "surface": "analysis",
+    "term": "analysis",
+    "span": [
+     495,
+     503
+    ],
+    "context": "Genomic, bioinformatics, and functional analysis of a novel bioreme diation bacterial st"
+   },
+   {
+    "chunk": "001e10e6",
+    "surface": "properties",
+    "term": "properties",
+    "span": [
+     77,
+     87
+    ],
+    "context": "ructural, dielectric, and ferroelectric properties of CaTiO3 nano-ceramics. Digest J Nanom"
+   },
+   {
+    "chunk": "004668a4",
+    "surface": "Region",
+    "term": "region",
+    "span": [
+     7,
+     13
+    ],
+    "context": "## 16. Region near null infinity\nIn this section, we "
+   },
+   {
+    "chunk": "004668a4",
+    "surface": "Gamma",
+    "term": "gamma",
+    "span": [
+     278,
+     283
+    ],
+    "context": " the background quantities $| \\partial \\Gamma ^ { I } h _ { B } |$ and $| \\partial \\G"
+   },
+   {
+    "chunk": "004668a4",
+    "surface": "Gamma",
+    "term": "gamma",
+    "span": [
+     322,
+     327
+    ],
+    "context": "a ^ { I } h _ { B } |$ and $| \\partial \\Gamma ^ { I } \\phi _ { B } |$ are only of siz"
+   },
+   {
+    "chunk": "00856939",
+    "surface": "parameter",
+    "term": "parameter",
+    "span": [
+     1500,
+     1509
+    ],
+    "context": "n of massless particles at large impact parameter."
+   },
+   {
+    "chunk": "00856939",
+    "surface": "particles",
+    "term": "particles",
+    "span": [
+     411,
+     420
+    ],
+    "context": "menta of incoming and the outgoing hard particles, including the momenta carried by outgo"
+   },
+   {
+    "chunk": "00856939",
+    "surface": "particles",
+    "term": "particles",
+    "span": [
+     674,
+     683
+    ],
+    "context": "by the final state radiation / massless particles is known as non-linear memory or null m"
+   }
+  ]
+ }
+}

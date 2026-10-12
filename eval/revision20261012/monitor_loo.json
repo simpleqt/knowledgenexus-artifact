@@ -1,0 +1,179 @@
+{
+ "loo": [
+  {
+   "kb": "104112E6",
+   "entities": 1871,
+   "docs": 61137,
+   "c10": 0.345,
+   "status": "repaired",
+   "loo_t_investigate": 0.443,
+   "loo_t_escalate": 0.67,
+   "pred": "quiet",
+   "kind": "TN"
+  },
+  {
+   "kb": "693372D5",
+   "entities": 2726,
+   "docs": 13408,
+   "c10": 0.162,
+   "status": "repaired",
+   "loo_t_investigate": 0.443,
+   "loo_t_escalate": 0.67,
+   "pred": "quiet",
+   "kind": "TN"
+  },
+  {
+   "kb": "D2B4AD67",
+   "entities": 629,
+   "docs": 1324,
+   "c10": 0.398,
+   "status": "repaired",
+   "loo_t_investigate": 0.443,
+   "loo_t_escalate": 0.67,
+   "pred": "quiet",
+   "kind": "TN"
+  },
+  {
+   "kb": "F54CE546",
+   "entities": 153,
+   "docs": 119,
+   "c10": 0.768,
+   "status": "repaired",
+   "loo_t_investigate": 0.407,
+   "loo_t_escalate": 0.432,
+   "pred": "escalate",
+   "kind": "FP"
+  },
+  {
+   "kb": "E2ED00DD",
+   "entities": 1239,
+   "docs": 78,
+   "c10": 0.184,
+   "status": "control",
+   "loo_t_investigate": 0.443,
+   "loo_t_escalate": 0.67,
+   "pred": "quiet",
+   "kind": "TN"
+  },
+  {
+   "kb": "21BCBED8",
+   "entities": 2482,
+   "docs": 3479,
+   "c10": 0.287,
+   "status": "other",
+   "loo_t_investigate": 0.443,
+   "loo_t_escalate": 0.67,
+   "pred": "quiet",
+   "kind": "TN"
+  },
+  {
+   "kb": "6865B3A4",
+   "entities": 1217,
+   "docs": 354,
+   "c10": 0.272,
+   "status": "other",
+   "loo_t_investigate": 0.443,
+   "loo_t_escalate": 0.67,
+   "pred": "quiet",
+   "kind": "TN"
+  },
+  {
+   "kb": "9FB0435E",
+   "entities": 1024,
+   "docs": 723,
+   "c10": 0.259,
+   "status": "other",
+   "loo_t_investigate": 0.443,
+   "loo_t_escalate": 0.67,
+   "pred": "quiet",
+   "kind": "TN"
+  },
+  {
+   "kb": "AC6F2FDB",
+   "entities": 874,
+   "docs": 185,
+   "c10": 0.286,
+   "status": "other",
+   "loo_t_investigate": 0.443,
+   "loo_t_escalate": 0.67,
+   "pred": "quiet",
+   "kind": "TN"
+  },
+  {
+   "kb": "D84F82AB",
+   "entities": 424,
+   "docs": 27,
+   "c10": 0.443,
+   "status": "other",
+   "loo_t_investigate": 0.407,
+   "loo_t_escalate": 0.66,
+   "pred": "investigate",
+   "kind": "TN"
+  },
+  {
+   "kb": "37CE33A8",
+   "entities": 385,
+   "docs": 11,
+   "c10": 0.407,
+   "status": "other",
+   "loo_t_investigate": 0.443,
+   "loo_t_escalate": 0.67,
+   "pred": "quiet",
+   "kind": "TN"
+  },
+  {
+   "kb": "343D0A4B",
+   "entities": 118,
+   "docs": 4,
+   "c10": 0.395,
+   "status": "other",
+   "loo_t_investigate": 0.443,
+   "loo_t_escalate": 0.67,
+   "pred": "quiet",
+   "kind": "TN"
+  },
+  {
+   "kb": "316C267A",
+   "entities": 5,
+   "docs": 0,
+   "c10": 1.0,
+   "status": "other",
+   "loo_t_investigate": 0.439,
+   "loo_t_escalate": 0.661,
+   "pred": "exempt-small",
+   "kind": "TN"
+  },
+  {
+   "kb": "BCKP-1006",
+   "entities": 503,
+   "docs": 61137,
+   "c10": 0.419,
+   "status": "collapsed",
+   "loo_t_investigate": 0.439,
+   "loo_t_escalate": 0.661,
+   "pred": "quiet",
+   "kind": "FN"
+  }
+ ],
+ "summary": {
+  "n": 14,
+  "TP": 0,
+  "FN": 1,
+  "FP": 1,
+  "TN": 12,
+  "fp_list": [
+   "F54CE546"
+  ],
+  "fn_list": [
+   "BCKP-1006"
+  ],
+  "exempt": [
+   "316C267A"
+  ],
+  "caveats": [
+   "塌缩正例仅 1（备份行），FN 格为小样本",
+   "N≤10/<100 实体库豁免（C10 数学下界）",
+   "标签与阈值同源自单一部署，只证库间自洽"
+  ]
+ }
+}

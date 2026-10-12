@@ -78,3 +78,13 @@ the silver instrument-sensitivity rerun (silver_stability.json).
 `eval/scanner_parity/` — replica-vs-production scanner parity on 200
 frozen KB1 chunks (span-level 913/913 coverage; divergences attributed).
 Source corpora are not redistributed.
+
+## Revision-round evidence (2026-10-12, second wave)
+
+`eval/revision20261012/` — recall funnel (R = P(C)·P(K|C)·P(D|K,C)·P(L)),
+monitor leave-one-library-out validation, scanner parity, silver
+instrument stability, short-symbol ambiguity four-policy comparison
+(mentions + double-judge records), and the risk-constrained selection
+study (wide pools, construct-side dev silver, learned/coverage/cover+risk
+arms with budget curves). Cross-domain package updated with the new arms'
+lexicons, judge/arbitration records (ctx stripped), and tables.

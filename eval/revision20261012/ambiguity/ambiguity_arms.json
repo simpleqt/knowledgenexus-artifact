@@ -1,0 +1,56 @@
+{
+ "n": 150,
+ "judge_disagree": 12,
+ "original": {
+  "retained": 150,
+  "link_precision": 0.24,
+  "true_symbol_recall": 1.0,
+  "reject_rate": 0.0,
+  "nil_precision": null
+ },
+ "caseShort": {
+  "retained": 40,
+  "link_precision": 0.725,
+  "true_symbol_recall": 0.806,
+  "reject_rate": 0.733,
+  "nil_precision": 0.936
+ },
+ "context": {
+  "retained": 46,
+  "link_precision": 0.652,
+  "true_symbol_recall": 0.833,
+  "reject_rate": 0.693,
+  "nil_precision": 0.942
+ },
+ "ctxNIL": {
+  "retained": 29,
+  "link_precision": 0.724,
+  "true_symbol_recall": 0.583,
+  "reject_rate": 0.807,
+  "nil_precision": 0.876
+ },
+ "be_subset": {
+  "n": 60,
+  "n_true": 0,
+  "original": {
+   "retained": 60,
+   "precision": 0.0,
+   "recall": null
+  },
+  "caseShort": {
+   "retained": 0,
+   "precision": null,
+   "recall": null
+  },
+  "context": {
+   "retained": 0,
+   "precision": null,
+   "recall": null
+  },
+  "ctxNIL": {
+   "retained": 0,
+   "precision": null,
+   "recall": null
+  }
+ }
+}

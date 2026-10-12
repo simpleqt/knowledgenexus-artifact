@@ -128,5 +128,83 @@
    "mean": 635.7,
    "sd": 6.111
   }
+ },
+ "learnedrank": {
+  "links": {
+   "mean": 5576.3,
+   "sd": 167.054
+  },
+  "entities": {
+   "mean": 138.1,
+   "sd": 3.695
+  },
+  "c10": {
+   "mean": 0.703,
+   "sd": 0.012
+  },
+  "conc_per_doc": {
+   "mean": 5.095,
+   "sd": 0.111
+  },
+  "generic_head_share": {
+   "mean": 0.0,
+   "sd": 0.0
+  },
+  "docs": {
+   "mean": 677.2,
+   "sd": 3.938
+  }
+ },
+ "cover": {
+  "links": {
+   "mean": 5274.4,
+   "sd": 152.476
+  },
+  "entities": {
+   "mean": 138.4,
+   "sd": 3.596
+  },
+  "c10": {
+   "mean": 0.73,
+   "sd": 0.012
+  },
+  "conc_per_doc": {
+   "mean": 4.694,
+   "sd": 0.085
+  },
+  "generic_head_share": {
+   "mean": 0.0,
+   "sd": 0.0
+  },
+  "docs": {
+   "mean": 676.9,
+   "sd": 4.254
+  }
+ },
+ "coverRisk": {
+  "links": {
+   "mean": 4674.5,
+   "sd": 111.266
+  },
+  "entities": {
+   "mean": 140.3,
+   "sd": 3.234
+  },
+  "c10": {
+   "mean": 0.69,
+   "sd": 0.01
+  },
+  "conc_per_doc": {
+   "mean": 4.664,
+   "sd": 0.086
+  },
+  "generic_head_share": {
+   "mean": 0.0,
+   "sd": 0.0
+  },
+  "docs": {
+   "mean": 674.8,
+   "sd": 4.849
+  }
  }
 }
