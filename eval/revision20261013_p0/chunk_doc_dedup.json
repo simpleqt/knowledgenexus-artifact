@@ -1,0 +1,6 @@
+{
+ "chunks": 2000,
+ "found": 2000,
+ "distinct_docs": 1965,
+ "chunks_per_doc_mean": 1.02
+}

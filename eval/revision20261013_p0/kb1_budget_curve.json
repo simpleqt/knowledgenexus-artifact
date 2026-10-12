@@ -1,0 +1,132 @@
+{
+ "K=200": {
+  "v21-prefix": {
+   "links": 286,
+   "entities": 38,
+   "c10": 0.73,
+   "docs": 123.1,
+   "conc_per_doc": 1.5,
+   "R_dual": 0.004
+  },
+  "freq-top": {
+   "links": 40786.7,
+   "entities": 224.8,
+   "c10": 0.38,
+   "docs": 1789.6,
+   "conc_per_doc": 7.81,
+   "R_dual": 0.001
+  },
+  "cvalue-top": {
+   "links": 5486.2,
+   "entities": 203.1,
+   "c10": 0.54,
+   "docs": 1313.6,
+   "conc_per_doc": 2.84,
+   "R_dual": 0.001
+  }
+ },
+ "K=500": {
+  "v21-prefix": {
+   "links": 393.2,
+   "entities": 64.2,
+   "c10": 0.58,
+   "docs": 167.8,
+   "conc_per_doc": 1.54,
+   "R_dual": 0.004
+  },
+  "freq-top": {
+   "links": 58395.7,
+   "entities": 546.6,
+   "c10": 0.27,
+   "docs": 1856.1,
+   "conc_per_doc": 13.39,
+   "R_dual": 0.016
+  },
+  "cvalue-top": {
+   "links": 9100.3,
+   "entities": 470.8,
+   "c10": 0.38,
+   "docs": 1455.7,
+   "conc_per_doc": 4.31,
+   "R_dual": 0.012
+  }
+ },
+ "K=1000": {
+  "v21-prefix": {
+   "links": 2823.5,
+   "entities": 215.2,
+   "c10": 0.53,
+   "docs": 1014.9,
+   "conc_per_doc": 1.8,
+   "R_dual": 0.011
+  },
+  "freq-top": {
+   "links": 79399.2,
+   "entities": 1086.7,
+   "c10": 0.22,
+   "docs": 1884.4,
+   "conc_per_doc": 19.01,
+   "R_dual": 0.037
+  },
+  "cvalue-top": {
+   "links": 9844.5,
+   "entities": 554.1,
+   "c10": 0.35,
+   "docs": 1474.3,
+   "conc_per_doc": 4.6,
+   "R_dual": 0.012
+  }
+ },
+ "K=2000": {
+  "v21-prefix": {
+   "links": 4576.5,
+   "entities": 367.6,
+   "c10": 0.39,
+   "docs": 1250.9,
+   "conc_per_doc": 2.38,
+   "R_dual": 0.016
+  },
+  "freq-top": {
+   "links": 99449.1,
+   "entities": 2035.8,
+   "c10": 0.17,
+   "docs": 1897.6,
+   "conc_per_doc": 24.97,
+   "R_dual": 0.073
+  },
+  "cvalue-top": {
+   "links": 9844.5,
+   "entities": 554.1,
+   "c10": 0.35,
+   "docs": 1474.3,
+   "conc_per_doc": 4.6,
+   "R_dual": 0.012
+  }
+ },
+ "K=3733": {
+  "v21-prefix": {
+   "links": 10042.4,
+   "entities": 692.3,
+   "c10": 0.3,
+   "docs": 1579.2,
+   "conc_per_doc": 3.89,
+   "R_dual": 0.043
+  },
+  "freq-top": {
+   "links": 117990.4,
+   "entities": 3223.3,
+   "c10": 0.15,
+   "docs": 1902.4,
+   "conc_per_doc": 29.2,
+   "R_dual": 0.098
+  },
+  "cvalue-top": {
+   "links": 9844.5,
+   "entities": 554.1,
+   "c10": 0.35,
+   "docs": 1474.3,
+   "conc_per_doc": 4.6,
+   "R_dual": 0.012
+  }
+ }
+}

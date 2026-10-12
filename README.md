@@ -100,3 +100,14 @@ Agreement: domain-set Jaccard 0.59-0.66, termness agreement 94.5-98.8%.
 Eight-arm recall under the adjudicated reference incl. the first KB1
 lexicon-recall estimate (v2.0 1.0% -> v2.1 4.3%). Unit texts are not
 redistributed (manifest with ids/lengths only).
+
+## Major-revision P0/P1 controls (2026-10-13)
+
+`eval/revision20261013_p0/` — language-aligned schema control (CS
+collapse is semantic, not orthographic), chunk-to-document sampling
+stats, four-leg composite monitor (zero misses/false alarms on the
+frozen degradation archive), overlap-suppression sensitivity (arm
+orderings unchanged), KB1 fixed-budget sweep (v2.1-prefix vs
+frequency-top vs C-value-top at K=200..3733 with dual-annotated
+recall), entity-cluster bootstrap CIs, expansion-module adjudication,
+and third-model verification of the dual-annotation consensus.

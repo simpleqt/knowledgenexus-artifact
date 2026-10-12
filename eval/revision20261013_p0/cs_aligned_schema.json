@@ -1,0 +1,54 @@
+{
+ "schema_raw": {
+  "links": {
+   "mean": 94.1,
+   "sd": 16.031
+  },
+  "entities": {
+   "mean": 18.4,
+   "sd": 2.547
+  },
+  "c10": {
+   "mean": 0.899,
+   "sd": 0.031
+  },
+  "conc_per_doc": {
+   "mean": 1.144,
+   "sd": 0.046
+  },
+  "generic_head_share": {
+   "mean": 0.379,
+   "sd": 0.08
+  },
+  "docs": {
+   "mean": 39.1,
+   "sd": 6.082
+  }
+ },
+ "schema_en_aligned": {
+  "links": {
+   "mean": 65.9,
+   "sd": 11.01
+  },
+  "entities": {
+   "mean": 18.4,
+   "sd": 2.547
+  },
+  "c10": {
+   "mean": 0.859,
+   "sd": 0.039
+  },
+  "conc_per_doc": {
+   "mean": 1.144,
+   "sd": 0.046
+  },
+  "generic_head_share": {
+   "mean": 0.274,
+   "sd": 0.074
+  },
+  "docs": {
+   "mean": 39.1,
+   "sd": 6.082
+  }
+ }
+}

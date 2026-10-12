@@ -1,0 +1,22 @@
+{
+ "kb1": {
+  "verified": 36,
+  "confirmed": 27,
+  "rate": 0.75
+ },
+ "cs": {
+  "verified": 40,
+  "confirmed": 35,
+  "rate": 0.875
+ },
+ "bio": {
+  "verified": 40,
+  "confirmed": 35,
+  "rate": 0.875
+ },
+ "mat": {
+  "verified": 40,
+  "confirmed": 38,
+  "rate": 0.95
+ }
+}

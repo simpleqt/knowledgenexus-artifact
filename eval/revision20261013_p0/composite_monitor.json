@@ -1,0 +1,146 @@
+{
+ "legs": {
+  "A_conc": "C10>0.35",
+  "B_count": "links<50%baseline",
+  "C_genhead": "genhead>0.1",
+  "D_card": "entities<50%baseline"
+ },
+ "missed": [],
+ "false_alarms": [],
+ "rows": [
+  {
+   "arm": "baseline-v2.1",
+   "truth": "no-alarm-expected",
+   "fired": [],
+   "c10": 0.3,
+   "links": 10042.4,
+   "genhead": 0.058,
+   "entities": 692.3
+  },
+  {
+   "arm": "shrink-10pct",
+   "truth": "no-alarm-expected",
+   "fired": [],
+   "c10": 0.306,
+   "links": 8743.6,
+   "genhead": 0.066,
+   "entities": 614.1
+  },
+  {
+   "arm": "shrink-25pct",
+   "truth": "no-alarm-expected",
+   "fired": [],
+   "c10": 0.312,
+   "links": 7860.2,
+   "genhead": 0.073,
+   "entities": 534.5
+  },
+  {
+   "arm": "shrink-50pct",
+   "truth": "should-alarm",
+   "fired": [
+    "B_count"
+   ],
+   "c10": 0.321,
+   "links": 4738.7,
+   "genhead": 0.032,
+   "entities": 366.5
+  },
+  {
+   "arm": "shrink-75pct",
+   "truth": "should-alarm",
+   "fired": [
+    "A_conc",
+    "B_count",
+    "D_card"
+   ],
+   "c10": 0.614,
+   "links": 3123.4,
+   "genhead": 0.031,
+   "entities": 182.4
+  },
+  {
+   "arm": "shrink-90pct",
+   "truth": "should-alarm",
+   "fired": [
+    "A_conc",
+    "B_count",
+    "C_genhead",
+    "D_card"
+   ],
+   "c10": 0.659,
+   "links": 1055.9,
+   "genhead": 0.174,
+   "entities": 76.9
+  },
+  {
+   "arm": "subst-100pct",
+   "truth": "should-alarm",
+   "fired": [
+    "A_conc",
+    "B_count",
+    "C_genhead",
+    "D_card"
+   ],
+   "c10": 0.513,
+   "links": 2968.6,
+   "genhead": 0.146,
+   "entities": 108.8
+  },
+  {
+   "arm": "subst-10pct",
+   "truth": "no-alarm-expected",
+   "fired": [],
+   "c10": 0.318,
+   "links": 9397.4,
+   "genhead": 0.061,
+   "entities": 640.3
+  },
+  {
+   "arm": "subst-25pct",
+   "truth": "no-alarm-expected",
+   "fired": [],
+   "c10": 0.302,
+   "links": 7897.3,
+   "genhead": 0.073,
+   "entities": 552.4
+  },
+  {
+   "arm": "subst-50pct",
+   "truth": "no-alarm-expected",
+   "fired": [],
+   "c10": 0.286,
+   "links": 6033.6,
+   "genhead": 0.096,
+   "entities": 406.1
+  },
+  {
+   "arm": "subst-75pct",
+   "truth": "should-alarm",
+   "fired": [
+    "A_conc",
+    "B_count",
+    "C_genhead",
+    "D_card"
+   ],
+   "c10": 0.371,
+   "links": 4156.7,
+   "genhead": 0.104,
+   "entities": 246.1
+  },
+  {
+   "arm": "v2.0-collapse",
+   "truth": "should-alarm",
+   "fired": [
+    "A_conc",
+    "B_count",
+    "C_genhead",
+    "D_card"
+   ],
+   "c10": 0.513,
+   "links": 2968.6,
+   "genhead": 0.146,
+   "entities": 108.8
+  }
+ ]
+}

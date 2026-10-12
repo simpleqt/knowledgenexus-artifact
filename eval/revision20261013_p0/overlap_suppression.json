@@ -1,0 +1,248 @@
+{
+ "cs": {
+  "schema": {
+   "base": {
+    "links": 94.1,
+    "entities": 18.4,
+    "c10": 0.899,
+    "conc_per_doc": 1.144,
+    "docs": 39.1
+   },
+   "suppressed": {
+    "links": 65.9,
+    "entities": 18.4,
+    "c10": 0.859,
+    "conc_per_doc": 1.144,
+    "docs": 39.1
+   }
+  },
+  "freq": {
+   "base": {
+    "links": 32171.6,
+    "entities": 312.4,
+    "c10": 0.227,
+    "conc_per_doc": 30.677,
+    "docs": 690
+   },
+   "suppressed": {
+    "links": 23341.1,
+    "entities": 285.4,
+    "c10": 0.193,
+    "conc_per_doc": 23.437,
+    "docs": 690
+   }
+  },
+  "cvalue": {
+   "base": {
+    "links": 5927.3,
+    "entities": 273.4,
+    "c10": 0.457,
+    "conc_per_doc": 7.15,
+    "docs": 675.4
+   },
+   "suppressed": {
+    "links": 3496.1,
+    "entities": 251.1,
+    "c10": 0.323,
+    "conc_per_doc": 4.563,
+    "docs": 675.4
+   }
+  },
+  "llmdirect": {
+   "base": {
+    "links": 5983.7,
+    "entities": 344.5,
+    "c10": 0.501,
+    "conc_per_doc": 4.634,
+    "docs": 649.6
+   },
+   "suppressed": {
+    "links": 3940.2,
+    "entities": 339.9,
+    "c10": 0.396,
+    "conc_per_doc": 3.978,
+    "docs": 649.6
+   }
+  },
+  "threesource": {
+   "base": {
+    "links": 3951.7,
+    "entities": 202.1,
+    "c10": 0.404,
+    "conc_per_doc": 3.602,
+    "docs": 635.7
+   },
+   "suppressed": {
+    "links": 3003.7,
+    "entities": 196.8,
+    "c10": 0.366,
+    "conc_per_doc": 3.268,
+    "docs": 635.7
+   }
+  }
+ },
+ "bio": {
+  "schema": {
+   "base": {
+    "links": 2412.9,
+    "entities": 100.5,
+    "c10": 0.428,
+    "conc_per_doc": 2.808,
+    "docs": 502.5
+   },
+   "suppressed": {
+    "links": 2412.9,
+    "entities": 100.5,
+    "c10": 0.428,
+    "conc_per_doc": 2.808,
+    "docs": 502.5
+   }
+  },
+  "freq": {
+   "base": {
+    "links": 29652,
+    "entities": 642.7,
+    "c10": 0.114,
+    "conc_per_doc": 29.701,
+    "docs": 664.5
+   },
+   "suppressed": {
+    "links": 22121.9,
+    "entities": 568.9,
+    "c10": 0.111,
+    "conc_per_doc": 23.21,
+    "docs": 664.5
+   }
+  },
+  "cvalue": {
+   "base": {
+    "links": 5965.6,
+    "entities": 495.4,
+    "c10": 0.249,
+    "conc_per_doc": 8.108,
+    "docs": 603.2
+   },
+   "suppressed": {
+    "links": 4392,
+    "entities": 440.6,
+    "c10": 0.236,
+    "conc_per_doc": 6.071,
+    "docs": 603.2
+   }
+  },
+  "llmdirect": {
+   "base": {
+    "links": 5973.2,
+    "entities": 591.5,
+    "c10": 0.309,
+    "conc_per_doc": 4.908,
+    "docs": 606.9
+   },
+   "suppressed": {
+    "links": 5187.9,
+    "entities": 579.8,
+    "c10": 0.297,
+    "conc_per_doc": 4.611,
+    "docs": 606.9
+   }
+  },
+  "threesource": {
+   "base": {
+    "links": 6239.9,
+    "entities": 408.7,
+    "c10": 0.281,
+    "conc_per_doc": 5.136,
+    "docs": 585.9
+   },
+   "suppressed": {
+    "links": 4887,
+    "entities": 403,
+    "c10": 0.208,
+    "conc_per_doc": 4.805,
+    "docs": 585.9
+   }
+  }
+ },
+ "mat": {
+  "schema": {
+   "base": {
+    "links": 3187.1,
+    "entities": 58.5,
+    "c10": 0.829,
+    "conc_per_doc": 2.327,
+    "docs": 613.2
+   },
+   "suppressed": {
+    "links": 2310.5,
+    "entities": 58.5,
+    "c10": 0.781,
+    "conc_per_doc": 2.311,
+    "docs": 613.2
+   }
+  },
+  "freq": {
+   "base": {
+    "links": 30762.7,
+    "entities": 481.4,
+    "c10": 0.131,
+    "conc_per_doc": 31.781,
+    "docs": 690
+   },
+   "suppressed": {
+    "links": 26178,
+    "entities": 449.4,
+    "c10": 0.141,
+    "conc_per_doc": 27.137,
+    "docs": 690
+   }
+  },
+  "cvalue": {
+   "base": {
+    "links": 5865,
+    "entities": 411.2,
+    "c10": 0.238,
+    "conc_per_doc": 7.48,
+    "docs": 685.1
+   },
+   "suppressed": {
+    "links": 4908.2,
+    "entities": 382.8,
+    "c10": 0.244,
+    "conc_per_doc": 6.24,
+    "docs": 685.1
+   }
+  },
+  "llmdirect": {
+   "base": {
+    "links": 7670,
+    "entities": 713.8,
+    "c10": 0.198,
+    "conc_per_doc": 6.919,
+    "docs": 671.2
+   },
+   "suppressed": {
+    "links": 6340.8,
+    "entities": 702.2,
+    "c10": 0.177,
+    "conc_per_doc": 6.268,
+    "docs": 671.2
+   }
+  },
+  "threesource": {
+   "base": {
+    "links": 6045.2,
+    "entities": 337.4,
+    "c10": 0.268,
+    "conc_per_doc": 5.375,
+    "docs": 661.3
+   },
+   "suppressed": {
+    "links": 5170.5,
+    "entities": 327.7,
+    "c10": 0.267,
+    "conc_per_doc": 4.955,
+    "docs": 661.3
+   }
+  }
+ }
+}

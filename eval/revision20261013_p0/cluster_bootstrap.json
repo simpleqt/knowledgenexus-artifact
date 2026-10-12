@@ -1,0 +1,35 @@
+{
+ "threesource_cs": {
+  "point": 0.838,
+  "cluster_boot95": [
+   0.747,
+   0.921
+  ],
+  "n": 80
+ },
+ "threesource_bio": {
+  "point": 0.85,
+  "cluster_boot95": [
+   0.772,
+   0.924
+  ],
+  "n": 80
+ },
+ "threesource_mat": {
+  "point": 0.912,
+  "cluster_boot95": [
+   0.846,
+   0.974
+  ],
+  "n": 80
+ },
+ "audit300_stratified": {
+  "point": 0.837,
+  "cluster_boot95": [
+   0.782,
+   0.887
+  ],
+  "n": 300,
+  "clusters": 187
+ }
+}
