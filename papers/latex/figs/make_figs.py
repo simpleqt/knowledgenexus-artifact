@@ -18,6 +18,11 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
+# 2026-10-13 复审 P2：印刷字号整体放大 ~40%（审稿意见：图内字号偏小）
+plt.rcParams.update({"font.size": 13, "axes.titlesize": 13,
+                     "axes.labelsize": 13, "xtick.labelsize": 11,
+                     "ytick.labelsize": 11, "legend.fontsize": 11})
+
 OUT = os.path.dirname(os.path.abspath(__file__))
 
 # ---- Fig 4: 13-KB scatter (entities, docs, concentration, status) ----
@@ -57,19 +62,19 @@ def fig_scatter():
         if hex8 in OFFS:
             dx, dy, ha = OFFS[hex8]
             ax.annotate(hex8, (ents, conc), textcoords="offset points",
-                        xytext=(dx, dy), fontsize=8, color="#444",
+                        xytext=(dx, dy), fontsize=11.5, color="#444",
                         ha=ha, annotation_clip=True)
     ax.axhline(0.35, ls="--", lw=1, color="#e67e22")
     ax.axhline(0.50, ls="--", lw=1, color="#c0392b")
-    ax.text(6, 0.362, "investigate > 0.35", fontsize=8, color="#e67e22",
+    ax.text(6, 0.362, "investigate > 0.35", fontsize=11, color="#e67e22",
             ha="left", va="bottom")
-    ax.text(6, 0.512, "escalate > 0.50", fontsize=8, color="#c0392b",
+    ax.text(6, 0.512, "escalate > 0.50", fontsize=11, color="#c0392b",
             ha="left", va="bottom")
     ax.set_xscale("log")
     ax.set_xlabel("link-bearing canonical entities (log scale)")
     ax.set_ylabel("top-10 link concentration")
     ax.set_ylim(0, 1.02)
-    ax.legend(loc="upper right", fontsize=8, frameon=False)
+    ax.legend(loc="upper right", fontsize=11, frameon=False)
     ax.spines[["top", "right"]].set_visible(False)
     fig.tight_layout()
     fig.savefig(os.path.join(OUT, "fig_conc_scatter.png"), dpi=300)
@@ -99,16 +104,16 @@ def fig_telemetry():
     ax.set_ylim(1, 3e7)
     ax.set_xticks(list(xs))
     ax.set_xticklabels([h.replace("10-0", "") for h in HOURS], rotation=45,
-                       fontsize=7)
+                       fontsize=10)
     ax.set_xlabel("hour of 2026-10-08 / 10-09 (link created_at)")
     ax.set_ylabel("link rows inserted per hour (log)")
     # 记录中的 B93/B95 窗口 11:41–18:35
     i0, i1 = HOURS.index("10-08 11") + 0.6, HOURS.index("10-08 18") + 1.5
     ax.axvspan(i0, i1, color="#f39c12", alpha=0.18, zorder=0)
     ax.text((i0 + i1) / 2, 2e6, "logged B95 window\n(11:41–18:35)",
-            ha="center", fontsize=7.5, color="#b9770e")
+            ha="center", fontsize=10.5, color="#b9770e")
     # 图例悬空于坐标区上方（视觉验收：upper right 框压住窗口标注首行）
-    ax.legend(fontsize=8, frameon=False, loc="lower right",
+    ax.legend(fontsize=11, frameon=False, loc="lower right",
               bbox_to_anchor=(1.0, 1.02))
     ax.spines[["top", "right"]].set_visible(False)
     fig.tight_layout()
@@ -127,21 +132,21 @@ def fig_audit():
     hi = [0.874, 0.968, 0.907, 0.952, 0.706, 0.977, 0.787, 0.994]
     colors = ["#2c3e50", "#2980b9", "#2980b9", "#2980b9", "#c0392b",
               "#27ae60", "#e67e22", "#8e44ad"]
-    fig, ax = plt.subplots(figsize=(6.8, 3.8))
+    fig, ax = plt.subplots(figsize=(6.8, 4.3))
     y = range(len(groups))[::-1]
     for yi, v, l, h, c in zip(y, vals, lo, hi, colors):
         ax.plot([l, h], [yi, yi], color=c, lw=2.2, solid_capstyle="round")
         ax.plot(v, yi, "o", color=c, ms=7)
         ax.text(h + 0.012, yi, f"{v:.3f} [{l:.2f},{h:.2f}]", va="center",
-                fontsize=7.5, color="#333")
+                fontsize=10.5, color="#333")
     ax.axvline(1.0, ls=":", lw=0.8, color="#999")
     ax.set_yticks(list(y))
-    ax.set_yticklabels(groups, fontsize=8)
+    ax.set_yticklabels(groups, fontsize=11)
     ax.set_xlim(0.38, 1.35)
     ax.set_xlabel("link precision (Wilson 95% CI)")
     ax.set_title("Primary judge (Qwen3.6-35B): 300-link stratified audit\n"
                  "cross-judge bar = 55-link parseable subset (Qwen3.8-Flash)",
-                 fontsize=7.5, color="#555")
+                 fontsize=10, color="#555")
     ax.spines[["top", "right"]].set_visible(False)
     fig.tight_layout()
     fig.savefig(os.path.join(OUT, "fig_audit_ci.png"), dpi=300)
@@ -178,12 +183,12 @@ def fig_top(names_counts, title, fname, total):
     fig, ax = plt.subplots(figsize=(6.4, 6.2))
     ax.barh(range(len(names)), [v / total for v in vals], color=cols)
     ax.set_yticks(range(len(names)))
-    ax.set_yticklabels(names, fontsize=8, family="monospace")
+    ax.set_yticklabels(names, fontsize=11, family="monospace")
     for i, v in enumerate(vals):
         ax.text(v / total + 0.002, i, f"{v/1e6:.2f}M" if v > 1e6 else f"{v/1e3:.0f}k",
-                va="center", fontsize=6.5, color="#555")
+                va="center", fontsize=9, color="#555")
     ax.set_xlabel("share of all entity links")
-    ax.set_title(title, fontsize=9)
+    ax.set_title(title, fontsize=12)
     ax.set_xlim(0, max(vals) / total * 1.22)
     ax.spines[["top", "right"]].set_visible(False)
     fig.tight_layout()
@@ -199,12 +204,12 @@ def _top_panel(ax, names_counts, total, title):
     ax.barh(range(len(names)), [v / total for v in vals], color=cols,
             height=0.72)
     ax.set_yticks(range(len(names)))
-    ax.set_yticklabels(names, fontsize=7, family="monospace")
+    ax.set_yticklabels(names, fontsize=9, family="monospace")
     for i, v in enumerate(vals):
         ax.text(v / total + 0.002, i,
                 f"{v/1e6:.2f}M" if v > 1e6 else f"{v/1e3:.0f}k",
-                va="center", fontsize=5.5, color="#555")
-    ax.set_title(title, fontsize=8.5)
+                va="center", fontsize=8, color="#555")
+    ax.set_title(title, fontsize=11)
     ax.set_xlim(0, max(vals) / total * 1.18)
     ax.spines[["top", "right"]].set_visible(False)
 
@@ -217,15 +222,71 @@ def fig_top_pair(before, after, total_b, total_a, fname):
                f"Collapsed (2026-10-06 backup) — 4.81M links, $C_{{10}}$=0.419")
     _top_panel(axa, after, total_a,
                f"After repair — 25.10M links, $C_{{10}}$=0.345")
-    axb.set_xlabel("share of all entity links", fontsize=8)
-    axa.set_xlabel("share of all entity links", fontsize=8)
+    axb.set_xlabel("share of all entity links", fontsize=11)
+    axa.set_xlabel("share of all entity links", fontsize=11)
     handles = [Patch(color="#27ae60", label="domain term"),
                Patch(color="#e67e22", label="generic word"),
                Patch(color="#c0392b", label="short ambiguous symbol")]
-    axa.legend(handles=handles, loc="lower right", fontsize=7,
+    axa.legend(handles=handles, loc="lower right", fontsize=10,
                frameon=False)
     fig.tight_layout()
     fig.savefig(os.path.join(OUT, fname), dpi=300)
+    plt.close(fig)
+
+
+def fig_xdomain():
+    """跨域泛化三联图（2026-10-12 论文实验扩展；同日 R3-P3-m2 图例修复：
+    图例外移至三面板下方共用区、域标签缩短防挤压）。数据直读
+    20261011_cross_domain tables.json，llmdirect 臂加斜纹标记（silver
+    同家族偏置，仅指示性）。"""
+    root = os.path.join(OUT, "..", "..", "..", "eval", "baselines",
+                        "results", "20261011_cross_domain")
+    doms = [("cs", "CS"), ("bio", "Biomed"), ("mat", "Mat")]
+    arms = [("schema", "batch schema"), ("freq", "frequency"),
+            ("cvalue", "C-value"), ("llmdirect", "LLM direct"),
+            ("threesource", "three-source")]
+    data = {d: json.load(open(os.path.join(root, d, "tables.json")))
+            for d, _ in doms}
+    fig, axes = plt.subplots(1, 3, figsize=(10.6, 3.4))
+    specs = [("judged-valid rate",
+              lambda t, a: t["verdict"][a]["rate"], False),
+             ("top-10 concentration $C_{10}$",
+              lambda t, a: t["scan"][a]["c10"]["mean"], False),
+             ("concepts / doc (log)",
+              lambda t, a: t["scan"][a]["conc_per_doc"]["mean"], True)]
+    cmap = {"schema": "#c0392b", "freq": "#95a5a6", "cvalue": "#7f8c8d",
+            "llmdirect": "#e67e22", "threesource": "#27ae60"}
+    for ax, (title, get, logy) in zip(axes, specs):
+        w = 0.16
+        ymax = 0.0
+        for i, (akey, alab) in enumerate(arms):
+            xs = [j + i * w for j in range(len(doms))]
+            ys = [get(data[d], akey) for d, _ in doms]
+            ymax = max([ymax] + ys)
+            bars = ax.bar(xs, ys, width=w * 0.92, color=cmap[akey],
+                          hatch="//" if akey == "llmdirect" else None,
+                          edgecolor="white", linewidth=0.4)
+            if not logy:
+                # 2026-10-13 复审 P2：字号放大后水平数值标签相邻重叠，改竖排
+                ax.bar_label(bars, fmt="%.2f", fontsize=7, padding=2,
+                             rotation=90)
+        ax.set_xticks([j + 2 * w for j in range(len(doms))])
+        ax.set_xticklabels([lab for _, lab in doms], fontsize=11)
+        ax.set_title(title, fontsize=11.5)
+        if logy:
+            ax.set_yscale("log")
+        else:
+            ax.set_ylim(0, ymax * 1.22)  # 竖排标签头部空间
+        ax.tick_params(labelsize=9.5)
+        ax.spines[["top", "right"]].set_visible(False)
+    import matplotlib.patches as mpatches
+    handles = [mpatches.Patch(facecolor=cmap[k], hatch="//" if k ==
+               "llmdirect" else None, label=lab)
+               for k, lab in arms]
+    fig.legend(handles=handles, loc="lower center", ncol=5, fontsize=10.5,
+               frameon=False, bbox_to_anchor=(0.5, 0.0))
+    fig.tight_layout(rect=(0, 0.07, 1, 1))
+    fig.savefig(os.path.join(OUT, "fig_xdomain.png"), dpi=300)
     plt.close(fig)
 
 
@@ -233,6 +294,7 @@ if __name__ == "__main__":
     fig_scatter()
     fig_telemetry()
     fig_audit()
+    fig_xdomain()
     after = [("be", 2264858), ("alpha", 1246756), ("gamma", 843979),
              ("beta", 828847), ("method", 727377), ("parameter", 709237),
              ("term", 669084), ("analysi", 467779), ("theory", 459229),
