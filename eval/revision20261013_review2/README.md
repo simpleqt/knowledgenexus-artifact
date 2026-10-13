@@ -25,3 +25,18 @@ Driver: `lexicon_unified_typing.py` (parts xdomain | kb1 | translate).
 Note: an intermediate run wrote judge files without domain prefixes causing
 bio/mat to reuse CS records; fixed and re-run - only the per-domain files
 here are authoritative.
+
+3. **From-scratch human enumeration, recall side** (`enumeration/`): the
+   author enumerated domain terms from zero on 30 held-out abstracts
+   (10/domain, frozen test splits, no candidates shown; 424 raw -> 418
+   unique surfaces). Matched against the five cross-domain arms by exact
+   case-folded surface: batch schema 0/418 (0 even among the 83 terms
+   recurring in >10 construction-corpus documents); size-aligned arms cover
+   16.9-22.9% of that core stratum; LLM-direct 47.0% with a 4.6x larger
+   unvalidated lexicon. Half the terms (209) never occur in the 3,000-doc
+   construction corpus - paper coinages no bounded static lexicon can carry
+   (mention-layer scope). Per-1,000-entry recall efficiency: cvalue 16.6 >
+   three-source 14.8 > freq 12.2 > llmdirect 10.5. The enumeration sheet
+   itself contains public-corpus abstract text and is not redistributed;
+   per-term surfaces, doc-frequency counts, and strata are in the two JSONs.
+   Drivers: `enumeration_recall.py`, `enumeration_attestation.py`.

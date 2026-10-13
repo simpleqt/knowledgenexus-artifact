@@ -1290,6 +1290,54 @@ validity rates (10{,}000 resamples) are [0.747, 0.921] (CS),
 [0.772, 0.924] (biomedicine), [0.846, 0.974] (materials) --- wider
 than link-level Wilson intervals, conclusions unchanged.
 
+\emph{From-scratch enumeration (recall side)}: to bound the omission
+side that verification cannot see, the same author enumerated domain
+terms from zero on 30 additional held-out abstracts (10 per domain,
+sampled from the frozen cross-domain test splits; no candidates were
+shown), yielding 418 unique terms matched against the five arms by
+exact surface after case folding (Table~\ref{tab:enum}). The
+batch-schema arm covers \textbf{0/418} --- including 0 of the 83 terms
+attested in more than ten construction-corpus documents: the collapse
+signature replicates under the strongest instrument yet, now from the
+recall side. Half of the enumerated terms (209/418) never occur in
+the 3{,}000-document construction corpus --- paper-specific coinages
+(new method, benchmark, and model names) that no bounded static
+lexicon can carry and that belong to the mention layer; this bounds
+what lexicon-layer recall can mean at all. Within the core stratum
+the size-aligned arms cover 16.9--22.9\% (frequency 14/83, C-value
+19/83, three-source 14/83) and the unvalidated LLM-direct arm 47.0\%
+with a $4.6\times$ larger lexicon; per 1{,}000 lexicon entries the
+recall-efficiency ordering is C-value 16.6 $>$ three-source 14.8 $>$
+frequency 12.2 $>$ LLM-direct 10.5. The probe prices the validity
+-first selection honestly: under the shared size cap, three-source
+trades a modest recall deficit to C-value for its arbitrated blind
+validity (0.838--0.912 vs.\ 0.27--0.40). The enumeration sheet
+(git-ignored: public-corpus text), per-term document-frequency counts,
+and the strata table ship with the artifact.
+
+\begin{table}[t]
+\centering
+\caption{Recall-side reference: from-scratch human enumeration (30
+held-out abstracts, 10 per domain; 418 unique terms) matched against
+the five cross-domain arms by exact surface (case-folded). Strata are
+construction-corpus document frequency (3{,}000 docs per domain). The
+LLM-direct lexicon is $4.6\times$ larger on average and unvalidated
+(silver-family bias, indicative).}
+\label{tab:enum}
+\small
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Stratum & $n$ & schema & freq & C-val & llmdir & 3-src \\
+\midrule
+unseen (df$=$0) & 209 & 0 & 0 & 0 & 0 & 0 \\
+rare (df$=$1--2) & 59 & 0 & 0 & 0 & 4 & 0 \\
+recurring (df$=$3--10) & 67 & 0 & 0 & 0 & 12 & 3 \\
+core (df$>$10) & 83 & 0 & 14 & 19 & 39 & 14 \\
+\midrule
+all terms & 418 & 0 & 14 & 19 & 55 & 17 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \begin{table}[t]
 \centering
@@ -1590,7 +1638,8 @@ A human-adjudicated stratified sample is the
 natural next evaluation step.
 \item \textbf{The cross-domain study is model-annotated, with a
 single-author human verification of a 197-term sample that bounds
-precision only}
+precision, plus a single-author from-scratch enumeration of 30
+held-out abstracts that references recall}
 (Section~\ref{sec:xdomain}): silver enumeration agreement across
 families is 0.41--0.55; an instrument-sensitivity rerun on the shared
 30-document subset shows the arms' recall ordering stable under both

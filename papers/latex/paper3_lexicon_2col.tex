@@ -758,6 +758,20 @@ validity rates (10{,}000 resamples) are [0.747, 0.921] (CS),
 [0.772, 0.924] (biomedicine), [0.846, 0.974] (materials) --- wider
 than link-level Wilson intervals, conclusions unchanged.
 
+\emph{From-scratch enumeration (recall side)}: the same author
+enumerated terms from zero on 30 further held-out abstracts (10 per
+domain, frozen test splits; 418 unique terms, exact case-folded
+surface match). The batch-schema arm covers \textbf{0/418} --- 0 even
+among the 83 terms recurring in $>$10 construction-corpus documents;
+size-aligned statistical arms cover 16.9--22.9\% of that core stratum
+(C-value 19 $>$ frequency $=$ three-source 14), LLM-direct 47.0\%
+with a $4.6\times$ larger unvalidated lexicon. Half the terms (209)
+never occur in the 3{,}000-doc construction corpus --- paper coinages
+that no bounded static lexicon can carry (mention-layer scope),
+bounding lexicon-layer recall itself. Per 1{,}000 entries,
+recall efficiency: C-value 16.6 $>$ three-source 14.8 $>$ frequency
+12.2 $>$ LLM-direct 10.5; the strata table ships with the artifact.
+
 
 \begin{table*}[t]
 \centering
@@ -1007,7 +1021,8 @@ comparable to the link audit); governance verdicts (removed 0.033 vs
 retained 0.700) inherit that exposure. (7)~The cross-domain study
 (\S\ref{sec:xdomain}) is model-annotated with a
 single-author human verification of a 197-term sample (precision
-only; \S\ref{sec:xdomain}): silver enumeration
+bound; recall is referenced by a single-author 30-abstract
+from-scratch enumeration; \S\ref{sec:xdomain}): silver enumeration
 agreement across families is 0.41--0.55; an instrument-sensitivity
 rerun on the shared 30-document subset shows the arms' recall ordering
 stable under both references (F1 mid-band orderings in CS are
