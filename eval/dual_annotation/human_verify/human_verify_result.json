@@ -1,0 +1,1637 @@
+{
+ "stats": {
+  "n": 197,
+  "ok": 184,
+  "wrong": 8,
+  "unsure": 5,
+  "confirm_rate": 0.934,
+  "wilson95": [
+   0.89,
+   0.961
+  ],
+  "kb1": {
+   "n": 24,
+   "ok": 20,
+   "rate": 0.833
+  },
+  "cs": {
+   "n": 60,
+   "ok": 58,
+   "rate": 0.967
+  },
+  "bio": {
+   "n": 53,
+   "ok": 49,
+   "rate": 0.925
+  },
+  "mat": {
+   "n": 60,
+   "ok": 57,
+   "rate": 0.95
+  },
+  "origin_both": {
+   "n": 138,
+   "ok": 131,
+   "rate": 0.949
+  },
+  "origin_arb+p1": {
+   "n": 34,
+   "ok": 29,
+   "rate": 0.853
+  },
+  "origin_arb+p2": {
+   "n": 25,
+   "ok": 24,
+   "rate": 0.96
+  },
+  "specific_spec": {
+   "n": 96,
+   "ok": 89,
+   "rate": 0.927
+  },
+  "specific_cat": {
+   "n": 101,
+   "ok": 95,
+   "rate": 0.941
+  },
+  "corrections": []
+ },
+ "rows": [
+  {
+   "unit": "bio:pmid:41626414",
+   "norm": "adverse event",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41626414",
+   "norm": "analgesia",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41626414",
+   "norm": "ci",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41626414",
+   "norm": "contextual",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "wrong",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41626414",
+   "norm": "fentanyl",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41626414",
+   "norm": "full-text screening",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41626414",
+   "norm": "intravenou",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41626414",
+   "norm": "j-tip",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41626414",
+   "norm": "lidocaine-prilocaine",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41626414",
+   "norm": "physiological",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "wrong",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41626414",
+   "norm": "randomized trial",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41626414",
+   "norm": "rob",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41656556",
+   "norm": "content analysi",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41656556",
+   "norm": "drug use supplie",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41656556",
+   "norm": "drug use-related stigma",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41656556",
+   "norm": "federal xylazine alert",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "wrong",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41656556",
+   "norm": "opioid supply",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41656556",
+   "norm": "public health crisi",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41656556",
+   "norm": "pwud",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41656556",
+   "norm": "stigma",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41656556",
+   "norm": "stigmatizing term",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41656556",
+   "norm": "unhoused person",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41656556",
+   "norm": "xylazine",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41656556",
+   "norm": "xylazine-related web-based media",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "wrong",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41661943",
+   "norm": "area under the receiver operating characteristic curve",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41661943",
+   "norm": "chi-square test",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41661943",
+   "norm": "decision tree-based machine learning method",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41661943",
+   "norm": "disorder",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41661943",
+   "norm": "formal help-seeking",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41661943",
+   "norm": "gynaecological/reproductive condition",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41661943",
+   "norm": "health behaviour",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41661943",
+   "norm": "impaired social functioning",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41661943",
+   "norm": "impairment",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41661943",
+   "norm": "mann-whitney u test",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41661943",
+   "norm": "predictive model",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:41661943",
+   "norm": "social functioning",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42147396",
+   "norm": "bayesian genomic",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42147396",
+   "norm": "critical illnes",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42147396",
+   "norm": "early sepsis prediction",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42147396",
+   "norm": "injury science",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42147396",
+   "norm": "sepsi",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42344191",
+   "norm": "anti-inflammatory therapie",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42344191",
+   "norm": "clinical diagnosi",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42344191",
+   "norm": "disease evaluation",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42344191",
+   "norm": "imaging",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42344191",
+   "norm": "imaging finding",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42344191",
+   "norm": "inflammatory stage",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42344191",
+   "norm": "jia",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42344191",
+   "norm": "juvenile idiopathic arthriti",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42344191",
+   "norm": "magnetic resonance imaging",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42344191",
+   "norm": "modalitie",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42344191",
+   "norm": "rheumatological disorder",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "bio:pmid:42344191",
+   "norm": "ultrasonography",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2607.28982v1",
+   "norm": "arc accuracy",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2607.28982v1",
+   "norm": "full-adaptation",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2607.28982v1",
+   "norm": "gpu energy",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2607.28982v1",
+   "norm": "late-stage adaptation trajectory",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2607.28982v1",
+   "norm": "model representation",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2607.28982v1",
+   "norm": "multiple-choice reasoning",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2607.28982v1",
+   "norm": "parallel",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2607.28982v1",
+   "norm": "reinforcement-inspired controller",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2607.28982v1",
+   "norm": "rouge-1",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2607.28982v1",
+   "norm": "rouge-2",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2607.28982v1",
+   "norm": "training sample",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2607.28982v1",
+   "norm": "uncertainty-related control",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.23244v2",
+   "norm": "ambiguity",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.23244v2",
+   "norm": "cllm",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.23244v2",
+   "norm": "commitment",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.23244v2",
+   "norm": "corrupted context",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.23244v2",
+   "norm": "credal decoding",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.23244v2",
+   "norm": "credal semantic commitment",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.23244v2",
+   "norm": "credal token commitment",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.23244v2",
+   "norm": "meaning cluster",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.23244v2",
+   "norm": "multiple choice",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.23244v2",
+   "norm": "plausible predictor",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.23244v2",
+   "norm": "triviaqa",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.23244v2",
+   "norm": "upper probability",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.26970v1",
+   "norm": "data dictionary",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.26970v1",
+   "norm": "deterministic lexical reconstruction",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.26970v1",
+   "norm": "elevation product",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.26970v1",
+   "norm": "environmental coverage",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "unsure",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.26970v1",
+   "norm": "environmental landscape studie",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.26970v1",
+   "norm": "environmental measurement",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.26970v1",
+   "norm": "georeferenced",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.26970v1",
+   "norm": "georeferenced environmental-toponymy dataset",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.26970v1",
+   "norm": "gis",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.26970v1",
+   "norm": "settlement record",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.26970v1",
+   "norm": "settlement-level environmental attribute",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.26970v1",
+   "norm": "source-provenance register",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.28625v1",
+   "norm": "asymmetric within-document prediction",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.28625v1",
+   "norm": "asymmetric within-document predictive learning",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.28625v1",
+   "norm": "citation-free",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.28625v1",
+   "norm": "citation-free complement",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "wrong",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.28625v1",
+   "norm": "cite prediction",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.28625v1",
+   "norm": "contrastive baseline",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.28625v1",
+   "norm": "method representation",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.28625v1",
+   "norm": "predictive training",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.28625v1",
+   "norm": "relish",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.28625v1",
+   "norm": "scientific document representation",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.28625v1",
+   "norm": "section pair",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2608.28625v1",
+   "norm": "sigreg",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2609.34754v1",
+   "norm": "accuracy",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2609.34754v1",
+   "norm": "c2c",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2609.34754v1",
+   "norm": "decoded text",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2609.34754v1",
+   "norm": "draft-kv",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2609.34754v1",
+   "norm": "frozen",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2609.34754v1",
+   "norm": "held-out task",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2609.34754v1",
+   "norm": "internal state",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2609.34754v1",
+   "norm": "key-value state",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2609.34754v1",
+   "norm": "latent communication",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2609.34754v1",
+   "norm": "model",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2609.34754v1",
+   "norm": "reassigned message",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "cs:arxiv:2609.34754v1",
+   "norm": "scaling",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:1f9e704b938ce510",
+   "norm": "analog modulator",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:1f9e704b938ce510",
+   "norm": "block diagram",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:1f9e704b938ce510",
+   "norm": "digital filter",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:5e51b03487d06fa2",
+   "norm": "\\mathring {h} _ {\\mu \\nu} ^ {\\mathrm{s1}}",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "unsure",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:5e51b03487d06fa2",
+   "norm": "\\mathring {u} _ {\\beta^ {\\prime}} ^ {0}",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "unsure",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:5e51b03487d06fa2",
+   "norm": "g _ {\\alpha^ {\\prime} \\beta^ {\\prime}}",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "unsure",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:8f7fdf40b7e51828",
+   "norm": "boundary condition",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:8f7fdf40b7e51828",
+   "norm": "gravitational perturbation",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:8f7fdf40b7e51828",
+   "norm": "height function",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:8f7fdf40b7e51828",
+   "norm": "radial derivative",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:8f7fdf40b7e51828",
+   "norm": "taylor serie",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:e65b9fe40ef43c00",
+   "norm": "dα",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:e65b9fe40ef43c00",
+   "norm": "east",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:e65b9fe40ef43c00",
+   "norm": "gdc",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:e65b9fe40ef43c00",
+   "norm": "hydrogen isotope",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:e65b9fe40ef43c00",
+   "norm": "ion cyclotron resonance frequency",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:e65b9fe40ef43c00",
+   "norm": "isotope discrimination",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:e65b9fe40ef43c00",
+   "norm": "lower-divertor neutral pressure",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:e65b9fe40ef43c00",
+   "norm": "scrape-off layer",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:e65b9fe40ef43c00",
+   "norm": "sol",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:e65b9fe40ef43c00",
+   "norm": "spectral broadening",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:e65b9fe40ef43c00",
+   "norm": "vacuum degradation",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:e65b9fe40ef43c00",
+   "norm": "wall conditioning",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "kb1:f7835394ab9dcb3b",
+   "norm": "nuclear-electronic",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "wrong",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2601.22277v1",
+   "norm": "amorphous alloy",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2601.22277v1",
+   "norm": "amorphous structure",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2601.22277v1",
+   "norm": "base crystal",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2601.22277v1",
+   "norm": "bosonic paradigm",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "unsure",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2601.22277v1",
+   "norm": "bosonic peak",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2601.22277v1",
+   "norm": "crystalline model",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2601.22277v1",
+   "norm": "glass forming ability",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2601.22277v1",
+   "norm": "melting simulation",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2601.22277v1",
+   "norm": "neutronography",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2601.22277v1",
+   "norm": "neutronography measurement",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2601.22277v1",
+   "norm": "solid amorphous inorganic structure",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2601.22277v1",
+   "norm": "solid state",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2602.08790v2",
+   "norm": "antiunitary symmetry",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2602.08790v2",
+   "norm": "bamn$_2$sb$_2$",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2602.08790v2",
+   "norm": "centrosymmetric antiferromagnet",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2602.08790v2",
+   "norm": "centrosymmetric collinear antiferromagnet",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2602.08790v2",
+   "norm": "centrosymmetric g-type antiferromagnet",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2602.08790v2",
+   "norm": "d-wave",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2602.08790v2",
+   "norm": "d-wave spin splitting",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2602.08790v2",
+   "norm": "first-principles calculation",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2602.08790v2",
+   "norm": "inversion",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2602.08790v2",
+   "norm": "nonrelativistic",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2602.08790v2",
+   "norm": "sublattice-exchanging symmetry",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2602.08790v2",
+   "norm": "surface inversion breaking",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2604.21613v1",
+   "norm": "$β$-cui structure",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2604.21613v1",
+   "norm": "bulk counterpart",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "wrong",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2604.21613v1",
+   "norm": "crystal structure",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2604.21613v1",
+   "norm": "edge energy",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2604.21613v1",
+   "norm": "morphological",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "wrong",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2604.21613v1",
+   "norm": "nucleation",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2604.21613v1",
+   "norm": "on-site coulomb interaction",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2604.21613v1",
+   "norm": "scanning tunneling microscopy",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2604.21613v1",
+   "norm": "single-layer mackinawite",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2604.21613v1",
+   "norm": "tetragonal",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2604.21613v1",
+   "norm": "two dimension",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2604.21613v1",
+   "norm": "two-dimensional material",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2605.14107v3",
+   "norm": "centrosymmetric bulk",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2605.14107v3",
+   "norm": "co3sn2s2",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2605.14107v3",
+   "norm": "extrinsic contribution",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2605.14107v3",
+   "norm": "green's-function",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2605.14107v3",
+   "norm": "intrinsic contribution",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2605.14107v3",
+   "norm": "linear photogalvanic effect",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2605.14107v3",
+   "norm": "lpge",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2605.14107v3",
+   "norm": "magnetic weyl semimetal",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2605.14107v3",
+   "norm": "magnetically controlled optoelectronic device",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2605.14107v3",
+   "norm": "photocurrent",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2605.14107v3",
+   "norm": "scaling exponent",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2605.14107v3",
+   "norm": "unitary crystal symmetrie",
+   "specific": "spec",
+   "origin": "arb+p2",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2609.04811v1",
+   "norm": "amorphous ferrimagnetic alloy",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2609.04811v1",
+   "norm": "domain wall",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2609.04811v1",
+   "norm": "ferrimagnet",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2609.04811v1",
+   "norm": "heterostructure",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2609.04811v1",
+   "norm": "light-metal/ferrimagnet heterostructure",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2609.04811v1",
+   "norm": "orbital hall current",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2609.04811v1",
+   "norm": "orbital-driven dw motion",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2609.04811v1",
+   "norm": "orbital-to-spin conversion",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2609.04811v1",
+   "norm": "pt/gfc",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2609.04811v1",
+   "norm": "rare-earth sublattice",
+   "specific": "cat",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2609.04811v1",
+   "norm": "second-harmonic hall measurement",
+   "specific": "spec",
+   "origin": "both",
+   "verdict": "ok",
+   "correction": ""
+  },
+  {
+   "unit": "mat:arxiv:2609.04811v1",
+   "norm": "ti/gfc",
+   "specific": "spec",
+   "origin": "arb+p1",
+   "verdict": "ok",
+   "correction": ""
+  }
+ ]
+}
