@@ -1,0 +1,92 @@
+{
+ "K=200": {
+  "freq-top-LLM": {
+   "links": 40870.8,
+   "entities": 226.8,
+   "c10": 0.38,
+   "docs": 1790.8,
+   "conc_per_doc": 7.89,
+   "R_dual": 0.001
+  },
+  "cvalue-top-LLM": {
+   "links": 5578.7,
+   "entities": 205.4,
+   "c10": 0.53,
+   "docs": 1318.1,
+   "conc_per_doc": 2.89,
+   "R_dual": 0.003
+  }
+ },
+ "K=500": {
+  "freq-top-LLM": {
+   "links": 59029.3,
+   "entities": 556.1,
+   "c10": 0.27,
+   "docs": 1856.2,
+   "conc_per_doc": 13.51,
+   "R_dual": 0.016
+  },
+  "cvalue-top-LLM": {
+   "links": 8907.6,
+   "entities": 471.3,
+   "c10": 0.37,
+   "docs": 1455.2,
+   "conc_per_doc": 4.24,
+   "R_dual": 0.01
+  }
+ },
+ "K=1000": {
+  "freq-top-LLM": {
+   "links": 79866.7,
+   "entities": 1102.5,
+   "c10": 0.22,
+   "docs": 1884.7,
+   "conc_per_doc": 19.28,
+   "R_dual": 0.037
+  },
+  "cvalue-top-LLM": {
+   "links": 9844.5,
+   "entities": 554.1,
+   "c10": 0.35,
+   "docs": 1474.3,
+   "conc_per_doc": 4.6,
+   "R_dual": 0.012
+  }
+ },
+ "K=2000": {
+  "freq-top-LLM": {
+   "links": 99656.8,
+   "entities": 2066.7,
+   "c10": 0.17,
+   "docs": 1897.7,
+   "conc_per_doc": 25.47,
+   "R_dual": 0.073
+  },
+  "cvalue-top-LLM": {
+   "links": 9844.5,
+   "entities": 554.1,
+   "c10": 0.35,
+   "docs": 1474.3,
+   "conc_per_doc": 4.6,
+   "R_dual": 0.012
+  }
+ },
+ "K=3733": {
+  "freq-top-LLM": {
+   "links": 118254,
+   "entities": 3270.3,
+   "c10": 0.15,
+   "docs": 1902.6,
+   "conc_per_doc": 30.09,
+   "R_dual": 0.098
+  },
+  "cvalue-top-LLM": {
+   "links": 9844.5,
+   "entities": 554.1,
+   "c10": 0.35,
+   "docs": 1474.3,
+   "conc_per_doc": 4.6,
+   "R_dual": 0.012
+  }
+ }
+}

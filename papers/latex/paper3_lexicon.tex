@@ -38,20 +38,23 @@ signature alone (109$\pm$5 entities, top-10 concentration
 ten resamples). The rebuilt layer carries 1{,}871 entities and 25.1M
 links; distinct concepts per document rise 15.7$\to$37.8 with
 annotated-document coverage 51.5\%$\to$98.5\%; a risk-stratified
-300-link audit reads 0.84 overall. Matched spans are equally
-``valid'' under old and new dictionaries (0.94 vs.\ 0.93)---the
-collapse is a vocabulary-and-mass failure invisible to per-link
-audits---and no single gold-free monitor suffices (a composite
-four-leg rule reaches zero misses and zero false alarms on the
-degradation archive). A three-domain replay on public corpora shows
+300-link audit reads 0.84 overall (LLM-assisted; no human gold
+yet). Matched spans are equally ``valid'' under old and new
+dictionaries (0.94 vs.\ 0.93, model-judged)---the collapse is a
+vocabulary-and-mass failure invisible to per-link audits---and no
+single gold-free monitor suffices (a composite four-leg rule reaches
+zero misses and zero false alarms on its own in-sample degradation
+archive). A three-domain replay on public corpora shows
 the failure form and the repair travel: batch-schema lexicons
 reproduce the collapse signature out of domain ($C_{10}$ up to 0.899,
 silver recall ${\le}$0.009). \textbf{Limitations.} The generic tail
 survives repair (9\% of links sit on the symbol ``be'');
 retrieval-facing gains are not attributable to the lexicon alone;
-annotation is model-based, bounded by single-author human verification
-of a 197-term stratified sample (confirm 0.934); alarm bands are
-post-hoc candidate thresholds.
+annotation is model-based (all judged rates are Qwen-family
+readings; cross-family arbitration touches 8--29\% of rows), bounded
+by single-author human verification of a 197-term stratified sample
+(confirm 0.934)---an independent dual-annotator human gold is the
+declared next step; alarm bands are post-hoc candidate thresholds.
 \end{abstract}
 
 \begin{keyword}
@@ -98,40 +101,38 @@ graph.
 We contribute:
 
 \begin{enumerate}
-\item \textbf{A failure mode and its causal confirmation.} A forensic
-record of entity collapse induced by schema-lexicon quality
-(Section~\ref{sec:collapse}), elevated from correlation to cause by a
-controlled lexicon-only experiment (Section~\ref{sec:after}): with
+\item \textbf{Incident forensics.} A forensic record of production
+entity collapse induced by schema-lexicon quality
+(Section~\ref{sec:collapse})---575 type-level entities carrying
+${\sim}$19.2M links under green job monitors---together with the
+full-chain rebuild under live load (Section~\ref{sec:rebuild}:
+766{,}501 re-enqueued jobs; 575$\to$1{,}871 entities,
+${\sim}$19.2M$\to$25.1M links; a window-level 137$\times$
+link-throughput recovery once the repair's own lexicon exposed a
+latent $O(N^2)$ alias check) and an incident log whose own
+corrections (a silent INSERT-IGNORE mis-write that dashboards missed;
+a logged ``zero-growth'' window contradicted by row timestamps) argue
+that dashboard-derived narratives themselves require row-level
+verification.
+\item \textbf{Single-variable causal isolation of the lexicon.} With
 pipeline code and corpus both fixed, swapping the dictionary alone
 reproduces the collapse signature and its repair across ten random
-resamples of one corpus. The observables that expose the collapse are the
-scale-invariant concentration of links on the top entities and the
-top-entity name distribution, with entity cardinality as a
-corroborating (and manipulable-in-both-directions) secondary signal.
-\item \textbf{A corpus-attested lexicon lifecycle whose decisive
-mechanism is LLM classification of corpus-frequency candidates under
-corpus-presence gating, deployed through a full-chain rebuild at
-production scale} (Sections~\ref{sec:lexicon}--\ref{sec:rebuild}):
-the production recipe combines 2{,}284 transplanted seed terms from a
-healthy near-domain library, 7{,}391 corpus-frequency candidates
-classified by an LLM, and bounded per-type expansion---yielding
-3{,}702 real terms for nuclear electronics (v2.1) and 1{,}279 for
-physics (v1.1), 223 legacy conflicts repaired in passing; the
-cross-domain ablation (Section~\ref{sec:xdomain}) attributes the
-load-bearing share to candidate classification and presence gating,
-with expansion retained as an optional diversity module. The rebuild
-itself---vertex-and-table-scoped teardown and 766{,}501 re-enqueued
-jobs---surfaced pipeline pathologies, each with a measured fix (most
-dramatically a 137$\times$ link-throughput recovery once an $O(N^2)$
-alias check, amplified by the richer lexicon itself, was cached).
-\item \textbf{Gold-free entity-quality observability}
-(Sections~\ref{sec:after}--\ref{sec:discussion}): before/after evidence
-(cardinality 575$\to$1{,}871 with a functioning relation layer; scoped
-retrieval trajectory +6.6/+7.3 cov@10 with a channel-level attribution
-bound; a 300-link stratified audit), the four monitors---led by top-10
-link concentration---calibrated on 13 production libraries, and a
-corrected incident log showing that dashboard-derived incident
-narratives themselves require row-level verification.
+resamples of one library (Section~\ref{sec:after}), and the same swap
+replays out of domain (Section~\ref{sec:xdomain}): the lexicon, not
+the pipeline, is the causal variable. The deployed remedy---a
+three-source corpus-attested recipe (3{,}702 terms) whose decisive
+mechanism the cross-domain ablation attributes to corpus-candidate
+classification under presence gating---is documented as the treatment
+under study; we claim the diagnosis and the isolation, not a new
+term-extraction method.
+\item \textbf{Gold-free monitor calibration, led by top-10 link
+concentration.} The scale-invariant concentration diagnostic
+$C_{10}$, a top-entity name audit, and a composite four-leg rule,
+calibrated on 13 production libraries and verified in-sample on a
+graded-degradation archive
+(Sections~\ref{sec:after}--\ref{sec:discussion}), with blind spots
+stated per detection target and thresholds offered as
+deployment-derived triage bands, not classifiers.
 \end{enumerate}
 
 The larger claim we defend: in dictionary-driven pipelines, \textbf{the
@@ -178,7 +179,16 @@ linguistic evidence goes back to C-value/NC-value~\cite{cvalue}---our
 corpus-candidate classification source (Section~\ref{sec:lexicon}) is that
 automatic-term-recognition program reborn with an LLM in the classifier
 seat, and recent work extracts terminology directly with
-LLM-plus-retrieval pipelines~\cite{llmterm}. Automatic schema and KG
+LLM-plus-retrieval pipelines~\cite{llmterm}. The noise side is
+equally classical: gazetteers were known early as both the strength
+and the failure surface of dictionary NER~\cite{mikheev}, UMLS-scale
+dictionary lookup underlies the canonical biomedical recognition
+system MetaMap~\cite{metamap}, and distant supervision---labels
+projected through dictionaries---prices the same false-positive mass
+as its founding cost~\cite{mintz}. Our incident is that literature's
+production-KB echo at a new layer: the gazetteer is not a curated
+resource that degrades, it is batch-generated schema content, and
+its noise is invisible per-link while fatal in the aggregate. Automatic schema and KG
 construction has meanwhile advanced to dynamic schema induction over
 corpora (AutoSchemaKG~\cite{autoschemakg}), incremental schema evolution
 (DIAL-KG~\cite{dialkg}), and joint evaluation of extraction quality,
@@ -316,7 +326,13 @@ hand-evolved terms over 78 documents yield 1{,}608 entities. We call it
 a reference case, not a controlled comparison: domain, scale, register,
 and lexicon provenance all differ, so it establishes plausibility, not
 causation --- which is what the isolated experiment of
-Section~\ref{sec:after} (6.5) is for.
+Section~\ref{sec:after} (6.5) is for. Per-document link mass differs
+by ${\sim}$22$\times$ (control ${\sim}$9{,}200 links/document vs.\
+315 collapsed / 410 repaired on KB1), but that gap is a
+document-length artifact, not a linking-rate difference: the control
+is textbook-scale material at ${\sim}$1{,}913 chunks per document
+against KB1's 99, and the per-chunk link rates are comparable (4.8
+vs.\ 4.1).
 
 \textbf{Why nothing fired.} Job-level observability was all green (jobs
 DONE, throughput nominal, error rate zero). Link volume---if anything---read
@@ -422,16 +438,39 @@ relational tables (mentions, links, relations, graph-projection queue rows)
 in bounded chunks; delete the search-side entity projection by query; then
 re-enqueue all documents through the four stages---\textbf{766{,}501 enqueue events}
 across the two affected libraries. The count is events, not distinct
-doc-stages (74{,}545 documents $\times$ 4 stages $=$ 298{,}180): the
-surplus is the repair window's re-enqueue waves---the silent-empty
-links reset (75{,}831), the post-fix relations/graph zero-effect resets
-(${\approx}$149k), the watchdog-deletion graph recovery
-(${\approx}$122k), the small-library treatment (5{,}772), and
-re-dispatch of partially processed waves during the gated window; the
-job table holds one row per doc-stage with an attempts counter, so
-every wave re-uses rows. The rebuild ran against the production
+doc-stages (74{,}545 documents $\times$ 4 stages $=$ 298{,}180);
+Table~\ref{tab:reconcile} reconciles the surplus to the repair
+window's re-enqueue waves---the job table holds one row per doc-stage
+with an attempts counter, so every wave re-uses rows, and teardowns
+reset the counters, which is why only the logged resets are exact.
+The rebuild ran against the production
 fleet (five multi-worker enrich instances, one links-dedicated consumer per
 KB) while normal retrieval served.
+
+\begin{table}[t]
+\centering
+\caption{Reconciling the 766{,}501 enqueue events. Exact rows are
+row-countable; ${\approx}$ rows are operations-log wave estimates,
+and the final remainder is balanced rather than logged---teardowns
+reset the attempts counters, so exact per-wave attribution beyond
+the logged resets is unrecoverable.}
+\label{tab:reconcile}
+\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+Component & Events \\
+\midrule
+initial re-enqueue, 74{,}545 docs $\times$ 4 stages & 298{,}180 \\
+silent-empty links reset (KB1 51{,}459 $+$ KB2 24{,}372) & 75{,}831 \\
+small-library treatment (1{,}443 docs $\times$ 4) & 5{,}772 \\
+relations/graph zero-effect reset, both libraries & ${\approx}$149{,}090 \\
+watchdog graph-deletion recovery, KB1 rel.$+$graph & ${\approx}$122{,}274 \\
+partial-wave re-dispatch, gated window (balancing) & ${\approx}$115{,}354 \\
+\midrule
+total & 766{,}501 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 The rebuild doubled as the system's first full-corpus stress test of the
 \emph{rich-lexicon} configuration; four secondary engineering incidents
@@ -832,7 +871,13 @@ mean$\pm$sd across the ten resamples. Concepts-per-document is averaged
 over \emph{matched} documents only (those with $\geq$1 scan hit under
 the arm's dictionary: mean 977 matched documents per sample under v2.0,
 1{,}579 under v2.1), so it is not an all-sampled-document mean, and the
-two arms' denominators are different sets.
+two arms' denominators are different sets. On the full
+2{,}000-document denominator (unmatched documents count zero) the
+same arms read 0.90 vs.\ 3.07 concepts per document ($\times$3.4):
+the matched-subset ratio ($\times$2.1) conditions on the documents
+the weak arm can annotate at all, and therefore understates the
+coverage gain---the selection effect runs against the collapsed
+dictionary.
 
 \begin{table}[t]
 \centering
@@ -840,7 +885,10 @@ two arms' denominators are different sets.
 resamples (fixed code, fixed corpus, only the dictionary differs;
 mean$\pm$sd). Conc/doc is the mean number of distinct concepts per
 \emph{matched} document (documents with $\geq$1 scan hit under that
-arm's dictionary); the arms' denominators differ by construction (text).}
+arm's dictionary); the arms' denominators differ by construction (text).
+The sd is within-corpus resample variance (ten draws from one
+library's chunks); it does not express cross-corpus or cross-library
+variation.}
 \label{tab:lexiso}
 \footnotesize
 \setlength{\tabcolsep}{3pt}
@@ -962,7 +1010,7 @@ short-symbol mentions sampled from the frozen replay chunks (60 on the
 \texttt{be} class; each mention judged once, blind, by judge A and
 the cross-family judge, 12 disagreements), four policies on the same
 dictionary: linking everything (current behavior) reads precision
-\textbf{0.24}; exact-case gating (the deployed treatment) 0.725 at
+\textbf{0.24}; exact-case gating (tested here, not yet deployed) 0.725 at
 true-symbol recall 0.806, rejecting 73\% (rejection precision 0.936);
 adding context evidence (long-term neighbors in a $\pm$150-character
 window) recalls slightly more (0.833) at lower precision (0.652);
@@ -1058,7 +1106,12 @@ correct, and the residual gap is the generic tail. Note also that
 collapsed KB2's 0.290 sits \emph{below} the 0.35 investigation band: a
 concentration threshold alone does not catch every collapse---KB2's is
 exposed by the name-audit and coverage legs, which is why the monitors
-deploy as a set. One honesty note:
+deploy as a set. Nor should KB2's repaired 0.162, \emph{below} the
+hand-curated control's 0.184, be read as outperforming the control:
+a probable contributor is its thin repaired lexicon (v1.1, 1{,}279
+terms, a declared floor), since vocabulary size reshapes the head
+share for reasons orthogonal to term quality---concentration is a
+distributional diagnostic, not a scalar quality scale. One honesty note:
 the metric partly improves simply because the entity population grows
 (503$\to$1{,}871 link-bearing entities); the name audit (c) remains the
 sharper discriminator of the collapse itself. We propose a band alarm
@@ -1120,6 +1173,25 @@ replacement band remains undetected by every leg (at 50\% the
 generic-head leg sits at its threshold, 0.096 vs.\ 0.10) --- the
 honest structural floor of aggregate-statistics monitoring, and the
 reason the name-audit leg exists.
+\emph{Threshold sensitivity.} The composite's verdicts are stable to
+perturbing the generic-head threshold $\tau{=}0.10$ by $\pm$0.02.
+Across $\tau \in [0.08, 0.12]$ the archive verdict is unchanged:
+every should-alarm state still fires and no healthy or mildly
+degraded state does---their highest generic-head reading is 0.073
+(25\% replacement or shrinkage), a margin of 0.027 below the nominal
+threshold, ${\sim}$7$\times$ the leg's resample sd (0.004). The
+75\%-replacement state clears three legs at once ($C_{10}$ 0.371,
+generic head 0.104, links $-$58.6\%), so its detection does not hinge
+on any single threshold. One boundary placement is nonetheless
+consequential: the 50\%-replacement state reads 0.096---four
+thousandths under $\tau{=}0.10$---so at the nominal threshold it is
+the archive's single blind-zone state, while at $\tau{=}0.09$ the
+generic-head leg catches it with no new false alarm on any healthier
+state. In-sample, the blind zone's leading edge sits within
+measurement noise of the threshold; a deployment whose healthy head
+share is low enough may read the band down to 0.09 and trade that
+false-negative class for zero observed false positives on this
+archive, re-reading the choice against its own healthy distribution.
 \emph{Cold start.} The two count legs (link-count and
 entity-cardinality drops) compare against a healthy history baseline
 that a newly created library does not have; until a first full
@@ -1164,7 +1236,10 @@ treatment showed category-word aliases \emph{inflating} the count
 (Section~\ref{sec:limitations})---which is why it backs up (a) rather
 than leading. The O(10--20) band itself comes from a single
 hand-evolved control library and is offered as illustration, not a
-calibrated norm.
+calibrated norm; that control is textbook-scale material
+(${\sim}$1{,}913 chunks/document vs.\ 99 for KB1, with comparable
+per-chunk link rates of 4.8 vs.\ 4.1), so its per-document band
+transfers to journal-article corpora only as an order of magnitude.
 \item[(c)] \emph{Top-entity name audit.} The top-K entities by link count
 should be domain concepts; a manual or LLM spot check of that list is a
 five-minute quarterly control, and the link-precision rubric of
@@ -1256,7 +1331,8 @@ healthy near-domain library, which does not exist for these public
 domains---we substitute LLM knowledge seeds under the same
 corpus-presence validation; sources 2--3 (corpus-candidate
 classification, per-type expansion with presence validation) are
-unchanged.
+unchanged. The replay harness (scanner replica, sampling, judging
+protocol) reuses the companion system's tooling~\cite{companion}.
 
 \textbf{Model-annotation protocol with human verification.} The
 annotation layer is model-based; human input enters as verification
@@ -1356,7 +1432,8 @@ recall-efficiency ordering is C-value 16.6 $>$ three-source 14.8 $>$
 frequency 12.2 $>$ LLM-direct 10.5. The probe prices the validity
 -first selection honestly: under the shared size cap, three-source
 trades a modest recall deficit to C-value for its arbitrated blind
-validity (0.838--0.912 vs.\ 0.27--0.40). The enumeration sheet
+validity (0.838--0.912 vs.\ 0.27--0.40---model-judged orderings
+throughout; an independent human gold is the declared next step). The enumeration sheet
 (git-ignored: public-corpus text), per-term document-frequency counts,
 and the strata table ship with the artifact.
 
@@ -1395,8 +1472,9 @@ occurrence-level against silver enumerations---levels indicative only
 (see text). $^{\dagger}$Frequency/C-value rows report the
 \emph{unified-typing} re-run (term sets frozen; entity types
 re-assigned by the same LLM classifier that three-source's
-classification stage uses); silver P/R/F1 not re-run---the original
-random-typed rows, including silver columns, are archived in
+classification stage uses); silver P/R/F1 re-run mechanically against
+the same silver references under the unified-typing term sets; the
+original random-typed rows are archived in
 Table~\ref{tab:xdomain-rand}.}
 \label{tab:xdomain}
 \small
@@ -1405,20 +1483,20 @@ Table~\ref{tab:xdomain-rand}.}
 Domain & Arm & Terms & Entities & $C_{10}$ & Conc/doc & Valid & $P_{s}$ & $R_{s}$ & $F_1$ \\
 \midrule
 CS & batch schema & 95 & 18.4 & \textbf{0.899} & 1.14 & 0.565 & 0.000 & 0.000 & 0.000 \\
-CS & frequency $K{=}251$ $^{\dagger}$ & 251 & 286.0 & 0.319 & 24.8 & 0.405 & -- & -- & -- \\
-CS & C-value $K{=}251$ $^{\dagger}$ & 251 & 255.0 & 0.554 & 5.1 & 0.400 & -- & -- & -- \\
+CS & frequency $K{=}251$ $^{\dagger}$ & 251 & 286.0 & 0.319 & 24.8 & 0.405 & 0.091 & 0.097 & 0.094 \\
+CS & C-value $K{=}251$ $^{\dagger}$ & 251 & 255.0 & 0.554 & 5.1 & 0.400 & 0.299 & 0.043 & 0.075 \\
 CS & LLM direct & 1198 & 344.5 & 0.501 & 4.6 & 0.787 & 0.663 & 0.132 & 0.220 \\
 CS & three-source & 251 & 202.1 & 0.404 & 3.6 & \textbf{0.838} & 0.274 & 0.050 & 0.085 \\
 \midrule
 Biomed & batch schema & 130 & 100.5 & 0.428 & 2.8 & 0.906 & 0.089 & 0.009 & 0.016 \\
-Biomed & frequency $K{=}513$ $^{\dagger}$ & 513 & 574.0 & 0.166 & 25.1 & 0.362 & -- & -- & -- \\
-Biomed & C-value $K{=}513$ $^{\dagger}$ & 513 & 449.0 & 0.291 & 6.5 & 0.400 & -- & -- & -- \\
+Biomed & frequency $K{=}513$ $^{\dagger}$ & 513 & 574.0 & 0.166 & 25.1 & 0.362 & 0.038 & 0.038 & 0.038 \\
+Biomed & C-value $K{=}513$ $^{\dagger}$ & 513 & 449.0 & 0.291 & 6.5 & 0.400 & 0.072 & 0.022 & 0.034 \\
 Biomed & LLM direct & 2003 & 591.5 & 0.309 & 4.9 & 0.838 & 0.343 & 0.085 & 0.136 \\
 Biomed & three-source & 513 & 408.7 & 0.281 & 5.1 & \textbf{0.850} & 0.273 & 0.060 & 0.098 \\
 \midrule
 Materials & batch schema & 152 & 58.5 & \textbf{0.829} & 2.3 & 0.688 & 0.054 & 0.004 & 0.007 \\
-Materials & frequency $K{=}384$ $^{\dagger}$ & 384 & 448.0 & 0.151 & 28.2 & 0.450 & -- & -- & -- \\
-Materials & C-value $K{=}384$ $^{\dagger}$ & 384 & 390.0 & 0.256 & 6.8 & 0.333 & -- & -- & -- \\
+Materials & frequency $K{=}384$ $^{\dagger}$ & 384 & 448.0 & 0.151 & 28.2 & 0.450 & 0.028 & 0.035 & 0.031 \\
+Materials & C-value $K{=}384$ $^{\dagger}$ & 384 & 390.0 & 0.256 & 6.8 & 0.333 & 0.153 & 0.044 & 0.068 \\\\
 Materials & LLM direct & 2045 & 713.8 & 0.198 & 6.9 & \textbf{0.925} & 0.336 & 0.093 & 0.146 \\
 Materials & three-source & 384 & 337.4 & 0.268 & 5.4 & 0.912 & 0.223 & 0.046 & 0.076 \\
 \bottomrule
@@ -1442,13 +1520,16 @@ classifier); random-typed rates archived in Table~\ref{tab:xdomain-rand}.}
 \textbf{The collapse signature travels} (Table~\ref{tab:xdomain},
 Figure~\ref{fig:xdomain}). The batch-schema arm on CS is the incident
 in miniature: the domain's \emph{own} committed schema lexicon yields
-$C_{10}$=0.899 with 18 matched entities and 5.7\% of documents
-carrying any annotation (its aliases are category-shaped and largely
-Chinese or uppercase-acronym forms, absent from English abstracts);
-silver recall is 0.000. Biomedicine and materials schema arms
-are milder---some of their category words (``disease'', ``cell'',
-``phase'') happen to be usable domain terms there---but still
-concentrate (0.43--0.83) at recall ${\le}$0.009. Frequency floods at
+$C_{10}$=0.899 with blind judged-validity 0.565 and 18 matched
+entities; only 5.7\% of documents carry any annotation (its aliases
+are category-shaped and largely Chinese or uppercase-acronym forms,
+absent from English abstracts) and silver recall is 0.000. Biomedicine
+and materials schema arms are milder---some of their category words
+(``disease'', ``cell'', ``phase'') happen to be usable domain terms
+there, which is why their blind validity runs higher (0.688--0.906)
+while they still concentrate ($C_{10}$ 0.43--0.83) at recall
+${\le}$0.009: concentration, not per-link validity, is the collapse
+signature. Frequency floods at
 any size: 25--28 concepts per document with validity
 0.36--0.45---volume without terminology. C-value at equal size repairs
 concentration (0.26--0.55) but not validity (0.33--0.40): in
@@ -1621,7 +1702,9 @@ vocabulary and mass (equal-size frequency control 0.45 vs 0.93), graded
 degradation bounds when the alarms fire (band at $\geq$75\%
 replacement; counts earlier under shrinkage), and the judged rates
 themselves (0.84 overall, 0.58 short symbols, removed 0.03 vs retained
-0.70) remain model-assisted readings with disclosed family exposure. The production
+0.70) remain model-assisted readings with disclosed family exposure;
+an independent dual-annotator human gold set is the declared next
+evaluation step. The production
 incident supplied the motivation and the validation environment; the
 controlled lexicon swap, the stratified audit, and a three-domain
 public-corpus replay carry the evidence. A fourth question closes the
@@ -1670,8 +1753,10 @@ the blind term-mention judging (term-mention rubric), the equal-size
 control verdict, and the removed-vs-retained governance verdicts
 (0.033/0.700) inherit the same family exposure and a rubric not
 directly comparable to the production link audit.
-A human-adjudicated stratified sample is the
-natural next evaluation step.
+A human-adjudicated stratified sample is the natural next evaluation
+step; a 100-item dual-source annotation sheet (production links plus
+cross-domain judged items, blind to model verdicts) ships with the
+artifact for exactly this purpose.
 \item \textbf{The cross-domain study is model-annotated, with a
 single-author human verification of a 197-term sample that bounds
 precision, plus a single-author from-scratch enumeration of 30
@@ -1747,8 +1832,8 @@ concentration.
 The original cross-domain table rows for the two statistical
 baselines, whose entity types were assigned at random from the schema
 type list; superseded in the main table by the unified-typing re-run
-(Table~\ref{tab:xdomain} note). Kept for the silver P/R/F1 columns,
-which were not re-run under unified typing.
+(Table~\ref{tab:xdomain} note, silver columns included). Kept as the
+pre-unification snapshot of both baselines.
 
 \begin{table}[t]
 \centering
@@ -1828,7 +1913,8 @@ queries (top-10 link concentration, cardinality ratio, top-name audit,
 row-growth reconciliation) are released in a public artifact mirror at
 \url{https://github.com/simpleqt/knowledgenexus-artifact} (no access
 request needed; the institutional GitLab carries the full development
-history). Public source corpora are not redistributed and are
+history). Each released result directory carries a SHA-256 manifest
+of its JSON records so external reruns can verify snapshot identity. Public source corpora are not redistributed and are
 identified by doc-id manifests in the same package. For double-blind
 venues an anonymized mirror will be provided
 with the submission. Schema lexicons (nuclear\_electronics v2.1, physics
@@ -1841,7 +1927,7 @@ in the released evidence pack.
 
 The authors declare no competing interests.
 
-\begin{thebibliography}{13}
+\begin{thebibliography}{16}
 
 \bibitem{autoschemakg} Bai, J., Fan, W., Hu, Q., et al.\ AutoSchemaKG:
 Autonomous knowledge graph construction through dynamic schema
@@ -1871,6 +1957,20 @@ Digital Libraries 3~(2) (2000) 115--130. doi:10.1007/s007999900023.
 \bibitem{nerSurvey} D.~Nadeau, S.~Sekine, A survey of named entity
 recognition and classification, Lingvisticae Investigationes 30~(1)
 (2007) 3--26.
+
+\bibitem{mikheev} A.~Mikheev, M.~Moens, C.~Grover, Named entity
+recognition without gazetteers, in: Proc.\ 9th Conf.\ of the
+European Chapter of the ACL (EACL~'99), Bergen, 1999, pp.\ 1--8.
+
+\bibitem{metamap} A.~R. Aronson, F.-M. Lang, An overview of MetaMap:
+historical perspective and recent advances, Journal of the American
+Medical Informatics Association 17~(3) (2010) 229--236.
+doi:10.1136/jamia.2009.002733.
+
+\bibitem{mintz} M.~Mintz, S.~Bills, R.~Snow, D.~Jurafsky, Distant
+supervision for relation extraction without labeled data, in: Proc.\
+Joint Conf.\ of the 47th Annual Meeting of the ACL and the 4th
+IJCNLP (ACL-IJCNLP 2009), Suntec, 2009, pp.\ 1003--1011.
 
 \bibitem{paulheim} H.~Paulheim, Knowledge graph refinement: A survey of
 approaches and evaluation methods, Semantic Web 8~(3) (2017) 489--508.

@@ -1,0 +1,44 @@
+{
+ "cs:freqLLM": {
+  "P": 0.091,
+  "R": 0.097,
+  "F1": 0.094,
+  "occurrences": 4860,
+  "silver_terms": 1573
+ },
+ "cs:cvalueLLM": {
+  "P": 0.299,
+  "R": 0.043,
+  "F1": 0.075,
+  "occurrences": 839,
+  "silver_terms": 1573
+ },
+ "bio:freqLLM": {
+  "P": 0.038,
+  "R": 0.038,
+  "F1": 0.038,
+  "occurrences": 4313,
+  "silver_terms": 1484
+ },
+ "bio:cvalueLLM": {
+  "P": 0.072,
+  "R": 0.022,
+  "F1": 0.034,
+  "occurrences": 833,
+  "silver_terms": 1484
+ },
+ "mat:freqLLM": {
+  "P": 0.028,
+  "R": 0.035,
+  "F1": 0.031,
+  "occurrences": 4412,
+  "silver_terms": 2081
+ },
+ "mat:cvalueLLM": {
+  "P": 0.153,
+  "R": 0.044,
+  "F1": 0.068,
+  "occurrences": 860,
+  "silver_terms": 2081
+ }
+}

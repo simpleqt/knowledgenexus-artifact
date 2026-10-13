@@ -1,0 +1,134 @@
+{
+ "cs": {
+  "freqLLM": {
+   "terms": 251,
+   "typed": 36,
+   "unclassified": 215,
+   "rand_type_disagree_with_llm": 35,
+   "disagree_of_typed": 0.972,
+   "scan": {
+    "mean": {
+     "links": 31964,
+     "entities": 286,
+     "c10": 0.3193,
+     "conc_per_doc": 24.84,
+     "generic_head_share": 0.0466,
+     "docs": 690
+    }
+   },
+   "verdict": {
+    "rate": 0.405,
+    "n": 74
+   }
+  },
+  "cvalueLLM": {
+   "terms": 251,
+   "typed": 33,
+   "unclassified": 218,
+   "rand_type_disagree_with_llm": 30,
+   "disagree_of_typed": 0.909,
+   "scan": {
+    "mean": {
+     "links": 5855,
+     "entities": 255,
+     "c10": 0.5537,
+     "conc_per_doc": 5.05,
+     "generic_head_share": 0.0,
+     "docs": 675
+    }
+   },
+   "verdict": {
+    "rate": 0.4,
+    "n": 60
+   }
+  }
+ },
+ "bio": {
+  "freqLLM": {
+   "terms": 513,
+   "typed": 72,
+   "unclassified": 441,
+   "rand_type_disagree_with_llm": 68,
+   "disagree_of_typed": 0.944,
+   "scan": {
+    "mean": {
+     "links": 29817,
+     "entities": 574,
+     "c10": 0.166,
+     "conc_per_doc": 25.06,
+     "generic_head_share": 0.0389,
+     "docs": 660
+    }
+   },
+   "verdict": {
+    "rate": 0.362,
+    "n": 80
+   }
+  },
+  "cvalueLLM": {
+   "terms": 513,
+   "typed": 50,
+   "unclassified": 463,
+   "rand_type_disagree_with_llm": 49,
+   "disagree_of_typed": 0.98,
+   "scan": {
+    "mean": {
+     "links": 5840,
+     "entities": 449,
+     "c10": 0.2909,
+     "conc_per_doc": 6.49,
+     "generic_head_share": 0.0,
+     "docs": 593
+    }
+   },
+   "verdict": {
+    "rate": 0.4,
+    "n": 60
+   }
+  }
+ },
+ "mat": {
+  "freqLLM": {
+   "terms": 384,
+   "typed": 23,
+   "unclassified": 361,
+   "rand_type_disagree_with_llm": 22,
+   "disagree_of_typed": 0.957,
+   "scan": {
+    "mean": {
+     "links": 30412,
+     "entities": 448,
+     "c10": 0.1512,
+     "conc_per_doc": 28.22,
+     "generic_head_share": 0.0889,
+     "docs": 690
+    }
+   },
+   "verdict": {
+    "rate": 0.45,
+    "n": 80
+   }
+  },
+  "cvalueLLM": {
+   "terms": 384,
+   "typed": 73,
+   "unclassified": 311,
+   "rand_type_disagree_with_llm": 71,
+   "disagree_of_typed": 0.973,
+   "scan": {
+    "mean": {
+     "links": 5860,
+     "entities": 390,
+     "c10": 0.2556,
+     "conc_per_doc": 6.8,
+     "generic_head_share": 0.0,
+     "docs": 686
+    }
+   },
+   "verdict": {
+    "rate": 0.333,
+    "n": 60
+   }
+  }
+ }
+}
