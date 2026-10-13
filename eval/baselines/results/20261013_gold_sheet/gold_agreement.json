@@ -1,0 +1,1193 @@
+{
+ "partA": [
+  {
+   "id": "A-001",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "uniform",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-002",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "uniform",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-003",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "source": "uniform",
+   "name_class": "short",
+   "model_match": false,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-004",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "generic",
+   "source": "uniform",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-005",
+   "human_A": "valid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "stratified",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-006",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "source": "uniform",
+   "name_class": "short",
+   "model_match": false,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-007",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "short",
+   "model_match": false,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-008",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "domain",
+   "model_match": false,
+   "model_specificity": "domain"
+  },
+  {
+   "id": "A-009",
+   "human_A": "valid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "uniform",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-010",
+   "human_A": "valid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "uniform",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-011",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "domain",
+   "model_match": true,
+   "model_specificity": "domain"
+  },
+  {
+   "id": "A-012",
+   "human_A": "valid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "stratified",
+   "name_class": "short",
+   "model_match": false,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-013",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "uniform",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-014",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "uniform",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-015",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "stratified",
+   "name_class": "generic",
+   "model_match": false,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-016",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "short",
+   "model_match": true,
+   "model_specificity": "domain"
+  },
+  {
+   "id": "A-017",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "short",
+   "model_match": true,
+   "model_specificity": "domain"
+  },
+  {
+   "id": "A-018",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-019",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-020",
+   "human_A": "valid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "stratified",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-021",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "stratified",
+   "name_class": "short",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-022",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "uniform",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-023",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "domain",
+   "model_match": true,
+   "model_specificity": "domain"
+  },
+  {
+   "id": "A-024",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "source": "uniform",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-025",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "generic",
+   "source": "stratified",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-026",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "stratified",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-027",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "domain",
+   "model_match": true,
+   "model_specificity": "domain"
+  },
+  {
+   "id": "A-028",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "domain",
+   "model_match": true,
+   "model_specificity": "domain"
+  },
+  {
+   "id": "A-029",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "short",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-030",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "generic",
+   "model_match": false,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-031",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "borderline",
+   "spec_B": "generic",
+   "source": "uniform",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-032",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "uniform",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-033",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "domain",
+   "model_match": true,
+   "model_specificity": "domain"
+  },
+  {
+   "id": "A-034",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "borderline",
+   "spec_B": "generic",
+   "source": "stratified",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-035",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "domain",
+   "model_match": true,
+   "model_specificity": "domain"
+  },
+  {
+   "id": "A-036",
+   "human_A": "valid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "uniform",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-037",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "short",
+   "model_match": false,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-038",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "source": "uniform",
+   "name_class": "short",
+   "model_match": true,
+   "model_specificity": "domain"
+  },
+  {
+   "id": "A-039",
+   "human_A": "valid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "uniform",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-040",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "domain",
+   "model_match": true,
+   "model_specificity": "domain"
+  },
+  {
+   "id": "A-041",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "short",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-042",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "uniform",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-043",
+   "human_A": "valid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "uniform",
+   "name_class": "generic",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-044",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "source": "uniform",
+   "name_class": "domain",
+   "model_match": true,
+   "model_specificity": "domain"
+  },
+  {
+   "id": "A-045",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "generic",
+   "source": "uniform",
+   "name_class": "short",
+   "model_match": true,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-046",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "short",
+   "model_match": true,
+   "model_specificity": "domain"
+  },
+  {
+   "id": "A-047",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "short",
+   "model_match": false,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-048",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "short",
+   "model_match": false,
+   "model_specificity": "generic"
+  },
+  {
+   "id": "A-049",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "source": "stratified",
+   "name_class": "domain",
+   "model_match": true,
+   "model_specificity": "domain"
+  },
+  {
+   "id": "A-050",
+   "human_A": "valid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "source": "stratified",
+   "name_class": "short",
+   "model_match": true,
+   "model_specificity": "generic"
+  }
+ ],
+ "partB": [
+  {
+   "id": "B-001",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "cs",
+   "arm": "freq",
+   "model_final": false
+  },
+  {
+   "id": "B-002",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "mat",
+   "arm": "cvalue",
+   "model_final": true
+  },
+  {
+   "id": "B-003",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "cs",
+   "arm": "threesource",
+   "model_final": true
+  },
+  {
+   "id": "B-004",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "mat",
+   "arm": "llmdirect",
+   "model_final": true
+  },
+  {
+   "id": "B-005",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "generic",
+   "domain": "bio",
+   "arm": "freq",
+   "model_final": false
+  },
+  {
+   "id": "B-006",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "generic",
+   "domain": "mat",
+   "arm": "cvalue",
+   "model_final": false
+  },
+  {
+   "id": "B-007",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "generic",
+   "domain": "mat",
+   "arm": "freq",
+   "model_final": true
+  },
+  {
+   "id": "B-008",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "mat",
+   "arm": "freq",
+   "model_final": false
+  },
+  {
+   "id": "B-009",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "generic",
+   "domain": "cs",
+   "arm": "cvalue",
+   "model_final": false
+  },
+  {
+   "id": "B-010",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "cs",
+   "arm": "llmdirect",
+   "model_final": true
+  },
+  {
+   "id": "B-011",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "mat",
+   "arm": "threesource",
+   "model_final": true
+  },
+  {
+   "id": "B-012",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "bio",
+   "arm": "llmdirect",
+   "model_final": true
+  },
+  {
+   "id": "B-013",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "cs",
+   "arm": "threesource",
+   "model_final": true
+  },
+  {
+   "id": "B-014",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "bio",
+   "arm": "llmdirect",
+   "model_final": true
+  },
+  {
+   "id": "B-015",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "bio",
+   "arm": "schema",
+   "model_final": true
+  },
+  {
+   "id": "B-016",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "bio",
+   "arm": "threesource",
+   "model_final": true
+  },
+  {
+   "id": "B-017",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "cs",
+   "arm": "schema",
+   "model_final": false
+  },
+  {
+   "id": "B-018",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "generic",
+   "domain": "cs",
+   "arm": "freq",
+   "model_final": false
+  },
+  {
+   "id": "B-019",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "mat",
+   "arm": "llmdirect",
+   "model_final": true
+  },
+  {
+   "id": "B-020",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "generic",
+   "domain": "cs",
+   "arm": "cvalue",
+   "model_final": false
+  },
+  {
+   "id": "B-021",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "mat",
+   "arm": "threesource",
+   "model_final": true
+  },
+  {
+   "id": "B-022",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "mat",
+   "arm": "llmdirect",
+   "model_final": true
+  },
+  {
+   "id": "B-023",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "mat",
+   "arm": "threesource",
+   "model_final": true
+  },
+  {
+   "id": "B-024",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "cs",
+   "arm": "threesource",
+   "model_final": true
+  },
+  {
+   "id": "B-025",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "bio",
+   "arm": "threesource",
+   "model_final": false
+  },
+  {
+   "id": "B-026",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "mat",
+   "arm": "schema",
+   "model_final": true
+  },
+  {
+   "id": "B-027",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "mat",
+   "arm": "schema",
+   "model_final": false
+  },
+  {
+   "id": "B-028",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "cs",
+   "arm": "llmdirect",
+   "model_final": true
+  },
+  {
+   "id": "B-029",
+   "human_A": "valid",
+   "spec_A": "generic",
+   "human_B": "valid",
+   "spec_B": "generic",
+   "domain": "bio",
+   "arm": "schema",
+   "model_final": true
+  },
+  {
+   "id": "B-030",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "bio",
+   "arm": "threesource",
+   "model_final": true
+  },
+  {
+   "id": "B-031",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "cs",
+   "arm": "schema",
+   "model_final": false
+  },
+  {
+   "id": "B-032",
+   "human_A": "borderline",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "generic",
+   "domain": "cs",
+   "arm": "threesource",
+   "model_final": true
+  },
+  {
+   "id": "B-033",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "bio",
+   "arm": "threesource",
+   "model_final": true
+  },
+  {
+   "id": "B-034",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "cs",
+   "arm": "schema",
+   "model_final": false
+  },
+  {
+   "id": "B-035",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "bio",
+   "arm": "llmdirect",
+   "model_final": true
+  },
+  {
+   "id": "B-036",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "generic",
+   "domain": "bio",
+   "arm": "freq",
+   "model_final": false
+  },
+  {
+   "id": "B-037",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "generic",
+   "domain": "bio",
+   "arm": "freq",
+   "model_final": false
+  },
+  {
+   "id": "B-038",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "generic",
+   "domain": "cs",
+   "arm": "cvalue",
+   "model_final": false
+  },
+  {
+   "id": "B-039",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "generic",
+   "domain": "mat",
+   "arm": "cvalue",
+   "model_final": false
+  },
+  {
+   "id": "B-040",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "generic",
+   "domain": "bio",
+   "arm": "cvalue",
+   "model_final": false
+  },
+  {
+   "id": "B-041",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "cs",
+   "arm": "threesource",
+   "model_final": true
+  },
+  {
+   "id": "B-042",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "cs",
+   "arm": "llmdirect",
+   "model_final": true
+  },
+  {
+   "id": "B-043",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "mat",
+   "arm": "threesource",
+   "model_final": true
+  },
+  {
+   "id": "B-044",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "mat",
+   "arm": "schema",
+   "model_final": true
+  },
+  {
+   "id": "B-045",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "bio",
+   "arm": "cvalue",
+   "model_final": true
+  },
+  {
+   "id": "B-046",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "generic",
+   "domain": "bio",
+   "arm": "cvalue",
+   "model_final": false
+  },
+  {
+   "id": "B-047",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "bio",
+   "arm": "threesource",
+   "model_final": false
+  },
+  {
+   "id": "B-048",
+   "human_A": "valid",
+   "spec_A": "domain",
+   "human_B": "valid",
+   "spec_B": "domain",
+   "domain": "bio",
+   "arm": "schema",
+   "model_final": true
+  },
+  {
+   "id": "B-049",
+   "human_A": "invalid",
+   "spec_A": "domain",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "cs",
+   "arm": "freq",
+   "model_final": true
+  },
+  {
+   "id": "B-050",
+   "human_A": "invalid",
+   "spec_A": "generic",
+   "human_B": "invalid",
+   "spec_B": "domain",
+   "domain": "mat",
+   "arm": "freq",
+   "model_final": false
+  }
+ ],
+ "summary": {
+  "partA": {
+   "annotA": {
+    "n": 50,
+    "valid": 24,
+    "valid_rate": 0.48,
+    "wilson95": [
+     0.348,
+     0.615
+    ],
+    "agree_model": 32,
+    "agree_n": 50,
+    "agree_rate": 0.64,
+    "verdicts": {
+     "valid": 24,
+     "invalid": 26,
+     "borderline": 0
+    }
+   },
+   "annotB": {
+    "n": 50,
+    "valid": 34,
+    "valid_rate": 0.68,
+    "wilson95": [
+     0.542,
+     0.792
+    ],
+    "agree_model": 40,
+    "agree_n": 50,
+    "agree_rate": 0.8,
+    "verdicts": {
+     "valid": 34,
+     "invalid": 14,
+     "borderline": 2
+    }
+   },
+   "inter_annotator": {
+    "n": 50,
+    "raw": 0.76,
+    "kappa": 0.545
+   }
+  },
+  "partB": {
+   "annotA": {
+    "n": 50,
+    "valid": 17,
+    "valid_rate": 0.34,
+    "wilson95": [
+     0.224,
+     0.478
+    ],
+    "agree_model": 37,
+    "agree_n": 50,
+    "agree_rate": 0.74,
+    "verdicts": {
+     "valid": 17,
+     "invalid": 32,
+     "borderline": 1
+    }
+   },
+   "annotB": {
+    "n": 50,
+    "valid": 18,
+    "valid_rate": 0.36,
+    "wilson95": [
+     0.241,
+     0.499
+    ],
+    "agree_model": 38,
+    "agree_n": 50,
+    "agree_rate": 0.76,
+    "verdicts": {
+     "valid": 18,
+     "invalid": 32,
+     "borderline": 0
+    }
+   },
+   "inter_annotator": {
+    "n": 50,
+    "raw": 0.96,
+    "kappa": 0.915
+   }
+  },
+  "partA_by_class": {
+   "generic": {
+    "n": 48,
+    "valid": 29,
+    "agree": 31,
+    "agree_n": 48,
+    "valid_rate": 0.604,
+    "agree_rate": 0.646
+   },
+   "short": {
+    "n": 32,
+    "valid": 13,
+    "agree": 23,
+    "agree_n": 32,
+    "valid_rate": 0.406,
+    "agree_rate": 0.719
+   },
+   "domain": {
+    "n": 20,
+    "valid": 16,
+    "agree": 18,
+    "agree_n": 20,
+    "valid_rate": 0.8,
+    "agree_rate": 0.9
+   }
+  },
+  "partB_by_arm": {
+   "freq": {
+    "n": 18,
+    "valid": 0,
+    "valid_rate": 0.0
+   },
+   "cvalue": {
+    "n": 18,
+    "valid": 0,
+    "valid_rate": 0.0
+   },
+   "threesource": {
+    "n": 28,
+    "valid": 17,
+    "valid_rate": 0.607
+   },
+   "llmdirect": {
+    "n": 18,
+    "valid": 12,
+    "valid_rate": 0.667
+   },
+   "schema": {
+    "n": 18,
+    "valid": 6,
+    "valid_rate": 0.333
+   }
+  }
+ }
+}

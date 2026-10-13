@@ -45,7 +45,7 @@ concentration 0.513$\pm$0.016) and isolates the repair effect
 carries 1{,}871 entities and 25.1M links; distinct concepts per
 document rise 15.7$\to$37.8 with annotated-document coverage
 51.5\%$\to$98.5\%; a risk-stratified 300-link audit reads 0.84 overall
-(LLM-assisted; no human gold yet). Matched spans are equally ``valid''
+(LLM-assisted). Matched spans are equally ``valid''
 under old and new dictionaries (0.94 vs.\ 0.93, model-judged)---the
 collapse is a vocabulary-and-mass failure invisible to per-link
 audits---and a composite four-leg monitor rule reaches zero misses and
@@ -57,9 +57,12 @@ survives repair (9\% of links sit on the symbol ``be''),
 retrieval-facing gains are not attributable to the lexicon alone,
 annotation is model-based (Qwen-family readings; cross-family
 arbitration on 8--29\% of rows) with single-author human verification
-of a 197-term stratified sample (confirm 0.934) --- an independent
-dual-annotator human gold is the declared next step --- and alarm
-bands are post-hoc candidate thresholds.
+of a 197-term stratified sample (confirm 0.934) and by a dual-pass
+human gold over 100 re-judged items: every arm ordering survives
+(frequency/C-value read zero human-valid verdicts; three-source 0.61)
+while model levels run ${\sim}$0.2--0.3 above the human readings and
+the production-link rubric splits the two passes ($\kappa$=0.55);
+alarm bands are post-hoc candidate thresholds.
 \end{abstract}
 
 \keywords{knowledge base construction \and schema quality \and terminology
@@ -533,7 +536,16 @@ Qwen-series model re-adjudicated the earlier uniform sample: on the
 55-link parseable subset agreement is 96.4\% (domain 14/14) --- a
 cross-model check, not family-independent confirmation
 (Figure~\ref{fig:auditci}), and unparseable responses may be
-non-random. Human adjudication remains the decisive future control.
+non-random. The fourth-round dual-pass human gold (100 items, blind,
+two passes; model verdicts withheld) supplies the human control:
+every arm ordering survives (cross-domain three-source 0.607,
+LLM-direct 0.667, batch-schema 0.333, frequency/C-value 0.000 in 18
+verdicts each), model--human agreement is 0.64--0.80 with the model
+systematically more generous (${\sim}$0.2--0.3), and the two passes
+themselves split only on production links ($\kappa$=0.545 vs.\ 0.915
+cross-domain; all 12 discordances strict-vs-lenient on generic-word
+links)---per-link validity on category-word links is contested even
+between human readers, which is the monitoring argument in miniature.
 
 \begin{figure}[t]
 \centering
@@ -798,6 +810,12 @@ records ship with the artifact. Entity-cluster bootstrap CIs for the three-sourc
 validity rates (10{,}000 resamples) are [0.747, 0.921] (CS),
 [0.772, 0.924] (biomedicine), [0.846, 0.974] (materials) --- wider
 than link-level Wilson intervals, conclusions unchanged.
+\emph{Human gold, fourth round:} a dual-pass blind re-judgment of 50
+stratified items across the five arms (labels withheld) reads
+three-source 0.607, LLM-direct 0.667 (overlapping), batch-schema
+0.333, frequency/C-value 0.000, with inter-pass $\kappa$=0.915 and
+model--human agreement 0.74--0.76: orderings human-confirmed,
+arbitrated levels ${\sim}$0.2--0.3 above the human reading.
 
 \emph{From-scratch enumeration (recall side)}: the same author
 enumerated terms from zero on 30 further held-out abstracts (10 per
@@ -905,7 +923,8 @@ validity in materials (0.925 [0.846, 0.965]) and the highest silver-P
 everywhere --- but at 4.7--8$\times$ the lexicon size with no presence
 control, and its silver-P is the same-family-inflated column. Among the
 three \emph{size-matched} arms, three-source holds the best arbitrated
-validity (model-judged throughout) in CS (0.838 [0.742, 0.903]) and biomedicine (0.850 [0.756,
+validity (model-judged levels; dual-pass human gold below) in CS
+(0.838 [0.742, 0.903]) and biomedicine (0.850 [0.756,
 0.912]) and sits within overlapping intervals of LLM-direct in
 materials (0.912 [0.830, 0.957] vs.\ 0.925) and of batch-schema in
 biomedicine (0.850 vs.\ 0.906 [0.810, 0.956] --- whose recall is
@@ -1043,9 +1062,10 @@ per-link truth they cannot see --- blind judging shows old-dictionary
 links are locally as ``valid'' as new ones (0.94 vs 0.93), so the
 collapse hides from per-link audits, and the semantic gain runs through
 vocabulary and mass (equal-size frequency control: 0.45 vs 0.93). All
-judged rates remain model-assisted with disclosed family exposure; an
-independent dual-annotator human gold set is the declared next
-evaluation step. The incident motivated and validated; the controlled swap, the stratified
+judged rates remain model-assisted with disclosed family exposure; a
+dual-pass human gold on 100 re-judged items confirms every arm
+ordering while reading absolute validity ${\sim}$0.2--0.3 below the
+model judges. The incident motivated and validated; the controlled swap, the stratified
 audit, the graded-degradation alarms, and a three-domain public-corpus
 replay carry the evidence. \textbf{Does it generalize?} On three public
 domains the batch-schema form reproduces the collapse signature
@@ -1066,8 +1086,12 @@ impossible. (3)~Coverage: two libraries rebuilt, two smaller
 treated; bilingual anomalies documented, not explained. (4)~Six
 secondary incidents extended the repair; reported as findings.
 (5)~Audit and cross-judge are model-assisted (same vendor family), not
-human-adjudicated (a 100-item dual-source human annotation sheet ships
-with the artifact); the risk-stratified sample mixes quota-defined strata
+human-adjudicated---the fourth-round dual-pass human gold (100 items)
+now bounds this: orderings preserved, model--human agreement
+0.64--0.80, model levels optimistic by ${\sim}$0.2--0.3, inter-pass
+$\kappa$=0.545 on production links vs.\ 0.915 cross-domain; the
+verdicts-only record ships with the artifact; the risk-stratified
+sample mixes quota-defined strata
 and clusters on 187 entities, and unparseable cross-judge responses may
 be non-random. (6)~The isolated experiment uses a semantic-replica
 scanner (not instrumented against the service path) and
@@ -1098,7 +1122,8 @@ those proxies.
 
 \begin{acks}
 Anonymous artifact: \url{https://github.com/simpleqt/knowledgenexus-artifact}
-(evaluation drivers, audit adjudications, isolated-comparison and
+(evaluation drivers, audit adjudications, the dual-pass human-gold
+verdict record, isolated-comparison and
 resample results, the cross-domain replay package --- drivers, judge
 and arbitration records, arm lexicons, and per-domain tables; source
 corpora are not redistributed and are identified by doc-id manifests

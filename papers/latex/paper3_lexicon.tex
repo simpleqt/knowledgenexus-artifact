@@ -38,8 +38,7 @@ signature alone (109$\pm$5 entities, top-10 concentration
 ten resamples). The rebuilt layer carries 1{,}871 entities and 25.1M
 links; distinct concepts per document rise 15.7$\to$37.8 with
 annotated-document coverage 51.5\%$\to$98.5\%; a risk-stratified
-300-link audit reads 0.84 overall (LLM-assisted; no human gold
-yet). Matched spans are equally ``valid'' under old and new
+300-link audit reads 0.84 overall (LLM-assisted). Matched spans are equally ``valid'' under old and new
 dictionaries (0.94 vs.\ 0.93, model-judged)---the collapse is a
 vocabulary-and-mass failure invisible to per-link audits---and no
 single gold-free monitor suffices (a composite four-leg rule reaches
@@ -53,8 +52,12 @@ retrieval-facing gains are not attributable to the lexicon alone;
 annotation is model-based (all judged rates are Qwen-family
 readings; cross-family arbitration touches 8--29\% of rows), bounded
 by single-author human verification of a 197-term stratified sample
-(confirm 0.934)---an independent dual-annotator human gold is the
-declared next step; alarm bands are post-hoc candidate thresholds.
+(confirm 0.934) and by a dual-pass human gold over 100 re-judged
+items: every arm ordering survives (frequency and C-value read zero
+human-valid verdicts; three-source 0.61) while model levels run
+${\sim}$0.2--0.3 above the human readings and the production-link
+rubric itself splits the two passes ($\kappa$=0.55); alarm bands are
+post-hoc candidate thresholds.
 \end{abstract}
 
 \begin{keyword}
@@ -742,8 +745,8 @@ quantified: in this 25-link domain subsample no erroneous link was
 observed, and the residual error mass sits almost entirely in the generic
 tail---but ``no errors observed at $n{=}25$'' is not ``error-free'': the
 larger stratified audit's domain stratum reads 142/149, not 149/149. The audit is LLM-assisted rather than
-human-adjudicated---a limitation we keep visible
-(Section~\ref{sec:limitations})---but its stratum split is exactly what
+human-adjudicated---an exposure the fourth-round dual-pass human gold
+below now bounds---but its stratum split is exactly what
 the monitor design predicts, and the programmatic span check removes the
 cheapest class of audit noise.
 
@@ -792,8 +795,9 @@ independent model opined, it confirmed the primary adjudication; but
 vendor-level correlation is \emph{not} confined to the unparseable
 subset---the 55 parsed links, including the domain stratum (n=25
 primary, 14 cross-parsed), carry the same family risk. A
-human-adjudicated stratified sample remains the decisive control and is
-listed as such in Section~\ref{sec:limitations}.
+human-adjudicated sample remained the decisive control; the
+fourth-round dual-pass gold (next paragraph) now supplies it on a
+100-item scale.
 
 \textbf{Stratified 300-link audit (third review round).} A uniform
 sample reads the head; the failure modes live in the tail. We
@@ -820,6 +824,38 @@ figure is a stratum-mixed rate, not an unweighted production-wide link
 precision; and the 300 links come from 187 distinct entities (the head
 stratum's 50 links from just six; the short and head strata share
 ``term''), so the intervals treat links, not concepts, as exchangeable.
+
+\textbf{Human gold check (dual-pass, 100 items, fourth review round).}
+What do human readers say on the same links? We re-judged 100 items
+blind in two independent annotation passes under the same rubrics
+(model verdicts and cross-domain arm labels withheld): 50 production
+links (20 from the uniform-100 audit, 30 from the stratified-300,
+deliberately over-weighting the short-symbol and generic classes) and
+50 cross-domain judged items (three domains $\times$ five arms). Three
+findings. \textbf{(1)~Every ordering conclusion survives human
+judgment.} The cross-domain arms read three-source 0.607 and
+LLM-direct 0.667 (overlapping intervals), batch-schema 0.333, and
+frequency and C-value \emph{zero} valid verdicts in 18 each: the
+collapse-travels claim and the selection-gate claim are
+human-confirmed, not model artifacts. \textbf{(2)~Absolute model
+levels are optimistic, now quantified.} Each pass agrees with the
+archived model verdicts on 0.64--0.80 of items, and the direction is
+systematic: three-source 0.838--0.912 (model) vs.\ 0.607 (human),
+the production-link audit 0.837 vs.\ 0.48/0.68 (the two passes), the
+model's domain/short-symbol strata 0.953/0.580 vs.\ human
+0.80/0.41. The paper's validity figures are model-relative levels
+whose orderings the human gold confirms and whose magnitudes carry a
+${\sim}$0.2--0.3 human discount. \textbf{(3)~The production-link
+rubric is itself contested.} The two passes agree almost perfectly on
+cross-domain items ($\kappa$=0.915) but split on production links
+($\kappa$=0.545; all 12 discordances run strict-invalid vs.\
+lenient-valid, and all sit on generic-word links such as
+\emph{method}/\emph{function}/\emph{location}): whether a
+category-word link counts as ``valid'' is debatable between careful
+human readers---the monitoring argument in miniature. Per-link
+validity is not the observable that carries the collapse signal;
+distribution and names are. The verdicts-only record (no corpus text)
+ships with the artifact.
 
 \textbf{The lexicon variable, isolated.} The repair bundled lexicon,
 teardown, and fleet changes; this experiment isolates the lexicon
@@ -1410,6 +1446,16 @@ gold remains future work. A third gateway model (Qwen family, short-task capable
 validity rates (10{,}000 resamples) are [0.747, 0.921] (CS),
 [0.772, 0.924] (biomedicine), [0.846, 0.974] (materials) --- wider
 than link-level Wilson intervals, conclusions unchanged.
+\emph{Human gold, fourth round.} A dual-pass blind re-judgment of 50
+stratified items across the five arms (arm labels and model verdicts
+withheld) reads three-source 0.607, LLM-direct 0.667 (overlapping),
+batch-schema 0.333, frequency/C-value 0.000 (zero of 18 verdicts
+each), with inter-pass agreement $\kappa$=0.915 and model--human
+agreement 0.74--0.76: every arm ordering this section rests on is
+human-confirmed, while the arbitrated absolute levels run
+${\sim}$0.2--0.3 above the human reading---the disclosed family
+optimism, now quantified (Section~\ref{sec:after}'s gold-check
+paragraph carries the production-link side).
 
 \emph{From-scratch enumeration (recall side)}: to bound the omission
 side that verification cannot see, the same author enumerated domain
@@ -1432,8 +1478,9 @@ recall-efficiency ordering is C-value 16.6 $>$ three-source 14.8 $>$
 frequency 12.2 $>$ LLM-direct 10.5. The probe prices the validity
 -first selection honestly: under the shared size cap, three-source
 trades a modest recall deficit to C-value for its arbitrated blind
-validity (0.838--0.912 vs.\ 0.27--0.40---model-judged orderings
-throughout; an independent human gold is the declared next step). The enumeration sheet
+validity (0.838--0.912 vs.\ 0.27--0.40---model-judged levels; the
+dual-pass human gold below reads three-source at 0.607 with every
+ordering preserved). The enumeration sheet
 (git-ignored: public-corpus text), per-term document-frequency counts,
 and the strata table ship with the artifact.
 
@@ -1703,8 +1750,10 @@ degradation bounds when the alarms fire (band at $\geq$75\%
 replacement; counts earlier under shrinkage), and the judged rates
 themselves (0.84 overall, 0.58 short symbols, removed 0.03 vs retained
 0.70) remain model-assisted readings with disclosed family exposure;
-an independent dual-annotator human gold set is the declared next
-evaluation step. The production
+a dual-pass human gold on 100 re-judged items (fourth round) confirms
+every arm ordering while reading absolute validity ${\sim}$0.2--0.3
+below the model judges---model-relative levels, human-confirmed
+orderings. The production
 incident supplied the motivation and the validation environment; the
 controlled lexicon swap, the stratified audit, and a three-domain
 public-corpus replay carry the evidence. A fourth question closes the
@@ -1753,10 +1802,13 @@ the blind term-mention judging (term-mention rubric), the equal-size
 control verdict, and the removed-vs-retained governance verdicts
 (0.033/0.700) inherit the same family exposure and a rubric not
 directly comparable to the production link audit.
-A human-adjudicated stratified sample is the natural next evaluation
-step; a 100-item dual-source annotation sheet (production links plus
-cross-domain judged items, blind to model verdicts) ships with the
-artifact for exactly this purpose.
+The fourth-round dual-pass human gold (100 items, blind, two passes)
+now bounds this exposure from the human side: orderings preserved,
+model--human agreement 0.64--0.80, model levels optimistic by
+${\sim}$0.2--0.3, and inter-pass $\kappa$=0.545 on production links
+(vs.\ 0.915 cross-domain)---per-link validity on generic-word links is
+intrinsically contested even between human passes. The verdicts-only
+record ships with the artifact.
 \item \textbf{The cross-domain study is model-annotated, with a
 single-author human verification of a 197-term sample that bounds
 precision, plus a single-author from-scratch enumeration of 30
@@ -1908,7 +1960,8 @@ chunk-id manifests, the scanner-parity driver and its 200-chunk frozen
 result, the cross-domain replay package (public-corpus download and
 five-arm drivers, silver/judge/arbitration records, arm lexicons,
 per-domain tables, and the silver-stability rerun), the
-channel-ablation runner, and the observability
+channel-ablation runner, the dual-pass human-gold scorer and its
+per-item verdict record (no corpus text), and the observability
 queries (top-10 link concentration, cardinality ratio, top-name audit,
 row-growth reconciliation) are released in a public artifact mirror at
 \url{https://github.com/simpleqt/knowledgenexus-artifact} (no access
