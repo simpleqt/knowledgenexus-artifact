@@ -4,7 +4,9 @@ Artifact release for:
 
 1. **KnowledgeNexus: A Traceable Graph–Vector Knowledge Infrastructure and
    Adaptive Multi-Channel Retrieval for Nuclear Science Literature**
-2. **The Lexicon Is the Load-Bearing Wall** (companion lexicon-quality paper)
+2. **When Schema Lexicons Fail: Diagnosing and Repairing Entity-Layer
+Collapse in a Production Knowledge Base** (companion lexicon-quality paper;
+earlier drafts circulated as "The Lexicon Is the Load-Bearing Wall")
 
 LaTeX sources and compiled preprints of both papers are under `papers/latex/`.
 
