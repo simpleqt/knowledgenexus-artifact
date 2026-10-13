@@ -238,15 +238,23 @@ def fig_xdomain():
     """跨域泛化三联图（2026-10-12 论文实验扩展；同日 R3-P3-m2 图例修复：
     图例外移至三面板下方共用区、域标签缩短防挤压）。数据直读
     20261011_cross_domain tables.json，llmdirect 臂加斜纹标记（silver
-    同家族偏置，仅指示性）。"""
+    同家族偏置，仅指示性）。2026-10-13 三轮复审：freq/cvalue 的判定
+    有效率先用统一类型重跑值（20261013_unified_typing，同 LLM 分类器
+    重赋类型）——与主表口径一致，随机类型旧值存档论文附录。"""
     root = os.path.join(OUT, "..", "..", "..", "eval", "baselines",
                         "results", "20261011_cross_domain")
+    uni = json.load(open(os.path.join(
+        root, "..", "20261013_unified_typing", "unified_typing.json")))
     doms = [("cs", "CS"), ("bio", "Biomed"), ("mat", "Mat")]
     arms = [("schema", "batch schema"), ("freq", "frequency"),
             ("cvalue", "C-value"), ("llmdirect", "LLM direct"),
             ("threesource", "three-source")]
     data = {d: json.load(open(os.path.join(root, d, "tables.json")))
             for d, _ in doms}
+    # 统一类型覆盖：freq/cvalue 的 verdict rate 换 unified 值
+    for d, _ in doms:
+        data[d]["verdict"]["freq"]["rate"] = uni[d]["freqLLM"]["verdict"]["rate"]
+        data[d]["verdict"]["cvalue"]["rate"] = uni[d]["cvalueLLM"]["verdict"]["rate"]
     fig, axes = plt.subplots(1, 3, figsize=(10.6, 3.4))
     specs = [("judged-valid rate",
               lambda t, a: t["verdict"][a]["rate"], False),

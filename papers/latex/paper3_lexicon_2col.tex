@@ -33,8 +33,9 @@ which a category-word lexicon silently collapsed the entity layer of a
 (``method'', ``energy'') carrying ${\sim}$19.2M links while every
 job-level monitor stayed green. We diagnose the failure across three
 layers (extraction mechanism, lexicon provenance, monitoring
-blindness), repair it with a three-source corpus-presence-attested
-lexicon (3{,}702 terms), rebuild the entity layer under production
+blindness), repair it with a corpus-attested lexicon built by LLM
+classification of corpus candidates under presence gating (deployed
+as a three-source recipe) (3{,}702 terms), rebuild the entity layer under production
 load, and derive gold-free monitors led by a concentration diagnostic
 invariant to uniform rescaling of link counts. A controlled experiment
 that fixes code and corpus and varies \emph{only the lexicon}
@@ -90,11 +91,11 @@ reproduced by a controlled experiment that fixes code and corpus
 and varies only the lexicon across ten disjoint corpus resamples, with a
 frozen-sample parity check tying the replica's matching semantics to the
 production scanner (\S\ref{sec:iso}). \textbf{(2)~A corpus-attested lexicon
-lifecycle}
-(seed transplant, classified corpus candidates, bounded expansion ---
-corpus presence gated) that repaired both schemas without manual
-lexicography and survived a full production rebuild
-(\S\ref{sec:lexicon}--\ref{sec:rebuild}).
+lifecycle whose decisive mechanism is LLM classification of corpus
+candidates under corpus-presence gating} (production recipe: seed
+transplant, classified candidates, optional bounded expansion) that
+repaired both schemas without manual lexicography and survived a full
+production rebuild (\S\ref{sec:lexicon}--\S\ref{sec:rebuild}).
 \textbf{(3)~Gold-free entity-quality observability}: concentration-led
 monitors with candidate thresholds read from 13 production libraries,
 reported with their known false-positive and false-negative classes
@@ -598,8 +599,15 @@ carry the rest. The
 bands ($>$0.35 investigate, $>$0.5 escalate) are \emph{empirical,
 post-hoc} candidate thresholds read from these 13 libraries --- triage
 triggers for human inspection, not classifiers, and not out-of-sample
-validated. Their known blind spots, stated as such: \emph{false
-positives} --- healthy libraries whose terminology is genuinely
+validated. Two detection targets must be kept distinct: \emph{collapse
+detection} (has the entity layer degenerated?) versus
+\emph{lexicon-quality warning} (is the distribution contaminated with
+generic vocabulary?). For collapse detection a genuinely concentrated
+healthy library is a $C_{10}$ false positive; as a lexicon-quality
+warning the same trigger is correct when the tail is in fact generic.
+The composite's zero-false-alarm claim below is scoped to collapse
+detection. Known blind spots (per target): \emph{false positives}
+(collapse target) --- healthy libraries whose terminology is genuinely
 concentrated, e.g.\ the two small treated libraries at 0.398/0.768
 (real terms, small corpora) and the public-domain CS three-source arm
 at 0.404 (\S\ref{sec:xdomain}); \emph{false negatives} ---
@@ -632,7 +640,11 @@ libraries; frozen-threshold unseen-library validation is open); the
 replacement band remains undetected by every leg (at 50\% the
 generic-head leg sits at its threshold, 0.096 vs.\ 0.10) --- the
 honest structural floor of aggregate-statistics monitoring, and the
-reason the name-audit leg exists.
+reason the name-audit leg exists. \emph{Cold start}: the two count
+legs need a healthy history baseline a new library lacks; until a
+first full enrichment pass seeds it, they are inert, and protection
+rests on the two history-free legs---concentration and the name
+audit---exactly the legs that exposed this incident.
 \textbf{(b)~entity
 cardinality ratio} (coarse secondary, gameable both ways).
 \textbf{(c)~top-entity name audit} (five-minute quarterly control).
@@ -770,7 +782,10 @@ never occur in the 3{,}000-doc construction corpus --- paper coinages
 that no bounded static lexicon can carry (mention-layer scope),
 bounding lexicon-layer recall itself. Per 1{,}000 entries,
 recall efficiency: C-value 16.6 $>$ three-source 14.8 $>$ frequency
-12.2 $>$ LLM-direct 10.5; the strata table ships with the artifact.
+12.2 $>$ LLM-direct 10.5. Three-source is thus a high-validity,
+bounded-budget \emph{repair} for the entity layer, not a high-recall
+term extractor; coinages and rare terms are mention-layer scope (the
+strata table ships with the artifact).
 
 
 \begin{table*}[t]
@@ -783,7 +798,11 @@ cross-family arbitration (n=60--80 per cell; Wilson 95\% CIs in the
 text); P/R/F1 are occurrence-level
 against silver enumerations --- levels indicative only, with arm
 recall orderings judge-stable (see text).
-Hatched arm in Figure~\ref{fig:xdomain}: silver-P same-family inflated.}
+Hatched arm in Figure~\ref{fig:xdomain}: silver-P same-family
+inflated. $^{\dagger}$Frequency/C-value rows are the unified-typing
+re-run (types re-assigned by the same LLM classifier as three-source's
+classification stage); silver P/R not re-run---random-typed rows are
+archived in the archival long version and the artifact.}
 \label{tab:xdomain}
 \small
 \begin{tabular}{@{}llrrrrrrrr@{}}
@@ -791,20 +810,20 @@ Hatched arm in Figure~\ref{fig:xdomain}: silver-P same-family inflated.}
 Domain & Arm & Terms & Entities & $C_{10}$ & Conc/doc & Valid & $P_{s}$ & $R_{s}$ & $F_1$ \\
 \midrule
 CS & batch schema & 95 & 18.4 & \textbf{0.899} & 1.14 & 0.565 & 0.000 & 0.000 & 0.000 \\
-CS & frequency $K{=}251$ & 251 & 312.4 & 0.227 & 30.7 & 0.293 & 0.101 & 0.097 & 0.099 \\
-CS & C-value $K{=}251$ & 251 & 273.4 & 0.457 & 7.2 & 0.267 & 0.300 & 0.043 & 0.075 \\
+CS & frequency $K{=}251$ $^{\dagger}$ & 251 & 286.0 & 0.319 & 24.8 & 0.405 & -- & -- & -- \\
+CS & C-value $K{=}251$ $^{\dagger}$ & 251 & 255.0 & 0.554 & 5.1 & 0.400 & -- & -- & -- \\
 CS & LLM direct & 1198 & 344.5 & 0.501 & 4.6 & 0.787 & 0.663 & 0.132 & 0.220 \\
 CS & three-source & 251 & 202.1 & 0.404 & 3.6 & \textbf{0.838} & 0.274 & 0.050 & 0.085 \\
 \midrule
 Biomed & batch schema & 130 & 100.5 & 0.428 & 2.8 & 0.906 & 0.089 & 0.009 & 0.016 \\
-Biomed & frequency $K{=}513$ & 513 & 642.7 & 0.114 & 29.7 & 0.362 & 0.038 & 0.039 & 0.038 \\
-Biomed & C-value $K{=}513$ & 513 & 495.4 & 0.249 & 8.1 & 0.350 & 0.073 & 0.022 & 0.034 \\
+Biomed & frequency $K{=}513$ $^{\dagger}$ & 513 & 574.0 & 0.166 & 25.1 & 0.362 & -- & -- & -- \\
+Biomed & C-value $K{=}513$ $^{\dagger}$ & 513 & 449.0 & 0.291 & 6.5 & 0.400 & -- & -- & -- \\
 Biomed & LLM direct & 2003 & 591.5 & 0.309 & 4.9 & 0.838 & 0.343 & 0.085 & 0.136 \\
 Biomed & three-source & 513 & 408.7 & 0.281 & 5.1 & \textbf{0.850} & 0.273 & 0.060 & 0.098 \\
 \midrule
 Materials & batch schema & 152 & 58.5 & \textbf{0.829} & 2.3 & 0.688 & 0.054 & 0.004 & 0.007 \\
-Materials & frequency $K{=}384$ & 384 & 481.4 & 0.131 & 31.8 & 0.400 & 0.029 & 0.035 & 0.032 \\
-Materials & C-value $K{=}384$ & 384 & 411.2 & 0.238 & 7.5 & 0.367 & 0.155 & 0.044 & 0.069 \\
+Materials & frequency $K{=}384$ $^{\dagger}$ & 384 & 448.0 & 0.151 & 28.2 & 0.450 & -- & -- & -- \\
+Materials & C-value $K{=}384$ $^{\dagger}$ & 384 & 390.0 & 0.256 & 6.8 & 0.333 & -- & -- & -- \\
 Materials & LLM direct & 2045 & 713.8 & 0.198 & 6.9 & \textbf{0.925} & 0.336 & 0.093 & 0.146 \\
 Materials & three-source & 384 & 337.4 & 0.268 & 5.4 & 0.912 & 0.223 & 0.046 & 0.076 \\
 \bottomrule
@@ -819,7 +838,9 @@ after cross-family arbitration. Middle: top-10 concentration (the
 collapse signature; note the schema arm). Right: concepts per document
 on a log scale (the flooding signature; note the frequency arm). The
 LLM-direct arm is hatched where its silver-$P$ reads same-family
-inflated.}
+inflated. In the left panel the frequency/C-value bars show the
+unified-typing re-run (types re-assigned by the shared LLM
+classifier); random-typed rates archived in the archival long version.}
 \label{fig:xdomain}
 \end{figure*}
 
@@ -834,13 +855,14 @@ confounds. Biomedicine and materials schema arms are milder --- some of
 their category words (``disease'', ``cell'', ``phase'') happen to be
 usable domain terms there --- but still concentrate (0.43--0.83) at
 recall ${\le}$0.009. Frequency floods at
-any size: ${\sim}$30 concepts per document with validity 0.29--0.40 ---
+any size: 25--28 concepts per document with validity 0.36--0.45 ---
 volume without terminology. C-value at equal size repairs concentration
-(0.24--0.46) but not validity (0.27--0.37): in abstract-length corpora,
+(0.26--0.55) but not validity (0.33--0.40): in abstract-length corpora,
 statistical salience is not termhood. Since these baselines' types were
-randomly assigned, we re-ran both under \emph{unified typing} (term
-sets frozen; types from the same LLM classifier as three-source's
-classification stage). Unified typing shifts their validity by $-$3 to $+$13
+originally random, the table reports both under \emph{unified typing}
+(term sets frozen; types from the same LLM classifier as three-source's
+classification stage; random-typed rows archived in the long version).
+Unified typing shifts their validity by $-$3 to $+$13
 points (frequency 0.405/0.362/0.450, C-value 0.400/0.400/0.333 in the
 three domains, vs.\ 0.267--0.400 random)---a bounded confound that
 nowhere closes the gap to three-source (0.838/0.850/0.912). The
@@ -1060,17 +1082,20 @@ induction from web-scale corpora. \textit{Proc.\ 64th Annual Meeting
 of the ACL (ACL 2026)}, 2026, pp.\ 20557--20584.
 doi:10.18653/v1/2026.acl-long.942.
 
-\bibitem{dialkg} DIAL-KG: schema-free incremental knowledge graph
-construction via dynamic schema induction and evolution-intent
-assessment. arXiv:2603.20059, 2026 (preprint).
+\bibitem{dialkg} W.~Bao, Y.~Wang, R.~Gao, F.~Leng, Y.~Bao, G.~Yu.
+DIAL-KG: schema-free incremental knowledge graph construction via
+dynamic schema induction and evolution-intent assessment.
+arXiv:2603.20059, 2026 (preprint).
 
-\bibitem{schemakgeval} Large language models for knowledge graph
-extraction: a schema-constrained evaluation framework. \textit{Proc.\
-KG-LLM Workshop at LREC 2026}, 2026.
+\bibitem{schemakgeval} M.~Ilves, E.~Barbu, J.~\"Ubi. Large language
+models for knowledge graph extraction: a schema-constrained
+evaluation framework. \textit{Proc.\ 1st Workshop on Knowledge
+Graphs and Large Language Models (KG-LLM) at LREC 2026}, 2026.
 
-\bibitem{llmterm} Enhancing automatic term extraction with large
-language models via syntactic retrieval. \textit{Findings of the
-ACL: ACL 2025}, 2025. doi:10.18653/v1/2025.findings-acl.516.
+\bibitem{llmterm} Y.~Chun, M.~Kim, D.~Kim, C.~Park, H.~Lim.
+Enhancing automatic term extraction with large language models via
+syntactic retrieval. \textit{Findings of the ACL: ACL 2025}, 2025.
+doi:10.18653/v1/2025.findings-acl.516.
 
 \bibitem{nerSurvey} D.~Nadeau, S.~Sekine. A survey of named entity
 recognition and classification. \textit{Lingvisticae Investigationes}

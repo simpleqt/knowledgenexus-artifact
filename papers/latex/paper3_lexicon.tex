@@ -26,7 +26,9 @@ knowledge base: 575 type-level entities (``method'', ``energy'')
 carrying ${\sim}$19.2M links while every job-level monitor stayed
 green. \textbf{Method.} We diagnose the failure across extraction
 mechanism, lexicon provenance, and monitoring blindness; repair it with
-a three-source corpus-presence-attested lexicon (3{,}702 terms);
+a corpus-attested lexicon built by LLM classification of corpus
+candidates under presence gating, deployed as a three-source recipe
+(3{,}702 terms);
 rebuild the entity layer under production load; and derive gold-free
 monitors led by a link-concentration diagnostic invariant to uniform
 rescaling of link counts. \textbf{Results.} A fixed-code, fixed-corpus
@@ -106,18 +108,22 @@ resamples of one corpus. The observables that expose the collapse are the
 scale-invariant concentration of links on the top entities and the
 top-entity name distribution, with entity cardinality as a
 corroborating (and manipulable-in-both-directions) secondary signal.
-\item \textbf{A corpus-attested lexicon lifecycle, deployed through a
-full-chain rebuild at production scale}
-(Sections~\ref{sec:lexicon}--\ref{sec:rebuild}): 2{,}284 transplanted seed
-terms from a healthy near-domain library, 7{,}391 corpus-frequency
-candidates classified by an LLM, and bounded per-type
-expansion---yielding 3{,}702 real terms for nuclear electronics (v2.1)
-and 1{,}279 for physics (v1.1), 223 legacy conflicts repaired in
-passing---followed by vertex-and-table-scoped teardown and 766{,}501
-re-enqueued jobs, with the pipeline pathologies the rebuild surfaced,
-each with a measured fix (most dramatically a 137$\times$
-link-throughput recovery once an $O(N^2)$ alias check, amplified by the
-richer lexicon itself, was cached).
+\item \textbf{A corpus-attested lexicon lifecycle whose decisive
+mechanism is LLM classification of corpus-frequency candidates under
+corpus-presence gating, deployed through a full-chain rebuild at
+production scale} (Sections~\ref{sec:lexicon}--\ref{sec:rebuild}):
+the production recipe combines 2{,}284 transplanted seed terms from a
+healthy near-domain library, 7{,}391 corpus-frequency candidates
+classified by an LLM, and bounded per-type expansion---yielding
+3{,}702 real terms for nuclear electronics (v2.1) and 1{,}279 for
+physics (v1.1), 223 legacy conflicts repaired in passing; the
+cross-domain ablation (Section~\ref{sec:xdomain}) attributes the
+load-bearing share to candidate classification and presence gating,
+with expansion retained as an optional diversity module. The rebuild
+itself---vertex-and-table-scoped teardown and 766{,}501 re-enqueued
+jobs---surfaced pipeline pathologies, each with a measured fix (most
+dramatically a 137$\times$ link-throughput recovery once an $O(N^2)$
+alias check, amplified by the richer lexicon itself, was cached).
 \item \textbf{Gold-free entity-quality observability}
 (Sections~\ref{sec:after}--\ref{sec:discussion}): before/after evidence
 (cardinality 575$\to$1{,}871 with a functioning relation layer; scoped
@@ -282,11 +288,11 @@ faithfully on degenerate input.
 \begin{tabular}{@{}p{0.47\textwidth}@{\hspace{4mm}}p{0.47\textwidth}@{}}
 \textbf{category-word lexicon (v2.0)} & \textbf{repaired lexicon (v2.1)} \\[1.5mm]
 \texttt{method} $\to$ type \emph{method} &
-\texttt{hpge detector} $\to$ \emph{detector} \\
+\texttt{hpge detector} $\to$ \emph{semiconductor\_detector} \\
 \texttt{energy} $\to$ type \emph{energy} &
 \texttt{preamplifier} $\to$ \emph{circuit} \\
 \texttt{time} $\to$ \emph{physical\_quantity} &
-\texttt{neutron irradiation} $\to$ \emph{isotope} \\[1.5mm]
+\texttt{neutron activation analysis} $\to$ \emph{method} \\[1.5mm]
 \multicolumn{1}{l}{575 entities / 19.2M links} &
 \multicolumn{1}{l}{1{,}871 entities / 25.1M links} \\
 \multicolumn{1}{l}{48.5\% of documents unannotated} &
@@ -294,7 +300,8 @@ faithfully on degenerate input.
 \end{tabular}
 \caption{Mechanism: the schema lexicon \emph{is} the extraction model.
 Identical scan-and-link code over the same corpus; only the dictionary
-differs (terms and examples illustrative of each lexicon's content).}
+differs (left column illustrative; right column verbatim
+(surface, type) pairs from v2.1).}
 \label{fig:mechanism}
 \end{figure}
 
@@ -1059,11 +1066,21 @@ sharper discriminator of the collapse itself. We propose a band alarm
 these are \emph{empirical, post-hoc} candidate thresholds read on this
 deployment's thirteen libraries, not on an external
 population---triage triggers for human inspection, not classifiers.
-Their known blind spots, stated as such. \emph{False positives}:
-healthy libraries whose terminology is genuinely concentrated (the two
-small treated libraries at 0.398/0.768---real terms, small corpora;
-the public-domain CS three-source arm at 0.404,
-Section~\ref{sec:xdomain}). \emph{False negatives}: replacement-type
+Two detection targets must be kept distinct. \emph{Collapse
+detection} asks whether the entity layer has degenerated;
+\emph{lexicon-quality warning} asks whether the link distribution is
+contaminated with generic vocabulary. For collapse detection, a
+healthy library whose terminology is genuinely concentrated is a
+$C_{10}$ false positive; for a lexicon-quality warning the same
+trigger is correct when the tail is in fact generic (the small-library
+case below). The composite rule's zero-false-alarm claim below is
+scoped to collapse detection on the graded-degradation archive.
+Their known blind spots, stated as such (per target). \emph{False
+positives} (collapse target): healthy libraries whose terminology is
+genuinely concentrated (the two small treated libraries at
+0.398/0.768---real terms, small corpora; the public-domain CS
+three-source arm at 0.404, Section~\ref{sec:xdomain}). \emph{False
+negatives}: replacement-type
 degradation below ${\sim}$75\% substitution, where $C_{10}$ moves less
 than one sd (offline graded degradation on the frozen resamples,
 Section~\ref{sec:after}; the experiment has no time axis, so we make no
@@ -1090,7 +1107,9 @@ generic-head share ($>$0.10), and entity-cardinality drop ($>$50\%).
 On the frozen graded-degradation archive this composite fires on
 every should-alarm state (collapse, ${\ge}$75\% replacement,
 ${\ge}$50\% shrinkage) with \emph{zero} misses and zero false alarms
-on the healthy baseline and mild degradations. We report this as
+on the healthy baseline and mild degradations (collapse target; the
+naturally concentrated small libraries are exempt from this leg, where
+the same reading remains informative as a lexicon-quality warning). We report this as
 \emph{in-sample diagnostic verification}, not external validation:
 thresholds, degradation classes, and pass criteria all derive from the
 same production libraries and frozen samples, so the result shows the
@@ -1101,6 +1120,14 @@ replacement band remains undetected by every leg (at 50\% the
 generic-head leg sits at its threshold, 0.096 vs.\ 0.10) --- the
 honest structural floor of aggregate-statistics monitoring, and the
 reason the name-audit leg exists.
+\emph{Cold start.} The two count legs (link-count and
+entity-cardinality drops) compare against a healthy history baseline
+that a newly created library does not have; until a first full
+enrichment pass completes and its post-pass snapshot seeds the
+baseline, those legs are inert by construction, and protection rests
+on the two history-free legs---top-link concentration and the
+top-entity name audit---which are exactly the legs that exposed this
+incident.
  The thirteen-library candidate calibration,
 summarized (the collapsed row is the pre-repair backup, not a live
 point):
@@ -1157,10 +1184,28 @@ validation: after the same repair playbook, entity counts contracted
 (870$\to$629, 209$\to$153---the cardinality signal normalizes) while the
 concentration monitor still flags both libraries---one above the
 investigation threshold (0.398 $>$ 0.35), one above the escalation
-threshold (0.768 $>$ 0.5)---correctly, since their tails remain
+threshold (0.768 $>$ 0.5)---correctly \emph{as lexicon-quality
+warnings}, since their tails remain
 generic---demonstrating that
 the two monitors separate ``cardinality repaired'' from ``distribution
 still skewed'', which cardinality alone cannot.
+
+\textbf{What the repair restores, and what it does not.} The evidence
+supports two claims of different strength. At the \emph{entity-layer
+structural} level the repair succeeds on every deployed observable:
+entity diversity (575$\to$1{,}871/2{,}726 canonical entities),
+annotated-document coverage (48.5\%$\to$98.5\%), concentration back
+inside the healthy band, and link precision confirmed by stratified
+audit. At the \emph{terminology-coverage} level the repair is
+deliberately partial: the from-scratch enumeration
+(Section~\ref{sec:xdomain}) bounds coverage of human-recognized
+terms at 16.9\% of core recurring constructions under the size cap,
+and half of the enumerated terms are corpus-unseen coinages that no
+bounded static lexicon can carry. Three-source construction is
+therefore a high-validity, bounded-lexicon-budget \emph{repair} for
+the entity layer---not a high-recall general-purpose term-extraction
+method; low-frequency and newly coined terminology is mention-layer
+scope, where a bounded lexicon hands off to runtime extraction.
 
 \textbf{LLM extraction versus dictionary scan.} The incident is not an
 argument for LLM-everywhere. It is an argument for honoring the input
@@ -1347,7 +1392,12 @@ ${\sim}$690-document samples; $|$lex$|$ size-matched for
 freq/cvalue/threesource). Valid = blind judged-valid rate after
 cross-family arbitration (n=60--80 per cell); P/R/F1 are
 occurrence-level against silver enumerations---levels indicative only
-(see text).}
+(see text). $^{\dagger}$Frequency/C-value rows report the
+\emph{unified-typing} re-run (term sets frozen; entity types
+re-assigned by the same LLM classifier that three-source's
+classification stage uses); silver P/R/F1 not re-run---the original
+random-typed rows, including silver columns, are archived in
+Table~\ref{tab:xdomain-rand}.}
 \label{tab:xdomain}
 \small
 \begin{tabular}{@{}llrrrrrrrr@{}}
@@ -1355,20 +1405,20 @@ occurrence-level against silver enumerations---levels indicative only
 Domain & Arm & Terms & Entities & $C_{10}$ & Conc/doc & Valid & $P_{s}$ & $R_{s}$ & $F_1$ \\
 \midrule
 CS & batch schema & 95 & 18.4 & \textbf{0.899} & 1.14 & 0.565 & 0.000 & 0.000 & 0.000 \\
-CS & frequency $K{=}251$ & 251 & 312.4 & 0.227 & 30.7 & 0.293 & 0.101 & 0.097 & 0.099 \\
-CS & C-value $K{=}251$ & 251 & 273.4 & 0.457 & 7.2 & 0.267 & 0.300 & 0.043 & 0.075 \\
+CS & frequency $K{=}251$ $^{\dagger}$ & 251 & 286.0 & 0.319 & 24.8 & 0.405 & -- & -- & -- \\
+CS & C-value $K{=}251$ $^{\dagger}$ & 251 & 255.0 & 0.554 & 5.1 & 0.400 & -- & -- & -- \\
 CS & LLM direct & 1198 & 344.5 & 0.501 & 4.6 & 0.787 & 0.663 & 0.132 & 0.220 \\
 CS & three-source & 251 & 202.1 & 0.404 & 3.6 & \textbf{0.838} & 0.274 & 0.050 & 0.085 \\
 \midrule
 Biomed & batch schema & 130 & 100.5 & 0.428 & 2.8 & 0.906 & 0.089 & 0.009 & 0.016 \\
-Biomed & frequency $K{=}513$ & 513 & 642.7 & 0.114 & 29.7 & 0.362 & 0.038 & 0.039 & 0.038 \\
-Biomed & C-value $K{=}513$ & 513 & 495.4 & 0.249 & 8.1 & 0.350 & 0.073 & 0.022 & 0.034 \\
+Biomed & frequency $K{=}513$ $^{\dagger}$ & 513 & 574.0 & 0.166 & 25.1 & 0.362 & -- & -- & -- \\
+Biomed & C-value $K{=}513$ $^{\dagger}$ & 513 & 449.0 & 0.291 & 6.5 & 0.400 & -- & -- & -- \\
 Biomed & LLM direct & 2003 & 591.5 & 0.309 & 4.9 & 0.838 & 0.343 & 0.085 & 0.136 \\
 Biomed & three-source & 513 & 408.7 & 0.281 & 5.1 & \textbf{0.850} & 0.273 & 0.060 & 0.098 \\
 \midrule
 Materials & batch schema & 152 & 58.5 & \textbf{0.829} & 2.3 & 0.688 & 0.054 & 0.004 & 0.007 \\
-Materials & frequency $K{=}384$ & 384 & 481.4 & 0.131 & 31.8 & 0.400 & 0.029 & 0.035 & 0.032 \\
-Materials & C-value $K{=}384$ & 384 & 411.2 & 0.238 & 7.5 & 0.367 & 0.155 & 0.044 & 0.069 \\
+Materials & frequency $K{=}384$ $^{\dagger}$ & 384 & 448.0 & 0.151 & 28.2 & 0.450 & -- & -- & -- \\
+Materials & C-value $K{=}384$ $^{\dagger}$ & 384 & 390.0 & 0.256 & 6.8 & 0.333 & -- & -- & -- \\
 Materials & LLM direct & 2045 & 713.8 & 0.198 & 6.9 & \textbf{0.925} & 0.336 & 0.093 & 0.146 \\
 Materials & three-source & 384 & 337.4 & 0.268 & 5.4 & 0.912 & 0.223 & 0.046 & 0.076 \\
 \bottomrule
@@ -1383,7 +1433,9 @@ after cross-family arbitration. Middle: top-10 concentration (the
 collapse signature; note the schema arm). Right: concepts per document
 on a log scale (the flooding signature; note the frequency arm). The
 LLM-direct arm is hatched where its silver-$P$ reads same-family
-inflated.}
+inflated. In the left panel the frequency/C-value bars show the
+unified-typing re-run (types re-assigned by the shared LLM
+classifier); random-typed rates archived in Table~\ref{tab:xdomain-rand}.}
 \label{fig:xdomain}
 \end{figure}
 
@@ -1397,16 +1449,18 @@ silver recall is 0.000. Biomedicine and materials schema arms
 are milder---some of their category words (``disease'', ``cell'',
 ``phase'') happen to be usable domain terms there---but still
 concentrate (0.43--0.83) at recall ${\le}$0.009. Frequency floods at
-any size: ${\sim}$30 concepts per document with validity
-0.29--0.40---volume without terminology. C-value at equal size repairs
-concentration (0.24--0.46) but not validity (0.27--0.37): in
+any size: 25--28 concepts per document with validity
+0.36--0.45---volume without terminology. C-value at equal size repairs
+concentration (0.26--0.55) but not validity (0.33--0.40): in
 abstract-length corpora, statistical salience is not termhood.
-Because these two baselines' entity types were randomly assigned from
-the schema type list, we re-ran both arms under \emph{unified typing}
+Because these two baselines' entity types were originally assigned at
+random from the schema type list, the table reports both arms under
+\emph{unified typing}
 (term sets frozen; types re-assigned by the same LLM classifier, model
 and prompt, that the three-source arm's classification stage uses;
 classifier-rejected terms stay as ``unclassified'' to preserve the
-fixed term set). Random assignment had disagreed with the classifier
+fixed term set; random-typed rows archived in
+Table~\ref{tab:xdomain-rand}). Random assignment had disagreed with the classifier
 on 91--98\% of classifiable terms; unified typing shifts the two
 baselines' validity by $-$3 to $+$13 points (frequency
 0.405/0.362/0.450 and C-value 0.400/0.400/0.333 in CS/biomedicine/
@@ -1436,7 +1490,7 @@ domain because the head list is the incident corpus's category
 vocabulary: its biomedicine/materials drivers (``disease'', ``drug'',
 ``phase'', ``cell'') are legitimate domain terms in those domains, so
 the cross-domain residual is substantially list--domain mismatch
-rather than pure genericity (the frequency arm reads 4.5\% in CS,
+rather than pure genericity (the frequency arm reads 4.7\% in CS,
 where the same words are generic). No single arm dominates all
 reported metrics; we present three-source as the design point that
 pairs size-matched validity with bounded annotation volume under this
@@ -1505,40 +1559,22 @@ in test abstracts (construct-side presence cannot see them), and
 neologisms; the selection gaps include, e.g., \emph{LLM} and
 \emph{large language model} themselves in CS.
 
-\textbf{Risk-constrained selection, tested and not adopted.} The
-natural next question is whether a learned or set-selection objective
-beats per-term ranking at equal budget. We built the wide pool above,
-a linear feature scorer (corpus contrast, C-value, phrase structure,
-abbreviation evidence, short-symbol and generic-word ambiguity flags)
-trained on \emph{construct-side} silver enumerated by the cross-family
-judge (60 documents per domain; test documents never touch pool,
-training, or tuning), and the set-selection objective over construct
-mention structure with proxy link-correctness and specificity scores
-(explicitly proxies: no calibration claims). Greedy-plus-swap local
-search reaches within 1.5\% of a beam-search reference on the CS
-top-300 slice. At the same $K$ as three-source the selection arms
-fail, and the manner of failure is itself a finding. Silver-P
-\emph{rises} (CS 0.274$\to$0.362, biomedicine 0.273$\to$0.352,
-materials 0.223$\to$0.526) while recall falls outside CS
-(biomedicine 0.060$\to$0.015, materials 0.046$\to$0.009; CS
-flat-to-up 0.050$\to$0.053); doubling or halving the budget moves
-recall by less than half a point while precision decays --- the pool
-ceiling of the funnel again; and the selected lexicons
-\emph{concentrate} (top-10 concentration 0.69--0.73 in CS vs.\
-0.404 for three-source). The arbitrated blind judging then reverses
-the apparent precision gain: validity collapses in CS and biomedicine
-(learned-rank 0.29 [0.19, 0.41] and 0.46 [0.32, 0.55], vs.\
-0.838/0.850 for three-source) and stays below three-source in
-materials (0.86--0.89 vs.\ 0.912, at one-fifth the recall). The
-silver-P gain was an instrument artifact --- enumeration
-under-covers, which flatters arms whose extra mass is invalid --- and
-construct-side learned selection without attestation gates reproduces
-precisely the invalid-mass regime the incident taught. We therefore
-keep the three-source pipeline as the repair baseline and report this
-as a bounded negative result: within an attested pool and
-construct-side proxies, neither learned ranking nor coverage-linked
-selection dominates it, and selection pressure alone manufactures
-concentration.
+\textbf{Risk-constrained selection, tested and not adopted.} A
+learned-rank/set-selection alternative at equal budget (linear
+feature scorer on corpus contrast, C-value, phrase structure,
+abbreviation evidence, and ambiguity flags, trained on construct-side
+silver; set-selection over construct mention structure;
+greedy-plus-swap within 1.5\% of a beam-search reference) raises
+silver-P while recall falls outside CS, and arbitrated blind validity
+collapses (learned-rank 0.29/0.46 in CS/biomedicine vs.\
+0.838/0.850 for three-source)---the silver-P gain was an instrument
+artifact, and construct-side learned selection without attestation
+gates reproduces the invalid-mass regime the incident taught. The
+full account, including the budget-sweep and concentration evidence,
+is archived in Section~\ref{app:selection}; the headline: within an
+attested pool and construct-side proxies, neither learned ranking nor
+coverage-linked selection dominates the deployed pipeline, and
+selection pressure alone manufactures concentration.
 
 \begin{table}[t]
 \centering
@@ -1665,6 +1701,76 @@ required for the main claims and ships as online supplementary
 material in the artifact release when the compressed version is
 submitted.
 
+\section{The selection study: tested and not adopted}
+\label{app:selection}
+
+Moved from the main text (third-review slimming); content unchanged.
+
+\textbf{Risk-constrained selection, tested and not adopted.} The
+natural next question is whether a learned or set-selection objective
+beats per-term ranking at equal budget. We built the wide pool above,
+a linear feature scorer (corpus contrast, C-value, phrase structure,
+abbreviation evidence, short-symbol and generic-word ambiguity flags)
+trained on \emph{construct-side} silver enumerated by the cross-family
+judge (60 documents per domain; test documents never touch pool,
+training, or tuning), and the set-selection objective over construct
+mention structure with proxy link-correctness and specificity scores
+(explicitly proxies: no calibration claims). Greedy-plus-swap local
+search reaches within 1.5\% of a beam-search reference on the CS
+top-300 slice. At the same $K$ as three-source the selection arms
+fail, and the manner of failure is itself a finding. Silver-P
+\emph{rises} (CS 0.274$\to$0.362, biomedicine 0.273$\to$0.352,
+materials 0.223$\to$0.526) while recall falls outside CS
+(biomedicine 0.060$\to$0.015, materials 0.046$\to$0.009; CS
+flat-to-up 0.050$\to$0.053); doubling or halving the budget moves
+recall by less than half a point while precision decays --- the pool
+ceiling of the funnel again; and the selected lexicons
+\emph{concentrate} (top-10 concentration 0.69--0.73 in CS vs.\
+0.404 for three-source). The arbitrated blind judging then reverses
+the apparent precision gain: validity collapses in CS and biomedicine
+(learned-rank 0.29 [0.19, 0.41] and 0.46 [0.32, 0.55], vs.\
+0.838/0.850 for three-source) and stays below three-source in
+materials (0.86--0.89 vs.\ 0.912, at one-fifth the recall). The
+silver-P gain was an instrument artifact --- enumeration
+under-covers, which flatters arms whose extra mass is invalid --- and
+construct-side learned selection without attestation gates reproduces
+precisely the invalid-mass regime the incident taught. We therefore
+keep the three-source pipeline as the repair baseline and report this
+as a bounded negative result: within an attested pool and
+construct-side proxies, neither learned ranking nor coverage-linked
+selection dominates it, and selection pressure alone manufactures
+concentration.
+
+\section{Random-typed baseline rows (pre-unification archive)}
+\label{app:randtyped}
+
+The original cross-domain table rows for the two statistical
+baselines, whose entity types were assigned at random from the schema
+type list; superseded in the main table by the unified-typing re-run
+(Table~\ref{tab:xdomain} note). Kept for the silver P/R/F1 columns,
+which were not re-run under unified typing.
+
+\begin{table}[t]
+\centering
+\caption{Random-typed rows archived from the original cross-domain
+replay (same frozen samples and arbitration protocol as
+Table~\ref{tab:xdomain}).}
+\label{tab:xdomain-rand}
+\small
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Domain & Arm & Entities & $C_{10}$ & Conc/doc & Valid & $P_{s}$/$R_{s}$/$F_1$ \\
+\midrule
+CS & frequency & 312.4 & 0.227 & 30.7 & 0.293 & .101/.097/.099 \\
+CS & C-value & 273.4 & 0.457 & 7.2 & 0.267 & .300/.043/.075 \\
+Biomed & frequency & 642.7 & 0.114 & 29.7 & 0.362 & .038/.039/.038 \\
+Biomed & C-value & 495.4 & 0.249 & 8.1 & 0.350 & .073/.022/.034 \\
+Materials & frequency & 481.4 & 0.131 & 31.8 & 0.400 & .029/.035/.032 \\
+Materials & C-value & 411.2 & 0.238 & 7.5 & 0.367 & .155/.044/.069 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \section{Secondary engineering incidents during the rebuild}
 \label{app:incidents}
 
@@ -1743,17 +1849,20 @@ induction from web-scale corpora, Proc.\ 64th Annual Meeting of the
 ACL (ACL 2026), 2026, pp.\ 20557--20584.
 doi:10.18653/v1/2026.acl-long.942.
 
-\bibitem{dialkg} DIAL-KG: schema-free incremental knowledge graph
-construction via dynamic schema induction and evolution-intent
-assessment, arXiv:2603.20059 (2026), preprint.
+\bibitem{dialkg} W.~Bao, Y.~Wang, R.~Gao, F.~Leng, Y.~Bao, G.~Yu,
+DIAL-KG: schema-free incremental knowledge graph construction via
+dynamic schema induction and evolution-intent assessment,
+arXiv:2603.20059 (2026), preprint.
 
-\bibitem{schemakgeval} Large language models for knowledge graph
-extraction: a schema-constrained evaluation framework, Proc.\ KG-LLM
-Workshop at LREC 2026 (2026).
+\bibitem{schemakgeval} M.~Ilves, E.~Barbu, J.~\"Ubi, Large language
+models for knowledge graph extraction: a schema-constrained
+evaluation framework, in: Proc.\ 1st Workshop on Knowledge Graphs
+and Large Language Models (KG-LLM) at LREC 2026, 2026.
 
-\bibitem{llmterm} Enhancing automatic term extraction with large
-language models via syntactic retrieval, Findings of the ACL: ACL 2025
-(2025). doi:10.18653/v1/2025.findings-acl.516.
+\bibitem{llmterm} Y.~Chun, M.~Kim, D.~Kim, C.~Park, H.~Lim,
+Enhancing automatic term extraction with large language models via
+syntactic retrieval, Findings of the ACL: ACL 2025, 2025.
+doi:10.18653/v1/2025.findings-acl.516.
 
 \bibitem{cvalue} K.~Frantzi, S.~Ananiadou, H.~Mima, Automatic recognition
 of multi-word terms: the C-value/NC-value method, International Journal on

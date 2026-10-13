@@ -40,3 +40,28 @@ here are authoritative.
    itself contains public-corpus abstract text and is not redistributed;
    per-term surfaces, doc-frequency counts, and strata are in the two JSONs.
    Drivers: `enumeration_recall.py`, `enumeration_attestation.py`.
+
+## Round 3 (Weak Accept / Minor Revision, 2026-10-13 evening)
+
+- Unified-typing fair baselines are now the MAIN table and figure:
+  freq/cvalue rows of the cross-domain table and the figure's
+  judged-valid panel use the re-typed values (0.405/0.362/0.450 and
+  0.400/0.400/0.333); the six random-typed rows, incl. silver P/R,
+  are archived in the long version's appendix (tab:xdomain-rand).
+- Discussion adds "What the repair restores, and what it does not":
+  entity-layer structural recovery vs deliberately partial terminology
+  coverage; three-source = high-validity bounded-budget repair, not a
+  high-recall extractor.
+- Monitoring now defines two detection targets (collapse detection vs
+  lexicon-quality warning), scopes the zero-false-alarm claim to the
+  collapse target, and documents cold start for new libraries.
+- Contribution 2 and abstract foreground the decisive mechanism (LLM
+  classification of corpus candidates under corpus-presence gating);
+  "three-source" is named as the production recipe.
+- Figure 1 examples replaced with verbatim v2.1 (surface, type) pairs
+  (hpge detector -> semiconductor_detector, neutron activation
+  analysis -> method); the invented neutron irradiation -> isotope
+  example is gone.
+- Selection-study negative result moved to the online appendix;
+  references [2]-[4] completed with verified authors (Bao et al.;
+  Ilves/Barbu/Übi; Chun et al.).
